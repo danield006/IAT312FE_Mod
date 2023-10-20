@@ -1,0 +1,7 @@
+It seems that VB6 runtime has already been installed.
+Do you want to skip runtime installation? 
+Could not download file.
+URL: https://problemkaputt.de/no$gba.zip.
+PATH: C:\Users\danie\Downloads\FEBuilderGBA\app\no$gba.
+findEXE: NO$GBA.EXE.
+InitSystem: Fire Emblem - the Sacred Stones # GBA.GBA ver: FE8U length: 1000000 FEBuilderGBA: 20231013.22
