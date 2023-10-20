@@ -1,0 +1,40 @@
+[
+    {
+        "name": "DeathRoss",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Ross'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Ross",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Ross",
+                    "I... am a warrior to the very end."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Ross",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Ross"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": ""
+    }
+]

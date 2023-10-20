@@ -1,0 +1,40 @@
+[
+    {
+        "name": "FightONeill",
+        "trigger": "combat_start",
+        "level_nid": "0",
+        "condition": "unit.nid == \"O'Neill\" or unit2.nid == \"O'Neill\"",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "O'Neill",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "O'Neill",
+                    "You will be the first to die!"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "O'Neill"
+                ]
+            ],
+            [
+                "change_music",
+                [
+                    "player_phase",
+                    "Grasp at Victory"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": ""
+    }
+]

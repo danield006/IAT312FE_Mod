@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Door1",
+        "trigger": "Door",
+        "level_nid": "3",
+        "condition": "region.nid == 'Door1'",
+        "commands": [
+            [
+                "unlock",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "show_layer",
+                [
+                    "Door1"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": ""
+    }
+]

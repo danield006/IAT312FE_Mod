@@ -1,0 +1,40 @@
+[
+    {
+        "name": "DeathFranz",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Franz'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Franz",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Franz",
+                    "I'm sorry, General Seth..."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Franz",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Franz"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": ""
+    }
+]

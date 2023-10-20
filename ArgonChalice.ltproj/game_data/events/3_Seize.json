@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Seize",
+        "trigger": "Seize",
+        "level_nid": "3",
+        "condition": "'Lord' in unit.tags",
+        "commands": [
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": ""
+    }
+]

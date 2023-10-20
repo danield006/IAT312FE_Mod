@@ -1,0 +1,50 @@
+[
+    {
+        "name": "DeathEirika",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Eirika'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Eirika",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eirika",
+                    "Brother... I'm sorry."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Eirika",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Eirika"
+                ]
+            ],
+            [
+                "remove_unit",
+                [
+                    "Eirika"
+                ]
+            ],
+            [
+                "lose_game",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": ""
+    }
+]

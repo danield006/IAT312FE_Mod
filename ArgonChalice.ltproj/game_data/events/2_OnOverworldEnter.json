@@ -1,0 +1,51 @@
+[
+    {
+        "name": "OnOverworldEnter",
+        "trigger": "overworld_start",
+        "level_nid": "2",
+        "condition": "True",
+        "commands": [
+            [
+                "sound",
+                [
+                    "RefreshDance"
+                ]
+            ],
+            [
+                "map_anim",
+                [
+                    "AOE_Mend",
+                    "Ide (5)"
+                ]
+            ],
+            [
+                "reveal_overworld_node",
+                [
+                    "Ide (5)"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "sound",
+                [
+                    "Mend"
+                ]
+            ],
+            [
+                "reveal_overworld_road",
+                [
+                    "Frelia Castle (2)",
+                    "Ide (5)"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": ""
+    }
+]

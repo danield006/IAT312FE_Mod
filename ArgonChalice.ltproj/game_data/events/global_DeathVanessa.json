@@ -1,0 +1,40 @@
+[
+    {
+        "name": "DeathVanessa",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Vanessa'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Vanessa",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Vanessa",
+                    "Please...|Forgive me..."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Vanessa",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Vanessa"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": ""
+    }
+]

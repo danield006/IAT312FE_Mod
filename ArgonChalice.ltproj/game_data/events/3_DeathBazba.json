@@ -1,0 +1,33 @@
+[
+    {
+        "name": "DeathBazba",
+        "trigger": "unit_death",
+        "level_nid": "3",
+        "condition": "unit.nid == \"Bazba\"",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Bazba",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Bazba",
+                    "I'm the...mighty...Bazba...{br}This...ain't--"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Bazba"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": ""
+    }
+]

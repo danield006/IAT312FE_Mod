@@ -1,0 +1,40 @@
+[
+    {
+        "name": "DeathLute",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Lute'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Lute",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lute",
+                    "I...{br}I don't want to die..."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Lute",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Lute"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": ""
+    }
+]

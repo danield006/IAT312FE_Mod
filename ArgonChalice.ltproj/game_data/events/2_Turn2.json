@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Turn2",
+        "trigger": "turn_change",
+        "level_nid": "2",
+        "condition": "game.turncount == 2",
+        "commands": [
+            [
+                "comment",
+                [
+                    "# On enemy's second turn, they start moving"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "104",
+                    "PursueVillage"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "105",
+                    "Pursue"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "BoneBuddy",
+                    "PursueVillage"
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "TopBandit",
+                    "PursueVillage"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": ""
+    }
+]

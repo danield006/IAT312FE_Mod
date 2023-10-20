@@ -1,0 +1,40 @@
+[
+    {
+        "name": "DeathSeth",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Seth'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Seth",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Urgh...|My apologies. I must withdraw."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Seth",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Seth"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": ""
+    }
+]
