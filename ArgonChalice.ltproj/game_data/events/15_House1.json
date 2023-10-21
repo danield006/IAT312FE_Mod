@@ -42,7 +42,7 @@
                 "speak",
                 [
                     "Man1",
-                    "Line1|Line2|Line3"
+                    "Have you gone through the options yet?|You can adjust the screen size, sounds, and disable mouse controls there.|You can even change the controls if you already have a preference!"
                 ]
             ],
             [
@@ -60,10 +60,16 @@
                 [
                     "Open"
                 ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Man1;Left;no_block\nadd_portrait;{unit};Right\nspeak;Man1;Line1|Line2|Line3\ntransition;Close\nchange_background\ntransition;Open\n\n"
+        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Man1;Left;no_block\nadd_portrait;{unit};Right\nspeak;Man1;Have you gone through the options yet?|You can adjust the screen size, sounds, and disable mouse controls there.|You can even change the controls if you already have a preference!\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
     }
 ]

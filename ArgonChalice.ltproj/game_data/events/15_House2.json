@@ -42,7 +42,17 @@
                 "speak",
                 [
                     "Man2",
-                    "Tutorial speech blah"
+                    "You can skip dialogue by pressing the back button.|If you don't need to read through the controls again, try it here!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Man2",
+                    "Use the arrow keys to control the cursor.|X will be your 'confirm' button. Press 'X' on yourself to move. |Z will be your 'cancel' button'.|C will be your 'details' button. Use it on units and menu options to get more info on them",
+                    "",
+                    "",
+                    "hint"
                 ]
             ],
             [
@@ -70,6 +80,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Man2;Left;no_block\nadd_portrait;{unit};Right\nspeak;Man2;Tutorial speech blah\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
+        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Man2;Left;no_block\nadd_portrait;{unit};Right\nspeak;Man2;You can skip dialogue by pressing the back button.|If you don't need to read through the controls again, try it here!\nspeak;Man2;Use the arrow keys to control the cursor.|X will be your 'confirm' button. Press 'X' on yourself to move. |Z will be your 'cancel' button'.|C will be your 'details' button. Use it on units and menu options to get more info on them;;;hint\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
     }
 ]

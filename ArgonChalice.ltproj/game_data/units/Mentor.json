@@ -1,0 +1,115 @@
+[
+    {
+        "nid": "Mentor",
+        "name": "Mentor",
+        "desc": "Mentor Description",
+        "variant": "",
+        "level": 1,
+        "klass": "Sage",
+        "tags": [],
+        "bases": {
+            "HP": 20,
+            "STR": 0,
+            "MAG": 5,
+            "SKL": 6,
+            "SPD": 5,
+            "LCK": 0,
+            "DEF": 5,
+            "RES": 6,
+            "CON": 7,
+            "MOV": 6
+        },
+        "growths": {
+            "HP": 45,
+            "STR": 0,
+            "MAG": 45,
+            "SKL": 30,
+            "SPD": 25,
+            "LCK": 15,
+            "DEF": 10,
+            "RES": 40,
+            "CON": 0,
+            "MOV": 0
+        },
+        "stat_cap_modifiers": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "starting_items": [
+            [
+                "Elfire",
+                false
+            ],
+            [
+                "Elixir",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                1,
+                "Inspiration"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0,
+                251
+            ],
+            "Lance": [
+                false,
+                0,
+                251
+            ],
+            "Axe": [
+                false,
+                0,
+                251
+            ],
+            "Bow": [
+                false,
+                0,
+                251
+            ],
+            "Staff": [
+                false,
+                251,
+                251
+            ],
+            "Light": [
+                false,
+                0,
+                251
+            ],
+            "Anima": [
+                false,
+                251,
+                251
+            ],
+            "Dark": [
+                false,
+                0,
+                251
+            ],
+            "Default": [
+                false,
+                0,
+                251
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "Saleh",
+        "affinity": "Anima",
+        "fields": []
+    }
+]

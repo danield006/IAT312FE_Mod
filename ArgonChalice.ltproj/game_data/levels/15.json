@@ -32,7 +32,46 @@
                 "roam_ai": null,
                 "ai_group": null,
                 "starting_position": [
-                    4,
+                    7,
+                    4
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Mentor",
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    7,
+                    3
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Colm",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    7,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Neimi",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    8,
                     4
                 ],
                 "starting_traveler": null,
@@ -54,7 +93,7 @@
                 "sub_nid": "Visit",
                 "condition": "True",
                 "time_left": null,
-                "only_once": true,
+                "only_once": false,
                 "interrupt_move": false
             },
             {
@@ -71,7 +110,58 @@
                 "sub_nid": "Visit",
                 "condition": "True",
                 "time_left": null,
-                "only_once": true,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "House3",
+                "region_type": "event",
+                "position": [
+                    1,
+                    3
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "House4",
+                "region_type": "event",
+                "position": [
+                    1,
+                    4
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "House5",
+                "region_type": "event",
+                "position": [
+                    1,
+                    5
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
                 "interrupt_move": false
             },
             {
@@ -109,9 +199,11 @@
                 "positions": {}
             },
             {
-                "nid": "EirikaSeth",
+                "nid": "Party",
                 "units": [
-                    "Eirika"
+                    "Eirika",
+                    "Colm",
+                    "Neimi"
                 ],
                 "positions": {}
             }

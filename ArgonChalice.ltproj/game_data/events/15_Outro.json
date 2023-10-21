@@ -54,6 +54,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "# Fade to black\ntransition;Close\nchange_background;InsideCastle\ntransition;Open\nadd_portrait;Eirika;OffscreenRight;immediate\nmove_portrait;Eirika;FarRight\nspeak;Eirika;We're done!\n\n"
+        "source": "# Fade to black\ntransition;Close\nchange_background;InsideCastle\ntransition;Open\nadd_portrait;Eirika;OffscreenRight;immediate\nmove_portrait;Eirika;FarRight\nspeak;Eirika;We're done!\n"
     }
 ]
