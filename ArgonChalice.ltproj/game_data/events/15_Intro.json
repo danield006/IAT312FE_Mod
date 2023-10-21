@@ -1,0 +1,96 @@
+[
+    {
+        "name": "Intro",
+        "trigger": "level_start",
+        "level_nid": "15",
+        "condition": "True",
+        "commands": [
+            [
+                "remove_unit",
+                [
+                    "Eirika",
+                    "immediate"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Eirika",
+                    "8,5",
+                    "immediate"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Eirika",
+                    "9,5"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "Forest"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Eirika",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eirika",
+                    "Tutorial map!|Go visit houses"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Eirika",
+                    "no_block"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Seth"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "remove_unit;Eirika;immediate\nadd_unit;Eirika;8,5;immediate\nmove_unit;Eirika;9,5\ntransition;close\nchange_background;Forest\ntransition;open\nadd_portrait;Eirika;Right\nspeak;Eirika;Tutorial map!|Go visit houses\ntransition;close\nchange_background\ntransition;open\nremove_portrait;Eirika;no_block\nremove_portrait;Seth\n"
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Outro",
+        "trigger": "level_end",
+        "level_nid": "15",
+        "condition": "True",
+        "commands": [
+            [
+                "comment",
+                [
+                    "# Fade to black"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "InsideCastle"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Eirika",
+                    "OffscreenRight",
+                    "immediate"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Eirika",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eirika",
+                    "We're done!"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "# Fade to black\ntransition;Close\nchange_background;InsideCastle\ntransition;Open\nadd_portrait;Eirika;OffscreenRight;immediate\nmove_portrait;Eirika;FarRight\nspeak;Eirika;We're done!\n\n"
+    }
+]

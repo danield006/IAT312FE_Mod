@@ -70,6 +70,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Man1;Left;no_block\nadd_portrait;{unit};Right\nspeak;Man1;The rumors are true, aren't they? The Grado army's taken over the castle|It looks like they've seized the castle gate, too.|Smart work--the gate provides defense and heals wounds to boot.|They must be fierce warriors to have taken the gate. Watch yourself.\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
     }
 ]

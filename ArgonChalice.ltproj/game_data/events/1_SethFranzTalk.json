@@ -71,6 +71,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "add_portrait;Franz;Left;no_block\nadd_portrait;Seth;Right\nspeak;Seth;Is that you, Franz? I'm relieved to see you're still in one piece!\nspeak;Franz;Y-yes...and you as well, General.|As long as you lead us, sir, the Knights of Renais cannot lose!\nspeak;Seth;Franz, you and I must work together to protect Princess Eirika.|I want you to ride with us.\nspeak;Franz;Sir! With honor, sir!\nremove_portrait;Franz;no_block\nremove_portrait;Seth\nremove_talk;Seth;Franz\n"
     }
 ]
