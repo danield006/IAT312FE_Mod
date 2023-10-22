@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Outro",
+        "trigger": "level_end",
+        "level_nid": "16",
+        "condition": "True",
+        "commands": [
+            [
+                "comment",
+                [
+                    "# Fade to black"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "InsideCastle"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Mentor (Mentor)",
+                    "Left"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Eirika",
+                    "Right",
+                    "immediate"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Well done, well done! You've completed the tutorial.|Because this is the tutorial, you won't be keeping any of the items or gold.|Just a heads up."
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "# Fade to black\ntransition;Close\nchange_background;InsideCastle\ntransition;Open\nadd_portrait;Mentor (Mentor);Left\nadd_portrait;Eirika;Right;immediate\n\nspeak;Mentor;Well done, well done! You've completed the tutorial.|Because this is the tutorial, you won't be keeping any of the items or gold.|Just a heads up.\n"
+    }
+]

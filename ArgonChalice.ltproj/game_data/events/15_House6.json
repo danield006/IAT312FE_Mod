@@ -1,0 +1,75 @@
+[
+    {
+        "name": "House6",
+        "trigger": "Visit",
+        "level_nid": "15",
+        "condition": "region.nid == 'House6'",
+        "commands": [
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "House"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Woman2",
+                    "Left",
+                    "no_block"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "{unit}",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Woman2",
+                    "Filler"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Woman2;Left;no_block\nadd_portrait;{unit};Right\nspeak;Woman2;Filler\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
+    }
+]

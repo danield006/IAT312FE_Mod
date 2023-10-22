@@ -83,6 +83,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "transition;Close\nchange_background;Town\ntransition;Open\nadd_portrait;Man3;Right;no_block\nadd_portrait;{unit};Left\nspeak;Man3;Hm? What is it? What's all the ruckus?|What? B-bandits?!|Spread the word, everyone!{br}Close the village gates!|Thank you for your warning.{br}Please, accept this small token.\ntransition;Close\nshow_layer;Village3\nchange_background\ntransition;Open\ngive_item;{unit};Pure Water\nhas_traded;{unit}\n"
     }
 ]

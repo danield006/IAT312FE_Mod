@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Vendor",
+        "trigger": "Vendor",
+        "level_nid": "16",
+        "condition": "game.turncount > 1",
+        "commands": [
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "shop",
+                [
+                    "{unit}",
+                    "Fire,Vulnerary,Door Key",
+                    "vendor"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "transition;Close\nshop;{unit};Fire,Vulnerary,Door Key;vendor\ntransition;Open\n"
+    }
+]

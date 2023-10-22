@@ -2,7 +2,7 @@
     {
         "nid": "15",
         "name": "Tutorial: Houses",
-        "tilemap": "New Tilemap",
+        "tilemap": "Tutorial:Houses",
         "bg_tilemap": null,
         "party": "Eirika",
         "music": {
@@ -30,7 +30,7 @@
                 "team": "player",
                 "ai": "None",
                 "roam_ai": null,
-                "ai_group": null,
+                "ai_group": "",
                 "starting_position": [
                     7,
                     4
@@ -153,6 +153,23 @@
                 "position": [
                     1,
                     5
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "House6",
+                "region_type": "event",
+                "position": [
+                    1,
+                    6
                 ],
                 "size": [
                     1,

@@ -35,6 +35,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "add_portrait;O'Neill;Right\nspeak;O'Neill;What was that? Do you think you can take me, wretched lordling?|Come! It's time you high-and-mighty knights learned to respect a true warrior!\nremove_portrait;O'Neill\nchange_ai;O'Neill;Defend\n"
     }
 ]

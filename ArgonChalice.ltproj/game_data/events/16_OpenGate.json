@@ -1,0 +1,35 @@
+[
+    {
+        "name": "OpenGate",
+        "trigger": "Door",
+        "level_nid": "16",
+        "condition": "region.nid == 'Gate'",
+        "commands": [
+            [
+                "unlock",
+                [
+                    "{unit}"
+                ]
+            ],
+            [
+                "show_layer",
+                [
+                    "Door"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "unlock;{unit}\nshow_layer;Door\nwait;1000\nwin_game\n"
+    }
+]

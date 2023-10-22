@@ -1,0 +1,82 @@
+[
+    {
+        "name": "showForts",
+        "trigger": "turn_change",
+        "level_nid": "16",
+        "condition": "game.turncount == 3",
+        "commands": [
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Trade the gear so that everyone is equipped with weapons!",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "show_layer",
+                [
+                    "Forts",
+                    "fade"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "3,6"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "3,7"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "3,8"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "The enemy will be approaching one at a time!|Let's use the terrain to our benefit here.|Terrain can provide avoid and defense bonuses.|Tiles like thrones and forts also provide healing per turn!|Careful though, enemies can use it too.",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Soldier (103)",
+                    "11,6",
+                    "immediate"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "3,6"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Eirika, move onto that fort to use the terrain against the cavalier! ",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;Mentor;Trade the gear so that everyone is equipped with weapons!;;;narration\nshow_layer;Forts;fade\nflicker_cursor;3,6\nflicker_cursor;3,7\nflicker_cursor;3,8\nspeak;Mentor;The enemy will be approaching one at a time!|Let's use the terrain to our benefit here.|Terrain can provide avoid and defense bonuses.|Tiles like thrones and forts also provide healing per turn!|Careful though, enemies can use it too.;;;narration\nadd_unit;Soldier (103);11,6;immediate\nflicker_cursor;3,6\nspeak;Mentor;Eirika, move onto that fort to use the terrain against the cavalier! ;;;narration\n"
+    }
+]

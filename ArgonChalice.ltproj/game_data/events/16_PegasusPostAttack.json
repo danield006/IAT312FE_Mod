@@ -1,0 +1,49 @@
+[
+    {
+        "name": "PegasusPostAttack",
+        "trigger": "turn_change",
+        "level_nid": "16",
+        "condition": "game.turncount == 4",
+        "commands": [
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Not bad, but the pegasus knight has weapon triangle advantage over you.|I'll explain the weapon triangle later but this is a job for Neimi.|Bows do extra damage against flying enemies. Use Neimi to finish them off",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Soldier (101)",
+                    "10,7",
+                    "immediate"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Soldier (102)",
+                    "11,8",
+                    "immediate"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Also don't worry about those 2, I've told them to stand where they are. ",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;Mentor;Not bad, but the pegasus knight has weapon triangle advantage over you.|I'll explain the weapon triangle later but this is a job for Neimi.|Bows do extra damage against flying enemies. Use Neimi to finish them off;;;narration\nadd_unit;Soldier (101);10,7;immediate\nadd_unit;Soldier (102);11,8;immediate\nspeak;Mentor;Also don't worry about those 2, I've told them to stand where they are. ;;;narration\n"
+    }
+]

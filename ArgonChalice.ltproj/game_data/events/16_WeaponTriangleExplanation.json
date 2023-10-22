@@ -1,0 +1,85 @@
+[
+    {
+        "name": "WeaponTriangleExplanation",
+        "trigger": "turn_change",
+        "level_nid": "16",
+        "condition": "game.turncount == 5",
+        "commands": [
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Alright let's explain the weapon triangle now",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "As the name suggests, weapons act in a triangle against one another.|If a weapon beats another, it'll gain bonus damage and hit rate|Likewise, if a weapon loses against another, it'll receive a damage and hit rate penalty.|Swords beat axes, axes beat lances, and lances beat swords.|Magic also has a triangle of its own|Anima beats holy, holy beats dark, and dark beats anima magic.|Bows exist outside of the weapon triangle all together, in return it can't fight back in melee range.",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Sorry that was probably a ton of information, but don't worry too much about it|You'll get the hang of it with practice.|In the battle previews, you'll see an indicator if you're winning or losing in the weapon triangle.",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Anyway, let's get back to figuring out how to tackle the enemies remaining.",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "Soldier (101)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "This is an axe fighter, as I mentioned swords beat axes.|He's on advantageous terrain and has 1-2 tile range.|Take advantage of the weapon triangle to beat him first",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "Soldier (102)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "This is an armored knight, he has a lance which beats swords.|He's on even better terrain but doesn't have range|Magic would be a good tool to cut through his defenses.",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;Mentor;Alright let's explain the weapon triangle now;;;narration\nspeak;Mentor;As the name suggests, weapons act in a triangle against one another.|If a weapon beats another, it'll gain bonus damage and hit rate|Likewise, if a weapon loses against another, it'll receive a damage and hit rate penalty.|Swords beat axes, axes beat lances, and lances beat swords.|Magic also has a triangle of its own|Anima beats holy, holy beats dark, and dark beats anima magic.|Bows exist outside of the weapon triangle all together, in return it can't fight back in melee range.;;;hint\nspeak;Mentor;Sorry that was probably a ton of information, but don't worry too much about it|You'll get the hang of it with practice.|In the battle previews, you'll see an indicator if you're winning or losing in the weapon triangle.;;;narration\nspeak;Mentor;Anyway, let's get back to figuring out how to tackle the enemies remaining.;;;narration\nflicker_cursor;Soldier (101)\nspeak;Mentor;This is an axe fighter, as I mentioned swords beat axes.|He's on advantageous terrain and has 1-2 tile range.|Take advantage of the weapon triangle to beat him first;;;narration\nflicker_cursor;Soldier (102)\nspeak;Mentor;This is an armored knight, he has a lance which beats swords.|He's on even better terrain but doesn't have range|Magic would be a good tool to cut through his defenses.;;;narration\n"
+    }
+]

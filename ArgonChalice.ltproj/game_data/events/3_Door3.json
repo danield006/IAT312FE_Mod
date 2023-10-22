@@ -20,6 +20,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "unlock;{unit}\nshow_layer;Door3\n"
     }
 ]

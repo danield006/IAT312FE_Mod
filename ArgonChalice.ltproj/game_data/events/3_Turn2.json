@@ -55,6 +55,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "remove_unit;Placeholder;immediate\nmove_cursor;0,5\nadd_unit;Colm;0,5\nflicker_cursor;Colm\nadd_portrait;Colm;Left\nspeak;Colm;And here we go!|Ha! And not a soul saw me. These bandits are easy picking.|I guess I might as well start with these chests here.\nmove_unit;Colm;2,4\n"
     }
 ]
