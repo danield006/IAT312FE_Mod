@@ -9,7 +9,7 @@
                 "speak",
                 [
                     "Mentor",
-                    "Armories only hold physical weapons.|Vendors hold magic tomes, staffs, and anything else they have.|Buy a fire tome, heal staff, and door key",
+                    "Armories only hold physical weapons.|Vendors hold magic tomes, staffs, and anything else they have.|Buy a fire tome, heal staff, Vulnerary, and door key",
                     "",
                     "",
                     "narration"
@@ -41,6 +41,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;Mentor;Armories only hold physical weapons.|Vendors hold magic tomes, staffs, and anything else they have.|Buy a fire tome, heal staff, and door key;;;narration\nshow_layer;Vendor;fade\nflicker_cursor;2,8\nspeak;Mentor;The max amount of gear any unit can hold is 5.|Getting any item past 5 will place the items into the convoy.|You can manage your current and convoy items by placing a unit next to Eirika and using the Convoy command.|Eirika can use the convoy whenever and wherever she wants;;;hint\n"
+        "source": "speak;Mentor;Armories only hold physical weapons.|Vendors hold magic tomes, staffs, and anything else they have.|Buy a fire tome, heal staff, Vulnerary, and door key;;;narration\nshow_layer;Vendor;fade\nflicker_cursor;2,8\nspeak;Mentor;The max amount of gear any unit can hold is 5.|Getting any item past 5 will place the items into the convoy.|You can manage your current and convoy items by placing a unit next to Eirika and using the Convoy command.|Eirika can use the convoy whenever and wherever she wants;;;hint\n"
     }
 ]

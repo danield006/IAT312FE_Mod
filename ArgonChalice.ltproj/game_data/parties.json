@@ -3,5 +3,10 @@
         "nid": "Eirika",
         "name": "Eirika's Group",
         "leader": "Eirika"
+    },
+    {
+        "nid": "TutorialParty",
+        "name": "Eirika's Group",
+        "leader": "Eirika_training"
     }
 ]

@@ -1,0 +1,188 @@
+[
+    {
+        "name": "Outro",
+        "trigger": "level_end",
+        "level_nid": "17",
+        "condition": "True",
+        "commands": [
+            [
+                "comment",
+                [
+                    "# Fade to black"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "DeepForest"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Neimi",
+                    "MidLeft"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Colm",
+                    "Right"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Eirika",
+                    "MidRight"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Eirika"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eirika",
+                    "No! Colm let go of me!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Colm",
+                    "Eirika we don't have time! We have to run!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eirika",
+                    "But..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Colm",
+                    "Eirika, teach got us outta there for a reason.|I don't know who that was but they were way stronger than teach.|He made sure that we were gonna be safe."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eirika",
+                    "Is he... dead?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Colm",
+                    "...."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Colm",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Neimi",
+                    "If he managed to warp us out, he might have been able to get away as well.|Colm do you know who Aesc is?"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Colm",
+                    "OpenEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Colm",
+                    "I have no clue...I'll have to look for information at towns.|We can't stay here either way.|Wait...I think teach warped us to Magni forest"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Neimi"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Neimi",
+                    "If I remember correctly, Greshia is north of here"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Colm",
+                    "Then we head to Greshia.|Eirika are you okay?"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Eirika",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Eirika",
+                    "OpenEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Eirika",
+                    "Yes... I'm sorry Colm, Neimi.. I..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Colm",
+                    "Don't worry about it, come on.|Before it gets too dark."
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "# Fade to black\ntransition;Close\nchange_background;DeepForest\ntransition;Open\nadd_portrait;Neimi;MidLeft\nadd_portrait;Colm;Right\nadd_portrait;Eirika;MidRight\nbop_portrait;Eirika\nspeak;Eirika;No! Colm let go of me!\nspeak;Colm;Eirika we don't have time! We have to run!\nspeak;Eirika;But...\nspeak;Colm;Eirika, teach got us outta there for a reason.|I don't know who that was but they were way stronger than teach.|He made sure that we were gonna be safe.\nspeak;Eirika;Is he... dead?\nspeak;Colm;....\nexpression;Colm;CloseEyes\nspeak;Neimi;If he managed to warp us out, he might have been able to get away as well.|Colm do you know who Aesc is?\nexpression;Colm;OpenEyes\nspeak;Colm;I have no clue...I'll have to look for information at towns.|We can't stay here either way.|Wait...I think teach warped us to Magni forest\nbop_portrait;Neimi\nspeak;Neimi;If I remember correctly, Greshia is north of here\nspeak;Colm;Then we head to Greshia.|Eirika are you okay?\nexpression;Eirika;CloseEyes\nwait;500\nexpression;Eirika;OpenEyes\nspeak;Eirika;Yes... I'm sorry Colm, Neimi.. I...\nspeak;Colm;Don't worry about it, come on.|Before it gets too dark.\n"
+    }
+]

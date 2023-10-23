@@ -242,5 +242,7 @@
     "map_sprite_dark_blue": 240,
     "map_sprite_dark_red": 241,
     "map_sprite_dark_green": 242,
-    "map_sprite_dark_wait": 243
+    "map_sprite_dark_wait": 243,
+    "New Palette_1": 244,
+    "New Palette_2": 245
 }

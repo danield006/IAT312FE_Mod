@@ -129,7 +129,7 @@
             0
         ],
         "map_sprite_nid": "Necromancer",
-        "combat_anim_nid": null,
+        "combat_anim_nid": "Necromancer",
         "fields": []
     }
 ]

@@ -54,6 +54,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "# Fade to black\ntransition;Close\nchange_background;InsideCastle\ntransition;Open\nadd_portrait;Mentor (Mentor);Left\nadd_portrait;Eirika;Right;immediate\n\nspeak;Mentor;Well done, well done! You've completed the tutorial.|Because this is the tutorial, you won't be keeping any of the items or gold.|Just a heads up.\n"
+        "source": "# Fade to black\ntransition;Close\nchange_background;InsideCastle\ntransition;Open\nadd_portrait;Mentor (Mentor);Left\nadd_portrait;Eirika;Right;immediate\nspeak;Mentor;Well done, well done! You've completed the tutorial.|Because this is the tutorial, you won't be keeping any of the items or gold.|Just a heads up.\n"
     }
 ]

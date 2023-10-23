@@ -27,6 +27,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "# Give access to the convoy\nchange_background;BlackBackground\ngame_var;_convoy;True\n"
     }
 ]

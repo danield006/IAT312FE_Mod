@@ -42,7 +42,7 @@
                 "speak",
                 [
                     "Man1",
-                    "Have you gone through the options yet?|You can adjust the screen size, sounds, and disable mouse controls there.|You can even change the controls if you already have a preference!"
+                    "Have you gone through the options yet?|You can adjust the screen size, sounds, and disable mouse controls there.|You can even change the controls if you already have a preference!|To open the options menu, press select on an empty space|That's X by default.|then scroll down to the options menu"
                 ]
             ],
             [
@@ -70,6 +70,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Man1;Left;no_block\nadd_portrait;{unit};Right\nspeak;Man1;Have you gone through the options yet?|You can adjust the screen size, sounds, and disable mouse controls there.|You can even change the controls if you already have a preference!\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
+        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Man1;Left;no_block\nadd_portrait;{unit};Right\nspeak;Man1;Have you gone through the options yet?|You can adjust the screen size, sounds, and disable mouse controls there.|You can even change the controls if you already have a preference!|To open the options menu, press select on an empty space|That's X by default.|then scroll down to the options menu\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
     }
 ]

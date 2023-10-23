@@ -15,7 +15,7 @@
                 "shop",
                 [
                     "{unit}",
-                    "Fire,Vulnerary,Door Key",
+                    "Fire,Heal,Vulnerary,Door Key",
                     "vendor"
                 ]
             ],
@@ -28,6 +28,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;Close\nshop;{unit};Fire,Vulnerary,Door Key;vendor\ntransition;Open\n"
+        "source": "transition;Close\nshop;{unit};Fire,Heal,Vulnerary,Door Key;vendor\ntransition;Open\n"
     }
 ]

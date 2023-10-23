@@ -34,11 +34,7 @@
         "stat_cap_modifiers": {},
         "starting_items": [
             [
-                "Nosferatu",
-                false
-            ],
-            [
-                "Fenrir",
+                "Flux",
                 false
             ]
         ],
@@ -93,7 +89,7 @@
         },
         "alternate_classes": [],
         "portrait_nid": "Lyon",
-        "affinity": null,
+        "affinity": "None",
         "fields": []
     }
 ]

@@ -34,7 +34,7 @@
                 "add_unit",
                 [
                     "Neimi_training",
-                    "5,6",
+                    "5,8",
                     "immediate"
                 ]
             ],
@@ -50,7 +50,7 @@
                 "add_unit",
                 [
                     "Eirika_training",
-                    "5,8",
+                    "5,6",
                     "immediate"
                 ]
             ],
@@ -205,10 +205,16 @@
                 [
                     "2,6"
                 ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "Eirika (Eirika_training)"
+                ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "remove_all_units\n#not usual case but show door open.\nshow_layer;Door;immediate\nadd_unit;Mentor;4,4;immediate\nadd_unit;Neimi_training;5,6;immediate\nadd_unit;Colm_training;5,7;immediate\nadd_unit;Eirika_training;5,8;immediate\nmove_unit;Mentor;6,2;normal\nwait;1000\nhide_layer;Door;immediate\nsound;Unlock\nmove_unit;Mentor;4,4;normal\ntransition;close\nchange_background;VillageGate\ntransition;open\nadd_portrait;Neimi_training;FarLeft\nadd_portrait;Colm_training;Left\nadd_portrait;Eirika_training;MidLeft\nadd_portrait;Mentor;FarRight\nspeak;Mentor;Let's begin your training.|This is gonna be a mock field experience.|I'll teach you the basics for fighting, buying items, open doors, and terrain.|Relax, everyone here will go easy on you. But don't get careless.\ntransition;close\nchange_background\ntransition;open\nremove_portrait;Eirika_training;no_block\nremove_portrait;Mentor;no_block\nend_skip\nspeak;Mentor;First let's get everyone equipped with some gear|Eirika, buy everyone some weapons.|Sell this gem to buy 1 of each weapon.;;;narration\ngive_item;Eirika (Eirika_training);Blue Gem (Blue Gem)\nshow_layer;Armory;fade\nflicker_cursor;2,6\n"
+        "source": "remove_all_units\n#not usual case but show door open.\nshow_layer;Door;immediate\nadd_unit;Mentor;4,4;immediate\nadd_unit;Neimi_training;5,8;immediate\nadd_unit;Colm_training;5,7;immediate\nadd_unit;Eirika_training;5,6;immediate\nmove_unit;Mentor;6,2;normal\nwait;1000\nhide_layer;Door;immediate\nsound;Unlock\nmove_unit;Mentor;4,4;normal\ntransition;close\nchange_background;VillageGate\ntransition;open\nadd_portrait;Neimi_training;FarLeft\nadd_portrait;Colm_training;Left\nadd_portrait;Eirika_training;MidLeft\nadd_portrait;Mentor;FarRight\nspeak;Mentor;Let's begin your training.|This is gonna be a mock field experience.|I'll teach you the basics for fighting, buying items, open doors, and terrain.|Relax, everyone here will go easy on you. But don't get careless.\ntransition;close\nchange_background\ntransition;open\nremove_portrait;Eirika_training;no_block\nremove_portrait;Mentor;no_block\nend_skip\nspeak;Mentor;First let's get everyone equipped with some gear|Eirika, buy everyone some weapons.|Sell this gem to buy 1 of each weapon.;;;narration\ngive_item;Eirika (Eirika_training);Blue Gem (Blue Gem)\nshow_layer;Armory;fade\nflicker_cursor;2,6\nflicker_cursor;Eirika (Eirika_training)\n"
     }
 ]

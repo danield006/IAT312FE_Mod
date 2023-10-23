@@ -8,14 +8,14 @@
         "klass": "Sage",
         "tags": [],
         "bases": {
-            "HP": 20,
+            "HP": 45,
             "STR": 0,
-            "MAG": 5,
-            "SKL": 6,
-            "SPD": 5,
+            "MAG": 15,
+            "SKL": 20,
+            "SPD": 15,
             "LCK": 0,
-            "DEF": 5,
-            "RES": 6,
+            "DEF": 10,
+            "RES": 13,
             "CON": 7,
             "MOV": 6
         },
@@ -45,7 +45,7 @@
         },
         "starting_items": [
             [
-                "Elfire",
+                "Fire",
                 false
             ],
             [

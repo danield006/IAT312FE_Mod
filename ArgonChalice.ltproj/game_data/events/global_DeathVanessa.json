@@ -35,6 +35,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "add_portrait;Vanessa;FarRight\nspeak;Vanessa;Please...|Forgive me...\nexpression;Vanessa;CloseEyes\nremove_portrait;Vanessa\n"
     }
 ]
