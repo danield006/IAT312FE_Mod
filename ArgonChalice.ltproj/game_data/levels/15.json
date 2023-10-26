@@ -4,7 +4,7 @@
         "name": "Tutorial: Houses",
         "tilemap": "Tutorial:Houses",
         "bg_tilemap": null,
-        "party": "Eirika",
+        "party": "MC",
         "music": {
             "player_phase": "Distant Roads",
             "enemy_phase": "Shadow of the Enemy",

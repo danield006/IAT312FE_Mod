@@ -4,7 +4,7 @@
         "name": "Prologue: Attacked",
         "tilemap": "Chapter 14B_1",
         "bg_tilemap": null,
-        "party": "Eirika",
+        "party": "MC",
         "music": {},
         "objective": {
             "simple": "",

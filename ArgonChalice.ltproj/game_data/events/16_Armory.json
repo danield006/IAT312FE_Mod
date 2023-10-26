@@ -15,7 +15,7 @@
                 "shop",
                 [
                     "{unit}",
-                    "Iron Sword,Iron Bow"
+                    "Iron Sword,Iron Lance,Iron Axe,Iron Bow"
                 ]
             ],
             [
@@ -27,6 +27,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;Close\nshop;{unit};Iron Sword,Iron Bow\ntransition;Open\n"
+        "source": "transition;Close\nshop;{unit};Iron Sword,Iron Lance,Iron Axe,Iron Bow\ntransition;Open\n"
     }
 ]

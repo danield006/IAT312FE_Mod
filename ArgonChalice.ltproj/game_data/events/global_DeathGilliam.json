@@ -35,6 +35,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "add_portrait;Gilliam;FarRight\nspeak;Gilliam;I was prepared for...{br}anything...\nexpression;Gilliam;CloseEyes\nremove_portrait;Gilliam\n"
     }
 ]

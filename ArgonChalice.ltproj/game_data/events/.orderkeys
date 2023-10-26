@@ -128,7 +128,7 @@
     "2_OnLevelSelect.json": 126,
     "16_Armory.json": 127,
     "16_Vendor.json": 128,
-    "16_showVendor.json": 129,
+    "16_showVendorAndEnableConvoy.json": 129,
     "16_showForts.json": 130,
     "16_PegasusPostAttack.json": 131,
     "16_TutorialOver.json": 132,

@@ -180,7 +180,7 @@
                 "speak",
                 [
                     "Mentor",
-                    "First let's get everyone equipped with some gear|Eirika, buy everyone some weapons.|Sell this gem to buy 1 of each weapon.",
+                    "First let's get everyone equipped with some gear|MC, buy everyone some weapons.|Sell this gem to buy 1 of each weapon.",
                     "",
                     "",
                     "narration"
@@ -215,6 +215,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "remove_all_units\n#not usual case but show door open.\nshow_layer;Door;immediate\nadd_unit;Mentor;4,4;immediate\nadd_unit;Senya_1;5,8;immediate\nadd_unit;Schuri_1;5,7;immediate\nadd_unit;MC_1;5,6;immediate\nmove_unit;Mentor;6,2;normal\nwait;1000\nhide_layer;Door;immediate\nsound;Unlock\nmove_unit;Mentor;4,4;normal\ntransition;close\nchange_background;VillageGate\ntransition;open\nadd_portrait;Senya_1;FarLeft\nadd_portrait;Schuri_1;Left\nadd_portrait;MC_1;MidLeft\nadd_portrait;Mentor;FarRight\nspeak;Mentor;Let's begin your training.|This is gonna be a mock field experience.|I'll teach you the basics for fighting, buying items, open doors, and terrain.|Relax, everyone here will go easy on you. But don't get careless.\ntransition;close\nchange_background\ntransition;open\nremove_portrait;MC_1;no_block\nremove_portrait;Mentor;no_block\nend_skip\nspeak;Mentor;First let's get everyone equipped with some gear|Eirika, buy everyone some weapons.|Sell this gem to buy 1 of each weapon.;;;narration\ngive_item;MC_1;Blue Gem (Blue Gem)\nshow_layer;Armory;fade\nflicker_cursor;2,6\nflicker_cursor;MC_1\n"
+        "source": "remove_all_units\n#not usual case but show door open.\nshow_layer;Door;immediate\nadd_unit;Mentor;4,4;immediate\nadd_unit;Senya_1;5,8;immediate\nadd_unit;Schuri_1;5,7;immediate\nadd_unit;MC_1;5,6;immediate\nmove_unit;Mentor;6,2;normal\nwait;1000\nhide_layer;Door;immediate\nsound;Unlock\nmove_unit;Mentor;4,4;normal\ntransition;close\nchange_background;VillageGate\ntransition;open\nadd_portrait;Senya_1;FarLeft\nadd_portrait;Schuri_1;Left\nadd_portrait;MC_1;MidLeft\nadd_portrait;Mentor;FarRight\nspeak;Mentor;Let's begin your training.|This is gonna be a mock field experience.|I'll teach you the basics for fighting, buying items, open doors, and terrain.|Relax, everyone here will go easy on you. But don't get careless.\ntransition;close\nchange_background\ntransition;open\nremove_portrait;MC_1;no_block\nremove_portrait;Mentor;no_block\nend_skip\nspeak;Mentor;First let's get everyone equipped with some gear|MC, buy everyone some weapons.|Sell this gem to buy 1 of each weapon.;;;narration\ngive_item;MC_1;Blue Gem (Blue Gem)\nshow_layer;Armory;fade\nflicker_cursor;2,6\nflicker_cursor;MC_1\n"
     }
 ]

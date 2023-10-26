@@ -1,12 +1,12 @@
 [
     {
-        "nid": "Eirika",
-        "name": "Eirika's Group",
-        "leader": "Eirika"
+        "nid": "MC",
+        "name": "MC's Group",
+        "leader": "MC"
     },
     {
         "nid": "TutorialParty",
-        "name": "Eirika's Group",
-        "leader": "Eirika_training"
+        "name": "MC's Group",
+        "leader": "MC_1"
     }
 ]

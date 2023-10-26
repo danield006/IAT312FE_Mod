@@ -73,6 +73,22 @@
                 ]
             ],
             [
+                "if",
+                [
+                    "_convoy == false"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#_convoy = true"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
                 "transition",
                 [
                     "close"
@@ -284,6 +300,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "remove_all_units\nwait;1000\nadd_unit;Senya_1;7,3;immediate;stack\nmove_unit;Senya_1;6,5\nadd_unit;Schuri_1;7,3;immediate;stack\nmove_unit;Schuri_1;8,5\nadd_unit;MC_1;7,3;immediate;stack\nmove_unit;MC_1;7,5\nadd_unit;Mentor;7,3;immediate;stack\ntransition;close\nchange_background;VillageGate\ntransition;open\nadd_portrait;Senya_1;FarRight\nmove_portrait;Senya_1;FarLeft\nadd_portrait;Schuri_1;FarRight\nmove_portrait;Schuri_1;Left\nadd_portrait;MC_1;FarRight\nmove_portrait;MC_1;MidLeft\nremove_portrait;Senya_1\nremove_portrait;Schuri_1\nremove_portrait;MC_1\nadd_portrait;Senya_1;FarLeft\nadd_portrait;Schuri_1;Left\nadd_portrait;MC_1;MidLeft\nadd_portrait;Mentor;FarRight\nspeak;Mentor;This is a tutorial map |Go visit houses and villages to learn more about the controls.\nspeak;MC_1;How do I move?\nspeak;Mentor;Use the arrow keys to control the cursor.|X will be your 'select' button. Press 'X' on yourself to move.|Z will be your 'cancel' button'.|C will be your 'details' button. Use it on units and menu options to get more info on them;;;hint\nspeak;Mentor;Visit the houses if you need a refresher on the controls.|If you want to visit houses and villages|Move your unit onto the tile it's located and select Visit.\nspeak;Mentor;I'll be waiting inside the castle. Take your time.\nspeak;Mentor;Seize the castle when you're ready to continue your training.\nremove_unit;Mentor;fade\ntransition;close\nchange_background\ntransition;open\nremove_portrait;MC_1;no_block\nremove_portrait;Mentor;no_block\nmove_unit;Schuri_1;2,4\nmove_unit;Senya_1;0,4\nmove_unit;MC_1;1,3\n"
+        "source": "remove_all_units\nwait;1000\nadd_unit;Senya_1;7,3;immediate;stack\nmove_unit;Senya_1;6,5\nadd_unit;Schuri_1;7,3;immediate;stack\nmove_unit;Schuri_1;8,5\nadd_unit;MC_1;7,3;immediate;stack\nmove_unit;MC_1;7,5\nadd_unit;Mentor;7,3;immediate;stack\nif;_convoy == false\n    #_convoy = true\nend\ntransition;close\nchange_background;VillageGate\ntransition;open\nadd_portrait;Senya_1;FarRight\nmove_portrait;Senya_1;FarLeft\nadd_portrait;Schuri_1;FarRight\nmove_portrait;Schuri_1;Left\nadd_portrait;MC_1;FarRight\nmove_portrait;MC_1;MidLeft\nremove_portrait;Senya_1\nremove_portrait;Schuri_1\nremove_portrait;MC_1\nadd_portrait;Senya_1;FarLeft\nadd_portrait;Schuri_1;Left\nadd_portrait;MC_1;MidLeft\nadd_portrait;Mentor;FarRight\nspeak;Mentor;This is a tutorial map |Go visit houses and villages to learn more about the controls.\nspeak;MC_1;How do I move?\nspeak;Mentor;Use the arrow keys to control the cursor.|X will be your 'select' button. Press 'X' on yourself to move.|Z will be your 'cancel' button'.|C will be your 'details' button. Use it on units and menu options to get more info on them;;;hint\nspeak;Mentor;Visit the houses if you need a refresher on the controls.|If you want to visit houses and villages|Move your unit onto the tile it's located and select Visit.\nspeak;Mentor;I'll be waiting inside the castle. Take your time.\nspeak;Mentor;Seize the castle when you're ready to continue your training.\nremove_unit;Mentor;fade\ntransition;close\nchange_background\ntransition;open\nremove_portrait;MC_1;no_block\nremove_portrait;Mentor;no_block\nmove_unit;Schuri_1;2,4\nmove_unit;Senya_1;0,4\nmove_unit;MC_1;1,3\n"
     }
 ]

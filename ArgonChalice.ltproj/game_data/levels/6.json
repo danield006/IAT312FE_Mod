@@ -4,7 +4,7 @@
         "name": "Chapter 6",
         "tilemap": "Chapter 14B_1",
         "bg_tilemap": "Chapter 14B_1",
-        "party": "Eirika",
+        "party": "MC",
         "music": {},
         "objective": {
             "simple": "",

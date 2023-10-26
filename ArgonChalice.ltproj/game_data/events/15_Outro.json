@@ -75,6 +75,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "# Fade to black\ntransition;Close\nchange_background;InsideCastle\ntransition;Open\nadd_portrait;MC_1;OffscreenRight;immediate\nmove_portrait;MC_1;FarRight\nspeak;MC_1;Hey teach! We're done.\nadd_portrait;Mentor;Left;left\nspeak;Mentor;Good, let's continue with the battle training\ntransition;Close"
+        "source": "# Fade to black\ntransition;Close\nchange_background;InsideCastle\ntransition;Open\nadd_portrait;MC_1;OffscreenRight;immediate\nmove_portrait;MC_1;FarRight\nspeak;MC_1;Hey teach! We're done.\nadd_portrait;Mentor;Left;left\nspeak;Mentor;Good, let's continue with the battle training\ntransition;Close\n"
     }
 ]

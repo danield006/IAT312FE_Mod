@@ -3,7 +3,7 @@
         "name": "TutorialOver",
         "trigger": "unit_death",
         "level_nid": "16",
-        "condition": "(len(game.get_enemy_units()) == 0) && game.turncount > 5",
+        "condition": "(len(game.get_enemy_units()) == 0)",
         "commands": [
             [
                 "speak",

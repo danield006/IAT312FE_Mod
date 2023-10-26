@@ -82,7 +82,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Defend",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
@@ -106,7 +106,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Defend",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
@@ -119,7 +119,7 @@
             {
                 "nid": "103",
                 "variant": null,
-                "level": 1,
+                "level": 15,
                 "klass": "Pegasus_Knight",
                 "faction": "Soldier",
                 "starting_items": [
