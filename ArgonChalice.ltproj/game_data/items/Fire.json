@@ -82,6 +82,10 @@
             [
                 "magic",
                 null
+            ],
+            [
+                "battle_cast_anim",
+                "Fire"
             ]
         ]
     }

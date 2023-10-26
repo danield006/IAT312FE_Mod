@@ -40,6 +40,10 @@
             [
                 "Vulnerary",
                 false
+            ],
+            [
+                "Heal",
+                false
             ]
         ],
         "learned_skills": [],

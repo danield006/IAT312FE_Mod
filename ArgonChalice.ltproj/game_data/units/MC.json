@@ -45,7 +45,24 @@
             "CON": 0,
             "MOV": 0
         },
-        "starting_items": [],
+        "starting_items": [
+            [
+                "Iron Lance",
+                false
+            ],
+            [
+                "Iron Sword",
+                false
+            ],
+            [
+                "Heal",
+                false
+            ],
+            [
+                "Vulnerary",
+                false
+            ]
+        ],
         "learned_skills": [],
         "unit_notes": [],
         "wexp_gain": {

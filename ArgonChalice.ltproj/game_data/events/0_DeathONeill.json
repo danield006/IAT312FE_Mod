@@ -35,6 +35,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "add_portrait;O'Neill;Left\nspeak;O'Neill;What? How?\nexpression;O'Neill;CloseEyes\nremove_portrait;O'Neill\n"
     }
 ]

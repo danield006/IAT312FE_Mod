@@ -26,19 +26,6 @@
         "should_record": true,
         "units": [
             {
-                "nid": "Eirika",
-                "team": "player",
-                "ai": "None",
-                "roam_ai": null,
-                "ai_group": null,
-                "starting_position": [
-                    2,
-                    2
-                ],
-                "starting_traveler": null,
-                "generic": false
-            },
-            {
                 "nid": "Seth",
                 "team": "player",
                 "ai": "None",
@@ -108,6 +95,32 @@
                 "starting_position": [
                     10,
                     8
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "MC",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    4,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Natasha",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    5,
+                    5
                 ],
                 "starting_traveler": null,
                 "generic": false

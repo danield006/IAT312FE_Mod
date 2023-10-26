@@ -28,6 +28,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": ""
+        "source": "add_portrait;Seth;Left\nspeak;Seth;All that's left is their leader...\nremove_portrait;Seth\n"
     }
 ]

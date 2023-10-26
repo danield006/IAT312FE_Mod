@@ -15,7 +15,7 @@
             [
                 "remove_unit",
                 [
-                    "Eirika",
+                    "MC",
                     "immediate"
                 ]
             ],
@@ -50,7 +50,7 @@
             [
                 "add_unit",
                 [
-                    "Eirika",
+                    "MC",
                     "8,5",
                     "immediate",
                     "stack"
@@ -59,113 +59,8 @@
             [
                 "move_unit",
                 [
-                    "Eirika",
+                    "MC",
                     "9,5"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "close"
-                ]
-            ],
-            [
-                "change_background",
-                [
-                    "Forest"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "open"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Seth",
-                    "Left",
-                    "no_block"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Eirika",
-                    "Right"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Seth",
-                    "Princess Eirika! This way! I can see no more of Grado's men.|If we've made it this far, we've surely earned a moment's rest.|Please forgive my grabbing you so...brusquely earlier."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Eirika",
-                    "Don't be foolish, Seth.|If it weren't for you, I would never have made it out of the castle.|You are the reason I'm still alive. You have my gratitude."
-                ]
-            ],
-            [
-                "move_portrait",
-                [
-                    "Eirika",
-                    "CenterRight"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Eirika",
-                    "And whoever that man was, he was clearly after me...|It's my fault that you received such a grave wound.|Allow me to treat it, I--"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Seth",
-                    "Your Highness, I can't allow an injury like this to be an obstacle.|We have more important matters to attend to. We must press on to Frelia.|We must fulfill His Majesty's wishes."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Eirika",
-                    "...|I wonder how my father fares alone in the castle. Do you think he's safe?|And what of my brother on the Grado front? We've heard nothing from him for days."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Seth",
-                    "King Fado and Prince Ephraim are both valiant and brave men.|I doubt even the might of the Grado Empire can hold them in check.|More important to me, Your Highness, is that you look to your own safety.|How sad the two of them would be if something were to happen to you.|We must reach Frelia to ensure the day of your happy reunion."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Eirika",
-                    "Yes, of course. You're right.|Until I'm reunited with my father and brother, I must not despair.|Come, Seth. Let us go."
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "close"
-                ]
-            ],
-            [
-                "change_background",
-                []
-            ],
-            [
-                "transition",
-                [
-                    "open"
                 ]
             ],
             [
@@ -198,7 +93,7 @@
             [
                 "move_unit",
                 [
-                    "Eirika",
+                    "MC",
                     "4,5"
                 ]
             ],
@@ -229,7 +124,7 @@
             [
                 "add_portrait",
                 [
-                    "Eirika",
+                    "MC",
                     "Left",
                     "no_block"
                 ]
@@ -264,7 +159,7 @@
             [
                 "remove_item",
                 [
-                    "Eirika",
+                    "MC",
                     "Rapier",
                     "no_banner"
                 ]
@@ -272,7 +167,7 @@
             [
                 "give_item",
                 [
-                    "Eirika",
+                    "MC",
                     "Rapier"
                 ]
             ],
@@ -342,7 +237,7 @@
             [
                 "add_portrait",
                 [
-                    "Eirika",
+                    "MC",
                     "MidLeft",
                     "no_block"
                 ]
@@ -364,14 +259,14 @@
             [
                 "speak",
                 [
-                    "Eirika",
+                    "MC",
                     "It's all right, Seth.|My brother has taught me something of swordplay.|I will stand with you."
                 ]
             ],
             [
                 "remove_portrait",
                 [
-                    "Eirika",
+                    "MC",
                     "no_block"
                 ]
             ],
@@ -380,10 +275,17 @@
                 [
                     "Seth"
                 ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Natasha (Natasha)",
+                    "3,4"
+                ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "set_current_hp;Seth;12\nremove_unit;Eirika;immediate\nremove_unit;Seth;immediate\nremove_group;Enemy1;immediate\nadd_unit;Seth;14,9\nmove_unit;Seth;8,5\nadd_unit;Eirika;8,5;immediate;stack\nmove_unit;Eirika;9,5\ntransition;close\nchange_background;Forest\ntransition;open\nadd_portrait;Seth;Left;no_block\nadd_portrait;Eirika;Right\nspeak;Seth;Princess Eirika! This way! I can see no more of Grado's men.|If we've made it this far, we've surely earned a moment's rest.|Please forgive my grabbing you so...brusquely earlier.\nspeak;Eirika;Don't be foolish, Seth.|If it weren't for you, I would never have made it out of the castle.|You are the reason I'm still alive. You have my gratitude.\nmove_portrait;Eirika;CenterRight\nspeak;Eirika;And whoever that man was, he was clearly after me...|It's my fault that you received such a grave wound.|Allow me to treat it, I--\nspeak;Seth;Your Highness, I can't allow an injury like this to be an obstacle.|We have more important matters to attend to. We must press on to Frelia.|We must fulfill His Majesty's wishes.\nspeak;Eirika;...|I wonder how my father fares alone in the castle. Do you think he's safe?|And what of my brother on the Grado front? We've heard nothing from him for days.\nspeak;Seth;King Fado and Prince Ephraim are both valiant and brave men.|I doubt even the might of the Grado Empire can hold them in check.|More important to me, Your Highness, is that you look to your own safety.|How sad the two of them would be if something were to happen to you.|We must reach Frelia to ensure the day of your happy reunion.\nspeak;Eirika;Yes, of course. You're right.|Until I'm reunited with my father and brother, I must not despair.|Come, Seth. Let us go.\ntransition;close\nchange_background\ntransition;open\nmove_unit;Seth;4,4\nadd_portrait;Seth;Left\nspeak;Seth;Once we cross that bridge, we will be in Frelia, near Border Mulan.|Let us proceed, Princess Eirika.\nremove_portrait;Seth\nmove_unit;Eirika;4,5\nmove_cursor;Seth\ndisp_cursor;1\nwait;1000\ndisp_cursor;0\nadd_portrait;Eirika;Left;no_block\nadd_portrait;Seth;Right\nspeak;Seth;Your highness, I won't lie to you. This will not be an easy ride.|Please, take this rapier.{br}If something should happen to me|you must continue to Frelia,{br}alone if need be.\nremove_portrait;Seth;no_block\nremove_portrait;Eirika\nremove_item;Eirika;Rapier;no_banner\ngive_item;Eirika;Rapier\nadd_group;Enemy1\nmove_group;Enemy1;Starting\nwait;1000\nmove_cursor;O'Neill\ndisp_cursor;1\nwait;1000\ndisp_cursor;0\nadd_portrait;O'Neill;Right\nspeak;O'Neill;You there! Renais dogs! Where do you think you're going?\nremove_portrait;O'Neill\nadd_portrait;Eirika;MidLeft;no_block\nadd_portrait;Seth;FarLeft\nspeak;Seth;Grado's men...|Stand back, Princess Eirika.\nspeak;Eirika;It's all right, Seth.|My brother has taught me something of swordplay.|I will stand with you.\nremove_portrait;Eirika;no_block\nremove_portrait;Seth\n"
+        "source": "set_current_hp;Seth;12\nremove_unit;MC;immediate\nremove_unit;Seth;immediate\nremove_group;Enemy1;immediate\nadd_unit;Seth;14,9\nmove_unit;Seth;8,5\nadd_unit;MC;8,5;immediate;stack\nmove_unit;MC;9,5\nmove_unit;Seth;4,4\nadd_portrait;Seth;Left\nspeak;Seth;Once we cross that bridge, we will be in Frelia, near Border Mulan.|Let us proceed, Princess Eirika.\nremove_portrait;Seth\nmove_unit;MC;4,5\nmove_cursor;Seth\ndisp_cursor;1\nwait;1000\ndisp_cursor;0\nadd_portrait;MC;Left;no_block\nadd_portrait;Seth;Right\nspeak;Seth;Your highness, I won't lie to you. This will not be an easy ride.|Please, take this rapier.{br}If something should happen to me|you must continue to Frelia,{br}alone if need be.\nremove_portrait;Seth;no_block\nremove_portrait;Eirika\nremove_item;MC;Rapier;no_banner\ngive_item;MC;Rapier\nadd_group;Enemy1\nmove_group;Enemy1;Starting\nwait;1000\nmove_cursor;O'Neill\ndisp_cursor;1\nwait;1000\ndisp_cursor;0\nadd_portrait;O'Neill;Right\nspeak;O'Neill;You there! Renais dogs! Where do you think you're going?\nremove_portrait;O'Neill\nadd_portrait;MC;MidLeft;no_block\nadd_portrait;Seth;FarLeft\nspeak;Seth;Grado's men...|Stand back, Princess Eirika.\nspeak;MC;It's all right, Seth.|My brother has taught me something of swordplay.|I will stand with you.\nremove_portrait;MC;no_block\nremove_portrait;Seth\nadd_unit;Natasha (Natasha);3,4"
     }
 ]

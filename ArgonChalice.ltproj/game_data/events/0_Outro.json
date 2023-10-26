@@ -34,7 +34,7 @@
             [
                 "add_portrait",
                 [
-                    "Eirika",
+                    "MC",
                     "Right"
                 ]
             ],
@@ -48,7 +48,7 @@
             [
                 "speak",
                 [
-                    "Eirika",
+                    "MC",
                     "What?|Oh, no...{br}I'm fine, Seth."
                 ]
             ],
@@ -62,7 +62,7 @@
             [
                 "speak",
                 [
-                    "Eirika",
+                    "MC",
                     "I'm fine... Fine.|...This is war, isn't it?|It's not at all like the games I used to play with my brother or Lyon.|I never thought-- I didn't know it would be this...savage.|Are words useless? Is strength all that matters? It's so sad...|Why would the Grado Empire do this? To what end would they start a war?"
                 ]
             ],
@@ -76,7 +76,7 @@
             [
                 "speak",
                 [
-                    "Eirika",
+                    "MC",
                     "...Don't worry, Seth. I won't give in to sorrow.|Let's get moving.|I'm not broken, and I won't stop until I see Renais restored.|I won't stop until I'm reunited with my father and brother."
                 ]
             ],
@@ -89,6 +89,6 @@
         ],
         "only_once": false,
         "priority": 22,
-        "source": "transition;Close\nchange_background;Forest\ntransition;Open\nadd_portrait;Seth;Left;no_block\nadd_portrait;Eirika;Right\nspeak;Seth;Princess, are you injured?\nspeak;Eirika;What?|Oh, no...{br}I'm fine, Seth.\nspeak;Seth;But you look so pale...\nspeak;Eirika;I'm fine... Fine.|...This is war, isn't it?|It's not at all like the games I used to play with my brother or Lyon.|I never thought-- I didn't know it would be this...savage.|Are words useless? Is strength all that matters? It's so sad...|Why would the Grado Empire do this? To what end would they start a war?\nspeak;Seth;Princess...\nspeak;Eirika;...Don't worry, Seth. I won't give in to sorrow.|Let's get moving.|I'm not broken, and I won't stop until I see Renais restored.|I won't stop until I'm reunited with my father and brother.\ntransition;Close\n"
+        "source": "transition;Close\nchange_background;Forest\ntransition;Open\nadd_portrait;Seth;Left;no_block\nadd_portrait;MC;Right\nspeak;Seth;Princess, are you injured?\nspeak;MC;What?|Oh, no...{br}I'm fine, Seth.\nspeak;Seth;But you look so pale...\nspeak;MC;I'm fine... Fine.|...This is war, isn't it?|It's not at all like the games I used to play with my brother or Lyon.|I never thought-- I didn't know it would be this...savage.|Are words useless? Is strength all that matters? It's so sad...|Why would the Grado Empire do this? To what end would they start a war?\nspeak;Seth;Princess...\nspeak;MC;...Don't worry, Seth. I won't give in to sorrow.|Let's get moving.|I'm not broken, and I won't stop until I see Renais restored.|I won't stop until I'm reunited with my father and brother.\ntransition;Close\n"
     }
 ]

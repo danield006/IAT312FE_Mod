@@ -70,6 +70,10 @@
             [
                 "magic_heal",
                 10
+            ],
+            [
+                "battle_cast_anim",
+                "Heal"
             ]
         ]
     }
