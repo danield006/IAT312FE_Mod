@@ -83,6 +83,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "transition;Close\nchange_background;Town\ntransition;Open\nadd_portrait;Woman2;Right;no_block\nadd_portrait;{unit};Left\nspeak;Woman2;The most wonderful man rescued me.|He was dressed like a mercenary, but he had an air of elegance about him...|He gave me this elixir. I'm sure it will help you on the battlefield.\ntransition;Close\nshow_layer;Village2\nchange_background\ntransition;Open\ngive_item;{unit};Elixir\nhas_traded;{unit}\n"
     }
 ]

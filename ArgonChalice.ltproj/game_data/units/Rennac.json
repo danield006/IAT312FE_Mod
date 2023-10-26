@@ -3,7 +3,7 @@
         "nid": "Rennac",
         "name": "Rennac",
         "desc": "A lazy, greedy, but exceptional fighter from the Republic of Carcino.",
-        "variant": null,
+        "variant": "",
         "level": 1,
         "klass": "Rogue",
         "tags": [],

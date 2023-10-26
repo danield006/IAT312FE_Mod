@@ -30,7 +30,7 @@
                 "generic": false
             },
             {
-                "nid": "Colm_training",
+                "nid": "Schuri_1",
                 "team": "player",
                 "ai": "None",
                 "roam_ai": null,
@@ -43,7 +43,7 @@
                 "generic": false
             },
             {
-                "nid": "Eirika_training",
+                "nid": "MC_1",
                 "team": "player",
                 "ai": "None",
                 "roam_ai": null,
@@ -56,7 +56,7 @@
                 "generic": false
             },
             {
-                "nid": "Neimi_training",
+                "nid": "Senya_1",
                 "team": "player",
                 "ai": "None",
                 "roam_ai": null,
@@ -154,9 +154,9 @@
             {
                 "nid": "Party",
                 "units": [
-                    "Colm_training",
-                    "Eirika_training",
-                    "Neimi_training"
+                    "Schuri_1",
+                    "MC_1",
+                    "Senya_1"
                 ],
                 "positions": {}
             }

@@ -26,7 +26,7 @@
             [
                 "add_portrait",
                 [
-                    "Woman2",
+                    "SoldierBlue",
                     "Left",
                     "no_block"
                 ]
@@ -41,8 +41,22 @@
             [
                 "speak",
                 [
-                    "Woman2",
-                    "Filler"
+                    "SoldierBlue",
+                    "Hey have you noticed how much terrain affects movement?|Forest, Thickets, Mountains all slow down our movement!|If you're on a horse, it slows you down even more!|Only a few classes can ignore some of the movement penalties."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "SoldierBlue",
+                    "Flying units can just fly over terrain entirely...|lucky...|It's not all bad though, terrain also affects combat!|I'm sure your mentor will teach you more on that though|But flying units don't benefit from the terrain as a result."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "SoldierBlue",
+                    "Don't get me started on impassable tiles though|Lake and ocean tiles are impassable for everyone but pirates and flying units"
                 ]
             ],
             [
@@ -70,6 +84,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Woman2;Left;no_block\nadd_portrait;{unit};Right\nspeak;Woman2;Filler\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
+        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;SoldierBlue;Left;no_block\nadd_portrait;{unit};Right\nspeak;SoldierBlue;Hey have you noticed how much terrain affects movement?|Forest, Thickets, Mountains all slow down our movement!|If you're on a horse, it slows you down even more!|Only a few classes can ignore some of the movement penalties.\nspeak;SoldierBlue;Flying units can just fly over terrain entirely...|lucky...|It's not all bad though, terrain also affects combat!|I'm sure your mentor will teach you more on that though|But flying units don't benefit from the terrain as a result.\nspeak;SoldierBlue;Don't get me started on impassable tiles though|Lake and ocean tiles are impassable for everyone but pirates and flying units\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
     }
 ]

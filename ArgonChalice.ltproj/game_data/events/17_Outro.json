@@ -32,153 +32,198 @@
             [
                 "add_portrait",
                 [
-                    "Neimi",
+                    "Schuri",
                     "MidLeft"
                 ]
             ],
             [
                 "add_portrait",
                 [
-                    "Colm",
+                    "Senya",
                     "Right"
                 ]
             ],
             [
                 "add_portrait",
                 [
-                    "Eirika",
+                    "MC",
                     "MidRight"
                 ]
             ],
             [
                 "bop_portrait",
                 [
-                    "Eirika"
+                    "MC"
                 ]
             ],
             [
                 "speak",
                 [
-                    "Eirika",
-                    "No! Colm let go of me!"
+                    "MC",
+                    "No! Senya let go of me!"
                 ]
             ],
             [
                 "speak",
                 [
-                    "Colm",
-                    "Eirika we don't have time! We have to run!"
+                    "Senya",
+                    "Quiet down... We need to leave now."
                 ]
             ],
             [
                 "speak",
                 [
-                    "Eirika",
-                    "But..."
+                    "MC",
+                    "And just leave him there to die?"
                 ]
             ],
             [
                 "speak",
                 [
-                    "Colm",
-                    "Eirika, teach got us outta there for a reason.|I don't know who that was but they were way stronger than teach.|He made sure that we were gonna be safe."
+                    "Schuri",
+                    "MC, teach got us outta there for a reason...|I don't know who that was but they were way stronger than teach.|He risked his life to make sure we would be safe"
                 ]
             ],
             [
                 "speak",
                 [
-                    "Eirika",
-                    "Is he... dead?"
+                    "MC",
+                    "He's....dead isn't he?"
                 ]
             ],
             [
                 "expression",
                 [
-                    "Colm",
+                    "MC",
                     "CloseEyes"
                 ]
             ],
             [
                 "speak",
                 [
-                    "Neimi",
-                    "If he managed to warp us out, he might have been able to get away as well.|Colm do you know who Aesc is?"
+                    "Schuri",
+                    "If he managed to warp us out, he might have been able to get away as well.|Senya do you know who Aesc is?"
                 ]
             ],
             [
                 "expression",
                 [
-                    "Colm",
+                    "MC",
                     "OpenEyes"
                 ]
             ],
             [
                 "speak",
                 [
-                    "Colm",
-                    "I have no clue...I'll have to look for information at towns.|We can't stay here either way.|Wait...I think teach warped us to Magni forest"
+                    "Senya",
+                    "...Not a clue...|I'll have to look for information at towns.|Like I said, can't stay here..."
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "...This is... Magni forest?"
                 ]
             ],
             [
                 "bop_portrait",
                 [
-                    "Neimi"
+                    "Senya"
                 ]
             ],
             [
                 "speak",
                 [
-                    "Neimi",
-                    "If I remember correctly, Greshia is north of here"
+                    "Senya",
+                    "Yes, it appears so.|We were warped quite far from the castle.|Greshia is the closest city to here."
                 ]
             ],
             [
                 "speak",
                 [
-                    "Colm",
-                    "Then we head to Greshia.|Eirika are you okay?"
+                    "Schuri",
+                    "Let's head there immediately."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Senya",
+                    "FarLeft"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Senya"
                 ]
             ],
             [
                 "expression",
                 [
-                    "Eirika",
+                    "MC",
                     "CloseEyes"
                 ]
             ],
             [
                 "wait",
                 [
-                    "500"
+                    "1000"
                 ]
             ],
             [
                 "expression",
                 [
-                    "Eirika",
+                    "MC",
                     "OpenEyes"
                 ]
             ],
             [
                 "speak",
                 [
-                    "Eirika",
-                    "Yes... I'm sorry Colm, Neimi.. I..."
+                    "Senya",
+                    "MC. Not safe here, not enough time to waste."
                 ]
             ],
             [
                 "speak",
                 [
-                    "Colm",
-                    "Don't worry about it, come on.|Before it gets too dark."
+                    "MC",
+                    "Yes... I'm sorry Senya, I..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "...No need to explain...|Not to me..."
                 ]
             ],
             [
                 "multi_remove_portrait",
                 [
-                    "Eirika",
-                    "Colm",
-                    "Neimi"
+                    "MC",
+                    "Schuri",
+                    "Senya"
                 ]
             ],
             [
@@ -190,6 +235,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "# Fade to black\ntransition;Close\nchange_background;DeepForest\ntransition;Open\nadd_portrait;Neimi;MidLeft\nadd_portrait;Colm;Right\nadd_portrait;Eirika;MidRight\nbop_portrait;Eirika\nspeak;Eirika;No! Colm let go of me!\nspeak;Colm;Eirika we don't have time! We have to run!\nspeak;Eirika;But...\nspeak;Colm;Eirika, teach got us outta there for a reason.|I don't know who that was but they were way stronger than teach.|He made sure that we were gonna be safe.\nspeak;Eirika;Is he... dead?\nexpression;Colm;CloseEyes\nspeak;Neimi;If he managed to warp us out, he might have been able to get away as well.|Colm do you know who Aesc is?\nexpression;Colm;OpenEyes\nspeak;Colm;I have no clue...I'll have to look for information at towns.|We can't stay here either way.|Wait...I think teach warped us to Magni forest\nbop_portrait;Neimi\nspeak;Neimi;If I remember correctly, Greshia is north of here\nspeak;Colm;Then we head to Greshia.|Eirika are you okay?\nexpression;Eirika;CloseEyes\nwait;500\nexpression;Eirika;OpenEyes\nspeak;Eirika;Yes... I'm sorry Colm, Neimi.. I...\nspeak;Colm;Don't worry about it, come on.|Before it gets too dark.\nmulti_remove_portrait;Eirika;Colm;Neimi\ntransition;Close"
+        "source": "# Fade to black\ntransition;Close\nchange_background;DeepForest\ntransition;Open\nadd_portrait;Schuri;MidLeft\nadd_portrait;Senya;Right\nadd_portrait;MC;MidRight\nbop_portrait;MC\nspeak;MC;No! Senya let go of me!\nspeak;Senya;Quiet down... We need to leave now.\nspeak;MC;And just leave him there to die?\nspeak;Schuri;MC, teach got us outta there for a reason...|I don't know who that was but they were way stronger than teach.|He risked his life to make sure we would be safe\nspeak;MC;He's....dead isn't he?\nexpression;MC;CloseEyes\nspeak;Schuri;If he managed to warp us out, he might have been able to get away as well.|Senya do you know who Aesc is?\nexpression;MC;OpenEyes\nspeak;Senya;...Not a clue...|I'll have to look for information at towns.|Like I said, can't stay here...\nmirror_portrait;Schuri\nmirror_portrait;Schuri\nspeak;Schuri;...This is... Magni forest?\nbop_portrait;Senya\nspeak;Senya;Yes, it appears so.|We were warped quite far from the castle.|Greshia is the closest city to here.\nspeak;Schuri;Let's head there immediately.\nremove_portrait;Schuri\nmove_portrait;Senya;FarLeft\nmirror_portrait;Senya\nexpression;MC;CloseEyes\nwait;1000\nexpression;MC;OpenEyes\nspeak;Senya;MC. Not safe here, not enough time to waste.\nspeak;MC;Yes... I'm sorry Senya, I...\nspeak;Senya;...No need to explain...|Not to me...\nmulti_remove_portrait;MC;Schuri;Senya\ntransition;Close\n"
     }
 ]

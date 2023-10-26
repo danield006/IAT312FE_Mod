@@ -1,15 +1,17 @@
 [
     {
         "nid": "Ephraim_Lord",
-        "name": "Lord",
-        "desc": "??",
+        "name": "Squire",
+        "desc": "A proficient sword and spear user, can use healing staffs but is inept at magic",
         "tier": 1,
         "movement_group": "Light Foot",
         "promotes_from": null,
         "turns_into": [
             "Ephraim_Great_Lord"
         ],
-        "tags": [],
+        "tags": [
+            "Lord"
+        ],
         "max_level": 20,
         "bases": {
             "HP": 18,
@@ -80,8 +82,8 @@
         "learned_skills": [],
         "wexp_gain": {
             "Sword": [
-                false,
-                0,
+                true,
+                1,
                 251
             ],
             "Lance": [
@@ -100,7 +102,7 @@
                 251
             ],
             "Staff": [
-                false,
+                true,
                 0,
                 251
             ],
@@ -131,7 +133,7 @@
             0
         ],
         "map_sprite_nid": "Ephraim_Lord",
-        "combat_anim_nid": null,
+        "combat_anim_nid": "Ephraim",
         "fields": []
     }
 ]

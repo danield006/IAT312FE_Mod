@@ -1,0 +1,96 @@
+[
+    {
+        "name": "Village1",
+        "trigger": "Visit",
+        "level_nid": "15",
+        "condition": "region.nid == 'Village1'",
+        "commands": [
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "Town"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "OldMan1",
+                    "Right",
+                    "no_block"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldMan1",
+                    "Eh? Welcome to our village.| Here's what you need to know about villages| We're special tiles that typically give you a reward when you visit us|We'll typically either give an item or gold to whoever visits."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldMan1",
+                    "You saw those houses outside the village correct?|House tiles are meant to give you information on the area or the game itself.|You can visit houses repeatedly if you forget the information|Villages don't operate the same."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldMan1",
+                    "We have a problem where bandits and thieves try to destroy our homes.|In order to get our reward for you|You need to get here first or our village will be destroyed.|Once you visit our village, we'll close the gates so bandits can't get in."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldMan1",
+                    "EH!? You still want a reward?|After all that useful info?|Your reward will be showing you how our gates look you ungrateful child!"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "show_layer",
+                [
+                    "Village1"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "transition;Close\nchange_background;Town\ntransition;Open\nadd_portrait;OldMan1;Right;no_block\nadd_portrait;{unit};Left\nspeak;OldMan1;Eh? Welcome to our village.| Here's what you need to know about villages| We're special tiles that typically give you a reward when you visit us|We'll typically either give an item or gold to whoever visits.\nspeak;OldMan1;You saw those houses outside the village correct?|House tiles are meant to give you information on the area or the game itself.|You can visit houses repeatedly if you forget the information|Villages don't operate the same.\nspeak;OldMan1;We have a problem where bandits and thieves try to destroy our homes.|In order to get our reward for you|You need to get here first or our village will be destroyed.|Once you visit our village, we'll close the gates so bandits can't get in.\nspeak;OldMan1;EH!? You still want a reward?|After all that useful info?|Your reward will be showing you how our gates look you ungrateful child!\ntransition;Close\nshow_layer;Village1\nchange_background\ntransition;Open\n\n"
+    }
+]

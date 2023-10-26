@@ -76,20 +76,20 @@
                 "speak",
                 [
                     "Woman1",
-                    "You also have to be Eirika in order to seize the throne."
+                    "You also have to be MC in order to seize the throne."
                 ]
             ],
             [
                 "if",
                 [
-                    "unit.nid == 'Eirika'"
+                    "unit.nid == 'MC_1'"
                 ]
             ],
             [
                 "speak",
                 [
                     "Woman1",
-                    "Oh silly me, you are Eirika! Just remember you have to be the one to Seize!"
+                    "Oh silly me, you are MC! Just remember you have to be the one to Seize!"
                 ]
             ],
             [
@@ -100,7 +100,7 @@
                 "speak",
                 [
                     "Woman1",
-                    "Sadly, you won't be able to seize the tile love. This is Eirika's story after all."
+                    "Sadly, you won't be able to seize the tile love. This is MC's story after all."
                 ]
             ],
             [
@@ -132,6 +132,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Woman1;Left;no_block\nadd_portrait;{unit};Right\nspeak;Woman1;Do you know how to Seize?\nspeak;Woman1;Certain tiles you'll need to seize in order to end the chapter.\nspeak;Woman1;The Seize option will be green like this;;;;;;text-green\nspeak;Woman1;Usually there will be a boss guarding the tile though.\nspeak;Woman1;You also have to be Eirika in order to seize the throne.\nif;unit.nid == 'Eirika'\n    speak;Woman1;Oh silly me, you are Eirika! Just remember you have to be the one to Seize!\nelse\n    speak;Woman1;Sadly, you won't be able to seize the tile love. This is Eirika's story after all.\nend\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
+        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Woman1;Left;no_block\nadd_portrait;{unit};Right\nspeak;Woman1;Do you know how to Seize?\nspeak;Woman1;Certain tiles you'll need to seize in order to end the chapter.\nspeak;Woman1;The Seize option will be green like this;;;;;;text-green\nspeak;Woman1;Usually there will be a boss guarding the tile though.\nspeak;Woman1;You also have to be MC in order to seize the throne.\nif;unit.nid == 'MC_1'\n    speak;Woman1;Oh silly me, you are MC! Just remember you have to be the one to Seize!\nelse\n    speak;Woman1;Sadly, you won't be able to seize the tile love. This is MC's story after all.\nend\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
     }
 ]
