@@ -21,6 +21,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "map_anim;Snag;{position}\nshow_layer;Snag\n"
+        "source": ""
     }
 ]
