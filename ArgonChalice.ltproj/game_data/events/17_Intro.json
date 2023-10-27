@@ -28,10 +28,23 @@
                 "speak",
                 [
                     "",
-                    "Grado Castle",
+                    "Kaerndal Castle",
                     "",
                     "",
                     "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "All of you have improved since our last session, as-"
+                ]
+            ],
+            [
+                "sound",
+                [
+                    "explosion_wide"
                 ]
             ],
             [
@@ -270,7 +283,7 @@
                 "speak",
                 [
                     "Mentor",
-                    "What!? The warp barrier should prevent all warps besides mine|Unless...|they're reanimating them as they come through?...|Shit...everyone stay behind me!"
+                    "What!? The warp barrier should prevent all warps besides mine|Unless...|they're reanimating them as they come through?...|Everyone stay behind me!"
                 ]
             ],
             [
@@ -380,14 +393,14 @@
                 "speak",
                 [
                     "Mentor",
-                    "What!?|Identify yourself now!"
+                    "Identify yourself!|What is your purpose?"
                 ]
             ],
             [
                 "speak",
                 [
                     "LyonEvil",
-                    "I've come for what is rightfully mine.|Surrender the chalice|and perhaps I won't reanimate your flailed corpse to kill those children.",
+                    "I've come for what's rightfully mine.|Surrender the Argon Chalice|and perhaps I won't reanimate your flailed corpse in front of your dear pupils.",
                     "",
                     "",
                     "noir"
@@ -397,7 +410,7 @@
                 "speak",
                 [
                     "Mentor",
-                    "You'll do no such thing!"
+                    "You will do no such thing!"
                 ]
             ],
             [
@@ -454,7 +467,7 @@
             [
                 "add_portrait",
                 [
-                    "Senya_1",
+                    "Schuri_1",
                     "FarLeft"
                 ]
             ],
@@ -469,7 +482,7 @@
                 "speak",
                 [
                     "Mentor",
-                    "No! Senya...find Aesc...|find..."
+                    "Don't! Schuri...find Aesc...|chalice...find..."
                 ]
             ],
             [
@@ -527,7 +540,7 @@
                 "speak",
                 [
                     "LyonEvil",
-                    "Oh? The old man still had one more trick up his sleeve.|Sacrificing himself to keep those children safe|...No matter, he won't be getting up from those injuries.",
+                    "Oh? The old man still had one more trick up his sleeve.|How honorable.|Sacrificing himself to keep his beloved students safe...|No matter, he won't be recovering from those injuries.",
                     "",
                     "",
                     "noir"
@@ -562,6 +575,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "remove_all_units\nadd_unit;Mentor;8,4;immediate\nadd_group;Party;starting\nspeak;;Grado Castle;;;narration_top\nwait;1000\nadd_unit;Soldier (101);15,4;fade\nflicker_cursor;Soldier (101)\nmove_unit;Soldier (101);13,4;normal\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;SoldierGreen;OffscreenRight\nadd_portrait;Mentor (Mentor);Left\nmove_portrait;SoldierGreen;FarRight\nspeak;SoldierGreen;Commander!|We're under attack! Monsters have appeared out of nowhe-\ntransition;close\nchange_background\ntransition;open\nend_skip\nadd_unit;Soldier (104);15,4\nwait;1000\nmove_unit;Soldier (104);14,4\nkill_unit;Soldier (101)\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;Mentor (Mentor);Left\nspeak;Mentor;Monsters!? A necromancer must be near!\ntransition;close\nchange_background\ntransition;open\nend_skip\nmove_unit;Mentor;13,4\ninteract_unit;Mentor;Soldier (104);hit1\nwait;1000\nadd_unit;Soldier (103);1,4;warp\nflicker_cursor;Soldier (103)\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;Mentor (Mentor);Right\nspeak;Mentor;What!? The warp barrier should prevent all warps besides mine|Unless...|they're reanimating them as they come through?...|Shit...everyone stay behind me!\ntransition;close\nchange_background\ntransition;open\nend_skip\nmove_unit;Schuri_1;7,3;warp\nmove_unit;MC_1;8,4;warp\nmove_unit;Senya_1;9,3;warp\nmove_unit;Mentor (Mentor);8,5\nwait;1000\nadd_unit;Lyon (Lyon);8,6;warp\nflicker_cursor;Lyon (Lyon)\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;Mentor (Mentor);Right\nadd_portrait;LyonEvil;Left\nspeak;Mentor;What!?|Identify yourself now!\nspeak;LyonEvil;I've come for what is rightfully mine.|Surrender the chalice|and perhaps I won't reanimate your flailed corpse to kill those children.;;;noir\nspeak;Mentor;You'll do no such thing!\ntransition;close\nchange_background\ntransition;open\nend_skip\ninteract_unit;Mentor;Lyon;crit1,crit2;;FLAG(force_animation)\nadd_portrait;Mentor;Right\nspeak;Mentor;Kkkhhh...\nadd_portrait;MC_1;Left\nadd_portrait;Senya_1;FarLeft\nspeak;MC;Teach! No! You'll pay for that!\nspeak;Mentor;No! Senya...find Aesc...|find...\nexpression;Mentor;CloseEyes\nremove_portrait;Mentor\nremove_group;Party;warp\nwait;1000\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;LyonEvil;Left\nspeak;LyonEvil;Oh? The old man still had one more trick up his sleeve.|Sacrificing himself to keep those children safe|...No matter, he won't be getting up from those injuries.;;;noir\ntransition;close\nchange_background\ntransition;open\nwait;1000\nwin_game\n"
+        "source": "remove_all_units\nadd_unit;Mentor;8,4;immediate\nadd_group;Party;starting\nspeak;;Kaerndal Castle;;;narration_top\nspeak;Mentor;All of you have improved since our last session, as-\nsound;explosion_wide\nwait;1000\nadd_unit;Soldier (101);15,4;fade\nflicker_cursor;Soldier (101)\nmove_unit;Soldier (101);13,4;normal\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;SoldierGreen;OffscreenRight\nadd_portrait;Mentor (Mentor);Left\nmove_portrait;SoldierGreen;FarRight\nspeak;SoldierGreen;Commander!|We're under attack! Monsters have appeared out of nowhe-\ntransition;close\nchange_background\ntransition;open\nend_skip\nadd_unit;Soldier (104);15,4\nwait;1000\nmove_unit;Soldier (104);14,4\nkill_unit;Soldier (101)\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;Mentor (Mentor);Left\nspeak;Mentor;Monsters!? A necromancer must be near!\ntransition;close\nchange_background\ntransition;open\nend_skip\nmove_unit;Mentor;13,4\ninteract_unit;Mentor;Soldier (104);hit1\nwait;1000\nadd_unit;Soldier (103);1,4;warp\nflicker_cursor;Soldier (103)\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;Mentor (Mentor);Right\nspeak;Mentor;What!? The warp barrier should prevent all warps besides mine|Unless...|they're reanimating them as they come through?...|Everyone stay behind me!\ntransition;close\nchange_background\ntransition;open\nend_skip\nmove_unit;Schuri_1;7,3;warp\nmove_unit;MC_1;8,4;warp\nmove_unit;Senya_1;9,3;warp\nmove_unit;Mentor (Mentor);8,5\nwait;1000\nadd_unit;Lyon (Lyon);8,6;warp\nflicker_cursor;Lyon (Lyon)\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;Mentor (Mentor);Right\nadd_portrait;LyonEvil;Left\nspeak;Mentor;Identify yourself!|What is your purpose?\nspeak;LyonEvil;I've come for what's rightfully mine.|Surrender the Argon Chalice|and perhaps I won't reanimate your flailed corpse in front of your dear pupils.;;;noir\nspeak;Mentor;You will do no such thing!\ntransition;close\nchange_background\ntransition;open\nend_skip\ninteract_unit;Mentor;Lyon;crit1,crit2;;FLAG(force_animation)\nadd_portrait;Mentor;Right\nspeak;Mentor;Kkkhhh...\nadd_portrait;MC_1;Left\nadd_portrait;Schuri_1;FarLeft\nspeak;MC;Teach! No! You'll pay for that!\nspeak;Mentor;Don't! Schuri...find Aesc...|chalice...find...\nexpression;Mentor;CloseEyes\nremove_portrait;Mentor\nremove_group;Party;warp\nwait;1000\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;LyonEvil;Left\nspeak;LyonEvil;Oh? The old man still had one more trick up his sleeve.|How honorable.|Sacrificing himself to keep his beloved students safe...|No matter, he won't be recovering from those injuries.;;;noir\ntransition;close\nchange_background\ntransition;open\nwait;1000\nwin_game\n"
     }
 ]
