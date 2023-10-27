@@ -9,7 +9,7 @@
                     "Team",
                     "other"
                 ],
-                "view_range": 0,
+                "view_range": -5,
                 "invert_targeting": true,
                 "roam_speed": 100,
                 "desired_proximity": 0,
@@ -19,7 +19,7 @@
                 "action": "None",
                 "target": "None",
                 "target_spec": null,
-                "view_range": 0,
+                "view_range": -5,
                 "invert_targeting": false,
                 "roam_speed": 100,
                 "desired_proximity": 0,
@@ -29,7 +29,7 @@
                 "action": "None",
                 "target": "None",
                 "target_spec": null,
-                "view_range": 0,
+                "view_range": -5,
                 "invert_targeting": false,
                 "roam_speed": 100,
                 "desired_proximity": 0,
@@ -483,7 +483,7 @@
             {
                 "action": "Attack",
                 "target": "Enemy",
-                "target_spec": "Door",
+                "target_spec": null,
                 "view_range": -2,
                 "invert_targeting": false,
                 "roam_speed": 100,
@@ -582,6 +582,44 @@
         ],
         "priority": 20,
         "offense_bias": 2.0,
+        "roam_ai": false
+    },
+    {
+        "nid": "RetreatToBase",
+        "behaviours": [
+            {
+                "action": "Interact",
+                "target": "Event",
+                "target_spec": "RunAway",
+                "view_range": -4,
+                "invert_targeting": false,
+                "roam_speed": 100,
+                "desired_proximity": 0,
+                "condition": ""
+            },
+            {
+                "action": "Attack",
+                "target": "Enemy",
+                "target_spec": null,
+                "view_range": -4,
+                "invert_targeting": false,
+                "roam_speed": 100,
+                "desired_proximity": 0,
+                "condition": ""
+            },
+            {
+                "action": "None",
+                "target": "None",
+                "target_spec": null,
+                "view_range": 0,
+                "invert_targeting": false,
+                "roam_speed": 100,
+                "desired_proximity": 0,
+                "condition": ""
+            }
+        ],
+        "priority": 20,
+        "offense_bias": 2,
         "roam_ai": false
     }
 ]

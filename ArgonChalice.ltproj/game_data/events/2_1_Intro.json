@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Intro",
+        "trigger": "level_start",
+        "level_nid": "2_1",
+        "condition": "True",
+        "commands": [
+            [
+                "game_var",
+                [
+                    "_ch1BonesEscapeTimer",
+                    "0"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch1BonesEscapeFlag",
+                    "False"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "game_var;_ch1BonesEscapeTimer;0\ngame_var;_ch1BonesEscapeFlag;False\n"
+    }
+]

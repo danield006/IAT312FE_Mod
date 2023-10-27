@@ -66,5 +66,17 @@
     {
         "nid": "_last_choice",
         "desc": "Holds the most recent choice made by the player using choice event."
+    },
+    {
+        "nid": "_ch1BonesEscapeFlag",
+        "desc": "Flag for chapter 1 if bones ran away"
+    },
+    {
+        "nid": "_ch1BonesEscapeTimer",
+        "desc": "Timer for chapter 1 for bones getting ready to leave."
+    },
+    {
+        "nid": "New Slot_1",
+        "desc": null
     }
 ]

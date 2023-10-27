@@ -67,12 +67,12 @@
             {
                 "nid": "Bone",
                 "team": "enemy",
-                "ai": "Guard",
+                "ai": "RetreatToBase",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
                     4,
-                    4
+                    7
                 ],
                 "starting_traveler": null,
                 "generic": false
@@ -91,12 +91,12 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "PursueVillage",
+                "ai": "None",
                 "roam_ai": null,
-                "ai_group": null,
+                "ai_group": "",
                 "starting_position": [
-                    17,
-                    15
+                    20,
+                    14
                 ],
                 "starting_traveler": null,
                 "generic": true
@@ -115,12 +115,12 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "PursueVillage",
+                "ai": "None",
                 "roam_ai": null,
-                "ai_group": null,
+                "ai_group": "",
                 "starting_position": [
-                    17,
-                    14
+                    20,
+                    15
                 ],
                 "starting_traveler": null,
                 "generic": true
@@ -525,21 +525,26 @@
                 "time_left": null,
                 "only_once": true,
                 "interrupt_move": false
+            },
+            {
+                "nid": "RunAway",
+                "region_type": "event",
+                "position": [
+                    4,
+                    3
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "RunAway",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
             }
         ],
         "unit_groups": [
-            {
-                "nid": "BanditReinforcements",
-                "units": [
-                    "107"
-                ],
-                "positions": {
-                    "107": [
-                        1,
-                        9
-                    ]
-                }
-            },
             {
                 "nid": "Bandits1",
                 "units": [
@@ -563,11 +568,6 @@
                 "positions": {}
             }
         ],
-        "ai_groups": [
-            {
-                "nid": "",
-                "trigger_threshold": 1
-            }
-        ]
+        "ai_groups": []
     }
 ]
