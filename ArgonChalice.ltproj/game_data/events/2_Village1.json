@@ -83,6 +83,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "transition;Close\nchange_background;Town\ntransition;Open\nadd_portrait;{unit};Left;no_block\nadd_portrait;Selena;Right\nspeak;Selena;And who are you? You don't look like one of the local peasantry.{w}{clear}As you can see, these villagers have some bandit troubles.|I would like to help, but I have orders to follow...|I am required to quit this area at once.|I would ask you to aid them in this fight.|I will pay for your trouble, of course.\ntransition;Close\nshow_layer;Village1\nchange_background\ntransition;Open\ngive_item;{unit};Red Gem\nhas_traded;{unit}\n"
     }
 ]

@@ -1,0 +1,41 @@
+[
+    {
+        "name": "EnemyTurn3",
+        "trigger": "enemy_turn_change",
+        "level_nid": "2_1",
+        "condition": "game.turncount == 3",
+        "commands": [
+            [
+                "spawn_group",
+                [
+                    "Mercenaries2",
+                    "west",
+                    "Mercenaries2"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Bone",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Bone",
+                    "And why did you idiots come so late!|Get going!"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Bone"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "spawn_group;Mercenaries2;west;Mercenaries2\nadd_portrait;Bone;Left\nspeak;Bone;And why did you idiots come so late!|Get going!\nremove_portrait;Bone\n"
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "name": "EnemyTurn4",
+        "trigger": "enemy_turn_change",
+        "level_nid": "2_1",
+        "condition": "game.turncount == 4",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Bone",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Bone",
+                    "Oi, maggots, go and teach those pesky kids a lesson!"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Bone"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Bone;Left\nspeak;Bone;Oi, maggots, go and teach those pesky kids a lesson!\nremove_portrait;Bone\n"
+    }
+]

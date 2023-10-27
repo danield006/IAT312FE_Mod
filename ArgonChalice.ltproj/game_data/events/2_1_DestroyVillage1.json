@@ -22,10 +22,30 @@
                 [
                     "500"
                 ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "No...|How could we...."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Schuri"
+                ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "flicker_cursor;19,7\nshow_layer;Ruin1\nwait;500\n"
+        "source": "flicker_cursor;19,7\nshow_layer;Ruin1\nwait;500\nadd_portrait;Schuri;Left\nspeak;Schuri;No...|How could we....\nremove_portrait;Schuri\n"
     }
 ]

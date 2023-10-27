@@ -1,0 +1,111 @@
+[
+    {
+        "name": "EnemyTurn1",
+        "trigger": "enemy_turn_change",
+        "level_nid": "2_1",
+        "condition": "game.turncount == 1",
+        "commands": [
+            [
+                "spawn_group",
+                [
+                    "Mercenaries1",
+                    "south",
+                    "Mercenaries1"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Bone",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Bone",
+                    "Bout time! What am I paying you for you useless mercs!|Go after them!"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Bone"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Right"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Crap... we're never gonna catch him at this rate!"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "We have to cut him off!|I saw a huge stag by the river!|We can knock it down to make a path!"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "FarLeft"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "But we have to protect the villages!|It's too risky! Whoever goes might not be able to stop him on their own|And we'll get overrun if more than 1 of us goes!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Damnit! We can't just let him get away!|That bastard never puts himself in danger!|It's a miracle we ever got this chance!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "...."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Your choices will impact your relationships with your party and influence the story.{w}{clear}Objectives you complete in the map will influence your party's opinions of you|You may be able to complete both of their objectives if you are lucky or skilled|But you may risk failing both|Choose carefully....",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "spawn_group;Mercenaries1;south;Mercenaries1\nadd_portrait;Bone;Left\nspeak;Bone;Bout time! What am I paying you for you useless mercs!|Go after them!\nremove_portrait;Bone\nadd_portrait;MC;Right\nend_skip\nspeak;MC;Crap... we're never gonna catch him at this rate!\nadd_portrait;Senya;Left\nspeak;Senya;We have to cut him off!|I saw a huge stag by the river!|We can knock it down to make a path!\nadd_portrait;Schuri;FarLeft\nspeak;Schuri;But we have to protect the villages!|It's too risky! Whoever goes might not be able to stop him on their own|And we'll get overrun if more than 1 of us goes!\nspeak;Senya;Damnit! We can't just let him get away!|That bastard never puts himself in danger!|It's a miracle we ever got this chance!\nspeak;MC;....\nspeak;;Your choices will impact your relationships with your party and influence the story.{w}{clear}Objectives you complete in the map will influence your party's opinions of you|You may be able to complete both of their objectives if you are lucky or skilled|But you may risk failing both|Choose carefully....;;;hint\n"
+    }
+]

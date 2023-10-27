@@ -10,7 +10,7 @@
             "Boss"
         ],
         "bases": {
-            "HP": 26,
+            "HP": 30,
             "STR": 8,
             "MAG": 0,
             "SKL": 6,
@@ -38,6 +38,10 @@
             [
                 "Iron Axe",
                 false
+            ],
+            [
+                "Blue Gem",
+                true
             ]
         ],
         "learned_skills": [],

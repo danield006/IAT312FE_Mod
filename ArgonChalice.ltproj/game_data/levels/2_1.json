@@ -17,7 +17,7 @@
         },
         "objective": {
             "simple": "Defend villages",
-            "win": "Hold off the attack or defeat Bones",
+            "win": "",
             "loss": "MC dies"
         },
         "roam": false,
@@ -32,8 +32,8 @@
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
-                    22,
-                    15
+                    24,
+                    2
                 ],
                 "starting_traveler": null,
                 "generic": false
@@ -45,8 +45,8 @@
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
-                    22,
-                    14
+                    19,
+                    8
                 ],
                 "starting_traveler": null,
                 "generic": false
@@ -58,8 +58,8 @@
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
-                    22,
-                    13
+                    21,
+                    8
                 ],
                 "starting_traveler": null,
                 "generic": false
@@ -70,10 +70,7 @@
                 "ai": "RetreatToBase",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    4,
-                    7
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -91,7 +88,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "PursueVillage",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
@@ -115,7 +112,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "PursueVillage",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
@@ -130,7 +127,7 @@
                 "variant": null,
                 "level": 3,
                 "klass": "Brigand",
-                "faction": "Cutthroat",
+                "faction": "Bandit",
                 "starting_items": [
                     [
                         "Iron Axe",
@@ -139,13 +136,10 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "PursueVillage",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    3,
-                    12
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
@@ -163,13 +157,10 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "PursueVillage",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    5,
-                    12
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
@@ -187,13 +178,10 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "PursueVillage",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    5,
-                    21
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
@@ -211,13 +199,10 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "PursueVillage",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    9,
-                    21
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
@@ -235,11 +220,11 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "PursueVillage",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
-                    12,
+                    14,
                     14
                 ],
                 "starting_traveler": null,
@@ -259,11 +244,11 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "PursueVillage",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
-                    12,
+                    14,
                     15
                 ],
                 "starting_traveler": null,
@@ -286,10 +271,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    7,
-                    14
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
@@ -310,10 +292,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    6,
-                    15
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
@@ -334,58 +313,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    8,
-                    15
-                ],
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "112",
-                "variant": null,
-                "level": 1,
-                "klass": "Cavalier",
-                "faction": "Cutthroat",
-                "starting_items": [
-                    [
-                        "Iron Lance",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "None",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": [
-                    0,
-                    13
-                ],
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "113",
-                "variant": null,
-                "level": 1,
-                "klass": "Cavalier",
-                "faction": "Cutthroat",
-                "starting_items": [
-                    [
-                        "Iron Lance",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "None",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": [
-                    0,
-                    16
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
@@ -406,10 +334,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    5,
-                    16
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
@@ -430,10 +355,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    9,
-                    16
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
@@ -453,6 +375,69 @@
                     11,
                     6
                 ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "116",
+                "variant": null,
+                "level": 1,
+                "klass": "Brigand",
+                "faction": "Bandit",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "117",
+                "variant": null,
+                "level": 1,
+                "klass": "Brigand",
+                "faction": "Bandit",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "118",
+                "variant": null,
+                "level": 1,
+                "klass": "Brigand",
+                "faction": "Bandit",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             }
@@ -542,30 +527,164 @@
                 "time_left": null,
                 "only_once": false,
                 "interrupt_move": false
+            },
+            {
+                "nid": "House1",
+                "region_type": "event",
+                "position": [
+                    25,
+                    8
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "House2",
+                "region_type": "event",
+                "position": [
+                    26,
+                    9
+                ],
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Visit",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
             }
         ],
         "unit_groups": [
             {
                 "nid": "Bandits1",
                 "units": [
-                    "Bone"
+                    "103",
+                    "107"
                 ],
                 "positions": {
-                    "Bone": [
-                        13,
-                        7
+                    "103": [
+                        20,
+                        14
+                    ],
+                    "107": [
+                        20,
+                        15
                     ]
                 }
             },
             {
-                "nid": "RossGarcia",
-                "units": [],
-                "positions": {}
+                "nid": "Bandits2",
+                "units": [
+                    "101",
+                    "102"
+                ],
+                "positions": {
+                    "101": [
+                        14,
+                        14
+                    ],
+                    "102": [
+                        14,
+                        15
+                    ]
+                }
             },
             {
-                "nid": "BlueTeam",
-                "units": [],
-                "positions": {}
+                "nid": "Mercenaries1",
+                "units": [
+                    "104",
+                    "105",
+                    "106"
+                ],
+                "positions": {
+                    "104": [
+                        7,
+                        14
+                    ],
+                    "105": [
+                        6,
+                        15
+                    ],
+                    "106": [
+                        8,
+                        15
+                    ]
+                }
+            },
+            {
+                "nid": "Mercenaries2",
+                "units": [
+                    "114",
+                    "115"
+                ],
+                "positions": {
+                    "114": [
+                        6,
+                        18
+                    ],
+                    "115": [
+                        8,
+                        18
+                    ]
+                }
+            },
+            {
+                "nid": "Bandits3",
+                "units": [
+                    "108",
+                    "109",
+                    "110",
+                    "111"
+                ],
+                "positions": {
+                    "108": [
+                        3,
+                        5
+                    ],
+                    "109": [
+                        5,
+                        5
+                    ],
+                    "110": [
+                        3,
+                        6
+                    ],
+                    "111": [
+                        5,
+                        6
+                    ]
+                }
+            },
+            {
+                "nid": "IntroDeathSquad",
+                "units": [
+                    "116",
+                    "117",
+                    "118"
+                ],
+                "positions": {
+                    "116": [
+                        22,
+                        9
+                    ],
+                    "117": [
+                        21,
+                        10
+                    ],
+                    "118": [
+                        23,
+                        10
+                    ]
+                }
             }
         ],
         "ai_groups": []

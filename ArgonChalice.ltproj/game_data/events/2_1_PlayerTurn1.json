@@ -1,0 +1,33 @@
+[
+    {
+        "name": "PlayerTurn1",
+        "trigger": "turn_change",
+        "level_nid": "2_1",
+        "condition": "game.turncount == 1",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Bone",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Bone",
+                    "Where the hell are those mercs I hired!?|You lot! Go after them!"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Bone"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Bone;Left\nspeak;Bone;Where the hell are those mercs I hired!?|You lot! Go after them!\nremove_portrait;Bone\n"
+    }
+]

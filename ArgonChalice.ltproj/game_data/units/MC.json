@@ -10,14 +10,14 @@
             "Lord"
         ],
         "bases": {
-            "HP": 18,
-            "STR": 6,
+            "HP": 24,
+            "STR": 8,
             "MAG": 5,
-            "SKL": 6,
-            "SPD": 7,
-            "LCK": 0,
+            "SKL": 8,
+            "SPD": 9,
+            "LCK": 3,
             "DEF": 6,
-            "RES": 0,
+            "RES": 2,
             "CON": 8,
             "MOV": 5
         },
@@ -47,11 +47,11 @@
         },
         "starting_items": [
             [
-                "Iron Lance",
+                "Iron Sword",
                 false
             ],
             [
-                "Iron Sword",
+                "Iron Lance",
                 false
             ],
             [
@@ -68,7 +68,7 @@
         "wexp_gain": {
             "Sword": [
                 false,
-                1,
+                31,
                 251
             ],
             "Lance": [
@@ -88,7 +88,7 @@
             ],
             "Staff": [
                 false,
-                1,
+                31,
                 251
             ],
             "Light": [

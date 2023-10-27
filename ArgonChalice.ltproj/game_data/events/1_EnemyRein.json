@@ -60,6 +60,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": ""
+        "source": "spawn_group;EnemyRein;East;EnemyRein\nmove_cursor;107\ndisp_cursor;1\nwait;1000\ndisp_cursor;0\nadd_portrait;SoldierRed;Left\nspeak;SoldierRed;I've found them! Stragglers from Renais! Don't let them get away.\nremove_portrait;SoldierRed\n"
     }
 ]
