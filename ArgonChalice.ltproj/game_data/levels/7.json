@@ -1,0 +1,38 @@
+[
+    {
+        "nid": "7",
+        "name": "Chapter 7",
+        "tilemap": "Forest",
+        "bg_tilemap": null,
+        "party": "MC",
+        "music": {},
+        "objective": {
+            "simple": "",
+            "win": "",
+            "loss": ""
+        },
+        "roam": false,
+        "roam_unit": null,
+        "go_to_overworld": false,
+        "should_record": true,
+        "units": [],
+        "regions": [
+            {
+                "nid": "New Region",
+                "region_type": "normal",
+                "position": null,
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            }
+        ],
+        "unit_groups": [],
+        "ai_groups": []
+    }
+]
