@@ -1,0 +1,31 @@
+[
+    {
+        "name": "DestroyVillage2",
+        "trigger": "Destructible",
+        "level_nid": "8",
+        "condition": "region.nid == 'DestroyVillage2'",
+        "commands": [
+            [
+                "flicker_cursor",
+                [
+                    "22,3"
+                ]
+            ],
+            [
+                "show_layer",
+                [
+                    "ruin2"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "500"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "flicker_cursor;22,3\nshow_layer;ruin2\nwait;500\n"
+    }
+]

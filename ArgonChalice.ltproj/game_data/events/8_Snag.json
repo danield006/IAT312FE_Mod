@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Snag",
+        "trigger": "unit_death",
+        "level_nid": "8",
+        "condition": "unit.nid == 'Snag'",
+        "commands": [
+            [
+                "map_anim",
+                [
+                    "Snag",
+                    "{position}"
+                ]
+            ],
+            [
+                "show_layer",
+                [
+                    "Snag"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "map_anim;Snag;{position}\nshow_layer;Snag\n"
+    }
+]
