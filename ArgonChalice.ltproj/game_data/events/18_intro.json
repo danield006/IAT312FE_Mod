@@ -6,36 +6,123 @@
         "condition": "True",
         "commands": [
             [
+                "comment",
+                [
+                    "#this is for reference to be moved to the battle chapter"
+                ]
+            ],
+            [
                 "remove_all_units",
                 []
             ],
             [
-                "add_unit",
+                "transition",
                 [
-                    "Senya_1",
-                    "18,13",
-                    "immediate"
+                    "open"
                 ]
             ],
             [
-                "add_unit",
+                "music",
                 [
-                    "Schuri_1",
-                    "18,14",
-                    "immediate"
+                    "bird_whistling"
                 ]
             ],
             [
-                "add_unit",
+                "change_background",
                 [
-                    "MC_1",
-                    "17,14",
-                    "immediate"
+                    "DeepForest"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Right"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Left"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "FarLeft"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "The sun's ray gives the woods a calming atmosphere| however Petrichor woods seem quiet.|Too quiet.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "This is weird.|Usually you would hear some sort of life within these woods.|In fact, any woods would have some sort of noise.|Something is up."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Oh..this is worrying isn\u2019t it|Shouldn\u2019t we investigate it?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Let's keep our eyes peeled."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "As we continue to traverse through the woods, a nearby commotion attracts our attention",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "battle-swords-yelling"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Look!|Bandits are attacking that village!"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#after the bandit fight"
                 ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "remove_all_units\nadd_unit;Senya_1;18,13;immediate\nadd_unit;Schuri_1;18,14;immediate\nadd_unit;MC_1;17,14;immediate\n"
+        "source": "#this is for reference to be moved to the battle chapter\nremove_all_units\ntransition;open\nmusic;bird_whistling\nchange_background;DeepForest\nadd_portrait;MC;Right\nadd_portrait;Schuri;Left\nadd_portrait;Senya;FarLeft\nspeak;;The sun's ray gives the woods a calming atmosphere| however Petrichor woods seem quiet.|Too quiet.;;;narration_top\nspeak;Senya;This is weird.|Usually you would hear some sort of life within these woods.|In fact, any woods would have some sort of noise.|Something is up.\nspeak;Schuri;Oh..this is worrying isn\u2019t it|Shouldn\u2019t we investigate it?\nspeak;MC;Let's keep our eyes peeled.\nspeak;;As we continue to traverse through the woods, a nearby commotion attracts our attention;;;narration\nmusic;battle-swords-yelling\nbop_portrait;MC\nspeak;MC;Look!|Bandits are attacking that village!\n#after the bandit fight\n"
     }
 ]
