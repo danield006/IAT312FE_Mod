@@ -1,7 +1,7 @@
 {
-    "Eirika_training.json": 0,
-    "Colm_training.json": 1,
-    "Neimi_training.json": 2,
+    "MC.json": 0,
+    "Senya.json": 1,
+    "Schuri.json": 2,
     "Mentor.json": 3,
     "Eirika.json": 4,
     "Seth.json": 5,
@@ -45,10 +45,7 @@
     "Valter.json": 43,
     "Riev.json": 44,
     "Lyon.json": 45,
-    "Senya.json": 46,
-    "Senya_1.json": 47,
-    "Schuri.json": 48,
-    "Schuri_1.json": 49,
-    "MC.json": 50,
-    "MC_1.json": 51
+    "Senya_1.json": 46,
+    "Schuri_1.json": 47,
+    "MC_1.json": 48
 }
