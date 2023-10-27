@@ -3,7 +3,7 @@
         "name": "Intro",
         "trigger": "level_start",
         "level_nid": "16",
-        "condition": "True",
+        "condition": "False",
         "commands": [
             [
                 "remove_all_units",

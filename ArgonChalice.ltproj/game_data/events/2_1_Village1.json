@@ -1,0 +1,69 @@
+[
+    {
+        "name": "Village1",
+        "trigger": "Visit",
+        "level_nid": "2_1",
+        "condition": "region.nid == 'Village1'",
+        "commands": [
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "Town"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "OldMan1",
+                    "Right",
+                    "no_block"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "OldMan1",
+                    "Eh? Welcome to our village.| Here's what you need to know about villages| We're special tiles that typically give you a reward when you visit us|We'll typically either give an item or gold to whoever visits."
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "transition;Close\nchange_background;Town\ntransition;Open\nadd_portrait;OldMan1;Right;no_block\nadd_portrait;{unit};Left\nspeak;OldMan1;Eh? Welcome to our village.| Here's what you need to know about villages| We're special tiles that typically give you a reward when you visit us|We'll typically either give an item or gold to whoever visits.\ntransition;Close\nchange_background\ntransition;Open\n"
+    }
+]
