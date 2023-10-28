@@ -193,5 +193,35 @@
         "bittersweetEpilogue",
         false,
         false
+    ],
+    [
+        "corridorFight",
+        false,
+        false
+    ],
+    [
+        "badEndingTheme",
+        false,
+        false
+    ],
+    [
+        "okEndingTheme",
+        false,
+        false
+    ],
+    [
+        "credits",
+        false,
+        false
+    ],
+    [
+        "goldenEndingTheme",
+        false,
+        false
+    ],
+    [
+        "deathThroes",
+        false,
+        false
     ]
 ]

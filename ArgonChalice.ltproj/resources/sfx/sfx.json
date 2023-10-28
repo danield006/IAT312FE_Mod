@@ -1030,5 +1030,9 @@
     [
         "woodThump1",
         null
+    ],
+    [
+        "heavyDoorOpen",
+        null
     ]
 ]
