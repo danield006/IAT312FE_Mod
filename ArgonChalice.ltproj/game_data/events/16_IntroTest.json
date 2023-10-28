@@ -4,9 +4,55 @@
         "trigger": "level_start",
         "level_nid": "16",
         "condition": "True",
-        "commands": [],
+        "commands": [
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "....Ah! I should probably show you crits and level ups as well."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Mentor",
+                    "Smile"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "let's show a little demonstration shall we?"
+                ]
+            ],
+            [
+                "change_party",
+                [
+                    "Mentor (Mentor)",
+                    "MC's Group (TutorialParty)"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Soldier (104)",
+                    "3,4",
+                    "immediate",
+                    "push"
+                ]
+            ],
+            [
+                "interact_unit",
+                [
+                    "Mentor",
+                    "Soldier (104)",
+                    "crit1"
+                ]
+            ]
+        ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "speak;Mentor;....Ah! I should probably show you crits and level ups as well.\nexpression;Mentor;Smile\nspeak;Mentor;let's show a little demonstration shall we?\nchange_party;Mentor (Mentor);MC's Group (TutorialParty)\nadd_unit;Soldier (104);3,4;immediate;push\ninteract_unit;Mentor;Soldier (104);crit1\n"
     }
 ]

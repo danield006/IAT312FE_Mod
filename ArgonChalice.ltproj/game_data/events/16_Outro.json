@@ -95,56 +95,10 @@
                     "Soldier (104)",
                     "crit1"
                 ]
-            ],
-            [
-                "speak",
-                [
-                    "Mentor",
-                    "That right there is a crit!|There's a special animation that plays|Crits do triple damage on the enemy|You can't really rely on them but they're nice when they happen.|Careful though, crits don't choose who they bless."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Mentor",
-                    "Now let's explain level ups.|As you fight more and more, you'll gain experience|Once experience reachs 100, you level up!|Then some of your stats will randomly grow.|Which stats grow is based off... well you!|Schuri will grow a lot more magic than you would MC|Let's give an example."
-                ]
-            ],
-            [
-                "give_exp",
-                [
-                    "Mentor (Mentor)",
-                    "100"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Mentor",
-                    "Hah..I'm getting old I suppose.|I'm sure your levelups will be better.|"
-                ]
-            ],
-            [
-                "remove_portrait",
-                [
-                    "Mentor (Mentor)"
-                ]
-            ],
-            [
-                "remove_portrait",
-                [
-                    "MC"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "Close"
-                ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "# Fade to black\ntransition;Close\nchange_background;InsideCastle\ntransition;Open\nadd_portrait;Mentor;Left\nadd_portrait;MC;Right;immediate\nspeak;Mentor;Well done, well done! You've basically completed the tutorial.|Because this is the tutorial, you won't be keeping any of the items or gold.|Just a heads up.\nspeak;Mentor;....Ah! I should probably show you crits and level ups as well.\nexpression;Mentor;Smile\nspeak;Mentor;let's show a little demonstration shall we?\nchange_party;Mentor (Mentor);MC's Group (TutorialParty)\nadd_unit;Soldier (104);3,4;immediate;push\ninteract_unit;Mentor;Soldier (104);crit1\nspeak;Mentor;That right there is a crit!|There's a special animation that plays|Crits do triple damage on the enemy|You can't really rely on them but they're nice when they happen.|Careful though, crits don't choose who they bless.\nspeak;Mentor;Now let's explain level ups.|As you fight more and more, you'll gain experience|Once experience reachs 100, you level up!|Then some of your stats will randomly grow.|Which stats grow is based off... well you!|Schuri will grow a lot more magic than you would MC|Let's give an example.\ngive_exp;Mentor (Mentor);100\nspeak;Mentor;Hah..I'm getting old I suppose.|I'm sure your levelups will be better.|\nremove_portrait;Mentor (Mentor)\nremove_portrait;MC;\ntransition;Close\n"
+        "source": "# Fade to black\ntransition;Close\nchange_background;InsideCastle\ntransition;Open\nadd_portrait;Mentor;Left\nadd_portrait;MC;Right;immediate\nspeak;Mentor;Well done, well done! You've basically completed the tutorial.|Because this is the tutorial, you won't be keeping any of the items or gold.|Just a heads up.\nspeak;Mentor;....Ah! I should probably show you crits and level ups as well.\nexpression;Mentor;Smile\nspeak;Mentor;let's show a little demonstration shall we?\nchange_party;Mentor (Mentor);MC's Group (TutorialParty)\nadd_unit;Soldier (104);3,4;immediate;push\ninteract_unit;Mentor;Soldier (104);crit1\n"
     }
 ]

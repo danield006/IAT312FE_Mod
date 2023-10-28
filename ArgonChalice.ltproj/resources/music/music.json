@@ -83,5 +83,35 @@
         "bird_whistling",
         false,
         false
+    ],
+    [
+        "battle-swords-yelling",
+        false,
+        false
+    ],
+    [
+        "castle-ambush",
+        false,
+        false
+    ],
+    [
+        "castle-corridor",
+        false,
+        false
+    ],
+    [
+        "intro-castle",
+        false,
+        false
+    ],
+    [
+        "mentorFightsIntro",
+        false,
+        false
+    ],
+    [
+        "mentorIntroLose",
+        false,
+        false
     ]
 ]
