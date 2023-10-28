@@ -39,10 +39,51 @@
                 ]
             ],
             [
+                "move_portrait",
+                [
+                    "Man3",
+                    "MidLeft"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "Man3",
-                    "Filler dialogue"
+                    "Ahh!!"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Man3",
+                    "Left"
+                ]
+            ],
+            [
+                "sound",
+                [
+                    "woodThump1"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "{unit}",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "{unit}",
+                    "Woah!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Man3",
+                    "Oh-|I almost-|almost hit ya there.|Sorry! Thank you so much for coming to our aid."
                 ]
             ],
             [
@@ -70,6 +111,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Man1;Left;no_block\nadd_portrait;{unit};Right\nspeak;Man3;Filler dialogue\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
+        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Man1;Left;no_block\nadd_portrait;{unit};Right\nmove_portrait;Man3;MidLeft\nspeak;Man3;Ahh!!\nmove_portrait;Man3;Left\nsound;woodThump1\nmove_portrait;{unit};FarRight\nspeak;{unit};Woah!\nspeak;Man3;Oh-|I almost-|almost hit ya there.|Sorry! Thank you so much for coming to our aid.\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
     }
 ]

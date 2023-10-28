@@ -42,7 +42,35 @@
                 "speak",
                 [
                     "Man2",
-                    "Filler dialogue"
+                    "Wh-|Who's there?!|Oh it's you."
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Man1",
+                    "CenterRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Man2",
+                    "Please save us!"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "{unit}",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "{unit}",
+                    "Uh-|Don't worry sir. We'll protect you."
                 ]
             ],
             [
@@ -70,6 +98,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Man1;Left;no_block\nadd_portrait;{unit};Right\nspeak;Man2;Filler dialogue\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
+        "source": "transition;Close\nchange_background;House\ntransition;Open\nadd_portrait;Man1;Left;no_block\nadd_portrait;{unit};Right\nspeak;Man2;Wh-|Who's there?!|Oh it's you.\nmove_portrait;Man1;CenterRight\nspeak;Man2;Please save us!\nmove_portrait;{unit};FarRight\nspeak;{unit};Uh-|Don't worry sir. We'll protect you.\ntransition;Close\nchange_background\ntransition;Open\nhas_traded;{unit}\n"
     }
 ]
