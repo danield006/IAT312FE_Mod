@@ -517,7 +517,7 @@
                     1
                 ],
                 "sub_nid": "RunAway",
-                "condition": "True",
+                "condition": "unit.team == 'enemy'",
                 "time_left": null,
                 "only_once": false,
                 "interrupt_move": false
@@ -681,11 +681,6 @@
                 }
             }
         ],
-        "ai_groups": [
-            {
-                "nid": "",
-                "trigger_threshold": 1
-            }
-        ]
+        "ai_groups": []
     }
 ]
