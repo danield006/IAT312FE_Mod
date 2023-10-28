@@ -16,8 +16,8 @@
             "enemy2_battle": null
         },
         "objective": {
-            "simple": "Defend villages",
-            "win": "",
+            "simple": "Defend villages or kill Bones",
+            "win": "Defend villages or kill Bones",
             "loss": "MC dies"
         },
         "roam": false,
