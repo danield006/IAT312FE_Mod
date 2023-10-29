@@ -2,7 +2,7 @@
     {
         "nid": "21",
         "name": "Chapter 4: Castle Corridor",
-        "tilemap": "Chapter 3",
+        "tilemap": "Chapter 3_1",
         "bg_tilemap": "Chapter 3",
         "party": "MC",
         "music": {
