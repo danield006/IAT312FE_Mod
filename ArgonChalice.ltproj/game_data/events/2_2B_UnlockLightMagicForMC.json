@@ -1,0 +1,130 @@
+[
+    {
+        "name": "UnlockLightMagicForMC",
+        "trigger": "turn_change",
+        "level_nid": "2_2B",
+        "condition": "game.turncount == 1",
+        "commands": [
+            [
+                "flicker_cursor",
+                [
+                    "MC (MC)"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Boy, Why are you using a regular lance here?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Wh-"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "I'm using telepathy boy.|I'm still in the tavern|Has That Cyrus not taught you anything?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "...Not really. I'm magically inept. I can only use healing magic.|I learned to use a sword and spear to protect my friends."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "...?|Is that why you have a battle staff?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I don't know why but I have to take the crystal out of healing staves|then move it to my staff."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "That's old magic boy.|You're channeling the crystal's magic to perform old magics."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Huh?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Old magics! Light? Dark?|Did Cyrus teach you nothing about it?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I mean we were told that magic exists in a triangle but nowadays...|I thought light and dark magic is impractical?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "...No I suspect he was worried about something else...|Listen boy. Light magic is highly potent to monsters.|You harness positive emotions and channel it outwards.|...I'll teach you dark magic later perhaps.|I'm going to warp a basic light tome to your hands|I'll try to guide you through this."
+                ]
+            ],
+            [
+                "give_wexp",
+                [
+                    "MC",
+                    "Light (Light)",
+                    "30"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "MC",
+                    "Lightning (Lightning)"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "flicker_cursor;MC (MC);\nadd_portrait;MC;Right;\nspeak;Aesc;Boy, Why are you using a regular lance here?\nspeak;MC;Wh-\nmirror_portrait;MC;\nmirror_portrait;MC;\nspeak;Aesc;I'm using telepathy boy.|I'm still in the tavern|Has That Cyrus not taught you anything?\nspeak;MC;...Not really. I'm magically inept. I can only use healing magic.|I learned to use a sword and spear to protect my friends.\nspeak;Aesc;...?|Is that why you have a battle staff?\nspeak;MC;I don't know why but I have to take the crystal out of healing staves|then move it to my staff.\nspeak;Aesc;That's old magic boy.|You're channeling the crystal's magic to perform old magics.\nspeak;MC;Huh?\nspeak;Aesc;Old magics! Light? Dark?|Did Cyrus teach you nothing about it?\nspeak;MC;I mean we were told that magic exists in a triangle but nowadays...|I thought light and dark magic is impractical?\nspeak;Aesc;...No I suspect he was worried about something else...|Listen boy. Light magic is highly potent to monsters.|You harness positive emotions and channel it outwards.|...I'll teach you dark magic later perhaps.|I'm going to warp a basic light tome to your hands|I'll try to guide you through this.\ngive_wexp;MC;Light (Light);30;\ngive_item;MC;Lightning (Lightning);\n"
+    }
+]

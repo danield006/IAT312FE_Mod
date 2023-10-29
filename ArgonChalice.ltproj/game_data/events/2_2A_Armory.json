@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Armory",
+        "trigger": "Armory",
+        "level_nid": "2_2A",
+        "condition": "True",
+        "commands": [
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "shop",
+                [
+                    "{unit}",
+                    "Silver Sword,Silver Lance,Silver Axe,Silver Bow,Hand Axe,Javelin"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "transition;Close\nshop;{unit};Silver Sword,Silver Lance,Silver Axe,Silver Bow,Hand Axe,Javelin\ntransition;Open\n"
+    }
+]

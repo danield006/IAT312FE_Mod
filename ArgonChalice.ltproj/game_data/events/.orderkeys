@@ -161,7 +161,11 @@
     "2_1_Village1.json": 159,
     "2_1_Village2.json": 160,
     "2_2A_Intro.json": 161,
-    "2_2A_Outro.json": 162,
-    "2_2A_GuideForPlayers.json": 163,
-    "2_2A_Tavern.json": 164
+    "2_2B_Intro.json": 162,
+    "2_2A_Outro.json": 163,
+    "2_2A_GuideForPlayers.json": 164,
+    "2_2A_Tavern.json": 165,
+    "2_2A_Armory.json": 166,
+    "2_2A_Vendor.json": 167,
+    "2_2B_UnlockLightMagicForMC.json": 168
 }
