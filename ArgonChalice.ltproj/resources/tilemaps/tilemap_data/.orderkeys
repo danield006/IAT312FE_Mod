@@ -3,49 +3,16 @@
     "Chapter_1.json": 1,
     "Chapter_2.json": 2,
     "Chapter_3.json": 3,
-<<<<<<< HEAD
     "FogOfWarTest.json": 4,
     "Grado_Keep.json": 5,
     "Chapter_14B.json": 6,
     "Chapter_14B_1.json": 7,
     "Chapter_4.json": 8,
     "Chapter_5.json": 9,
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-    "Chapter2_town.json": 10,
-    "Magvel.json": 11,
-    "TutorialHouses.json": 12,
-    "Tutorial_Battle.json": 13,
-    "Forest.json": 14,
-    "Forest_1.json": 15
-=======
->>>>>>> Stashed changes
     "Magvel.json": 10,
     "TutorialHouses.json": 11,
     "Tutorial_Battle.json": 12,
     "Forest.json": 13,
     "Forest_1.json": 14,
-<<<<<<< Updated upstream
     "Plains.json": 15
-=======
-    "Plains.json": 15,
-    "New_Tilemap.json": 16
->>>>>>> Stashed changes
-=======
-    "Chapter_3_1.json": 4,
-    "FogOfWarTest.json": 5,
-    "Grado_Keep.json": 6,
-    "Chapter_14B.json": 7,
-    "Chapter_14B_1.json": 8,
-    "Chapter_4.json": 9,
-    "Chapter_5.json": 10,
-    "Chapter2_town.json": 11,
-    "Magvel.json": 12,
-    "TutorialHouses.json": 13,
-    "Tutorial_Battle.json": 14,
-    "Forest.json": 15,
-    "Forest_1.json": 16
->>>>>>> 53ee65fb6ede8c711dd60f702c648aee6347e3ba
->>>>>>> Stashed changes
 }

@@ -115,35 +115,5 @@
         "nid": "1800571a",
         "terrain_grid": {},
         "autotiles": {}
-    },
-    {
-        "nid": "Layered Village",
-        "terrain_grid": {},
-        "autotiles": {}
-    },
-    {
-        "nid": "20",
-        "terrain_grid": {},
-        "autotiles": {}
-    },
-    {
-        "nid": "Chapter7OstiasRebellion",
-        "terrain_grid": {},
-        "autotiles": {}
-    },
-    {
-        "nid": "10001112",
-        "terrain_grid": {},
-        "autotiles": {}
-    },
-    {
-        "nid": "29x",
-        "terrain_grid": {},
-        "autotiles": {}
-    },
-    {
-        "nid": "1000EA12",
-        "terrain_grid": {},
-        "autotiles": {}
     }
 ]
