@@ -1,0 +1,64 @@
+<<<<<<< Updated upstream
+[
+    {
+        "name": "rout",
+        "trigger": "combat_end",
+        "level_nid": "2_1",
+        "condition": "len(game.get_enemy_units()) == 0",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Finally...It's over."
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "add_portrait;MC;Right;\nspeak;MC;Finally...It's over.\nwin_game;"
+    }
+=======
+[
+    {
+        "name": "rout",
+        "trigger": "combat_end",
+        "level_nid": "2_1",
+        "condition": "len(game.get_enemy_units()) == 0",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Finally...It's over."
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "add_portrait;MC;Right\nspeak;MC;Finally...It's over.\nwin_game\n"
+    }
+>>>>>>> Stashed changes
+]

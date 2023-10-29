@@ -1,0 +1,33 @@
+[
+    {
+        "name": "credits",
+        "trigger": null,
+        "level_nid": "2222",
+        "condition": "True",
+        "commands": [
+            [
+                "music",
+                [
+                    "credits"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "title_background"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "Game Designer",
+                    "x,x,x,x",
+                    "center"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "music;credits\nchange_background;title_background\ncredits;Game Designer;x,x,x,x;center\n"
+    }
+]

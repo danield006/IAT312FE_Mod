@@ -1,0 +1,20 @@
+[
+    {
+        "name": "GuideForPlayers",
+        "trigger": "turn_change",
+        "level_nid": "2_2A",
+        "condition": "game.turncount == 1",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "Visiting the houses is currently optional. Please visit the tavern to view a cutscene|then talk to Senya to end this chapter.|Recommended to buy gear and trade it with Senya and Schuri before ending the chapter."
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;;Visiting the houses is currently optional. Please visit the tavern to view a cutscene|then talk to Senya to end this chapter.|Recommended to buy gear and trade it with Senya and Schuri before ending the chapter.\n"
+    }
+]

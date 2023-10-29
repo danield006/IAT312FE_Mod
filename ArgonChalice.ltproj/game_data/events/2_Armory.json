@@ -27,6 +27,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "transition;Close\nshop;{unit};Iron Sword,Slim Sword,Iron Lance,Slim Lance,Iron Axe\ntransition;Open\n"
     }
 ]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Vendor",
+        "trigger": "Vendor",
+        "level_nid": "2_2A",
+        "condition": "True",
+        "commands": [
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "shop",
+                [
+                    "{unit}",
+                    "Elfire,Mend,Vulnerary,Elixir"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "transition;Close\nshop;{unit};Elfire,Mend,Vulnerary,Elixir\ntransition;Open\n"
+    }
+]
