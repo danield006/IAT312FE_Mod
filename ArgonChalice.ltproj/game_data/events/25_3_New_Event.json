@@ -1,0 +1,59 @@
+[
+    {
+        "name": "New Event",
+        "trigger": "level_start",
+        "level_nid": "25_3",
+        "condition": "True",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "This is the first real map of the game.|It first tells important information to the player|One:If Senya or Schuri lose all their HP, they will return in the next chapter|But their opinion of you will drop as a punishment.|Second: The actions and objectives you complete in the game will impact your relationships with your party.|And these relationships with your party will impact the story and endings.|Certain actions will increase or decrease your relationships.",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "For this chapter, you must defend the two villages."
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "19,7"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "22,7"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "The boss of the chapter is injured and will attempt to run away to his fort|While multiple enemies spawn as he runs away.|These enemies will attack and destroy the village if they step on it.|Losing a village will anger Schuri.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "The boss is a high ranking member of a bandit gang.|Senya wants him dead because if he gets away he'll continue causing trouble."
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;;This is the first real map of the game.|It first tells important information to the player|One:If Senya or Schuri lose all their HP, they will return in the next chapter|But their opinion of you will drop as a punishment.|Second: The actions and objectives you complete in the game will impact your relationships with your party.|And these relationships with your party will impact the story and endings.|Certain actions will increase or decrease your relationships.;;;hint\nspeak;;For this chapter, you must defend the two villages.\nflicker_cursor;19,7;\nflicker_cursor;22,7;\nspeak;;The boss of the chapter is injured and will attempt to run away to his fort|While multiple enemies spawn as he runs away.|These enemies will attack and destroy the village if they step on it.|Losing a village will anger Schuri.;;;narration_top\nspeak;;The boss is a high ranking member of a bandit gang.|Senya wants him dead because if he gets away he'll continue causing trouble."
+    }
+]

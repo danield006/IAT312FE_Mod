@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Intro",
+        "trigger": "level_start",
+        "level_nid": "25_1",
+        "condition": "True",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "This is the first tutorial map.|There's no enemies, this is to let new players learn the controls.|Players are told via cutscenes how to initially move.|Players will visit the houses and Villages to learn how to visit and seize maps|Along with other tips like how to open the options menu|How to change the controls if needed|Player ends the map by seizing the throne."
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "speak;;This is the first tutorial map.|There's no enemies, this is to let new players learn the controls.|Players are told via cutscenes how to initially move.|Players will visit the houses and Villages to learn how to visit and seize maps|Along with other tips like how to open the options menu|How to change the controls if needed|Player ends the map by seizing the throne.\nwin_game\n"
+    }
+]

@@ -14,6 +14,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "set_next_chapter;4_1"
+        "source": "set_next_chapter;4_1\n"
     }
 ]

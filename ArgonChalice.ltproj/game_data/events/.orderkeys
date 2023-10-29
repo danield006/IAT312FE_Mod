@@ -196,5 +196,9 @@
     "2_2B_TurnLimitReached.json": 194,
     "2_2B_Outro.json": 195,
     "2_2B_MCEntersNecromancerRegion.json": 196,
-    "2_2B_RievDies.json": 197
+    "2_2B_RievDies.json": 197,
+    "25_PlayWhichMode.json": 198,
+    "25_1_Intro.json": 199,
+    "25_2_Intro.json": 200,
+    "25_3_New_Event.json": 201
 }
