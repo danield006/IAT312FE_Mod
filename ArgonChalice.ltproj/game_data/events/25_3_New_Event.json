@@ -19,7 +19,10 @@
                 "speak",
                 [
                     "",
-                    "For this chapter, you must defend the two villages."
+                    "For this chapter, you must defend the two villages.",
+                    "",
+                    "",
+                    "narration_top"
                 ]
             ],
             [
@@ -48,12 +51,119 @@
                 "speak",
                 [
                     "",
-                    "The boss is a high ranking member of a bandit gang.|Senya wants him dead because if he gets away he'll continue causing trouble."
+                    "The boss is a high ranking member of a bandit gang.|Senya wants him dead because if he gets away he'll continue causing trouble.|If the boss gets away, Senya will be angry.",
+                    "",
+                    "",
+                    "narration_top"
                 ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "It is POSSIBLE to both defend the villages and kill the boss.|However it requires some skill and luck from the player.|Trying to accomplish both can cause a unit to die|OR possibly fail both objectives.|Which obviously angers the party members.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "It's expected that the average player will attempt to kill the boss but fail|But defend the village.|We're gonna assume the player never has a party member die.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "choice",
+                [
+                    "_ch1TextChoice",
+                    "What outcome do you want to see?",
+                    "Boss_escapes_villagers_live,Boss_dies_villagers_dies,Boss_dies_villagers_live,Boss_escapes_villagers_die."
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_ch1TextChoice'] == 'Boss_escapes_villagers_live'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri +1, Senya -1"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch1TextChoice'] == 'Boss_dies_villagers_dies'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri +1, Senya -1"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch1TextChoice'] == 'Boss_dies_villagers_live'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri +1, Senya +1"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch1TextChoice'] == 'Boss_escapes_villagers_die'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri -1, Senya -1"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "end",
+                []
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;;This is the first real map of the game.|It first tells important information to the player|One:If Senya or Schuri lose all their HP, they will return in the next chapter|But their opinion of you will drop as a punishment.|Second: The actions and objectives you complete in the game will impact your relationships with your party.|And these relationships with your party will impact the story and endings.|Certain actions will increase or decrease your relationships.;;;hint\nspeak;;For this chapter, you must defend the two villages.\nflicker_cursor;19,7;\nflicker_cursor;22,7;\nspeak;;The boss of the chapter is injured and will attempt to run away to his fort|While multiple enemies spawn as he runs away.|These enemies will attack and destroy the village if they step on it.|Losing a village will anger Schuri.;;;narration_top\nspeak;;The boss is a high ranking member of a bandit gang.|Senya wants him dead because if he gets away he'll continue causing trouble."
+        "source": "speak;;This is the first real map of the game.|It first tells important information to the player|One:If Senya or Schuri lose all their HP, they will return in the next chapter|But their opinion of you will drop as a punishment.|Second: The actions and objectives you complete in the game will impact your relationships with your party.|And these relationships with your party will impact the story and endings.|Certain actions will increase or decrease your relationships.;;;hint\nspeak;;For this chapter, you must defend the two villages.;;;narration_top\nflicker_cursor;19,7\nflicker_cursor;22,7\nspeak;;The boss of the chapter is injured and will attempt to run away to his fort|While multiple enemies spawn as he runs away.|These enemies will attack and destroy the village if they step on it.|Losing a village will anger Schuri.;;;narration_top\nspeak;;The boss is a high ranking member of a bandit gang.|Senya wants him dead because if he gets away he'll continue causing trouble.|If the boss gets away, Senya will be angry.;;;narration_top\nspeak;;It is POSSIBLE to both defend the villages and kill the boss.|However it requires some skill and luck from the player.|Trying to accomplish both can cause a unit to die|OR possibly fail both objectives.|Which obviously angers the party members.;;;narration_top\nspeak;;It's expected that the average player will attempt to kill the boss but fail|But defend the village.|We're gonna assume the player never has a party member die.;;;narration_top\nend_skip\nchoice;_ch1TextChoice;What outcome do you want to see?;Boss_escapes_villagers_live,Boss_dies_villagers_dies,Boss_dies_villagers_live,Boss_escapes_villagers_die.\nif;game.game_vars['_ch1TextChoice'] == 'Boss_escapes_villagers_live'\n    speak;;Schuri +1, Senya -1\n    win_game\nelif;game.game_vars['_ch1TextChoice'] == 'Boss_dies_villagers_dies'\n    speak;;Schuri +1, Senya -1\n    win_game\nelif;game.game_vars['_ch1TextChoice'] == 'Boss_dies_villagers_live'\n    speak;;Schuri +1, Senya +1\n    win_game\nelif;game.game_vars['_ch1TextChoice'] == 'Boss_escapes_villagers_die'\n    speak;;Schuri -1, Senya -1\n    win_game\nend\n"
     }
 ]

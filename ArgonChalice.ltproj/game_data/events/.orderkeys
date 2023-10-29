@@ -200,5 +200,8 @@
     "25_PlayWhichMode.json": 198,
     "25_1_Intro.json": 199,
     "25_2_Intro.json": 200,
-    "25_3_New_Event.json": 201
+    "25_3_New_Event.json": 201,
+    "25_4_New_Event.json": 202,
+    "25_5_Intro.json": 203,
+    "25_6_Intro.json": 204
 }
