@@ -22,7 +22,7 @@
                 "speak",
                 [
                     "Senya",
-                    "'I'm too old'.|What a load of crap|He's clearly strong...|Is he testing us?"
+                    "Everyone! Run to the tavern!|We have magic there that will keep you safe!|...|'I'm too old'.|What a load of crap.|He's clearly strong...|Is he testing us?"
                 ]
             ],
             [
@@ -48,7 +48,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "What even was that magic|I've never seen anything like it.|Was that light magic?"
+                    "Please run to the tavern! There will be help there!|Please hurry!|...What even was that magic|I've never seen anything like it.|Was that... light magic?"
                 ]
             ],
             [
@@ -56,6 +56,10 @@
                 [
                     "Schuri"
                 ]
+            ],
+            [
+                "end_skip",
+                []
             ],
             [
                 "flicker_cursor",
@@ -74,7 +78,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "Boy, Why are you using a regular lance here?",
+                    "Boy, Why on terra are you using a regular lance here?",
                     "",
                     "",
                     "narration_top"
@@ -103,7 +107,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "I'm using telepathy boy.|I'm still in the tavern|Has That Cyrus not taught you anything?",
+                    "I am using telepathy to speak with you child.|I'm still in the tavern.|Has that Cyrus not taught you anything?",
                     "",
                     "",
                     "narration_top"
@@ -137,7 +141,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "That's old magic boy.|You're channeling the crystal's magic to perform old magics.",
+                    "That's old magics boy.|You're channeling the crystal's magic to perform old magics.|That is no easy feat either.|You clearly possess some natural affinity with old magics",
                     "",
                     "",
                     "narration_top"
@@ -154,7 +158,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "Old magics! Light? Dark?|Did Cyrus teach you nothing about it?",
+                    "Old magics! Light? Dark?|Has Cyrus really not taught you about it?",
                     "",
                     "",
                     "narration_top"
@@ -171,7 +175,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "...No I suspect he was worried about something else...|Listen boy. Light magic is highly potent to monsters.|You harness positive emotions and channel it outwards.|...I'll teach you dark magic later perhaps.|I'm going to warp a basic light tome to your hands|I'll try to guide you through this.",
+                    "...No I suspect he was worried about something else...|Listen boy. Light magic is highly potent to monsters.|You harness positive emotions and channel it outwards.|...I'll teach you dark magic later perhaps.|I'm going to warp a lightning tome to your hands.|I would suggest using it to deal with the monsters",
                     "",
                     "",
                     "narration_top"
@@ -195,6 +199,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "flicker_cursor;Senya (Senya)\nadd_portrait;Senya;Left\nspeak;Senya;'I'm too old'.|What a load of crap|He's clearly strong...|Is he testing us?\nremove_portrait;Senya\nflicker_cursor;Schuri\nadd_portrait;Schuri;Left\nspeak;Schuri;What even was that magic|I've never seen anything like it.|Was that light magic?\nremove_portrait;Schuri\nflicker_cursor;MC (MC)\nadd_portrait;MC;Right\nspeak;Aesc;Boy, Why are you using a regular lance here?;;;narration_top\nspeak;MC;Wh-\nmirror_portrait;MC\nmirror_portrait;MC\nspeak;Aesc;I'm using telepathy boy.|I'm still in the tavern|Has That Cyrus not taught you anything?;;;narration_top\nspeak;MC;...Not really. I'm magically inept. I can only use healing magic.|I learned to use a sword and spear to protect my friends.\nspeak;Aesc;...?|Is that why you have a battle staff?;;;narration_top\nspeak;MC;I don't know why but I have to take the crystal out of healing staves|then move it to my staff.\nspeak;Aesc;That's old magic boy.|You're channeling the crystal's magic to perform old magics.;;;narration_top\nspeak;MC;Huh?\nspeak;Aesc;Old magics! Light? Dark?|Did Cyrus teach you nothing about it?;;;narration_top\nspeak;MC;I mean we were told that magic exists in a triangle but nowadays...|I thought light and dark magic is impractical?\nspeak;Aesc;...No I suspect he was worried about something else...|Listen boy. Light magic is highly potent to monsters.|You harness positive emotions and channel it outwards.|...I'll teach you dark magic later perhaps.|I'm going to warp a basic light tome to your hands|I'll try to guide you through this.;;;narration_top\ngive_wexp;MC;Light (Light);31\ngive_item;MC;Lightning (Lightning)\n"
+        "source": "flicker_cursor;Senya (Senya)\nadd_portrait;Senya;Left\nspeak;Senya;Everyone! Run to the tavern!|We have magic there that will keep you safe!|...|'I'm too old'.|What a load of crap.|He's clearly strong...|Is he testing us?\nremove_portrait;Senya\nflicker_cursor;Schuri\nadd_portrait;Schuri;Left\nspeak;Schuri;Please run to the tavern! There will be help there!|Please hurry!|...What even was that magic|I've never seen anything like it.|Was that... light magic?\nremove_portrait;Schuri\nend_skip\nflicker_cursor;MC (MC)\nadd_portrait;MC;Right\nspeak;Aesc;Boy, Why on terra are you using a regular lance here?;;;narration_top\nspeak;MC;Wh-\nmirror_portrait;MC\nmirror_portrait;MC\nspeak;Aesc;I am using telepathy to speak with you child.|I'm still in the tavern.|Has that Cyrus not taught you anything?;;;narration_top\nspeak;MC;...Not really. I'm magically inept. I can only use healing magic.|I learned to use a sword and spear to protect my friends.\nspeak;Aesc;...?|Is that why you have a battle staff?;;;narration_top\nspeak;MC;I don't know why but I have to take the crystal out of healing staves|then move it to my staff.\nspeak;Aesc;That's old magics boy.|You're channeling the crystal's magic to perform old magics.|That is no easy feat either.|You clearly possess some natural affinity with old magics;;;narration_top\nspeak;MC;Huh?\nspeak;Aesc;Old magics! Light? Dark?|Has Cyrus really not taught you about it?;;;narration_top\nspeak;MC;I mean we were told that magic exists in a triangle but nowadays...|I thought light and dark magic is impractical?\nspeak;Aesc;...No I suspect he was worried about something else...|Listen boy. Light magic is highly potent to monsters.|You harness positive emotions and channel it outwards.|...I'll teach you dark magic later perhaps.|I'm going to warp a lightning tome to your hands.|I would suggest using it to deal with the monsters;;;narration_top\ngive_wexp;MC;Light (Light);31\ngive_item;MC;Lightning (Lightning)\n"
     }
 ]

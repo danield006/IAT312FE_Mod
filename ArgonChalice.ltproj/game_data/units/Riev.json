@@ -5,19 +5,21 @@
         "desc": "",
         "variant": null,
         "level": 16,
-        "klass": "Cleric",
-        "tags": [],
+        "klass": "Shaman",
+        "tags": [
+            "Boss"
+        ],
         "bases": {
-            "HP": 51,
+            "HP": 35,
             "STR": 0,
-            "MAG": 16,
-            "SKL": 22,
-            "SPD": 20,
+            "MAG": 14,
+            "SKL": 14,
+            "SPD": 13,
             "LCK": 11,
-            "DEF": 16,
-            "RES": 20,
+            "DEF": 11,
+            "RES": 7,
             "CON": 7,
-            "MOV": 6
+            "MOV": 5
         },
         "growths": {
             "HP": 0,
@@ -34,8 +36,8 @@
         "stat_cap_modifiers": {},
         "starting_items": [
             [
-                "Aura",
-                true
+                "Flux",
+                false
             ]
         ],
         "learned_skills": [],
@@ -68,7 +70,7 @@
             ],
             "Light": [
                 false,
-                251,
+                0,
                 251
             ],
             "Anima": [
@@ -78,7 +80,7 @@
             ],
             "Dark": [
                 false,
-                0,
+                181,
                 251
             ],
             "Default": [
@@ -89,7 +91,7 @@
         },
         "alternate_classes": [],
         "portrait_nid": "Riev",
-        "affinity": null,
+        "affinity": "None",
         "fields": []
     }
 ]

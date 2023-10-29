@@ -148,7 +148,7 @@
     "2_1_EnemyTurn4.json": 146,
     "5_1_intro.json": 147,
     "5_1_endings.json": 148,
-    "global_partyUnitDeath.json": 149,
+    "5_1_partyUnitDeath.json": 149,
     "4_1_intro.json": 150,
     "4_1_outro.json": 151,
     "4_1_mentorAppearsTurn3.json": 152,
@@ -189,6 +189,12 @@
     "4_1_chest3.json": 187,
     "4_1_chest4.json": 188,
     "4_1_mentorDies.json": 189,
-    "23_outro.json": 190,
-    "23_intro.json": 191
+    "2_3_outro.json": 190,
+    "2_3_intro.json": 191,
+    "2_2B_VillagersDone.json": 192,
+    "2_2B_VillagerDeath.json": 193,
+    "2_2B_TurnLimitReached.json": 194,
+    "2_2B_Outro.json": 195,
+    "2_2B_MCEntersNecromancerRegion.json": 196,
+    "2_2B_RievDies.json": 197
 }

@@ -35,6 +35,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "add_portrait;Artur;FarRight\nspeak;Artur;The rest... is up to you.\nexpression;Artur;CloseEyes\nremove_portrait;Artur\n"
     }
 ]

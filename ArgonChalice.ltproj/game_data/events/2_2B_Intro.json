@@ -282,10 +282,24 @@
                     "Senya",
                     "1,12"
                 ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch2BVillagersSaved",
+                    "0"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch2BVillagersDied",
+                    "0"
+                ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "transition;close\nchange_background;House\ntransition;open\nshow_layer;UnderAttack;immediate\nadd_portrait;Woman1;FarLeft\nadd_portrait;MC;MidLeft\nadd_portrait;Senya;Left\nadd_portrait;Schuri;Right\nwait;500\nadd_portrait;Man2;FarRight;Right\nspeak;Man2;Aria! Barricade the doors! Monsters hav-\ntransition;close\nchange_background\ntransition;open\nflicker_cursor;21,3\nkill_unit;Soldier (101)\nadd_unit;Aesc;21,3;fade\nflicker_cursor;21,3\nadd_portrait;MC;Left\nspeak;MC;Wait! Old man! Get out the wa-\nremove_portrait;Aesc\ninteract_unit;Aesc (Aesc);Monster (102);crit1\nend_skip\nadd_portrait;MC;Left\nspeak;MC;What the--|Who the hell are you?\nadd_portrait;Aesc;Right\nspeak;Aesc;How rude to attack during supper.|It seems monsters are attacking the town of Greshia...{clear}|To answer your question.|I suppose...|My name is Aesc.|I suppose you are pupils of Cyrus?\nadd_portrait;Senya;MidLeft\nadd_portrait;Schuri;FarLeft\nspeak;Schuri;Y-yes. We've been looking for you|How do you know Sir Cyrus?\nspeak;Aesc;Oh he was my pupil ages ago...|What will you do, pupils of Cyrus?|Will you defend this village?\nspeak;Senya;Of course! Are you gonna help?\nspeak;Aesc;...I'm afraid I'm rather old to be running around the battlefield killing monsters|I shall create a dispelling field within the tavern.|If you escort the villagers to this tavern|No monster will be able to sense our prescense within the field.|I would hurry and spread out.|Every second will matter.\nspeak;MC;!|Senya head to the west of the city and escort them over|Schuri, try to help the guards so monsters don't burst through.|I'll stay by here and defend the area so villagers can get to the tavern.\nspeak;Senya;On it!\nremove_portrait;Senya\nspeak;Schuri;Stay safe!\nremove_portrait;Schuri\nremove_unit;Aesc\nadd_unit;MC;22,7\nadd_unit;Schuri;11,8\nadd_unit;Senya;1,12\n"
+        "source": "transition;close\nchange_background;House\ntransition;open\nshow_layer;UnderAttack;immediate\nadd_portrait;Woman1;FarLeft\nadd_portrait;MC;MidLeft\nadd_portrait;Senya;Left\nadd_portrait;Schuri;Right\nwait;500\nadd_portrait;Man2;FarRight;Right\nspeak;Man2;Aria! Barricade the doors! Monsters hav-\ntransition;close\nchange_background\ntransition;open\nflicker_cursor;21,3\nkill_unit;Soldier (101)\nadd_unit;Aesc;21,3;fade\nflicker_cursor;21,3\nadd_portrait;MC;Left\nspeak;MC;Wait! Old man! Get out the wa-\nremove_portrait;Aesc\ninteract_unit;Aesc (Aesc);Monster (102);crit1\nend_skip\nadd_portrait;MC;Left\nspeak;MC;What the--|Who the hell are you?\nadd_portrait;Aesc;Right\nspeak;Aesc;How rude to attack during supper.|It seems monsters are attacking the town of Greshia...{clear}|To answer your question.|I suppose...|My name is Aesc.|I suppose you are pupils of Cyrus?\nadd_portrait;Senya;MidLeft\nadd_portrait;Schuri;FarLeft\nspeak;Schuri;Y-yes. We've been looking for you|How do you know Sir Cyrus?\nspeak;Aesc;Oh he was my pupil ages ago...|What will you do, pupils of Cyrus?|Will you defend this village?\nspeak;Senya;Of course! Are you gonna help?\nspeak;Aesc;...I'm afraid I'm rather old to be running around the battlefield killing monsters|I shall create a dispelling field within the tavern.|If you escort the villagers to this tavern|No monster will be able to sense our prescense within the field.|I would hurry and spread out.|Every second will matter.\nspeak;MC;!|Senya head to the west of the city and escort them over|Schuri, try to help the guards so monsters don't burst through.|I'll stay by here and defend the area so villagers can get to the tavern.\nspeak;Senya;On it!\nremove_portrait;Senya\nspeak;Schuri;Stay safe!\nremove_portrait;Schuri\nremove_unit;Aesc\nadd_unit;MC;22,7\nadd_unit;Schuri;11,8\nadd_unit;Senya;1,12\ngame_var;_ch2BVillagersSaved;0\ngame_var;_ch2BVillagersDied;0\n"
     }
 ]

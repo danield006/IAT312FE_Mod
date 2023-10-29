@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Outro",
+        "trigger": "level_end",
+        "level_nid": "2_2B",
+        "condition": "True",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "Outro!"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "speak;;Outro!\n"
+    }
+]

@@ -3,7 +3,7 @@
         "name": "partyUnitDies",
         "trigger": "unit_death",
         "level_nid": "4_1",
-        "condition": "unit.nid == 'Schuri' || unit.nid == 'Senya'",
+        "condition": "unit.nid == 'Schuri' or unit.nid == 'Senya'",
         "commands": [],
         "only_once": false,
         "priority": 20,

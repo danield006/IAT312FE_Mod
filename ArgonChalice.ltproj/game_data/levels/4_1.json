@@ -361,12 +361,12 @@
                 "nid": "throneRoom",
                 "region_type": "event",
                 "position": [
-                    14,
-                    4
+                    13,
+                    1
                 ],
                 "size": [
-                    1,
-                    1
+                    3,
+                    4
                 ],
                 "sub_nid": "Enter",
                 "condition": "True",

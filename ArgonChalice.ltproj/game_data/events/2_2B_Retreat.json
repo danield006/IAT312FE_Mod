@@ -23,10 +23,16 @@
                 [
                     "{unit}"
                 ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_ch2BVillagersSaved"
+                ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#Remove the villager\nspeak;Villager;Thank you so much!\nremove_unit;{unit}"
+        "source": "#Remove the villager\nspeak;Villager;Thank you so much!\nremove_unit;{unit}\ninc_game_var;_ch2BVillagersSaved\n"
     }
 ]

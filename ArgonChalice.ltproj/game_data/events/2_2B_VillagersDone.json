@@ -1,0 +1,60 @@
+[
+    {
+        "name": "VillagersDone",
+        "trigger": "turn_change",
+        "level_nid": "2_2B",
+        "condition": "game.game_vars['_ch2BVillagersSaved'] + game.game_vars['_ch2BVillagersDied'] >= 3",
+        "commands": [
+            [
+                "flicker_cursor",
+                [
+                    "Riev"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Riev",
+                    "Go on my creatures, lay waste to this city"
+                ]
+            ],
+            [
+                "add_group",
+                [
+                    "SummoningSpell",
+                    "SummoningSpell",
+                    "warp"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "I believe that was all the villagers left.|That necromancer appears to have succeeded in his summoning spell.|If you can kill that necromancer near the entrance of the village.|All the monsters will immediately die."
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "Riev"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Alternatively...|If you can hold on till turn 15...|I can clear up this mess myself."
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "flicker_cursor;Riev\nspeak;Riev;Go on my creatures, lay waste to this city\nadd_group;SummoningSpell;SummoningSpell;warp\nspeak;Aesc;I believe that was all the villagers left.|That necromancer appears to have succeeded in his summoning spell.|If you can kill that necromancer near the entrance of the village.|All the monsters will immediately die.\nflicker_cursor;Riev\nwait;500\nspeak;Aesc;Alternatively...|If you can hold on till turn 15...|I can clear up this mess myself.\n"
+    }
+]

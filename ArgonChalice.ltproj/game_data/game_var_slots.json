@@ -76,7 +76,11 @@
         "desc": "Timer for chapter 1 for bones getting ready to leave."
     },
     {
-        "nid": "New Slot_1",
-        "desc": null
+        "nid": "_ch2BVillagersSaved",
+        "desc": "Villagers saved during chapter 2 by escorting to tavern"
+    },
+    {
+        "nid": "_ch2BVillagersDied",
+        "desc": "Villagers who died during chapter 2 during escort"
     }
 ]

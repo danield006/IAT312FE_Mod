@@ -1,0 +1,50 @@
+[
+    {
+        "name": "TurnLimitReached",
+        "trigger": "turn_change",
+        "level_nid": "2_2B",
+        "condition": "game.turncount == 15",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Aesc",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Hmph...You've held on for long enough.|Allow me to end it."
+                ]
+            ],
+            [
+                "remove_group",
+                [
+                    "Party",
+                    "warp"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Aesc",
+                    "21,20",
+                    "warp"
+                ]
+            ],
+            [
+                "interact_unit",
+                [
+                    "Aesc",
+                    "Riev",
+                    "crit1"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "add_portrait;Aesc;Left\nspeak;Aesc;Hmph...You've held on for long enough.|Allow me to end it.\nremove_group;Party;warp\nadd_unit;Aesc;21,20;warp\ninteract_unit;Aesc;Riev;crit1\n"
+    }
+]

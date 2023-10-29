@@ -1,0 +1,49 @@
+[
+    {
+        "name": "intro",
+        "trigger": "level_start",
+        "level_nid": "2_3",
+        "condition": "True",
+        "commands": [
+            [
+                "remove_all_units",
+                []
+            ],
+            [
+                "add_unit",
+                [
+                    "MC",
+                    "",
+                    "immediate"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Senya",
+                    "",
+                    "immediate"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Schuri",
+                    "",
+                    "immediate"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Seth",
+                    "",
+                    "immediate"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "remove_all_units\nadd_unit;MC;;immediate\nadd_unit;Senya;;immediate\nadd_unit;Schuri;;immediate\nadd_unit;Seth;;immediate"
+    }
+]
