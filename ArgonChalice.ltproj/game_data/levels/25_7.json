@@ -1,8 +1,8 @@
 [
     {
-        "nid": "25_3",
-        "name": "Chapter1_overview",
-        "tilemap": "Forest_1",
+        "nid": "25_7",
+        "name": "Chapter 5 Overview",
+        "tilemap": "Chapter 14B_2",
         "bg_tilemap": null,
         "party": "MC",
         "music": {},
@@ -22,10 +22,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    22,
-                    8
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -35,10 +32,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    21,
-                    9
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -48,10 +42,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    23,
-                    9
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             }

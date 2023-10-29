@@ -1,0 +1,144 @@
+[
+    {
+        "name": "Intro",
+        "trigger": "level_start",
+        "level_nid": "25_5",
+        "condition": "True",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "This chapter is slightly more unique.|The goal of this chapter is to take an item from the lord of a castle as payment for the old man's help last chapter and the future.| There will be an option at the start of the map to either tamper with the guards drinks|OR have Schuri try to negotiate with the lord of the castle.|Senya prefers knocking out the guards as its safer and has less complications.|Schuri prefers to try to negotiate with the lord instead|Taking one person's preferred method will upset the other.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Overview of the tamper drinks method:|The group will start at the bottom of the map as guards will be nearly knocked out from their tampered drinks|They will only be able to move 1 space at a time, making them easy to avoid.|Senya and Schuri do not want you to kill any of the guards|If you do kill the guards,|Senya and Schuri get very angry at you for killing someone who's just doing their job and who is mostly harmless.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Once the party reaches the lord, they forceablly take the item from him.If the party can escape without killing guards on the way out|Senya and Schuri will be happy that no one was harmed.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Overview of the negotiate method:|The party will be welcomed in because of Schuri's nobility.|However, the lord is a snob and disrespects the MC and Senya.|Here, the player is given a few choices that avoids suspicion from the noble|If the player chooses the wrong options, Schuri is mad because you screw up the negotiations.|The group now has to fight their way from the top of the map to the bottom.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Alternatively, if the MC fools the noble, Schuri manages to trick the owner to get the item|Senya is amused that the owner was tricked like that|The map ends without any fights."
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "choice",
+                [
+                    "_ch3TextChoice",
+                    "What outcome do you want to see?",
+                    "tamper_drinks_kill_guard,tamper_drinks_guards_alive,negotiate_successful,negotiate_failed."
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_ch3TextChoice'] == 'tamper_drinks_kill_guard'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri -2, Senya -1"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch3TextChoice'] == 'tamper_drinks_guards_alive'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri +0, Senya +1"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch3TextChoice'] == 'negotiate_successful'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri +1, Senya +0"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch3TextChoice'] == 'Villagers_survive_stay_at_post'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri 0, Senya -1"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;;This chapter is slightly more unique.|The goal of this chapter is to take an item from the lord of a castle as payment for the old man's help last chapter and the future.| There will be an option at the start of the map to either tamper with the guards drinks|OR have Schuri try to negotiate with the lord of the castle.|Senya prefers knocking out the guards as its safer and has less complications.|Schuri prefers to try to negotiate with the lord instead|Taking one person's preferred method will upset the other.;;;narration_top\nspeak;;Overview of the tamper drinks method:|The group will start at the bottom of the map as guards will be nearly knocked out from their tampered drinks|They will only be able to move 1 space at a time, making them easy to avoid.|Senya and Schuri do not want you to kill any of the guards|If you do kill the guards,|Senya and Schuri get very angry at you for killing someone who's just doing their job and who is mostly harmless.;;;narration_top\nspeak;;Once the party reaches the lord, they forceablly take the item from him.If the party can escape without killing guards on the way out|Senya and Schuri will be happy that no one was harmed.;;;narration_top\nspeak;;Overview of the negotiate method:|The party will be welcomed in because of Schuri's nobility.|However, the lord is a snob and disrespects the MC and Senya.|Here, the player is given a few choices that avoids suspicion from the noble|If the player chooses the wrong options, Schuri is mad because you screw up the negotiations.|The group now has to fight their way from the top of the map to the bottom.;;;narration_top\nspeak;;Alternatively, if the MC fools the noble, Schuri manages to trick the owner to get the item|Senya is amused that the owner was tricked like that|The map ends without any fights.\nend_skip\nchoice;_ch3TextChoice;What outcome do you want to see?;tamper_drinks_kill_guard,tamper_drinks_guards_alive,negotiate_successful,negotiate_failed.\nif;game.game_vars['_ch3TextChoice'] == 'tamper_drinks_kill_guard'\n    speak;;Schuri -2, Senya -1\n    win_game\nelif;game.game_vars['_ch3TextChoice'] == 'tamper_drinks_guards_alive'\n    speak;;Schuri +0, Senya +1\n    win_game\nelif;game.game_vars['_ch3TextChoice'] == 'negotiate_successful'\n    speak;;Schuri +1, Senya +0\n    win_game\nelif;game.game_vars['_ch3TextChoice'] == 'Villagers_survive_stay_at_post'\n    speak;;Schuri 0, Senya -1\n    win_game\nend\n"
+    }
+]

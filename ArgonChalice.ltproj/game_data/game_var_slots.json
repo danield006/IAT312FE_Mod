@@ -82,5 +82,13 @@
     {
         "nid": "_ch2BVillagersDied",
         "desc": "Villagers who died during chapter 2 during escort"
+    },
+    {
+        "nid": "_SchuriOpinion",
+        "desc": "Schuri's opinion of MC (>0 in order to use in final)"
+    },
+    {
+        "nid": "_SenyaOpinion",
+        "desc": "Senya's opinion of MC(>0 in order to use in final)"
     }
 ]
