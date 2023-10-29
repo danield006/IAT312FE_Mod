@@ -49,21 +49,24 @@
                 "add_portrait",
                 [
                     "Senya",
-                    "OffscreenLeft"
+                    "OffscreenLeft",
+                    "immediate"
                 ]
             ],
             [
                 "add_portrait",
                 [
                     "Schuri",
-                    "OffscreenLeft"
+                    "OffscreenLeft",
+                    "immediate"
                 ]
             ],
             [
                 "add_portrait",
                 [
                     "MC",
-                    "OffscreenLeft"
+                    "OffscreenLeft",
+                    "immediate"
                 ]
             ],
             [
@@ -334,6 +337,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "#remove_all_units\nchapter_title\nchange_background;GradoCastle\ntransition;open\nmusic;castle-corridor\nlocation_card;Kaerndal Castle-Corridors\n#speak;;Kaerndal Castle-Corridors;;;narration_top\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nadd_portrait;MC;OffscreenLeft\nsound;Light Foot Steps 1\nmove_portrait;Senya;Right\nmirror_portrait;Senya\nsound;Foot Step\nmove_portrait;MC;MidLeft\nsound;Foot Step\nmove_portrait;Schuri;FarLeft\nspeak;Senya;We're here. Let's hope Teacher has made it out.\nspeak;Schuri;We're in the final stretch.\nexpression;Schuri;HalfCloseEyes\nspeak;Schuri;I hope Sir...\nspeak;MC;Teach...|We're finally here...|I hope everyone is ready|It's all or nothing!\nexpression;Schuri;OpenEyes\nscreen_shake;800\nsound;explosion_wide\nbop_portrait;MC\nmirror_portrait;MC\nmirror_portrait;MC\nspeak;MC;What was that?!\nmirror_portrait;Senya\nbop_portrait;Senya\nspeak;Senya;Well, looks like we've got company!\nspeak;Schuri;There's so many of them!\nchange_background\nend_skip\n#add_unit;MC;3,4\n#add_unit;Schuri;2,4\n#add_unit;Senya;2,3\n#add_group;Party;starting\n#the mobs appear\nmove_unit;106;1,11;normal\nadd_unit;102;0,5;fade\nmove_unit;102;3,10;normal\nspeak;Senya;There's no stop to them!\nspeak;MC;Everyone stick together!|We've got to hurry on through!\nspeak;Schuri;Look!\nflicker_cursor;4,9\nspeak;Schuri;Those walls look fragile, we can break through!\nspeak;MC;Don't get overwhelmed!\nmusic_fade_back;2000\n#win_game\n"
+        "source": "#remove_all_units\nchapter_title\nchange_background;GradoCastle\ntransition;open\nmusic;castle-corridor\nlocation_card;Kaerndal Castle-Corridors\n#speak;;Kaerndal Castle-Corridors;;;narration_top\nadd_portrait;Senya;OffscreenLeft;immediate\nadd_portrait;Schuri;OffscreenLeft;immediate\nadd_portrait;MC;OffscreenLeft;immediate\nsound;Light Foot Steps 1\nmove_portrait;Senya;Right\nmirror_portrait;Senya\nsound;Foot Step\nmove_portrait;MC;MidLeft\nsound;Foot Step\nmove_portrait;Schuri;FarLeft\nspeak;Senya;We're here. Let's hope Teacher has made it out.\nspeak;Schuri;We're in the final stretch.\nexpression;Schuri;HalfCloseEyes\nspeak;Schuri;I hope Sir...\nspeak;MC;Teach...|We're finally here...|I hope everyone is ready|It's all or nothing!\nexpression;Schuri;OpenEyes\nscreen_shake;800\nsound;explosion_wide\nbop_portrait;MC\nmirror_portrait;MC\nmirror_portrait;MC\nspeak;MC;What was that?!\nmirror_portrait;Senya\nbop_portrait;Senya\nspeak;Senya;Well, looks like we've got company!\nspeak;Schuri;There's so many of them!\nchange_background\nend_skip\n#add_unit;MC;3,4\n#add_unit;Schuri;2,4\n#add_unit;Senya;2,3\n#add_group;Party;starting\n#the mobs appear\nmove_unit;106;1,11;normal\nadd_unit;102;0,5;fade\nmove_unit;102;3,10;normal\nspeak;Senya;There's no stop to them!\nspeak;MC;Everyone stick together!|We've got to hurry on through!\nspeak;Schuri;Look!\nflicker_cursor;4,9\nspeak;Schuri;Those walls look fragile, we can break through!\nspeak;MC;Don't get overwhelmed!\nmusic_fade_back;2000\n#win_game\n"
     }
 ]
