@@ -161,5 +161,7 @@
     "2_1_Village1.json": 159,
     "2_1_Village2.json": 160,
     "2_2A_Intro.json": 161,
-    "2_2A_New_Event_1.json": 162
+    "2_2A_Outro.json": 162,
+    "2_2A_GuideForPlayers.json": 163,
+    "2_2A_Tavern.json": 164
 }
