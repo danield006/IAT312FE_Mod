@@ -1,0 +1,26 @@
+[
+    {
+        "name": "chest1",
+        "trigger": "on_region_interact",
+        "level_nid": "4_1",
+        "condition": "region.nid == 'chest1'",
+        "commands": [
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Poison Sword (Poison Sword)"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "give_item;{unit};Poison Sword (Poison Sword)\nhas_traded;{unit}\n"
+    }
+]

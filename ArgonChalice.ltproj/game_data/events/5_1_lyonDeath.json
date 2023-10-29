@@ -1,0 +1,102 @@
+[
+    {
+        "name": "lyonDeath",
+        "trigger": "unit_death",
+        "level_nid": "5_1",
+        "condition": "unit.nid == 'Lyon'",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#maybe for second prototype"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lyon",
+                    "You!"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "kill_lyon"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#phase 1 will be normal party"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "kill_lyon==1"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "finalBossFightMid"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#for proto one"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "comment",
+                [
+                    "#create phase 2"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#boss takes control of party"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "kill_lyon==2"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "finalBossFightClimax"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#create final phase"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "#maybe for second prototype\nspeak;Lyon;You!\ninc_game_var;kill_lyon\n#phase 1 will be normal party\nif;kill_lyon==1\n    music;finalBossFightMid\n    #for proto one\n    win_game\n    #create phase 2\n    #boss takes control of party\nelif;kill_lyon==2\n    music;finalBossFightClimax\n    #create final phase\nelse\n    win_game\nend\n"
+    }
+]

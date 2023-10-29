@@ -1,0 +1,45 @@
+[
+    {
+        "name": "mcDie",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid=='MC'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "MidLeft"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I have failed..."
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close",
+                    "500"
+                ]
+            ],
+            [
+                "lose_game",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;MC;MidLeft\nmove_portrait;MC;Left\nspeak;MC;I have failed...\ntransition;close;500\nlose_game\n"
+    }
+]

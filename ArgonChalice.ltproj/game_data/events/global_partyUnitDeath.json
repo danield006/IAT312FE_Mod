@@ -1,0 +1,40 @@
+[
+    {
+        "name": "partyUnitDeath",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Schuri' || unit.nid == 'Senya'",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#when MC kills either schuri or senya"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "MC",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I'm sorry...I could not save you.|Please...leave this to me."
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "#when MC kills either schuri or senya\nadd_portrait;MC;Left\nexpression;MC;CloseEyes\nspeak;MC;I'm sorry...I could not save you.|Please...leave this to me.\n"
+    }
+]

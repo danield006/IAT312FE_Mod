@@ -1,0 +1,19 @@
+[
+    {
+        "name": "wall3",
+        "trigger": "unit_death",
+        "level_nid": "4_1",
+        "condition": "unit.nid == 'Wall3'",
+        "commands": [
+            [
+                "show_layer",
+                [
+                    "Breakable3"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "show_layer;Breakable3\n"
+    }
+]

@@ -1,7 +1,7 @@
 [
     {
         "nid": "2222",
-        "name": "Credits test",
+        "name": "Credits",
         "tilemap": "Chapter 14B_1",
         "bg_tilemap": "Chapter 14B_1",
         "party": "MC",

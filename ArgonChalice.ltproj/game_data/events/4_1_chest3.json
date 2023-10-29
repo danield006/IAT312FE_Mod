@@ -1,0 +1,33 @@
+[
+    {
+        "name": "chest3",
+        "trigger": "on_region_interact",
+        "level_nid": "4_1",
+        "condition": "region.nid == 'chest3'",
+        "commands": [
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Heal (Heal)"
+                ]
+            ],
+            [
+                "give_skill",
+                [
+                    "{unit}",
+                    "Luck +5 (Luck +5)"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "give_item;{unit};Heal (Heal)\ngive_skill;{unit};Luck +5 (Luck +5)\nhas_traded;{unit}\n"
+    }
+]

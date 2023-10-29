@@ -1,0 +1,43 @@
+[
+    {
+        "name": "mentorStatus",
+        "trigger": "enemy_turn_change",
+        "level_nid": "5_1",
+        "condition": "game.turncount==3",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#if time in prototype 2"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#mentor will bust in to help the big bos at very reduced stats"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#does not matter if killed in ch4 bc he's reanimated"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#mostly to give some emotional damage to the chars"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#diff reactions depending on what player did in ch4"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "#if time in prototype 2\n#mentor will bust in to help the big bos at very reduced stats\n#does not matter if killed in ch4 bc he's reanimated\n#mostly to give some emotional damage to the chars\n#diff reactions depending on what player did in ch4\n"
+    }
+]

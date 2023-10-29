@@ -1,7 +1,7 @@
 [
     {
         "name": "credits",
-        "trigger": null,
+        "trigger": "level_start",
         "level_nid": "2222",
         "condition": "True",
         "commands": [
@@ -14,20 +14,60 @@
             [
                 "change_background",
                 [
-                    "title_background"
+                    "BlackBackground"
                 ]
             ],
             [
                 "credits",
                 [
-                    "Game Designer",
-                    "x,x,x,x",
+                    "Game Designers",
+                    "Name, name, name, name",
                     "center"
                 ]
+            ],
+            [
+                "wait",
+                [
+                    "4800"
+                ]
+            ],
+            [
+                "credits",
+                [
+                    "",
+                    "Thank You",
+                    "center"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "6000"
+                ]
+            ],
+            [
+                "music_fade_back",
+                [
+                    "8000"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "music_clear",
+                []
+            ],
+            [
+                "win_game",
+                []
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "music;credits\nchange_background;title_background\ncredits;Game Designer;x,x,x,x;center\n"
+        "source": "music;credits\nchange_background;BlackBackground\ncredits;Game Designers;Name, name, name, name;center\nwait;4800\ncredits;;Thank You;center\nwait;6000\nmusic_fade_back;8000\ntransition;close;\nmusic_clear\nwin_game\n"
     }
 ]

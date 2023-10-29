@@ -1,0 +1,76 @@
+[
+    {
+        "name": "mentorAtk",
+        "trigger": "enemy_turn_change",
+        "level_nid": "4_1",
+        "condition": "game.turncount == 4",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Left"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "MidLeft"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Mentor",
+                    "FarRight"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Mentor",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Teach is after us?!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "He's under control!Sir, do you recognize us?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "The audacity of that bastard!"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Senya;Left\nadd_portrait;Schuri;Left\nadd_portrait;MC;MidLeft\nadd_portrait;Mentor;FarRight\nexpression;Mentor;CloseEyes\nspeak;MC;Teach is after us?!\nspeak;Schuri;He's under control!Sir, do you recognize us?\nspeak;Mentor;...\nspeak;Senya;The audacity of that bastard!\n"
+    }
+]

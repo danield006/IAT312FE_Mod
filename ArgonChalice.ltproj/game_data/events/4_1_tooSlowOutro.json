@@ -1,0 +1,98 @@
+[
+    {
+        "name": "tooSlowOutro",
+        "trigger": "turn_change",
+        "level_nid": "4_1",
+        "condition": "game.turncount == 15",
+        "commands": [
+            [
+                "screen_shake",
+                [
+                    "250"
+                ]
+            ],
+            [
+                "sound",
+                [
+                    "explosion_wide"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Oh no..."
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "LyonEvil",
+                    "Right"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "InsideCastle"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "LyonEvil",
+                    "Look at what the cat dragged it...|Too bad you're already too late.",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "It's you!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "LyonEvil",
+                    "The Argon Ritual has already been completed. All this power...!|"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#more stuff"
+                ]
+            ],
+            [
+                "lose_game",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "screen_shake;250\nsound;explosion_wide\nspeak;MC;Oh no...\ntransition;close\nadd_portrait;LyonEvil;Right\nadd_portrait;MC;Left\nchange_background;InsideCastle\ntransition;open\nspeak;LyonEvil;Look at what the cat dragged it...|Too bad you're already too late.;;;noir\nspeak;MC;It's you!\nspeak;LyonEvil;The Argon Ritual has already been completed. All this power...!|\n#more stuff\nlose_game\n"
+    }
+]

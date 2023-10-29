@@ -1,0 +1,24 @@
+[
+    {
+        "name": "atThroneRoom",
+        "trigger": "on_region_interact",
+        "level_nid": "4_1",
+        "condition": "region.nid == 'throneRoom'",
+        "commands": [
+            [
+                "speak",
+                [
+                    "MC",
+                    "We've made it."
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "speak;MC;We've made it.\nwin_game\n"
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "name": "finalWarning",
+        "trigger": "enemy_turn_change",
+        "level_nid": "4_1",
+        "condition": "game.turncount == 12",
+        "commands": [
+            [
+                "screen_shake",
+                [
+                    "300"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Oh no!|We're almost out of time!|There's only 3 turns left"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "screen_shake;300\nadd_portrait;MC;Left\nspeak;MC;Oh no!|We're almost out of time!|There's only 3 turns left\n"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "chest4",
+        "trigger": "on_region_interact",
+        "level_nid": "4_1",
+        "condition": "region.nid == 'chest4'",
+        "commands": [
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Elfire (Elfire)"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "give_item;{unit};Elfire (Elfire)\nhas_traded;{unit}"
+    }
+]
