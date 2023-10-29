@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Intro",
+        "trigger": "level_start",
+        "level_nid": "25_2",
+        "condition": "True",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "This is the second tutorial map|This teaches players how to fight.|It teaches players how the armory and vendor works|by forcing the player to sell and buy items.|After that, it'll spawn an enemy and tell the player|to sit on a fort and let the enemy come in.|After that it'll spawn two more enemies on their own terrain.|And let the player decide how they want to kill them.|It's expected that the player will use Schuri's magic to kill an armored knight|For the MC character to kill the axe fighter.|And use Senya's bow to kill the pegasus knight.|Once all the enemies are dead, the player will unlock the door to finish the map."
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "speak;;This is the second tutorial map|This teaches players how to fight.|It teaches players how the armory and vendor works|by forcing the player to sell and buy items.|After that, it'll spawn an enemy and tell the player|to sit on a fort and let the enemy come in.|After that it'll spawn two more enemies on their own terrain.|And let the player decide how they want to kill them.|It's expected that the player will use Schuri's magic to kill an armored knight|For the MC character to kill the axe fighter.|And use Senya's bow to kill the pegasus knight.|Once all the enemies are dead, the player will unlock the door to finish the map.\nwin_game\n"
+    }
+]

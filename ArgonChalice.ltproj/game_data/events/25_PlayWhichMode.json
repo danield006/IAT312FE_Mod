@@ -1,0 +1,71 @@
+[
+    {
+        "name": "PlayWhichMode?",
+        "trigger": "level_start",
+        "level_nid": "25",
+        "condition": "True",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "This is a choice mostly for TAs and Instructors grading this game.|Our game is longer than most of the other projects|because we have multiple chapters|and multiple objectives based on how you play|We offer the choice of the actual game in development OR the 'text-adventure' version.|The 'text-adventure' version will give you all the options on how the chapter goes.|And it will give an overview of how the chapter is played.|Once again. This is for TA and Instructor sanity while grading.|The actual game will work towards bringing the overview to gameplay.",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "choice",
+                [
+                    "gameChoice",
+                    "Which version will you play?",
+                    "text,fullGame."
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['gameChoice'] == 'fullGame'"
+                ]
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "15"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['gameChoice'] == 'text'"
+                ]
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "25_1"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;;This is a choice mostly for TAs and Instructors grading this game.|Our game is longer than most of the other projects|because we have multiple chapters|and multiple objectives based on how you play|We offer the choice of the actual game in development OR the 'text-adventure' version.|The 'text-adventure' version will give you all the options on how the chapter goes.|And it will give an overview of how the chapter is played.|Once again. This is for TA and Instructor sanity while grading.|The actual game will work towards bringing the overview to gameplay.;;;hint\nend_skip\nchoice;gameChoice;Which version will you play?;text,fullGame.\nif;game.game_vars['gameChoice'] == 'fullGame'\n    set_next_chapter;15\n    win_game\nelif;game.game_vars['gameChoice'] == 'text'\n    set_next_chapter;25_1\n    win_game\nend;"
+    }
+]
