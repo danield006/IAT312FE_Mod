@@ -1,10 +1,18 @@
 [
     {
         "name": "EnemyTurn4",
-        "trigger": "enemy_turn_change",
+        "trigger": "turn_change",
         "level_nid": "2_1",
         "condition": "game.turncount == 4",
         "commands": [
+            [
+                "spawn_group",
+                [
+                    "New Group",
+                    "west",
+                    "New Group"
+                ]
+            ],
             [
                 "add_portrait",
                 [
@@ -28,6 +36,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Bone;Left\nspeak;Bone;Oi, maggots, go and teach those pesky kids a lesson!\nremove_portrait;Bone\n"
+        "source": "spawn_group;New Group;west;New Group\nadd_portrait;Bone;Left\nspeak;Bone;Oi, maggots, go and teach those pesky kids a lesson!\nremove_portrait;Bone\n"
     }
 ]

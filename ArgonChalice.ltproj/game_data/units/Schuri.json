@@ -8,15 +8,15 @@
         "klass": "SchuriClass",
         "tags": [],
         "bases": {
-            "HP": 18,
+            "HP": 21,
             "STR": 2,
-            "MAG": 9,
+            "MAG": 12,
             "SKL": 5,
             "SPD": 7,
             "LCK": 6,
-            "DEF": 4,
-            "RES": 6,
-            "CON": 5,
+            "DEF": 6,
+            "RES": 7,
+            "CON": 6,
             "MOV": 5
         },
         "growths": {

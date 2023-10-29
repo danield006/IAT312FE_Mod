@@ -1,0 +1,31 @@
+[
+    {
+        "name": "MC_Senya_talk",
+        "trigger": "on_talk",
+        "level_nid": "2_2A",
+        "condition": "True",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Insert witty dialogue here"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "add_portrait;Senya;Left\nspeak;Senya;Insert witty dialogue here\nwin_game;"
+    }
+]

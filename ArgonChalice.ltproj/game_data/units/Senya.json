@@ -8,13 +8,13 @@
         "klass": "Senya",
         "tags": [],
         "bases": {
-            "HP": 21,
-            "STR": 6,
+            "HP": 22,
+            "STR": 7,
             "MAG": 2,
-            "SKL": 10,
-            "SPD": 11,
+            "SKL": 12,
+            "SPD": 12,
             "LCK": 2,
-            "DEF": 4,
+            "DEF": 6,
             "RES": 2,
             "CON": 7,
             "MOV": 5

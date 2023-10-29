@@ -39,6 +39,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;Bone;FarRight\nspeak;Bone;Gah...|Bastard...|How could I die like this\nexpression;Bone;CloseEyes\nremove_portrait;Vanessa\nwin_game;"
+        "source": "add_portrait;Bone;FarRight\nspeak;Bone;Gah...|Bastard...|How could I die like this\nexpression;Bone;CloseEyes\nremove_portrait;Vanessa\nwin_game\n"
     }
 ]

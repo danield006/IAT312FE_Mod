@@ -312,6 +312,48 @@
                 "generic": true
             },
             {
+                "nid": "112",
+                "variant": null,
+                "level": 1,
+                "klass": "Cavalier",
+                "faction": "Cutthroat",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Pursue",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "113",
+                "variant": null,
+                "level": 1,
+                "klass": "Cavalier",
+                "faction": "Cutthroat",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Pursue",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
                 "nid": "114",
                 "variant": null,
                 "level": 1,
@@ -416,6 +458,48 @@
             },
             {
                 "nid": "118",
+                "variant": null,
+                "level": 1,
+                "klass": "Brigand",
+                "faction": "Bandit",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueVillage",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "119",
+                "variant": null,
+                "level": 1,
+                "klass": "Brigand",
+                "faction": "Bandit",
+                "starting_items": [
+                    [
+                        "Iron Axe",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "PursueVillage",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "120",
                 "variant": null,
                 "level": 1,
                 "klass": "Brigand",
@@ -618,7 +702,9 @@
                 "nid": "Mercenaries2",
                 "units": [
                     "114",
-                    "115"
+                    "115",
+                    "112",
+                    "113"
                 ],
                 "positions": {
                     "114": [
@@ -628,6 +714,14 @@
                     "115": [
                         8,
                         18
+                    ],
+                    "112": [
+                        6,
+                        17
+                    ],
+                    "113": [
+                        8,
+                        17
                     ]
                 }
             },
@@ -677,6 +771,23 @@
                     "118": [
                         23,
                         10
+                    ]
+                }
+            },
+            {
+                "nid": "New Group",
+                "units": [
+                    "119",
+                    "120"
+                ],
+                "positions": {
+                    "119": [
+                        0,
+                        14
+                    ],
+                    "120": [
+                        0,
+                        15
                     ]
                 }
             }

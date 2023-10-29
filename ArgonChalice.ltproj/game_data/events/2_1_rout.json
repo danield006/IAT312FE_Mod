@@ -26,6 +26,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;MC;Right;\nspeak;MC;Finally...It's over.\nwin_game;"
+        "source": "add_portrait;MC;Right\nspeak;MC;Finally...It's over.\nwin_game\n"
     }
 ]
