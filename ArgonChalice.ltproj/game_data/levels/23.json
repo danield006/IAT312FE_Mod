@@ -1,8 +1,8 @@
 [
     {
-        "nid": "8",
-        "name": "Chapter 8",
-        "tilemap": null,
+        "nid": "23",
+        "name": "Chapter 3 Mansion",
+        "tilemap": "Chapter 14B_2",
         "bg_tilemap": null,
         "party": "MC",
         "music": {},
