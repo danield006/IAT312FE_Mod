@@ -12,11 +12,11 @@
             "STR": 7,
             "MAG": 2,
             "SKL": 12,
-            "SPD": 12,
+            "SPD": 11,
             "LCK": 2,
             "DEF": 6,
             "RES": 2,
-            "CON": 7,
+            "CON": 9,
             "MOV": 5
         },
         "growths": {
