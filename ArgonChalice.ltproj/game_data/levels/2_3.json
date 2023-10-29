@@ -1,0 +1,23 @@
+[
+    {
+        "nid": "2_3",
+        "name": "Chapter 2B: Gresia under seige",
+        "tilemap": "New Tilemap",
+        "bg_tilemap": null,
+        "party": "MC",
+        "music": {},
+        "objective": {
+            "simple": "Rescue the villagers",
+            "win": "Fend off the attack",
+            "loss": "MC Dies"
+        },
+        "roam": false,
+        "roam_unit": null,
+        "go_to_overworld": false,
+        "should_record": true,
+        "units": [],
+        "regions": [],
+        "unit_groups": [],
+        "ai_groups": []
+    }
+]
