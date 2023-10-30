@@ -20,8 +20,8 @@
             [
                 "credits",
                 [
-                    "Game Designers",
-                    "Name, name, name, name",
+                    "Game Designers/Writers",
+                    "Daniel Dai, Benson Chow, Nicole Ling, Michelle Lin",
                     "center"
                 ]
             ],
@@ -68,6 +68,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "music;credits\nchange_background;BlackBackground\ncredits;Game Designers;Name, name, name, name;center\nwait;4800\ncredits;;Thank You;center\nwait;6000\nmusic_fade_back;8000\ntransition;close;\nmusic_clear\nwin_game\n"
+        "source": "music;credits\nchange_background;BlackBackground\ncredits;Game Designers/Writers;Daniel Dai, Benson Chow, Nicole Ling, Michelle Lin;center\nwait;4800\ncredits;;Thank You;center\nwait;6000\nmusic_fade_back;8000\ntransition;close\nmusic_clear\nwin_game\n"
     }
 ]

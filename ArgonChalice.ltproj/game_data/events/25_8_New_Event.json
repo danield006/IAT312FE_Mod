@@ -1,0 +1,100 @@
+[
+    {
+        "name": "New Event",
+        "trigger": "level_start",
+        "level_nid": "25_8",
+        "condition": "True",
+        "commands": [
+            [
+                "change_background",
+                [
+                    "title_background"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "This is what the epilogue will look like."
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Middle"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "MC ended up...."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Middle"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Senya ended up...."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Middle"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri ended up...."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "open_unit_management",
+                []
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "2222"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "change_background;title_background\nspeak;;This is what the epilogue will look like.\nadd_portrait;MC;Middle\nspeak;;MC ended up....\nremove_portrait;MC\nadd_portrait;Senya;Middle\nspeak;;Senya ended up....\nremove_portrait;Senya\nadd_portrait;Schuri;Middle\nspeak;;Schuri ended up....\nremove_portrait;Schuri\nopen_unit_management\nset_next_chapter;2222\nwin_game\n"
+    }
+]

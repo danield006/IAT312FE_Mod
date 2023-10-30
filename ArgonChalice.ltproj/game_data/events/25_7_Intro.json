@@ -52,10 +52,68 @@
                     "",
                     "let's see what your choices led to."
                 ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_SchuriOpinion'] and game.game_vars['_SenyaOpinion'] < 0"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Both are mindcontrolled"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_SchuriOpinion'] < 0"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Only Schuri is mindcontrolled"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_SenyaOpinion'] < 0"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Only Senya is mindcontrolled"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Neither are mindcontrolled!"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "win_game",
+                []
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;;The party reaches the throne room where the final boss is.|This is where the game will check to see your relationships with your party.|If a party member's relationship total is negative, then they will be mind controlled to fight you.|This creates 4 possible storylines for the chapter.|Two for just one of the party members being mind controlled.|One for both of them being mind controlled|and one for neither of them being mind controlled.;;;narration_top\nspeak;;If a party member is mind controlled|They will stand in the way for you to kill the final boss.|The player will likely have to kill their party members in order to safely reach the final boss.;;;narration_top\nspeak;;If both party members are controlled, the MC will gain a mini stat boost as they fall to the dark side|If the player wins from here, they'll reach a unique bad ending.;;;narration_top\nspeak;;if both party members are safe from the mind control,| the MC will gain a mini stat boost as they utilize enhanced light magic to defeat the final boss.|This will trigger the golden ending where everyone likes you.\nend_skip\nspeak;;let's see what your choices led to.\n\n"
+        "source": "speak;;The party reaches the throne room where the final boss is.|This is where the game will check to see your relationships with your party.|If a party member's relationship total is negative, then they will be mind controlled to fight you.|This creates 4 possible storylines for the chapter.|Two for just one of the party members being mind controlled.|One for both of them being mind controlled|and one for neither of them being mind controlled.;;;narration_top\nspeak;;If a party member is mind controlled|They will stand in the way for you to kill the final boss.|The player will likely have to kill their party members in order to safely reach the final boss.;;;narration_top\nspeak;;If both party members are controlled, the MC will gain a mini stat boost as they fall to the dark side|If the player wins from here, they'll reach a unique bad ending.;;;narration_top\nspeak;;if both party members are safe from the mind control,| the MC will gain a mini stat boost as they utilize enhanced light magic to defeat the final boss.|This will trigger the golden ending where everyone likes you.\nend_skip\nspeak;;let's see what your choices led to.\nif;game.game_vars['_SchuriOpinion'] and game.game_vars['_SenyaOpinion'] < 0\n    speak;;Both are mindcontrolled\nelif;game.game_vars['_SchuriOpinion'] < 0\n    speak;;Only Schuri is mindcontrolled\nelif;game.game_vars['_SenyaOpinion'] < 0\n    speak;;Only Senya is mindcontrolled\nelse\n    speak;;Neither are mindcontrolled!\nend\nwin_game\n"
     }
 ]
