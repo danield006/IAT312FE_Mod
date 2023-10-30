@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Intro",
+        "trigger": "level_start",
+        "level_nid": "25",
+        "condition": "True",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "Press X to go through dialogue.| Press X again to open up a menu.| Use arrow keys and X to go to options.|Recommend changing screen size, disabling mouse controls, and adjusting sound.|When you are ready, press z to back out to the map screen again.|Then press x to end your turn to start."
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;;Press X to go through dialogue.| Press X again to open up a menu.| Use arrow keys and X to go to options.|Recommend changing screen size, disabling mouse controls, and adjusting sound.|When you are ready, press z to back out to the map screen again.|Then press x to end your turn to start.\n"
+    }
+]

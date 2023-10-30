@@ -1,9 +1,9 @@
 [
     {
         "name": "PlayWhichMode?",
-        "trigger": "level_start",
+        "trigger": "turn_change",
         "level_nid": "25",
-        "condition": "True",
+        "condition": "game.turncount == 2",
         "commands": [
             [
                 "speak",
