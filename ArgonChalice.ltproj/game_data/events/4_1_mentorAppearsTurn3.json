@@ -55,19 +55,6 @@
                 ]
             ],
             [
-                "speak",
-                [
-                    "Mentor",
-                    "..."
-                ]
-            ],
-            [
-                "remove_portrait",
-                [
-                    "Mentor"
-                ]
-            ],
-            [
                 "move_portrait",
                 [
                     "Schuri",
@@ -79,6 +66,26 @@
                 [
                     "Senya",
                     "FarLeft"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Sir! It's us! We're finally here..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "..."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Mentor"
                 ]
             ],
             [
@@ -125,7 +132,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "We can still save Sir!|If we defeat that mage, Sir will be...|Sir will be fine!"
+                    "We can still save Sir!|If we defeat that necromancer, the spell on him will be...|Sir will be fine!"
                 ]
             ],
             [
@@ -139,7 +146,35 @@
                 "speak",
                 [
                     "Senya",
-                    "...Schuri|It's not that I don't agree...|but I think it would be best if we laid Teacher to rest|Look at that wound...|he's..."
+                    "...Schuri|It's not that I don't agree...|but I think it would be best if we laid Teacher to rest|Think about how long that wound has festered...."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "OpenEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "He wouldn't be...|"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "HalfCloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "he's..."
                 ]
             ],
             [
@@ -167,7 +202,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "MC...please!|We should give it a try!"
+                    "MC...please!|We should give it a try!|Let's contain Sir and go defeat that necromancer"
                 ]
             ],
             [
@@ -181,7 +216,7 @@
                 "speak",
                 [
                     "Senya",
-                    "MC, let's put him to rest."
+                    "MC, let's put him to rest.|It's the least we could do."
                 ]
             ],
             [
@@ -195,7 +230,7 @@
                 "speak",
                 [
                     "",
-                    "What should I do...?"
+                    "How should I deal with Teach...?|What should I do...?"
                 ]
             ],
             [
@@ -209,6 +244,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_unit;Mentor;0,5\nflicker_cursor;Mentor;immediate\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nadd_portrait;MC;MidLeft\nadd_portrait;Mentor;FarRight\nspeak;MC;Teach?!\nspeak;Mentor;...\nremove_portrait;Mentor\nmove_portrait;Schuri;Left\nmove_portrait;Senya;FarLeft\nspeak;Schuri;How could this have happened...?\nspeak;Senya;Once I get my hands on...\nspeak;Schuri;!!\nmove_portrait;Schuri;Right\nmirror_portrait;Schuri\nbop_portrait;Schuri\nspeak;Schuri;We can still save Sir!|If we defeat that mage, Sir will be...|Sir will be fine!\nexpression;Senya;HalfCloseEyes\nspeak;Senya;...Schuri|It's not that I don't agree...|but I think it would be best if we laid Teacher to rest|Look at that wound...|he's...\nexpression;Senya;CloseEyes\nspeak;Senya;His injuries...|He's died long ago...\nmove_portrait;Schuri;MidRight\nspeak;Schuri;MC...please!|We should give it a try!\nexpression;Senya;OpenEyes\nspeak;Senya;MC, let's put him to rest.\nexpression;MC;CloseEyes\nspeak;;What should I do...?\nmulti_remove_portrait;MC;Senya;Schuri\n"
+        "source": "add_unit;Mentor;0,5\nflicker_cursor;Mentor;immediate\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nadd_portrait;MC;MidLeft\nadd_portrait;Mentor;FarRight\nspeak;MC;Teach?!\nmove_portrait;Schuri;Left\nmove_portrait;Senya;FarLeft\nspeak;Schuri;Sir! It's us! We're finally here...\nspeak;Mentor;...\nremove_portrait;Mentor\nspeak;Schuri;How could this have happened...?\nspeak;Senya;Once I get my hands on...\nspeak;Schuri;!!\nmove_portrait;Schuri;Right\nmirror_portrait;Schuri\nbop_portrait;Schuri\nspeak;Schuri;We can still save Sir!|If we defeat that necromancer, the spell on him will be...|Sir will be fine!\nexpression;Senya;HalfCloseEyes\nspeak;Senya;...Schuri|It's not that I don't agree...|but I think it would be best if we laid Teacher to rest|Think about how long that wound has festered....\nexpression;Senya;OpenEyes\nspeak;Senya;He wouldn't be...|\nexpression;Senya;HalfCloseEyes\nspeak;Senya;he's...\nexpression;Senya;CloseEyes\nspeak;Senya;His injuries...|He's died long ago...\nmove_portrait;Schuri;MidRight\nspeak;Schuri;MC...please!|We should give it a try!|Let's contain Sir and go defeat that necromancer\nexpression;Senya;OpenEyes\nspeak;Senya;MC, let's put him to rest.|It's the least we could do.\nexpression;MC;CloseEyes\nspeak;;How should I deal with Teach...?|What should I do...?\nmulti_remove_portrait;MC;Senya;Schuri\n"
     }
 ]

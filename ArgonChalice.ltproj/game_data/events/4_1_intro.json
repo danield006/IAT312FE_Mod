@@ -118,7 +118,7 @@
                 "speak",
                 [
                     "Senya",
-                    "We're here. Let's hope Teacher has made it out."
+                    "We're here. Let's hope Teacher has made it out.|It looked like his injuries were rather serious."
                 ]
             ],
             [
@@ -146,7 +146,7 @@
                 "speak",
                 [
                     "MC",
-                    "Teach...|We're finally here...|I hope everyone is ready|It's all or nothing!"
+                    "Teach...|We're finally here|I hope everyone is ready|It's all or nothing now!"
                 ]
             ],
             [
@@ -209,14 +209,14 @@
                 "speak",
                 [
                     "Senya",
-                    "Well, looks like we've got company!"
+                    "Over there! Looks like we've got company!|Such a rude welcome party, let's teach them how to be a proper host."
                 ]
             ],
             [
                 "speak",
                 [
                     "Schuri",
-                    "There's so many of them!"
+                    "Yeah! Let's teach them some manners!"
                 ]
             ],
             [
@@ -284,8 +284,8 @@
             [
                 "speak",
                 [
-                    "Senya",
-                    "There's no stop to them!"
+                    "Schuri",
+                    "There's no stop to them! The longer we stay, the more there will be."
                 ]
             ],
             [
@@ -318,8 +318,15 @@
             [
                 "speak",
                 [
+                    "Senya",
+                    "I'm on it!"
+                ]
+            ],
+            [
+                "speak",
+                [
                     "MC",
-                    "Don't get overwhelmed!"
+                    "Be careful to not get overwhelmed!"
                 ]
             ],
             [
@@ -337,6 +344,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "#remove_all_units\nchapter_title\nchange_background;GradoCastle\ntransition;open\nmusic;castle-corridor\nlocation_card;Kaerndal Castle-Corridors\n#speak;;Kaerndal Castle-Corridors;;;narration_top\nadd_portrait;Senya;OffscreenLeft;immediate\nadd_portrait;Schuri;OffscreenLeft;immediate\nadd_portrait;MC;OffscreenLeft;immediate\nsound;Light Foot Steps 1\nmove_portrait;Senya;Right\nmirror_portrait;Senya\nsound;Foot Step\nmove_portrait;MC;MidLeft\nsound;Foot Step\nmove_portrait;Schuri;FarLeft\nspeak;Senya;We're here. Let's hope Teacher has made it out.\nspeak;Schuri;We're in the final stretch.\nexpression;Schuri;HalfCloseEyes\nspeak;Schuri;I hope Sir...\nspeak;MC;Teach...|We're finally here...|I hope everyone is ready|It's all or nothing!\nexpression;Schuri;OpenEyes\nscreen_shake;800\nsound;explosion_wide\nbop_portrait;MC\nmirror_portrait;MC\nmirror_portrait;MC\nspeak;MC;What was that?!\nmirror_portrait;Senya\nbop_portrait;Senya\nspeak;Senya;Well, looks like we've got company!\nspeak;Schuri;There's so many of them!\nchange_background\nend_skip\n#add_unit;MC;3,4\n#add_unit;Schuri;2,4\n#add_unit;Senya;2,3\n#add_group;Party;starting\n#the mobs appear\nmove_unit;106;1,11;normal\nadd_unit;102;0,5;fade\nmove_unit;102;3,10;normal\nspeak;Senya;There's no stop to them!\nspeak;MC;Everyone stick together!|We've got to hurry on through!\nspeak;Schuri;Look!\nflicker_cursor;4,9\nspeak;Schuri;Those walls look fragile, we can break through!\nspeak;MC;Don't get overwhelmed!\nmusic_fade_back;2000\n#win_game\n"
+        "source": "#remove_all_units\nchapter_title\nchange_background;GradoCastle\ntransition;open\nmusic;castle-corridor\nlocation_card;Kaerndal Castle-Corridors\n#speak;;Kaerndal Castle-Corridors;;;narration_top\nadd_portrait;Senya;OffscreenLeft;immediate\nadd_portrait;Schuri;OffscreenLeft;immediate\nadd_portrait;MC;OffscreenLeft;immediate\nsound;Light Foot Steps 1\nmove_portrait;Senya;Right\nmirror_portrait;Senya\nsound;Foot Step\nmove_portrait;MC;MidLeft\nsound;Foot Step\nmove_portrait;Schuri;FarLeft\nspeak;Senya;We're here. Let's hope Teacher has made it out.|It looked like his injuries were rather serious.\nspeak;Schuri;We're in the final stretch.\nexpression;Schuri;HalfCloseEyes\nspeak;Schuri;I hope Sir...\nspeak;MC;Teach...|We're finally here|I hope everyone is ready|It's all or nothing now!\nexpression;Schuri;OpenEyes\nscreen_shake;800\nsound;explosion_wide\nbop_portrait;MC\nmirror_portrait;MC\nmirror_portrait;MC\nspeak;MC;What was that?!\nmirror_portrait;Senya\nbop_portrait;Senya\nspeak;Senya;Over there! Looks like we've got company!|Such a rude welcome party, let's teach them how to be a proper host.\nspeak;Schuri;Yeah! Let's teach them some manners!\nchange_background\nend_skip\n#add_unit;MC;3,4\n#add_unit;Schuri;2,4\n#add_unit;Senya;2,3\n#add_group;Party;starting\n#the mobs appear\nmove_unit;106;1,11;normal\nadd_unit;102;0,5;fade\nmove_unit;102;3,10;normal\nspeak;Schuri;There's no stop to them! The longer we stay, the more there will be.\nspeak;MC;Everyone stick together!|We've got to hurry on through!\nspeak;Schuri;Look!\nflicker_cursor;4,9\nspeak;Schuri;Those walls look fragile, we can break through!\nspeak;Senya;I'm on it!\nspeak;MC;Be careful to not get overwhelmed!\nmusic_fade_back;2000\n#win_game\n"
     }
 ]

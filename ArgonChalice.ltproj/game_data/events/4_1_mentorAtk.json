@@ -44,14 +44,14 @@
                 "speak",
                 [
                     "MC",
-                    "Teach is after us?!"
+                    "Be careful! Teach is after us!"
                 ]
             ],
             [
                 "speak",
                 [
                     "Schuri",
-                    "He's under control!Sir, do you recognize us?"
+                    "He's under control! Sir, do you recognize us?"
                 ]
             ],
             [
@@ -65,12 +65,19 @@
                 "speak",
                 [
                     "Senya",
-                    "The audacity of that bastard!"
+                    "There's no use, let's hurry and put him to rest.|It's the least we could do.|We'll give him a proper burial after everything."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "We should at least give my idea a try! Wouldn't you feel regret at having not tried at all...?"
                 ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Senya;Left\nadd_portrait;Schuri;Left\nadd_portrait;MC;MidLeft\nadd_portrait;Mentor;FarRight\nexpression;Mentor;CloseEyes\nspeak;MC;Teach is after us?!\nspeak;Schuri;He's under control!Sir, do you recognize us?\nspeak;Mentor;...\nspeak;Senya;The audacity of that bastard!\n"
+        "source": "add_portrait;Senya;Left\nadd_portrait;Schuri;Left\nadd_portrait;MC;MidLeft\nadd_portrait;Mentor;FarRight\nexpression;Mentor;CloseEyes\nspeak;MC;Be careful! Teach is after us!\nspeak;Schuri;He's under control! Sir, do you recognize us?\nspeak;Mentor;...\nspeak;Senya;There's no use, let's hurry and put him to rest.|It's the least we could do.|We'll give him a proper burial after everything.\nspeak;Schuri;We should at least give my idea a try! Wouldn't you feel regret at having not tried at all...?\n"
     }
 ]

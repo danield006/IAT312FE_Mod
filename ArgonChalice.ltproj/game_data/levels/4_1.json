@@ -11,7 +11,7 @@
         },
         "objective": {
             "simple": "Get to the Throne Room!",
-            "win": "",
+            "win": "Reach the Throne Room",
             "loss": "MC Dies"
         },
         "roam": false,

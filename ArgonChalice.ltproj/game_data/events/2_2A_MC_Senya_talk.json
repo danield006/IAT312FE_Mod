@@ -26,6 +26,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;Senya;Left\nspeak;Senya;Insert witty dialogue here\nwin_game;"
+        "source": "add_portrait;Senya;Left\nspeak;Senya;Insert witty dialogue here\nwin_game\n"
     }
 ]

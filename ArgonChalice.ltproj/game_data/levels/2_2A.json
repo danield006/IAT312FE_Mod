@@ -5,7 +5,9 @@
         "tilemap": "New Tilemap",
         "bg_tilemap": null,
         "party": "MC",
-        "music": {},
+        "music": {
+            "player_phase": "greshiaBGM"
+        },
         "objective": {
             "simple": "Find info about Aesc",
             "win": "Return to Senya at the tavern",

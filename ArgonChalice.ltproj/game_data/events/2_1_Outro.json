@@ -15,6 +15,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;;Outro scenes!"
+        "source": "speak;;Outro scenes!\n"
     }
 ]

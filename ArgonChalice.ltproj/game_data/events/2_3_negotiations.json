@@ -1,12 +1,12 @@
 [
     {
-        "name": "intro",
-        "trigger": "level_start",
+        "name": "negotiations",
+        "trigger": null,
         "level_nid": "2_3",
         "condition": "True",
         "commands": [
             [
-                "chapter_title",
+                "remove_all_units",
                 []
             ],
             [
@@ -14,10 +14,6 @@
                 [
                     "close"
                 ]
-            ],
-            [
-                "remove_all_units",
-                []
             ],
             [
                 "comment",
@@ -64,12 +60,6 @@
                 ]
             ],
             [
-                "change_background",
-                [
-                    "Bedroom"
-                ]
-            ],
-            [
                 "multi_add_portrait",
                 [
                     "MC",
@@ -83,16 +73,9 @@
                 ]
             ],
             [
-                "expression",
+                "change_background",
                 [
-                    "Seth",
-                    "Smile"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "open"
+                    "Bedroom"
                 ]
             ],
             [
@@ -141,7 +124,7 @@
                 "speak",
                 [
                     "Seth",
-                    "What happened?! Lady Schuri, why are you around such riff raff|It's rather unbefitting for someone of your status to hang around such lowly...|peasants."
+                    "What happened?! Lady Schuri, why are you around such riff raff|It's befitting for someone of your status to hang around such lowly...|peasants."
                 ]
             ],
             [
@@ -205,6 +188,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "chapter_title\ntransition;close\nremove_all_units\n#if chose negotiations\nmusic;negotiations\nadd_unit;MC;;immediate\nadd_unit;Senya;;immediate\nadd_unit;Schuri;;immediate\nadd_unit;Seth;;immediate\nchange_background;Bedroom\nmulti_add_portrait;MC;FarLeft;Schuri;MidLeft;Senya;Left;Seth;FarRight\nexpression;Seth;Smile\ntransition;open\nspeak;Seth;Welcome! Welcome!|If it isn't the lovely Lady Schuri.|If I recall...|Ah yes! You were going to be engaged to my dear son. Alas...\nspeak;Senya;Engaged?\nspeak;Senya;You never told me your were engaged\nspeak;Schuri;Ah..well-\nspeak;Seth;Yes, it was a shame really.|The two of you would have made a lovely couple.|But!\nmove_portrait;Seth;Right\nspeak;Seth;What happened?! Lady Schuri, why are you around such riff raff|It's rather unbefitting for someone of your status to hang around such lowly...|peasants.\nmirror_portrait;Senya\nspeak;Senya;Can you believe this guy?\nspeak;MC;He's rather...eccentric\nspeak;Senya;Heh, that's one way to put it\nmirror_portrait;Senya\nspeak;Seth;But I do suppose you're here for something...|I am rather amiable to discussion...|as long as THOSE two are out of my sight.\nspeak;Schuri;Of course, Lord Seth. I'm currently seeking a relic and heard through the grapevine that it is in your possession.\nspeak;;This map is currently broken because of a bug, you will be skipped ahead to the next chapter\nwin_game\n"
+        "source": "remove_all_units\ntransition;close\n#if chose negotiations\nmusic;negotiations\nadd_unit;MC;;immediate\nadd_unit;Senya;;immediate\nadd_unit;Schuri;;immediate\nadd_unit;Seth;;immediate\nmulti_add_portrait;MC;FarLeft;Schuri;MidLeft;Senya;Left;Seth;FarRight\nchange_background;Bedroom\nspeak;Seth;Welcome! Welcome!|If it isn't the lovely Lady Schuri.|If I recall...|Ah yes! You were going to be engaged to my dear son. Alas...\nspeak;Senya;Engaged?\nspeak;Senya;You never told me your were engaged\nspeak;Schuri;Ah..well-\nspeak;Seth;Yes, it was a shame really.|The two of you would have made a lovely couple.|But!\nmove_portrait;Seth;Right\nspeak;Seth;What happened?! Lady Schuri, why are you around such riff raff|It's befitting for someone of your status to hang around such lowly...|peasants.\nmirror_portrait;Senya\nspeak;Senya;Can you believe this guy?\nspeak;MC;He's rather...eccentric\nspeak;Senya;Heh, that's one way to put it\nmirror_portrait;Senya\nspeak;Seth;But I do suppose you're here for something...|I am rather amiable to discussion...|as long as THOSE two are out of my sight.\nspeak;Schuri;Of course, Lord Seth. I'm currently seeking a relic and heard through the grapevine that it is in your possession.\nspeak;;This map is currently broken because of a bug, you will be skipped ahead to the next chapter\nwin_game\n"
     }
 ]

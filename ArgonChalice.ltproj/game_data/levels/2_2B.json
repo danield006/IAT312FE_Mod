@@ -1,11 +1,16 @@
 [
     {
         "nid": "2_2B",
-        "name": "Chapter 2B: Gresia under seige",
+        "name": "Chapter 2B: Greshia under seige",
         "tilemap": "New Tilemap",
         "bg_tilemap": null,
         "party": "MC",
-        "music": {},
+        "music": {
+            "player_phase": "tacticalBattleTheme",
+            "enemy_phase": "tacticalBattleTheme",
+            "other_phase": "tacticalBattleTheme",
+            "enemy2_phase": "tacticalBattleTheme"
+        },
         "objective": {
             "simple": "Rescue the villagers",
             "win": "Fend off the attack",

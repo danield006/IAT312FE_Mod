@@ -6,6 +6,16 @@
         "condition": "True",
         "commands": [
             [
+                "speak",
+                [
+                    "",
+                    "Great, we've got this relic now. Let's head back to Aesc",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
                 "set_next_chapter",
                 [
                     "4_1"
@@ -14,6 +24,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "set_next_chapter;4_1\n"
+        "source": "speak;;Great, we've got this relic now. Let's head back to Aesc;;;narration\nset_next_chapter;4_1\n"
     }
 ]

@@ -14,7 +14,7 @@
         },
         "objective": {
             "simple": "Defeat ???",
-            "win": "??? is Dead",
+            "win": "Defeat ???",
             "loss": "MC Dies"
         },
         "roam": false,
