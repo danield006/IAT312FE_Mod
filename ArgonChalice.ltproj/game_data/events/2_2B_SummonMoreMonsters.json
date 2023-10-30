@@ -1,9 +1,9 @@
 [
     {
-        "name": "VillagersDone",
+        "name": "SummonMoreMonsters",
         "trigger": "turn_change",
         "level_nid": "2_2B",
-        "condition": "game.game_vars['_ch2BVillagersSaved'] + game.game_vars['_ch2BVillagersDied'] >= 3",
+        "condition": "game.game_vars['_ch2BDisruptedSpell'] == False and game.turncount == 7",
         "commands": [
             [
                 "flicker_cursor",

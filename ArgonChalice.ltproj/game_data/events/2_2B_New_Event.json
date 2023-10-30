@@ -1,0 +1,27 @@
+[
+    {
+        "name": "New Event",
+        "trigger": "turn_change",
+        "level_nid": "2_2B",
+        "condition": "game.game_vars['_ch2BVillagersSaved'] + game.game_vars['_ch2BVillagersDied'] >= 4",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "You're allowed to leave your post because all the villagers are safe"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch2BAllowedToGo",
+                    "true"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;;You're allowed to leave your post because all the villagers are safe\ngame_var;_ch2BAllowedToGo;true"
+    }
+]

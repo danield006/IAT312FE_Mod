@@ -3,7 +3,7 @@
         "name": "TurnLimitReached",
         "trigger": "turn_change",
         "level_nid": "2_2B",
-        "condition": "game.turncount == 15",
+        "condition": "game.turncount == 9",
         "commands": [
             [
                 "add_portrait",

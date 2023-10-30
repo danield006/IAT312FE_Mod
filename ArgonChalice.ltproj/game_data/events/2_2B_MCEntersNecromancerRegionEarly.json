@@ -1,0 +1,66 @@
+[
+    {
+        "name": "MCEntersNecromancerRegionEarly",
+        "trigger": "unit_wait",
+        "level_nid": "2_2B",
+        "condition": "game.level.regions.get('AbandonedVillage').contains(game.get_unit('MC').position) and game.game_vars['_ch2BVillagersSaved'] + game.game_vars['_ch2BVillagersDied'] <= 4",
+        "commands": [
+            [
+                "if",
+                [
+                    "game.game_vars['_ch2BAllowedToGo'] == False"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Senya and Schuri are angry that you abandoned your post",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "game_var",
+                [
+                    "_ch2BDisruptedSpell",
+                    "True"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Well done boy, I shall teach you the dark magics",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "give_wexp",
+                [
+                    "MC (MC)",
+                    "Dark (Dark)",
+                    "100"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "MC",
+                    "Flux (Flux)",
+                    "MC's Group (MC)"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "if;game.game_vars['_ch2BAllowedToGo'] == False\n    speak;;Senya and Schuri are angry that you abandoned your post;;;hint\nend\ngame_var;_ch2BDisruptedSpell;True\nspeak;Aesc;Well done boy, I shall teach you the dark magics;;;narration_top\ngive_wexp;MC (MC);Dark (Dark);100\ngive_item;MC;Flux (Flux);MC's Group (MC)\n"
+    }
+]

@@ -90,5 +90,13 @@
     {
         "nid": "_SenyaOpinion",
         "desc": "Senya's opinion of MC(>0 in order to use in final)"
+    },
+    {
+        "nid": "_ch2BDisruptedSpell",
+        "desc": "Whether you stepped into the area to disrupt the spell"
+    },
+    {
+        "nid": "_ch2BAllowedToGo",
+        "desc": "Whether all the NPC villagers are rescued yet (true = allowed to go)"
     }
 ]

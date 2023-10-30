@@ -175,7 +175,7 @@
                     3
                 ],
                 "sub_nid": "Door",
-                "condition": "True",
+                "condition": "unit.can_unlock(region)",
                 "time_left": null,
                 "only_once": true,
                 "interrupt_move": false

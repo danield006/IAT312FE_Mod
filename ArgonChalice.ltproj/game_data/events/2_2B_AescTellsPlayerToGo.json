@@ -1,0 +1,86 @@
+[
+    {
+        "name": "AescTellsPlayerToGo",
+        "trigger": "turn_change",
+        "level_nid": "2_2B",
+        "condition": "game.turncount == 2",
+        "commands": [
+            [
+                "flicker_cursor",
+                [
+                    "MC (MC)"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Boy, That necromancer at the entrance of the city.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "Riev"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "He's preparing a spell to summon more monsters to help.|If you can step near him, you'll disrupt the spell he's channeling",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I need to keep the villagers safe though...|Senya and Schuri are relying on me so that everyone can get to my area safely."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Ah yes I suppose that's true...|Although if that spell is completed|Who is to say the extra monsters won't cause additional casualties you cannot prevent?",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "...."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Sometimes in order to save lives, we need to keep in mind the calculus of the situation|To doom 1...|in order to save many more|is this not the correct choice?|If you manage to disrupt the necromancer's spell.|...I'll teach you the secrets of dark magic.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "flicker_cursor;MC (MC)\nadd_portrait;MC;Right\nspeak;Aesc;Boy, That necromancer at the entrance of the city.;;;narration_top\nflicker_cursor;Riev\nspeak;Aesc;He's preparing a spell to summon more monsters to help.|If you can step near him, you'll disrupt the spell he's channeling;;;narration_top\nspeak;MC;I need to keep the villagers safe though...|Senya and Schuri are relying on me so that everyone can get to my area safely.\nspeak;Aesc;Ah yes I suppose that's true...|Although if that spell is completed|Who is to say the extra monsters won't cause additional casualties you cannot prevent?;;;narration_top\nspeak;MC;....\nspeak;Aesc;Sometimes in order to save lives, we need to keep in mind the calculus of the situation|To doom 1...|in order to save many more|is this not the correct choice?|If you manage to disrupt the necromancer's spell.|...I'll teach you the secrets of dark magic.;;;narration_top\n"
+    }
+]
