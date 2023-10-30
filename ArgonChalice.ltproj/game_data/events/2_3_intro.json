@@ -40,10 +40,21 @@
                     "",
                     "immediate"
                 ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "This map is currently broken because of a bug, you will be skipped ahead to the next chapter"
+                ]
+            ],
+            [
+                "win_game",
+                []
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "remove_all_units\nadd_unit;MC;;immediate\nadd_unit;Senya;;immediate\nadd_unit;Schuri;;immediate\nadd_unit;Seth;;immediate\n"
+        "source": "remove_all_units\nadd_unit;MC;;immediate\nadd_unit;Senya;;immediate\nadd_unit;Schuri;;immediate\nadd_unit;Seth;;immediate\nspeak;;This map is currently broken because of a bug, you will be skipped ahead to the next chapter;\nwin_game;"
     }
 ]
