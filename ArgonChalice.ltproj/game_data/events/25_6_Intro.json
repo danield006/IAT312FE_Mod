@@ -9,12 +9,65 @@
                 "speak",
                 [
                     "",
-                    "The party is warped"
+                    "The party is warped to the castle by the old man and it is overrun by monsters|The party has to fight their way to the throne room|This chapter is a simpler premise to start with as the group advances through the castle.|There is a time limit as the group must reach the throne room before the vilain's plan is complete|However, a couple turns in, the party finds out that their mentor's dead body is being used to try to kill them.|Senya wishes to kill the mentor to take him out of his misery|Schuri wants to restrain him in hopes they can fix his condition.|The player must choose in the map whether to kill him or lock him in a room.",
+                    "",
+                    "",
+                    "narration_top"
                 ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "choice",
+                [
+                    "_ch4TextChoice",
+                    "What outcome do you want to see?",
+                    "kill_mentor,restrain_mentor"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_ch4TextChoice'] == 'kill_mentor'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri -1, Senya +1"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch4TextChoice'] == 'restrain_mentor'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri +!, Senya -1"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ],
+            [
+                "end",
+                []
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;;The party is warped"
+        "source": "speak;;The party is warped to the castle by the old man and it is overrun by monsters|The party has to fight their way to the throne room|This chapter is a simpler premise to start with as the group advances through the castle.|There is a time limit as the group must reach the throne room before the vilain's plan is complete|However, a couple turns in, the party finds out that their mentor's dead body is being used to try to kill them.|Senya wishes to kill the mentor to take him out of his misery|Schuri wants to restrain him in hopes they can fix his condition.|The player must choose in the map whether to kill him or lock him in a room.;;;narration_top\nend_skip\nchoice;_ch4TextChoice;What outcome do you want to see?;kill_mentor,restrain_mentor\nif;game.game_vars['_ch4TextChoice'] == 'kill_mentor'\n    speak;;Schuri -1, Senya +1\n    win_game\nelif;game.game_vars['_ch4TextChoice'] == 'restrain_mentor'\n    speak;;Schuri +!, Senya -1\n    win_game\nend\n"
     }
 ]
