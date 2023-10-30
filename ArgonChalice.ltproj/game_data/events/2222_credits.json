@@ -20,7 +20,7 @@
             [
                 "credits",
                 [
-                    "Game Designers/Writers",
+                    "Game Designers and Writers",
                     "Daniel Dai, Benson Chow, Nicole Ling, Michelle Lin",
                     "center"
                 ]
@@ -40,21 +40,22 @@
                 ]
             ],
             [
-                "wait",
-                [
-                    "6000"
-                ]
-            ],
-            [
                 "music_fade_back",
                 [
                     "8000"
                 ]
             ],
             [
+                "wait",
+                [
+                    "6300"
+                ]
+            ],
+            [
                 "transition",
                 [
-                    "close"
+                    "close",
+                    "1300"
                 ]
             ],
             [
@@ -68,6 +69,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "music;credits\nchange_background;BlackBackground\ncredits;Game Designers/Writers;Daniel Dai, Benson Chow, Nicole Ling, Michelle Lin;center\nwait;4800\ncredits;;Thank You;center\nwait;6000\nmusic_fade_back;8000\ntransition;close\nmusic_clear\nwin_game\n"
+        "source": "music;credits\nchange_background;BlackBackground\ncredits;Game Designers and Writers;Daniel Dai, Benson Chow, Nicole Ling, Michelle Lin;center\nwait;4800\ncredits;;Thank You;center\nmusic_fade_back;8000\nwait;6300\ntransition;close;1300\nmusic_clear\nwin_game\n"
     }
 ]
