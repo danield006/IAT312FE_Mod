@@ -123,7 +123,7 @@
             0
         ],
         "map_sprite_nid": "Senya",
-        "combat_anim_nid": "Senya",
+        "combat_anim_nid": "SenyaColored",
         "fields": []
     }
 ]
