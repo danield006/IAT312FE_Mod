@@ -730,5 +730,89 @@
             32
         ],
         "info_offset": 0
+    },
+    {
+        "nid": "Cyrus",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            16,
+            40
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "BanditLeader",
+        "blinking_offset": [
+            64,
+            0
+        ],
+        "smiling_offset": [
+            18,
+            34
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "Necromancer",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            16,
+            40
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "Noble",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            16,
+            40
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "HeadGuard",
+        "blinking_offset": [
+            24,
+            16
+        ],
+        "smiling_offset": [
+            16,
+            32
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "PossessedCyrus",
+        "blinking_offset": [
+            24,
+            24
+        ],
+        "smiling_offset": [
+            16,
+            40
+        ],
+        "info_offset": 0
+    },
+    {
+        "nid": "Lilith",
+        "blinking_offset": [
+            34,
+            26
+        ],
+        "smiling_offset": [
+            26,
+            42
+        ],
+        "info_offset": 0
     }
 ]
