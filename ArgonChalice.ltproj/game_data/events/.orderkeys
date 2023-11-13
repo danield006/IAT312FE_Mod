@@ -189,8 +189,8 @@
     "4_1_chest3.json": 187,
     "4_1_chest4.json": 188,
     "4_1_mentorDies.json": 189,
-    "2_3_outro.json": 190,
-    "2_3_intro.json": 191,
+    "3_1_old_outro.json": 190,
+    "3_1_old_intro.json": 191,
     "2_2B_SummonMoreMonsters.json": 192,
     "2_2B_VillagerDeath.json": 193,
     "2_2B_TurnLimitReached.json": 194,
@@ -209,5 +209,6 @@
     "25_Intro.json": 207,
     "2_2B_AescTellsPlayerToGo.json": 208,
     "2_2B_New_Event.json": 209,
-    "2_3_negotiations.json": 210
+    "3_1_new_intro.json": 210,
+    "3_1_new_outro.json": 211
 }

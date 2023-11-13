@@ -1,11 +1,14 @@
 [
     {
-        "nid": "2_3",
-        "name": "Chapter 3: Mansion Talks",
+        "nid": "3_2B",
+        "name": "Chapter 3A: Negotiation Results",
         "tilemap": "Chapter 14B_2",
         "bg_tilemap": null,
         "party": "MC",
-        "music": {},
+        "music": {
+            "player_phase": "Quiet Burn",
+            "enemy_phase": "Quiet Burn"
+        },
         "objective": {
             "simple": "",
             "win": "",

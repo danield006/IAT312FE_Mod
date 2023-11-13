@@ -228,5 +228,10 @@
         "greshiaBGM2",
         false,
         false
+    ],
+    [
+        "mansionBegin",
+        false,
+        false
     ]
 ]

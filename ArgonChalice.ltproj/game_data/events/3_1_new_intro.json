@@ -1,0 +1,850 @@
+[
+    {
+        "name": "new intro",
+        "trigger": "level_start",
+        "level_nid": "3_1",
+        "condition": "True",
+        "commands": [
+            [
+                "chapter_title",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "remove_all_units",
+                []
+            ],
+            [
+                "music",
+                [
+                    "mansionBegin"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "CastleSepia"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I suppose this is the place.|It looks rather...|eccentric."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Oh wow, this Lord lives extremely decadently.|Even by noble standards."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "The decor sure is gaudy.|Look at all that...shine."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Let's hope this Lord is welcoming."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "They better be!|We just helped their town."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Hehe, let's head in shall we?"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "Bedroom"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Welcome! Welcome to my humble abode"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Seth sweeps his arms in a grand gesture.|However his blinged out belongings say otherwise."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Heh, humble"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Shh Senya, what if he hears you?"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Greetings Lord Seth."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Oh!|If it isn't the lovely Lady Schuri.|If I recall...|Ah yes! You were going to be engaged to my dear son.|Alas..."
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Engaged?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "You never told me your were engaged"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Ah..|well..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Yes, it was a shame really.|The two of you would have made a fine couple.|Such a pity..."
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Seth",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "However! Lady Schuri, why are you around such lowly commonners|It's rather...|unbefitting of someone of your status to hang around such lowly...|riff raff."
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Can you believe this guy?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "He's rather...eccentric"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Heh, that's one way to put it"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Well, the 3 of us studied under Sir Cyrus."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "I see...|Yes... I called you here as a reward of sorts|for helping my town."
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "I don't think I ever saw him out there helping..."
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Wow, thank you sir.|Actually, we have something to ask you.|We're actually looking for a tome."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Oh?|Naturally, a person of my standing has many.|Which one in particular is the one you want?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "It's that one"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri points to the tome in enshrined on the pedestal next to the Lord.|It's quite mesmorizing, with how its power thrums and"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "I'm afraid that one is off the table.|It's responsible for preventing monsters attack.|Unless...|You have something of value to offer in return?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "May we discuss amongst ourselves?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "I would rather not.|However, in light of our previous connections, you may|Please do make it quick."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Ok, it seems we have a chance to get this tome peacefully.|Should we try negotiating with him?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "I'm not sure they would hold up their end of the deal.|They seem rather...|attached to that tome."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "They're cowardly.|Did you see their whole army?|They could have mobilized them to save their own people"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Shh, keep your voice down.|I feel the same way about them, but it's best if we avoid confrontation.|They might do something drastic if we corner them."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "But if that tome really does what they say it does...|would they really be willing to give it up?|These type of people are cowards through and through"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "...|What if we sneak in and take it?|We know where it is and well...|it's a quick in n out job"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "The Lord seems to be open to negotiating, should we give it a try?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Are you guys finished?"
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "_ch3NobleChoice",
+                    "How should we go about this?",
+                    "Negotiate,Sneak_in"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_ch3NobleChoice'] == 'Negotiate'"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SchuriOpinion",
+                    "+1"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Lord Seth, we have come to an agreement."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Wonderful, I have some other relics that you would be satisfied with.|If you would come follow me-"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Wait, sorry to disappoint but it's still that tome."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "We have something to offer in exchange.|How about a favour from the Esclare family?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "That does sound good...|however I fail to see how it could match to the value of of that tome.|A favour from your family?|You have been sent to study under Cyrus since young| I fail to see the amount of influence you have within your family's inner circles.|And you do realize this is MONSTER preventation?|A favour won't do any good in the face of immediate bodily danger."
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "_ch3NobleChoice1",
+                    "",
+                    "Well_excuse_us,Sorry_but"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_ch3NobleChoice1'] == 'Well_excuse_us'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Well, excuse me?|I didn't see a whole lot of monster preventation earlier.|If it did anything, you could have helped your people."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Well I'll have you know that it works.|AND that you are lucky that in account of Lady Schuri's history with my family|I would have had you removed"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "I apologize for my friend's outburst. Perhaps you would be interested in...|say a protective talisman?|Personally crafted by Master Cyrus"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Huh? When did Teach give us that?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Play along."
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch3NobleChoice1'] == 'Sorry_but'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Of course, we apologize.|As you know, we're Master Cyrus' students.|We naturally have some...|powerful artifacts from him"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Huh? When did we"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#mc bops Senya"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Oh-oh!|Of course as his dear pupils, we were gifted numerous powerful weapons"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Oh? Do continue"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Yes, yes.|Before we set off, Master Cyrus has gifted us a few talismans of protection.|Perhaps these would suffice?"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Yes...|Even so, this tome is eternal|Your talismans are single-use are they not?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Well you see, these are...|are..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Rechargeable!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Yes, rechargeable talismans!|After being used, it needs a bit of time before its next use."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "...|Isn't this just a worse version of this tome?|It doesn't need to charge and it can also be offense.|You know what? I think you're all just wasting my time here"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Wait, we have one last offer."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Fine, I'll hear you out.|If it's trash again, you're all getting escorted out"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#an aside"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "We don't have anything valuable"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I've got one more thing to try"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "We'll trust you"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#end aside"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Our last offer to you is this holy sword."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Isn't that your dingy sword?",
+                    "",
+                    "",
+                    "thought_bubble"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "This weapon has been passed down to me from our Master|It's attacks are inexorable|it's defenses are impenetrable|and most importantly..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Oh?!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "With its holy presence, its shear heavenly aura will pierce through the hearts of enemies striking fear!|Monsters won't dare to attack you when this sword is out."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "From Kaerndal Castle to Greshia|we arduously traversed through the Mastiez Valley known for their poisonous monsters."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Yes, look at us!|With this holy sword, we were able to make it here spotless."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "That sounds almost too good to be true.|How would I know you aren't trying to trick me?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Take a look for yourself."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "I make a discreet motion at Schuri.She discreetly casts a spell making my shabby sword glow ethereally."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#clap clap"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "I'm sorry to have doubted you."
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Seth"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "High guard!|Bring over the tome"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Seth"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#move MC portrait to Seth"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Here is the holy sword."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Hm...|this sword feels rather...|mundane"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "High guard, please move faster.|They'll notice soon",
+                    "",
+                    "",
+                    "thought_bubble"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Wait!|This sword..."
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Seth"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Guards!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "I'll grab it!!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "The Lord and Senya both lunge towards the tome. However we were a step too late"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Seth",
+                    "Hahahaha...|I can't believe this...|You wanted to know its power so...behold!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Watch out! They're casting something big!"
+                ]
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "3_2B"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch3NobleChoice'] == 'Sneak_in'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Let's sneak in"
+                ]
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "3_2A"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "chapter_title\ntransition;close\nremove_all_units\nmusic;mansionBegin\nchange_background;CastleSepia\ntransition;open\nspeak;MC;I suppose this is the place.|It looks rather...|eccentric.\nspeak;Schuri;Oh wow, this Lord lives extremely decadently.|Even by noble standards.\nspeak;Senya;The decor sure is gaudy.|Look at all that...shine.\nspeak;MC;Let's hope this Lord is welcoming.\nspeak;Senya;They better be!|We just helped their town.\nspeak;Schuri;Hehe, let's head in shall we?\nchange_background;Bedroom\nspeak;Seth;Welcome! Welcome to my humble abode\nspeak;;Seth sweeps his arms in a grand gesture.|However his blinged out belongings say otherwise.\nspeak;Senya;Heh, humble\nspeak;Schuri;Shh Senya, what if he hears you?\n##\nspeak;Schuri;Greetings Lord Seth.\nspeak;Seth;Oh!|If it isn't the lovely Lady Schuri.|If I recall...|Ah yes! You were going to be engaged to my dear son.|Alas...\nbop_portrait;Senya\nspeak;Senya;Engaged?\nspeak;Senya;You never told me your were engaged\nspeak;Schuri;Ah..|well...\nspeak;Seth;Yes, it was a shame really.|The two of you would have made a fine couple.|Such a pity...\nmove_portrait;Seth;Right\nspeak;Seth;However! Lady Schuri, why are you around such lowly commonners|It's rather...|unbefitting of someone of your status to hang around such lowly...|riff raff.\nmirror_portrait;Senya\nspeak;Senya;Can you believe this guy?\nspeak;MC;He's rather...eccentric\nspeak;Senya;Heh, that's one way to put it\nmirror_portrait;Senya\nspeak;Schuri;Well, the 3 of us studied under Sir Cyrus.\nspeak;Seth;I see...|Yes... I called you here as a reward of sorts|for helping my town.\nmirror_portrait;Senya\nspeak;Senya;I don't think I ever saw him out there helping...\ngive_money;500\nmirror_portrait;Senya\nbop_portrait;MC\nspeak;MC;Wow, thank you sir.|Actually, we have something to ask you.|We're actually looking for a tome.\nspeak;Seth;Oh?|Naturally, a person of my standing has many.|Which one in particular is the one you want?\nspeak;Schuri;It's that one\nspeak;;Schuri points to the tome in enshrined on the pedestal next to the Lord.|It's quite mesmorizing, with how its power thrums and\nspeak;Seth;I'm afraid that one is off the table.|It's responsible for preventing monsters attack.|Unless...|You have something of value to offer in return?\nspeak;Schuri;May we discuss amongst ourselves?\nspeak;Seth;I would rather not.|However, in light of our previous connections, you may|Please do make it quick.\n##\nspeak;Schuri;Ok, it seems we have a chance to get this tome peacefully.|Should we try negotiating with him?\nspeak;Senya;I'm not sure they would hold up their end of the deal.|They seem rather...|attached to that tome.\nspeak;MC;They're cowardly.|Did you see their whole army?|They could have mobilized them to save their own people\nspeak;Schuri;Shh, keep your voice down.|I feel the same way about them, but it's best if we avoid confrontation.|They might do something drastic if we corner them.\nspeak;Senya;But if that tome really does what they say it does...|would they really be willing to give it up?|These type of people are cowards through and through\nend_skip\nspeak;Senya;...|What if we sneak in and take it?|We know where it is and well...|it's a quick in n out job\nspeak;Schuri;The Lord seems to be open to negotiating, should we give it a try?\nspeak;Seth;Are you guys finished?\nchoice;_ch3NobleChoice;How should we go about this?;Negotiate,Sneak_in\n##\nend_skip\nif;game.game_vars['_ch3NobleChoice'] == 'Negotiate'\n    inc_game_var;_SchuriOpinion;+1\n    speak;MC;Lord Seth, we have come to an agreement.\n    speak;Seth;Wonderful, I have some other relics that you would be satisfied with.|If you would come follow me-\n    speak;Senya;Wait, sorry to disappoint but it's still that tome.\n    speak;Schuri;We have something to offer in exchange.|How about a favour from the Esclare family?\n    speak;Seth;That does sound good...|however I fail to see how it could match to the value of of that tome.|A favour from your family?|You have been sent to study under Cyrus since young| I fail to see the amount of influence you have within your family's inner circles.|And you do realize this is MONSTER preventation?|A favour won't do any good in the face of immediate bodily danger.\n    choice;_ch3NobleChoice1;;Well_excuse_us,Sorry_but\n    if;game.game_vars['_ch3NobleChoice1'] == 'Well_excuse_us'\n        speak;MC;Well, excuse me?|I didn't see a whole lot of monster preventation earlier.|If it did anything, you could have helped your people.\n        speak;Seth;Well I'll have you know that it works.|AND that you are lucky that in account of Lady Schuri's history with my family|I would have had you removed\n        speak;Schuri;I apologize for my friend's outburst. Perhaps you would be interested in...|say a protective talisman?|Personally crafted by Master Cyrus\n        speak;MC;Huh? When did Teach give us that?\n        speak;Senya;Play along.\n    elif;game.game_vars['_ch3NobleChoice1'] == 'Sorry_but'\n        speak;MC;Of course, we apologize.|As you know, we're Master Cyrus' students.|We naturally have some...|powerful artifacts from him\n        speak;Senya;Huh? When did we\n        #mc bops Senya\n        speak;Senya;Oh-oh!|Of course as his dear pupils, we were gifted numerous powerful weapons\n        speak;Seth;Oh? Do continue\n        speak;Schuri;Yes, yes.|Before we set off, Master Cyrus has gifted us a few talismans of protection.|Perhaps these would suffice?\n    end\n    speak;Seth;Yes...|Even so, this tome is eternal|Your talismans are single-use are they not?\n    speak;Schuri;Well you see, these are...|are...\n    speak;Senya;Rechargeable!\n    speak;Schuri;Yes, rechargeable talismans!|After being used, it needs a bit of time before its next use.\n    speak;Seth;...|Isn't this just a worse version of this tome?|It doesn't need to charge and it can also be offense.|You know what? I think you're all just wasting my time here\n    speak;MC;Wait, we have one last offer.\n    speak;Seth;Fine, I'll hear you out.|If it's trash again, you're all getting escorted out\n    #an aside\n    speak;Schuri;We don't have anything valuable\n    speak;MC;I've got one more thing to try\n    speak;Senya;We'll trust you\n    #end aside\n    speak;MC;Our last offer to you is this holy sword.\n    speak;Senya;Isn't that your dingy sword?;;;thought_bubble\n    speak;MC;This weapon has been passed down to me from our Master|It's attacks are inexorable|it's defenses are impenetrable|and most importantly...\n    speak;Seth;Oh?!\n    speak;MC;With its holy presence, its shear heavenly aura will pierce through the hearts of enemies striking fear!|Monsters won't dare to attack you when this sword is out.\n    speak;Senya;From Kaerndal Castle to Greshia|we arduously traversed through the Mastiez Valley known for their poisonous monsters.\n    speak;Schuri;Yes, look at us!|With this holy sword, we were able to make it here spotless.\n    speak;Seth;That sounds almost too good to be true.|How would I know you aren't trying to trick me?\n    speak;MC;Take a look for yourself.\n    speak;;I make a discreet motion at Schuri.She discreetly casts a spell making my shabby sword glow ethereally.\n    #clap clap\n    speak;Seth;I'm sorry to have doubted you.\n    mirror_portrait;Seth\n    speak;Seth;High guard!|Bring over the tome\n    mirror_portrait;Seth\n    #move MC portrait to Seth\n    speak;MC;Here is the holy sword.\n    speak;Seth;Hm...|this sword feels rather...|mundane\n    speak;MC;High guard, please move faster.|They'll notice soon;;;thought_bubble\n    speak;Seth;Wait!|This sword...\n    bop_portrait;Seth\n    speak;Seth;Guards!\n    speak;Senya;I'll grab it!!\n    speak;;The Lord and Senya both lunge towards the tome. However we were a step too late\n    end_skip\n    speak;Seth;Hahahaha...|I can't believe this...|You wanted to know its power so...behold!\n    speak;Schuri;Watch out! They're casting something big!\n    set_next_chapter;3_2B\nelif;game.game_vars['_ch3NobleChoice'] == 'Sneak_in'\n    speak;MC;Let's sneak in\n    set_next_chapter;3_2A\nend\nwin_game\n"
+    }
+]

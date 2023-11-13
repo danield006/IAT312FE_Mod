@@ -3,7 +3,7 @@
         "name": "openDoor2",
         "trigger": "on_region_interact",
         "level_nid": "4_1",
-        "condition": "region.nid == 'door2' or region.nid == 'door2_1'",
+        "condition": "region.nid == 'door2'",
         "commands": [
             [
                 "show_layer",

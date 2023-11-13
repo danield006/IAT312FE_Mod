@@ -1,8 +1,8 @@
 [
     {
-        "name": "outro",
-        "trigger": "level_end",
-        "level_nid": "2_3",
+        "name": "old outro",
+        "trigger": null,
+        "level_nid": "3_1",
         "condition": "True",
         "commands": [
             [

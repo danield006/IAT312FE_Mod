@@ -379,28 +379,11 @@
                 "region_type": "event",
                 "position": [
                     2,
-                    4
-                ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "Open",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "door1_1",
-                "region_type": "event",
-                "position": [
-                    2,
                     2
                 ],
                 "size": [
                     1,
-                    1
+                    3
                 ],
                 "sub_nid": "Open",
                 "condition": "True",
@@ -413,28 +396,11 @@
                 "region_type": "event",
                 "position": [
                     6,
-                    11
-                ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "Open",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "door2_1",
-                "region_type": "event",
-                "position": [
-                    6,
                     9
                 ],
                 "size": [
                     1,
-                    1
+                    3
                 ],
                 "sub_nid": "Open",
                 "condition": "True",
@@ -451,24 +417,7 @@
                 ],
                 "size": [
                     1,
-                    1
-                ],
-                "sub_nid": "Open",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "door3_1",
-                "region_type": "event",
-                "position": [
-                    10,
-                    6
-                ],
-                "size": [
-                    1,
-                    1
+                    3
                 ],
                 "sub_nid": "Open",
                 "condition": "True",
