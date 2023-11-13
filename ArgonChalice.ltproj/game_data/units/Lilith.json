@@ -32,7 +32,12 @@
             "MOV": 0
         },
         "stat_cap_modifiers": {},
-        "starting_items": [],
+        "starting_items": [
+            [
+                "Flux",
+                false
+            ]
+        ],
         "learned_skills": [],
         "unit_notes": [],
         "wexp_gain": {
@@ -58,7 +63,7 @@
             ],
             "Staff": [
                 false,
-                0,
+                181,
                 251
             ],
             "Light": [
@@ -73,7 +78,7 @@
             ],
             "Dark": [
                 false,
-                0,
+                251,
                 251
             ],
             "Default": [
