@@ -1,0 +1,104 @@
+[
+    {
+        "nid": "3_3",
+        "name": "Chapter 3C: Preparation for Battle",
+        "tilemap": "ch3C_smallerGreshia",
+        "bg_tilemap": "ch3C_smallerGreshia",
+        "party": "MC",
+        "music": {},
+        "objective": {
+            "simple": "Talk to Aesc",
+            "win": "Talk to Aesc",
+            "loss": "MC Dies"
+        },
+        "roam": false,
+        "roam_unit": null,
+        "go_to_overworld": false,
+        "should_record": true,
+        "units": [
+            {
+                "nid": "MC",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    6,
+                    3
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Senya",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    5,
+                    3
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Schuri",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    5,
+                    4
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Aesc",
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    12,
+                    4
+                ],
+                "starting_traveler": null,
+                "generic": false
+            }
+        ],
+        "regions": [
+            {
+                "nid": "sealedTome",
+                "region_type": "event",
+                "position": [
+                    14,
+                    13
+                ],
+                "size": [
+                    1,
+                    2
+                ],
+                "sub_nid": "SealedTome",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            }
+        ],
+        "unit_groups": [
+            {
+                "nid": "Party",
+                "units": [
+                    "MC",
+                    "Senya",
+                    "Schuri"
+                ],
+                "positions": {}
+            }
+        ],
+        "ai_groups": []
+    }
+]

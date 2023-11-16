@@ -1,0 +1,29 @@
+[
+    {
+        "name": "old outro",
+        "trigger": null,
+        "level_nid": "3_1_old",
+        "condition": "True",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "Great, we've got this relic now. Let's head back to Aesc",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "4_1"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;;Great, we've got this relic now. Let's head back to Aesc;;;narration\nset_next_chapter;4_1\n"
+    }
+]

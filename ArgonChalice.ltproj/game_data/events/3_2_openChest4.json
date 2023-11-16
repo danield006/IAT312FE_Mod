@@ -1,0 +1,26 @@
+[
+    {
+        "name": "openChest4",
+        "trigger": "Open",
+        "level_nid": "3_2",
+        "condition": "region.nid == 'chest4'",
+        "commands": [
+            [
+                "show_layer",
+                [
+                    "chest4"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Heal"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "show_layer;chest4\ngive_item;{unit};Heal\n"
+    }
+]

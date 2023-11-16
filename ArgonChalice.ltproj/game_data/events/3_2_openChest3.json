@@ -1,0 +1,26 @@
+[
+    {
+        "name": "openChest3",
+        "trigger": "Open",
+        "level_nid": "3_2",
+        "condition": "region.nid == 'chest3'",
+        "commands": [
+            [
+                "show_layer",
+                [
+                    "chest3"
+                ]
+            ],
+            [
+                "give_exp",
+                [
+                    "{unit}",
+                    "50"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "show_layer;chest3\ngive_exp;{unit};50\n"
+    }
+]

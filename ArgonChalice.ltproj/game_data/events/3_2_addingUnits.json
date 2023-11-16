@@ -1,0 +1,29 @@
+[
+    {
+        "name": "addingUnits",
+        "trigger": "level_start",
+        "level_nid": "3_2",
+        "condition": "True",
+        "commands": [
+            [
+                "chapter_title",
+                []
+            ],
+            [
+                "add_group",
+                [
+                    "Party"
+                ]
+            ],
+            [
+                "add_group",
+                [
+                    "enemies"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "chapter_title\nadd_group;Party\nadd_group;enemies\n"
+    }
+]

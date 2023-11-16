@@ -1,0 +1,30 @@
+[
+    {
+        "name": "intro",
+        "trigger": "level_start",
+        "level_nid": "3_3",
+        "condition": "True",
+        "commands": [
+            [
+                "speak",
+                [
+                    "MC",
+                    "Let's take this time to prep for our final battle."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Talk to Aesc when you are ready",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;MC;Let's take this time to prep for our final battle.\nspeak;;Talk to Aesc when you are ready;;;hint\n"
+    }
+]

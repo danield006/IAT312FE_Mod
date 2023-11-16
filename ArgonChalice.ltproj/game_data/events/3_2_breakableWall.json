@@ -1,0 +1,33 @@
+[
+    {
+        "name": "breakableWall",
+        "trigger": "turn_change",
+        "level_nid": "3_2",
+        "condition": "game.turncount == 4",
+        "commands": [
+            [
+                "flicker_cursor",
+                [
+                    "16,8"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Hey look, that rubble's blocking our path."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "We gotta break through!"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "flicker_cursor;16,8\nspeak;Schuri;Hey look, that rubble's blocking our path.\nspeak;Senya;We gotta break through!\n"
+    }
+]

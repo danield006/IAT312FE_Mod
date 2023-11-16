@@ -1,0 +1,19 @@
+[
+    {
+        "name": "outro",
+        "trigger": "level_end",
+        "level_nid": "3_1",
+        "condition": "True",
+        "commands": [
+            [
+                "set_next_chapter",
+                [
+                    "3_2"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "set_next_chapter;3_2"
+    }
+]

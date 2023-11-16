@@ -1,0 +1,25 @@
+[
+    {
+        "name": "openChest2",
+        "trigger": "Open",
+        "level_nid": "3_2",
+        "condition": "region.nid == 'chest2'",
+        "commands": [
+            [
+                "show_layer",
+                [
+                    "chest2"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "100"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "show_layer;chest2\ngive_money;100\n"
+    }
+]

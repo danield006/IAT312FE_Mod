@@ -1,0 +1,25 @@
+[
+    {
+        "name": "outro",
+        "trigger": "level_end",
+        "level_nid": "3_3",
+        "condition": "True",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#do the warp"
+                ]
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "4_1"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "#do the warp\nset_next_chapter;4_1"
+    }
+]
