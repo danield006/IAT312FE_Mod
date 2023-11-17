@@ -151,7 +151,7 @@
     "5_1_partyUnitDeath.json": 149,
     "4_1_intro.json": 150,
     "4_1_outro.json": 151,
-    "4_1_mentorAppearsTurn3.json": 152,
+    "4_1_mentorAppears.json": 152,
     "2222_credits.json": 153,
     "18_intro.json": 154,
     "2_1_BoneDies.json": 155,
@@ -175,7 +175,7 @@
     "4_1_wall3.json": 173,
     "4_1_mentorAtk.json": 174,
     "4_1_tooSlowOutro.json": 175,
-    "5_1_lyonDeath.json": 176,
+    "5_1_lilithDeath.json": 176,
     "4_1_partyUnitDies.json": 177,
     "global_mcDie.json": 178,
     "5_1_mentorStatus.json": 179,
@@ -230,5 +230,6 @@
     "3_2_seeTheLord.json": 228,
     "3_2_intro.json": 229,
     "3_3_vendor.json": 230,
-    "3_3_armory.json": 231
+    "3_3_armory.json": 231,
+    "4_1_wave3enemies.json": 232
 }

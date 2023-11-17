@@ -14,7 +14,7 @@
             [
                 "change_background",
                 [
-                    "VillageGate"
+                    "InsideCastle"
                 ]
             ],
             [
@@ -75,14 +75,14 @@
                 "speak",
                 [
                     "MC",
-                    "We've made it!"
+                    "It's time."
                 ]
             ],
             [
                 "speak",
                 [
                     "Schuri",
-                    "It's time."
+                    "Let's end this."
                 ]
             ],
             [
@@ -95,19 +95,6 @@
                 "speak",
                 [
                     "Senya",
-                    "Whenever you're ready."
-                ]
-            ],
-            [
-                "mirror_portrait",
-                [
-                    "MC"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
                     "Let's go."
                 ]
             ],
@@ -126,6 +113,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;close\nchange_background;VillageGate\ntransition;open\nadd_portrait;MC;OffscreenLeft\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nmove_portrait;MC;Right\nmove_portrait;Schuri;MidLeft\nmove_portrait;Senya;FarLeft\nmirror_portrait;MC\nspeak;MC;We've made it!\nspeak;Schuri;It's time.\n#sound;heavyDoorOpen nvm sounds bad\nspeak;Senya;Whenever you're ready.\nmirror_portrait;MC\nspeak;MC;Let's go.\ntransition;close\nset_next_chapter;5_1\n"
+        "source": "transition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;MC;OffscreenLeft\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nmove_portrait;MC;Right\nmove_portrait;Schuri;MidLeft\nmove_portrait;Senya;FarLeft\nmirror_portrait;MC\nspeak;MC;It's time.\nspeak;Schuri;Let's end this.\n#sound;heavyDoorOpen nvm sounds bad\nspeak;Senya;Let's go.\ntransition;close\nset_next_chapter;5_1\n"
     }
 ]

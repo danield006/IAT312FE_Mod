@@ -6,6 +6,12 @@
         "condition": "region.nid == 'chest1'",
         "commands": [
             [
+                "show_layer",
+                [
+                    "Chest1"
+                ]
+            ],
+            [
                 "give_item",
                 [
                     "{unit}",
@@ -21,6 +27,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "give_item;{unit};Poison Sword (Poison Sword)\nhas_traded;{unit}\n"
+        "source": "show_layer;Chest1\ngive_item;{unit};Poison Sword (Poison Sword)\nhas_traded;{unit}\n"
     }
 ]

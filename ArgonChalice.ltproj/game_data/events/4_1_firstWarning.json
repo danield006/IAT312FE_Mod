@@ -12,69 +12,22 @@
                 ]
             ],
             [
-                "add_portrait",
+                "add_group",
                 [
-                    "MC",
-                    "Left"
+                    "wave2",
+                    "wave2"
                 ]
             ],
             [
                 "speak",
                 [
                     "MC",
-                    "Time is cutting it close|There's only 7 turns left"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "108",
-                    "0,11",
-                    "immediate"
-                ]
-            ],
-            [
-                "move_unit",
-                [
-                    "108",
-                    "2,11",
-                    "normal"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "109",
-                    "0,12",
-                    "immediate"
-                ]
-            ],
-            [
-                "move_unit",
-                [
-                    "109",
-                    "3,12",
-                    "immediate"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "110",
-                    "0,5",
-                    "immediate"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "There's more of them now!"
+                    "There's more of them now!|If we take too long, we'lll get overwhelmed!"
                 ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "screen_shake;100\nadd_portrait;MC;Left\nspeak;MC;Time is cutting it close|There's only 7 turns left\nadd_unit;108;0,11;immediate\nmove_unit;108;2,11;normal\nadd_unit;109;0,12;immediate\nmove_unit;109;3,12;immediate\nadd_unit;110;0,5;immediate\nspeak;MC;There's more of them now!"
+        "source": "screen_shake;100\nadd_group;wave2;wave2\nspeak;MC;There's more of them now!|If we take too long, we'lll get overwhelmed!\n"
     }
 ]

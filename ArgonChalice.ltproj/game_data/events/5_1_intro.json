@@ -6,77 +6,21 @@
         "condition": "True",
         "commands": [
             [
-                "comment",
-                [
-                    "#alone route"
-                ]
-            ],
-            [
                 "remove_all_units",
                 []
             ],
             [
-                "add_unit",
+                "add_group",
                 [
-                    "Lyon",
-                    "",
-                    "immediate"
+                    "Party",
+                    "Party"
                 ]
             ],
             [
-                "add_unit",
+                "add_group",
                 [
-                    "Senya",
-                    "",
-                    "immediate"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "MC",
-                    "",
-                    "immediate"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "Schuri",
-                    "",
-                    "immediate"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "101",
-                    "",
-                    "immediate"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "102",
-                    "",
-                    "immediate"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "103",
-                    "",
-                    "immediate"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "104",
-                    "",
-                    "immediate"
+                    "initialEnemies",
+                    "initialEnemies"
                 ]
             ],
             [
@@ -86,7 +30,7 @@
             [
                 "game_var",
                 [
-                    "kill_lyon",
+                    "kill_lilith",
                     "0"
                 ]
             ],
@@ -115,7 +59,7 @@
             [
                 "add_portrait",
                 [
-                    "LyonEvil",
+                    "Lilith",
                     "Right"
                 ]
             ],
@@ -143,7 +87,7 @@
             [
                 "speak",
                 [
-                    "LyonEvil",
+                    "Lilith",
                     "Well, well, well...|Look who has decided to show up",
                     "",
                     "",
@@ -202,7 +146,7 @@
             [
                 "speak",
                 [
-                    "LyonEvil",
+                    "Lilith",
                     "I say...",
                     "",
                     "",
@@ -212,14 +156,14 @@
             [
                 "expression",
                 [
-                    "LyonEvil",
+                    "Lilith",
                     "OpenMouth"
                 ]
             ],
             [
                 "speak",
                 [
-                    "LyonEvil",
+                    "Lilith",
                     "It will be YOU who will be feeling regret soon enough.",
                     "",
                     "",
@@ -229,14 +173,14 @@
             [
                 "expression",
                 [
-                    "LyonEvil",
+                    "Lilith",
                     "NoSmile"
                 ]
             ],
             [
                 "speak",
                 [
-                    "LyonEvil",
+                    "Lilith",
                     "I wonder how strong your bonds really are!!",
                     "",
                     "",
@@ -246,7 +190,7 @@
             [
                 "move_portrait",
                 [
-                    "LyonEvil",
+                    "Lilith",
                     "MidRight"
                 ]
             ],
@@ -259,7 +203,7 @@
             [
                 "remove_portrait",
                 [
-                    "LyonEvil"
+                    "Lilith"
                 ]
             ],
             [
@@ -331,6 +275,12 @@
                 ]
             ],
             [
+                "if",
+                [
+                    "_SenyaOpinion <=0 and _SchuriOpinion <=0"
+                ]
+            ],
+            [
                 "multi_remove_portrait",
                 [
                     "MC",
@@ -384,7 +334,7 @@
             [
                 "add_portrait",
                 [
-                    "LyonEvil",
+                    "Lilith",
                     "Right"
                 ]
             ],
@@ -398,7 +348,7 @@
             [
                 "speak",
                 [
-                    "LyonEvil",
+                    "Lilith",
                     "Hahaha..|They're under my control now!|You're all alone now...what will you do?|Do you dare kill them?!",
                     "",
                     "",
@@ -436,21 +386,21 @@
             [
                 "comment",
                 [
-                    "#giving MC dark magic"
+                    "#improving MC dark magic"
                 ]
             ],
             [
                 "speak",
                 [
                     "",
-                    "A multitude of thoughts swirl my mind.|My teacher, my friends...|I will do anything it takes to destroy him..."
+                    "A multitude of thoughts swirl my mind.|My teacher, my friends...|I will do anything it takes to destroy her..."
                 ]
             ],
             [
                 "multi_remove_portrait",
                 [
                     "MC",
-                    "LyonEvil"
+                    "Lilith"
                 ]
             ],
             [
@@ -458,14 +408,7 @@
                 [
                     "MC",
                     "Dark (Dark)",
-                    "200"
-                ]
-            ],
-            [
-                "give_item",
-                [
-                    "MC",
-                    "Nosferatu (Nosferatu)"
+                    "500"
                 ]
             ],
             [
@@ -475,14 +418,172 @@
                 ]
             ],
             [
-                "comment",
+                "elif",
                 [
-                    "#win_game"
+                    "_SenyaOpinion <=0"
                 ]
+            ],
+            [
+                "change_team",
+                [
+                    "Senya",
+                    "enemy"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Lilith",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "What did you do?!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lilith",
+                    "Hahaha..|She's under my control now!|Do you dare kill your dear friend?!",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "music_fade_back",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "_SchuriOpinion <=0"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Senya",
+                    "9,5",
+                    "warp"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "change_team",
+                [
+                    "Schuri",
+                    "enemy"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Schuri",
+                    "7,5",
+                    "warp"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Lilith",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "What did you do?!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lilith",
+                    "Hahaha..|She's under my control now!|Do you dare kill your dear friend?!",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "music_fade_back",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "What did you do?!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lilith",
+                    "Hahaha..|They're under my contr-|Huh?!|I gues your bonds do hold...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Lilith",
+                    "No matter! Your journey will end here!"
+                ]
+            ],
+            [
+                "end",
+                []
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#alone route\nremove_all_units\nadd_unit;Lyon;;immediate\nadd_unit;Senya;;immediate\nadd_unit;MC;;immediate\nadd_unit;Schuri;;immediate\nadd_unit;101;;immediate\nadd_unit;102;;immediate\nadd_unit;103;;immediate\nadd_unit;104;;immediate\nchapter_title\ngame_var;kill_lyon;0\ntransition;Open\nmusic;castle-corridor\nspeak;;Kaerndal Castle-Throne Room;;;narration_top\nadd_portrait;LyonEvil;Right\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nadd_portrait;MC;OffscreenLeft\nspeak;LyonEvil;Well, well, well...|Look who has decided to show up;;;noir\nmove_portrait;MC;MidLeft\nmove_portrait;Schuri;Left\nmove_portrait;Senya;FarLeft\nexpression;MC;NoSmile\nspeak;MC;You will regret what you did.\nspeak;Senya;That's right|We'll be stopping your plans.\nspeak;Schuri;You will receive your due punishment.\nspeak;LyonEvil;I say...;;;noir\nexpression;LyonEvil;OpenMouth\nspeak;LyonEvil;It will be YOU who will be feeling regret soon enough.;;;noir\nexpression;LyonEvil;NoSmile\nspeak;LyonEvil;I wonder how strong your bonds really are!!;;;noir\nmove_portrait;LyonEvil;MidRight\nsound;Flux1\nremove_portrait;LyonEvil\nexpression;Schuri;HalfCloseEyes\nexpression;Senya;CloseEyes\nspeak;Schuri;Ack!\nspeak;Senya;Ugh...\nmirror_portrait;MC\nmove_portrait;MC;MidRight\nspeak;MC;Schuri! Senya!\nexpression;Senya;CloseEyes\nexpression;Schuri;CloseEyes\nwait;100\nmulti_remove_portrait;MC;Schuri;Senya\nchange_team;Senya;enemy\nchange_team;Schuri;enemy\nmove_unit;Senya;9,5;warp\nmove_unit;Schuri;7,5;warp\nwait;2000\nadd_portrait;MC;Left\nadd_portrait;LyonEvil;Right\nspeak;MC;What did you do?!\nspeak;LyonEvil;Hahaha..|They're under my control now!|You're all alone now...what will you do?|Do you dare kill them?!;;;noir\nexpression;MC;CloseEyes\nspeak;MC;I will\nexpression;MC;OpenEyes\nspeak;MC;stop you!\n#giving MC dark magic\nspeak;;A multitude of thoughts swirl my mind.|My teacher, my friends...|I will do anything it takes to destroy him...\nmulti_remove_portrait;MC;LyonEvil\ngive_wexp;MC;Dark (Dark);200\ngive_item;MC;Nosferatu (Nosferatu)\nmusic_fade_back;2000\n#win_game\n"
+        "source": "remove_all_units\nadd_group;Party;Party\nadd_group;initialEnemies;initialEnemies\nchapter_title\ngame_var;kill_lilith;0\ntransition;Open\nmusic;castle-corridor\nspeak;;Kaerndal Castle-Throne Room;;;narration_top\nadd_portrait;Lilith;Right\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nadd_portrait;MC;OffscreenLeft\nspeak;Lilith;Well, well, well...|Look who has decided to show up;;;noir\nmove_portrait;MC;MidLeft\nmove_portrait;Schuri;Left\nmove_portrait;Senya;FarLeft\nexpression;MC;NoSmile\nspeak;MC;You will regret what you did.\nspeak;Senya;That's right|We'll be stopping your plans.\nspeak;Schuri;You will receive your due punishment.\nspeak;Lilith;I say...;;;noir\nexpression;Lilith;OpenMouth\nspeak;Lilith;It will be YOU who will be feeling regret soon enough.;;;noir\nexpression;Lilith;NoSmile\nspeak;Lilith;I wonder how strong your bonds really are!!;;;noir\nmove_portrait;Lilith;MidRight\nsound;Flux1\nremove_portrait;Lilith\nexpression;Schuri;HalfCloseEyes\nexpression;Senya;CloseEyes\nspeak;Schuri;Ack!\nspeak;Senya;Ugh...\nmirror_portrait;MC\nmove_portrait;MC;MidRight\nspeak;MC;Schuri! Senya!\nexpression;Senya;CloseEyes\nexpression;Schuri;CloseEyes\nwait;100\nif;_SenyaOpinion <=0 and _SchuriOpinion <=0\n    multi_remove_portrait;MC;Schuri;Senya\n    change_team;Senya;enemy\n    change_team;Schuri;enemy\n    move_unit;Senya;9,5;warp\n    move_unit;Schuri;7,5;warp\n    wait;2000\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|They're under my control now!|You're all alone now...what will you do?|Do you dare kill them?!;;;noir\n    expression;MC;CloseEyes\n    speak;MC;I will\n    expression;MC;OpenEyes\n    speak;MC;stop you!\n    #improving MC dark magic\n    speak;;A multitude of thoughts swirl my mind.|My teacher, my friends...|I will do anything it takes to destroy her...\n    multi_remove_portrait;MC;Lilith\n    give_wexp;MC;Dark (Dark);500\n    music_fade_back;2000\nelif;_SenyaOpinion <=0\n    change_team;Senya;enemy\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\nspeak;Lilith;Hahaha..|She's under my control now!|Do you dare kill your dear friend?!;;;noir\nmusic_fade_back;2000\nelif;_SchuriOpinion <=0\n    move_unit;Senya;9,5;warp\n    wait;2000\n    change_team;Schuri;enemy\n    move_unit;Schuri;7,5;warp\n    wait;2000\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\nspeak;Lilith;Hahaha..|She's under my control now!|Do you dare kill your dear friend?!;;;noir\nmusic_fade_back;2000\nelse\nspeak;MC;What did you do?!\nspeak;Lilith;Hahaha..|They're under my contr-|Huh?!|I gues your bonds do hold...;;;noir\nchange_background\nspeak;Lilith;No matter! Your journey will end here!\nend\n"
     }
 ]

@@ -1,0 +1,41 @@
+[
+    {
+        "name": "wave3enemies",
+        "trigger": "unit_wait",
+        "level_nid": "4_1",
+        "condition": "game.level.regions.get('wave3Enemies').contains(game.get_unit('MC').position)",
+        "commands": [
+            [
+                "add_group",
+                [
+                    "wave3",
+                    "wave3"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "mob17",
+                    "13,4"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "mob18",
+                    "16,5"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "mob19",
+                    "15,5"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "add_group;wave3;wave3\nmove_unit;mob17;13,4\nmove_unit;mob18;16,5\nmove_unit;mob19;15,5"
+    }
+]

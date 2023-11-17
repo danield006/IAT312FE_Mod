@@ -6,6 +6,12 @@
         "condition": "region.nid == 'chest3'",
         "commands": [
             [
+                "show_layer",
+                [
+                    "Chest3"
+                ]
+            ],
+            [
                 "give_item",
                 [
                     "{unit}",
@@ -28,6 +34,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "give_item;{unit};Heal (Heal)\ngive_skill;{unit};Luck +5 (Luck +5)\nhas_traded;{unit}\n"
+        "source": "show_layer;Chest3\ngive_item;{unit};Heal (Heal)\ngive_skill;{unit};Luck +5 (Luck +5)\nhas_traded;{unit}\n"
     }
 ]

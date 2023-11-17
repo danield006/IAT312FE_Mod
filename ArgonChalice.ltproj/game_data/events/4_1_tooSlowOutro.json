@@ -3,7 +3,7 @@
         "name": "tooSlowOutro",
         "trigger": "turn_change",
         "level_nid": "4_1",
-        "condition": "game.turncount == 15",
+        "condition": "game.turncount == 2",
         "commands": [
             [
                 "screen_shake",
@@ -31,20 +31,6 @@
                 ]
             ],
             [
-                "add_portrait",
-                [
-                    "LyonEvil",
-                    "Right"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "MC",
-                    "Left"
-                ]
-            ],
-            [
                 "change_background",
                 [
                     "InsideCastle"
@@ -57,9 +43,23 @@
                 ]
             ],
             [
+                "add_portrait",
+                [
+                    "Lilith",
+                    "Right"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
                 "speak",
                 [
-                    "LyonEvil",
+                    "Lilith",
                     "Look at what the cat dragged it...|Too bad you're already too late.",
                     "",
                     "",
@@ -76,14 +76,28 @@
             [
                 "speak",
                 [
-                    "LyonEvil",
-                    "The Argon Ritual has already been completed. All this power...!|"
+                    "Lilith",
+                    "I, Lilith has completed the Argon Ritual."
                 ]
             ],
             [
-                "comment",
+                "bop_portrait",
                 [
-                    "#more stuff"
+                    "Lilith"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lilith",
+                    "All this power...!|Hahahaha!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Oh no..."
                 ]
             ],
             [
@@ -93,6 +107,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "screen_shake;250\nsound;explosion_wide\nspeak;MC;Oh no...\ntransition;close\nadd_portrait;LyonEvil;Right\nadd_portrait;MC;Left\nchange_background;InsideCastle\ntransition;open\nspeak;LyonEvil;Look at what the cat dragged it...|Too bad you're already too late.;;;noir\nspeak;MC;It's you!\nspeak;LyonEvil;The Argon Ritual has already been completed. All this power...!|\n#more stuff\nlose_game\n"
+        "source": "screen_shake;250\nsound;explosion_wide\nspeak;MC;Oh no...\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;Lilith;Right\nadd_portrait;MC;Left\nspeak;Lilith;Look at what the cat dragged it...|Too bad you're already too late.;;;noir\nspeak;MC;It's you!\nspeak;Lilith;I, Lilith has completed the Argon Ritual.\nbop_portrait;Lilith\nspeak;Lilith;All this power...!|Hahahaha!\nspeak;MC;Oh no...\nlose_game\n"
     }
 ]

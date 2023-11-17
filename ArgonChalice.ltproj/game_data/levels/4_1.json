@@ -20,123 +20,12 @@
         "should_record": true,
         "units": [
             {
-                "nid": "Mentor",
-                "team": "enemy",
-                "ai": "Pursue",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": null,
-                "starting_traveler": null,
-                "generic": false
-            },
-            {
-                "nid": "eliteEnemy",
-                "variant": null,
-                "level": 15,
-                "klass": "Entombed",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Poison Sword",
-                        false
-                    ]
-                ],
-                "starting_skills": [
-                    "Berserk"
-                ],
-                "team": "enemy",
-                "ai": "Guard",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": [
-                    14,
-                    7
-                ],
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "103",
-                "variant": null,
-                "level": 12,
-                "klass": "Revenant",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Rotten Claw",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": [
-                    15,
-                    8
-                ],
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "104",
-                "variant": null,
-                "level": 10,
-                "klass": "Bow_Bonewalker",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Steel Bow",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": [
-                    6,
-                    1
-                ],
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "105",
-                "variant": null,
-                "level": 10,
-                "klass": "Bow_Bonewalker",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Steel Bow",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": [
-                    10,
-                    2
-                ],
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
                 "nid": "MC",
                 "team": "player",
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    3,
-                    15
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -146,10 +35,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    4,
-                    15
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -159,105 +45,15 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    2,
-                    15
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
-            },
-            {
-                "nid": "102",
-                "variant": null,
-                "level": 10,
-                "klass": "Sword_Wight",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Steel Blade",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": null,
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "106",
-                "variant": null,
-                "level": 10,
-                "klass": "Sword_Wight",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Steel Blade",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": [
-                    0,
-                    5
-                ],
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "108",
-                "variant": null,
-                "level": 10,
-                "klass": "Sword_Wight",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Steel Blade",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": null,
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "109",
-                "variant": null,
-                "level": 10,
-                "klass": "Sword_Wight",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Steel Blade",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": null,
-                "starting_traveler": null,
-                "generic": true
             },
             {
                 "nid": "Wall1",
                 "variant": null,
                 "level": 1,
-                "klass": "Snag20",
+                "klass": "Wall25",
                 "faction": "Wall",
                 "starting_items": [],
                 "starting_skills": [],
@@ -266,7 +62,7 @@
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
-                    4,
+                    17,
                     9
                 ],
                 "starting_traveler": null,
@@ -276,7 +72,7 @@
                 "nid": "Wall2",
                 "variant": null,
                 "level": 1,
-                "klass": "Snag20",
+                "klass": "Wall25",
                 "faction": "Wall",
                 "starting_items": [],
                 "starting_skills": [],
@@ -285,7 +81,7 @@
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
-                    4,
+                    17,
                     12
                 ],
                 "starting_traveler": null,
@@ -304,16 +100,175 @@
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
-                    8,
+                    21,
                     8
                 ],
                 "starting_traveler": null,
                 "generic": true
             },
             {
-                "nid": "107",
+                "nid": "Mentor",
+                "team": "enemy",
+                "ai": "Pursue",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "boss",
                 "variant": null,
-                "level": 1,
+                "level": 15,
+                "klass": "Entombed",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Poison Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [
+                    "Berserk"
+                ],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "eliteEnemy1",
+                "variant": null,
+                "level": 12,
+                "klass": "Revenant",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Rotten Claw",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "eliteEnemy2",
+                "variant": null,
+                "level": 10,
+                "klass": "Revenant",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Rotten Claw",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob1",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob2",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob3",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob4",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob5",
+                "variant": null,
+                "level": 7,
                 "klass": "Sword_Bonewalker",
                 "faction": "Monster",
                 "starting_items": [
@@ -327,18 +282,288 @@
                 "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    8,
-                    4
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
             {
-                "nid": "110",
+                "nid": "mob6",
                 "variant": null,
-                "level": 10,
+                "level": 7,
                 "klass": "Bow_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Silver Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob7",
+                "variant": null,
+                "level": 8,
+                "klass": "Bow_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob8",
+                "variant": null,
+                "level": 8,
+                "klass": "Bow_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob9",
+                "variant": null,
+                "level": 8,
+                "klass": "Bow_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob10",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob11",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob12",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob13",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob14",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob15",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob16",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob17",
+                "variant": null,
+                "level": 8,
+                "klass": "Sword_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob18",
+                "variant": null,
+                "level": 8,
+                "klass": "Sword_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob19",
+                "variant": null,
+                "level": 8,
+                "klass": "Bow_Wight",
                 "faction": "Monster",
                 "starting_items": [
                     [
@@ -365,7 +590,7 @@
                     1
                 ],
                 "size": [
-                    3,
+                    10,
                     4
                 ],
                 "sub_nid": "Enter",
@@ -492,6 +717,40 @@
                 "time_left": null,
                 "only_once": false,
                 "interrupt_move": false
+            },
+            {
+                "nid": "mentorArea",
+                "region_type": "normal",
+                "position": [
+                    13,
+                    1
+                ],
+                "size": [
+                    4,
+                    12
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "wave3Enemies",
+                "region_type": "normal",
+                "position": [
+                    18,
+                    1
+                ],
+                "size": [
+                    7,
+                    12
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
             }
         ],
         "unit_groups": [
@@ -502,7 +761,151 @@
                     "Senya",
                     "MC"
                 ],
-                "positions": {}
+                "positions": {
+                    "Schuri": [
+                        10,
+                        17
+                    ],
+                    "Senya": [
+                        9,
+                        16
+                    ],
+                    "MC": [
+                        9,
+                        17
+                    ]
+                }
+            },
+            {
+                "nid": "initialEnemies",
+                "units": [
+                    "boss",
+                    "eliteEnemy1",
+                    "eliteEnemy2",
+                    "mob1",
+                    "mob2",
+                    "mob3",
+                    "mob4",
+                    "mob5",
+                    "mob6",
+                    "mob7",
+                    "mob8",
+                    "mob9",
+                    "mob10",
+                    "mob11"
+                ],
+                "positions": {
+                    "eliteEnemy1": [
+                        22,
+                        2
+                    ],
+                    "eliteEnemy2": [
+                        20,
+                        11
+                    ],
+                    "boss": [
+                        26,
+                        8
+                    ],
+                    "mob1": [
+                        4,
+                        10
+                    ],
+                    "mob2": [
+                        5,
+                        8
+                    ],
+                    "mob3": [
+                        0,
+                        11
+                    ],
+                    "mob4": [
+                        1,
+                        5
+                    ],
+                    "mob5": [
+                        2,
+                        4
+                    ],
+                    "mob6": [
+                        1,
+                        2
+                    ],
+                    "mob7": [
+                        10,
+                        1
+                    ],
+                    "mob8": [
+                        9,
+                        4
+                    ],
+                    "mob9": [
+                        12,
+                        5
+                    ],
+                    "mob10": [
+                        16,
+                        10
+                    ],
+                    "mob11": [
+                        15,
+                        11
+                    ]
+                }
+            },
+            {
+                "nid": "wave2",
+                "units": [
+                    "mob12",
+                    "mob13",
+                    "mob14",
+                    "mob15",
+                    "mob16"
+                ],
+                "positions": {
+                    "mob12": [
+                        1,
+                        3
+                    ],
+                    "mob13": [
+                        0,
+                        4
+                    ],
+                    "mob14": [
+                        1,
+                        6
+                    ],
+                    "mob15": [
+                        10,
+                        12
+                    ],
+                    "mob16": [
+                        12,
+                        10
+                    ]
+                }
+            },
+            {
+                "nid": "wave3",
+                "units": [
+                    "mob17",
+                    "mob18",
+                    "mob19"
+                ],
+                "positions": {
+                    "mob17": [
+                        5,
+                        5
+                    ],
+                    "mob18": [
+                        5,
+                        5
+                    ],
+                    "mob19": [
+                        5,
+                        5
+                    ]
+                }
             }
         ],
         "ai_groups": []
