@@ -1,7 +1,7 @@
 [
     {
         "nid": "2_2B",
-        "name": "Chapter 2B: Greshia under seige",
+        "name": "Chapter 2A: Arrival to Greshia",
         "tilemap": "CH2",
         "bg_tilemap": null,
         "party": "MC",
@@ -50,22 +50,6 @@
                 "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
-            },
-            {
-                "nid": "Rescued",
-                "variant": null,
-                "level": 1,
-                "klass": "Soldier",
-                "faction": "Soldier",
-                "starting_items": [],
-                "starting_skills": [],
-                "team": "other",
-                "ai": "None",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": null,
-                "starting_traveler": null,
-                "generic": true
             },
             {
                 "nid": "Aesc",
@@ -133,7 +117,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "Guard",
+                "ai": "Defend",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -296,6 +280,16 @@
                 "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
+            },
+            {
+                "nid": "HeadGuard",
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
             }
         ],
         "regions": [
@@ -411,15 +405,8 @@
             },
             {
                 "nid": "New Group",
-                "units": [
-                    "Rescued"
-                ],
-                "positions": {
-                    "Rescued": [
-                        5,
-                        16
-                    ]
-                }
+                "units": [],
+                "positions": {}
             },
             {
                 "nid": "StartingEnemies",
@@ -485,8 +472,8 @@
                 ],
                 "positions": {
                     "Aesc": [
-                        3,
-                        17
+                        8,
+                        1
                     ]
                 }
             }

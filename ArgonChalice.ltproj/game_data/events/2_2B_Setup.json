@@ -11,10 +11,17 @@
                     "MC",
                     "Aesc"
                 ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch2GuardSaved",
+                    "False"
+                ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_talk;MC;Aesc\n"
+        "source": "add_talk;MC;Aesc\ngame_var;_ch2GuardSaved;False\n"
     }
 ]

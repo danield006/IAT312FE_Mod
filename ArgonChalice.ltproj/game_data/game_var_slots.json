@@ -92,8 +92,8 @@
         "desc": "Senya's opinion of MC(>0 in order to use in final)"
     },
     {
-        "nid": "_ch2TalkedToAesc",
-        "desc": "Whether you have talked to Aesc yet in chapter 2"
+        "nid": "_ch2GuardSaved",
+        "desc": "Did you complete the guard rescue?"
     },
     {
         "nid": "_ch2AescTalkTurn",

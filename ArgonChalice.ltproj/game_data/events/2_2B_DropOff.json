@@ -3,26 +3,26 @@
         "name": "DropOff",
         "trigger": "enemy_turn_change",
         "level_nid": "2_2B",
-        "condition": "game.level.regions.get('DropOff').contains(game.get_unit('Rescued').position)",
+        "condition": "game.level.regions.get('DropOff').contains(game.get_unit('HeadGuard').position)",
         "commands": [
             [
                 "add_portrait",
                 [
-                    "SoldierGreen",
+                    "HeadGuard",
                     "Right"
                 ]
             ],
             [
                 "speak",
                 [
-                    "SoldierGreen",
-                    "T-thank you so much! I won't forget this second chance!"
+                    "HeadGuard",
+                    "T-thank you...You...are a better man than me."
                 ]
             ],
             [
                 "remove_portrait",
                 [
-                    "SoldierGreen"
+                    "HeadGuard"
                 ]
             ],
             [
@@ -35,27 +35,66 @@
             [
                 "speak",
                 [
-                    "Senya",
-                    "...."
+                    "",
+                    "Senya didn't like that you helped the high guard, -1",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SenyaOpinion",
+                    "-1"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Left"
                 ]
             ],
             [
                 "speak",
                 [
                     "",
-                    "Senya didn't like that you helped the high guard (-1)"
+                    "Schuri liked that you helped the high guard +1",
+                    "",
+                    "",
+                    "narration_top"
                 ]
             ],
             [
-                "speak",
+                "inc_game_var",
                 [
-                    "",
-                    "Schuri liked that you were willing to help the high guard (+1)"
+                    "_SchuriOpinion",
+                    "1"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch2GuardSaved",
+                    "True"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;SoldierGreen;Right\nspeak;SoldierGreen;T-thank you so much! I won't forget this second chance!\nremove_portrait;SoldierGreen;\nadd_portrait;Senya;Left\nspeak;Senya;....\nspeak;;Senya didn't like that you helped the high guard (-1)\nspeak;;Schuri liked that you were willing to help the high guard (+1)\n"
+        "source": "add_portrait;HeadGuard;Right\nspeak;HeadGuard;T-thank you...You...are a better man than me.\nremove_portrait;HeadGuard\nadd_portrait;Senya;Left\nspeak;;Senya didn't like that you helped the high guard, -1;;;narration_top\ninc_game_var;_SenyaOpinion;-1\nremove_portrait;Senya\nadd_portrait;Schuri;Left\nspeak;;Schuri liked that you helped the high guard +1;;;narration_top\ninc_game_var;_SchuriOpinion;1\nremove_portrait;Schuri\ngame_var;_ch2GuardSaved;True\n"
     }
 ]

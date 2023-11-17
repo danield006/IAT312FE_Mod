@@ -27,7 +27,7 @@
             ],
             [
                 "hit",
-                85
+                80
             ],
             [
                 "weapon_type",
@@ -53,11 +53,7 @@
             ],
             [
                 "weight",
-                11
-            ],
-            [
-                "status_on_equip",
-                "Defense +5"
+                9
             ],
             [
                 "crit",
@@ -80,6 +76,10 @@
                 [
                     "Monster"
                 ]
+            ],
+            [
+                "status_on_equip",
+                "Defense +5"
             ]
         ]
     }

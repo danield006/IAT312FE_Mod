@@ -6,14 +6,82 @@
         "condition": "True",
         "commands": [
             [
-                "comment",
+                "if",
                 [
-                    "#insert outro here."
+                    "game.game_vars['_ch2GuardSaved'] == True"
                 ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Senya seems content that the head guard wasn't helped, +1",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SenyaOpinion",
+                    "1"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri is upset that the head guard wasn't saved. -1",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SchuriOpinion",
+                    "-1"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "end",
+                []
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "#insert outro here.\n"
+        "source": "if;game.game_vars['_ch2GuardSaved'] == True\nelse\n    add_portrait;Senya;Left\n    speak;;Senya seems content that the head guard wasn't helped, +1;;;narration_top\n    inc_game_var;_SenyaOpinion;1\n    remove_portrait;Senya\n    add_portrait;Schuri;Left\n    speak;;Schuri is upset that the head guard wasn't saved. -1;;;narration_top\n    inc_game_var;_SchuriOpinion;-1\n    remove_portrait;Schuri\nend\n"
     }
 ]

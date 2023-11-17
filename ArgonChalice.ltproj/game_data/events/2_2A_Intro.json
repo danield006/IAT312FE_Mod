@@ -6,454 +6,195 @@
         "condition": "True",
         "commands": [
             [
-                "hide_layer",
+                "transition",
                 [
-                    "UnderAttack",
-                    "immediate"
+                    "close"
                 ]
             ],
             [
-                "chapter_title",
-                []
+                "change_background",
+                [
+                    "House"
+                ]
             ],
             [
-                "music",
+                "transition",
                 [
-                    "greshiaBGM"
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Schuri",
+                    "FarLeft",
+                    "Senya",
+                    "Left",
+                    "MC",
+                    "MidLeft",
+                    "Aesc",
+                    "FarRight"
                 ]
             ],
             [
                 "speak",
                 [
-                    "",
-                    "Greshia",
-                    "",
-                    "",
-                    "narration_top"
+                    "Senya",
+                    "So we need to keep you safe for 8 turns for you to....|do what exactly?"
                 ]
             ],
             [
-                "wait",
+                "speak",
                 [
-                    "500"
+                    "Aesc",
+                    "The spell will completely reject all of the undead monsters roaming around the city.|It will also briefly prevent any more monsters from coming in from the outside.|The castle is a completely different matter."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Wait...what's going on with the castle?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "...Let's discuss that after we deal with this matter first yes?|To start, monsters will begin swarming in from all sides to charge at me.|I'm going to committ to finishing this spell so I won't cancel it to defend myself.|I'll be completely defenseless during this so ensure my wellbeing is in your hands."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Is there any other magic you can teach me before we get ready?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "...No, it's best you stick with the holy lightning spell you've been using so far.|But I can at least give you some weapons that will actually hurt the damn monsters."
+                ]
+            ],
+            [
+                "remove_item",
+                [
+                    "Senya",
+                    "Iron Sword (Iron Sword)",
+                    "FLAG(no_banner)"
+                ]
+            ],
+            [
+                "remove_item",
+                [
+                    "Senya",
+                    "Iron Bow (Iron Bow)",
+                    "FLAG(no_banner)"
+                ]
+            ],
+            [
+                "remove_item",
+                [
+                    "Senya",
+                    "Iron Axe (Iron Axe)",
+                    "FLAG(no_banner)"
+                ]
+            ],
+            [
+                "remove_item",
+                [
+                    "Schuri",
+                    "Fire (Fire)",
+                    "FLAG(no_banner)"
+                ]
+            ],
+            [
+                "remove_item",
+                [
+                    "MC",
+                    "Iron Lance (Iron Lance)",
+                    "FLAG(no_banner)"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Senya",
+                    "Blessed Sword (BlessedSword)"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Senya",
+                    "Blessed Axe (Garm_Weak)"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Senya",
+                    "Blessed Bow (BlessedBow)"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Schuri",
+                    "Helfire (Helfire)"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "MC",
+                    "Blessed Spear (BlessedSpear)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "These are... holy artifacts aren't they?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "What's left of them.|These don't even hold a fraction of the strength they once held.|Now let's clean this place up shall we?"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "open"
                 ]
             ],
             [
                 "spawn_group",
                 [
                     "Party",
-                    "south",
-                    "starting"
-                ]
-            ],
-            [
-                "flicker_cursor",
-                [
-                    "19,19"
-                ]
-            ],
-            [
-                "wait",
-                [
-                    "500"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "close"
-                ]
-            ],
-            [
-                "change_background",
-                [
-                    "Village"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "open"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Schuri",
-                    "FarRight"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Senya",
-                    "Right"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "MC",
-                    "MidRight"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Ugh my feet are killing me..."
-                ]
-            ],
-            [
-                "move_portrait",
-                [
-                    "Senya",
-                    "Left"
-                ]
-            ],
-            [
-                "mirror_portrait",
-                [
-                    "Senya"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "Oh quit whining, we're finally here|This is Greshia, 2nd largest city in the kingdom.|MC I don't think teacher ever took you here right?"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Nah, he only ever took me East really.|You seem like you know this place well Senya."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "Well before I was taken in by teacher...|Back when I was with my caravan...|We used to stop by here pretty often."
-                ]
-            ],
-            [
-                "move_portrait",
-                [
-                    "Schuri",
-                    "MidRight"
-                ]
-            ],
-            [
-                "bop_portrait",
-                [
-                    "MC"
-                ]
-            ],
-            [
-                "move_portrait",
-                [
-                    "Schuri",
-                    "FarRight"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Ow! Schuri what was that for?"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Schuri",
-                    "For making Senya have to bring up bad memories you dolt."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Not like I meant to do it...How was I supposed to know?"
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "Senya",
-                    "Smile"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "Thanks Schuri.|But MC is right, not like he meant to do it or knew.|Just has a habit of it."
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "Senya",
-                    "NoSmile"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "...Besides, I actually have fond memories of the place.|There's a tavern where everyone often visited.|..That's about as good of a place as any to start for this 'Aesc'"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Should we come with you?"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "No...I know the owner and it'll be easier on my own.|Why don't you two ask some of the residents?|There should be pretty good shops here.|Pick up some gear for the rest of the journey.|When you two are ready I'll be waiting at the tavern."
-                ]
-            ],
-            [
-                "end_skip",
-                []
-            ],
-            [
-                "transition",
-                [
-                    "close"
-                ]
-            ],
-            [
-                "change_background",
-                []
-            ],
-            [
-                "transition",
-                [
-                    "open"
-                ]
-            ],
-            [
-                "move_unit",
-                [
-                    "Senya",
-                    "21,2",
-                    "normal"
-                ]
-            ],
-            [
-                "remove_unit",
-                [
-                    "Senya",
-                    "fade"
-                ]
-            ],
-            [
-                "flicker_cursor",
-                [
-                    "MC"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "close"
-                ]
-            ],
-            [
-                "change_background",
-                [
-                    "Village"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "open"
-                ]
-            ],
-            [
-                "end_skip",
-                []
-            ],
-            [
-                "add_portrait",
-                [
-                    "MC",
-                    "Right"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Schuri",
-                    "Left"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Well....Schuri do you know Greshia well? Or are we both new here."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Schuri",
-                    "My father has taken me here a couple of times...|My father was considering an arranged marriage to one of the lords' sons.|I would have had to quit my studies but..."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Teach right? I was Teach's last pupil so I only know some of the story|But he's got some influential power|He probably pulled some strings right?"
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "Schuri",
-                    "Smile"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Schuri",
-                    "Indeed... Sir Cyrus requested to continue teaching me as he saw potential for me to become a high sage.|Truthfully, I think he was lying to keep me safe...|I've always been told I had talent... but a high sage?|I'm not capable of that."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "...|Schuri I may be magically inept but anyone can tell you're meant for great things|Teach was a good man, I think he saw this as an opportunity for you to achieve great things|...and get you away from some creepy noble."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Schuri",
-                    "...was Sir Cyrus' last lesson on how to cheer me up?|...Thank you dummie."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Gotta make sure I stay on your good side|That punch on the top of my head feels like its swelling|You could at least pull your punches|....Oh yeah, hey Schuri?"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Schuri",
-                    "Yes?"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Were you always like this?"
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "Schuri",
-                    "NoSmile"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Schuri",
-                    "Huh?"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "I mean...you're the daughter of a noble right?|I thought you were supposed to be taught to talk all fancy|and behave like a proper noble and all that."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Schuri",
-                    "Bend down again so I can show you what its like when I don't pull my punches|I think whatever I did to your empty head wore off."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Welp...|Uh hey I'm gonna head to the shops first then see ya bye!|"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "close"
-                ]
-            ],
-            [
-                "change_background",
-                []
-            ],
-            [
-                "transition",
-                [
-                    "open"
-                ]
-            ],
-            [
-                "end_skip",
-                []
-            ],
-            [
-                "move_unit",
-                [
-                    "MC",
-                    "8,4",
-                    "normal"
-                ]
-            ],
-            [
-                "wait",
-                [
-                    "500"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Schuri",
-                    "Left"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Schuri",
-                    "That idiot!|I swear I'll...ugh|time to ask the locals I guess."
+                    "north",
+                    "Party",
+                    "immediate"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "hide_layer;UnderAttack;immediate\nchapter_title\nmusic;greshiaBGM\nspeak;;Greshia;;;narration_top\nwait;500\nspawn_group;Party;south;starting\nflicker_cursor;19,19\nwait;500\ntransition;close\nchange_background;Village\ntransition;open\nadd_portrait;Schuri;FarRight\nadd_portrait;Senya;Right\nadd_portrait;MC;MidRight\nspeak;MC;Ugh my feet are killing me...\nmove_portrait;Senya;Left\nmirror_portrait;Senya\nspeak;Senya;Oh quit whining, we're finally here|This is Greshia, 2nd largest city in the kingdom.|MC I don't think teacher ever took you here right?\nspeak;MC;Nah, he only ever took me East really.|You seem like you know this place well Senya.\nspeak;Senya;Well before I was taken in by teacher...|Back when I was with my caravan...|We used to stop by here pretty often.\nmove_portrait;Schuri;MidRight\nbop_portrait;MC\nmove_portrait;Schuri;FarRight\nspeak;MC;Ow! Schuri what was that for?\nspeak;Schuri;For making Senya have to bring up bad memories you dolt.\nspeak;MC;Not like I meant to do it...How was I supposed to know?\nexpression;Senya;Smile\nspeak;Senya;Thanks Schuri.|But MC is right, not like he meant to do it or knew.|Just has a habit of it.\nexpression;Senya;NoSmile\nspeak;Senya;...Besides, I actually have fond memories of the place.|There's a tavern where everyone often visited.|..That's about as good of a place as any to start for this 'Aesc'\nspeak;MC;Should we come with you?\nspeak;Senya;No...I know the owner and it'll be easier on my own.|Why don't you two ask some of the residents?|There should be pretty good shops here.|Pick up some gear for the rest of the journey.|When you two are ready I'll be waiting at the tavern.\nend_skip\ntransition;close\nchange_background\ntransition;open\nmove_unit;Senya;21,2;normal\nremove_unit;Senya;fade\nflicker_cursor;MC\ntransition;close\nchange_background;Village\ntransition;open\nend_skip\nadd_portrait;MC;Right\nadd_portrait;Schuri;Left\nspeak;MC;Well....Schuri do you know Greshia well? Or are we both new here.\nspeak;Schuri;My father has taken me here a couple of times...|My father was considering an arranged marriage to one of the lords' sons.|I would have had to quit my studies but...\nspeak;MC;Teach right? I was Teach's last pupil so I only know some of the story|But he's got some influential power|He probably pulled some strings right?\nexpression;Schuri;Smile\nspeak;Schuri;Indeed... Sir Cyrus requested to continue teaching me as he saw potential for me to become a high sage.|Truthfully, I think he was lying to keep me safe...|I've always been told I had talent... but a high sage?|I'm not capable of that.\nspeak;MC;...|Schuri I may be magically inept but anyone can tell you're meant for great things|Teach was a good man, I think he saw this as an opportunity for you to achieve great things|...and get you away from some creepy noble.\nspeak;Schuri;...was Sir Cyrus' last lesson on how to cheer me up?|...Thank you dummie.\nspeak;MC;Gotta make sure I stay on your good side|That punch on the top of my head feels like its swelling|You could at least pull your punches|....Oh yeah, hey Schuri?\nspeak;Schuri;Yes?\nspeak;MC;Were you always like this?\nexpression;Schuri;NoSmile\nspeak;Schuri;Huh?\nspeak;MC;I mean...you're the daughter of a noble right?|I thought you were supposed to be taught to talk all fancy|and behave like a proper noble and all that.\nspeak;Schuri;Bend down again so I can show you what its like when I don't pull my punches|I think whatever I did to your empty head wore off.\nspeak;MC;Welp...|Uh hey I'm gonna head to the shops first then see ya bye!|\ntransition;close\nchange_background\ntransition;open\nend_skip\nmove_unit;MC;8,4;normal\nwait;500\nadd_portrait;Schuri;Left\nspeak;Schuri;That idiot!|I swear I'll...ugh|time to ask the locals I guess.\n"
+        "source": "transition;close\nchange_background;House\ntransition;open\nmulti_add_portrait;Schuri;FarLeft;Senya;Left;MC;MidLeft;Aesc;FarRight\nspeak;Senya;So we need to keep you safe for 8 turns for you to....|do what exactly?\nspeak;Aesc;The spell will completely reject all of the undead monsters roaming around the city.|It will also briefly prevent any more monsters from coming in from the outside.|The castle is a completely different matter.\nspeak;Schuri;Wait...what's going on with the castle?\nspeak;Aesc;...Let's discuss that after we deal with this matter first yes?|To start, monsters will begin swarming in from all sides to charge at me.|I'm going to committ to finishing this spell so I won't cancel it to defend myself.|I'll be completely defenseless during this so ensure my wellbeing is in your hands.\nspeak;MC;Is there any other magic you can teach me before we get ready?\nspeak;Aesc;...No, it's best you stick with the holy lightning spell you've been using so far.|But I can at least give you some weapons that will actually hurt the damn monsters.\nremove_item;Senya;Iron Sword (Iron Sword);FLAG(no_banner)\nremove_item;Senya;Iron Bow (Iron Bow);FLAG(no_banner)\nremove_item;Senya;Iron Axe (Iron Axe);FLAG(no_banner)\nremove_item;Schuri;Fire (Fire);FLAG(no_banner)\nremove_item;MC;Iron Lance (Iron Lance);FLAG(no_banner)\ngive_item;Senya;Blessed Sword (BlessedSword)\ngive_item;Senya;Blessed Axe (Garm_Weak)\ngive_item;Senya;Blessed Bow (BlessedBow)\ngive_item;Schuri;Helfire (Helfire)\ngive_item;MC;Blessed Spear (BlessedSpear)\nspeak;Schuri;These are... holy artifacts aren't they?\nspeak;Aesc;What's left of them.|These don't even hold a fraction of the strength they once held.|Now let's clean this place up shall we?\ntransition;close\nchange_background\ntransition;open\nspawn_group;Party;north;Party;immediate\n"
     }
 ]

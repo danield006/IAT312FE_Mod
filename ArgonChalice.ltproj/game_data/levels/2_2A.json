@@ -1,17 +1,17 @@
 [
     {
         "nid": "2_2A",
-        "name": "Chapter 2A: Greshia",
-        "tilemap": "New Tilemap",
+        "name": "Chapter 2B: Aesc",
+        "tilemap": "CH2",
         "bg_tilemap": null,
         "party": "MC",
         "music": {
             "player_phase": "greshiaBGM"
         },
         "objective": {
-            "simple": "Find info about Aesc",
-            "win": "Return to Senya at the tavern",
-            "loss": "Die?"
+            "simple": "Protect Aesc for {eval:game.turncount}/8 turns",
+            "win": "Protect Aesc for {eval:game.turncount}/8 turns",
+            "loss": "MC or Aesc dies"
         },
         "roam": false,
         "roam_unit": null,
@@ -24,10 +24,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    19,
-                    20
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -37,10 +34,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    19,
-                    19
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -50,9 +44,19 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Aesc_Vulnerable",
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
                 "starting_position": [
-                    18,
-                    20
+                    8,
+                    3
                 ],
                 "starting_traveler": null,
                 "generic": false
@@ -60,42 +64,8 @@
         ],
         "regions": [
             {
-                "nid": "Armory",
-                "region_type": "event",
-                "position": [
-                    11,
-                    2
-                ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "Armory",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "Vendor",
-                "region_type": "event",
-                "position": [
-                    5,
-                    2
-                ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "Vendor",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "Tavern",
-                "region_type": "event",
+                "nid": "",
+                "region_type": "normal",
                 "position": [
                     21,
                     2
@@ -104,7 +74,7 @@
                     1,
                     1
                 ],
-                "sub_nid": "Tavern",
+                "sub_nid": "",
                 "condition": "True",
                 "time_left": null,
                 "only_once": true,
@@ -121,16 +91,16 @@
                 ],
                 "positions": {
                     "MC": [
-                        19,
-                        20
+                        8,
+                        6
                     ],
                     "Senya": [
-                        18,
-                        19
+                        5,
+                        3
                     ],
                     "Schuri": [
-                        18,
-                        20
+                        11,
+                        3
                     ]
                 }
             }
