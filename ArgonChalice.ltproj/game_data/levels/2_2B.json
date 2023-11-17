@@ -27,10 +27,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    2,
-                    16
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -40,10 +37,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    1,
-                    15
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -53,10 +47,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    3,
-                    15
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -72,10 +63,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    5,
-                    16
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
@@ -85,12 +73,157 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    8,
-                    2
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
+            },
+            {
+                "nid": "101",
+                "variant": null,
+                "level": 1,
+                "klass": "Sword_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "102",
+                "variant": null,
+                "level": 1,
+                "klass": "Sword_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "103",
+                "variant": null,
+                "level": 1,
+                "klass": "Sword_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "104",
+                "variant": null,
+                "level": 1,
+                "klass": "Sword_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "105",
+                "variant": null,
+                "level": 1,
+                "klass": "Revenant",
+                "faction": "Monster",
+                "starting_items": [],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "106",
+                "variant": null,
+                "level": 1,
+                "klass": "Revenant",
+                "faction": "Monster",
+                "starting_items": [],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "107",
+                "variant": null,
+                "level": 1,
+                "klass": "Revenant",
+                "faction": "Monster",
+                "starting_items": [],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "108",
+                "variant": null,
+                "level": 1,
+                "klass": "Revenant",
+                "faction": "Monster",
+                "starting_items": [],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
             }
         ],
         "regions": [
@@ -131,14 +264,107 @@
         ],
         "unit_groups": [
             {
-                "nid": "SummoningSpell",
-                "units": [],
-                "positions": {}
+                "nid": "IntroDeathLight",
+                "units": [
+                    "101",
+                    "102",
+                    "103",
+                    "104",
+                    "105",
+                    "106",
+                    "107",
+                    "108"
+                ],
+                "positions": {
+                    "101": [
+                        7,
+                        9
+                    ],
+                    "102": [
+                        8,
+                        9
+                    ],
+                    "103": [
+                        9,
+                        9
+                    ],
+                    "104": [
+                        10,
+                        9
+                    ],
+                    "105": [
+                        7,
+                        15
+                    ],
+                    "106": [
+                        8,
+                        15
+                    ],
+                    "107": [
+                        9,
+                        15
+                    ],
+                    "108": [
+                        10,
+                        15
+                    ]
+                }
+            },
+            {
+                "nid": "PartyCutscene",
+                "units": [
+                    "MC",
+                    "Senya",
+                    "Schuri"
+                ],
+                "positions": {
+                    "MC": [
+                        4,
+                        12
+                    ],
+                    "Senya": [
+                        3,
+                        13
+                    ],
+                    "Schuri": [
+                        5,
+                        13
+                    ]
+                }
             },
             {
                 "nid": "Party",
-                "units": [],
-                "positions": {}
+                "units": [
+                    "MC",
+                    "Senya",
+                    "Schuri"
+                ],
+                "positions": {
+                    "MC": [
+                        2,
+                        15
+                    ],
+                    "Senya": [
+                        1,
+                        16
+                    ],
+                    "Schuri": [
+                        3,
+                        16
+                    ]
+                }
+            },
+            {
+                "nid": "New Group",
+                "units": [
+                    "Rescued"
+                ],
+                "positions": {
+                    "Rescued": [
+                        5,
+                        16
+                    ]
+                }
             }
         ],
         "ai_groups": [

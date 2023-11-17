@@ -6,77 +6,26 @@
         "condition": "True",
         "commands": [
             [
-                "transition",
-                [
-                    "close"
-                ]
-            ],
-            [
-                "change_background",
-                [
-                    "House"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "open"
-                ]
-            ],
-            [
                 "show_layer",
                 [
-                    "UnderAttack",
+                    "cutsceneLayer",
                     "immediate"
                 ]
             ],
             [
-                "add_portrait",
+                "flicker_cursor",
                 [
-                    "Woman1",
-                    "FarLeft"
+                    "4,12"
                 ]
             ],
             [
-                "add_portrait",
+                "spawn_group",
                 [
-                    "MC",
-                    "MidLeft"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Senya",
-                    "Left"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Schuri",
-                    "Right"
-                ]
-            ],
-            [
-                "wait",
-                [
-                    "500"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Man2",
-                    "FarRight",
-                    "Right"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Man2",
-                    "Aria! Barricade the doors! Monsters hav-"
+                    "PartyCutscene",
+                    "south",
+                    "PartyCutscene",
+                    "",
+                    "closest"
                 ]
             ],
             [
@@ -87,7 +36,9 @@
             ],
             [
                 "change_background",
-                []
+                [
+                    "Town"
+                ]
             ],
             [
                 "transition",
@@ -96,32 +47,6 @@
                 ]
             ],
             [
-                "flicker_cursor",
-                [
-                    "21,3"
-                ]
-            ],
-            [
-                "kill_unit",
-                [
-                    "Soldier (101)"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "Aesc",
-                    "21,3",
-                    "fade"
-                ]
-            ],
-            [
-                "flicker_cursor",
-                [
-                    "21,3"
-                ]
-            ],
-            [
                 "add_portrait",
                 [
                     "MC",
@@ -132,60 +57,7 @@
                 "speak",
                 [
                     "MC",
-                    "Wait! Old man! Get out the wa-"
-                ]
-            ],
-            [
-                "remove_portrait",
-                [
-                    "Aesc"
-                ]
-            ],
-            [
-                "interact_unit",
-                [
-                    "Aesc (Aesc)",
-                    "Monster (102)",
-                    "crit1"
-                ]
-            ],
-            [
-                "end_skip",
-                []
-            ],
-            [
-                "add_portrait",
-                [
-                    "MC",
-                    "Left"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "What the--|Who the hell are you?"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Aesc",
-                    "Right"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Aesc",
-                    "How rude to attack during supper.|It seems monsters are attacking the town of Greshia...|To answer your question.|I suppose...|My name is Aesc.|I suppose you are pupils of Cyrus?"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Senya",
-                    "MidLeft"
+                    "What the... hell...|happened here?"
                 ]
             ],
             [
@@ -199,55 +71,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "Y-yes. We've been looking for you|How do you know Sir Cyrus?"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Aesc",
-                    "Oh he was my pupil ages ago...|What will you do, pupils of Cyrus?|Will you defend this village?"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "Of course! Are you gonna help?"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Aesc",
-                    "...I'm afraid I'm rather old to be running around the battlefield killing monsters|I shall create a dispelling field within the tavern.|If you escort the villagers to this tavern|No monster will be able to sense our prescense within the field.|I would hurry and spread out.|Every second will matter."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "!|Senya head to the west of the city and escort them over|Schuri, try to help the guards so monsters don't burst through.|I'll stay by here and defend the area so villagers can get to the tavern."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "On it!"
-                ]
-            ],
-            [
-                "remove_portrait",
-                [
-                    "Senya"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Schuri",
-                    "Stay safe!"
+                    "Oh... I...I'm gonna-"
                 ]
             ],
             [
@@ -257,56 +81,679 @@
                 ]
             ],
             [
-                "remove_unit",
-                [
-                    "Aesc"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "MC",
-                    "22,7"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "Schuri",
-                    "11,8"
-                ]
-            ],
-            [
-                "add_unit",
+                "add_portrait",
                 [
                     "Senya",
-                    "1,12"
+                    "Right"
                 ]
             ],
             [
-                "game_var",
+                "speak",
                 [
-                    "_ch2BVillagersSaved",
-                    "0"
+                    "Senya",
+                    "....The body...t-the body's been dead for a couple days judging from the blood.|Spirits...She was ripped apart..."
                 ]
             ],
             [
-                "game_var",
+                "speak",
                 [
-                    "_ch2BVillagersDied",
-                    "0"
+                    "MC",
+                    "Gh...."
                 ]
             ],
             [
-                "game_var",
+                "move_unit",
                 [
-                    "_ch2BAllowedToGo",
-                    "False"
+                    "Senya",
+                    "8,12",
+                    "immediate"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Schuri",
+                    "8,14",
+                    "immediate"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "MC",
+                    "8,13",
+                    "immediate"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "remove_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "You stumble away from the scene as your head throbs in agony.|You stumble onto your hands and knees, as your vision blurs",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "____ -ou alright?|What's happeni---",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri? Senya?|You can't make clear who spoke but your hands feel burning hot as your chest starts to constrict.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "spawn_group",
+                [
+                    "IntroDeathLight",
+                    "north",
+                    "IntroDeathLight",
+                    "warp"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "9,17"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "An ambush!? Shi- ---- trapped!|Keep --- saf-",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "You struggle to raise your head up...|You watch as a sword grazes Senya's leg and a claw scratches Schuri's arm.|The body you saw flashes through your mind rapidly as a light begins to envelop your body.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "sound",
+                [
+                    "Legendary Weapon"
+                ]
+            ],
+            [
+                "sound",
+                [
+                    "Aura2"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "",
+                    "800",
+                    "248,248,124"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "remove_group",
+                [
+                    "IntroDeathLight",
+                    "fade"
+                ]
+            ],
+            [
+                "sound",
+                [
+                    "Death"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "The light that covered your body dissipitates as the monsters crumble around you.|You crumple back down to the ground.|The pain is gone but you're left wincing at a phantom of the pain lingering.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "Town"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "FarLeft"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Left"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "That was...light magic..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "When the hell could you use magic?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Since just now I guess..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "I can't believe it...MC you know light magic!"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Oh my goodness this is wonderful!|MC, light magic hasn't been seen in centuries! The last time we had bonafide light magic users was back in the founding wars. Scholars and sages alike had begun to doubt its very existence in recent ye-"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I don't even know how to do what I... just did|What even happened?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Well I don't know the first thing about magic but whatever you did,|the monsters stood no chance.|We gotta figure out how to do that again.|This might be the power we need to fight back against that necromancer."
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Schuri",
+                    "MidLeft"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Oh I know! MC try to copy my movements okay?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "uhh...Sure I guess?"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "Smile"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Hmm, what about this?"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Anything?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I think all it did was make Senya smile."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "NoSmile"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "I have no idea what you're talking about."
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Hello! Can anyone hear me over here?|I saw a massive flash of light near the entrance of the city ",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Er... does light magic have a history of making you hear voices?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Of course not!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Am I right to assume that flash of light was from one of you?",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Yeah I... I guess...|We were all in danger and...somehow I must have used light magic in desperation."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "I see...I'll cut to the point as we're in rather desperate need of help.|A large portion of the city is currently safe in the tavern.|This city has been under attack for the past 4 days with no help inbound.|I've been trying to set up a rejecting field here but the monsters keep interupting my spell.|Would you be willing to assist us?|I'm sure we can come to an arrangement.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "A rejecting spell?|That's also a light magic based spell am I correct?|Can you also use light magic sir?|Do you perhaps know something about Aesc?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "...Aesc? That's a name I haven't heard in a long time.|If you wish to know more about Aesc I'll gladly tell you in exchange for helping us.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Tavern right? I know a shortcut through the alleyways."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Wait, if you can use light magic...|How do I use light magic? I can't seem to recreate it."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "...Do any of you happen to know healing magic with staves?",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Yes! I do."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Lend him a staff.|Hold the staff in one hand and raise it up.|Try to imagine a ray of light leaving the staff.|That should allow you to cast lightning. It's the most basic spell but it should suffice.|...I need to go. We're counting on you.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "MC, here, I have an extra staff.|Try doing what he said to the wall over there."
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Okay...1....2....3!"
+                ]
+            ],
+            [
+                "sound",
+                [
+                    "Lightning1"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I... I did it!"
+                ]
+            ],
+            [
+                "give_wexp",
+                [
+                    "MC",
+                    "Light (Light)",
+                    "31"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "MC",
+                    "Lightning (Lightning)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Congrats congrats and all but we need to hurry!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Yes, you're right, let's hurry then"
+                ]
+            ],
+            [
+                "remove_group",
+                [
+                    "PartyCutscene"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#ACTUAL CHAPTER SECTION"
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "close",
+                    "500"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "hide_layer",
+                [
+                    "cutsceneLayer"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Aesc",
+                    "8,1"
+                ]
+            ],
+            [
+                "spawn_group",
+                [
+                    "Party",
+                    "south",
+                    "Party",
+                    "normal",
+                    "push"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "8,1"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "There's the tavern, we're almost there!"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "transition;close\nchange_background;House\ntransition;open\nshow_layer;UnderAttack;immediate\nadd_portrait;Woman1;FarLeft\nadd_portrait;MC;MidLeft\nadd_portrait;Senya;Left\nadd_portrait;Schuri;Right\nwait;500\nadd_portrait;Man2;FarRight;Right\nspeak;Man2;Aria! Barricade the doors! Monsters hav-\ntransition;close\nchange_background\ntransition;open\nflicker_cursor;21,3\nkill_unit;Soldier (101)\nadd_unit;Aesc;21,3;fade\nflicker_cursor;21,3\nadd_portrait;MC;Left\nspeak;MC;Wait! Old man! Get out the wa-\nremove_portrait;Aesc\ninteract_unit;Aesc (Aesc);Monster (102);crit1\nend_skip\nadd_portrait;MC;Left\nspeak;MC;What the--|Who the hell are you?\nadd_portrait;Aesc;Right\nspeak;Aesc;How rude to attack during supper.|It seems monsters are attacking the town of Greshia...|To answer your question.|I suppose...|My name is Aesc.|I suppose you are pupils of Cyrus?\nadd_portrait;Senya;MidLeft\nadd_portrait;Schuri;FarLeft\nspeak;Schuri;Y-yes. We've been looking for you|How do you know Sir Cyrus?\nspeak;Aesc;Oh he was my pupil ages ago...|What will you do, pupils of Cyrus?|Will you defend this village?\nspeak;Senya;Of course! Are you gonna help?\nspeak;Aesc;...I'm afraid I'm rather old to be running around the battlefield killing monsters|I shall create a dispelling field within the tavern.|If you escort the villagers to this tavern|No monster will be able to sense our prescense within the field.|I would hurry and spread out.|Every second will matter.\nspeak;MC;!|Senya head to the west of the city and escort them over|Schuri, try to help the guards so monsters don't burst through.|I'll stay by here and defend the area so villagers can get to the tavern.\nspeak;Senya;On it!\nremove_portrait;Senya\nspeak;Schuri;Stay safe!\nremove_portrait;Schuri\nremove_unit;Aesc\nadd_unit;MC;22,7\nadd_unit;Schuri;11,8\nadd_unit;Senya;1,12\ngame_var;_ch2BVillagersSaved;0\ngame_var;_ch2BVillagersDied;0\ngame_var;_ch2BAllowedToGo;False\n"
+        "source": "show_layer;cutsceneLayer;immediate\nflicker_cursor;4,12\nspawn_group;PartyCutscene;south;PartyCutscene;;closest\ntransition;close\nchange_background;Town\ntransition;open\nadd_portrait;MC;Left\nspeak;MC;What the... hell...|happened here?\nadd_portrait;Schuri;FarLeft\nspeak;Schuri;Oh... I...I'm gonna-\nremove_portrait;Schuri\nadd_portrait;Senya;Right\nspeak;Senya;....The body...t-the body's been dead for a couple days judging from the blood.|Spirits...She was ripped apart...\nspeak;MC;Gh....\nmove_unit;Senya;8,12;immediate\nmove_unit;Schuri;8,14;immediate\nmove_unit;MC;8,13;immediate\nend_skip\nremove_portrait;MC\ntransition;close\nchange_background\ntransition;open\nspeak;;You stumble away from the scene as your head throbs in agony.|You stumble onto your hands and knees, as your vision blurs;;;narration_top\nspeak;;____ -ou alright?|What's happeni---;;;narration_top\nspeak;;Schuri? Senya?|You can't make clear who spoke but your hands feel burning hot as your chest starts to constrict.;;;narration_top\nspawn_group;IntroDeathLight;north;IntroDeathLight;warp\nflicker_cursor;9,17\nspeak;;An ambush!? Shi- ---- trapped!|Keep --- saf-;;;narration_top\nspeak;;You struggle to raise your head up...|You watch as a sword grazes Senya's leg and a claw scratches Schuri's arm.|The body you saw flashes through your mind rapidly as a light begins to envelop your body.;;;narration_top\nend_skip\nsound;Legendary Weapon\nsound;Aura2\ntransition;;800;248,248,124\ntransition;open\nremove_group;IntroDeathLight;fade\nsound;Death\nspeak;;The light that covered your body dissipitates as the monsters crumble around you.|You crumple back down to the ground.|The pain is gone but you're left wincing at a phantom of the pain lingering.;;;narration_top\ntransition;close\nchange_background;Town\ntransition;open\nend_skip\nadd_portrait;Senya;FarLeft\nadd_portrait;Schuri;Left\nadd_portrait;MC;Right\nspeak;Schuri;That was...light magic...\nspeak;Senya;When the hell could you use magic?\nspeak;MC;Since just now I guess...\nspeak;Schuri;I can't believe it...MC you know light magic!\nbop_portrait;Schuri\nspeak;Schuri;Oh my goodness this is wonderful!|MC, light magic hasn't been seen in centuries! The last time we had bonafide light magic users was back in the founding wars. Scholars and sages alike had begun to doubt its very existence in recent ye-\nspeak;MC;I don't even know how to do what I... just did|What even happened?\nspeak;Senya;Well I don't know the first thing about magic but whatever you did,|the monsters stood no chance.|We gotta figure out how to do that again.|This might be the power we need to fight back against that necromancer.\nmove_portrait;Schuri;MidLeft\nspeak;Schuri;Oh I know! MC try to copy my movements okay?\nspeak;MC;uhh...Sure I guess?\nbop_portrait;Schuri\nbop_portrait;MC\nexpression;Senya;Smile\nspeak;Schuri;Hmm, what about this?\nmirror_portrait;Schuri\nmirror_portrait;Schuri\nbop_portrait;Schuri\nmirror_portrait;MC\nmirror_portrait;MC\nbop_portrait;MC\nspeak;Schuri;Anything?\nspeak;MC;I think all it did was make Senya smile.\nexpression;Senya;NoSmile\nspeak;Senya;I have no idea what you're talking about.\nend_skip\nspeak;;Hello! Can anyone hear me over here?|I saw a massive flash of light near the entrance of the city ;;;narration_top\nmirror_portrait;Senya\nmirror_portrait;Senya\nspeak;Senya;Er... does light magic have a history of making you hear voices?\nspeak;Schuri;Of course not!\nspeak;;Am I right to assume that flash of light was from one of you?;;;narration_top\nspeak;MC;Yeah I... I guess...|We were all in danger and...somehow I must have used light magic in desperation.\nspeak;;I see...I'll cut to the point as we're in rather desperate need of help.|A large portion of the city is currently safe in the tavern.|This city has been under attack for the past 4 days with no help inbound.|I've been trying to set up a rejecting field here but the monsters keep interupting my spell.|Would you be willing to assist us?|I'm sure we can come to an arrangement.;;;narration_top\nspeak;Schuri;A rejecting spell?|That's also a light magic based spell am I correct?|Can you also use light magic sir?|Do you perhaps know something about Aesc?\nspeak;;...Aesc? That's a name I haven't heard in a long time.|If you wish to know more about Aesc I'll gladly tell you in exchange for helping us.;;;narration_top\nspeak;Senya;Tavern right? I know a shortcut through the alleyways.\nspeak;MC;Wait, if you can use light magic...|How do I use light magic? I can't seem to recreate it.\nspeak;;...Do any of you happen to know healing magic with staves?;;;narration_top\nspeak;Schuri;Yes! I do.\nspeak;;Lend him a staff.|Hold the staff in one hand and raise it up.|Try to imagine a ray of light leaving the staff.|That should allow you to cast lightning. It's the most basic spell but it should suffice.|...I need to go. We're counting on you.;;;narration_top\nend_skip\nspeak;Schuri;MC, here, I have an extra staff.|Try doing what he said to the wall over there.\nmirror_portrait;MC\nspeak;MC;Okay...1....2....3!\nsound;Lightning1\nbop_portrait;MC\nspeak;MC;I... I did it!\ngive_wexp;MC;Light (Light);31\ngive_item;MC;Lightning (Lightning)\nspeak;Senya;Congrats congrats and all but we need to hurry!\nspeak;MC;Yes, you're right, let's hurry then\nremove_group;PartyCutscene\n#ACTUAL CHAPTER SECTION\nend_skip\ntransition;close;500\nchange_background\nhide_layer;cutsceneLayer\ntransition;open\nadd_unit;Aesc;8,1\nspawn_group;Party;south;Party;normal;push\nflicker_cursor;8,1\nadd_portrait;Senya;Left;\nspeak;Senya;There's the tavern, we're almost there!\n"
     }
 ]
