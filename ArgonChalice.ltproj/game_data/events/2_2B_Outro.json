@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Outro",
+        "trigger": "level_end",
+        "level_nid": "2_2B",
+        "condition": "True",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#insert outro here."
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "#insert outro here.\n"
+    }
+]

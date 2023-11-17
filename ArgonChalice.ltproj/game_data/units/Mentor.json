@@ -2,7 +2,7 @@
     {
         "nid": "Mentor",
         "name": "Mentor",
-        "desc": "Mentor Description",
+        "desc": "A well-respected sage across the lands. Often mistaken for being in his early 20s despite being over 60.",
         "variant": "",
         "level": 1,
         "klass": "Sage",

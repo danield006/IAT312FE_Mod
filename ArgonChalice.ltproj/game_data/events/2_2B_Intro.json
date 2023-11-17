@@ -715,10 +715,20 @@
                 ]
             ],
             [
-                "add_unit",
+                "add_group",
                 [
-                    "Aesc",
-                    "8,1"
+                    "AescSpawn",
+                    "AescSpawn",
+                    "immediate"
+                ]
+            ],
+            [
+                "spawn_group",
+                [
+                    "StartingEnemies",
+                    "north",
+                    "StartingEnemies",
+                    "immediate"
                 ]
             ],
             [
@@ -748,12 +758,167 @@
                 "speak",
                 [
                     "Senya",
-                    "There's the tavern, we're almost there!"
+                    "There's the tavern, we're almost there! Just gotta get through some of those monsters on the way."
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "SoldierGreen",
+                    "OffscreenRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "SoldierGreen",
+                    "Wait! Please wait!"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "5,16"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Soldier (Rescued)",
+                    "5,16",
+                    "fade"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "SoldierGreen",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "SoldierGreen",
+                    "You're heading to the tavern right?|Please help me get there, I got injured then twisted my ankle|I've been hiding here trying to figure out a way to get to the tavern."
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Wait...That insignia..."
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Senya",
+                    "FarRight"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "You're supposed to be stationed at the city gates!|Your job is to protect us! To get the people to safety!|Why are you hiding here?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "SoldierGreen",
+                    "I...there were so many...|I had to run... it wasn't worth dying there.|I'm sorry."
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Sorry? You cowardly piece of shit!|I saw 3 children mutilated on the way here!|I know how you fucking soliders operate at the gates|You're supposed to defend them with your life!|Get the women and children to the center of the city!|You ran from your duty! Just like you the rest of you always do!|I should ki-"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "MidLeft"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Senya! Senya! Enough! He's a coward I agree!|But this isn't the right way to punish him!"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "FarLeft"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Senya please! I know he ran away but he doesn't deserve to die here,|by us or by some monsters roaming about.|We should at least bring him back to the tavern, let him face any punishments for disobeying orders!|Let him earn a second chance!"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Senya",
+                    "MidRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "...You're right on one part.|We shouldn't be the one to kill him for his cowardice.|But he should have died at the gates.|If we bring him back, he'll never be punished for it.|Hell he'll probably get a fucking medal for surviving this hellscape.|If you wanna weigh yourself down with that filth, be my guest.|As far as I'm concerned...leave him as bait for the monsters."
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Senya",
+                    "Schuri",
+                    "MC",
+                    "SoldierGreen"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Senya",
+                    "2,12"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "show_layer;cutsceneLayer;immediate\nflicker_cursor;4,12\nspawn_group;PartyCutscene;south;PartyCutscene;;closest\ntransition;close\nchange_background;Town\ntransition;open\nadd_portrait;MC;Left\nspeak;MC;What the... hell...|happened here?\nadd_portrait;Schuri;FarLeft\nspeak;Schuri;Oh... I...I'm gonna-\nremove_portrait;Schuri\nadd_portrait;Senya;Right\nspeak;Senya;....The body...t-the body's been dead for a couple days judging from the blood.|Spirits...She was ripped apart...\nspeak;MC;Gh....\nmove_unit;Senya;8,12;immediate\nmove_unit;Schuri;8,14;immediate\nmove_unit;MC;8,13;immediate\nend_skip\nremove_portrait;MC\ntransition;close\nchange_background\ntransition;open\nspeak;;You stumble away from the scene as your head throbs in agony.|You stumble onto your hands and knees, as your vision blurs;;;narration_top\nspeak;;____ -ou alright?|What's happeni---;;;narration_top\nspeak;;Schuri? Senya?|You can't make clear who spoke but your hands feel burning hot as your chest starts to constrict.;;;narration_top\nspawn_group;IntroDeathLight;north;IntroDeathLight;warp\nflicker_cursor;9,17\nspeak;;An ambush!? Shi- ---- trapped!|Keep --- saf-;;;narration_top\nspeak;;You struggle to raise your head up...|You watch as a sword grazes Senya's leg and a claw scratches Schuri's arm.|The body you saw flashes through your mind rapidly as a light begins to envelop your body.;;;narration_top\nend_skip\nsound;Legendary Weapon\nsound;Aura2\ntransition;;800;248,248,124\ntransition;open\nremove_group;IntroDeathLight;fade\nsound;Death\nspeak;;The light that covered your body dissipitates as the monsters crumble around you.|You crumple back down to the ground.|The pain is gone but you're left wincing at a phantom of the pain lingering.;;;narration_top\ntransition;close\nchange_background;Town\ntransition;open\nend_skip\nadd_portrait;Senya;FarLeft\nadd_portrait;Schuri;Left\nadd_portrait;MC;Right\nspeak;Schuri;That was...light magic...\nspeak;Senya;When the hell could you use magic?\nspeak;MC;Since just now I guess...\nspeak;Schuri;I can't believe it...MC you know light magic!\nbop_portrait;Schuri\nspeak;Schuri;Oh my goodness this is wonderful!|MC, light magic hasn't been seen in centuries! The last time we had bonafide light magic users was back in the founding wars. Scholars and sages alike had begun to doubt its very existence in recent ye-\nspeak;MC;I don't even know how to do what I... just did|What even happened?\nspeak;Senya;Well I don't know the first thing about magic but whatever you did,|the monsters stood no chance.|We gotta figure out how to do that again.|This might be the power we need to fight back against that necromancer.\nmove_portrait;Schuri;MidLeft\nspeak;Schuri;Oh I know! MC try to copy my movements okay?\nspeak;MC;uhh...Sure I guess?\nbop_portrait;Schuri\nbop_portrait;MC\nexpression;Senya;Smile\nspeak;Schuri;Hmm, what about this?\nmirror_portrait;Schuri\nmirror_portrait;Schuri\nbop_portrait;Schuri\nmirror_portrait;MC\nmirror_portrait;MC\nbop_portrait;MC\nspeak;Schuri;Anything?\nspeak;MC;I think all it did was make Senya smile.\nexpression;Senya;NoSmile\nspeak;Senya;I have no idea what you're talking about.\nend_skip\nspeak;;Hello! Can anyone hear me over here?|I saw a massive flash of light near the entrance of the city ;;;narration_top\nmirror_portrait;Senya\nmirror_portrait;Senya\nspeak;Senya;Er... does light magic have a history of making you hear voices?\nspeak;Schuri;Of course not!\nspeak;;Am I right to assume that flash of light was from one of you?;;;narration_top\nspeak;MC;Yeah I... I guess...|We were all in danger and...somehow I must have used light magic in desperation.\nspeak;;I see...I'll cut to the point as we're in rather desperate need of help.|A large portion of the city is currently safe in the tavern.|This city has been under attack for the past 4 days with no help inbound.|I've been trying to set up a rejecting field here but the monsters keep interupting my spell.|Would you be willing to assist us?|I'm sure we can come to an arrangement.;;;narration_top\nspeak;Schuri;A rejecting spell?|That's also a light magic based spell am I correct?|Can you also use light magic sir?|Do you perhaps know something about Aesc?\nspeak;;...Aesc? That's a name I haven't heard in a long time.|If you wish to know more about Aesc I'll gladly tell you in exchange for helping us.;;;narration_top\nspeak;Senya;Tavern right? I know a shortcut through the alleyways.\nspeak;MC;Wait, if you can use light magic...|How do I use light magic? I can't seem to recreate it.\nspeak;;...Do any of you happen to know healing magic with staves?;;;narration_top\nspeak;Schuri;Yes! I do.\nspeak;;Lend him a staff.|Hold the staff in one hand and raise it up.|Try to imagine a ray of light leaving the staff.|That should allow you to cast lightning. It's the most basic spell but it should suffice.|...I need to go. We're counting on you.;;;narration_top\nend_skip\nspeak;Schuri;MC, here, I have an extra staff.|Try doing what he said to the wall over there.\nmirror_portrait;MC\nspeak;MC;Okay...1....2....3!\nsound;Lightning1\nbop_portrait;MC\nspeak;MC;I... I did it!\ngive_wexp;MC;Light (Light);31\ngive_item;MC;Lightning (Lightning)\nspeak;Senya;Congrats congrats and all but we need to hurry!\nspeak;MC;Yes, you're right, let's hurry then\nremove_group;PartyCutscene\n#ACTUAL CHAPTER SECTION\nend_skip\ntransition;close;500\nchange_background\nhide_layer;cutsceneLayer\ntransition;open\nadd_unit;Aesc;8,1\nspawn_group;Party;south;Party;normal;push\nflicker_cursor;8,1\nadd_portrait;Senya;Left;\nspeak;Senya;There's the tavern, we're almost there!\n"
+        "source": "show_layer;cutsceneLayer;immediate\nflicker_cursor;4,12\nspawn_group;PartyCutscene;south;PartyCutscene;;closest\ntransition;close\nchange_background;Town\ntransition;open\nadd_portrait;MC;Left\nspeak;MC;What the... hell...|happened here?\nadd_portrait;Schuri;FarLeft\nspeak;Schuri;Oh... I...I'm gonna-\nremove_portrait;Schuri\nadd_portrait;Senya;Right\nspeak;Senya;....The body...t-the body's been dead for a couple days judging from the blood.|Spirits...She was ripped apart...\nspeak;MC;Gh....\nmove_unit;Senya;8,12;immediate\nmove_unit;Schuri;8,14;immediate\nmove_unit;MC;8,13;immediate\nend_skip\nremove_portrait;MC\ntransition;close\nchange_background\ntransition;open\nspeak;;You stumble away from the scene as your head throbs in agony.|You stumble onto your hands and knees, as your vision blurs;;;narration_top\nspeak;;____ -ou alright?|What's happeni---;;;narration_top\nspeak;;Schuri? Senya?|You can't make clear who spoke but your hands feel burning hot as your chest starts to constrict.;;;narration_top\nspawn_group;IntroDeathLight;north;IntroDeathLight;warp\nflicker_cursor;9,17\nspeak;;An ambush!? Shi- ---- trapped!|Keep --- saf-;;;narration_top\nspeak;;You struggle to raise your head up...|You watch as a sword grazes Senya's leg and a claw scratches Schuri's arm.|The body you saw flashes through your mind rapidly as a light begins to envelop your body.;;;narration_top\nend_skip\nsound;Legendary Weapon\nsound;Aura2\ntransition;;800;248,248,124\ntransition;open\nremove_group;IntroDeathLight;fade\nsound;Death\nspeak;;The light that covered your body dissipitates as the monsters crumble around you.|You crumple back down to the ground.|The pain is gone but you're left wincing at a phantom of the pain lingering.;;;narration_top\ntransition;close\nchange_background;Town\ntransition;open\nend_skip\nadd_portrait;Senya;FarLeft\nadd_portrait;Schuri;Left\nadd_portrait;MC;Right\nspeak;Schuri;That was...light magic...\nspeak;Senya;When the hell could you use magic?\nspeak;MC;Since just now I guess...\nspeak;Schuri;I can't believe it...MC you know light magic!\nbop_portrait;Schuri\nspeak;Schuri;Oh my goodness this is wonderful!|MC, light magic hasn't been seen in centuries! The last time we had bonafide light magic users was back in the founding wars. Scholars and sages alike had begun to doubt its very existence in recent ye-\nspeak;MC;I don't even know how to do what I... just did|What even happened?\nspeak;Senya;Well I don't know the first thing about magic but whatever you did,|the monsters stood no chance.|We gotta figure out how to do that again.|This might be the power we need to fight back against that necromancer.\nmove_portrait;Schuri;MidLeft\nspeak;Schuri;Oh I know! MC try to copy my movements okay?\nspeak;MC;uhh...Sure I guess?\nbop_portrait;Schuri\nbop_portrait;MC\nexpression;Senya;Smile\nspeak;Schuri;Hmm, what about this?\nmirror_portrait;Schuri\nmirror_portrait;Schuri\nbop_portrait;Schuri\nmirror_portrait;MC\nmirror_portrait;MC\nbop_portrait;MC\nspeak;Schuri;Anything?\nspeak;MC;I think all it did was make Senya smile.\nexpression;Senya;NoSmile\nspeak;Senya;I have no idea what you're talking about.\nend_skip\nspeak;;Hello! Can anyone hear me over here?|I saw a massive flash of light near the entrance of the city ;;;narration_top\nmirror_portrait;Senya\nmirror_portrait;Senya\nspeak;Senya;Er... does light magic have a history of making you hear voices?\nspeak;Schuri;Of course not!\nspeak;;Am I right to assume that flash of light was from one of you?;;;narration_top\nspeak;MC;Yeah I... I guess...|We were all in danger and...somehow I must have used light magic in desperation.\nspeak;;I see...I'll cut to the point as we're in rather desperate need of help.|A large portion of the city is currently safe in the tavern.|This city has been under attack for the past 4 days with no help inbound.|I've been trying to set up a rejecting field here but the monsters keep interupting my spell.|Would you be willing to assist us?|I'm sure we can come to an arrangement.;;;narration_top\nspeak;Schuri;A rejecting spell?|That's also a light magic based spell am I correct?|Can you also use light magic sir?|Do you perhaps know something about Aesc?\nspeak;;...Aesc? That's a name I haven't heard in a long time.|If you wish to know more about Aesc I'll gladly tell you in exchange for helping us.;;;narration_top\nspeak;Senya;Tavern right? I know a shortcut through the alleyways.\nspeak;MC;Wait, if you can use light magic...|How do I use light magic? I can't seem to recreate it.\nspeak;;...Do any of you happen to know healing magic with staves?;;;narration_top\nspeak;Schuri;Yes! I do.\nspeak;;Lend him a staff.|Hold the staff in one hand and raise it up.|Try to imagine a ray of light leaving the staff.|That should allow you to cast lightning. It's the most basic spell but it should suffice.|...I need to go. We're counting on you.;;;narration_top\nend_skip\nspeak;Schuri;MC, here, I have an extra staff.|Try doing what he said to the wall over there.\nmirror_portrait;MC\nspeak;MC;Okay...1....2....3!\nsound;Lightning1\nbop_portrait;MC\nspeak;MC;I... I did it!\ngive_wexp;MC;Light (Light);31\ngive_item;MC;Lightning (Lightning)\nspeak;Senya;Congrats congrats and all but we need to hurry!\nspeak;MC;Yes, you're right, let's hurry then\nremove_group;PartyCutscene\n#ACTUAL CHAPTER SECTION\nend_skip\ntransition;close;500\nchange_background\nhide_layer;cutsceneLayer\ntransition;open\nadd_group;AescSpawn;AescSpawn;immediate\nspawn_group;StartingEnemies;north;StartingEnemies;immediate\nspawn_group;Party;south;Party;normal;push\nflicker_cursor;8,1\nadd_portrait;Senya;Left\nspeak;Senya;There's the tavern, we're almost there! Just gotta get through some of those monsters on the way.\nadd_portrait;SoldierGreen;OffscreenRight\nspeak;SoldierGreen;Wait! Please wait!\nflicker_cursor;5,16\nadd_unit;Soldier (Rescued);5,16;fade\nadd_portrait;SoldierGreen;FarRight\nspeak;SoldierGreen;You're heading to the tavern right?|Please help me get there, I got injured then twisted my ankle|I've been hiding here trying to figure out a way to get to the tavern.\nadd_portrait;Senya;Left\nspeak;Senya;Wait...That insignia...\nmove_portrait;Senya;FarRight\nmove_portrait;Senya;Left\nspeak;Senya;You're supposed to be stationed at the city gates!|Your job is to protect us! To get the people to safety!|Why are you hiding here?\nspeak;SoldierGreen;I...there were so many...|I had to run... it wasn't worth dying there.|I'm sorry.\nbop_portrait;Senya\nspeak;Senya;Sorry? You cowardly piece of shit!|I saw 3 children mutilated on the way here!|I know how you fucking soliders operate at the gates|You're supposed to defend them with your life!|Get the women and children to the center of the city!|You ran from your duty! Just like you the rest of you always do!|I should ki-\nadd_portrait;MC;MidLeft\nspeak;MC;Senya! Senya! Enough! He's a coward I agree!|But this isn't the right way to punish him!\nadd_portrait;Schuri;FarLeft\nspeak;Schuri;Senya please! I know he ran away but he doesn't deserve to die here,|by us or by some monsters roaming about.|We should at least bring him back to the tavern, let him face any punishments for disobeying orders!|Let him earn a second chance!\nmove_portrait;Senya;MidRight\nspeak;Senya;...You're right on one part.|We shouldn't be the one to kill him for his cowardice.|But he should have died at the gates.|If we bring him back, he'll never be punished for it.|Hell he'll probably get a fucking medal for surviving this hellscape.|If you wanna weigh yourself down with that filth, be my guest.|As far as I'm concerned...leave him as bait for the monsters.\nmulti_remove_portrait;Senya;Schuri;MC;SoldierGreen\nmove_unit;Senya;2,12\n"
     }
 ]

@@ -1,0 +1,61 @@
+[
+    {
+        "name": "DropOff",
+        "trigger": "enemy_turn_change",
+        "level_nid": "2_2B",
+        "condition": "game.level.regions.get('DropOff').contains(game.get_unit('Rescued').position)",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "SoldierGreen",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "SoldierGreen",
+                    "T-thank you so much! I won't forget this second chance!"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "SoldierGreen"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "...."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Senya didn't like that you helped the high guard (-1)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri liked that you were willing to help the high guard (+1)"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "add_portrait;SoldierGreen;Right\nspeak;SoldierGreen;T-thank you so much! I won't forget this second chance!\nremove_portrait;SoldierGreen;\nadd_portrait;Senya;Left\nspeak;Senya;....\nspeak;;Senya didn't like that you helped the high guard (-1)\nspeak;;Schuri liked that you were willing to help the high guard (+1)\n"
+    }
+]
