@@ -16,6 +16,20 @@
                 ]
             ],
             [
+                "expression",
+                [
+                    "Schuri",
+                    "Smile"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "And maybe you'll see me pick up a few apprentices of my own!|I want to pass own Sir Cyrus' teachings so even if he's no longer here|his teachings will live on."
+                ]
+            ],
+            [
                 "set_next_chapter",
                 [
                     "2222"
@@ -24,6 +38,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;;this is ending 4;;;narration\nset_next_chapter;2222"
+        "source": "speak;;this is ending 4;;;narration\nexpression;Schuri;Smile\nspeak;Schuri;And maybe you'll see me pick up a few apprentices of my own!|I want to pass own Sir Cyrus' teachings so even if he's no longer here|his teachings will live on.\nset_next_chapter;2222\n"
     }
 ]

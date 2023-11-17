@@ -22,6 +22,13 @@
                 ]
             ],
             [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
                 "expression",
                 [
                     "MC",
@@ -149,9 +156,7 @@
                 "speak",
                 [
                     "MC",
-                    "There's not a day where I do not think of you.",
-                    "",
-                    "220"
+                    "There's not a day where I do not think of you."
                 ]
             ],
             [
@@ -165,9 +170,7 @@
                 "speak",
                 [
                     "MC",
-                    "I think of what...|I could have done...to save you.|If...|if I had only listened...",
-                    "",
-                    "220"
+                    "I think of what...|I could have done...to save you.|If...|if I had only listened more..."
                 ]
             ],
             [
@@ -209,7 +212,7 @@
                 "speak",
                 [
                     "MC",
-                    "If only I had listened..."
+                    "If only I had done better...|all of us would still be together..."
                 ]
             ],
             [
@@ -227,12 +230,6 @@
                 [
                     "MC",
                     "CloseEyes"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#might change word atonement to smt else"
                 ]
             ],
             [
@@ -308,6 +305,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;;this is ending 7;;;narration\nmusic;deadEpilogue\nexpression;MC;CloseEyes\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;It's over now...|but at what cost?\nwait;500\ntransition;close;1200\nchange_background;Hill\ntransition;open;1200\nadd_portrait;MC;MidLeft\nexpression;MC;CloseEyes\nexpression;MC;NoSmile\nspeak;MC;...Senya, Schuri|Thank you very much for your help...;;220\nexpression;MC;OpenEyes\nexpression;MC;NoSmile\nmove_portrait;MC;Right\nsound;forestStep\nwait;250\nmove_portrait;MC;MidLeft\nspeak;MC;There's not a day where I do not think of you.;;220\nexpression;MC;HalfCloseEyes\nspeak;MC;I think of what...|I could have done...to save you.|If...|if I had only listened...;;220\nexpression;MC;OpenMouth\nexpression;MC;CloseEyes\nspeak;MC;If I had just been there for you the two of you!|This would have never happened!\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;If only I had listened...\nspeak;;However, there are no what-ifs in life|What is left for me...;;;narration_top\nexpression;MC;CloseEyes\n#might change word atonement to smt else\nspeak;;is atonement;;;narration_top\nmusic_fade_back;2000\nmusic;badEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#bad end cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To Those Left Behind;center;;cinematic\nset_next_chapter;2222"
+        "source": "speak;;this is ending 7;;;narration\nmusic;deadEpilogue\nadd_portrait;MC;Left\nexpression;MC;CloseEyes\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;It's over now...|but at what cost?\nwait;500\ntransition;close;1200\nchange_background;Hill\ntransition;open;1200\nadd_portrait;MC;MidLeft\nexpression;MC;CloseEyes\nexpression;MC;NoSmile\nspeak;MC;...Senya, Schuri|Thank you very much for your help...;;220\nexpression;MC;OpenEyes\nexpression;MC;NoSmile\nmove_portrait;MC;Right\nsound;forestStep\nwait;250\nmove_portrait;MC;MidLeft\nspeak;MC;There's not a day where I do not think of you.\nexpression;MC;HalfCloseEyes\nspeak;MC;I think of what...|I could have done...to save you.|If...|if I had only listened more...\nexpression;MC;OpenMouth\nexpression;MC;CloseEyes\nspeak;MC;If I had just been there for you the two of you!|This would have never happened!\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;If only I had done better...|all of us would still be together...\nspeak;;However, there are no what-ifs in life|What is left for me...;;;narration_top\nexpression;MC;CloseEyes\nspeak;;is atonement;;;narration_top\nmusic_fade_back;2000\nmusic;badEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#bad end cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To Those Left Behind;center;;cinematic\nset_next_chapter;2222\n"
     }
 ]

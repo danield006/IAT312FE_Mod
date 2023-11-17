@@ -24,6 +24,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;;this is ending 6;;;narration\nset_next_chapter;2222"
+        "source": "speak;;this is ending 6;;;narration\nset_next_chapter;2222\n"
     }
 ]

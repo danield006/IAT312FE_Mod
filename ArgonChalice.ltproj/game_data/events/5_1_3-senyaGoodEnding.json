@@ -78,6 +78,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#check for bond\n#elif;game.check_dead('Senya')\n#schuri good bond, good ending. senya lives\n#   music;bittersweetEpilogue\n#  speak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\n#elif;game.check_dead('Schuri')\n#senya good bond, good ending. schuri lives\n#   music;bittersweetEpilogue\n#  speak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\nspeak;;this is ending 3;;;narration\nset_next_chapter;2222"
+        "source": "#check for bond\n#elif;game.check_dead('Senya')\n#schuri good bond, good ending. senya lives\n#   music;bittersweetEpilogue\n#  speak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\n#elif;game.check_dead('Schuri')\n#senya good bond, good ending. schuri lives\n#   music;bittersweetEpilogue\n#  speak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\nspeak;;this is ending 3;;;narration\nset_next_chapter;2222\n"
     }
 ]
