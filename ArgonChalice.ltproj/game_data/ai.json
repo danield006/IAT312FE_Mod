@@ -623,23 +623,26 @@
         "roam_ai": false
     },
     {
-        "nid": "Ch2Retreat",
+        "nid": "CH2AttackAesc",
         "behaviours": [
             {
-                "action": "Interact",
-                "target": "Event",
-                "target_spec": "Retreat",
-                "view_range": -4,
+                "action": "Attack",
+                "target": "Enemy",
+                "target_spec": null,
+                "view_range": -2,
                 "invert_targeting": false,
                 "roam_speed": 100,
                 "desired_proximity": 0,
                 "condition": ""
             },
             {
-                "action": "Move_away_from",
+                "action": "Attack",
                 "target": "Enemy",
-                "target_spec": null,
-                "view_range": -2,
+                "target_spec": [
+                    "Name",
+                    "Aesc"
+                ],
+                "view_range": -4,
                 "invert_targeting": false,
                 "roam_speed": 100,
                 "desired_proximity": 0,

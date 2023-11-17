@@ -69,7 +69,7 @@
                 "generic": false
             },
             {
-                "nid": "Lyon",
+                "nid": "Lilith",
                 "team": "enemy",
                 "ai": "None",
                 "roam_ai": null,
@@ -161,6 +161,11 @@
                 "positions": {}
             }
         ],
-        "ai_groups": []
+        "ai_groups": [
+            {
+                "nid": "",
+                "trigger_threshold": 1
+            }
+        ]
     }
 ]

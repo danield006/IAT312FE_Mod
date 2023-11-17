@@ -35,6 +35,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;HeadGuard;FarRight\nspeak;HeadGuard;A fitting... end for a regretful life...\nexpression;HeadGuard;CloseEyes\nremove_portrait;HeadGuard"
+        "source": "add_portrait;HeadGuard;FarRight\nspeak;HeadGuard;A fitting... end for a regretful life...\nexpression;HeadGuard;CloseEyes\nremove_portrait;HeadGuard\n"
     }
 ]
