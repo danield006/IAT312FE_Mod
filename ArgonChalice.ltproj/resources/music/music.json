@@ -243,5 +243,15 @@
         "sealedMansionExplore",
         false,
         false
+    ],
+    [
+        "aliveEpilogue",
+        false,
+        false
+    ],
+    [
+        "aliveGoodTheme",
+        false,
+        false
     ]
 ]

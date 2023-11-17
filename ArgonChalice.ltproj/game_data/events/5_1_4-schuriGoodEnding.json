@@ -6,6 +6,12 @@
         "condition": "game.game_vars['_gameEnding'] == 4",
         "commands": [
             [
+                "comment",
+                [
+                    "#schuri good ending, senya lives"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "",
@@ -30,6 +36,60 @@
                 ]
             ],
             [
+                "music_fade_back",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "okEndingTheme"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close",
+                    "2500"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#ending cg?"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "default_background"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open",
+                    "1000"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Ending Achieved:|To Be Ever Grateful",
+                    "center",
+                    "",
+                    "cinematic"
+                ]
+            ],
+            [
                 "set_next_chapter",
                 [
                     "2222"
@@ -38,6 +98,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;;this is ending 4;;;narration\nexpression;Schuri;Smile\nspeak;Schuri;And maybe you'll see me pick up a few apprentices of my own!|I want to pass own Sir Cyrus' teachings so even if he's no longer here|his teachings will live on.\nset_next_chapter;2222\n"
+        "source": "#schuri good ending, senya lives\nspeak;;this is ending 4;;;narration\nexpression;Schuri;Smile\nspeak;Schuri;And maybe you'll see me pick up a few apprentices of my own!|I want to pass own Sir Cyrus' teachings so even if he's no longer here|his teachings will live on.\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\nset_next_chapter;2222\n"
     }
 ]

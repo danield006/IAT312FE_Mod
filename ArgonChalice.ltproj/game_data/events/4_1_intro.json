@@ -258,14 +258,14 @@
             [
                 "move_unit",
                 [
-                    "mob2",
+                    "mob3",
                     "2,13"
                 ]
             ],
             [
                 "move_unit",
                 [
-                    "mob3",
+                    "mob2",
                     "5,10"
                 ]
             ],
@@ -282,20 +282,10 @@
                     "MC",
                     "Everyone stick together!|We've got to hurry on through!|Be careful to not get overwhelmed!"
                 ]
-            ],
-            [
-                "speak",
-                [
-                    "",
-                    "Make it to the throne room within 20 turns",
-                    "",
-                    "",
-                    "hint"
-                ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "chapter_title\ngame_var;mentorKilled;False\nadd_group;Party;Party\nadd_group;initialEnemies;initialEnemies\nchange_background;GradoCastle\ntransition;open\nmusic;castle-corridor\nlocation_card;Kaerndal Castle-Corridors\n#speak;;Kaerndal Castle-Corridors;;;narration_top\nadd_portrait;Senya;OffscreenLeft;immediate\nadd_portrait;Schuri;OffscreenLeft;immediate\nadd_portrait;MC;OffscreenLeft;immediate\nsound;Light Foot Steps 1\nmove_portrait;Senya;Right\nmirror_portrait;Senya\nsound;Foot Step\nmove_portrait;MC;MidLeft\nsound;Foot Step\nmove_portrait;Schuri;FarLeft\nspeak;Senya;We're here. Let's hope Teacher has made it out.|It looked like his injuries were rather serious.\nspeak;Schuri;We're in the final stretch.\nexpression;Schuri;HalfCloseEyes\nspeak;Schuri;I hope Sir...\nspeak;MC;Teach...|We're finally here|I hope everyone is ready|It's all or nothing now!\nexpression;Schuri;OpenEyes\nscreen_shake;800\nsound;explosion_wide\nbop_portrait;MC\nmirror_portrait;MC\nmirror_portrait;MC\nspeak;MC;What was that?!\nmirror_portrait;Senya\nbop_portrait;Senya\nspeak;Senya;Over there! Looks like we've got company!|Such a rude welcome party, let's teach 'em a good lesson.\nspeak;Schuri;Yeah! Let's teach beat some sense into them!\nchange_background\nend_skip\nmove_cursor;4,13\nmove_unit;mob1;4,14\nmove_unit;mob2;2,13\nmove_unit;mob3;5,10\nspeak;Schuri;There's no stop to them! The longer we stay, the more there will be.\nspeak;MC;Everyone stick together!|We've got to hurry on through!|Be careful to not get overwhelmed!\nspeak;;Make it to the throne room within 20 turns;;;hint\n"
+        "source": "chapter_title\ngame_var;mentorKilled;False\nadd_group;Party;Party\nadd_group;initialEnemies;initialEnemies\nchange_background;GradoCastle\ntransition;open\nmusic;castle-corridor\nlocation_card;Kaerndal Castle-Corridors\n#speak;;Kaerndal Castle-Corridors;;;narration_top\nadd_portrait;Senya;OffscreenLeft;immediate\nadd_portrait;Schuri;OffscreenLeft;immediate\nadd_portrait;MC;OffscreenLeft;immediate\nsound;Light Foot Steps 1\nmove_portrait;Senya;Right\nmirror_portrait;Senya\nsound;Foot Step\nmove_portrait;MC;MidLeft\nsound;Foot Step\nmove_portrait;Schuri;FarLeft\nspeak;Senya;We're here. Let's hope Teacher has made it out.|It looked like his injuries were rather serious.\nspeak;Schuri;We're in the final stretch.\nexpression;Schuri;HalfCloseEyes\nspeak;Schuri;I hope Sir...\nspeak;MC;Teach...|We're finally here|I hope everyone is ready|It's all or nothing now!\nexpression;Schuri;OpenEyes\nscreen_shake;800\nsound;explosion_wide\nbop_portrait;MC\nmirror_portrait;MC\nmirror_portrait;MC\nspeak;MC;What was that?!\nmirror_portrait;Senya\nbop_portrait;Senya\nspeak;Senya;Over there! Looks like we've got company!|Such a rude welcome party, let's teach 'em a good lesson.\nspeak;Schuri;Yeah! Let's teach beat some sense into them!\nchange_background\nend_skip\nmove_cursor;4,13\nmove_unit;mob1;4,14\nmove_unit;mob3;2,13\nmove_unit;mob2;5,10\nspeak;Schuri;There's no stop to them! The longer we stay, the more there will be.\nspeak;MC;Everyone stick together!|We've got to hurry on through!|Be careful to not get overwhelmed!\n"
     }
 ]

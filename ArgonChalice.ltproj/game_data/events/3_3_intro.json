@@ -28,22 +28,63 @@
             [
                 "speak",
                 [
-                    "Aesc",
-                    "Whenever you're ready, talk to me.|I'll help warp you three to your castle.|Take it as my thanks, that mansion holds many interesting things that I intend to uncover."
+                    "MC",
+                    "So that was an adventure wasn't it?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Honestly that castle gave me the creeps.|Those power hungry people got what they deserved."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Yeah...they dabbled in what they should not have."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Under the guise of wealth, it is in the end, the common people who suffer.|Even with its wealth back in the day, the slums are still as present as ever."
                 ]
             ],
             [
                 "speak",
                 [
                     "MC",
-                    "Thanks!"
+                    "Senya..."
                 ]
             ],
             [
                 "speak",
                 [
                     "Aesc",
-                    "Talk to me whenever you're ready."
+                    "Sorry to interrupt but I'll help warp you three to your castle.|Take it as my thanks, that mansion holds many interesting things that I intend to uncover."
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Thank you so much!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Go prepare well. You can talk to me whenever you're ready."
                 ]
             ],
             [
@@ -105,16 +146,6 @@
                 ]
             ],
             [
-                "speak",
-                [
-                    "",
-                    "Talk to Aesc when you are ready",
-                    "",
-                    "",
-                    "hint"
-                ]
-            ],
-            [
                 "add_talk",
                 [
                     "MC",
@@ -138,6 +169,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_group;Party;Party\nadd_group;Aesc;Aesc\nmusic;greshiaBGM2\nspeak;Aesc;Whenever you're ready, talk to me.|I'll help warp you three to your castle.|Take it as my thanks, that mansion holds many interesting things that I intend to uncover.\nspeak;MC;Thanks!\nspeak;Aesc;Talk to me whenever you're ready.\nmove_unit;Aesc;8,1\nspeak;MC;Let's take this time to prep for our final battle.\nmove_cursor;5,2\nflicker_cursor;5,2\nspeak;;This is the vendor;;;narration\nmove_cursor;11,2\nflicker_cursor;11,2\nspeak;;This is the armory;;;narration\nspeak;;Talk to Aesc when you are ready;;;hint\nadd_talk;MC;Aesc\nadd_talk;Senya;Aesc\nadd_talk;Schuri;Aesc\n"
+        "source": "add_group;Party;Party\nadd_group;Aesc;Aesc\nmusic;greshiaBGM2\nspeak;MC;So that was an adventure wasn't it?\nspeak;Senya;Honestly that castle gave me the creeps.|Those power hungry people got what they deserved.\nspeak;Schuri;Yeah...they dabbled in what they should not have.\nspeak;Senya;Under the guise of wealth, it is in the end, the common people who suffer.|Even with its wealth back in the day, the slums are still as present as ever.\nspeak;MC;Senya...\nspeak;Aesc;Sorry to interrupt but I'll help warp you three to your castle.|Take it as my thanks, that mansion holds many interesting things that I intend to uncover.\nbop_portrait;MC\nspeak;MC;Thank you so much!\nspeak;Aesc;Go prepare well. You can talk to me whenever you're ready.\nmove_unit;Aesc;8,1\nspeak;MC;Let's take this time to prep for our final battle.\nmove_cursor;5,2\nflicker_cursor;5,2\nspeak;;This is the vendor;;;narration\nmove_cursor;11,2\nflicker_cursor;11,2\nspeak;;This is the armory;;;narration\nadd_talk;MC;Aesc\nadd_talk;Senya;Aesc\nadd_talk;Schuri;Aesc\n"
     }
 ]

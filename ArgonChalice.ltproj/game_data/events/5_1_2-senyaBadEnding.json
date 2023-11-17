@@ -8,7 +8,7 @@
             [
                 "comment",
                 [
-                    "#senya good bond, bad ending"
+                    "#senya good bond, schuri dies"
                 ]
             ],
             [
@@ -25,18 +25,6 @@
                 "music",
                 [
                     "bittersweetEpilogue"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#how to move her to dead unit?"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#move_unit;Senya;Schuri;normal"
                 ]
             ],
             [
@@ -310,12 +298,6 @@
                 ]
             ],
             [
-                "comment",
-                [
-                    "#temp bg"
-                ]
-            ],
-            [
                 "change_background",
                 [
                     "CastleSepia"
@@ -370,7 +352,7 @@
                     "Senya...|I wonder how she is holding up",
                     "",
                     "",
-                    "narration_top"
+                    "thought_bubble"
                 ]
             ],
             [
@@ -479,7 +461,7 @@
                 "speak",
                 [
                     "MC",
-                    "No...you shouldn't forgive me.|Just like how you thought your decision was the right thing to do."
+                    "No...you shouldn't forgive me.|Just like how you thought your decisions were the right thing to do."
                 ]
             ],
             [
@@ -617,16 +599,10 @@
                 ]
             ],
             [
-                "comment",
-                [
-                    "#idk ending names"
-                ]
-            ],
-            [
                 "speak",
                 [
                     "",
-                    "Ending Achieved:|To Soar, To Fall, To Rise",
+                    "Ending Achieved:|To the Fetters of Our Days of Yore",
                     "center",
                     "",
                     "cinematic"
@@ -641,6 +617,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#senya good bond, bad ending\nspeak;;this is ending 2;;;narration\nmusic;bittersweetEpilogue\n#how to move her to dead unit?\n#move_unit;Senya;Schuri;normal\nadd_portrait;Senya;OffscreenLeft\nspeak;;Without a word, Senya runs towards Schuri's body and cradles it.;;;narration_top\nsound;Light Foot Steps 1\nmove_portrait;Senya;Right\nexpression;Senya;HalfCloseEyes\nexpression;MC;CloseEyes\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;It's over now...|but at what cost?\nmirror_portrait;Senya\nexpression;MC;OpenEyes\nspeak;Senya;You-!|You KILLED Schuri!\nspeak;MC;Senya...she was gone.|You saw how Teach was...\nbop_portrait;Senya\nmove_portrait;Senya;FarRight\nmove_portrait;Senya;MidRight\nmove_portrait;Senya;Right\nspeak;Senya;No...\nspeak;Senya;She wasn't dead you dolt!|She was alive when she got controlled!\nexpression;Senya;HalfCloseEyes\nspeak;Senya;She was alive...\nspeak;Senya;If it was me in her place...|If it was me...\nmirror_portrait;Senya\nspeak;Senya;Would you have also killed me?\nexpression;Senya;OpenEyes\nspeak;Senya;Did our time spent together mean NOTHING to you?!|How could you look her in the eye and attack her without any hesistation?!\nexpression;MC;HalfCloseEyes\nspeak;MC;Senya...|If I didn't do what I did, she would have killed you!\nexpression;Senya;HalfCloseEyes\nspeak;Senya;...|I'm done with you.\nmove_portrait;Senya;OffscreenLeft\nexpression;MC;OpenEyes\nmirror_portrait;MC\nspeak;MC;Wait!\nexpression;MC;CloseEyes\nspeak;MC;I...|What did I just do...?\nwait;500\ntransition;close;1200\nmulti_remove_portrait;Senya;MC\n#temp bg\nchange_background;CastleSepia\nadd_portrait;MC;MidLeft\nadd_portrait;Senya;FarRight\ntransition;open;1200\nexpression;MC;HalfCloseEyes\nspeak;MC;...\nexpression;MC;OpenEyes\nspeak;;Senya...|I wonder how she is holding up;;;narration_top\nexpression;MC;OpenMouth\nwait;5000\nexpression;MC;NoSmile\nbop_portrait;Senya\nmirror_portrait;Senya\nspeak;Senya;MC\nmove_portrait;Senya;Right\nexpression;Senya;HalfCloseEyes\nspeak;Senya;...|...sorry, I...|I shouldn't have taken my grief out at you\nexpression;MC;NormalBlink\nexpression;MC;HalfCloseEyes\nspeak;Senya;I...|You were also affected...\nexpression;Senya;OpenEyes\nspeak;Senya;However, I will never forgive you.\nmove_portrait;MC;MidLeft\nspeak;MC;No...you shouldn't forgive me.|Just like how you thought your decision was the right thing to do.\nexpression;MC;OpenEyes\nspeak;MC;I thought I was doing the right thing.\nspeak;Senya;In the end...|We both have regrets...\nspeak;MC;I don't regret my actions if it meant saving you.\nmirror_portrait;Senya\nspeak;Senya;...|Even though we disagreed with a lot of things...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;Schuri was...|Schuri is my friend\nexpression;Senya;OpenEyes\nspeak;Senya;I want to do something for her.|To honor her.\nspeak;MC;May I join as well?|I...\nexpression;Senya;NoSmile\nspeak;Senya;I'm sure she would be glad to have you.\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\n#idk ending names\nspeak;;Ending Achieved:|To Soar, To Fall, To Rise;center;;cinematic\nset_next_chapter;2222\n"
+        "source": "#senya good bond, schuri dies\nspeak;;this is ending 2;;;narration\nmusic;bittersweetEpilogue\nadd_portrait;Senya;OffscreenLeft\nspeak;;Without a word, Senya runs towards Schuri's body and cradles it.;;;narration_top\nsound;Light Foot Steps 1\nmove_portrait;Senya;Right\nexpression;Senya;HalfCloseEyes\nexpression;MC;CloseEyes\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;It's over now...|but at what cost?\nmirror_portrait;Senya\nexpression;MC;OpenEyes\nspeak;Senya;You-!|You KILLED Schuri!\nspeak;MC;Senya...she was gone.|You saw how Teach was...\nbop_portrait;Senya\nmove_portrait;Senya;FarRight\nmove_portrait;Senya;MidRight\nmove_portrait;Senya;Right\nspeak;Senya;No...\nspeak;Senya;She wasn't dead you dolt!|She was alive when she got controlled!\nexpression;Senya;HalfCloseEyes\nspeak;Senya;She was alive...\nspeak;Senya;If it was me in her place...|If it was me...\nmirror_portrait;Senya\nspeak;Senya;Would you have also killed me?\nexpression;Senya;OpenEyes\nspeak;Senya;Did our time spent together mean NOTHING to you?!|How could you look her in the eye and attack her without any hesistation?!\nexpression;MC;HalfCloseEyes\nspeak;MC;Senya...|If I didn't do what I did, she would have killed you!\nexpression;Senya;HalfCloseEyes\nspeak;Senya;...|I'm done with you.\nmove_portrait;Senya;OffscreenLeft\nexpression;MC;OpenEyes\nmirror_portrait;MC\nspeak;MC;Wait!\nexpression;MC;CloseEyes\nspeak;MC;I...|What did I just do...?\nwait;500\ntransition;close;1200\nmulti_remove_portrait;Senya;MC\nchange_background;CastleSepia\nadd_portrait;MC;MidLeft\nadd_portrait;Senya;FarRight\ntransition;open;1200\nexpression;MC;HalfCloseEyes\nspeak;MC;...\nexpression;MC;OpenEyes\nspeak;;Senya...|I wonder how she is holding up;;;thought_bubble\nexpression;MC;OpenMouth\nwait;5000\nexpression;MC;NoSmile\nbop_portrait;Senya\nmirror_portrait;Senya\nspeak;Senya;MC\nmove_portrait;Senya;Right\nexpression;Senya;HalfCloseEyes\nspeak;Senya;...|...sorry, I...|I shouldn't have taken my grief out at you\nexpression;MC;NormalBlink\nexpression;MC;HalfCloseEyes\nspeak;Senya;I...|You were also affected...\nexpression;Senya;OpenEyes\nspeak;Senya;However, I will never forgive you.\nmove_portrait;MC;MidLeft\nspeak;MC;No...you shouldn't forgive me.|Just like how you thought your decisions were the right thing to do.\nexpression;MC;OpenEyes\nspeak;MC;I thought I was doing the right thing.\nspeak;Senya;In the end...|We both have regrets...\nspeak;MC;I don't regret my actions if it meant saving you.\nmirror_portrait;Senya\nspeak;Senya;...|Even though we disagreed with a lot of things...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;Schuri was...|Schuri is my friend\nexpression;Senya;OpenEyes\nspeak;Senya;I want to do something for her.|To honor her.\nspeak;MC;May I join as well?|I...\nexpression;Senya;NoSmile\nspeak;Senya;I'm sure she would be glad to have you.\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To the Fetters of Our Days of Yore;center;;cinematic\nset_next_chapter;2222\n"
     }
 ]

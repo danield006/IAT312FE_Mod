@@ -97,7 +97,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "After all, nothing went in or out in these past few decades."
+                    "After all, nothing went in or out in these past few decades.|Who knows what sorts of magicks have been in effect.|Don't touch anything strange else something bad might happen."
                 ]
             ],
             [
@@ -128,7 +128,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "The barrier's dispelled."
+                    "Alright, the barrier's dispelled."
                 ]
             ],
             [
@@ -148,48 +148,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "Before you go, here.|Take these with you. For your help back in town."
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "##idk which weapons are good"
-                ]
-            ],
-            [
-                "give_item",
-                [
-                    "MC",
-                    "Steel Sword"
-                ]
-            ],
-            [
-                "give_item",
-                [
-                    "Schuri",
-                    "Elfire"
-                ]
-            ],
-            [
-                "give_item",
-                [
-                    "Senya",
-                    "Killer Bow"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Woah, thanks!|We'll make sure to put these to good use"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Aesc",
-                    "I'll be following behind to figure out what's going on.|Dispelling the barrier took a considerable amount of magic so I won't be able to help in a fight."
+                    "I'll be following behind to figure out what's happened all those years ago.|Dispelling the barrier took a considerable amount of magic so I won't be able to help in a fight."
                 ]
             ],
             [
@@ -200,7 +159,7 @@
                 "speak",
                 [
                     "MC",
-                    "You've already done plenty.|Let's head in."
+                    "You've already done plenty for us.|Let's head in."
                 ]
             ],
             [
@@ -220,6 +179,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "chapter_title\nmusic;sealedMansion\nadd_group;Party\ntransition;close\nchange_background;CastleRuins\ntransition;open\nadd_portrait;Aesc;Left\nspeak;Aesc;Here we are. The old Lord's place.|After the incident, it has been sealed off by a mysterious force.\nmove_portrait;Aesc;Right\nspeak;Aesc;I can remove this barrier however...\nmirror_portrait;Aesc\nspeak;Aesc;I warn you.|No one knows what's inside these walls since then.\nmirror_portrait;Aesc\nadd_portrait;MC;Left\nspeak;Aesc;After all, nothing went in or out in these past few decades.\nspeak;MC;We'll take your advice.|Thank you for showing us the way.\nend_skip\nspeak;Aesc;Stand back now, I'm going to dispel the barrier now.\nsound;WindWave\nspeak;Aesc;The barrier's dispelled.\nspeak;MC;Thank you.\nmirror_portrait;Aesc\nspeak;Aesc;Before you go, here.|Take these with you. For your help back in town.\n##idk which weapons are good\ngive_item;MC;Steel Sword\ngive_item;Schuri;Elfire\ngive_item;Senya;Killer Bow\nspeak;MC;Woah, thanks!|We'll make sure to put these to good use\nspeak;Aesc;I'll be following behind to figure out what's going on.|Dispelling the barrier took a considerable amount of magic so I won't be able to help in a fight.\nend_skip\nspeak;MC;You've already done plenty.|Let's head in.\ntransition;close\nmusic_clear\nwin_game\n"
+        "source": "chapter_title\nmusic;sealedMansion\nadd_group;Party\ntransition;close\nchange_background;CastleRuins\ntransition;open\nadd_portrait;Aesc;Left\nspeak;Aesc;Here we are. The old Lord's place.|After the incident, it has been sealed off by a mysterious force.\nmove_portrait;Aesc;Right\nspeak;Aesc;I can remove this barrier however...\nmirror_portrait;Aesc\nspeak;Aesc;I warn you.|No one knows what's inside these walls since then.\nmirror_portrait;Aesc\nadd_portrait;MC;Left\nspeak;Aesc;After all, nothing went in or out in these past few decades.|Who knows what sorts of magicks have been in effect.|Don't touch anything strange else something bad might happen.\nspeak;MC;We'll take your advice.|Thank you for showing us the way.\nend_skip\nspeak;Aesc;Stand back now, I'm going to dispel the barrier now.\nsound;WindWave\nspeak;Aesc;Alright, the barrier's dispelled.\nspeak;MC;Thank you.\nmirror_portrait;Aesc\nspeak;Aesc;I'll be following behind to figure out what's happened all those years ago.|Dispelling the barrier took a considerable amount of magic so I won't be able to help in a fight.\nend_skip\nspeak;MC;You've already done plenty for us.|Let's head in.\ntransition;close\nmusic_clear\nwin_game\n"
     }
 ]

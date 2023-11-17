@@ -10,8 +10,8 @@
             "enemy_phase": "corridorFight"
         },
         "objective": {
-            "simple": "Get to the Throne Room!",
-            "win": "Reach the Throne Room",
+            "simple": "Get to Throne Room in {eval:game.turncount}/20 turns",
+            "win": "Get to Throne Room in {eval:game.turncount}/20 turns",
             "loss": "MC Dies"
         },
         "roam": false,

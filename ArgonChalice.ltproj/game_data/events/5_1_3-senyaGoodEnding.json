@@ -8,55 +8,7 @@
             [
                 "comment",
                 [
-                    "#check for bond"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#elif;game.check_dead('Senya')"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#schuri good bond, good ending. senya lives"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#   music;bittersweetEpilogue"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#  speak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#elif;game.check_dead('Schuri')"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#senya good bond, good ending. schuri lives"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#   music;bittersweetEpilogue"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#  speak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic"
+                    "#senya good ending, schuri lives"
                 ]
             ],
             [
@@ -70,6 +22,60 @@
                 ]
             ],
             [
+                "music_fade_back",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "okEndingTheme"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close",
+                    "2500"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#ending cg?"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "default_background"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open",
+                    "1000"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Ending Achieved:|To Our Illuminated Future",
+                    "center",
+                    "",
+                    "cinematic"
+                ]
+            ],
+            [
                 "set_next_chapter",
                 [
                     "2222"
@@ -78,6 +84,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#check for bond\n#elif;game.check_dead('Senya')\n#schuri good bond, good ending. senya lives\n#   music;bittersweetEpilogue\n#  speak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\n#elif;game.check_dead('Schuri')\n#senya good bond, good ending. schuri lives\n#   music;bittersweetEpilogue\n#  speak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\nspeak;;this is ending 3;;;narration\nset_next_chapter;2222\n"
+        "source": "#senya good ending, schuri lives\nspeak;;this is ending 3;;;narration\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To Our Illuminated Future;center;;cinematic\nset_next_chapter;2222\n"
     }
 ]
