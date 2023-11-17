@@ -1,0 +1,19 @@
+[
+    {
+        "name": "openGate",
+        "trigger": "on_region_interact",
+        "level_nid": "4_1",
+        "condition": "True",
+        "commands": [
+            [
+                "show_layer",
+                [
+                    "gate"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "show_layer;gate"
+    }
+]

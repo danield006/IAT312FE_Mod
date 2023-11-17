@@ -50,6 +50,16 @@
                 "generic": false
             },
             {
+                "nid": "Lyon",
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
                 "nid": "Wall1",
                 "variant": null,
                 "level": 1,
@@ -751,6 +761,23 @@
                 "time_left": null,
                 "only_once": false,
                 "interrupt_move": false
+            },
+            {
+                "nid": "openGate",
+                "region_type": "event",
+                "position": [
+                    15,
+                    14
+                ],
+                "size": [
+                    2,
+                    2
+                ],
+                "sub_nid": "Open",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
             }
         ],
         "unit_groups": [
@@ -796,7 +823,7 @@
                 ],
                 "positions": {
                     "eliteEnemy1": [
-                        22,
+                        19,
                         2
                     ],
                     "eliteEnemy2": [
@@ -804,8 +831,8 @@
                         11
                     ],
                     "boss": [
-                        26,
-                        8
+                        23,
+                        2
                     ],
                     "mob1": [
                         4,
@@ -908,6 +935,11 @@
                 }
             }
         ],
-        "ai_groups": []
+        "ai_groups": [
+            {
+                "nid": "",
+                "trigger_threshold": 1
+            }
+        ]
     }
 ]

@@ -22,6 +22,94 @@
                 ]
             ],
             [
+                "multi_add_portrait",
+                [
+                    "MC",
+                    "MidLeft",
+                    "Senya",
+                    "FarLeft"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "aliveGoodTheme"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "We did it!|Hahaha you deserved everything that happened you bastard!"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "PossessedSchuri",
+                    "Right"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "PossessedSchuri",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "250"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "PossessedSchuri"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Right"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Schuri",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Ugh..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Schuri! How are you feeling?"
+                ]
+            ],
+            [
                 "music_fade_back",
                 [
                     "2000"
@@ -84,6 +172,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#senya good ending, schuri lives\nspeak;;this is ending 3;;;narration\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To Our Illuminated Future;center;;cinematic\nset_next_chapter;2222\n"
+        "source": "#senya good ending, schuri lives\nspeak;;this is ending 3;;;narration\nmulti_add_portrait;MC;MidLeft;Senya;FarLeft\nmusic;aliveGoodTheme\nbop_portrait;Senya\nspeak;Senya;We did it!|Hahaha you deserved everything that happened you bastard!\nwait;500\nadd_portrait;PossessedSchuri;Right\nexpression;PossessedSchuri;CloseEyes\nwait;250\nremove_portrait;PossessedSchuri\nadd_portrait;Schuri;Right\nexpression;Schuri;CloseEyes\nspeak;Schuri;Ugh...\nspeak;MC;Schuri! How are you feeling?\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To Our Illuminated Future;center;;cinematic\nset_next_chapter;2222\n"
     }
 ]
