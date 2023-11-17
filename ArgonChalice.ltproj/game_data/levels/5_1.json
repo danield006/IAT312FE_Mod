@@ -13,8 +13,8 @@
             "enemy2_phase": null
         },
         "objective": {
-            "simple": "Defeat ???",
-            "win": "Defeat ???",
+            "simple": "Defeat Lilith",
+            "win": "Defeat Lilith",
             "loss": "MC Dies"
         },
         "roam": false,
@@ -28,17 +28,14 @@
                 "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    8,
-                    11
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
             {
-                "nid": "Lyon",
+                "nid": "Lilith",
                 "team": "enemy",
-                "ai": "Attack",
+                "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
@@ -49,9 +46,9 @@
                 "generic": false
             },
             {
-                "nid": "101",
+                "nid": "mob1",
                 "variant": null,
-                "level": 12,
+                "level": 10,
                 "klass": "Entombed",
                 "faction": "Monster",
                 "starting_items": [
@@ -73,9 +70,9 @@
                 "generic": true
             },
             {
-                "nid": "102",
+                "nid": "mob2",
                 "variant": null,
-                "level": 12,
+                "level": 10,
                 "klass": "Entombed",
                 "faction": "Monster",
                 "starting_items": [
@@ -92,54 +89,6 @@
                 "starting_position": [
                     5,
                     5
-                ],
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "103",
-                "variant": null,
-                "level": 11,
-                "klass": "Bow_Bonewalker",
-                "faction": "Soldier",
-                "starting_items": [
-                    [
-                        "Steel Bow",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": [
-                    3,
-                    6
-                ],
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "104",
-                "variant": null,
-                "level": 11,
-                "klass": "Bow_Bonewalker",
-                "faction": "Soldier",
-                "starting_items": [
-                    [
-                        "Steel Bow",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": [
-                    13,
-                    6
                 ],
                 "starting_traveler": null,
                 "generic": true
@@ -193,7 +142,42 @@
                     "Senya",
                     "Schuri"
                 ],
-                "positions": {}
+                "positions": {
+                    "MC": [
+                        8,
+                        10
+                    ],
+                    "Senya": [
+                        7,
+                        11
+                    ],
+                    "Schuri": [
+                        9,
+                        11
+                    ]
+                }
+            },
+            {
+                "nid": "initialEnemies",
+                "units": [
+                    "Lilith",
+                    "mob1",
+                    "mob2"
+                ],
+                "positions": {
+                    "Lilith": [
+                        8,
+                        4
+                    ],
+                    "mob1": [
+                        5,
+                        5
+                    ],
+                    "mob2": [
+                        11,
+                        5
+                    ]
+                }
             }
         ],
         "ai_groups": []

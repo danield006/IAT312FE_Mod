@@ -1,0 +1,141 @@
+[
+    {
+        "name": "1-goldenEnding",
+        "trigger": "level_end",
+        "level_nid": "5_1",
+        "condition": "game.game_vars['_gameEnding'] == 1",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#everyone survives"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "this is ending 1",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "goldenEpilogue"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "We did it!!"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#stuff"
+                ]
+            ],
+            [
+                "music_fade_back",
+                [
+                    "2000"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close",
+                    "1200"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "Hill"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open",
+                    "1000"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#stuff"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Test"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "goldenEndingTheme"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close",
+                    "2500"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#ending cg?"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "default_background"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open",
+                    "1000"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Ending Achieved:|To The Great Beyond",
+                    "center",
+                    "",
+                    "cinematic"
+                ]
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "2222"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "#everyone survives\nspeak;;this is ending 1;;;narration\nmusic;goldenEpilogue\nspeak;MC;We did it!!\n#stuff\nmusic_fade_back;2000\ntransition;close;1200\nchange_background;Hill\ntransition;open;1000\n#stuff\nspeak;;Test\nmusic;goldenEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To The Great Beyond;center;;cinematic\nset_next_chapter;2222\n"
+    }
+]

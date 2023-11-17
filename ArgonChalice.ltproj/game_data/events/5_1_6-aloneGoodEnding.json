@@ -1,0 +1,29 @@
+[
+    {
+        "name": "6-aloneGoodEnding",
+        "trigger": "level_end",
+        "level_nid": "5_1",
+        "condition": "game.game_vars['_gameEnding'] == 6",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "this is ending 6",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "2222"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;;this is ending 6;;;narration\nset_next_chapter;2222"
+    }
+]

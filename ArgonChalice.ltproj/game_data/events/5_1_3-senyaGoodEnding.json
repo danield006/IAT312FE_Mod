@@ -1,0 +1,83 @@
+[
+    {
+        "name": "3-senyaGoodEnding",
+        "trigger": "level_end",
+        "level_nid": "5_1",
+        "condition": "game.game_vars['_gameEnding'] == 3",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#check for bond"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#elif;game.check_dead('Senya')"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#schuri good bond, good ending. senya lives"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#   music;bittersweetEpilogue"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#  speak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#elif;game.check_dead('Schuri')"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#senya good bond, good ending. schuri lives"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#   music;bittersweetEpilogue"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#  speak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "this is ending 3",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "2222"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "#check for bond\n#elif;game.check_dead('Senya')\n#schuri good bond, good ending. senya lives\n#   music;bittersweetEpilogue\n#  speak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\n#elif;game.check_dead('Schuri')\n#senya good bond, good ending. schuri lives\n#   music;bittersweetEpilogue\n#  speak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\nspeak;;this is ending 3;;;narration\nset_next_chapter;2222"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "nid": "ArgonChalice",
+        "name": "Argon Chalice",
+        "desc": "The mysterious chalice that the dark mage Lilith is after. It is imbued with old magicks.",
+        "icon_nid": "Consumable",
+        "icon_index": [
+            0,
+            9
+        ],
+        "components": []
+    }
+]

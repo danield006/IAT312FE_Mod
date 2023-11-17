@@ -1,0 +1,29 @@
+[
+    {
+        "name": "9-aloneSchuriEnding",
+        "trigger": "level_end",
+        "level_nid": "5_1",
+        "condition": "game.game_vars['_gameEnding'] == 9",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "this is ending 9",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "2222"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;;this is ending 9;;;narration\nset_next_chapter;2222"
+    }
+]
