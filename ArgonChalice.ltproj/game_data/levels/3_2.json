@@ -1,7 +1,7 @@
 [
     {
         "nid": "3_2",
-        "name": "Chapter 3B: Into the Seal",
+        "name": "Chapter 3B: Into the Depths",
         "tilemap": "CH3_sealed_mansion",
         "bg_tilemap": "CH3_sealed_mansion",
         "party": "MC",
