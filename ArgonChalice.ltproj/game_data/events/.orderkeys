@@ -213,7 +213,7 @@
     "3_3_intro.json": 211,
     "3_3_talkAesc.json": 212,
     "3_3_outro.json": 213,
-    "2_2B_New_Event.json": 214,
+    "2_2B_AescTalk.json": 214,
     "3_2_intro.json": 215,
     "3_2_lordPanic.json": 216,
     "3_2_seeTheLord.json": 217,
@@ -230,5 +230,6 @@
     "5_1_7-aloneBadEnding.json": 228,
     "5_1_8-aloneSenyaEnding.json": 229,
     "5_1_9-aloneSchuriEnding.json": 230,
-    "5_1_lilithDeath.json": 231
+    "5_1_lilithDeath.json": 231,
+    "2_2B_Setup.json": 232
 }
