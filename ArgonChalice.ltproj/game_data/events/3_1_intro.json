@@ -10,6 +10,12 @@
                 []
             ],
             [
+                "music",
+                [
+                    "sealedMansion"
+                ]
+            ],
+            [
                 "add_group",
                 [
                     "Party"
@@ -44,7 +50,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "Here we are.|The old Lord's place.|After the incident, it has been sealed off by a mysterious force."
+                    "Here we are. The old Lord's place.|After the incident, it has been sealed off by a mysterious force."
                 ]
             ],
             [
@@ -71,7 +77,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "I warn you|no one knows what's inside these walls"
+                    "I warn you.|No one knows what's inside these walls since then."
                 ]
             ],
             [
@@ -81,17 +87,17 @@
                 ]
             ],
             [
-                "speak",
-                [
-                    "Aesc",
-                    "After all, nothing went in or out in these past few decades."
-                ]
-            ],
-            [
                 "add_portrait",
                 [
                     "MC",
                     "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "After all, nothing went in or out in these past few decades."
                 ]
             ],
             [
@@ -133,10 +139,16 @@
                 ]
             ],
             [
+                "mirror_portrait",
+                [
+                    "Aesc"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "Aesc",
-                    "Before you go, here.|Take these with you.|For the your help back in town."
+                    "Before you go, here.|Take these with you. For your help back in town."
                 ]
             ],
             [
@@ -181,11 +193,25 @@
                 ]
             ],
             [
+                "end_skip",
+                []
+            ],
+            [
                 "speak",
                 [
                     "MC",
                     "You've already done plenty.|Let's head in."
                 ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "music_clear",
+                []
             ],
             [
                 "win_game",
@@ -194,6 +220,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "chapter_title\nadd_group;Party\ntransition;close\nchange_background;CastleRuins\ntransition;open\nadd_portrait;Aesc;Left\nspeak;Aesc;Here we are.|The old Lord's place.|After the incident, it has been sealed off by a mysterious force.\nmove_portrait;Aesc;Right\nspeak;Aesc;I can remove this barrier however...\nmirror_portrait;Aesc\nspeak;Aesc;I warn you|no one knows what's inside these walls\nmirror_portrait;Aesc\nspeak;Aesc;After all, nothing went in or out in these past few decades.\nadd_portrait;MC;Left\nspeak;MC;We'll take your advice.|Thank you for showing us the way.\nend_skip\nspeak;Aesc;Stand back now, I'm going to dispel the barrier now.\nsound;WindWave\nspeak;Aesc;The barrier's dispelled.\nspeak;MC;Thank you.\nspeak;Aesc;Before you go, here.|Take these with you.|For the your help back in town.\n##idk which weapons are good\ngive_item;MC;Steel Sword\ngive_item;Schuri;Elfire\ngive_item;Senya;Killer Bow\nspeak;MC;Woah, thanks!|We'll make sure to put these to good use\nspeak;Aesc;I'll be following behind to figure out what's going on.|Dispelling the barrier took a considerable amount of magic so I won't be able to help in a fight.\nspeak;MC;You've already done plenty.|Let's head in.\nwin_game\n"
+        "source": "chapter_title\nmusic;sealedMansion\nadd_group;Party\ntransition;close\nchange_background;CastleRuins\ntransition;open\nadd_portrait;Aesc;Left\nspeak;Aesc;Here we are. The old Lord's place.|After the incident, it has been sealed off by a mysterious force.\nmove_portrait;Aesc;Right\nspeak;Aesc;I can remove this barrier however...\nmirror_portrait;Aesc\nspeak;Aesc;I warn you.|No one knows what's inside these walls since then.\nmirror_portrait;Aesc\nadd_portrait;MC;Left\nspeak;Aesc;After all, nothing went in or out in these past few decades.\nspeak;MC;We'll take your advice.|Thank you for showing us the way.\nend_skip\nspeak;Aesc;Stand back now, I'm going to dispel the barrier now.\nsound;WindWave\nspeak;Aesc;The barrier's dispelled.\nspeak;MC;Thank you.\nmirror_portrait;Aesc\nspeak;Aesc;Before you go, here.|Take these with you. For your help back in town.\n##idk which weapons are good\ngive_item;MC;Steel Sword\ngive_item;Schuri;Elfire\ngive_item;Senya;Killer Bow\nspeak;MC;Woah, thanks!|We'll make sure to put these to good use\nspeak;Aesc;I'll be following behind to figure out what's going on.|Dispelling the barrier took a considerable amount of magic so I won't be able to help in a fight.\nend_skip\nspeak;MC;You've already done plenty.|Let's head in.\ntransition;close\nmusic_clear\nwin_game\n"
     }
 ]

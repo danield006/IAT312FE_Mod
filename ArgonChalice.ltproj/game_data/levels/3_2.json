@@ -5,10 +5,15 @@
         "tilemap": "CH3_sealed_mansion",
         "bg_tilemap": "CH3_sealed_mansion",
         "party": "MC",
-        "music": {},
+        "music": {
+            "player_phase": "sealedMansionExplore",
+            "enemy_phase": "sealedMansionExplore",
+            "enemy2_phase": "sealedMansionExplore",
+            "other_phase": "sealedMansionExplore"
+        },
         "objective": {
-            "simple": "Get to the Pillar's Seal",
-            "win": "Go to the Pillar's Seal in the Throne Room",
+            "simple": "Explore the Mansion",
+            "win": "Discover Mansion's Secret",
             "loss": "MC Dies"
         },
         "roam": false,
@@ -22,10 +27,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    20,
-                    22
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -35,10 +37,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    19,
-                    23
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -48,10 +47,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    20,
-                    23
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -63,7 +59,7 @@
                 "faction": "Wall",
                 "starting_items": [],
                 "starting_skills": [],
-                "team": "enemy2",
+                "team": "enemy",
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
@@ -82,7 +78,7 @@
                 "faction": "Wall",
                 "starting_items": [],
                 "starting_skills": [],
-                "team": "enemy2",
+                "team": "enemy",
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
@@ -95,6 +91,27 @@
             },
             {
                 "nid": "mob1",
+                "variant": null,
+                "level": 6,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob1_1",
                 "variant": null,
                 "level": 6,
                 "klass": "Sword_Wight",
@@ -180,7 +197,7 @@
             {
                 "nid": "mobHighGuard",
                 "variant": null,
-                "level": 8,
+                "level": 9,
                 "klass": "Revenant",
                 "faction": "Monster",
                 "starting_items": [
@@ -201,7 +218,28 @@
             {
                 "nid": "mob4",
                 "variant": null,
-                "level": 7,
+                "level": 6,
+                "klass": "Sword_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob4_1",
+                "variant": null,
+                "level": 6,
                 "klass": "Sword_Bonewalker",
                 "faction": "Monster",
                 "starting_items": [
@@ -243,7 +281,7 @@
             {
                 "nid": "mob6",
                 "variant": null,
-                "level": 7,
+                "level": 6,
                 "klass": "Bow_Bonewalker",
                 "faction": "Monster",
                 "starting_items": [
@@ -263,6 +301,48 @@
             },
             {
                 "nid": "mob7",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob7_1",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob7_2",
                 "variant": null,
                 "level": 7,
                 "klass": "Sword_Wight",
@@ -304,14 +384,56 @@
                 "generic": true
             },
             {
-                "nid": "mob9",
+                "nid": "mob14",
                 "variant": null,
-                "level": 7,
-                "klass": "Bow_Wight",
+                "level": 5,
+                "klass": "Mogall",
                 "faction": "Monster",
                 "starting_items": [
                     [
-                        "Steel Bow",
+                        "Flux",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob12",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob9",
+                "variant": null,
+                "level": 7,
+                "klass": "Sword_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Blade",
                         false
                     ]
                 ],
@@ -333,6 +455,69 @@
                 "starting_items": [
                     [
                         "Steel Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob11",
+                "variant": null,
+                "level": 7,
+                "klass": "Bow_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob13",
+                "variant": null,
+                "level": 5,
+                "klass": "Mogall",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Flux",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob15",
+                "variant": null,
+                "level": 5,
+                "klass": "Mogall",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Flux",
                         false
                     ]
                 ],
@@ -475,6 +660,23 @@
                 "time_left": null,
                 "only_once": true,
                 "interrupt_move": false
+            },
+            {
+                "nid": "southArea",
+                "region_type": "normal",
+                "position": [
+                    6,
+                    18
+                ],
+                "size": [
+                    10,
+                    5
+                ],
+                "sub_nid": "southArea",
+                "condition": "True",
+                "time_left": null,
+                "only_once": true,
+                "interrupt_move": false
             }
         ],
         "unit_groups": [
@@ -488,15 +690,15 @@
                 "positions": {
                     "MC": [
                         20,
-                        22
+                        21
                     ],
                     "Senya": [
                         19,
-                        23
+                        22
                     ],
                     "Schuri": [
                         20,
-                        23
+                        22
                     ],
                     "Aesc": [
                         19,
@@ -510,7 +712,16 @@
                     "wall1",
                     "wall2"
                 ],
-                "positions": {}
+                "positions": {
+                    "wall1": [
+                        16,
+                        8
+                    ],
+                    "wall2": [
+                        5,
+                        22
+                    ]
+                }
             },
             {
                 "nid": "enemies",
@@ -526,11 +737,125 @@
                     "mob7",
                     "mob8",
                     "mob9",
-                    "mob10"
+                    "mob10",
+                    "mob11",
+                    "mob12",
+                    "mob4_1",
+                    "mob1_1",
+                    "mob7_1",
+                    "mob7_2"
                 ],
-                "positions": {}
+                "positions": {
+                    "mob1": [
+                        18,
+                        16
+                    ],
+                    "mob2": [
+                        20,
+                        10
+                    ],
+                    "mob3": [
+                        18,
+                        8
+                    ],
+                    "mob4": [
+                        13,
+                        7
+                    ],
+                    "mob5": [
+                        10,
+                        6
+                    ],
+                    "mob6": [
+                        12,
+                        3
+                    ],
+                    "mob7": [
+                        4,
+                        10
+                    ],
+                    "mob8": [
+                        3,
+                        8
+                    ],
+                    "mob9": [
+                        7,
+                        14
+                    ],
+                    "mob10": [
+                        6,
+                        16
+                    ],
+                    "mob11": [
+                        8,
+                        17
+                    ],
+                    "mob12": [
+                        4,
+                        15
+                    ],
+                    "mobLord": [
+                        13,
+                        14
+                    ],
+                    "mobHighGuard": [
+                        12,
+                        18
+                    ],
+                    "mob4_1": [
+                        15,
+                        4
+                    ],
+                    "mob1_1": [
+                        19,
+                        3
+                    ],
+                    "mob7_1": [
+                        5,
+                        3
+                    ],
+                    "mob7_2": [
+                        7,
+                        4
+                    ]
+                }
+            },
+            {
+                "nid": "wave2",
+                "units": [
+                    "mob13",
+                    "mob14",
+                    "mob15"
+                ],
+                "positions": {
+                    "mob7": [
+                        15,
+                        22
+                    ],
+                    "mob8": [
+                        15,
+                        22
+                    ],
+                    "mob14": [
+                        13,
+                        20
+                    ],
+                    "mob13": [
+                        11,
+                        19
+                    ],
+                    "mob15": [
+                        14,
+                        18
+                    ]
+                }
             }
         ],
-        "ai_groups": []
+        "ai_groups": [
+            {
+                "nid": "",
+                "trigger_threshold": 1
+            }
+        ]
     }
 ]

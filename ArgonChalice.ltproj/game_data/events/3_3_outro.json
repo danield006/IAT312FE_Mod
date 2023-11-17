@@ -12,6 +12,26 @@
                 ]
             ],
             [
+                "remove_group",
+                [
+                    "Party",
+                    "warp"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close",
+                    "250"
+                ]
+            ],
+            [
                 "set_next_chapter",
                 [
                     "4_1"
@@ -20,6 +40,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#do the warp\nset_next_chapter;4_1"
+        "source": "#do the warp\nremove_group;Party;warp\nwait;500\ntransition;close;250\nset_next_chapter;4_1\n"
     }
 ]

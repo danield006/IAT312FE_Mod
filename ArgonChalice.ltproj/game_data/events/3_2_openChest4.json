@@ -17,10 +17,29 @@
                     "{unit}",
                     "Heal"
                 ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Vulnerary"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "250"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "show_layer;chest4\ngive_item;{unit};Heal\n"
+        "source": "show_layer;chest4\ngive_item;{unit};Heal\ngive_item;{unit};Vulnerary\ngive_money;250\nhas_traded;{unit}\n"
     }
 ]

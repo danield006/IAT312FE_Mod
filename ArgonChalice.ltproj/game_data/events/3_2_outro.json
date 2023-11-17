@@ -6,6 +6,12 @@
         "condition": "True",
         "commands": [
             [
+                "center_cursor",
+                [
+                    "14,14"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "Senya",
@@ -48,6 +54,37 @@
                 ]
             ],
             [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "Ruins"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Senya",
+                    "FarLeft",
+                    "Schuri",
+                    "Left",
+                    "MC",
+                    "MidLeft",
+                    "Aesc",
+                    "Right"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "MC",
@@ -59,6 +96,12 @@
                 [
                     "Aesc",
                     "This tome feeds off the intent of others.|It can cause the malice in people to rise thereby creating chaos."
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Schuri"
                 ]
             ],
             [
@@ -86,14 +129,59 @@
                 "speak",
                 [
                     "Aesc",
-                    "Yes, you.|You hold light magic so you're resistant to its calls of darkness.|This tome will be quite the boon for you.|Want it? If not, I'll safeguard it."
+                    "Yes, you.|You hold light magic so you're resistant to its calls of darkness.|This tome will be quite the boon for you.|Want it? If not, I'll safeguard it.|Think about it"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Aesc"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Aesc",
+                    "OffscreenRight"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Aesc"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Senya",
+                    "FarRight"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Schuri",
+                    "MidRight"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Schuri"
                 ]
             ],
             [
                 "speak",
                 [
                     "Senya",
-                    "Hey...I don't fully understand this magic but...|this sounds like a terrible thing to have."
+                    "Hey...I don't fully understand this magic but...|This sounds like a terrible thing to have."
                 ]
             ],
             [
@@ -132,7 +220,8 @@
                 "speak",
                 [
                     "Aesc",
-                    "You're resistant to its effects.|But it's to you."
+                    "You're resistant to its effects. Could be useful as a powerful weapon.|But it's to you.",
+                    "top"
                 ]
             ],
             [
@@ -214,7 +303,7 @@
             [
                 "elif",
                 [
-                    "game.game+vars['_ch3TomeChoice'] == 'No'"
+                    "game.game_vars['_ch3TomeChoice'] == 'No'"
                 ]
             ],
             [
@@ -230,6 +319,20 @@
                 ]
             ],
             [
+                "multi_remove_portrait",
+                [
+                    "Senya",
+                    "Schuri"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Aesc",
+                    "Right"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "MC",
@@ -237,10 +340,45 @@
                 ]
             ],
             [
+                "move_portrait",
+                [
+                    "MC",
+                    "MidRight"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "250"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "MC",
+                    "MidLeft"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "Aesc",
                     "Alright, that take cares of that."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Aesc"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Senya",
+                    "FarRight",
+                    "Schuri",
+                    "MidRight"
                 ]
             ],
             [
@@ -265,12 +403,19 @@
                 "speak",
                 [
                     "Aesc",
-                    "Now, after you all are rested and ready to go|I'll help warp you off to your destination.|Take it as your thanks."
+                    "Let's head back to town now. Best not to linger here.|Who knows what else might be hiding here.",
+                    "top"
+                ]
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "3_3"
                 ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;Senya;Guys, look.|That pillar is sorta strange.\nspeak;Schuri;It's got a strange tome sitting on it.|Do you think this is the cause of the events here?\nspeak;Aesc;Great work!|Let me take a look.\nadd_unit;Aesc;12,18\nmove_unit;Aesc; 13,14\nspeak;Aesc;Hmm...interesting|Very interesting.|By the looks of it, it seems that this tome here was the catalyst.\nspeak;MC;What do you mean?\nspeak;Aesc;This tome feeds off the intent of others.|It can cause the malice in people to rise thereby creating chaos.\nspeak;Schuri;That's terrible!\nspeak;Aesc;Yes...|Perhaps by the time they realized, it was already too late.|That's why this pillar is here.|However, you can wield it.\nspeak;MC;Me?\nspeak;Aesc;Yes, you.|You hold light magic so you're resistant to its calls of darkness.|This tome will be quite the boon for you.|Want it? If not, I'll safeguard it.\nspeak;Senya;Hey...I don't fully understand this magic but...|this sounds like a terrible thing to have.\nspeak;Schuri;I agree with Senya.|It's caused this whole place to ruins.|Even if you're resistant, you're not immune.\nspeak;MC;But what if the power can help us defeat that mage?\nspeak;Senya;I don't think it's worth the risk.|It's not that we don't want to defeat the mage...|it's just that we're worried.\nend_skip\nspeak;Schuri;We don't know anything else about this tome.|It might be powerful, but it's more trouble than its worth.\nspeak;Aesc;You're resistant to its effects.|But it's to you.\n#choice\nchoice;_ch3TomeChoice;Should I take the Tome?;Yes,No\n##\nend_skip\nif;game.game_vars['_ch3TomeChoice'] == 'Yes'\n    inc_game_var;_SenyaOpinion-1\n    inc_game_var;_SchuriOpinion-1\n    speak;MC;I think it's worth the risk.\n    #idk which item\n    give_item;MC;Nosferatu\n    speak;Schuri;MC...|Alright I can't say I'm happy about your decision, but...|I'll trust you.\n    speak;Senya;Don't make us worry, got it?\nelif;game.game+vars['_ch3TomeChoice'] == 'No'\ninc_game_var;_SenyaOpinion+1\n    inc_game_var;_SchuriOpinion+1\nspeak;MC;That tome will be in a better place with you, Sir.\nspeak;Aesc;Alright, that take cares of that.\nspeak;Senya;Thank goodness.|I would have hated it if that tome had to travel with us.\nspeak;Schuri;That's a relief.|Thanks for heeding our advice.\nend\nspeak;Aesc;Now, after you all are rested and ready to go|I'll help warp you off to your destination.|Take it as your thanks.\n"
+        "source": "center_cursor;14,14\nspeak;Senya;Guys, look.|That pillar is sorta strange.\nspeak;Schuri;It's got a strange tome sitting on it.|Do you think this is the cause of the events here?\nspeak;Aesc;Great work!|Let me take a look.\nadd_unit;Aesc;12,18\nmove_unit;Aesc; 13,14\nspeak;Aesc;Hmm...interesting|Very interesting.|By the looks of it, it seems that this tome here was the catalyst.\ntransition;close\nchange_background;Ruins\nmulti_add_portrait;Senya;FarLeft;Schuri;Left;MC;MidLeft;Aesc;Right\ntransition;open\nspeak;MC;What do you mean?\nspeak;Aesc;This tome feeds off the intent of others.|It can cause the malice in people to rise thereby creating chaos.\nbop_portrait;Schuri\nspeak;Schuri;That's terrible!\nspeak;Aesc;Yes...|Perhaps by the time they realized, it was already too late.|That's why this pillar is here.|However, you can wield it.\nspeak;MC;Me?\nspeak;Aesc;Yes, you.|You hold light magic so you're resistant to its calls of darkness.|This tome will be quite the boon for you.|Want it? If not, I'll safeguard it.|Think about it\nmirror_portrait;Aesc\nmove_portrait;Aesc;OffscreenRight\nremove_portrait;Aesc\nmove_portrait;Senya;FarRight\nmirror_portrait;Senya\nmove_portrait;Schuri;MidRight\nmirror_portrait;Schuri\nspeak;Senya;Hey...I don't fully understand this magic but...|This sounds like a terrible thing to have.\nspeak;Schuri;I agree with Senya.|It's caused this whole place to ruins.|Even if you're resistant, you're not immune.\nspeak;MC;But what if the power can help us defeat that mage?\nspeak;Senya;I don't think it's worth the risk.|It's not that we don't want to defeat the mage...|it's just that we're worried.\nend_skip\nspeak;Schuri;We don't know anything else about this tome.|It might be powerful, but it's more trouble than its worth.\nspeak;Aesc;You're resistant to its effects. Could be useful as a powerful weapon.|But it's to you.;top\n#choice\nchoice;_ch3TomeChoice;Should I take the Tome?;Yes,No\n##\nend_skip\nif;game.game_vars['_ch3TomeChoice'] == 'Yes'\n    inc_game_var;_SenyaOpinion-1\n    inc_game_var;_SchuriOpinion-1\n    speak;MC;I think it's worth the risk.\n    #idk which item\n    give_item;MC;Nosferatu\n    speak;Schuri;MC...|Alright I can't say I'm happy about your decision, but...|I'll trust you.\n    speak;Senya;Don't make us worry, got it?\nelif;game.game_vars['_ch3TomeChoice'] == 'No'\n    inc_game_var;_SenyaOpinion+1\n    inc_game_var;_SchuriOpinion+1\n    multi_remove_portrait;Senya;Schuri\n    add_portrait;Aesc;Right\n    speak;MC;That tome will be in a better place with you, Sir.\n    move_portrait;MC;MidRight\n    wait;250\n    move_portrait;MC;MidLeft\n    speak;Aesc;Alright, that take cares of that.\n    remove_portrait;Aesc\n    multi_add_portrait;Senya;FarRight;Schuri;MidRight\n    speak;Senya;Thank goodness.|I would have hated it if that tome had to travel with us.\n    speak;Schuri;That's a relief.|Thanks for heeding our advice.\nend\nspeak;Aesc;Let's head back to town now. Best not to linger here.|Who knows what else might be hiding here.;top\nset_next_chapter;3_3\n"
     }
 ]

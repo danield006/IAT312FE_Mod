@@ -1,0 +1,32 @@
+[
+    {
+        "name": "intro",
+        "trigger": "level_start",
+        "level_nid": "3_2",
+        "condition": "True",
+        "commands": [
+            [
+                "music",
+                [
+                    "sealedMansionExplore"
+                ]
+            ],
+            [
+                "enable_fog_of_war",
+                [
+                    "t"
+                ]
+            ],
+            [
+                "set_fog_of_war",
+                [
+                    "gba",
+                    "7"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "music;sealedMansionExplore\nenable_fog_of_war;t\nset_fog_of_war;gba;7\n"
+    }
+]

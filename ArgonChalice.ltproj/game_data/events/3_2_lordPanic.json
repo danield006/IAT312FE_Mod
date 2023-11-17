@@ -1,0 +1,35 @@
+[
+    {
+        "name": "lordPanic",
+        "trigger": "unit_death",
+        "level_nid": "3_2",
+        "condition": "unit.nid == 'mobHighGuard'",
+        "commands": [
+            [
+                "speak",
+                [
+                    "Lord",
+                    "Arghhh!"
+                ]
+            ],
+            [
+                "add_group",
+                [
+                    "wave2",
+                    "wave2",
+                    "immediate",
+                    "push"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "speak;Lord;Arghhh!\nadd_group;wave2;wave2;immediate;push\n#\n"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "seeTheLord",
+        "trigger": "unit_wait",
+        "level_nid": "3_2",
+        "condition": "game.level.regions.get('southArea').contains(game.get_unit('MC').position)",
+        "commands": [
+            [
+                "center_cursor",
+                [
+                    "Monster (mobLord)"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "Monster (mobLord)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "That's the old Lord! He's turned into a monster!|Go put him outta his misery. Perhaps his body will reveal something."
+                ]
+            ],
+            [
+                "change_objective_simple",
+                [
+                    "Defeat the old Lord"
+                ]
+            ],
+            [
+                "change_objective_win",
+                [
+                    "Defeat the old Lord"
+                ]
+            ],
+            [
+                "center_cursor",
+                [
+                    "MC"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "center_cursor;Monster (mobLord)\nflicker_cursor;Monster (mobLord)\nspeak;Aesc;That's the old Lord! He's turned into a monster!|Go put him outta his misery. Perhaps his body will reveal something.\nchange_objective_simple;Defeat the old Lord\nchange_objective_win;Defeat the old Lord\ncenter_cursor;MC\n"
+    }
+]

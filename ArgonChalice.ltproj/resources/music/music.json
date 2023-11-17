@@ -233,5 +233,15 @@
         "mansionBegin",
         false,
         false
+    ],
+    [
+        "sealedMansion",
+        false,
+        false
+    ],
+    [
+        "sealedMansionExplore",
+        false,
+        false
     ]
 ]

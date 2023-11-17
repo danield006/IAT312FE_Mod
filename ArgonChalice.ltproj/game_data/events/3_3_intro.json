@@ -6,10 +6,102 @@
         "condition": "True",
         "commands": [
             [
+                "add_group",
+                [
+                    "Party",
+                    "Party"
+                ]
+            ],
+            [
+                "add_group",
+                [
+                    "Aesc",
+                    "Aesc"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "greshiaBGM2"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Whenever you're ready, talk to me.|I'll help warp you three to your castle.|Take it as my thanks, that mansion holds many interesting things that I intend to uncover."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Thanks!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Talk to me whenever you're ready."
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Aesc",
+                    "8,1"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "MC",
                     "Let's take this time to prep for our final battle."
+                ]
+            ],
+            [
+                "move_cursor",
+                [
+                    "5,2"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "5,2"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "This is the vendor",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "move_cursor",
+                [
+                    "11,2"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "11,2"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "This is the armory",
+                    "",
+                    "",
+                    "narration"
                 ]
             ],
             [
@@ -21,10 +113,31 @@
                     "",
                     "hint"
                 ]
+            ],
+            [
+                "add_talk",
+                [
+                    "MC",
+                    "Aesc"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Senya",
+                    "Aesc"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Schuri",
+                    "Aesc"
+                ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;MC;Let's take this time to prep for our final battle.\nspeak;;Talk to Aesc when you are ready;;;hint\n"
+        "source": "add_group;Party;Party\nadd_group;Aesc;Aesc\nmusic;greshiaBGM2\nspeak;Aesc;Whenever you're ready, talk to me.|I'll help warp you three to your castle.|Take it as my thanks, that mansion holds many interesting things that I intend to uncover.\nspeak;MC;Thanks!\nspeak;Aesc;Talk to me whenever you're ready.\nmove_unit;Aesc;8,1\nspeak;MC;Let's take this time to prep for our final battle.\nmove_cursor;5,2\nflicker_cursor;5,2\nspeak;;This is the vendor;;;narration\nmove_cursor;11,2\nflicker_cursor;11,2\nspeak;;This is the armory;;;narration\nspeak;;Talk to Aesc when you are ready;;;hint\nadd_talk;MC;Aesc\nadd_talk;Senya;Aesc\nadd_talk;Schuri;Aesc\n"
     }
 ]

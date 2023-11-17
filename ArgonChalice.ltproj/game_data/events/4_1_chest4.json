@@ -21,6 +21,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "give_item;{unit};Elfire (Elfire)\nhas_traded;{unit}"
+        "source": "give_item;{unit};Elfire (Elfire)\nhas_traded;{unit}\n"
     }
 ]

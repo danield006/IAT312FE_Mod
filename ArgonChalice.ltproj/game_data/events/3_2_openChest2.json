@@ -14,12 +14,25 @@
             [
                 "give_money",
                 [
-                    "100"
+                    "150"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Blue Gem"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "show_layer;chest2\ngive_money;100\n"
+        "source": "show_layer;chest2\ngive_money;150\ngive_item;{unit};Blue Gem\nhas_traded;{unit}\n"
     }
 ]

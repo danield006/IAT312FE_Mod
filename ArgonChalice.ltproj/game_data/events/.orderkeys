@@ -225,5 +225,10 @@
     "3_2_addingUnits.json": 223,
     "3_3_intro.json": 224,
     "3_3_talkAesc.json": 225,
-    "3_3_outro.json": 226
+    "3_3_outro.json": 226,
+    "3_2_lordPanic.json": 227,
+    "3_2_seeTheLord.json": 228,
+    "3_2_intro.json": 229,
+    "3_3_vendor.json": 230,
+    "3_3_armory.json": 231
 }

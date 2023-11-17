@@ -22,10 +22,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    6,
-                    3
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -35,10 +32,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    5,
-                    3
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -48,10 +42,7 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    5,
-                    4
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             },
@@ -61,27 +52,41 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    12,
-                    4
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             }
         ],
         "regions": [
             {
-                "nid": "sealedTome",
+                "nid": "vendor",
                 "region_type": "event",
                 "position": [
-                    14,
-                    13
+                    5,
+                    2
                 ],
                 "size": [
                     1,
+                    1
+                ],
+                "sub_nid": "Vendor",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            },
+            {
+                "nid": "armory",
+                "region_type": "event",
+                "position": [
+                    11,
                     2
                 ],
-                "sub_nid": "SealedTome",
+                "size": [
+                    1,
+                    1
+                ],
+                "sub_nid": "Armory",
                 "condition": "True",
                 "time_left": null,
                 "only_once": false,
@@ -96,7 +101,32 @@
                     "Senya",
                     "Schuri"
                 ],
-                "positions": {}
+                "positions": {
+                    "MC": [
+                        7,
+                        4
+                    ],
+                    "Senya": [
+                        6,
+                        3
+                    ],
+                    "Schuri": [
+                        6,
+                        5
+                    ]
+                }
+            },
+            {
+                "nid": "Aesc",
+                "units": [
+                    "Aesc"
+                ],
+                "positions": {
+                    "Aesc": [
+                        8,
+                        4
+                    ]
+                }
             }
         ],
         "ai_groups": []

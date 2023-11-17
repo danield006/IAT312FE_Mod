@@ -3,7 +3,7 @@
         "name": "talkAesc",
         "trigger": "on_talk",
         "level_nid": "3_3",
-        "condition": "unit.nid == 'Aesc'",
+        "condition": "unit2.nid == 'Aesc'",
         "commands": [
             [
                 "multi_add_portrait",
@@ -46,6 +46,20 @@
                 ]
             ],
             [
+                "speak",
+                [
+                    "{unit}",
+                    "Yep, we're ready."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Good luck!"
+                ]
+            ],
+            [
                 "win_game",
                 []
             ],
@@ -53,6 +67,13 @@
                 "elif",
                 [
                     "game.game_vars['_ch4Choice'] == 'No'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "{unit}",
+                    "Not yet."
                 ]
             ],
             [
@@ -69,6 +90,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "multi_add_portrait;Aesc;Right;{unit};Left\nspeak;Aesc;Ready to go?\nend_skip\n#choice\nchoice;_ch4Choice;Are you ready?;Yes,No\nif;game.game_vars['_ch4Choice'] == 'Yes'\nwin_game\nelif;game.game_vars['_ch4Choice'] == 'No'\nspeak;Aesc;Ok, come to me when you're ready.\nend"
+        "source": "multi_add_portrait;Aesc;Right;{unit};Left\nspeak;Aesc;Ready to go?\nend_skip\n#choice\nchoice;_ch4Choice;Are you ready?;Yes,No\nif;game.game_vars['_ch4Choice'] == 'Yes'\n    speak;{unit};Yep, we're ready.\n    speak;Aesc;Good luck!\n    win_game\nelif;game.game_vars['_ch4Choice'] == 'No'\n    speak;{unit};Not yet.\n    speak;Aesc;Ok, come to me when you're ready.\nend\n"
     }
 ]

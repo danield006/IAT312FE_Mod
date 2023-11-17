@@ -12,18 +12,22 @@
             [
                 "add_group",
                 [
-                    "Party"
+                    "Party",
+                    "Party",
+                    "immediate"
                 ]
             ],
             [
                 "add_group",
                 [
-                    "enemies"
+                    "enemies",
+                    "enemies",
+                    "immediate"
                 ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "chapter_title\nadd_group;Party\nadd_group;enemies\n"
+        "source": "chapter_title\nadd_group;Party;Party;immediate\nadd_group;enemies;enemies;immediate\n"
     }
 ]

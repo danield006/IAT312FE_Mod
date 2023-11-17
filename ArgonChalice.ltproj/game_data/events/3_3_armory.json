@@ -1,0 +1,32 @@
+[
+    {
+        "name": "armory",
+        "trigger": "on_region_interact",
+        "level_nid": "3_3",
+        "condition": "region.nid == 'armory'",
+        "commands": [
+            [
+                "transition",
+                [
+                    "Close"
+                ]
+            ],
+            [
+                "shop",
+                [
+                    "{unit}",
+                    "Silver Sword,Silver Lance,Silver Axe,Silver Bow,Hand Axe,Javelin"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "Open"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "transition;Close\nshop;{unit};Silver Sword,Silver Lance,Silver Axe,Silver Bow,Hand Axe,Javelin\ntransition;Open\n"
+    }
+]

@@ -714,7 +714,7 @@
                     8,
                     5
                 ],
-                "sub_nid": "Petrify",
+                "sub_nid": "",
                 "condition": "True",
                 "time_left": null,
                 "only_once": false,

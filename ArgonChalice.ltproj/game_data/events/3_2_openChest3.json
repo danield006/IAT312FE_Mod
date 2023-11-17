@@ -12,15 +12,28 @@
                 ]
             ],
             [
-                "give_exp",
+                "give_item",
                 [
                     "{unit}",
-                    "50"
+                    "Blue Gem"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Red Gem"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "show_layer;chest3\ngive_exp;{unit};50\n"
+        "source": "show_layer;chest3\ngive_item;{unit};Blue Gem\ngive_item;{unit};Red Gem\nhas_traded;{unit}\n"
     }
 ]
