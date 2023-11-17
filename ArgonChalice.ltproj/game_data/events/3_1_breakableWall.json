@@ -2,7 +2,7 @@
     {
         "name": "breakableWall",
         "trigger": "turn_change",
-        "level_nid": "3_2",
+        "level_nid": "3_1",
         "condition": "game.turncount == 4",
         "commands": [
             [

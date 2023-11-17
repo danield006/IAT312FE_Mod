@@ -1,34 +1,27 @@
 [
     {
-        "name": "openChest1",
+        "name": "openChest2",
         "trigger": "Open",
-        "level_nid": "3_2",
-        "condition": "region.nid == 'chest1'",
+        "level_nid": "3_1",
+        "condition": "region.nid == 'chest2'",
         "commands": [
             [
                 "show_layer",
                 [
-                    "chest"
+                    "chest2"
                 ]
             ],
             [
                 "give_money",
                 [
-                    "50"
+                    "150"
                 ]
             ],
             [
                 "give_item",
                 [
                     "{unit}",
-                    "Vulnerary"
-                ]
-            ],
-            [
-                "give_item",
-                [
-                    "{unit}",
-                    "Vulnerary"
+                    "Blue Gem"
                 ]
             ],
             [
@@ -40,6 +33,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "show_layer;chest\ngive_money;50\ngive_item;{unit};Vulnerary\ngive_item;{unit};Vulnerary\nhas_traded;{unit}\n"
+        "source": "show_layer;chest2\ngive_money;150\ngive_item;{unit};Blue Gem\nhas_traded;{unit}\n"
     }
 ]

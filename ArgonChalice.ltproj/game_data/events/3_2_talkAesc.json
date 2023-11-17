@@ -2,7 +2,7 @@
     {
         "name": "talkAesc",
         "trigger": "on_talk",
-        "level_nid": "3_3",
+        "level_nid": "3_2",
         "condition": "unit2.nid == 'Aesc'",
         "commands": [
             [

@@ -1,9 +1,9 @@
 [
     {
-        "name": "armory",
+        "name": "vendor",
         "trigger": "on_region_interact",
-        "level_nid": "3_3",
-        "condition": "region.nid == 'armory'",
+        "level_nid": "3_2",
+        "condition": "region.nid == 'vendor'",
         "commands": [
             [
                 "transition",
@@ -15,7 +15,8 @@
                 "shop",
                 [
                     "{unit}",
-                    "Silver Sword,Silver Lance,Silver Axe,Silver Bow,Hand Axe,Javelin"
+                    "Elfire,Fimbulvetr,Mend,Vulnerary",
+                    "vendor"
                 ]
             ],
             [
@@ -27,6 +28,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;Close\nshop;{unit};Silver Sword,Silver Lance,Silver Axe,Silver Bow,Hand Axe,Javelin\ntransition;Open\n"
+        "source": "transition;Close\nshop;{unit};Elfire,Fimbulvetr,Mend,Vulnerary;vendor\ntransition;Open\n"
     }
 ]

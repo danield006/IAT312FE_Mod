@@ -2,7 +2,7 @@
     {
         "name": "openChest3",
         "trigger": "Open",
-        "level_nid": "3_2",
+        "level_nid": "3_1",
         "condition": "region.nid == 'chest3'",
         "commands": [
             [

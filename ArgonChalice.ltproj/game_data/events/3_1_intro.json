@@ -10,6 +10,35 @@
                 []
             ],
             [
+                "enable_fog_of_war",
+                [
+                    "t"
+                ]
+            ],
+            [
+                "set_fog_of_war",
+                [
+                    "gba",
+                    "7"
+                ]
+            ],
+            [
+                "add_group",
+                [
+                    "Party",
+                    "Party",
+                    "immediate"
+                ]
+            ],
+            [
+                "add_group",
+                [
+                    "enemies",
+                    "enemies",
+                    "immediate"
+                ]
+            ],
+            [
                 "music",
                 [
                     "sealedMansion"
@@ -77,7 +106,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "I warn you.|No one knows what's inside these walls since then."
+                    "I warn you.|No one knows what's happened in these walls since then."
                 ]
             ],
             [
@@ -125,10 +154,18 @@
                 ]
             ],
             [
+                "transition",
+                [
+                    "open",
+                    "800",
+                    "36,17,89"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "Aesc",
-                    "Alright, the barrier's dispelled."
+                    "Alright, the barrier's dispelled.|Ah.....it's been so long since I've been here."
                 ]
             ],
             [
@@ -148,7 +185,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "I'll be following behind to figure out what's happened all those years ago.|Dispelling the barrier took a considerable amount of magic so I won't be able to help in a fight."
+                    "I'll be following behind your group to figure out what's happened all those years ago.|The spell from earlier and dispelling the barrier took a considerable amount of magic so I won't be able to help in a fight."
                 ]
             ],
             [
@@ -159,26 +196,31 @@
                 "speak",
                 [
                     "MC",
-                    "You've already done plenty for us.|Let's head in."
+                    "You've already done plenty for us.|We should head in."
                 ]
             ],
             [
                 "transition",
                 [
-                    "close"
+                    "close",
+                    "250"
                 ]
             ],
             [
-                "music_clear",
-                []
+                "music_fade_back",
+                [
+                    "1000"
+                ]
             ],
             [
-                "win_game",
-                []
+                "music",
+                [
+                    "sealedMansionExplore"
+                ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "chapter_title\nmusic;sealedMansion\nadd_group;Party\ntransition;close\nchange_background;CastleRuins\ntransition;open\nadd_portrait;Aesc;Left\nspeak;Aesc;Here we are. The old Lord's place.|After the incident, it has been sealed off by a mysterious force.\nmove_portrait;Aesc;Right\nspeak;Aesc;I can remove this barrier however...\nmirror_portrait;Aesc\nspeak;Aesc;I warn you.|No one knows what's inside these walls since then.\nmirror_portrait;Aesc\nadd_portrait;MC;Left\nspeak;Aesc;After all, nothing went in or out in these past few decades.|Who knows what sorts of magicks have been in effect.|Don't touch anything strange else something bad might happen.\nspeak;MC;We'll take your advice.|Thank you for showing us the way.\nend_skip\nspeak;Aesc;Stand back now, I'm going to dispel the barrier now.\nsound;WindWave\nspeak;Aesc;Alright, the barrier's dispelled.\nspeak;MC;Thank you.\nmirror_portrait;Aesc\nspeak;Aesc;I'll be following behind to figure out what's happened all those years ago.|Dispelling the barrier took a considerable amount of magic so I won't be able to help in a fight.\nend_skip\nspeak;MC;You've already done plenty for us.|Let's head in.\ntransition;close\nmusic_clear\nwin_game\n"
+        "source": "chapter_title\nenable_fog_of_war;t\nset_fog_of_war;gba;7\nadd_group;Party;Party;immediate\nadd_group;enemies;enemies;immediate\nmusic;sealedMansion\nadd_group;Party\ntransition;close\nchange_background;CastleRuins\ntransition;open\nadd_portrait;Aesc;Left\nspeak;Aesc;Here we are. The old Lord's place.|After the incident, it has been sealed off by a mysterious force.\nmove_portrait;Aesc;Right\nspeak;Aesc;I can remove this barrier however...\nmirror_portrait;Aesc\nspeak;Aesc;I warn you.|No one knows what's happened in these walls since then.\nmirror_portrait;Aesc\nadd_portrait;MC;Left\nspeak;Aesc;After all, nothing went in or out in these past few decades.|Who knows what sorts of magicks have been in effect.|Don't touch anything strange else something bad might happen.\nspeak;MC;We'll take your advice.|Thank you for showing us the way.\nend_skip\nspeak;Aesc;Stand back now, I'm going to dispel the barrier now.\nsound;WindWave\ntransition;open;800;36,17,89\nspeak;Aesc;Alright, the barrier's dispelled.|Ah.....it's been so long since I've been here.\nspeak;MC;Thank you.\nmirror_portrait;Aesc\nspeak;Aesc;I'll be following behind your group to figure out what's happened all those years ago.|The spell from earlier and dispelling the barrier took a considerable amount of magic so I won't be able to help in a fight.\nend_skip\nspeak;MC;You've already done plenty for us.|We should head in.\ntransition;close;250\nmusic_fade_back;1000\nmusic;sealedMansionExplore\n"
     }
 ]

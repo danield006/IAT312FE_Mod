@@ -1,19 +1,19 @@
 [
     {
-        "name": "destroyChestWall",
+        "name": "destroyWall",
         "trigger": "unit_death",
-        "level_nid": "3_2",
-        "condition": "unit.nid == 'wall2'",
+        "level_nid": "3_1",
+        "condition": "unit.nid == 'wall1'",
         "commands": [
             [
                 "show_layer",
                 [
-                    "breakChestWall"
+                    "break"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "show_layer;breakChestWall\n"
+        "source": "show_layer;break\n"
     }
 ]

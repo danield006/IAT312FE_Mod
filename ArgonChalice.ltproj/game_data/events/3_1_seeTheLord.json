@@ -2,7 +2,7 @@
     {
         "name": "seeTheLord",
         "trigger": "unit_wait",
-        "level_nid": "3_2",
+        "level_nid": "3_1",
         "condition": "game.level.regions.get('southArea').contains(game.get_unit('MC').position)",
         "commands": [
             [

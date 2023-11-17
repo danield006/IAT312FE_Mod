@@ -2,7 +2,7 @@
     {
         "name": "lordPanic",
         "trigger": "unit_death",
-        "level_nid": "3_2",
+        "level_nid": "3_1",
         "condition": "unit.nid == 'mobHighGuard'",
         "commands": [
             [

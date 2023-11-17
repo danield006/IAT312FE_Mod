@@ -6,27 +6,169 @@
         "condition": "True",
         "commands": [
             [
+                "add_group",
+                [
+                    "Party",
+                    "Party"
+                ]
+            ],
+            [
+                "add_group",
+                [
+                    "Aesc",
+                    "Aesc"
+                ]
+            ],
+            [
                 "music",
                 [
-                    "sealedMansionExplore"
+                    "greshiaBGM2"
                 ]
             ],
             [
-                "enable_fog_of_war",
+                "speak",
                 [
-                    "t"
+                    "MC",
+                    "So that was an adventure wasn't it?"
                 ]
             ],
             [
-                "set_fog_of_war",
+                "speak",
                 [
-                    "gba",
-                    "7"
+                    "Senya",
+                    "Honestly that castle gave me the creeps.|Those power hungry people got what they deserved."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Yeah...they dabbled in what they should not have."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Under the guise of wealth, it is in the end, the common people who suffer.|Even with its wealth back in the day, the slums are still as present as ever."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Senya..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Sorry to interrupt but I'll help warp you three to your castle.|Take it as my thanks, that mansion holds many interesting things that I intend to uncover."
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Thank you so much!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Go prepare well. You can talk to me whenever you're ready."
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Aesc",
+                    "8,1"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Let's take this time to prep for our final battle."
+                ]
+            ],
+            [
+                "move_cursor",
+                [
+                    "5,2"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "5,2"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "This is the vendor",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "move_cursor",
+                [
+                    "11,2"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "11,2"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "This is the armory",
+                    "",
+                    "",
+                    "narration"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "MC",
+                    "Aesc"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Senya",
+                    "Aesc"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "Schuri",
+                    "Aesc"
                 ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "music;sealedMansionExplore\nenable_fog_of_war;t\nset_fog_of_war;gba;7\n"
+        "source": "add_group;Party;Party\nadd_group;Aesc;Aesc\nmusic;greshiaBGM2\nspeak;MC;So that was an adventure wasn't it?\nspeak;Senya;Honestly that castle gave me the creeps.|Those power hungry people got what they deserved.\nspeak;Schuri;Yeah...they dabbled in what they should not have.\nspeak;Senya;Under the guise of wealth, it is in the end, the common people who suffer.|Even with its wealth back in the day, the slums are still as present as ever.\nspeak;MC;Senya...\nspeak;Aesc;Sorry to interrupt but I'll help warp you three to your castle.|Take it as my thanks, that mansion holds many interesting things that I intend to uncover.\nbop_portrait;MC\nspeak;MC;Thank you so much!\nspeak;Aesc;Go prepare well. You can talk to me whenever you're ready.\nmove_unit;Aesc;8,1\nspeak;MC;Let's take this time to prep for our final battle.\nmove_cursor;5,2\nflicker_cursor;5,2\nspeak;;This is the vendor;;;narration\nmove_cursor;11,2\nflicker_cursor;11,2\nspeak;;This is the armory;;;narration\nadd_talk;MC;Aesc\nadd_talk;Senya;Aesc\nadd_talk;Schuri;Aesc\n"
     }
 ]
