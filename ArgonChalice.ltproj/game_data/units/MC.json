@@ -2,7 +2,7 @@
     {
         "nid": "MC",
         "name": "MC",
-        "desc": "An earnest and compassionate young man. Proficient at healing magic and talented with the sword and spear",
+        "desc": "An earnest and compassionate young man. Talented with the sword and spear",
         "variant": "",
         "level": 1,
         "klass": "Ephraim_Lord",
@@ -18,7 +18,7 @@
             "LCK": 3,
             "DEF": 10,
             "RES": 3,
-            "CON": 8,
+            "CON": 11,
             "MOV": 5
         },
         "growths": {
@@ -55,10 +55,6 @@
                 false
             ],
             [
-                "Heal",
-                false
-            ],
-            [
                 "Vulnerary",
                 false
             ]
@@ -88,7 +84,7 @@
             ],
             "Staff": [
                 false,
-                31,
+                0,
                 251
             ],
             "Light": [

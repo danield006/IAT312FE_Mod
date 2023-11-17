@@ -15,6 +15,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_talk;MC;Aesc;"
+        "source": "add_talk;MC;Aesc\n"
     }
 ]

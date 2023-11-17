@@ -34,26 +34,12 @@
                 ]
             ],
             [
-                "change_objective_simple",
-                [
-                    "Protect Aesc for 8 turns"
-                ]
-            ],
-            [
-                "change_objective_win",
-                [
-                    "Protect Aesc for 8 turns"
-                ]
-            ],
-            [
-                "change_objective_loss",
-                [
-                    "MC or Aesc dies"
-                ]
+                "win_game",
+                []
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;Aesc;Right\nadd_portrait;MC;Left\nspeak;MC;You! Are you the one we spoke to earlier?\nspeak;Aesc;In the flesh. I must be brief,| I've got enough energy left to set up the rejecting field just one more time.|I need about 8 turns to set this up.|The monsters are smart and head straight for me but I'm unable to defend myself while I set this up.|You wish to learn about Aesc correct?|Then there's no better person to tell you than Aesc himself.|I'll tell you everything you wish to know if we can make it out of this mess.\nchange_objective_simple;Protect Aesc for 8 turns\nchange_objective_win;Protect Aesc for 8 turns\nchange_objective_loss;MC or Aesc dies\n"
+        "source": "add_portrait;Aesc;Right\nadd_portrait;MC;Left\nspeak;MC;You! Are you the one we spoke to earlier?\nspeak;Aesc;In the flesh. I must be brief,| I've got enough energy left to set up the rejecting field just one more time.|I need about 8 turns to set this up.|The monsters are smart and head straight for me but I'm unable to defend myself while I set this up.|You wish to learn about Aesc correct?|Then there's no better person to tell you than Aesc himself.|I'll tell you everything you wish to know if we can make it out of this mess.\nwin_game\n"
     }
 ]

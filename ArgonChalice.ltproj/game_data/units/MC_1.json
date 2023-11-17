@@ -2,7 +2,7 @@
     {
         "nid": "MC_1",
         "name": "MC",
-        "desc": "An earnest and compassionate young man. Proficient at healing magic and talented with the sword and spear",
+        "desc": "An earnest and compassionate young man. Talented with the sword and spear",
         "variant": "",
         "level": 1,
         "klass": "Ephraim_Lord",
@@ -72,7 +72,7 @@
             ],
             "Staff": [
                 false,
-                1,
+                0,
                 251
             ],
             "Light": [

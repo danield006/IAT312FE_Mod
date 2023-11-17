@@ -1,0 +1,90 @@
+[
+    {
+        "nid": "Aesc_Vulnerable",
+        "name": "Aesc",
+        "desc": "An extreamly mysterious old man with incredible magic ability. ",
+        "variant": "",
+        "level": 1,
+        "klass": "Sage",
+        "tags": [],
+        "bases": {
+            "HP": 32,
+            "STR": 11,
+            "MAG": 30,
+            "SKL": 30,
+            "SPD": 7,
+            "LCK": 14,
+            "DEF": 7,
+            "RES": 25,
+            "CON": 13,
+            "MOV": 7
+        },
+        "growths": {
+            "HP": 0,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "RES": 0,
+            "CON": 0,
+            "MOV": 0
+        },
+        "stat_cap_modifiers": {},
+        "starting_items": [],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0,
+                251
+            ],
+            "Lance": [
+                false,
+                0,
+                251
+            ],
+            "Axe": [
+                false,
+                0,
+                251
+            ],
+            "Bow": [
+                false,
+                0,
+                251
+            ],
+            "Staff": [
+                false,
+                251,
+                251
+            ],
+            "Light": [
+                false,
+                251,
+                251
+            ],
+            "Anima": [
+                false,
+                251,
+                251
+            ],
+            "Dark": [
+                false,
+                251,
+                251
+            ],
+            "Default": [
+                false,
+                0,
+                251
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "Aesc",
+        "affinity": "Fire",
+        "fields": []
+    }
+]

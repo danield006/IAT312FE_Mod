@@ -92,11 +92,15 @@
         "desc": "Senya's opinion of MC(>0 in order to use in final)"
     },
     {
-        "nid": "_ch2BDisruptedSpell",
-        "desc": "Whether you stepped into the area to disrupt the spell"
+        "nid": "_ch2TalkedToAesc",
+        "desc": "Whether you have talked to Aesc yet in chapter 2"
     },
     {
-        "nid": "_ch2BAllowedToGo",
-        "desc": "Whether all the NPC villagers are rescued yet (true = allowed to go)"
+        "nid": "_ch2AescTalkTurn",
+        "desc": "Which turn did you talk to Aesc for defense turn count"
+    },
+    {
+        "nid": "New Slot",
+        "desc": null
     }
 ]
