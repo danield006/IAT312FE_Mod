@@ -242,11 +242,15 @@
     "15_FirstTurnComplete.json": 240,
     "15_SecondTurnComplete.json": 241,
     "15x_Intro.json": 242,
-    "15x_SchuriTalk.json": 243,
-    "15x_MentorTalk.json": 244,
-    "15x_SenyaTalk.json": 245,
-    "15x_Leave.json": 246,
-    "15x_New_Event.json": 247,
-    "5_1_10-aloneBadBadEnding.json": 248,
-    "2_1_DebugKillBones.json": 249
+    "1x_Intro.json": 243,
+    "15x_SchuriTalk.json": 244,
+    "1x_SchuriTalk.json": 245,
+    "15x_MentorTalk.json": 246,
+    "15x_SenyaTalk.json": 247,
+    "1x_SenyaTalk.json": 248,
+    "15x_Leave.json": 249,
+    "1x_Leave.json": 250,
+    "15x_New_Event.json": 251,
+    "5_1_10-aloneBadBadEnding.json": 252,
+    "2_1_DebugKillBones.json": 253
 }

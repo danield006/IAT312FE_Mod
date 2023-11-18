@@ -2,27 +2,27 @@
     {
         "name": "Leave",
         "trigger": "Leave",
-        "level_nid": "15x",
+        "level_nid": "1x",
         "condition": "True",
         "commands": [
             [
                 "add_portrait",
                 [
-                    "Mentor",
+                    "Senya",
                     "Right"
                 ]
             ],
             [
                 "speak",
                 [
-                    "Mentor",
-                    "Ready to go? Let's start your training shall we?"
+                    "Senya",
+                    "Wait...I see Greshia finally but...|there's no guards in front...|Something's wrong. Let's hurry."
                 ]
             ],
             [
                 "remove_portrait",
                 [
-                    "Mentor"
+                    "Senya"
                 ]
             ],
             [
@@ -32,6 +32,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;Mentor;Right\nspeak;Mentor;Ready to go? Let's start your training shall we?\nremove_portrait;Mentor\nwin_game\n"
+        "source": "add_portrait;Senya;Right\nspeak;Senya;Wait...I see Greshia finally but...|there's no guards in front...|Something's wrong. Let's hurry.\nremove_portrait;Senya\nwin_game\n"
     }
 ]

@@ -17,11 +17,12 @@
     "TutorialHouses.json": 15,
     "Tutorial_Battle.json": 16,
     "Forest.json": 17,
-    "Forest_1.json": 18,
-    "New_Tilemap.json": 19,
-    "ch3C_smallerGreshia.json": 20,
-    "CH3_sealed_mansion.json": 21,
-    "CH2.json": 22,
-    "New_Tilemap_1.json": 23,
-    "Tutorial-FreeTime.json": 24
+    "CH1.json": 18,
+    "CH1_freeTime.json": 19,
+    "New_Tilemap.json": 20,
+    "ch3C_smallerGreshia.json": 21,
+    "CH3_sealed_mansion.json": 22,
+    "CH2.json": 23,
+    "New_Tilemap_1.json": 24,
+    "Tutorial-FreeTime.json": 25
 }

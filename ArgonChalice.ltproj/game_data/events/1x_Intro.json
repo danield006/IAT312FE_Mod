@@ -1,0 +1,84 @@
+[
+    {
+        "name": "Intro",
+        "trigger": "level_start",
+        "level_nid": "1x",
+        "condition": "True",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "Hill"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "location_card",
+                [
+                    "On the way to Greshia..."
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Might be some good time to chat while we're on the way",
+                    "",
+                    "",
+                    "thought_bubble"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "MC",
+                    "Senya"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "MC",
+                    "Schuri"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "When you're ready to continue, click <green>Leave</green> on the left side of the road",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "0,4"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "transition;close\nchange_background;Hill\ntransition;open\nlocation_card;On the way to Greshia...\nadd_portrait;MC;FarRight\nspeak;MC;Might be some good time to chat while we're on the way;;;thought_bubble\nadd_talk;MC;Senya\nadd_talk;MC;Schuri\nspeak;;When you're ready to continue, click <green>Leave</green> on the left side of the road;;;hint\nflicker_cursor;0,4\n"
+    }
+]

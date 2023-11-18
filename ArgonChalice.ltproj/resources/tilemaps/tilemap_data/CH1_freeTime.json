@@ -1,0 +1,1286 @@
+[
+    {
+        "nid": "CH1_freeTime",
+        "size": [
+            16,
+            10
+        ],
+        "autotile_fps": 29,
+        "layers": [
+            {
+                "nid": "base",
+                "visible": true,
+                "foreground": false,
+                "terrain_grid": {
+                    "7,3": "7",
+                    "8,5": "7",
+                    "9,0": "12",
+                    "10,7": "1",
+                    "3,2": "1",
+                    "4,5": "1",
+                    "9,9": "1",
+                    "5,1": "1",
+                    "10,9": "1",
+                    "0,5": "1",
+                    "1,0": "12",
+                    "2,7": "1",
+                    "6,1": "1",
+                    "7,4": "7",
+                    "8,0": "12",
+                    "8,7": "7",
+                    "9,6": "1",
+                    "10,5": "1",
+                    "0,9": "1",
+                    "3,4": "7",
+                    "4,7": "1",
+                    "5,6": "1",
+                    "0,0": "12",
+                    "7,9": "7",
+                    "0,7": "1",
+                    "1,6": "1",
+                    "2,5": "1",
+                    "5,8": "1",
+                    "6,7": "7",
+                    "7,6": "7",
+                    "8,2": "1",
+                    "9,3": "7",
+                    "3,1": "1",
+                    "8,9": "7",
+                    "9,4": "7",
+                    "10,3": "7",
+                    "3,6": "1",
+                    "4,1": "7",
+                    "5,4": "7",
+                    "0,2": "1",
+                    "1,3": "7",
+                    "4,8": "1",
+                    "2,8": "1",
+                    "6,2": "1",
+                    "1,4": "7",
+                    "2,3": "7",
+                    "6,5": "7",
+                    "7,0": "12",
+                    "8,4": "7",
+                    "9,1": "1",
+                    "10,6": "1",
+                    "3,3": "7",
+                    "4,4": "7",
+                    "10,1": "1",
+                    "3,8": "1",
+                    "1,8": "1",
+                    "4,3": "7",
+                    "5,2": "1",
+                    "6,9": "7",
+                    "10,8": "1",
+                    "0,4": "7",
+                    "1,1": "1",
+                    "2,6": "1",
+                    "6,0": "12",
+                    "7,5": "7",
+                    "2,1": "1",
+                    "7,2": "1",
+                    "8,6": "7",
+                    "9,7": "1",
+                    "10,4": "7",
+                    "0,8": "1",
+                    "3,5": "1",
+                    "4,6": "1",
+                    "5,7": "1",
+                    "9,8": "1",
+                    "5,0": "12",
+                    "0,6": "1",
+                    "1,7": "1",
+                    "2,4": "7",
+                    "5,9": "1",
+                    "6,6": "7",
+                    "7,7": "7",
+                    "8,1": "1",
+                    "8,8": "7",
+                    "9,5": "1",
+                    "10,2": "1",
+                    "3,7": "1",
+                    "4,0": "4",
+                    "5,5": "1",
+                    "0,1": "1",
+                    "7,8": "7",
+                    "1,5": "1",
+                    "2,2": "1",
+                    "6,4": "7",
+                    "7,1": "1",
+                    "8,3": "7",
+                    "9,2": "1",
+                    "3,0": "12",
+                    "10,0": "12",
+                    "3,9": "1",
+                    "1,9": "1",
+                    "4,2": "7",
+                    "5,3": "7",
+                    "6,8": "7",
+                    "0,3": "7",
+                    "1,2": "1",
+                    "4,9": "1",
+                    "2,9": "1",
+                    "6,3": "7",
+                    "2,0": "12",
+                    "11,0": "12",
+                    "12,0": "12",
+                    "13,0": "12",
+                    "11,1": "1",
+                    "12,1": "1",
+                    "13,1": "1",
+                    "11,2": "1",
+                    "12,2": "1",
+                    "13,2": "1",
+                    "13,5": "1",
+                    "12,5": "1",
+                    "11,5": "1",
+                    "11,6": "1",
+                    "12,6": "1",
+                    "12,7": "1",
+                    "13,7": "1",
+                    "13,8": "1",
+                    "13,9": "1",
+                    "12,9": "1",
+                    "11,9": "1",
+                    "11,8": "1",
+                    "11,7": "1",
+                    "13,6": "1",
+                    "12,8": "1",
+                    "11,3": "7",
+                    "12,3": "7",
+                    "13,3": "7",
+                    "13,4": "7",
+                    "12,4": "7",
+                    "11,4": "7"
+                },
+                "sprite_grid": {
+                    "0,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "1,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "2,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "3,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "4,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "5,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "6,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "7,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "8,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "9,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "10,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "10,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "9,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "8,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "7,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "6,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "5,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "4,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "3,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "2,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "1,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "0,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "0,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "0,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "0,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "1,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "1,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "1,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "1,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "1,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "1,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "0,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "0,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "0,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "0,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "0,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "9,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "10,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "7,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "8,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "9,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "5,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "6,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "5,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "5,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "5,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "5,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "4,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "4,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "4,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "4,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "3,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "2,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "2,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "2,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "2,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "2,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "2,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "2,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "3,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "3,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "3,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "3,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "3,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "3,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "3,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "4,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "4,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "4,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "4,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "2,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "1,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "1,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "5,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "5,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "6,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "7,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "8,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "8,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "7,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "6,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "5,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "9,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "10,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "10,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "9,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "6,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "7,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "8,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "9,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "10,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "10,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "9,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "8,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "7,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "6,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "6,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "7,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "10,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "9,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "9,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "8,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "7,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "6,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "8,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "6,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "7,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "8,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "10,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "10,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "11,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "11,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "11,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "11,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "11,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "11,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "11,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "11,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "11,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "12,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "12,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "12,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "12,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "12,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "12,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "12,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "12,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "12,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "13,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "13,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "13,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "13,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "13,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "13,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "13,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "13,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "13,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "11,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "12,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "13,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "14,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "14,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "14,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "14,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "14,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "14,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "14,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "14,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "14,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "14,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "15,0": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "15,1": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "15,2": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "15,3": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            8
+                        ]
+                    ],
+                    "15,4": [
+                        "SacredStonesBase",
+                        [
+                            17,
+                            12
+                        ]
+                    ],
+                    "15,5": [
+                        "SacredStonesBase",
+                        [
+                            16,
+                            9
+                        ]
+                    ],
+                    "15,6": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "15,7": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "15,8": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ],
+                    "15,9": [
+                        "SacredStonesBase",
+                        [
+                            3,
+                            4
+                        ]
+                    ]
+                }
+            }
+        ],
+        "tilesets": [
+            "SacredStonesBase",
+            "Chpt4",
+            "SacredStonesBase"
+        ]
+    }
+]

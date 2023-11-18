@@ -2,7 +2,7 @@
     {
         "nid": "25_3",
         "name": "Chapter1_overview",
-        "tilemap": "Forest_1",
+        "tilemap": "CH1",
         "bg_tilemap": null,
         "party": "MC",
         "music": {},
