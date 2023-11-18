@@ -245,5 +245,10 @@
     "15_WaitMC.json": 243,
     "15_FirstTurnComplete.json": 244,
     "15_SecondTurnComplete.json": 245,
-    "15x_Intro.json": 246
+    "15x_Intro.json": 246,
+    "15x_SchuriTalk.json": 247,
+    "15x_MentorTalk.json": 248,
+    "15x_SenyaTalk.json": 249,
+    "15x_Leave.json": 250,
+    "15x_New_Event.json": 251
 }

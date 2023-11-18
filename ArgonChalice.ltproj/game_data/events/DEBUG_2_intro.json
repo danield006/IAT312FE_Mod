@@ -4,24 +4,9 @@
         "trigger": "level_start",
         "level_nid": "DEBUG_2",
         "condition": "True",
-        "commands": [
-            [
-                "text_entry",
-                [
-                    "MC_name",
-                    "What's your name?"
-                ]
-            ],
-            [
-                "set_name",
-                [
-                    "",
-                    "{var:MC_name}"
-                ]
-            ]
-        ],
+        "commands": [],
         "only_once": false,
         "priority": 20,
-        "source": "text_entry;MC_name;What's your name?\nset_name;;{var:MC_name}\n"
+        "source": ""
     }
 ]

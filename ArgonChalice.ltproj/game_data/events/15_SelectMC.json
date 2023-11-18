@@ -6,13 +6,6 @@
         "condition": "unit.nid == 'MC_1'",
         "commands": [
             [
-                "game_var",
-                [
-                    "_convoy",
-                    "False"
-                ]
-            ],
-            [
                 "speak",
                 [
                     "",
@@ -93,6 +86,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "game_var;_convoy;False\nspeak;;This unit will be your character.|If he dies in battle, it will be a game over and you restart from the nearest savepoint.|All units that you can control will be blue.;;;narration_top;;;;;3\nflicker_cursor;Soldier (ExampleGeneric2)\nspeak;;Red units are enemies!|They can attack both blue and green units.;;;narration_top;;;;;3\nflicker_cursor;Soldier (ExampleGeneric)\nspeak;;Green units are neutral allies|You can't attack them and they are also targets of red units.;;;narration_top;;;;;3\nmove_cursor;MC (MC_1)\nspeak;;Now that you've selected your unit, try moving them around and press 'x' to select a tile.|Hit 'x' again on 'wait' to stop your character at the selected tile.;;;narration_top;;;;;3\n"
+        "source": "speak;;This unit will be your character.|If he dies in battle, it will be a game over and you restart from the nearest savepoint.|All units that you can control will be blue.;;;narration_top;;;;;3\nflicker_cursor;Soldier (ExampleGeneric2)\nspeak;;Red units are enemies!|They can attack both blue and green units.;;;narration_top;;;;;3\nflicker_cursor;Soldier (ExampleGeneric)\nspeak;;Green units are neutral allies|You can't attack them and they are also targets of red units.;;;narration_top;;;;;3\nmove_cursor;MC (MC_1)\nspeak;;Now that you've selected your unit, try moving them around and press 'x' to select a tile.|Hit 'x' again on 'wait' to stop your character at the selected tile.;;;narration_top;;;;;3\n"
     }
 ]

@@ -16,12 +16,12 @@
             "enemy2_battle": null
         },
         "objective": {
-            "simple": "Talk to Mentor when you're ready",
-            "win": "Talk to Mentor when you're ready",
-            "loss": "MC dies"
+            "simple": "Leave via the stairs",
+            "win": "Leave via the stairs",
+            "loss": "-"
         },
-        "roam": false,
-        "roam_unit": null,
+        "roam": true,
+        "roam_unit": "MC",
         "go_to_overworld": false,
         "should_record": true,
         "units": [
@@ -32,7 +32,7 @@
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
-                    5,
+                    8,
                     3
                 ],
                 "starting_traveler": null,
@@ -44,32 +44,35 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": null,
+                "starting_position": [
+                    8,
+                    7
+                ],
                 "starting_traveler": null,
                 "generic": false
             },
             {
-                "nid": "Senya_1",
+                "nid": "Senya",
                 "team": "other",
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
-                    8,
+                    7,
                     6
                 ],
                 "starting_traveler": null,
                 "generic": false
             },
             {
-                "nid": "Schuri_1",
+                "nid": "Schuri",
                 "team": "other",
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
                     9,
-                    7
+                    6
                 ],
                 "starting_traveler": null,
                 "generic": false
@@ -87,136 +90,17 @@
         ],
         "regions": [
             {
-                "nid": "House1",
-                "region_type": "event",
-                "position": [
-                    0,
-                    4
-                ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "Visit",
-                "condition": "True",
-                "time_left": null,
-                "only_once": true,
-                "interrupt_move": false
-            },
-            {
-                "nid": "House2",
-                "region_type": "event",
-                "position": [
-                    2,
-                    4
-                ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "Visit",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "House3",
-                "region_type": "event",
-                "position": [
-                    6,
-                    5
-                ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "Visit",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "House4",
-                "region_type": "event",
-                "position": [
-                    8,
-                    5
-                ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "Visit",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "House5",
-                "region_type": "event",
-                "position": [
-                    12,
-                    3
-                ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "Visit",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "House6",
-                "region_type": "event",
-                "position": [
-                    14,
-                    3
-                ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "Visit",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "Gate",
+                "nid": "Leave",
                 "region_type": "event",
                 "position": [
                     7,
-                    3
+                    8
                 ],
                 "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "Seize",
-                "condition": "unit.nid == 'MC_1'",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "Village1",
-                "region_type": "event",
-                "position": [
-                    1,
+                    3,
                     2
                 ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "Visit",
+                "sub_nid": "Leave",
                 "condition": "True",
                 "time_left": null,
                 "only_once": true,
@@ -227,19 +111,19 @@
             {
                 "nid": "Party",
                 "units": [
-                    "Senya_1",
-                    "Schuri_1"
+                    "Senya",
+                    "Schuri"
                 ],
                 "positions": {
                     "MC_1": [
                         7,
                         5
                     ],
-                    "Senya_1": [
+                    "Senya": [
                         8,
                         7
                     ],
-                    "Schuri_1": [
+                    "Schuri": [
                         9,
                         8
                     ]

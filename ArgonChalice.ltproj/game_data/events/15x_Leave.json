@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Leave",
+        "trigger": "Leave",
+        "level_nid": "15x",
+        "condition": "True",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Ready to go? Alright let's head to the courtyard for training."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "add_portrait;Senya;Left\nspeak;Senya;Ready to go? Alright let's head to the courtyard for training.\nremove_portrait;Senya\nwin_game\n"
+    }
+]

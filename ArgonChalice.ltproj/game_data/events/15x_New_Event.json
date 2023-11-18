@@ -1,0 +1,40 @@
+[
+    {
+        "name": "New Event",
+        "trigger": "level_start",
+        "level_nid": "15x",
+        "condition": "True",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#FOR DEBUGGING CONVERSATIONS, SET THE INTRO TO FALSE TO IGNORE IT BUT KEEP THE CONVERSATION ENABLERS."
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "MC (MC_1)",
+                    "Senya"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "MC (MC_1)",
+                    "Schuri"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "MC (MC_1)",
+                    "Mentor"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "#FOR DEBUGGING CONVERSATIONS, SET THE INTRO TO FALSE TO IGNORE IT BUT KEEP THE CONVERSATION ENABLERS.\nadd_talk;MC (MC_1);Senya\nadd_talk;MC (MC_1);Schuri\nadd_talk;MC (MC_1);Mentor\n"
+    }
+]

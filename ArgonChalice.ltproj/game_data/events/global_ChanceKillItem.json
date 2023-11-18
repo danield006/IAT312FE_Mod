@@ -3,8 +3,14 @@
         "name": "ChanceKillItem",
         "trigger": "unit_death",
         "level_nid": null,
-        "condition": "unit1.team == 'enemy' && unit2.team == 'player'",
+        "condition": "unit.team == 'enemy'",
         "commands": [
+            [
+                "if",
+                [
+                    "unit2.team == 'player'"
+                ]
+            ],
             [
                 "game_var",
                 [
@@ -22,7 +28,7 @@
                 "speak",
                 [
                     "",
-                    "You found an item!"
+                    "Hm? They dropped an item!"
                 ]
             ],
             [
@@ -42,7 +48,7 @@
                 "speak",
                 [
                     "",
-                    "You found an item!"
+                    "Hm? They dropped an item!"
                 ]
             ],
             [
@@ -62,7 +68,7 @@
                 "speak",
                 [
                     "",
-                    "You found an item!"
+                    "Hm? They dropped an item!"
                 ]
             ],
             [
@@ -82,7 +88,7 @@
                 "speak",
                 [
                     "",
-                    "You found an item!"
+                    "Hm? They dropped an item!"
                 ]
             ],
             [
@@ -102,7 +108,7 @@
                 "speak",
                 [
                     "",
-                    "You found an item!"
+                    "Hm? They dropped an item!"
                 ]
             ],
             [
@@ -122,7 +128,7 @@
                 "speak",
                 [
                     "",
-                    "You found an item!"
+                    "Hm? They dropped an item!"
                 ]
             ],
             [
@@ -135,10 +141,14 @@
             [
                 "end",
                 []
+            ],
+            [
+                "end",
+                []
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "game_var;_randomCheckItemDrop;game.get_random(0,100)\nif;game.game_vars['_randomCheckItemDrop'] == 90\n    speak;;You found an item!\n    give_item;{unit2};Dragonshield (Dragonshield)\nelif;game.game_vars['_randomCheckItemDrop'] == 91\n    speak;;You found an item!\n    give_item;{unit2};Energy Ring (Energy Ring)\nelif;game.game_vars['_randomCheckItemDrop'] == 92\n    speak;;You found an item!\n    give_item;{unit2};Speedwing (Speedwing)\nelif;game.game_vars['_randomCheckItemDrop'] == 93\n    speak;;You found an item!\n    give_item;{unit2};Talisman (Talisman)\nelif;game.game_vars['_randomCheckItemDrop'] == 94\n    speak;;You found an item!\n    give_item;{unit2};Goddess Icon (Goddess Icon)\nelif;game.game_vars['_randomCheckItemDrop'] == 95\n    speak;;You found an item!\n    give_item;{unit2};Secret Book (Secret Book)\nend\n"
+        "source": "if;unit2.team == 'player'\n    game_var;_randomCheckItemDrop;game.get_random(0,100)\n    if;game.game_vars['_randomCheckItemDrop'] == 90\n        speak;;Hm? They dropped an item!\n        give_item;{unit2};Dragonshield (Dragonshield)\n    elif;game.game_vars['_randomCheckItemDrop'] == 91\n        speak;;Hm? They dropped an item!\n        give_item;{unit2};Energy Ring (Energy Ring)\n    elif;game.game_vars['_randomCheckItemDrop'] == 92\n        speak;;Hm? They dropped an item!\n        give_item;{unit2};Speedwing (Speedwing)\n    elif;game.game_vars['_randomCheckItemDrop'] == 93\n        speak;;Hm? They dropped an item!\n        give_item;{unit2};Talisman (Talisman)\n    elif;game.game_vars['_randomCheckItemDrop'] == 94\n        speak;;Hm? They dropped an item!\n        give_item;{unit2};Goddess Icon (Goddess Icon)\n    elif;game.game_vars['_randomCheckItemDrop'] == 95\n        speak;;Hm? They dropped an item!\n        give_item;{unit2};Secret Book (Secret Book)\n    end\nend\n"
     }
 ]

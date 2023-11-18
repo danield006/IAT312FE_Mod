@@ -7,8 +7,7 @@
         "level": 1,
         "klass": "Ephraim_Lord",
         "tags": [
-            "Lord",
-            "Convoy"
+            "Lord"
         ],
         "bases": {
             "HP": 18,

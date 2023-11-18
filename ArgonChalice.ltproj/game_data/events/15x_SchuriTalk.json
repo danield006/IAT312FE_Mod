@@ -1,0 +1,120 @@
+[
+    {
+        "name": "SchuriTalk",
+        "trigger": "on_talk",
+        "level_nid": "15x",
+        "condition": "target.nid == 'Schuri'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Yes?"
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "SchuriConversation1",
+                    "Which topic do you want to ask about?",
+                    "Schuri, Senya, Mentor",
+                    "FLAG(backable)",
+                    "horizontal",
+                    "top_left"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['SchuriConversation1'] == 'Schuri'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Huh? Me?"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#####################################"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['SchuriConversation1'] == 'Senya'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "PLACEHOLDER FOR Senya."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##################"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['SchuriConversation1'] == 'Mentor'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "PLACEHOLDER FOR Mentor."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##################"
+                ]
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Schuri;Right\nspeak;Schuri;Yes?\nchoice;SchuriConversation1;Which topic do you want to ask about?;Schuri, Senya, Mentor;FLAG(backable);horizontal;top_left\nif;game.game_vars['SchuriConversation1'] == 'Schuri'\n    add_portrait;MC;Left\n    speak;Schuri;Huh? Me?\n    #####################################\nelif;game.game_vars['SchuriConversation1'] == 'Senya'\n    add_portrait;MC;Left\n    speak;Schuri;PLACEHOLDER FOR Senya.\n    ##################\nelif;game.game_vars['SchuriConversation1'] == 'Mentor'\n    add_portrait;MC;Left\n    speak;Schuri;PLACEHOLDER FOR Mentor.\n    ##################\nend\n"
+    }
+]
