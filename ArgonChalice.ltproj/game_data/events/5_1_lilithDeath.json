@@ -288,6 +288,23 @@
                 ]
             ],
             [
+                "if",
+                [
+                    "game.game_vars['_ch3TomeChoice'] == 'Yes'"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_gameEnding",
+                    "10"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
                 "game_var",
                 [
                     "_gameEnding",
@@ -432,6 +449,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#maybe for second prototype\n#speak;Lyon;You!\n#inc_game_var;kill_lilith\n#phase 1 will be normal party\nif;kill_lilith==1\n    music;finalBossFightMid\n    #for proto one\n    #create phase 2\n    #boss takes control of party\nelif;kill_lilith==2\n    music;finalBossFightClimax\n    #create final phase\nelif;kill_lilith==3\n    #\nend\n####################################################\nmusic;deathThroes\nmulti_add_portrait;Lilith;Right;MC;Left\nspeak;Lilith;How could this be...|You have no idea...|what this chalice can accomplish...|you...;;;noir\nmove_portrait;Lilith;MidRight\nsound;FireBall\nmove_portrait;MC;FarLeft\nmove_portrait;Lilith;Right\nmove_portrait;MC;Left\nspeak;MC;It was never yours in the first place.\nmove_portrait;MC;MidLeft\nsound;Attack Hit 3\nmove_portrait;MC;Left\n#killing off the controlled char for now, remove when bonds implemented\nspeak;Lilith;You bastard!!|I'm taking everyone down with me!;;;noir\nexpression;Lilith;CloseEyes\nspeak;Lilith;.......;;;noir\nsound;CombatDeath\nwait;100\nmulti_remove_portrait;Lilith;MC\nmusic_fade_back;1200\nwait;1000\nspeak;;As the necromancer, Lilith, dropped to the ground. The magic she was casted stopped.|Around Sir Cyrus' body, particles shone, slowly dissipating.|However...he would never come back up ever again.;;;narration_top\nend_skip\n#setting the endings\n#friendless endings\nif;(_SenyaControlled==True) and (_SchuriControlled==True)\n    if;(game.check_dead('Schuri') and game.check_dead('Senya'))\n        game_var;_gameEnding;7\n    elif;(game.check_dead('Senya')\n        game_var;_gameEnding;8\n    elif;(game.check_dead('Schuri')\n        game_var;_gameEnding;9\n    end\n    #senya endings\nelif;_SchuriControlled==True\n    if;game.check_dead('Schuri')\n        game_var;_gameEnding;2\n    else\n        game_var;_gameEnding;3\n    end\n    #schuri endings\nelif;_SenyaControlled==True\n    if;game.check_dead('Senya')\n        game_var;_gameEnding;5\n    else\n        game_var;_gameEnding;4\n    end\n    #golden ending\nelse\n    game_var;_gameEnding;1\nend\nwin_game\n"
+        "source": "#maybe for second prototype\n#speak;Lyon;You!\n#inc_game_var;kill_lilith\n#phase 1 will be normal party\nif;kill_lilith==1\n    music;finalBossFightMid\n    #for proto one\n    #create phase 2\n    #boss takes control of party\nelif;kill_lilith==2\n    music;finalBossFightClimax\n    #create final phase\nelif;kill_lilith==3\n    #\nend\n####################################################\nmusic;deathThroes\nmulti_add_portrait;Lilith;Right;MC;Left\nspeak;Lilith;How could this be...|You have no idea...|what this chalice can accomplish...|you...;;;noir\nmove_portrait;Lilith;MidRight\nsound;FireBall\nmove_portrait;MC;FarLeft\nmove_portrait;Lilith;Right\nmove_portrait;MC;Left\nspeak;MC;It was never yours in the first place.\nmove_portrait;MC;MidLeft\nsound;Attack Hit 3\nmove_portrait;MC;Left\n#killing off the controlled char for now, remove when bonds implemented\nspeak;Lilith;You bastard!!|I'm taking everyone down with me!;;;noir\nexpression;Lilith;CloseEyes\nspeak;Lilith;.......;;;noir\nsound;CombatDeath\nwait;100\nmulti_remove_portrait;Lilith;MC\nmusic_fade_back;1200\nwait;1000\nspeak;;As the necromancer, Lilith, dropped to the ground. The magic she was casted stopped.|Around Sir Cyrus' body, particles shone, slowly dissipating.|However...he would never come back up ever again.;;;narration_top\nend_skip\n#setting the endings\n#friendless endings\nif;(_SenyaControlled==True) and (_SchuriControlled==True)\n    if;(game.check_dead('Schuri') and game.check_dead('Senya'))\n        if;game.game_vars['_ch3TomeChoice'] == 'Yes'\n            game_var;_gameEnding;10\n        end\n        game_var;_gameEnding;7\n    elif;(game.check_dead('Senya')\n        game_var;_gameEnding;8\n    elif;(game.check_dead('Schuri')\n        game_var;_gameEnding;9\n    end\n    #senya endings\nelif;_SchuriControlled==True\n    if;game.check_dead('Schuri')\n        game_var;_gameEnding;2\n    else\n        game_var;_gameEnding;3\n    end\n    #schuri endings\nelif;_SenyaControlled==True\n    if;game.check_dead('Senya')\n        game_var;_gameEnding;5\n    else\n        game_var;_gameEnding;4\n    end\n    #golden ending\nelse\n    game_var;_gameEnding;1\nend\nwin_game\n"
     }
 ]

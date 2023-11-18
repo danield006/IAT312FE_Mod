@@ -253,5 +253,10 @@
         "aliveGoodTheme",
         false,
         false
+    ],
+    [
+        "okHappyEnding",
+        false,
+        false
     ]
 ]
