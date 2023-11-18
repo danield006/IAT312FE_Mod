@@ -1,0 +1,95 @@
+[
+    {
+        "name": "Intro",
+        "trigger": "level_start",
+        "level_nid": "15x",
+        "condition": "True",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "InsideCastle"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "location_card",
+                [
+                    "Your Room"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "FarLeft",
+                    "FLAG(mirror)"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Senya",
+                    "MidRight",
+                    "Schuri",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Hey new guy. Still setting up your room I guess.|I'm Senya and this is Schuri. And your name is?"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "text_entry",
+                [
+                    "MC_name",
+                    "What's your name?"
+                ]
+            ],
+            [
+                "set_name",
+                [
+                    "MC (MC_1)",
+                    "{var:MC_name}"
+                ]
+            ],
+            [
+                "set_name",
+                [
+                    "MC (MC)",
+                    "{var:MC_name}"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Cool, {var:MC_name}, nice to meet you."
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "transition;close\nchange_background;InsideCastle\ntransition;open\nlocation_card;Your Room\nadd_portrait;MC;FarLeft;FLAG(mirror)\nmulti_add_portrait;Senya;MidRight;Schuri;FarRight\nspeak;Senya;Hey new guy. Still setting up your room I guess.|I'm Senya and this is Schuri. And your name is?\nmirror_portrait;MC\ntext_entry;MC_name;What's your name?\nset_name;MC (MC_1);{var:MC_name}\nset_name;MC (MC);{var:MC_name}\nspeak;Senya;Cool, {var:MC_name}, nice to meet you."
+    }
+]

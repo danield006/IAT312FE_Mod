@@ -42,6 +42,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "speak;;As for your other keys to press, the most important are 'z' and 'c'.|C is the more information button. You can press c on units, items, and attributes to get more info on them. Try it out!|The 'z' button is the back button. You can press z to cancel an action.;;;narration_top;;;;;3\nend_skip;\nspeak;;That's all for the basics! When you're ready to continue, move your character to the castle entrance and press <green>Seize</green>.|In the future if you ever come back to this tutorial, you can skip ahead by directly seizing.|You can also press z to skip some dialogue as well;;;narration_top;;;;;3\n"
+        "source": "speak;;As for your other keys to press, the most important are 'z' and 'c'.|C is the more information button. You can press c on units, items, and attributes to get more info on them. Try it out!|The 'z' button is the back button. You can press z to cancel an action.;;;narration_top;;;;;3\nend_skip\nspeak;;That's all for the basics! When you're ready to continue, move your character to the castle entrance and press <green>Seize</green>.|In the future if you ever come back to this tutorial, you can skip ahead by directly seizing.|You can also press z to skip some dialogue as well;;;narration_top;;;;;3\n"
     }
 ]

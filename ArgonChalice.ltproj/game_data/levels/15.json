@@ -1,7 +1,7 @@
 [
     {
         "nid": "15",
-        "name": "Tutorial: Houses",
+        "name": "Tutorial: Basics",
         "tilemap": "Tutorial:Houses",
         "bg_tilemap": null,
         "party": "MC",
@@ -105,6 +105,16 @@
                 ],
                 "starting_traveler": null,
                 "generic": true
+            },
+            {
+                "nid": "MC",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
             }
         ],
         "regions": [
@@ -281,11 +291,6 @@
                 }
             }
         ],
-        "ai_groups": [
-            {
-                "nid": "",
-                "trigger_threshold": 1
-            }
-        ]
+        "ai_groups": []
     }
 ]

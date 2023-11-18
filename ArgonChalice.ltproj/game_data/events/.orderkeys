@@ -244,5 +244,6 @@
     "15_SelectMC.json": 242,
     "15_WaitMC.json": 243,
     "15_FirstTurnComplete.json": 244,
-    "15_SecondTurnComplete.json": 245
+    "15_SecondTurnComplete.json": 245,
+    "15x_Intro.json": 246
 }
