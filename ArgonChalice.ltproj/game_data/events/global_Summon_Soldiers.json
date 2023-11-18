@@ -90,6 +90,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "make_generic;;Soldier;1;other;Pursue\nadd_unit;{unit};{position};warp;closest\nmake_generic;;Soldier;1;other;Pursue\nadd_unit;{unit};{position};warp;closest\nmake_generic;;Soldier;1;other;Pursue\nadd_unit;{unit};{position};warp;closest\nmake_generic;;Soldier;1;other;Pursue\nadd_unit;{unit};{position};warp;closest\nwait;200\n"
     }
 ]

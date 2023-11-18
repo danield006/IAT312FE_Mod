@@ -15,6 +15,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "game_var;_convoy;True"
+        "source": "game_var;_convoy;True\n"
     }
 ]
