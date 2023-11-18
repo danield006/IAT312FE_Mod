@@ -13,13 +13,6 @@
                 ]
             ],
             [
-                "speak",
-                [
-                    "Bone",
-                    "Gah...|Bastard...|How could I die like this"
-                ]
-            ],
-            [
                 "expression",
                 [
                     "Bone",
@@ -27,9 +20,42 @@
                 ]
             ],
             [
+                "speak",
+                [
+                    "Bone",
+                    "Gah...|Bastards...|How could I just die like this..."
+                ]
+            ],
+            [
                 "remove_portrait",
                 [
                     "Bone"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Bandit1",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Bandit1",
+                    "Boss no! Everyone make a break for it! They killed boss!"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Bandit1"
+                ]
+            ],
+            [
+                "victory_screen",
+                [
+                    "Aircalibur"
                 ]
             ],
             [
@@ -46,6 +72,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;Bone;FarRight\nspeak;Bone;Gah...|Bastard...|How could I die like this\nexpression;Bone;CloseEyes\nremove_portrait;Bone\ngame_var;_ch1BonesEscapeFlag;False\nwin_game\n"
+        "source": "add_portrait;Bone;FarRight\nexpression;Bone;CloseEyes\nspeak;Bone;Gah...|Bastards...|How could I just die like this...\nremove_portrait;Bone\nadd_portrait;Bandit1;FarRight\nspeak;Bandit1;Boss no! Everyone make a break for it! They killed boss!\nremove_portrait;Bandit1\nvictory_screen;Aircalibur\ngame_var;_ch1BonesEscapeFlag;False\nwin_game\n"
     }
 ]

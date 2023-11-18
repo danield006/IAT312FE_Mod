@@ -1,0 +1,19 @@
+[
+    {
+        "name": "DebugKillBones",
+        "trigger": "turn_change",
+        "level_nid": "2_1",
+        "condition": "False",
+        "commands": [
+            [
+                "kill_unit",
+                [
+                    "Bone"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "kill_unit;Bone\n"
+    }
+]
