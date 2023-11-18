@@ -15,7 +15,14 @@
                 "give_item",
                 [
                     "{unit}",
-                    "Brave Bow (Brave Bow)"
+                    "Angelic Robe (Angelic Robe)"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Vulnerary (Vulnerary)"
                 ]
             ],
             [
@@ -27,6 +34,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "show_layer;Chest2\ngive_item;{unit};Brave Bow (Brave Bow)\nhas_traded;{unit}\n"
+        "source": "show_layer;Chest2\ngive_item;{unit};Angelic Robe (Angelic Robe)\ngive_item;{unit};Vulnerary (Vulnerary)\nhas_traded;{unit}\n"
     }
 ]

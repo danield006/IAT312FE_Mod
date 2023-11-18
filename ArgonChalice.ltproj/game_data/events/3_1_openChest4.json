@@ -15,14 +15,14 @@
                 "give_item",
                 [
                     "{unit}",
-                    "Heal"
+                    "Elixir (Elixir)"
                 ]
             ],
             [
                 "give_item",
                 [
                     "{unit}",
-                    "Vulnerary"
+                    "Angelic Robe (Angelic Robe)"
                 ]
             ],
             [
@@ -40,6 +40,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "show_layer;chest4\ngive_item;{unit};Heal\ngive_item;{unit};Vulnerary\ngive_money;250\nhas_traded;{unit}\n"
+        "source": "show_layer;chest4\ngive_item;{unit};Elixir (Elixir)\ngive_item;{unit};Angelic Robe (Angelic Robe)\ngive_money;250\nhas_traded;{unit}\n"
     }
 ]

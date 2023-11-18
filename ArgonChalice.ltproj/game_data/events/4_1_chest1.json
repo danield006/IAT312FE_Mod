@@ -15,7 +15,7 @@
                 "give_item",
                 [
                     "{unit}",
-                    "Poison Sword (Poison Sword)"
+                    "Elixir (Elixir)"
                 ]
             ],
             [
@@ -27,6 +27,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "show_layer;Chest1\ngive_item;{unit};Poison Sword (Poison Sword)\nhas_traded;{unit}\n"
+        "source": "show_layer;Chest1\ngive_item;{unit};Elixir (Elixir)\nhas_traded;{unit}\n"
     }
 ]

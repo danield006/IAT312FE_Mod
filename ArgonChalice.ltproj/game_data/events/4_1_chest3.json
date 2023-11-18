@@ -15,14 +15,14 @@
                 "give_item",
                 [
                     "{unit}",
-                    "Heal (Heal)"
+                    "Energy Ring (Energy Ring)"
                 ]
             ],
             [
-                "give_skill",
+                "give_item",
                 [
                     "{unit}",
-                    "Luck +5 (Luck +5)"
+                    "Goddess Icon (Goddess Icon)"
                 ]
             ],
             [
@@ -34,6 +34,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "show_layer;Chest3\ngive_item;{unit};Heal (Heal)\ngive_skill;{unit};Luck +5 (Luck +5)\nhas_traded;{unit}\n"
+        "source": "show_layer;Chest3\ngive_item;{unit};Energy Ring (Energy Ring)\ngive_item;{unit};Goddess Icon (Goddess Icon)\nhas_traded;{unit}\n"
     }
 ]

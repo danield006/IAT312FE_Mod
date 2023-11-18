@@ -21,7 +21,7 @@
                 "give_item",
                 [
                     "{unit}",
-                    "Blue Gem"
+                    "Torch (Torch)"
                 ]
             ],
             [
@@ -29,10 +29,20 @@
                 [
                     "{unit}"
                 ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Torches will increase your vision in fog of war",
+                    "",
+                    "",
+                    "hint"
+                ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "show_layer;chest2\ngive_money;150\ngive_item;{unit};Blue Gem\nhas_traded;{unit}\n"
+        "source": "show_layer;chest2\ngive_money;150\ngive_item;{unit};Torch (Torch)\nhas_traded;{unit}\nspeak;;Torches will increase your vision in fog of war;;;hint\n"
     }
 ]

@@ -15,7 +15,14 @@
                 "give_item",
                 [
                     "{unit}",
-                    "Elfire (Elfire)"
+                    "Speedwing (Speedwing)"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Secret Book (Secret Book)"
                 ]
             ],
             [
@@ -27,6 +34,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "show_layer;Chest4\ngive_item;{unit};Elfire (Elfire)\nhas_traded;{unit}\n"
+        "source": "show_layer;Chest4\ngive_item;{unit};Speedwing (Speedwing)\ngive_item;{unit};Secret Book (Secret Book)\nhas_traded;{unit}\n"
     }
 ]
