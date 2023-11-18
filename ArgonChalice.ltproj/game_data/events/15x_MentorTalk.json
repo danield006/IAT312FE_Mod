@@ -24,7 +24,7 @@
                 [
                     "MentorConversation1",
                     "Which topic do you want to ask about?",
-                    "Mentor, Senya, Schuri",
+                    "Mentor,Senya,Schuri",
                     "FLAG(backable)",
                     "horizontal",
                     "top_left"
@@ -115,6 +115,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Mentor;Right\nspeak;Mentor;What do you wanna ask about?\nchoice;MentorConversation1;Which topic do you want to ask about?;Mentor, Senya, Schuri;FLAG(backable);horizontal;top_left\nif;game.game_vars['MentorConversation1'] == 'Mentor'\n    add_portrait;MC;Left\n    speak;Mentor;PLACEHOLDER FOR MENTOR\n    #####################################\nelif;game.game_vars['MentorConversation1'] == 'Senya'\n    add_portrait;MC;Left\n    speak;Mentor;PLACEHOLDER FOR Senya.\n    ##################\nelif;game.game_vars['MentorConversation1'] == 'Schuri'\n    add_portrait;MC;Left\n    speak;Mentor;PLACEHOLDER FOR Schuri.\n    ##################\nend\n"
+        "source": "add_portrait;Mentor;Right\nspeak;Mentor;What do you wanna ask about?\nchoice;MentorConversation1;Which topic do you want to ask about?;Mentor,Senya,Schuri;FLAG(backable);horizontal;top_left\nif;game.game_vars['MentorConversation1'] == 'Mentor'\n    add_portrait;MC;Left\n    speak;Mentor;PLACEHOLDER FOR MENTOR\n    #####################################\nelif;game.game_vars['MentorConversation1'] == 'Senya'\n    add_portrait;MC;Left\n    speak;Mentor;PLACEHOLDER FOR Senya.\n    ##################\nelif;game.game_vars['MentorConversation1'] == 'Schuri'\n    add_portrait;MC;Left\n    speak;Mentor;PLACEHOLDER FOR Schuri.\n    ##################\nend\n"
     }
 ]
