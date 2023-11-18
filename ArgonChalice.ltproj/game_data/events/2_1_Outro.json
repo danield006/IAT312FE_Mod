@@ -6,15 +6,156 @@
         "condition": "True",
         "commands": [
             [
+                "if",
+                [
+                    "game.game_vars['_ch1BonesEscapeFlag'] == True"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "",
-                    "Outro scenes!"
+                    "Senya is mad that Bones managed to escape, -1",
+                    "",
+                    "",
+                    "narration_top"
                 ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SenyaOpinion",
+                    "-1"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Senya is happy that we managed to kill Bones, +1",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SenyaOpinion",
+                    "1"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_ch1VillageDestroyed'] == True"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri is mad we were unable to stop the bandits from destroying a village, -1",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SchuriOpinion",
+                    "-1"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri is happy that we managed to keep the villages safe, +1",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SchuriOpinion",
+                    "1"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "end",
+                []
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;;Outro scenes!\n"
+        "source": "if;game.game_vars['_ch1BonesEscapeFlag'] == True\n    add_portrait;Senya;Left\n    speak;;Senya is mad that Bones managed to escape, -1;;;narration_top\n    inc_game_var;_SenyaOpinion;-1\n    remove_portrait;Senya\nelse\n    add_portrait;Senya;Left\n    speak;;Senya is happy that we managed to kill Bones, +1;;;narration_top\n    inc_game_var;_SenyaOpinion;1\n    remove_portrait;Senya\nend\nif;game.game_vars['_ch1VillageDestroyed'] == True\n    add_portrait;Schuri;Left\n    speak;;Schuri is mad we were unable to stop the bandits from destroying a village, -1;;;narration_top\n    inc_game_var;_SchuriOpinion;-1\n    remove_portrait;Schuri\nelse\n    add_portrait;Schuri;Left\n    speak;;Schuri is happy that we managed to keep the villages safe, +1;;;narration_top\n    inc_game_var;_SchuriOpinion;1\n    remove_portrait;Schuri\nend\n"
     }
 ]

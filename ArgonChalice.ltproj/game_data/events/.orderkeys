@@ -228,5 +228,9 @@
     "2_2B_GuardDeath.json": 226,
     "2_2A_Intro.json": 227,
     "4_1_gate.json": 228,
-    "4_1_lyonDeath.json": 229
+    "4_1_lyonDeath.json": 229,
+    "2_2B_Rout.json": 230,
+    "2_2B_Turn4Wave1.json": 231,
+    "2_2B_Turn6Wave2.json": 232,
+    "2_2B_Turn8Wave3.json": 233
 }

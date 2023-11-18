@@ -29,7 +29,14 @@
             [
                 "remove_portrait",
                 [
-                    "Vanessa"
+                    "Bone"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch1BonesEscapeFlag",
+                    "False"
                 ]
             ],
             [
@@ -39,6 +46,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;Bone;FarRight\nspeak;Bone;Gah...|Bastard...|How could I die like this\nexpression;Bone;CloseEyes\nremove_portrait;Vanessa\nwin_game\n"
+        "source": "add_portrait;Bone;FarRight\nspeak;Bone;Gah...|Bastard...|How could I die like this\nexpression;Bone;CloseEyes\nremove_portrait;Bone\ngame_var;_ch1BonesEscapeFlag;False\nwin_game\n"
     }
 ]

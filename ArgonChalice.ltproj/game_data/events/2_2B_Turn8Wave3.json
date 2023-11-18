@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Turn8Wave3",
+        "trigger": "turn_change",
+        "level_nid": "2_2B",
+        "condition": "game.turncount == 8",
+        "commands": [
+            [
+                "spawn_group",
+                [
+                    "Wave3",
+                    "south",
+                    "Wave3",
+                    "normal",
+                    "push"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "This is the last wave!",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "spawn_group;Wave3;south;Wave3;normal;push\nspeak;;This is the last wave!;;;narration_top\n"
+    }
+]

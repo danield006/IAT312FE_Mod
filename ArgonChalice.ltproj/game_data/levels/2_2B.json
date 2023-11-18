@@ -69,7 +69,7 @@
                 "faction": "Monster",
                 "starting_items": [
                     [
-                        "Iron Sword",
+                        "Iron Lance",
                         false
                     ]
                 ],
@@ -90,7 +90,7 @@
                 "faction": "Monster",
                 "starting_items": [
                     [
-                        "Iron Sword",
+                        "Iron Lance",
                         false
                     ]
                 ],
@@ -305,7 +305,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -326,7 +326,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -347,7 +347,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -368,7 +368,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -389,7 +389,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -410,7 +410,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -431,7 +431,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -452,7 +452,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -473,7 +473,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -494,7 +494,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -515,7 +515,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -536,7 +536,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -557,7 +557,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -578,7 +578,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -705,7 +705,24 @@
                     "Wave1_3",
                     "Wave1_4"
                 ],
-                "positions": {}
+                "positions": {
+                    "Wave1_1": [
+                        2,
+                        16
+                    ],
+                    "Wave1_2": [
+                        1,
+                        17
+                    ],
+                    "Wave1_3": [
+                        3,
+                        17
+                    ],
+                    "Wave1_4": [
+                        2,
+                        17
+                    ]
+                }
             },
             {
                 "nid": "StartingEnemies",
@@ -784,7 +801,24 @@
                     "Wave2_3",
                     "Wave2_4"
                 ],
-                "positions": {}
+                "positions": {
+                    "Wave2_1": [
+                        14,
+                        16
+                    ],
+                    "Wave2_2": [
+                        13,
+                        17
+                    ],
+                    "Wave2_3": [
+                        14,
+                        17
+                    ],
+                    "Wave2_4": [
+                        15,
+                        17
+                    ]
+                }
             },
             {
                 "nid": "Wave3",
@@ -796,7 +830,32 @@
                     "Wave3_5",
                     "Wave3_6"
                 ],
-                "positions": {}
+                "positions": {
+                    "Wave3_2": [
+                        1,
+                        17
+                    ],
+                    "Wave3_3": [
+                        15,
+                        17
+                    ],
+                    "Wave3_4": [
+                        13,
+                        17
+                    ],
+                    "Wave3_5": [
+                        14,
+                        16
+                    ],
+                    "Wave3_6": [
+                        2,
+                        16
+                    ],
+                    "Wave3_1": [
+                        3,
+                        17
+                    ]
+                }
             }
         ],
         "ai_groups": []

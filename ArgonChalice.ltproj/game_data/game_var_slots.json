@@ -102,5 +102,9 @@
     {
         "nid": "New Slot",
         "desc": null
+    },
+    {
+        "nid": "_ch1VillageDestroyed",
+        "desc": "Was a village destroyed during chapter 1?"
     }
 ]

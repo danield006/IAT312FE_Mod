@@ -42,10 +42,17 @@
                 [
                     "Schuri"
                 ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch1VillageDestroyed",
+                    "True"
+                ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "flicker_cursor;12,7\nshow_layer;Ruin2\nwait;500\nadd_portrait;Schuri;Left\nspeak;Schuri;No...|How could we....\nremove_portrait;Schuri\n"
+        "source": "flicker_cursor;12,7\nshow_layer;Ruin2\nwait;500\nadd_portrait;Schuri;Left\nspeak;Schuri;No...|How could we....\nremove_portrait;Schuri\ngame_var;_ch1VillageDestroyed;True\n"
     }
 ]
