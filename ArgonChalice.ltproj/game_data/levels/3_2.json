@@ -28,7 +28,7 @@
             },
             {
                 "nid": "Senya",
-                "team": "player",
+                "team": "other",
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
@@ -38,7 +38,7 @@
             },
             {
                 "nid": "Schuri",
-                "team": "player",
+                "team": "other",
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",

@@ -1,0 +1,29 @@
+[
+    {
+        "name": "talkSenya",
+        "trigger": "on_talk",
+        "level_nid": "3_2",
+        "condition": "unit2.nid == 'Senya'",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Senya",
+                    "Right",
+                    "{unit}",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "her feelings on the matter and concerns"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "multi_add_portrait;Senya;Right;{unit};Left\nspeak;Senya;her feelings on the matter and concerns\n"
+    }
+]
