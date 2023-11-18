@@ -1,0 +1,21 @@
+[
+    {
+        "name": "New Event",
+        "trigger": "turn_change",
+        "level_nid": "25",
+        "condition": "game.turncount == 1",
+        "commands": [
+            [
+                "set_custom_options",
+                [
+                    "Guide",
+                    "",
+                    "how to play"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "set_custom_options;Guide;;how to play;"
+    }
+]

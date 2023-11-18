@@ -218,19 +218,16 @@
         ],
         "unit_groups": [
             {
-                "nid": "Enemy1",
-                "units": [],
-                "positions": {}
-            },
-            {
-                "nid": "Rein",
-                "units": [],
-                "positions": {}
-            },
-            {
-                "nid": "EnemyRein",
-                "units": [],
-                "positions": {}
+                "nid": "Mentor",
+                "units": [
+                    "Mentor"
+                ],
+                "positions": {
+                    "Mentor": [
+                        7,
+                        4
+                    ]
+                }
             },
             {
                 "nid": "Party",
@@ -239,7 +236,20 @@
                     "Senya_1",
                     "Schuri_1"
                 ],
-                "positions": {}
+                "positions": {
+                    "MC_1": [
+                        7,
+                        5
+                    ],
+                    "Senya_1": [
+                        6,
+                        5
+                    ],
+                    "Schuri_1": [
+                        8,
+                        5
+                    ]
+                }
             }
         ],
         "ai_groups": []

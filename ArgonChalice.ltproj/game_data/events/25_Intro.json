@@ -9,12 +9,16 @@
                 "speak",
                 [
                     "",
-                    "Press X to go through dialogue.| Press X again to open up a menu.| Use arrow keys and X to go to options.|Recommend changing screen size, disabling mouse controls, and adjusting sound.|When you are ready, press z to back out to the map screen again.|Then press x to end your turn to start."
+                    "Press X to go through dialogue.|Press X again to open up a menu.|Use arrow keys and X to go to options.|I recommend changing screen size, disabling mouse controls, and adjusting sound.|When you are ready, press z to back out to the map screen again.|Then press x on any tile and end your turn."
                 ]
+            ],
+            [
+                "end_skip",
+                []
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "speak;;Press X to go through dialogue.| Press X again to open up a menu.| Use arrow keys and X to go to options.|Recommend changing screen size, disabling mouse controls, and adjusting sound.|When you are ready, press z to back out to the map screen again.|Then press x to end your turn to start.\n"
+        "source": "speak;;Press X to go through dialogue.|Press X again to open up a menu.|Use arrow keys and X to go to options.|I recommend changing screen size, disabling mouse controls, and adjusting sound.|When you are ready, press z to back out to the map screen again.|Then press x on any tile and end your turn.\nend_skip\n"
     }
 ]
