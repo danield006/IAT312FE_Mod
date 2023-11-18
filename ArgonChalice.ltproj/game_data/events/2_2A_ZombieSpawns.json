@@ -1,0 +1,22 @@
+[
+    {
+        "name": "ZombieSpawns",
+        "trigger": "turn_change",
+        "level_nid": "2_2A",
+        "condition": "game.turncount == 2",
+        "commands": [
+            [
+                "spawn_group",
+                [
+                    "Zombies",
+                    "south",
+                    "Zombies",
+                    "warp"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "spawn_group;Zombies;south;Zombies;warp\n"
+    }
+]

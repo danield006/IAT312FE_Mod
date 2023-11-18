@@ -240,5 +240,12 @@
     "DEBUG_2_intro.json": 238,
     "global_EnableConvoy.json": 239,
     "3_1_testing.json": 240,
-    "4_1_lyonAppears.json": 241
+    "4_1_lyonAppears.json": 241,
+    "2_2A_EyeballSpawns.json": 242,
+    "2_2A_LanceAndBow.json": 243,
+    "2_2A_Outro.json": 244,
+    "2_2A_SurviveLongEnough.json": 245,
+    "2_2A_SwordSpawns.json": 246,
+    "2_2A_Turn4.json": 247,
+    "2_2A_ZombieSpawns.json": 248
 }

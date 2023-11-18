@@ -536,12 +536,12 @@
             {
                 "nid": "Wave3_5",
                 "variant": null,
-                "level": 6,
+                "level": 1,
                 "klass": "Entombed",
                 "faction": "Monster",
                 "starting_items": [
                     [
-                        "Fetid Claw",
+                        "Rotten Claw",
                         false
                     ]
                 ],
@@ -557,12 +557,12 @@
             {
                 "nid": "Wave3_6",
                 "variant": null,
-                "level": 6,
+                "level": 1,
                 "klass": "Entombed",
                 "faction": "Monster",
                 "starting_items": [
                     [
-                        "Fetid Claw",
+                        "Rotten Claw",
                         false
                     ]
                 ],

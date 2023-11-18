@@ -65,7 +65,7 @@
                 "generic": false
             },
             {
-                "nid": "101",
+                "nid": "Zombie1",
                 "variant": null,
                 "level": 12,
                 "klass": "Revenant",
@@ -78,7 +78,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "CH2AttackAesc",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -86,7 +86,7 @@
                 "generic": true
             },
             {
-                "nid": "102",
+                "nid": "Zombie2",
                 "variant": null,
                 "level": 12,
                 "klass": "Revenant",
@@ -99,7 +99,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "CH2AttackAesc",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -107,7 +107,7 @@
                 "generic": true
             },
             {
-                "nid": "103",
+                "nid": "Zombie3",
                 "variant": null,
                 "level": 12,
                 "klass": "Revenant",
@@ -120,7 +120,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "CH2AttackAesc",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -128,7 +128,7 @@
                 "generic": true
             },
             {
-                "nid": "104",
+                "nid": "Zombie4",
                 "variant": null,
                 "level": 12,
                 "klass": "Revenant",
@@ -141,7 +141,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "CH2AttackAesc",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -149,49 +149,7 @@
                 "generic": true
             },
             {
-                "nid": "105",
-                "variant": null,
-                "level": 12,
-                "klass": "Revenant",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Rotten Claw",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "None",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": null,
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "106",
-                "variant": null,
-                "level": 12,
-                "klass": "Revenant",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Rotten Claw",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "None",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": null,
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "107",
+                "nid": "Sword1",
                 "variant": null,
                 "level": 12,
                 "klass": "Sword_Bonewalker",
@@ -204,7 +162,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "CH2AttackAesc",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -212,7 +170,7 @@
                 "generic": true
             },
             {
-                "nid": "108",
+                "nid": "Sword2",
                 "variant": null,
                 "level": 12,
                 "klass": "Sword_Bonewalker",
@@ -225,7 +183,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "CH2AttackAesc",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -233,7 +191,7 @@
                 "generic": true
             },
             {
-                "nid": "109",
+                "nid": "Sword3",
                 "variant": null,
                 "level": 12,
                 "klass": "Sword_Bonewalker",
@@ -246,7 +204,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "CH2AttackAesc",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -254,7 +212,7 @@
                 "generic": true
             },
             {
-                "nid": "110",
+                "nid": "Sword4",
                 "variant": null,
                 "level": 12,
                 "klass": "Sword_Bonewalker",
@@ -267,7 +225,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "CH2AttackAesc",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -275,7 +233,7 @@
                 "generic": true
             },
             {
-                "nid": "111",
+                "nid": "Lance1",
                 "variant": null,
                 "level": 12,
                 "klass": "Sword_Bonewalker",
@@ -288,7 +246,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "CH2AttackAesc",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -296,7 +254,7 @@
                 "generic": true
             },
             {
-                "nid": "112",
+                "nid": "Lance2",
                 "variant": null,
                 "level": 12,
                 "klass": "Sword_Bonewalker",
@@ -309,7 +267,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "CH2AttackAesc",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -317,7 +275,7 @@
                 "generic": true
             },
             {
-                "nid": "113",
+                "nid": "Lance3",
                 "variant": null,
                 "level": 12,
                 "klass": "Sword_Bonewalker",
@@ -330,7 +288,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "CH2AttackAesc",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -338,25 +296,329 @@
                 "generic": true
             },
             {
-                "nid": "114",
+                "nid": "Bow1",
                 "variant": null,
                 "level": 12,
-                "klass": "Sword_Bonewalker",
+                "klass": "Bow_Bonewalker",
                 "faction": "Monster",
                 "starting_items": [
                     [
-                        "Iron Lance",
+                        "Iron Bow",
                         false
                     ]
                 ],
                 "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Bow2",
+                "variant": null,
+                "level": 12,
+                "klass": "Bow_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Bow3",
+                "variant": null,
+                "level": 12,
+                "klass": "Bow_Bonewalker",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Iron Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Eyeball1",
+                "variant": null,
+                "level": 12,
+                "klass": "Mogall",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Evil Eye",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Eyeball2",
+                "variant": null,
+                "level": 12,
+                "klass": "Mogall",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Evil Eye",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Eyeball3",
+                "variant": null,
+                "level": 12,
+                "klass": "Mogall",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Evil Eye",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "SwordBoss",
+                "variant": null,
+                "level": 1,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "LanceBoss",
+                "variant": null,
+                "level": 1,
+                "klass": "Sword_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "BowBoss",
+                "variant": null,
+                "level": 1,
+                "klass": "Bow_Wight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Steel Bow",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "EyeBallBoss",
+                "variant": null,
+                "level": 1,
+                "klass": "Arch_Mogall",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Evil Eye",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "ZombieBoss",
+                "variant": null,
+                "level": 1,
+                "klass": "Entombed",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Fetid Claw",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "EndCutscene1",
+                "variant": null,
+                "level": 1,
+                "klass": "Entombed",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Fetid Claw",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "EndCutscene1_1",
+                "variant": null,
+                "level": 1,
+                "klass": "Entombed",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Fetid Claw",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "EndCutscene1_2",
+                "variant": null,
+                "level": 1,
+                "klass": "Entombed",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Fetid Claw",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "EndCutscene1_3",
+                "variant": null,
+                "level": 1,
+                "klass": "Entombed",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Fetid Claw",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "CH2AttackAesc",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Lyon",
                 "team": "enemy",
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
                 "starting_traveler": null,
-                "generic": true
+                "generic": false
             }
         ],
         "regions": [
@@ -392,12 +654,194 @@
                         6
                     ],
                     "Senya": [
-                        5,
-                        3
+                        7,
+                        5
                     ],
                     "Schuri": [
+                        9,
+                        5
+                    ]
+                }
+            },
+            {
+                "nid": "Swords",
+                "units": [
+                    "Sword1",
+                    "Sword2",
+                    "SwordBoss"
+                ],
+                "positions": {
+                    "Sword1": [
+                        4,
+                        12
+                    ],
+                    "Sword3": [
+                        3,
+                        11
+                    ],
+                    "SwordBoss": [
+                        8,
+                        12
+                    ],
+                    "Sword2": [
+                        12,
+                        12
+                    ],
+                    "Sword4": [
+                        2,
+                        10
+                    ]
+                }
+            },
+            {
+                "nid": "Lances",
+                "units": [
+                    "Lance1",
+                    "Lance2",
+                    "Lance3",
+                    "LanceBoss"
+                ],
+                "positions": {
+                    "Lance1": [
+                        2,
+                        14
+                    ],
+                    "Lance2": [
+                        1,
+                        15
+                    ],
+                    "Lance3": [
+                        3,
+                        15
+                    ],
+                    "LanceBoss": [
+                        2,
+                        17
+                    ]
+                }
+            },
+            {
+                "nid": "Zombies",
+                "units": [
+                    "Zombie1",
+                    "Zombie2",
+                    "Zombie3",
+                    "Zombie4",
+                    "ZombieBoss"
+                ],
+                "positions": {
+                    "Zombie1": [
+                        5,
+                        12
+                    ],
+                    "Zombie2": [
                         11,
+                        12
+                    ],
+                    "Zombie3": [
+                        4,
+                        12
+                    ],
+                    "Zombie4": [
+                        12,
+                        12
+                    ],
+                    "ZombieBoss": [
+                        8,
+                        12
+                    ]
+                }
+            },
+            {
+                "nid": "Eyeballs",
+                "units": [
+                    "Eyeball1",
+                    "Eyeball2",
+                    "Eyeball3",
+                    "EyeBallBoss"
+                ],
+                "positions": {
+                    "Eyeball1": [
+                        8,
+                        15
+                    ],
+                    "Eyeball2": [
+                        7,
+                        16
+                    ],
+                    "Eyeball3": [
+                        9,
+                        16
+                    ],
+                    "EyeBallBoss": [
+                        8,
+                        17
+                    ]
+                }
+            },
+            {
+                "nid": "Bows",
+                "units": [
+                    "BowBoss",
+                    "Bow1",
+                    "Bow2",
+                    "Bow3"
+                ],
+                "positions": {
+                    "BowBoss": [
+                        14,
+                        17
+                    ],
+                    "Bow1": [
+                        14,
+                        14
+                    ],
+                    "Bow2": [
+                        13,
+                        15
+                    ],
+                    "Bow3": [
+                        15,
+                        15
+                    ]
+                }
+            },
+            {
+                "nid": "EndCutscene",
+                "units": [
+                    "EndCutscene1",
+                    "EndCutscene1_1",
+                    "EndCutscene1_2",
+                    "EndCutscene1_3"
+                ],
+                "positions": {
+                    "EndCutscene1": [
+                        8,
+                        2
+                    ],
+                    "EndCutscene1_1": [
+                        7,
                         3
+                    ],
+                    "EndCutscene1_2": [
+                        9,
+                        3
+                    ],
+                    "EndCutscene1_3": [
+                        8,
+                        4
+                    ]
+                }
+            },
+            {
+                "nid": "Lyon",
+                "units": [
+                    "Lyon"
+                ],
+                "positions": {
+                    "Lyon": [
+                        8,
+                        8
                     ]
                 }
             }

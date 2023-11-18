@@ -1,0 +1,22 @@
+[
+    {
+        "name": "EyeballSpawns",
+        "trigger": "turn_change",
+        "level_nid": "2_2A",
+        "condition": "game.turncount == 3",
+        "commands": [
+            [
+                "spawn_group",
+                [
+                    "Eyeballs",
+                    "south",
+                    "Eyeballs",
+                    "warp"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "spawn_group;Eyeballs;south;Eyeballs;warp\n"
+    }
+]
