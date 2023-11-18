@@ -31,6 +31,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "multi_add_portrait;Eirika;Left;Seth;Right\nspeak;Eirika;I miss home\nmulti_remove_portrait;Eirika;Seth\n"
     }
 ]

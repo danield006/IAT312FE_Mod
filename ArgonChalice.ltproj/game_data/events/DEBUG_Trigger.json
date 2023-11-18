@@ -28,6 +28,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "add_portrait;Eirika;Left\nspeak;Eirika;This is a test\nremove_portrait;Eirika\n"
     }
 ]

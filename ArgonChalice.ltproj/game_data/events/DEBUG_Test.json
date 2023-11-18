@@ -123,6 +123,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "#level_var;_fog_of_war;1\n#level_var;_fog_of_war_radius;3\n#level_var;_ai_fog_of_war_radius;5\nadd_lore;Eirika\nadd_base_convo;Dreams of Home\nadd_weather;rain\ngame_var;_supports;True\n#trigger_script;Trigger\nbase;Clearing\n#music;Attack;2000\n#wait;5000\n#music;Armory;2000\n#wait;5000\n#music;Attack;2000\n#wait;5000\n#music;None;2000\n#wait;5000\n#music;Attack;2000\n#wait;5000\n"
     }
 ]

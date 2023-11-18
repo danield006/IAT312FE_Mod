@@ -1,0 +1,20 @@
+[
+    {
+        "name": "EnableConvoy",
+        "trigger": "level_start",
+        "level_nid": null,
+        "condition": "True",
+        "commands": [
+            [
+                "game_var",
+                [
+                    "_convoy",
+                    "True"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "game_var;_convoy;True"
+    }
+]

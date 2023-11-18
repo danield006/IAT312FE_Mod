@@ -21,6 +21,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": ""
+        "source": "unlock;{unit}\ngive_item;{unit};Iron Sword\n"
     }
 ]

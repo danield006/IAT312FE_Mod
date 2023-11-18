@@ -236,5 +236,7 @@
     "global_ChanceKillItem.json": 234,
     "2_2B_UpdateEnemiesLeft.json": 235,
     "global_SenyaDeath.json": 236,
-    "global_SchuriDeath.json": 237
+    "global_SchuriDeath.json": 237,
+    "DEBUG_2_intro.json": 238,
+    "global_EnableConvoy.json": 239
 }

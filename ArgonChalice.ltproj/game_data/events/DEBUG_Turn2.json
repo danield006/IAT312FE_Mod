@@ -22,6 +22,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "change_team;Bone;player\ngame_var;EirikaSupport;True\n"
     }
 ]
