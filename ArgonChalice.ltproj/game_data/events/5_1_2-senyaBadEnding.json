@@ -38,7 +38,7 @@
                 "speak",
                 [
                     "",
-                    "Without a word, Senya runs towards Schuri's body and cradles it.",
+                    "Without a word, Senya runs towards Schuri's body and cradles it gently.",
                     "",
                     "",
                     "narration_top"
@@ -55,6 +55,13 @@
                 [
                     "Senya",
                     "Right"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
                 ]
             ],
             [
@@ -109,7 +116,7 @@
                 "speak",
                 [
                     "Senya",
-                    "You-!|You KILLED Schuri!"
+                    "You-!|Schuri's dead!"
                 ]
             ],
             [
@@ -157,7 +164,7 @@
                 "speak",
                 [
                     "Senya",
-                    "She wasn't dead you dolt!|She was still alive when she got controlled!"
+                    "She wasn't dead you dolt!|She was still alive!"
                 ]
             ],
             [
@@ -171,14 +178,7 @@
                 "speak",
                 [
                     "Senya",
-                    "She was alive..."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "If it was me in her place...|If it was me..."
+                    "She was alive...|We could have saved her..."
                 ]
             ],
             [
@@ -191,7 +191,7 @@
                 "speak",
                 [
                     "Senya",
-                    "Would you have also killed me?"
+                    "How could our time spent together mean nothing? How could it have come to this...?"
                 ]
             ],
             [
@@ -199,13 +199,6 @@
                 [
                     "Senya",
                     "OpenEyes"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "Did our time spent together mean NOTHING to you?!|How could you look her in the eye and kill her?!"
                 ]
             ],
             [
@@ -219,7 +212,7 @@
                 "speak",
                 [
                     "MC",
-                    "Senya..."
+                    "Senya...I'm sorry."
                 ]
             ],
             [
@@ -232,91 +225,21 @@
             [
                 "speak",
                 [
-                    "MC",
-                    "She would have killed you!"
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "MC",
-                    "HalfCloseEyes"
+                    "Senya",
+                    "Don't be. You know what Lilith had said about bonds?|I don't think I was a good friend."
                 ]
             ],
             [
                 "speak",
                 [
                     "MC",
-                    "She would have killed you..."
+                    "So was I..."
                 ]
             ],
             [
-                "expression",
+                "comment",
                 [
-                    "Senya",
-                    "HalfCloseEyes"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "I know...that you meant well."
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "Senya",
-                    "NoSmile"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "But I don't agree with what you had done."
-                ]
-            ],
-            [
-                "move_portrait",
-                [
-                    "Senya",
-                    "OffscreenLeft"
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "MC",
-                    "OpenEyes"
-                ]
-            ],
-            [
-                "mirror_portrait",
-                [
-                    "MC"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Wait!"
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "MC",
-                    "CloseEyes"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "I...|What did I just do...?"
+                    "#"
                 ]
             ],
             [
@@ -454,7 +377,7 @@
                 "speak",
                 [
                     "Senya",
-                    "...|...sorry, I...|I shouldn't have taken my grief out at you"
+                    "...You're here."
                 ]
             ],
             [
@@ -475,7 +398,7 @@
                 "speak",
                 [
                     "Senya",
-                    "I...|You were also affected..."
+                    "I can understand your reasoning behind your actions..."
                 ]
             ],
             [
@@ -489,7 +412,7 @@
                 "speak",
                 [
                     "Senya",
-                    "However, I will never forgive you."
+                    "However, I can't forgive you for killing Schuri."
                 ]
             ],
             [
@@ -517,7 +440,7 @@
                 "speak",
                 [
                     "MC",
-                    "I thought I was doing the right thing."
+                    "I thought I was doing the right thing.|I wanted to save your life."
                 ]
             ],
             [
@@ -597,6 +520,13 @@
                 ]
             ],
             [
+                "speak",
+                [
+                    "",
+                    "Our relationship has never been the same since that day.|Death changes people.|For us...perhaps its the fetters of bygone days that still tether us together."
+                ]
+            ],
+            [
                 "music_fade_back",
                 [
                     "2000"
@@ -659,6 +589,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#senya good bond, schuri dies\nspeak;;this is ending 2;;;narration\nmusic;bittersweetEpilogue\nadd_portrait;Senya;OffscreenLeft\nspeak;;Without a word, Senya runs towards Schuri's body and cradles it.;;;narration_top\nsound;Light Foot Steps 1\nmove_portrait;Senya;Right\nexpression;Senya;HalfCloseEyes\nexpression;MC;CloseEyes\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;It's over now...|but at what cost?\nmirror_portrait;Senya\nexpression;MC;OpenEyes\nspeak;Senya;You-!|You KILLED Schuri!\nspeak;MC;Senya...she was gone.|You saw how Teach was...\nbop_portrait;Senya\nmove_portrait;Senya;FarRight\nmove_portrait;Senya;MidRight\nmove_portrait;Senya;Right\nspeak;Senya;No...\nspeak;Senya;She wasn't dead you dolt!|She was still alive when she got controlled!\nexpression;Senya;HalfCloseEyes\nspeak;Senya;She was alive...\nspeak;Senya;If it was me in her place...|If it was me...\nmirror_portrait;Senya\nspeak;Senya;Would you have also killed me?\nexpression;Senya;OpenEyes\nspeak;Senya;Did our time spent together mean NOTHING to you?!|How could you look her in the eye and kill her?!\nexpression;MC;HalfCloseEyes\nspeak;MC;Senya...\nexpression;MC;NoSmile\nspeak;MC;She would have killed you!\nexpression;MC;HalfCloseEyes\nspeak;MC;She would have killed you...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;I know...that you meant well.\nexpression;Senya;NoSmile\nspeak;Senya;But I don't agree with what you had done.\nmove_portrait;Senya;OffscreenLeft\nexpression;MC;OpenEyes\nmirror_portrait;MC\nspeak;MC;Wait!\nexpression;MC;CloseEyes\nspeak;MC;I...|What did I just do...?\nwait;500\ntransition;close;1200\nmulti_remove_portrait;Senya;MC\nchange_background;CastleSepia\nadd_portrait;MC;MidLeft\nadd_portrait;Senya;FarRight\ntransition;open;1200\nexpression;MC;HalfCloseEyes\nspeak;MC;...\nexpression;MC;OpenEyes\nspeak;;Senya...|I wonder how she is holding up;;;thought_bubble\nexpression;MC;OpenMouth\nwait;5000\nexpression;MC;NoSmile\nbop_portrait;Senya\nmirror_portrait;Senya\nspeak;Senya;MC\nmove_portrait;Senya;Right\nexpression;Senya;HalfCloseEyes\nspeak;Senya;...|...sorry, I...|I shouldn't have taken my grief out at you\nexpression;MC;NormalBlink\nexpression;MC;HalfCloseEyes\nspeak;Senya;I...|You were also affected...\nexpression;Senya;OpenEyes\nspeak;Senya;However, I will never forgive you.\nmove_portrait;MC;MidLeft\nspeak;MC;No...you shouldn't forgive me.|Just like how you thought your decisions were the right thing to do.\nexpression;MC;OpenEyes\nspeak;MC;I thought I was doing the right thing.\nspeak;Senya;In the end...|We both have regrets...\nspeak;MC;I don't regret my actions if it meant saving you.\nmirror_portrait;Senya\nspeak;Senya;...|Even though we disagreed with a lot of things...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;Schuri was...|Schuri is my friend\nexpression;Senya;OpenEyes\nspeak;Senya;I want to do something for her.|To honor her.\nspeak;MC;May I join as well?|I...\nexpression;Senya;NoSmile\nspeak;Senya;I'm sure she would be glad to have you.\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To the Fetters of Our Days of Yore;center;;cinematic\nset_next_chapter;2222\n"
+        "source": "#senya good bond, schuri dies\nspeak;;this is ending 2;;;narration\nmusic;bittersweetEpilogue\nadd_portrait;Senya;OffscreenLeft\nspeak;;Without a word, Senya runs towards Schuri's body and cradles it gently.;;;narration_top\nsound;Light Foot Steps 1\nmove_portrait;Senya;Right\nadd_portrait;MC;Left\nexpression;Senya;HalfCloseEyes\nexpression;MC;CloseEyes\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;It's over now...|but at what cost?\nmirror_portrait;Senya\nexpression;MC;OpenEyes\nspeak;Senya;You-!|Schuri's dead!\nspeak;MC;Senya...she was gone.|You saw how Teach was...\nbop_portrait;Senya\nmove_portrait;Senya;FarRight\nmove_portrait;Senya;MidRight\nmove_portrait;Senya;Right\nspeak;Senya;No...\nspeak;Senya;She wasn't dead you dolt!|She was still alive!\nexpression;Senya;HalfCloseEyes\nspeak;Senya;She was alive...|We could have saved her...\nmirror_portrait;Senya\nspeak;Senya;How could our time spent together mean nothing? How could it have come to this...?\nexpression;Senya;OpenEyes\nexpression;MC;HalfCloseEyes\nspeak;MC;Senya...I'm sorry.\nexpression;MC;NoSmile\nspeak;Senya;Don't be. You know what Lilith had said about bonds?|I don't think I was a good friend.\nspeak;MC;So was I...\n#\nwait;500\ntransition;close;1200\nmulti_remove_portrait;Senya;MC\nchange_background;CastleSepia\nadd_portrait;MC;MidLeft\nadd_portrait;Senya;FarRight\ntransition;open;1200\nexpression;MC;HalfCloseEyes\nspeak;MC;...\nexpression;MC;OpenEyes\nspeak;;Senya...|I wonder how she is holding up;;;thought_bubble\nexpression;MC;OpenMouth\nwait;5000\nexpression;MC;NoSmile\nbop_portrait;Senya\nmirror_portrait;Senya\nspeak;Senya;MC\nmove_portrait;Senya;Right\nexpression;Senya;HalfCloseEyes\nspeak;Senya;...You're here.\nexpression;MC;NormalBlink\nexpression;MC;HalfCloseEyes\nspeak;Senya;I can understand your reasoning behind your actions...\nexpression;Senya;OpenEyes\nspeak;Senya;However, I can't forgive you for killing Schuri.\nmove_portrait;MC;MidLeft\nspeak;MC;No...you shouldn't forgive me.|Just like how you thought your decisions were the right thing to do.\nexpression;MC;OpenEyes\nspeak;MC;I thought I was doing the right thing.|I wanted to save your life.\nspeak;Senya;In the end...|We both have regrets...\nspeak;MC;I don't regret my actions if it meant saving you.\nmirror_portrait;Senya\nspeak;Senya;...|Even though we disagreed with a lot of things...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;Schuri was...|Schuri is my friend\nexpression;Senya;OpenEyes\nspeak;Senya;I want to do something for her.|To honor her.\nspeak;MC;May I join as well?|I...\nexpression;Senya;NoSmile\nspeak;Senya;I'm sure she would be glad to have you.\nspeak;;Our relationship has never been the same since that day.|Death changes people.|For us...perhaps its the fetters of bygone days that still tether us together.\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To the Fetters of Our Days of Yore;center;;cinematic\nset_next_chapter;2222\n"
     }
 ]
