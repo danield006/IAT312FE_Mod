@@ -118,14 +118,14 @@
                 "speak",
                 [
                     "Schuri",
-                    "MC, Sir got us out for a reason.|We don't know who attacked us|they were a lot stronger than Sir."
+                    "{var:MC_name}, Sir got us out for a reason.|We don't know who attacked us|they were a lot stronger than Sir."
                 ]
             ],
             [
                 "speak",
                 [
                     "Senya",
-                    "Schuri's right MC.|If Teacher couldn't beat him...|We stand no chance.|Don't throw away the life Teacher tried to save."
+                    "Schuri's right {var:MC_name}.|If Teacher couldn't beat him...|We stand no chance.|Don't throw away the life Teacher tried to save."
                 ]
             ],
             [
@@ -200,7 +200,7 @@
             [
                 "speak",
                 [
-                    "MC",
+                    "{var:MC_name}",
                     "We seem to be sent into the middle of a forest. The sunlight barely reaches past the canopy of the trees.|Huh...|now that I think about it..|Teach mentioned an \"Aesc\".",
                     "",
                     "",
@@ -353,7 +353,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "MC...|I know you're worried about Sir so that's why...|we need to go."
+                    "{var:MC_name}...|I know you're worried about Sir so that's why...|we need to go."
                 ]
             ],
             [
@@ -422,6 +422,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "# Fade to black\ntransition;Close\nchange_background;DeepForest\ntransition;Open\nmusic;bird_whistling\nspeak;;Petrichor Woods;;;narration_top\nadd_portrait;Senya;MidLeft\nadd_portrait;Schuri;Right\nadd_portrait;MC;MidRight\nbop_portrait;MC\nspeak;MC;No! Schuri let go of me!\nspeak;Schuri;We need to leave now.\nspeak;MC;And just leave him there to die? Let go!|Just please...\nexpression;MC;CloseEyes\nspeak;MC;let go...\nexpression;MC;OpenEyes\nspeak;Schuri;MC, Sir got us out for a reason.|We don't know who attacked us|they were a lot stronger than Sir.\nspeak;Senya;Schuri's right MC.|If Teacher couldn't beat him...|We stand no chance.|Don't throw away the life Teacher tried to save.\nexpression;MC;CloseEyes\nspeak;MC;Teach...|Teach isn't making it out of there alive is he?\nexpression;MC;OpenEyes\nspeak;Schuri;If he was able to warp us out, he might have been able to get away himself.\nspeak;MC;I see...\nspeak;;I can't let myself be consumed by my thoughts. I should take a look at our surroundings.;;;narration\nmirror_portrait;MC\nwait;250\nmirror_portrait;MC\nwait;250\nspeak;MC;We seem to be sent into the middle of a forest. The sunlight barely reaches past the canopy of the trees.|Huh...|now that I think about it..|Teach mentioned an \"Aesc\".;;;narration\nspeak;MC;Schuri.|Teach mentioned an \"Aesc\", do you know who or what that is?\nspeak;Schuri;I'm sorry!|Sir hasn't mentioned them to me. Maybe Senya knows...\nspeak;Senya;...|Not a clue either.|We'll need to ask around.\nmirror_portrait;Senya\nwait;250\nmirror_portrait;Senya\nspeak;Senya;We seem to be in the Petrichor Woods.\nbop_portrait;Schuri\nmirror_portrait;Schuri\nmirror_portrait;Schuri\nspeak;Schuri;It appears so.|We're quite far from the castle. Greshia is the closest city to here.\nbop_portrait;Senya\nspeak;Senya;Let's head there immediately.\nsound;forestRunStepsShort\nmirror_portrait;Senya\nmove_portrait;Senya;OffscreenLeft\nsound;forestStep\nmove_portrait;Schuri;MidLeft\nexpression;MC;CloseEyes\nwait;1000\nexpression;MC;OpenEyes\nmirror_portrait;Schuri\nspeak;Schuri;MC...|I know you're worried about Sir so that's why...|we need to go.\nspeak;MC;Sorry...|I know, but...\nmirror_portrait;Senya\nsound;forestStep\nmove_portrait;Senya;FarLeft\nspeak;Senya;It's not safe here...|You don't need to explain, all of us looked up to him.|He wouldn't want us to wallow in sadness so...|Let's go.\nmusic_fade_back;1000\nmulti_remove_portrait;MC;Schuri;Senya\nmusic_clear\ntransition;Close\nset_next_chapter;2_1\n"
+        "source": "# Fade to black\ntransition;Close\nchange_background;DeepForest\ntransition;Open\nmusic;bird_whistling\nspeak;;Petrichor Woods;;;narration_top\nadd_portrait;Senya;MidLeft\nadd_portrait;Schuri;Right\nadd_portrait;MC;MidRight\nbop_portrait;MC\nspeak;MC;No! Schuri let go of me!\nspeak;Schuri;We need to leave now.\nspeak;MC;And just leave him there to die? Let go!|Just please...\nexpression;MC;CloseEyes\nspeak;MC;let go...\nexpression;MC;OpenEyes\nspeak;Schuri;{var:MC_name}, Sir got us out for a reason.|We don't know who attacked us|they were a lot stronger than Sir.\nspeak;Senya;Schuri's right {var:MC_name}.|If Teacher couldn't beat him...|We stand no chance.|Don't throw away the life Teacher tried to save.\nexpression;MC;CloseEyes\nspeak;MC;Teach...|Teach isn't making it out of there alive is he?\nexpression;MC;OpenEyes\nspeak;Schuri;If he was able to warp us out, he might have been able to get away himself.\nspeak;MC;I see...\nspeak;;I can't let myself be consumed by my thoughts. I should take a look at our surroundings.;;;narration\nmirror_portrait;MC\nwait;250\nmirror_portrait;MC\nwait;250\nspeak;{var:MC_name};We seem to be sent into the middle of a forest. The sunlight barely reaches past the canopy of the trees.|Huh...|now that I think about it..|Teach mentioned an \"Aesc\".;;;narration\nspeak;MC;Schuri.|Teach mentioned an \"Aesc\", do you know who or what that is?\nspeak;Schuri;I'm sorry!|Sir hasn't mentioned them to me. Maybe Senya knows...\nspeak;Senya;...|Not a clue either.|We'll need to ask around.\nmirror_portrait;Senya\nwait;250\nmirror_portrait;Senya\nspeak;Senya;We seem to be in the Petrichor Woods.\nbop_portrait;Schuri\nmirror_portrait;Schuri\nmirror_portrait;Schuri\nspeak;Schuri;It appears so.|We're quite far from the castle. Greshia is the closest city to here.\nbop_portrait;Senya\nspeak;Senya;Let's head there immediately.\nsound;forestRunStepsShort\nmirror_portrait;Senya\nmove_portrait;Senya;OffscreenLeft\nsound;forestStep\nmove_portrait;Schuri;MidLeft\nexpression;MC;CloseEyes\nwait;1000\nexpression;MC;OpenEyes\nmirror_portrait;Schuri\nspeak;Schuri;{var:MC_name}...|I know you're worried about Sir so that's why...|we need to go.\nspeak;MC;Sorry...|I know, but...\nmirror_portrait;Senya\nsound;forestStep\nmove_portrait;Senya;FarLeft\nspeak;Senya;It's not safe here...|You don't need to explain, all of us looked up to him.|He wouldn't want us to wallow in sadness so...|Let's go.\nmusic_fade_back;1000\nmulti_remove_portrait;MC;Schuri;Senya\nmusic_clear\ntransition;Close\nset_next_chapter;2_1\n"
     }
 ]

@@ -21,13 +21,13 @@
             [
                 "speak",
                 [
-                    "MC",
+                    "{var:MC_name}",
                     "There's more of them now!|If we take too long, we'lll get overwhelmed!"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "screen_shake;100\nadd_group;wave2;wave2\nspeak;MC;There's more of them now!|If we take too long, we'lll get overwhelmed!\n"
+        "source": "screen_shake;100\nadd_group;wave2;wave2\nspeak;{var:MC_name};There's more of them now!|If we take too long, we'lll get overwhelmed!\n"
     }
 ]

@@ -8,7 +8,7 @@
             [
                 "speak",
                 [
-                    "MC",
+                    "{var:MC_name}",
                     "Senya!"
                 ]
             ],
@@ -22,6 +22,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "speak;MC;Senya!\nspeak;Senya;I need a rest...I'll catch up with you later...\n"
+        "source": "speak;{var:MC_name};Senya!\nspeak;Senya;I need a rest...I'll catch up with you later...\n"
     }
 ]

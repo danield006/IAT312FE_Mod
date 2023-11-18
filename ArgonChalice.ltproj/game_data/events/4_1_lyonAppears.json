@@ -47,6 +47,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_unit;Lyon;27,3\nmove_unit;Lyon;26,8\nspeak;Lyon;You won't be going any further.\nsound;FireBall\nflicker_cursor;27,5\nshow_layer;lyonAppears"
+        "source": "add_unit;Lyon;27,3\nmove_unit;Lyon;26,8\nspeak;Lyon;You won't be going any further.\nsound;FireBall\nflicker_cursor;27,5\nshow_layer;lyonAppears\n"
     }
 ]

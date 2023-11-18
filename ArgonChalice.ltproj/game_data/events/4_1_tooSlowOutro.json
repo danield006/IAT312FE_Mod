@@ -20,7 +20,7 @@
             [
                 "speak",
                 [
-                    "MC",
+                    "{var:MC_name}",
                     "Oh no..."
                 ]
             ],
@@ -107,6 +107,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "screen_shake;250\nsound;explosion_wide\nspeak;MC;Oh no...\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;Lilith;Right\nadd_portrait;MC;Left\nspeak;Lilith;Look at what the cat dragged it...|Too bad you're already too late.;;;noir\nspeak;MC;It's you!\nspeak;Lilith;I, Lilith has completed the Argon Ritual.\nbop_portrait;Lilith\nspeak;Lilith;All this power...!|Hahahaha!\nspeak;MC;Oh no...\nlose_game\n"
+        "source": "screen_shake;250\nsound;explosion_wide\nspeak;{var:MC_name};Oh no...\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;Lilith;Right\nadd_portrait;MC;Left\nspeak;Lilith;Look at what the cat dragged it...|Too bad you're already too late.;;;noir\nspeak;MC;It's you!\nspeak;Lilith;I, Lilith has completed the Argon Ritual.\nbop_portrait;Lilith\nspeak;Lilith;All this power...!|Hahahaha!\nspeak;MC;Oh no...\nlose_game\n"
     }
 ]

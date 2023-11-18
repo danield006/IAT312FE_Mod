@@ -21,7 +21,7 @@
             [
                 "speak",
                 [
-                    "MC",
+                    "{var:MC_name}",
                     "Oh no!|We're almost out of time!"
                 ]
             ],
@@ -38,6 +38,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "screen_shake;300\nadd_portrait;MC;Left\nspeak;MC;Oh no!|We're almost out of time!\nspeak;;There's only 3 turns left.;;;hint\n"
+        "source": "screen_shake;300\nadd_portrait;MC;Left\nspeak;{var:MC_name};Oh no!|We're almost out of time!\nspeak;;There's only 3 turns left.;;;hint\n"
     }
 ]

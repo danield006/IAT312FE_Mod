@@ -254,7 +254,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "MC...please!|We should give it a try!|Let's keep Sir alive and go defeat that necromancer."
+                    "{var:MC_name}...please!|We should give it a try!|Let's keep Sir alive and go defeat that necromancer."
                 ]
             ],
             [
@@ -268,7 +268,7 @@
                 "speak",
                 [
                     "Senya",
-                    "MC, let's put him to rest.|It's the least we could do."
+                    "{var:MC_name}, let's put him to rest.|It's the least we could do."
                 ]
             ],
             [
@@ -299,6 +299,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "speak;Schuri;Look!\nmove_cursor;17,9\nflicker_cursor;17,9\nmove_cursor;MC\nspeak;Schuri;Those walls look fragile, we can break through!\nspeak;Senya;I'm on it!\nadd_unit;Mentor;5,5\nmove_unit;Mentor;9,5\nflicker_cursor;Mentor;immediate\nmove_cursor;MC\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nadd_portrait;MC;MidLeft\nadd_portrait;PossessedCyrus;FarRight\nspeak;MC;Teach?!\nmove_portrait;Schuri;Left\nmove_portrait;Senya;FarLeft\nspeak;Schuri;Sir! It's us! We're finally here...\nspeak;PossessedCyrus;...\nremove_portrait;PossessedCyrus\nspeak;Schuri;How could this have happened...?\nspeak;Senya;Once I get my hands on...\nspeak;Schuri;!!\nmove_portrait;Schuri;Right\nmirror_portrait;Schuri\nbop_portrait;Schuri\nspeak;Schuri;We can still save Sir!|If we defeat that necromancer, the spell on him will be...|Sir will be fine!\nexpression;Senya;HalfCloseEyes\nspeak;Senya;...Schuri|It's not that I don't agree...|but I think it would be best if we laid Teacher to rest|Think about how long that wound has festered....\nexpression;Senya;OpenEyes\nspeak;Senya;He wouldn't be...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;his injuries...\nexpression;Senya;CloseEyes\nspeak;Senya;He's died long ago...\nmove_portrait;Schuri;MidRight\nspeak;Schuri;MC...please!|We should give it a try!|Let's keep Sir alive and go defeat that necromancer.\nexpression;Senya;OpenEyes\nspeak;Senya;MC, let's put him to rest.|It's the least we could do.\nexpression;MC;CloseEyes\nspeak;MC;How should I deal with Teach...?;;;thought_bubble\nmulti_remove_portrait;MC;Senya;Schuri\n"
+        "source": "speak;Schuri;Look!\nmove_cursor;17,9\nflicker_cursor;17,9\nmove_cursor;MC\nspeak;Schuri;Those walls look fragile, we can break through!\nspeak;Senya;I'm on it!\nadd_unit;Mentor;5,5\nmove_unit;Mentor;9,5\nflicker_cursor;Mentor;immediate\nmove_cursor;MC\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nadd_portrait;MC;MidLeft\nadd_portrait;PossessedCyrus;FarRight\nspeak;MC;Teach?!\nmove_portrait;Schuri;Left\nmove_portrait;Senya;FarLeft\nspeak;Schuri;Sir! It's us! We're finally here...\nspeak;PossessedCyrus;...\nremove_portrait;PossessedCyrus\nspeak;Schuri;How could this have happened...?\nspeak;Senya;Once I get my hands on...\nspeak;Schuri;!!\nmove_portrait;Schuri;Right\nmirror_portrait;Schuri\nbop_portrait;Schuri\nspeak;Schuri;We can still save Sir!|If we defeat that necromancer, the spell on him will be...|Sir will be fine!\nexpression;Senya;HalfCloseEyes\nspeak;Senya;...Schuri|It's not that I don't agree...|but I think it would be best if we laid Teacher to rest|Think about how long that wound has festered....\nexpression;Senya;OpenEyes\nspeak;Senya;He wouldn't be...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;his injuries...\nexpression;Senya;CloseEyes\nspeak;Senya;He's died long ago...\nmove_portrait;Schuri;MidRight\nspeak;Schuri;{var:MC_name}...please!|We should give it a try!|Let's keep Sir alive and go defeat that necromancer.\nexpression;Senya;OpenEyes\nspeak;Senya;{var:MC_name}, let's put him to rest.|It's the least we could do.\nexpression;MC;CloseEyes\nspeak;MC;How should I deal with Teach...?;;;thought_bubble\nmulti_remove_portrait;MC;Senya;Schuri\n"
     }
 ]
