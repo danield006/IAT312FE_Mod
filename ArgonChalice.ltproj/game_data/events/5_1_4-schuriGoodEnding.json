@@ -22,20 +22,6 @@
                 ]
             ],
             [
-                "expression",
-                [
-                    "Schuri",
-                    "Smile"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Schuri",
-                    "And maybe you'll see me pick up a few apprentices of my own!|I want to pass own Sir Cyrus' teachings so even if he's no longer here|his teachings will live on."
-                ]
-            ],
-            [
                 "music_fade_back",
                 [
                     "2000"
@@ -98,6 +84,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#schuri good ending, senya lives\nspeak;;this is ending 4;;;narration\nexpression;Schuri;Smile\nspeak;Schuri;And maybe you'll see me pick up a few apprentices of my own!|I want to pass own Sir Cyrus' teachings so even if he's no longer here|his teachings will live on.\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\nset_next_chapter;2222\n"
+        "source": "#schuri good ending, senya lives\nspeak;;this is ending 4;;;narration\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\nset_next_chapter;2222\n"
     }
 ]
