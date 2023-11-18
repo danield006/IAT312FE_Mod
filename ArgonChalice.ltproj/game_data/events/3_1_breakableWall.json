@@ -1,9 +1,9 @@
 [
     {
         "name": "breakableWall",
-        "trigger": "turn_change",
+        "trigger": "unit_wait",
         "level_nid": "3_1",
-        "condition": "game.turncount == 4",
+        "condition": "any_unit_in_region('breakableWall', team='player') ",
         "commands": [
             [
                 "flicker_cursor",
@@ -22,12 +22,12 @@
                 "speak",
                 [
                     "Senya",
-                    "We gotta break through!"
+                    "Let's break through!"
                 ]
             ]
         ],
-        "only_once": false,
+        "only_once": true,
         "priority": 20,
-        "source": "flicker_cursor;16,8\nspeak;Schuri;Hey look, that rubble's blocking our path.\nspeak;Senya;We gotta break through!\n"
+        "source": "flicker_cursor;16,8\nspeak;Schuri;Hey look, that rubble's blocking our path.\nspeak;Senya;Let's break through!\n"
     }
 ]

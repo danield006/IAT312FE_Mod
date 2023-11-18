@@ -3,13 +3,15 @@
         "name": "wave3enemies",
         "trigger": "unit_wait",
         "level_nid": "4_1",
-        "condition": "game.level.regions.get('wave3Enemies').contains(game.get_unit('MC').position)",
+        "condition": "any_unit_in_region('wave3Enemies', team='player') ",
         "commands": [
             [
                 "add_group",
                 [
                     "wave3",
-                    "wave3"
+                    "wave3",
+                    "",
+                    "stack"
                 ]
             ],
             [
@@ -30,38 +32,12 @@
                 "move_unit",
                 [
                     "mob19",
-                    "15,5"
-                ]
-            ],
-            [
-                "move_unit",
-                [
-                    "Lyon",
-                    "26,8"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Lyon",
-                    "You won't be going any further."
-                ]
-            ],
-            [
-                "sound",
-                [
-                    "FireBall"
-                ]
-            ],
-            [
-                "show_layer",
-                [
-                    "lyonAppears"
+                    "14,5"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_group;wave3;wave3\nmove_unit;mob17;13,4\nmove_unit;mob18;16,5\nmove_unit;mob19;15,5\nmove_unit;Lyon;26,8\nspeak;Lyon;You won't be going any further.\nsound;FireBall\nshow_layer;lyonAppears\n"
+        "source": "add_group;wave3;wave3;;stack\nmove_unit;mob17;13,4\nmove_unit;mob18;16,5\nmove_unit;mob19;14,5\n"
     }
 ]

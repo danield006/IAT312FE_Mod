@@ -10,6 +10,12 @@
                 []
             ],
             [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
                 "enable_fog_of_war",
                 [
                     "t"
@@ -23,37 +29,15 @@
                 ]
             ],
             [
-                "add_group",
+                "show_layer",
                 [
-                    "Party",
-                    "Party",
-                    "immediate"
-                ]
-            ],
-            [
-                "add_group",
-                [
-                    "enemies",
-                    "enemies",
-                    "immediate"
+                    "seal"
                 ]
             ],
             [
                 "music",
                 [
                     "sealedMansion"
-                ]
-            ],
-            [
-                "add_group",
-                [
-                    "Party"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "close"
                 ]
             ],
             [
@@ -79,7 +63,17 @@
                 "speak",
                 [
                     "Aesc",
-                    "Here we are. The old Lord's place.|After the incident, it has been sealed off by a mysterious force."
+                    "Here we are. The old Lord's place.|A few days ago, it has been sealed off by a mysterious force."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Though a strange fellow had come by with an offer to the Lord...",
+                    "",
+                    "",
+                    "thought_bubble"
                 ]
             ],
             [
@@ -87,6 +81,13 @@
                 [
                     "Aesc",
                     "Right"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
                 ]
             ],
             [
@@ -110,23 +111,20 @@
                 ]
             ],
             [
-                "mirror_portrait",
-                [
-                    "Aesc"
-                ]
-            ],
-            [
-                "add_portrait",
+                "speak",
                 [
                     "MC",
-                    "Left"
+                    "A few days...?|That's when that necromancer attacked us...",
+                    "",
+                    "",
+                    "thought_bubble"
                 ]
             ],
             [
                 "speak",
                 [
                     "Aesc",
-                    "After all, nothing went in or out in these past few weeks.|Who knows what sorts of magicks have been in effect.|Don't touch anything strange else something bad might happen."
+                    "After all, nothing went in or out in these past few days.|Who knows what sorts of magicks have been in effect.|I wouldn't touch anything strange if I were you. Lest strange things happen."
                 ]
             ],
             [
@@ -137,14 +135,53 @@
                 ]
             ],
             [
-                "end_skip",
-                []
+                "mirror_portrait",
+                [
+                    "Aesc"
+                ]
             ],
             [
                 "speak",
                 [
                     "Aesc",
                     "Stand back now, I'm going to dispel the barrier now."
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "add_unit",
+                [
+                    "Aesc",
+                    "19,23"
+                ]
+            ],
+            [
+                "move_cursor",
+                [
+                    "Aesc",
+                    "immediate"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "250"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Aesc",
+                    "20,22"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "500"
                 ]
             ],
             [
@@ -157,22 +194,160 @@
                 "transition",
                 [
                     "open",
-                    "800",
+                    "1000",
                     "36,17,89"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "sound",
+                [
+                    "WindWave"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open",
+                    "1000",
+                    "36,17,89"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "500"
                 ]
             ],
             [
                 "speak",
                 [
                     "Aesc",
-                    "Alright, the barrier's dispelled.|Ah.....it's been so long since I've been here."
+                    "This barrier will talk a while to dispel.|Why don't you plan amongst yourselves?",
+                    "top"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "250"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Senya",
+                    "FarRight",
+                    "Schuri",
+                    "MidRight",
+                    "MC",
+                    "Left"
                 ]
             ],
             [
                 "speak",
                 [
                     "MC",
-                    "Thank you."
+                    "Do you think it was that necromancer who caused this?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "The timelines matches but...|Why would she do this? She couldn't have known we were going here."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "The old man will probably know. We should ask when we get the chance."
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Senya",
+                    "Schuri",
+                    "MC"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "800"
+                ]
+            ],
+            [
+                "sound",
+                [
+                    "WindWave"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open",
+                    "1500",
+                    "36,17,89"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "250"
+                ]
+            ],
+            [
+                "hide_layer",
+                [
+                    "seal"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "800"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "CastleRuins"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Aesc",
+                    "Right"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Aesc",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Alright, the barrier's dispelled."
                 ]
             ],
             [
@@ -185,7 +360,27 @@
                 "speak",
                 [
                     "Aesc",
-                    "I'll be following behind your group to figure out what's happened all those years ago.|The spell from earlier and dispelling the barrier took a considerable amount of magic so I won't be able to help in a fight."
+                    "Ah.....it's been so long since I've last visited."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Thank you for your help."
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Aesc"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "I'll be following behind your group to figure out what had happened.|The spell from back at the tavern and dispelling the barrier took a considerable amount of magic...|so I won't be able to help if there's a fight."
                 ]
             ],
             [
@@ -196,7 +391,7 @@
                 "speak",
                 [
                     "MC",
-                    "You've already done plenty for us.|We should head in."
+                    "You've already done plenty for us."
                 ]
             ],
             [
@@ -217,10 +412,30 @@
                 [
                     "sealedMansionExplore"
                 ]
+            ],
+            [
+                "remove_all_units",
+                []
+            ],
+            [
+                "add_group",
+                [
+                    "Party",
+                    "Party",
+                    "immediate"
+                ]
+            ],
+            [
+                "add_group",
+                [
+                    "enemies",
+                    "enemies",
+                    "immediate"
+                ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "chapter_title\nenable_fog_of_war;t\nset_fog_of_war;gba;7\nadd_group;Party;Party;immediate\nadd_group;enemies;enemies;immediate\nmusic;sealedMansion\nadd_group;Party\ntransition;close\nchange_background;CastleRuins\ntransition;open\nadd_portrait;Aesc;Left\nspeak;Aesc;Here we are. The old Lord's place.|After the incident, it has been sealed off by a mysterious force.\nmove_portrait;Aesc;Right\nspeak;Aesc;I can remove this barrier however...\nmirror_portrait;Aesc\nspeak;Aesc;I warn you.|No one knows what's happened in these walls since then.\nmirror_portrait;Aesc\nadd_portrait;MC;Left\nspeak;Aesc;After all, nothing went in or out in these past few weeks.|Who knows what sorts of magicks have been in effect.|Don't touch anything strange else something bad might happen.\nspeak;MC;We'll take your advice.|Thank you for showing us the way.\nend_skip\nspeak;Aesc;Stand back now, I'm going to dispel the barrier now.\nsound;WindWave\ntransition;open;800;36,17,89\nspeak;Aesc;Alright, the barrier's dispelled.|Ah.....it's been so long since I've been here.\nspeak;MC;Thank you.\nmirror_portrait;Aesc\nspeak;Aesc;I'll be following behind your group to figure out what's happened all those years ago.|The spell from earlier and dispelling the barrier took a considerable amount of magic so I won't be able to help in a fight.\nend_skip\nspeak;MC;You've already done plenty for us.|We should head in.\ntransition;close;250\nmusic_fade_back;1000\nmusic;sealedMansionExplore\n"
+        "source": "chapter_title\ntransition;close\nenable_fog_of_war;t\nset_fog_of_war;gba;7\nshow_layer;seal\nmusic;sealedMansion\nchange_background;CastleRuins\ntransition;open\nadd_portrait;Aesc;Left\nspeak;Aesc;Here we are. The old Lord's place.|A few days ago, it has been sealed off by a mysterious force.\nspeak;Aesc;Though a strange fellow had come by with an offer to the Lord...;;;thought_bubble\nmove_portrait;Aesc;Right\nadd_portrait;MC;Left\nspeak;Aesc;I can remove this barrier however...\nmirror_portrait;Aesc\nspeak;Aesc;I warn you.|No one knows what's happened in these walls since then.\nspeak;MC;A few days...?|That's when that necromancer attacked us...;;;thought_bubble\nspeak;Aesc;After all, nothing went in or out in these past few days.|Who knows what sorts of magicks have been in effect.|I wouldn't touch anything strange if I were you. Lest strange things happen.\nspeak;MC;We'll take your advice.|Thank you for showing us the way.\nmirror_portrait;Aesc\nspeak;Aesc;Stand back now, I'm going to dispel the barrier now.\nchange_background\nadd_unit;Aesc;19,23\nmove_cursor;Aesc;immediate\nwait;250\nmove_unit;Aesc;20,22\nwait;500\nsound;WindWave\ntransition;open;1000;36,17,89\nwait;500\nsound;WindWave\ntransition;open;1000;36,17,89\nwait;500\nspeak;Aesc;This barrier will talk a while to dispel.|Why don't you plan amongst yourselves?;top\nwait;250\nmulti_add_portrait;Senya;FarRight;Schuri;MidRight;MC;Left\nspeak;MC;Do you think it was that necromancer who caused this?\nspeak;Schuri;The timelines matches but...|Why would she do this? She couldn't have known we were going here.\nspeak;Senya;The old man will probably know. We should ask when we get the chance.\nmulti_remove_portrait;Senya;Schuri;MC\nwait;800\nsound;WindWave\ntransition;open;1500;36,17,89\nwait;250\nhide_layer;seal\nwait;800\nchange_background;CastleRuins\nadd_portrait;Aesc;Right\nadd_portrait;MC;Left\nmove_portrait;Aesc;Right\nspeak;Aesc;Alright, the barrier's dispelled.\nmirror_portrait;Aesc\nspeak;Aesc;Ah.....it's been so long since I've last visited.\nspeak;MC;Thank you for your help.\nmirror_portrait;Aesc\nspeak;Aesc;I'll be following behind your group to figure out what had happened.|The spell from back at the tavern and dispelling the barrier took a considerable amount of magic...|so I won't be able to help if there's a fight.\nend_skip\nspeak;MC;You've already done plenty for us.\ntransition;close;250\nmusic_fade_back;1000\nmusic;sealedMansionExplore\nremove_all_units\nadd_group;Party;Party;immediate\nadd_group;enemies;enemies;immediate\n"
     }
 ]

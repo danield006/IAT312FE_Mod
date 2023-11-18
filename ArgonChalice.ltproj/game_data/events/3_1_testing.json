@@ -1,0 +1,19 @@
+[
+    {
+        "name": "testing",
+        "trigger": "unit_wait",
+        "level_nid": "3_1",
+        "condition": "any_unit_in_region('testing', team='player') ",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#kill_unit;Monster (mobLord)"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "#kill_unit;Monster (mobLord)\n"
+    }
+]

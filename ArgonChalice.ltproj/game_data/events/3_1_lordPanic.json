@@ -28,7 +28,7 @@
                 ]
             ]
         ],
-        "only_once": false,
+        "only_once": true,
         "priority": 20,
         "source": "speak;Lord;Arghhh!\nadd_group;wave2;wave2;immediate;push\n#\n"
     }

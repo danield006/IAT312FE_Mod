@@ -803,6 +803,23 @@
                 "time_left": null,
                 "only_once": true,
                 "interrupt_move": false
+            },
+            {
+                "nid": "lyonAppears",
+                "region_type": "normal",
+                "position": [
+                    22,
+                    6
+                ],
+                "size": [
+                    7,
+                    6
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
             }
         ],
         "unit_groups": [
@@ -823,8 +840,8 @@
                         16
                     ],
                     "MC": [
-                        10,
-                        17
+                        11,
+                        5
                     ]
                 }
             },
@@ -947,8 +964,7 @@
                 "units": [
                     "mob17",
                     "mob18",
-                    "mob19",
-                    "Lyon"
+                    "mob19"
                 ],
                 "positions": {
                     "mob17": [
