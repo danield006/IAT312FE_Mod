@@ -105,7 +105,7 @@
     ],
     [
         "line_of_sight",
-        false
+        true
     ],
     [
         "aura_los",
@@ -113,7 +113,7 @@
     ],
     [
         "fog_los",
-        false
+        true
     ],
     [
         "ai_fog_of_war",
