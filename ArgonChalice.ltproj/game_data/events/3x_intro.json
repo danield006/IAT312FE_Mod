@@ -2,7 +2,7 @@
     {
         "name": "intro",
         "trigger": "level_start",
-        "level_nid": "3_2",
+        "level_nid": "3x",
         "condition": "True",
         "commands": [
             [

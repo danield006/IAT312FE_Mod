@@ -1,0 +1,69 @@
+[
+    {
+        "name": "BonesRanAwayReinforcements",
+        "trigger": "turn_change",
+        "level_nid": "2_1",
+        "condition": "True",
+        "commands": [
+            [
+                "if",
+                [
+                    "game.game_vars['_ch1BonesEscapeFlag'] == True"
+                ]
+            ],
+            [
+                "add_group",
+                [
+                    "Bandits3",
+                    "Bandits3",
+                    "immediate"
+                ]
+            ],
+            [
+                "change_objective_simple",
+                [
+                    "Rout the enemy."
+                ]
+            ],
+            [
+                "change_objective_win",
+                [
+                    "Rout the enemy."
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "That bastard got away!|We're gonna have to deal with the rest of his lackeys now too!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "The objective has changed.",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Senya"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "if;game.game_vars['_ch1BonesEscapeFlag'] == True\n    add_group;Bandits3;Bandits3;immediate\n    change_objective_simple;Rout the enemy.\n    change_objective_win;Rout the enemy.\n    add_portrait;Senya;Right\n    speak;Senya;That bastard got away!|We're gonna have to deal with the rest of his lackeys now too!\n    speak;;The objective has changed.;;;hint\n    remove_portrait;Senya;\n"
+    }
+]

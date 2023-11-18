@@ -203,7 +203,7 @@
             {
                 "nid": "101",
                 "variant": null,
-                "level": 1,
+                "level": 3,
                 "klass": "Thief",
                 "faction": "Cutthroat",
                 "starting_items": [
@@ -219,7 +219,7 @@
                 "ai_group": "",
                 "starting_position": [
                     14,
-                    14
+                    12
                 ],
                 "starting_traveler": null,
                 "generic": true
@@ -227,7 +227,7 @@
             {
                 "nid": "102",
                 "variant": null,
-                "level": 1,
+                "level": 3,
                 "klass": "Thief",
                 "faction": "Cutthroat",
                 "starting_items": [
@@ -242,8 +242,8 @@
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
-                    14,
-                    15
+                    15,
+                    12
                 ],
                 "starting_traveler": null,
                 "generic": true
@@ -660,23 +660,6 @@
                 }
             },
             {
-                "nid": "Bandits2",
-                "units": [
-                    "101",
-                    "102"
-                ],
-                "positions": {
-                    "101": [
-                        14,
-                        14
-                    ],
-                    "102": [
-                        14,
-                        15
-                    ]
-                }
-            },
-            {
                 "nid": "Mercenaries1",
                 "units": [
                     "104",
@@ -782,11 +765,11 @@
                 ],
                 "positions": {
                     "119": [
-                        0,
+                        9,
                         14
                     ],
                     "120": [
-                        0,
+                        9,
                         15
                     ]
                 }

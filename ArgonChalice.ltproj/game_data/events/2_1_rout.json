@@ -6,26 +6,12 @@
         "condition": "len(game.get_enemy_units()) == 0",
         "commands": [
             [
-                "add_portrait",
-                [
-                    "MC",
-                    "Right"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Finally...It's over."
-                ]
-            ],
-            [
                 "win_game",
                 []
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;MC;Right\nspeak;MC;Finally...It's over.\nwin_game\n"
+        "source": "win_game\n"
     }
 ]

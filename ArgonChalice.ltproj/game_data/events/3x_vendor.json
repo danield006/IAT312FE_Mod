@@ -2,7 +2,7 @@
     {
         "name": "vendor",
         "trigger": "on_region_interact",
-        "level_nid": "3_2",
+        "level_nid": "3x",
         "condition": "region.nid == 'vendor'",
         "commands": [
             [

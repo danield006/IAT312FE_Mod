@@ -1,7 +1,7 @@
 [
     {
-        "nid": "3_2",
-        "name": "Chapter 3B: Preparation for Battle",
+        "nid": "3x",
+        "name": "Chapter 3x: Preparation for Battle",
         "tilemap": "ch3C_smallerGreshia",
         "bg_tilemap": "ch3C_smallerGreshia",
         "party": "MC",
@@ -9,7 +9,7 @@
         "objective": {
             "simple": "Talk to Aesc",
             "win": "Talk to Aesc",
-            "loss": "MC Dies"
+            "loss": "-"
         },
         "roam": false,
         "roam_unit": null,

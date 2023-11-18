@@ -1,0 +1,114 @@
+[
+    {
+        "name": "talkSenya",
+        "trigger": "on_talk",
+        "level_nid": "3x",
+        "condition": "unit2.nid == 'Senya'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "What's up?"
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "SenyaConversation3",
+                    "Which topic do you want to ask about?",
+                    "Head Guard,Aesc,Caravan Life",
+                    "FLAG(backable)",
+                    "horizontal",
+                    "top_left"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['SenyaConversation3'] == 'Head Guard'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "PLACEHOLDER FOR SCHURI."
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['SenyaConversation3'] == 'Aesc'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "PLACEHOLDER FOR SCHURI."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##################"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['SenyaConversation3'] == 'Caravan'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "PLACEHOLDER FOR Mentor."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##################"
+                ]
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Senya;Right\nspeak;Senya;What's up?\nchoice;SenyaConversation3;Which topic do you want to ask about?;Head Guard,Aesc,Caravan Life;FLAG(backable);horizontal;top_left\nif;game.game_vars['SenyaConversation3'] == 'Head Guard'\n    add_portrait;MC;Left\n    speak;Senya;PLACEHOLDER FOR SCHURI.\nelif;game.game_vars['SenyaConversation3'] == 'Aesc'\n    add_portrait;MC;Left\n    speak;Senya;PLACEHOLDER FOR SCHURI.\n    ##################\nelif;game.game_vars['SenyaConversation3'] == 'Caravan'\n    add_portrait;MC;Left\n    speak;Senya;PLACEHOLDER FOR Mentor.\n    ##################\nend\n"
+    }
+]
