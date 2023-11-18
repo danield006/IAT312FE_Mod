@@ -201,12 +201,40 @@
                 "speak",
                 [
                     "Aesc",
-                    "We'll need to unleash the full power of those weapons I gave you.|The only way"
+                    "We'll need to unleash the full power of those weapons I gave you.|The only way to do that...will be retrieving the last of the set from the castle."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "These weapons...are they really the same weapons used in the founding wars?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Yes...|They were sealed away many centuries ago after their use was fufilled.|The exception being the Lifthrasir.|Orkney, the founder of Greshia, kept the book with him until death.| When all of the weapons are reunited, I can restore their powers temporarily|"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "There's a barrier over the castle you said right?|I'm guessing you can break that?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "With some difficulty yes.|I... have a hunch of what's happened inside.|Be prepared for the worst.|Rest up for tonight.|We'll enter the castle tommorow."
                 ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;close\nchange_background;House\ntransition;open\nmulti_add_portrait;Schuri;FarLeft;Senya;Left;MC;MidLeft;Aesc;FarRight\nspeak;Schuri;Who...was that at the end there?\nspeak;Aesc;That was the necromancer responsible for all the monsters in the city.|He's been using an invisibility spell to hide in the city.|The fool never suspected I could see his aura the whole time.\nspeak;MC;Is that how he managed to warp monsters right next to you?\nspeak;Aesc;Correct.|Thanks to you, no monsters could quite get to me from a safe distance.|He took a risk and came close to warp them right onto me.|Fortunately that also meant my spell did quite some damage to him.|He won't be able to recast that invisibility for some time.|Next time you see him, make sure you finish him off.\nspeak;Schuri;Um... about Aesc or I-I mean yourself I suppose.\nspeak;Aesc;Yes... I am 'Aesc',  it was a nickname Cyrus gave me in his youth.\nspeak;MC;You knew teach when he was a kid?\nspeak;Aesc;About 50 years ago yes.|He was my pupil long ago.|Given the fact that he told you to find Aesc and he's not with you...|Well...I have an idea what happened.\nspeak;Senya;That woman...she was way out of our league,|even teacher had no chance of beating her...\nspeak;Aesc;Woman? What happened to Cyrus?\ntransition;close\nchange_background;House\ntransition;open\nend_skip\nmulti_add_portrait;Schuri;FarLeft;Senya;Left;MC;MidLeft;Aesc;FarRight\nspeak;Aesc;I see...that matches the description of the woman who entered the castle a week ago.\nspeak;MC;!|Right you mentioned something about the castle earlier.\nspeak;Aesc;1 week ago, a hooded woman named Lilith entered the castle and spoke with Lord Rikard.|A day later, a domed barrier enveloped the castle.|No one quite knows what's happening inside at this point.|Two days after, monsters began showing up inside the city,|and well I've been fighting for the past 3 or so days straight until you three showed up.\nspeak;Senya;You're kidding!|Anyone would have collapsed from exhaustion by this point!|And if what you say is true 50 years ago...\nspeak;Aesc;Hah...I'm not quite ready to keel over just yet.|But I suspect that was part of a larger plan.|Keep me out of the equation while that woman sets up her own spell.\nspeak;Schuri;Could you still help us fight Lilith and recover the chalice?\nspeak;Aesc;I wish I could...|By the time I'm fit to fight again.|Her plan is no doubt complete.|The world will need you three to stop her.\nspeak;MC;Do we...even stand a chance against her?\nspeak;Aesc;We'll need to unleash the full power of those weapons I gave you.|The only way \n"
+        "source": "transition;close\nchange_background;House\ntransition;open\nmulti_add_portrait;Schuri;FarLeft;Senya;Left;MC;MidLeft;Aesc;FarRight\nspeak;Schuri;Who...was that at the end there?\nspeak;Aesc;That was the necromancer responsible for all the monsters in the city.|He's been using an invisibility spell to hide in the city.|The fool never suspected I could see his aura the whole time.\nspeak;MC;Is that how he managed to warp monsters right next to you?\nspeak;Aesc;Correct.|Thanks to you, no monsters could quite get to me from a safe distance.|He took a risk and came close to warp them right onto me.|Fortunately that also meant my spell did quite some damage to him.|He won't be able to recast that invisibility for some time.|Next time you see him, make sure you finish him off.\nspeak;Schuri;Um... about Aesc or I-I mean yourself I suppose.\nspeak;Aesc;Yes... I am 'Aesc',  it was a nickname Cyrus gave me in his youth.\nspeak;MC;You knew teach when he was a kid?\nspeak;Aesc;About 50 years ago yes.|He was my pupil long ago.|Given the fact that he told you to find Aesc and he's not with you...|Well...I have an idea what happened.\nspeak;Senya;That woman...she was way out of our league,|even teacher had no chance of beating her...\nspeak;Aesc;Woman? What happened to Cyrus?\ntransition;close\nchange_background;House\ntransition;open\nend_skip\nmulti_add_portrait;Schuri;FarLeft;Senya;Left;MC;MidLeft;Aesc;FarRight\nspeak;Aesc;I see...that matches the description of the woman who entered the castle a week ago.\nspeak;MC;!|Right you mentioned something about the castle earlier.\nspeak;Aesc;1 week ago, a hooded woman named Lilith entered the castle and spoke with Lord Rikard.|A day later, a domed barrier enveloped the castle.|No one quite knows what's happening inside at this point.|Two days after, monsters began showing up inside the city,|and well I've been fighting for the past 3 or so days straight until you three showed up.\nspeak;Senya;You're kidding!|Anyone would have collapsed from exhaustion by this point!|And if what you say is true 50 years ago...\nspeak;Aesc;Hah...I'm not quite ready to keel over just yet.|But I suspect that was part of a larger plan.|Keep me out of the equation while that woman sets up her own spell.\nspeak;Schuri;Could you still help us fight Lilith and recover the chalice?\nspeak;Aesc;I wish I could...|By the time I'm fit to fight again.|Her plan is no doubt complete.|The world will need you three to stop her.\nspeak;MC;Do we...even stand a chance against her?\nspeak;Aesc;We'll need to unleash the full power of those weapons I gave you.|The only way to do that...will be retrieving the last of the set from the castle.\nspeak;Schuri;These weapons...are they really the same weapons used in the founding wars?\nspeak;Aesc;Yes...|They were sealed away many centuries ago after their use was fufilled.|The exception being the Lifthrasir.|Orkney, the founder of Greshia, kept the book with him until death.| When all of the weapons are reunited, I can restore their powers temporarily|\nspeak;Senya;There's a barrier over the castle you said right?|I'm guessing you can break that?\nspeak;Aesc;With some difficulty yes.|I... have a hunch of what's happened inside.|Be prepared for the worst.|Rest up for tonight.|We'll enter the castle tommorow.\n"
     }
 ]
