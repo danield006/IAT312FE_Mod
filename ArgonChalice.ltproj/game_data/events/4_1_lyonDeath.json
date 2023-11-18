@@ -1,0 +1,46 @@
+[
+    {
+        "name": "lyonDeath",
+        "trigger": "unit_death",
+        "level_nid": "4_1",
+        "condition": "unit.nid == 'Lyon'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Lyon",
+                    "Right"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Lyon",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lyon",
+                    "How could this be..."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Lyon"
+                ]
+            ],
+            [
+                "hide_layer",
+                [
+                    "lyonAppears"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "add_portrait;Lyon;Right\nmove_portrait;Lyon;FarRight\nspeak;Lyon;How could this be...\nremove_portrait;Lyon\nhide_layer;lyonAppears\n"
+    }
+]

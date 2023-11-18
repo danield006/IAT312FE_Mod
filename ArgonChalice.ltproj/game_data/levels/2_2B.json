@@ -6,10 +6,10 @@
         "bg_tilemap": null,
         "party": "MC",
         "music": {
-            "player_phase": "tacticalBattleTheme",
-            "enemy_phase": "tacticalBattleTheme",
-            "other_phase": "tacticalBattleTheme",
-            "enemy2_phase": "tacticalBattleTheme"
+            "player_phase": "greshiaBGM",
+            "enemy_phase": null,
+            "other_phase": null,
+            "enemy2_phase": null
         },
         "objective": {
             "simple": "Get to the Tavern",

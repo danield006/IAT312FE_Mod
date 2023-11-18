@@ -3,7 +3,7 @@
         "name": "tooSlowOutro",
         "trigger": "turn_change",
         "level_nid": "4_1",
-        "condition": "game.turncount == 2",
+        "condition": "game.turncount == 20",
         "commands": [
             [
                 "screen_shake",

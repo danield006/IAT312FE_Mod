@@ -52,7 +52,7 @@
             {
                 "nid": "Lyon",
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -129,7 +129,7 @@
             {
                 "nid": "boss",
                 "variant": null,
-                "level": 15,
+                "level": 11,
                 "klass": "Entombed",
                 "faction": "Monster",
                 "starting_items": [
@@ -152,7 +152,7 @@
             {
                 "nid": "eliteEnemy1",
                 "variant": null,
-                "level": 12,
+                "level": 9,
                 "klass": "Revenant",
                 "faction": "Monster",
                 "starting_items": [
@@ -173,7 +173,7 @@
             {
                 "nid": "eliteEnemy2",
                 "variant": null,
-                "level": 10,
+                "level": 9,
                 "klass": "Revenant",
                 "faction": "Monster",
                 "starting_items": [
@@ -589,6 +589,31 @@
                 "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
+            },
+            {
+                "nid": "gateGuard",
+                "variant": null,
+                "level": 9,
+                "klass": "Knight",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Silver Lance",
+                        false
+                    ],
+                    [
+                        "Door Key",
+                        true
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "AttackTile",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
             }
         ],
         "regions": [
@@ -736,8 +761,8 @@
                     1
                 ],
                 "size": [
-                    4,
-                    12
+                    6,
+                    13
                 ],
                 "sub_nid": "",
                 "condition": "True",
@@ -763,7 +788,7 @@
                 "interrupt_move": false
             },
             {
-                "nid": "openGate",
+                "nid": "Door",
                 "region_type": "event",
                 "position": [
                     15,
@@ -773,10 +798,10 @@
                     2,
                     2
                 ],
-                "sub_nid": "Open",
-                "condition": "True",
+                "sub_nid": "Unlock",
+                "condition": "unit.can_unlock(region)",
                 "time_left": null,
-                "only_once": false,
+                "only_once": true,
                 "interrupt_move": false
             }
         ],
@@ -790,15 +815,15 @@
                 ],
                 "positions": {
                     "Schuri": [
-                        10,
-                        17
+                        11,
+                        16
                     ],
                     "Senya": [
-                        9,
+                        10,
                         16
                     ],
                     "MC": [
-                        9,
+                        10,
                         17
                     ]
                 }
@@ -819,11 +844,12 @@
                     "mob8",
                     "mob9",
                     "mob10",
-                    "mob11"
+                    "mob11",
+                    "gateGuard"
                 ],
                 "positions": {
                     "eliteEnemy1": [
-                        19,
+                        20,
                         2
                     ],
                     "eliteEnemy2": [
@@ -867,16 +893,20 @@
                         4
                     ],
                     "mob9": [
-                        12,
-                        5
+                        11,
+                        4
                     ],
                     "mob10": [
                         16,
-                        10
+                        8
                     ],
                     "mob11": [
-                        15,
-                        11
+                        14,
+                        9
+                    ],
+                    "gateGuard": [
+                        17,
+                        15
                     ]
                 }
             },
@@ -903,7 +933,7 @@
                         6
                     ],
                     "mob15": [
-                        10,
+                        8,
                         12
                     ],
                     "mob16": [
@@ -917,7 +947,8 @@
                 "units": [
                     "mob17",
                     "mob18",
-                    "mob19"
+                    "mob19",
+                    "Lyon"
                 ],
                 "positions": {
                     "mob17": [
@@ -931,15 +962,14 @@
                     "mob19": [
                         5,
                         5
+                    ],
+                    "Lyon": [
+                        27,
+                        4
                     ]
                 }
             }
         ],
-        "ai_groups": [
-            {
-                "nid": "",
-                "trigger_threshold": 1
-            }
-        ]
+        "ai_groups": []
     }
 ]

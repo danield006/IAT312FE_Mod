@@ -1,7 +1,7 @@
 [
     {
         "name": "mentorAppears",
-        "trigger": "unit_wait",
+        "trigger": "turn_change",
         "level_nid": "4_1",
         "condition": "game.level.regions.get('mentorArea').contains(game.get_unit('MC').position)",
         "commands": [

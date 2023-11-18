@@ -1,0 +1,27 @@
+[
+    {
+        "name": "schuriDies",
+        "trigger": "unit_death",
+        "level_nid": "4_1",
+        "condition": "unit.nid == 'Schuri'",
+        "commands": [
+            [
+                "speak",
+                [
+                    "MC",
+                    "Schuri!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Sorry...I'll do my best to follow you later..."
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "speak;MC;Schuri!\nspeak;Schuri;Sorry...I'll do my best to follow you later...\n"
+    }
+]

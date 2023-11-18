@@ -34,13 +34,6 @@
                 ]
             ],
             [
-                "add_unit",
-                [
-                    "Lyon",
-                    "27,5"
-                ]
-            ],
-            [
                 "move_unit",
                 [
                     "Lyon",
@@ -53,10 +46,22 @@
                     "Lyon",
                     "You won't be going any further."
                 ]
+            ],
+            [
+                "sound",
+                [
+                    "FireBall"
+                ]
+            ],
+            [
+                "show_layer",
+                [
+                    "lyonAppears"
+                ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_group;wave3;wave3\nmove_unit;mob17;13,4\nmove_unit;mob18;16,5\nmove_unit;mob19;15,5\nadd_unit;Lyon;27,5\nmove_unit;Lyon;26,8\nspeak;Lyon;You won't be going any further.\n\n"
+        "source": "add_group;wave3;wave3\nmove_unit;mob17;13,4\nmove_unit;mob18;16,5\nmove_unit;mob19;15,5\nmove_unit;Lyon;26,8\nspeak;Lyon;You won't be going any further.\nsound;FireBall\nshow_layer;lyonAppears\n"
     }
 ]

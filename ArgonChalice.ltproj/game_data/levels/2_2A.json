@@ -6,7 +6,10 @@
         "bg_tilemap": null,
         "party": "MC",
         "music": {
-            "player_phase": "greshiaBGM"
+            "player_phase": "tacticalBattleTheme",
+            "enemy_phase": "tacticalBattleTheme",
+            "enemy2_phase": "tacticalBattleTheme",
+            "other_phase": "tacticalBattleTheme"
         },
         "objective": {
             "simple": "Protect Aesc for {eval:game.turncount}/8 turns",
