@@ -96,8 +96,8 @@
         "desc": "Did you complete the guard rescue?"
     },
     {
-        "nid": "_ch2AescTalkTurn",
-        "desc": "Which turn did you talk to Aesc for defense turn count"
+        "nid": "_ch2AescTalkedTo",
+        "desc": "Did you talk to Aesc yet"
     },
     {
         "nid": "_randomCheckItemDrop",
@@ -106,5 +106,9 @@
     {
         "nid": "_ch1VillageDestroyed",
         "desc": "Was a village destroyed during chapter 1?"
+    },
+    {
+        "nid": "",
+        "desc": null
     }
 ]

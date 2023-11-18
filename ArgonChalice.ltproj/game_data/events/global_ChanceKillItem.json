@@ -3,7 +3,7 @@
         "name": "ChanceKillItem",
         "trigger": "unit_death",
         "level_nid": null,
-        "condition": "unit.team == 'enemy'",
+        "condition": "unit1.team == 'enemy' && unit2.team == 'player'",
         "commands": [
             [
                 "game_var",

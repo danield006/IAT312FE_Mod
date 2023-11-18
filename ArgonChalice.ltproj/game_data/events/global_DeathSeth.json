@@ -35,6 +35,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "add_portrait;Seth;FarRight\nspeak;Seth;Urgh...|My apologies. I must withdraw.\nexpression;Seth;CloseEyes\nremove_portrait;Seth\n"
     }
 ]

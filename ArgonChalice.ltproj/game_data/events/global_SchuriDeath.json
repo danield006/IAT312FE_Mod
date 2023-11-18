@@ -1,0 +1,33 @@
+[
+    {
+        "name": "SchuriDeath",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.nid == 'Senya'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Noo...I'm gonna fall back..."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Schuri"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Schuri;FarRight\nspeak;Schuri;Noo...I'm gonna fall back...\nremove_portrait;Schuri\n"
+    }
+]

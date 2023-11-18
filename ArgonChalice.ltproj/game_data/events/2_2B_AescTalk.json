@@ -65,12 +65,38 @@
                 "change_ai",
                 [
                     "Aesc",
-                    "Attack"
+                    "Pursue"
+                ]
+            ],
+            [
+                "change_objective_simple",
+                [
+                    "Enemies left: {eval:len(game.get_enemy_units())}"
+                ]
+            ],
+            [
+                "change_objective_win",
+                [
+                    "Enemies left: {eval:len(game.get_enemy_units())}"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch2AescTalkedTo",
+                    "True"
+                ]
+            ],
+            [
+                "remove_talk",
+                [
+                    "MC",
+                    "Aesc"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;Aesc;Right\nadd_portrait;MC;Left\nspeak;MC;You! Are you the one we spoke to earlier?\nspeak;Aesc;In the flesh.\nspeak;MC;How do you know about Aesc?\nspeak;Aesc;...That's a nickname young Cyrus gave me decades ago.\nspeak;MC;W-w-wait teach?|Young? Decades?\nspeak;Aesc;I'll explain everything after we get this area safe.|...I'll need some tea as well.|Haven't talked to anyone this long for years.|Now come on! Let's clear this area out.\nchange_ai;Aesc;Attack\n"
+        "source": "add_portrait;Aesc;Right\nadd_portrait;MC;Left\nspeak;MC;You! Are you the one we spoke to earlier?\nspeak;Aesc;In the flesh.\nspeak;MC;How do you know about Aesc?\nspeak;Aesc;...That's a nickname young Cyrus gave me decades ago.\nspeak;MC;W-w-wait teach?|Young? Decades?\nspeak;Aesc;I'll explain everything after we get this area safe.|...I'll need some tea as well.|Haven't talked to anyone this long for years.|Now come on! Let's clear this area out.\nchange_ai;Aesc;Pursue\nchange_objective_simple;Enemies left: {eval:len(game.get_enemy_units())}\nchange_objective_win;Enemies left: {eval:len(game.get_enemy_units())}\ngame_var;_ch2AescTalkedTo;True\nremove_talk;MC;Aesc\n"
     }
 ]

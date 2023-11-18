@@ -78,10 +78,48 @@
             [
                 "end",
                 []
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Reward for clearing the map",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "MC",
+                    "Speedwing (Speedwing)"
+                ]
+            ],
+            [
+                "give_exp",
+                [
+                    "MC",
+                    "100"
+                ]
+            ],
+            [
+                "give_exp",
+                [
+                    "Schuri",
+                    "100"
+                ]
+            ],
+            [
+                "give_exp",
+                [
+                    "Senya",
+                    "100"
+                ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "if;game.game_vars['_ch2GuardSaved'] == True\nelse\n    add_portrait;Senya;Left\n    speak;;Senya seems content that the head guard wasn't helped, +1;;;narration_top\n    inc_game_var;_SenyaOpinion;1\n    remove_portrait;Senya\n    add_portrait;Schuri;Left\n    speak;;Schuri is upset that the head guard wasn't saved. -1;;;narration_top\n    inc_game_var;_SchuriOpinion;-1\n    remove_portrait;Schuri\nend\n"
+        "source": "if;game.game_vars['_ch2GuardSaved'] == True\nelse\n    add_portrait;Senya;Left\n    speak;;Senya seems content that the head guard wasn't helped, +1;;;narration_top\n    inc_game_var;_SenyaOpinion;1\n    remove_portrait;Senya\n    add_portrait;Schuri;Left\n    speak;;Schuri is upset that the head guard wasn't saved. -1;;;narration_top\n    inc_game_var;_SchuriOpinion;-1\n    remove_portrait;Schuri\nend\nspeak;;Reward for clearing the map;;;hint\ngive_item;MC;Speedwing (Speedwing)\ngive_exp;MC;100\ngive_exp;Schuri;100\ngive_exp;Senya;100\n"
     }
 ]
