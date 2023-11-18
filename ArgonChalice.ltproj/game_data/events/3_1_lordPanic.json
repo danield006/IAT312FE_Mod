@@ -3,13 +3,20 @@
         "name": "lordPanic",
         "trigger": "unit_death",
         "level_nid": "3_1",
-        "condition": "unit.nid == 'mobHighGuard'",
+        "condition": "unit.nid == 'HeadGuard'",
         "commands": [
             [
                 "speak",
                 [
                     "Lord",
                     "Arghhh!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Be careful! Killing the Head Guard angered him!"
                 ]
             ],
             [
@@ -30,6 +37,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "speak;Lord;Arghhh!\nadd_group;wave2;wave2;immediate;push\n#\n"
+        "source": "speak;Lord;Arghhh!\nspeak;Aesc;Be careful! Killing the Head Guard angered him!\nadd_group;wave2;wave2;immediate;push\n#\n"
     }
 ]

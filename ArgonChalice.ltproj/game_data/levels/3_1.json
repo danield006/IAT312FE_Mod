@@ -82,7 +82,10 @@
                 "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": null,
+                "starting_position": [
+                    5,
+                    22
+                ],
                 "starting_traveler": null,
                 "generic": true
             },
@@ -179,27 +182,6 @@
                 "starting_items": [
                     [
                         "Rotten Claw",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": null,
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "mobHighGuard",
-                "variant": null,
-                "level": 9,
-                "klass": "Revenant",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Fetid Claw",
                         false
                     ]
                 ],
@@ -556,6 +538,110 @@
                 "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
+            },
+            {
+                "nid": "Lilith",
+                "team": "enemy2",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "HeadGuard",
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "guard1",
+                "variant": null,
+                "level": 1,
+                "klass": "Soldier",
+                "faction": "Soldier",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "guard1_1",
+                "variant": null,
+                "level": 1,
+                "klass": "Soldier",
+                "faction": "Soldier",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "guard1_3",
+                "variant": null,
+                "level": 1,
+                "klass": "Soldier",
+                "faction": "Soldier",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "guard1_2",
+                "variant": null,
+                "level": 1,
+                "klass": "Soldier",
+                "faction": "Soldier",
+                "starting_items": [
+                    [
+                        "Iron Sword",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "other",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
             }
         ],
         "regions": [
@@ -777,7 +863,6 @@
                     "mob2",
                     "mob3",
                     "mobLord",
-                    "mobHighGuard",
                     "mob4",
                     "mob5",
                     "mob6",
@@ -790,7 +875,8 @@
                     "mob4_1",
                     "mob1_1",
                     "mob7_1",
-                    "mob7_2"
+                    "mob7_2",
+                    "HeadGuard"
                 ],
                 "positions": {
                     "mob4": [
@@ -849,10 +935,6 @@
                         18,
                         13
                     ],
-                    "mobHighGuard": [
-                        12,
-                        17
-                    ],
                     "mob2": [
                         20,
                         11
@@ -864,6 +946,10 @@
                     "mob1_1": [
                         18,
                         2
+                    ],
+                    "HeadGuard": [
+                        12,
+                        17
                     ]
                 }
             },
@@ -892,17 +978,45 @@
             {
                 "nid": "sceneGroup",
                 "units": [
-                    "Lyon",
-                    "Seth"
+                    "Seth",
+                    "Lilith",
+                    "guard1",
+                    "guard1_1",
+                    "guard1_3",
+                    "guard1_2"
                 ],
                 "positions": {
                     "Seth": [
-                        9,
-                        2
+                        13,
+                        13
                     ],
                     "Lyon": [
                         6,
                         9
+                    ],
+                    "Lilith": [
+                        7,
+                        18
+                    ],
+                    "guard1": [
+                        10,
+                        17
+                    ],
+                    "guard1_1": [
+                        11,
+                        18
+                    ],
+                    "guard1_3": [
+                        15,
+                        17
+                    ],
+                    "guard1_2": [
+                        14,
+                        18
+                    ],
+                    "pastHeadGuard": [
+                        10,
+                        14
                     ]
                 }
             }
