@@ -1,0 +1,120 @@
+[
+    {
+        "name": "SchuriTalk",
+        "trigger": "on_talk",
+        "level_nid": "2x",
+        "condition": "target.nid == 'Schuri'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Yes?"
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "SchuriConversation3",
+                    "Which topic do you want to ask about?",
+                    "Head Guard,New Magic, Aesc",
+                    "FLAG(backable)",
+                    "horizontal",
+                    "top_left"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['SchuriConversation3'] == 'Head Guard'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "PLACEHOLDER FOR YESTERDAY"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#####################################"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['SchuriConversation3'] == 'New Magic'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "PLACEHOLDER FOR Greshia."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##################"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['SchuriConversation3'] == 'Aesc'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "PLACEHOLDER FOR Greshia."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##################"
+                ]
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Schuri;Right\nspeak;Schuri;Yes?\nchoice;SchuriConversation3;Which topic do you want to ask about?;Head Guard,New Magic, Aesc;FLAG(backable);horizontal;top_left\nif;game.game_vars['SchuriConversation3'] == 'Head Guard'\n    add_portrait;MC;Left\n    speak;Schuri;PLACEHOLDER FOR YESTERDAY\n    #####################################\nelif;game.game_vars['SchuriConversation3'] == 'New Magic'\n    add_portrait;MC;Left\n    speak;Schuri;PLACEHOLDER FOR Greshia.\n    ##################\nelif;game.game_vars['SchuriConversation3'] == 'Aesc'\n    add_portrait;MC;Left\n    speak;Schuri;PLACEHOLDER FOR Greshia.\n    ##################\nend\n"
+    }
+]

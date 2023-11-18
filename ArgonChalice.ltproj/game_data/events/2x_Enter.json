@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Enter",
+        "trigger": "Enter",
+        "level_nid": "2x",
+        "condition": "unit.nid == 'MC'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "What a long day...|Time to go to bed."
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "add_portrait;MC;Left;\nspeak;MC;What a long day...|Time to go to bed.\nwin_game\n"
+    }
+]

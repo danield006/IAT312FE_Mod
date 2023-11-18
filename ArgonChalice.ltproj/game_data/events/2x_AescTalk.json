@@ -1,0 +1,120 @@
+[
+    {
+        "name": "AescTalk",
+        "trigger": "on_talk",
+        "level_nid": "2x",
+        "condition": "target.nid == 'Aesc'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Aesc",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "What do you wanna ask about?"
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "AescConversation3",
+                    "Which topic do you want to ask about?",
+                    "Cyrus,Aesc,Myself",
+                    "FLAG(backable)",
+                    "horizontal",
+                    "top_left"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['AescConversation3'] == 'Cyrus'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "PLACEHOLDER FOR MENTOR"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#####################################"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['AescConversation3'] == 'Aesc'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "PLACEHOLDER FOR Senya."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##################"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['AescConversation3'] == 'Myself'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "PLACEHOLDER FOR Schuri."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##################"
+                ]
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Aesc;Right\nspeak;Aesc;What do you wanna ask about?\nchoice;AescConversation3;Which topic do you want to ask about?;Cyrus,Aesc,Myself;FLAG(backable);horizontal;top_left\nif;game.game_vars['AescConversation3'] == 'Cyrus'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR MENTOR\n    #####################################\nelif;game.game_vars['AescConversation3'] == 'Aesc'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR Senya.\n    ##################\nelif;game.game_vars['AescConversation3'] == 'Myself'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR Schuri.\n    ##################\nend\n"
+    }
+]

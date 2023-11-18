@@ -1,0 +1,89 @@
+[
+    {
+        "name": "Intro",
+        "trigger": "level_start",
+        "level_nid": "2x",
+        "condition": "True",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                []
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "location_card",
+                [
+                    "After dinner..."
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Man...I'm full.|Looks like everyone else is outside as well.|Guess I got some free time.",
+                    "",
+                    "",
+                    "thought_bubble"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "MC",
+                    "Senya"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "MC",
+                    "Schuri"
+                ]
+            ],
+            [
+                "add_talk",
+                [
+                    "MC",
+                    "Aesc"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "When you're ready to continue, Enter the tavern and select <green>Enter</green>",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "8,1"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "transition;close\nchange_background\ntransition;open\nlocation_card;After dinner...\nadd_portrait;MC;FarRight\nspeak;MC;Man...I'm full.|Looks like everyone else is outside as well.|Guess I got some free time.;;;thought_bubble\nadd_talk;MC;Senya\nadd_talk;MC;Schuri\nadd_talk;MC;Aesc\nspeak;;When you're ready to continue, Enter the tavern and select <green>Enter</green>;;;hint\nflicker_cursor;8,1\n"
+    }
+]
