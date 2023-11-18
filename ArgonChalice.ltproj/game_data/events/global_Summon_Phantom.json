@@ -65,6 +65,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "if;game.get_unit('phantom')\n    resurrect;phantom\n    remove_unit;phantom;warp\n    autolevel_to;phantom;unit.level\nelse\n    make_generic;phantom;Fighter;unit.level;player\nend\nadd_unit;phantom;{position};warp\nwait;200\n"
     }
 ]

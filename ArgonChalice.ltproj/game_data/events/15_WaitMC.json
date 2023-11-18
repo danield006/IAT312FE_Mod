@@ -1,0 +1,28 @@
+[
+    {
+        "name": "WaitMC",
+        "trigger": "unit_wait",
+        "level_nid": "15",
+        "condition": "unit.nid == 'MC_1'",
+        "commands": [
+            [
+                "speak",
+                [
+                    "",
+                    "When you end your turn either by performing an action or waiting,|your unit will turn grey to signal they are out of moves.|If all units have ended their turns, the game will end the player phase.|You can disable this in the options menu if you prefer.",
+                    "",
+                    "",
+                    "narration_top",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "3"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "speak;;When you end your turn either by performing an action or waiting,|your unit will turn grey to signal they are out of moves.|If all units have ended their turns, the game will end the player phase.|You can disable this in the options menu if you prefer.;;;narration_top;;;;;3\n"
+    }
+]

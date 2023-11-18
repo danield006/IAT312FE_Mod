@@ -46,6 +46,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;MC;FarRight\nspeak;MC;Sorry everyone...\nexpression;MC;CloseEyes;\nremove_portrait;MC\ntransition;close;500\nlose_game\n"
+        "source": "add_portrait;MC;FarRight\nspeak;MC;Sorry everyone...\nexpression;MC;CloseEyes\nremove_portrait;MC\ntransition;close;500\nlose_game\n"
     }
 ]

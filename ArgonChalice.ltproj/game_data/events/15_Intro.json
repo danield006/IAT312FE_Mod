@@ -6,17 +6,27 @@
         "condition": "True",
         "commands": [
             [
+                "textbox",
+                [
+                    "KeysToPress",
+                    "Use arrow keys and press 'x' to select an option",
+                    "top_left",
+                    "",
+                    "2"
+                ]
+            ],
+            [
                 "choice",
                 [
                     "playTutorial",
-                    "Do you want to play tutorial",
+                    "Do you want to play the tutorial",
                     "Yes,No"
                 ]
             ],
             [
                 "if",
                 [
-                    "game.game_vars['gameChoice'] == 'No'"
+                    "game.game_vars['playTutorial'] == 'No'"
                 ]
             ],
             [
@@ -30,159 +40,56 @@
                 []
             ],
             [
+                "else",
+                []
+            ],
+            [
+                "comment",
+                [
+                    "########################"
+                ]
+            ],
+            [
+                "remove_table",
+                [
+                    "KeysToPress"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "7,6"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "7,6"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "This is your cursor to control and view characters.|You can move it with the arrow keys.|Hover over a blue unit and press 'x' to select them.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "########################"
+                ]
+            ],
+            [
                 "end",
                 []
-            ],
-            [
-                "transition",
-                [
-                    "close"
-                ]
-            ],
-            [
-                "change_background",
-                []
-            ],
-            [
-                "transition",
-                [
-                    "open"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Senya",
-                    "FarLeft"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Schuri",
-                    "Left"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "MC",
-                    "MidLeft"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Mentor",
-                    "FarRight"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Mentor",
-                    "This is a tutorial map |Go visit houses and villages to learn more about the controls."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC_1",
-                    "How do I move?"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Mentor",
-                    "Use the arrow keys to control the cursor.|X will be your 'select' button. Press 'X' on yourself to move.|Z will be your 'cancel' button'.|C will be your 'details' button. Use it on units and menu options to get more info on them",
-                    "",
-                    "",
-                    "hint"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Mentor",
-                    "Visit the houses if you need a refresher on the controls.|If you want to visit houses and villages|Move your unit onto the tile it's located and select Visit."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Mentor",
-                    "I'll be waiting inside the castle. Take your time."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Mentor",
-                    "Seize the castle when you're ready to continue your training."
-                ]
-            ],
-            [
-                "remove_unit",
-                [
-                    "Mentor",
-                    "fade"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "close"
-                ]
-            ],
-            [
-                "change_background",
-                []
-            ],
-            [
-                "transition",
-                [
-                    "open"
-                ]
-            ],
-            [
-                "remove_portrait",
-                [
-                    "MC_1",
-                    "no_block"
-                ]
-            ],
-            [
-                "remove_portrait",
-                [
-                    "Mentor",
-                    "no_block"
-                ]
-            ],
-            [
-                "move_unit",
-                [
-                    "Schuri_1",
-                    "2,4"
-                ]
-            ],
-            [
-                "move_unit",
-                [
-                    "Senya_1",
-                    "0,4"
-                ]
-            ],
-            [
-                "move_unit",
-                [
-                    "MC_1",
-                    "1,3"
-                ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "choice;playTutorial;Do you want to play tutorial;Yes,No\nif;game.game_vars['gameChoice'] == 'No'\n    set_next_chapter;2_1\n    win_game\nend\ntransition;close\nchange_background\ntransition;open\nadd_portrait;Senya;FarLeft\nadd_portrait;Schuri;Left\nadd_portrait;MC;MidLeft\nadd_portrait;Mentor;FarRight\nspeak;Mentor;This is a tutorial map |Go visit houses and villages to learn more about the controls.\nspeak;MC_1;How do I move?\nspeak;Mentor;Use the arrow keys to control the cursor.|X will be your 'select' button. Press 'X' on yourself to move.|Z will be your 'cancel' button'.|C will be your 'details' button. Use it on units and menu options to get more info on them;;;hint\nspeak;Mentor;Visit the houses if you need a refresher on the controls.|If you want to visit houses and villages|Move your unit onto the tile it's located and select Visit.\nspeak;Mentor;I'll be waiting inside the castle. Take your time.\nspeak;Mentor;Seize the castle when you're ready to continue your training.\nremove_unit;Mentor;fade\ntransition;close\nchange_background\ntransition;open\nremove_portrait;MC_1;no_block\nremove_portrait;Mentor;no_block\nmove_unit;Schuri_1;2,4\nmove_unit;Senya_1;0,4\nmove_unit;MC_1;1,3\n"
+        "source": "textbox;KeysToPress;Use arrow keys and press 'x' to select an option;top_left;;2\nchoice;playTutorial;Do you want to play the tutorial;Yes,No\nif;game.game_vars['playTutorial'] == 'No'\n    set_next_chapter;2_1\n    win_game\nelse\n    ########################\n    remove_table;KeysToPress\n    flicker_cursor;7,6\n    flicker_cursor;7,6\n    speak;;This is your cursor to control and view characters.|You can move it with the arrow keys.|Hover over a blue unit and press 'x' to select them.;;;narration_top\n    ########################\nend\n"
     }
 ]
