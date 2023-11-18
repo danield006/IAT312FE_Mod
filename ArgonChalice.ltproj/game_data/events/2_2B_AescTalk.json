@@ -30,16 +30,47 @@
                 "speak",
                 [
                     "Aesc",
-                    "In the flesh. I must be brief,| I've got enough energy left to set up the rejecting field just one more time.|I need about 8 turns to set this up.|The monsters are smart and head straight for me but I'm unable to defend myself while I set this up.|You wish to learn about Aesc correct?|Then there's no better person to tell you than Aesc himself.|I'll tell you everything you wish to know if we can make it out of this mess."
+                    "In the flesh."
                 ]
             ],
             [
-                "win_game",
-                []
+                "speak",
+                [
+                    "MC",
+                    "How do you know about Aesc?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "...That's a nickname young Cyrus gave me decades ago."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "W-w-wait teach?|Young? Decades?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "I'll explain everything after we get this area safe.|...I'll need some tea as well.|Haven't talked to anyone this long for years.|Now come on! Let's clear this area out."
+                ]
+            ],
+            [
+                "change_ai",
+                [
+                    "Aesc",
+                    "Attack"
+                ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;Aesc;Right\nadd_portrait;MC;Left\nspeak;MC;You! Are you the one we spoke to earlier?\nspeak;Aesc;In the flesh. I must be brief,| I've got enough energy left to set up the rejecting field just one more time.|I need about 8 turns to set this up.|The monsters are smart and head straight for me but I'm unable to defend myself while I set this up.|You wish to learn about Aesc correct?|Then there's no better person to tell you than Aesc himself.|I'll tell you everything you wish to know if we can make it out of this mess.\nwin_game\n"
+        "source": "add_portrait;Aesc;Right\nadd_portrait;MC;Left\nspeak;MC;You! Are you the one we spoke to earlier?\nspeak;Aesc;In the flesh.\nspeak;MC;How do you know about Aesc?\nspeak;Aesc;...That's a nickname young Cyrus gave me decades ago.\nspeak;MC;W-w-wait teach?|Young? Decades?\nspeak;Aesc;I'll explain everything after we get this area safe.|...I'll need some tea as well.|Haven't talked to anyone this long for years.|Now come on! Let's clear this area out.\nchange_ai;Aesc;Attack\n"
     }
 ]
