@@ -123,6 +123,172 @@
                 ]
             ],
             [
+                "speak",
+                [
+                    "Senya",
+                    "It feels like I got run over by a carriage."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "I'm glad you're doing alright."
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "I almost forgot."
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Senya",
+                    "MC",
+                    "Schuri"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Schuri",
+                    "8,3"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Schuri",
+                    "Argon Chalice (ArgonChalice)"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "500"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "MC",
+                    "MidLeft",
+                    "Schuri",
+                    "FarLeft",
+                    "Senya",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "The Argon Chalice.|It was a good thing we got here when we did, Lilith was in the middle of a spell."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Yea that's great."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Hm? Senya, what's wrong?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Sorry I wasn't much help back there.|I tried to fight against her control, but I wasn't strong enough."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "It wasn't your fault. If anything it was mine.|Remember how Lilith said about testing our bonds? I should have considered your feelings more."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "HalfCloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "{var:MC_name}..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Don't worry, we won't hold this against you.|We have lots of work ahead of us."
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close",
+                    "2000"
+                ]
+            ],
+            [
+                "music",
+                [
+                    "okHappyEnding"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "MC",
+                    "Senya",
+                    "Schuri"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "InsideCastle"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Schuri",
+                    "MidLeft",
+                    "MC",
+                    "FarLeft",
+                    "Senya",
+                    "Right"
+                ]
+            ],
+            [
                 "comment",
                 [
                     "###stick together but senya goes , reuse the caravan thing"
@@ -132,6 +298,74 @@
                 "comment",
                 [
                     "#schuri and mc take care of the castle together and take in a single apprentice"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "You know...this place doesn't suit me.|As I travelled caravan to caravan..."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "HalfCloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "The new sights has always amazed lil' me."
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "You're leaving?"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "OpenEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "I've done a lot of thinking and well...|I'm going to leave this Castle and go see the world.|There's still a lot of places I haven't been and..."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "HalfCloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "There's too many memories here."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##"
                 ]
             ],
             [
@@ -197,6 +431,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#schuri good ending, senya lives\nspeak;;this is ending 4;;;narration\nmusic;aliveGoodTheme\nmulti_add_portrait;MC;MidLeft;Schuri;FarLeft\nmusic;aliveGoodTheme\nbop_portrait;Schuri\nspeak;Schuri;{var:MC_name}! We did it!|We beat Lilith!|The control on Senya should be dispelled too.\nspeak;MC;Senya!\nwait;500\nadd_portrait;PossessedSenya;Right\nexpression;PossessedSenya;CloseEyes\nwait;250\nremove_portrait;PossessedSenya\nadd_portrait;Senya;Right\nexpression;Senya;CloseEyes\nspeak;Senya;Ugh...my head...\nspeak;MC;Senya! How are you feeling?\n###stick together but senya goes , reuse the caravan thing\n#schuri and mc take care of the castle together and take in a single apprentice\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\nset_next_chapter;2222\n"
+        "source": "#schuri good ending, senya lives\nspeak;;this is ending 4;;;narration\nmusic;aliveGoodTheme\nmulti_add_portrait;MC;MidLeft;Schuri;FarLeft\nmusic;aliveGoodTheme\nbop_portrait;Schuri\nspeak;Schuri;{var:MC_name}! We did it!|We beat Lilith!|The control on Senya should be dispelled too.\nspeak;MC;Senya!\nwait;500\nadd_portrait;PossessedSenya;Right\nexpression;PossessedSenya;CloseEyes\nwait;250\nremove_portrait;PossessedSenya\nadd_portrait;Senya;Right\nexpression;Senya;CloseEyes\nspeak;Senya;Ugh...my head...\nspeak;MC;Senya! How are you feeling?\nspeak;Senya;It feels like I got run over by a carriage.\nspeak;Schuri;I'm glad you're doing alright.\nbop_portrait;Schuri\nspeak;Schuri;I almost forgot.\nmulti_remove_portrait;Senya;MC;Schuri\nmove_unit;Schuri;8,3\ngive_item;Schuri;Argon Chalice (ArgonChalice)\nwait;500\nmulti_add_portrait;MC;MidLeft;Schuri;FarLeft;Senya;Right\nspeak;Schuri;The Argon Chalice.|It was a good thing we got here when we did, Lilith was in the middle of a spell.\nspeak;Senya;Yea that's great.\nspeak;Schuri;Hm? Senya, what's wrong?\nspeak;Senya;Sorry I wasn't much help back there.|I tried to fight against her control, but I wasn't strong enough.\nspeak;MC;It wasn't your fault. If anything it was mine.|Remember how Lilith said about testing our bonds? I should have considered your feelings more.\nexpression;Senya;HalfCloseEyes\nspeak;Senya;{var:MC_name}...\nspeak;Schuri;Don't worry, we won't hold this against you.|We have lots of work ahead of us.\ntransition;close;2000\nmusic;okHappyEnding\nmulti_remove_portrait;MC;Senya;Schuri\nchange_background;InsideCastle\ntransition;open\nmulti_add_portrait;Schuri;MidLeft;MC;FarLeft;Senya;Right\n###stick together but senya goes , reuse the caravan thing\n#schuri and mc take care of the castle together and take in a single apprentice\nspeak;Senya;You know...this place doesn't suit me.|As I travelled caravan to caravan...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;The new sights has always amazed lil' me.\nbop_portrait;MC\nspeak;MC;You're leaving?\nexpression;Senya;OpenEyes\nspeak;Senya;I've done a lot of thinking and well...|I'm going to leave this Castle and go see the world.|There's still a lot of places I haven't been and...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;There's too many memories here.\n##\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To Be Ever Grateful;center;;cinematic\nset_next_chapter;2222\n"
     }
 ]
