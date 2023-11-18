@@ -232,5 +232,6 @@
     "2_2B_Rout.json": 230,
     "2_2B_Turn4Wave1.json": 231,
     "2_2B_Turn6Wave2.json": 232,
-    "2_2B_Turn8Wave3.json": 233
+    "2_2B_Turn8Wave3.json": 233,
+    "global_ChanceKillItem.json": 234
 }

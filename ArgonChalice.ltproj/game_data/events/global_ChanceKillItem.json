@@ -1,0 +1,144 @@
+[
+    {
+        "name": "ChanceKillItem",
+        "trigger": "unit_death",
+        "level_nid": null,
+        "condition": "unit.team == 'enemy'",
+        "commands": [
+            [
+                "game_var",
+                [
+                    "_randomCheckItemDrop",
+                    "game.get_random(0,100)"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_randomCheckItemDrop'] == 90"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "You found an item!"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit2}",
+                    "Dragonshield (Dragonshield)"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_randomCheckItemDrop'] == 91"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "You found an item!"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit2}",
+                    "Energy Ring (Energy Ring)"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_randomCheckItemDrop'] == 92"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "You found an item!"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit2}",
+                    "Speedwing (Speedwing)"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_randomCheckItemDrop'] == 93"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "You found an item!"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit2}",
+                    "Talisman (Talisman)"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_randomCheckItemDrop'] == 94"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "You found an item!"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit2}",
+                    "Goddess Icon (Goddess Icon)"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_randomCheckItemDrop'] == 95"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "You found an item!"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit2}",
+                    "Secret Book (Secret Book)"
+                ]
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "game_var;_randomCheckItemDrop;game.get_random(0,100)\nif;game.game_vars['_randomCheckItemDrop'] == 90\n    speak;;You found an item!\n    give_item;{unit2};Dragonshield (Dragonshield)\nelif;game.game_vars['_randomCheckItemDrop'] == 91\n    speak;;You found an item!\n    give_item;{unit2};Energy Ring (Energy Ring)\nelif;game.game_vars['_randomCheckItemDrop'] == 92\n    speak;;You found an item!\n    give_item;{unit2};Speedwing (Speedwing)\nelif;game.game_vars['_randomCheckItemDrop'] == 93\n    speak;;You found an item!\n    give_item;{unit2};Talisman (Talisman)\nelif;game.game_vars['_randomCheckItemDrop'] == 94\n    speak;;You found an item!\n    give_item;{unit2};Goddess Icon (Goddess Icon)\nelif;game.game_vars['_randomCheckItemDrop'] == 95\n    speak;;You found an item!\n    give_item;{unit2};Secret Book (Secret Book)\nend\n"
+    }
+]

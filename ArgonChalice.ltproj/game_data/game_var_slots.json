@@ -100,8 +100,8 @@
         "desc": "Which turn did you talk to Aesc for defense turn count"
     },
     {
-        "nid": "New Slot",
-        "desc": null
+        "nid": "_randomCheckItemDrop",
+        "desc": "Stores random variable to check if an item should be dropped."
     },
     {
         "nid": "_ch1VillageDestroyed",
