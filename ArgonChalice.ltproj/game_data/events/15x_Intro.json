@@ -3,7 +3,7 @@
         "name": "Intro",
         "trigger": "level_start",
         "level_nid": "15x",
-        "condition": "False",
+        "condition": "True",
         "commands": [
             [
                 "transition",
