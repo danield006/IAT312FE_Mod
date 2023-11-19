@@ -46,14 +46,95 @@
             [
                 "speak",
                 [
-                    "Aesc",
-                    "PLACEHOLDER FOR MENTOR"
+                    "MC",
+                    "About Teach....."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "#####################################"
+                    "Aesc",
+                    "Ah Cyrus...|He was such a bright student. Managed to join the Great Sages at such a young age."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "...I'm sorry we weren't able to help much against Lilith.|If we were stronger...perhaps Teach wouldn't be..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Now where are you getting your delusions from?|You wouldn't have been able to do jack against Lilith anyways."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Thanks your reassurance...",
+                    "",
+                    "",
+                    "thought_bubble"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "If Cyrus couldn't do much, then you wouldn't have been able to do anything.|...Thank you for telling me about him though.|It's nice to finally put faces to you three."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Huh? You knew about us?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Now I wonder where you sold your brain cells off to-"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "MC",
+                    "FLAG(no_block)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Hey!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "But Cyrus taking in students caused such a large ruckus.|Not to mention he's my own student.|Is it so odd that I would know of you?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "...I suppose not."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "...Cyrus did a good job though, training you."
                 ]
             ],
             [
@@ -73,13 +154,49 @@
                 "speak",
                 [
                     "Aesc",
-                    "PLACEHOLDER FOR Senya."
+                    "You want to learn more about me?|Surely you don't want to bore yourself with an old man's ramblings."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "##################"
+                    "MC",
+                    "Please do. We have so many things to ask of you.|The founding weapons,|about you..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Ah so bothersome. I suppose there's no harm in telling you more about myself.|I used to be a great sage myself.|I got tired of those old fogies' ramblings that I found myself Cyrus and quit."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "What? You taught Cyrus for an early retirement?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Yea. What of it?|Cyrus does a damn good job at it.|I thought I would have to continue with it for another few decades but|he was promoted with stunning success."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Haha...that's impressive...|What about the founding weapons?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Eh...there's not much point in telling you right now.|Not until we release their full potential.|I haven't spoken this much in ages. I need my tea."
                 ]
             ],
             [
@@ -98,14 +215,43 @@
             [
                 "speak",
                 [
-                    "Aesc",
-                    "PLACEHOLDER FOR Schuri."
+                    "MC",
+                    "About this light magic..."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "##################"
+                    "Aesc",
+                    "Light magic is old magic.|There's not many records left of it now in circulation.|However this old man has a few of them.|One must have clear intentions when casting.|You'll end up with unintended side effects otherwise."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "If light magic is old, how do I have the ability?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Light has always existed.|You're simply a rarity.|No new light users have popped up in centuries, since the founding wars even."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Then..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Not to worry though, I've got access to some of the most obscure texts.|You needn't worry about it."
                 ]
             ],
             [
@@ -115,6 +261,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Aesc;Right\nspeak;Aesc;What do you wanna ask about?\nchoice;AescConversation3;Which topic do you want to ask about?;Cyrus,Aesc,Myself;FLAG(backable);horizontal;top_left\nif;game.game_vars['AescConversation3'] == 'Cyrus'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR MENTOR\n    #####################################\nelif;game.game_vars['AescConversation3'] == 'Aesc'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR Senya.\n    ##################\nelif;game.game_vars['AescConversation3'] == 'Myself'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR Schuri.\n    ##################\nend\n"
+        "source": "add_portrait;Aesc;Right\nspeak;Aesc;What do you wanna ask about?\nchoice;AescConversation3;Which topic do you want to ask about?;Cyrus,Aesc,Myself;FLAG(backable);horizontal;top_left\nif;game.game_vars['AescConversation3'] == 'Cyrus'\n    add_portrait;MC;Left\n    speak;MC;About Teach.....\n    speak;Aesc;Ah Cyrus...|He was such a bright student. Managed to join the Great Sages at such a young age.\n    speak;MC;...I'm sorry we weren't able to help much against Lilith.|If we were stronger...perhaps Teach wouldn't be...\n    speak;Aesc;Now where are you getting your delusions from?|You wouldn't have been able to do jack against Lilith anyways.\n    speak;MC;Thanks your reassurance...;;;thought_bubble\n    speak;Aesc;If Cyrus couldn't do much, then you wouldn't have been able to do anything.|...Thank you for telling me about him though.|It's nice to finally put faces to you three.\n    speak;MC;Huh? You knew about us?\n    speak;Aesc;Now I wonder where you sold your brain cells off to-\n    bop_portrait;MC;FLAG(no_block)\n    speak;MC;Hey!\n    speak;Aesc;But Cyrus taking in students caused such a large ruckus.|Not to mention he's my own student.|Is it so odd that I would know of you?\n    speak;MC;...I suppose not.\n    speak;Aesc;...Cyrus did a good job though, training you.\nelif;game.game_vars['AescConversation3'] == 'Aesc'\n    add_portrait;MC;Left\n    speak;Aesc;You want to learn more about me?|Surely you don't want to bore yourself with an old man's ramblings.\n    speak;MC;Please do. We have so many things to ask of you.|The founding weapons,|about you...\n    speak;Aesc;Ah so bothersome. I suppose there's no harm in telling you more about myself.|I used to be a great sage myself.|I got tired of those old fogies' ramblings that I found myself Cyrus and quit.\n    speak;MC;What? You taught Cyrus for an early retirement?\n    speak;Aesc;Yea. What of it?|Cyrus does a damn good job at it.|I thought I would have to continue with it for another few decades but|he was promoted with stunning success.\n    speak;MC;Haha...that's impressive...|What about the founding weapons?\n    speak;Aesc;Eh...there's not much point in telling you right now.|Not until we release their full potential.|I haven't spoken this much in ages. I need my tea.\nelif;game.game_vars['AescConversation3'] == 'Myself'\n    add_portrait;MC;Left\n    speak;MC;About this light magic...\n    speak;Aesc;Light magic is old magic.|There's not many records left of it now in circulation.|However this old man has a few of them.|One must have clear intentions when casting.|You'll end up with unintended side effects otherwise.\n    speak;MC;If light magic is old, how do I have the ability?\n    speak;Aesc;Light has always existed.|You're simply a rarity.|No new light users have popped up in centuries, since the founding wars even.\n    speak;MC;Then...\n    speak;Aesc;Not to worry though, I've got access to some of the most obscure texts.|You needn't worry about it.\nend\n"
     }
 ]

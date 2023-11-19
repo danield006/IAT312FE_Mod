@@ -40,6 +40,13 @@
                 "speak",
                 [
                     "MC",
+                    "We're finally leaving the forest."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
                     "Might be some good time to chat while we're on the way",
                     "",
                     "",
@@ -79,6 +86,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "transition;close\nchange_background;Hill\ntransition;open\nlocation_card;On the way to Greshia...\nadd_portrait;MC;FarRight\nspeak;MC;Might be some good time to chat while we're on the way;;;thought_bubble\nadd_talk;MC;Senya\nadd_talk;MC;Schuri\nspeak;;When you're ready to continue, click <green>Leave</green> on the left side of the road;;;hint\nflicker_cursor;0,4\n"
+        "source": "transition;close\nchange_background;Hill\ntransition;open\nlocation_card;On the way to Greshia...\nadd_portrait;MC;FarRight\nspeak;MC;We're finally leaving the forest.\nspeak;MC;Might be some good time to chat while we're on the way;;;thought_bubble\nadd_talk;MC;Senya\nadd_talk;MC;Schuri\nspeak;;When you're ready to continue, click <green>Leave</green> on the left side of the road;;;hint\nflicker_cursor;0,4\n"
     }
 ]

@@ -16,7 +16,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "Yes?"
+                    "Oh {var:MC_name}. What is it?"
                 ]
             ],
             [
@@ -46,15 +46,128 @@
             [
                 "speak",
                 [
-                    "Schuri",
-                    "PLACEHOLDER FOR YESTERDAY"
+                    "MC",
+                    "About the head guard..."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "#####################################"
+                    "Schuri",
+                    "Oh Sir Blake?|I had met him when I was younger.|Back then, he was a lot more...spirited. I suppose battle changes you.|He used to tell me about his meritorious deeds and I've heard many good things."
                 ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_ch2GuardSaved'] == True"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "I'm glad you saved him {var:MC_name}."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Couldn't leave him there to die y'know?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Even with what he did with Senya?|I don't know exactly what happened but I can hazard a guess."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "He was defending Greshia.|I can't let on good conscious to leave a man who fought, dying."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "I see..."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Schuri",
+                    "Smile"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Thank you for saving him."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Schuri",
+                    "NoSmile"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "expression",
+                [
+                    "Schuri",
+                    "HalfCloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "If only he still lived.....|Why did you leave him there to die?"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Schuri",
+                    "NoSmile"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "He was fighting for Greshia."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    ".....|He's a deserter, Schuri. You heard him. He was going to hide in the tavern. And...|he played a part of the destruction of Senya's caravan."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "I'm not saying he shouldn't be punished.|Death isn't the right way to punish him.|He still had some good left in him...|He's dead. There's no point discussing this further. What's done is done."
+                ]
+            ],
+            [
+                "end",
+                []
             ],
             [
                 "elif",
@@ -72,14 +185,48 @@
             [
                 "speak",
                 [
-                    "Schuri",
-                    "PLACEHOLDER FOR Greshia."
+                    "MC",
+                    "What sort of magic is old magic anyways?"
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "##################"
+                    "Schuri",
+                    "Old magic, light and dark, have fallen in popularity in favour of the tri-magicks.|Not everyone could wield old magic so eventually, it's fallen into obscurity.|It was also a difficulty element to wield.|So those who could turned to the tri-magicks decreasing the amount of users further.|So now, the amount of people who can wield light is close to nil.|Light has gotten to the point where sages and mages alike were starting to doubt its existence."
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "So what you're saying is that I'm special?"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Hey...was that all you got from that?|Come on now, whenever you're free. I'll help teach you."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I'll make sure I'll take you up on your offer."
                 ]
             ],
             [
@@ -98,14 +245,87 @@
             [
                 "speak",
                 [
-                    "Schuri",
-                    "PLACEHOLDER FOR Greshia."
+                    "MC",
+                    "I can't believe Aesc taught Teach."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "##################"
+                    "Schuri",
+                    "Yeah...but thinking about it, I can see it.|They're both eccentric. Like teacher, like student."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Haha, I guess I can see it.|They're both super strong as well.|Not to rag on Teach or anything but he definitely picked up some of Aesc's...quirks."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Shh! He'll hear you!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Too late, I heard everything you brats.",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "MC",
+                    "no_block"
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "He heard us!"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Schuri",
+                    "Smile"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Hah..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Anyways, what do you know about the weaponary he gave us?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "The blessed set? They're weapons from the founding wars.|No other could come close to the amount of strength they held.|Even at a fraction of their original power...|They were still able to do so much.|However...there's not a lot of information on the specifics.|Perhaps Aesc would know."
                 ]
             ],
             [
@@ -115,6 +335,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Schuri;Right\nspeak;Schuri;Yes?\nchoice;SchuriConversation3;Which topic do you want to ask about?;Head Guard,New Magic, Aesc;FLAG(backable);horizontal;top_left\nif;game.game_vars['SchuriConversation3'] == 'Head Guard'\n    add_portrait;MC;Left\n    speak;Schuri;PLACEHOLDER FOR YESTERDAY\n    #####################################\nelif;game.game_vars['SchuriConversation3'] == 'New Magic'\n    add_portrait;MC;Left\n    speak;Schuri;PLACEHOLDER FOR Greshia.\n    ##################\nelif;game.game_vars['SchuriConversation3'] == 'Aesc'\n    add_portrait;MC;Left\n    speak;Schuri;PLACEHOLDER FOR Greshia.\n    ##################\nend\n"
+        "source": "add_portrait;Schuri;Right\nspeak;Schuri;Oh {var:MC_name}. What is it?\nchoice;SchuriConversation3;Which topic do you want to ask about?;Head Guard,New Magic, Aesc;FLAG(backable);horizontal;top_left\nif;game.game_vars['SchuriConversation3'] == 'Head Guard'\n    add_portrait;MC;Left\n    speak;MC;About the head guard...\n    speak;Schuri;Oh Sir Blake?|I had met him when I was younger.|Back then, he was a lot more...spirited. I suppose battle changes you.|He used to tell me about his meritorious deeds and I've heard many good things.\n    if;game.game_vars['_ch2GuardSaved'] == True\n        speak;Schuri;I'm glad you saved him {var:MC_name}.\n        speak;MC;Couldn't leave him there to die y'know?\n        speak;Schuri;Even with what he did with Senya?|I don't know exactly what happened but I can hazard a guess.\n        speak;MC;He was defending Greshia.|I can't let on good conscious to leave a man who fought, dying.\n        speak;Schuri;I see...\n        expression;Schuri;Smile\n        speak;Schuri;Thank you for saving him.\n        expression;Schuri;NoSmile\n    else\n        expression;Schuri;HalfCloseEyes\n        speak;Schuri;If only he still lived.....|Why did you leave him there to die?\n        expression;Schuri;NoSmile\n        speak;Schuri;He was fighting for Greshia.\n        speak;MC;.....|He's a deserter, Schuri. You heard him. He was going to hide in the tavern. And...|he played a part of the destruction of Senya's caravan.\n        speak;Schuri;I'm not saying he shouldn't be punished.|Death isn't the right way to punish him.|He still had some good left in him...|He's dead. There's no point discussing this further. What's done is done.\n    end\nelif;game.game_vars['SchuriConversation3'] == 'New Magic'\n    add_portrait;MC;Left\n    speak;MC;What sort of magic is old magic anyways?\n    speak;Schuri;Old magic, light and dark, have fallen in popularity in favour of the tri-magicks.|Not everyone could wield old magic so eventually, it's fallen into obscurity.|It was also a difficulty element to wield.|So those who could turned to the tri-magicks decreasing the amount of users further.|So now, the amount of people who can wield light is close to nil.|Light has gotten to the point where sages and mages alike were starting to doubt its existence.\n    bop_portrait;MC\n    speak;MC;So what you're saying is that I'm special?\n    bop_portrait;Schuri\n    speak;Schuri;Hey...was that all you got from that?|Come on now, whenever you're free. I'll help teach you.\n    speak;MC;I'll make sure I'll take you up on your offer.\nelif;game.game_vars['SchuriConversation3'] == 'Aesc'\n    add_portrait;MC;Left\n    speak;MC;I can't believe Aesc taught Teach.\n    speak;Schuri;Yeah...but thinking about it, I can see it.|They're both eccentric. Like teacher, like student.\n    speak;MC;Haha, I guess I can see it.|They're both super strong as well.|Not to rag on Teach or anything but he definitely picked up some of Aesc's...quirks.\n    speak;Schuri;Shh! He'll hear you!\n    speak;Aesc;Too late, I heard everything you brats.;;;narration_top\n    bop_portrait;MC;no_block\n    bop_portrait;Schuri\n    speak;MC;He heard us!\n    expression;Schuri;Smile\n    speak;Schuri;Hah...\n    speak;MC;Anyways, what do you know about the weaponary he gave us?\n    speak;Schuri;The blessed set? They're weapons from the founding wars.|No other could come close to the amount of strength they held.|Even at a fraction of their original power...|They were still able to do so much.|However...there's not a lot of information on the specifics.|Perhaps Aesc would know.\nend\n"
     }
 ]

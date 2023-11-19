@@ -16,7 +16,7 @@
                 "speak",
                 [
                     "MC",
-                    "What a long day...|Time to go to bed."
+                    "What a long day...|Time to rest up. It's going to be a long day tomorrow."
                 ]
             ],
             [
@@ -26,6 +26,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;MC;Left;\nspeak;MC;What a long day...|Time to go to bed.\nwin_game\n"
+        "source": "add_portrait;MC;Left\nspeak;MC;What a long day...|Time to rest up. It's going to be a long day tomorrow.\nwin_game\n"
     }
 ]

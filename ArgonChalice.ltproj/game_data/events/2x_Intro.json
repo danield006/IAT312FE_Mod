@@ -16,6 +16,12 @@
                 []
             ],
             [
+                "music",
+                [
+                    "greshiaBGM2"
+                ]
+            ],
+            [
                 "transition",
                 [
                     "open"
@@ -78,12 +84,12 @@
             [
                 "flicker_cursor",
                 [
-                    "8,1"
+                    "7,1"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "transition;close\nchange_background\ntransition;open\nlocation_card;After dinner...\nadd_portrait;MC;FarRight\nspeak;MC;Man...I'm full.|Looks like everyone else is outside as well.|Guess I got some free time.;;;thought_bubble\nadd_talk;MC;Senya\nadd_talk;MC;Schuri\nadd_talk;MC;Aesc\nspeak;;When you're ready to continue, Enter the tavern and select <green>Enter</green>;;;hint\nflicker_cursor;8,1\n"
+        "source": "transition;close\nchange_background\nmusic;greshiaBGM2\ntransition;open\nlocation_card;After dinner...\nadd_portrait;MC;FarRight\nspeak;MC;Man...I'm full.|Looks like everyone else is outside as well.|Guess I got some free time.;;;thought_bubble\nadd_talk;MC;Senya\nadd_talk;MC;Schuri\nadd_talk;MC;Aesc\nspeak;;When you're ready to continue, Enter the tavern and select <green>Enter</green>;;;hint\nflicker_cursor;7,1\n"
     }
 ]

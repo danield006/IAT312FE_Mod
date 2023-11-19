@@ -24,7 +24,7 @@
                 [
                     "SenyaConversation3",
                     "Which topic do you want to ask about?",
-                    "Head Guard,Aesc,Caravan Life",
+                    "Head Guard,Aesc,Greshia",
                     "FLAG(backable)",
                     "horizontal",
                     "top_left"
@@ -46,9 +46,149 @@
             [
                 "speak",
                 [
-                    "Senya",
-                    "PLACEHOLDER FOR SCHURI."
+                    "MC",
+                    "About that guard..."
                 ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_ch2GuardSaved'] == True"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "There's nothing good to say about him.|He abandoned his duties."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Was death the best way for him to repent?|He was fighting for Greshia, wasn't he?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Even so, he was dead weight.|Did you see the amount of monsters there were?"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "HalfCloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    ".....|I can never forgive him for what he did."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "NoSmile"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Back then...he also ran."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Ran?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Yes, when my caravan got attacked.|We initially thought we were saved, but who knew!|They ran with their tails tucked in between their legs when the fight got tough.|I only lived due to sheer luck."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Senya...I'm sorry for bringing this up."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "...you and Schuri go deal with him.|Make sure he gets punished.|I don't want to ever see his face again."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "OpenEyes"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Good riddance I say.|A person such as him has no place with such a high position."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "If you don't mind me asking...why do you hate him?|I mean I do have an inkling but..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "And your inkling would be correct.|When my caravan got attacked, we thought we were saved.|But who knew! They ran with their tails tucked in between their legs.|They ran when the fight got tough.|The only reason I'm alive was due to sheer luck."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Yes, I can't imagine how many others experienced the same thing.|He was a high guard.|I can't imagine how many missions he's been dispatched on."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "I know Schuri has different thoughts on this matter but...|I believe she'll see my reasoning."
+                ]
+            ],
+            [
+                "end",
+                []
             ],
             [
                 "elif",
@@ -67,7 +207,21 @@
                 "speak",
                 [
                     "Senya",
-                    "PLACEHOLDER FOR SCHURI."
+                    "Aesc...he's Teacher's teacher. Does that make him our grandteacher?|There's still a lot we don't know and it feels like he has the answers to them all."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "We'll eventually figure it out.|Hopefully he's receptive to our questions.|I remember how cagey Teach would get whenever I asked him about his life."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "I suppose so...|There's too many things we don't understand."
                 ]
             ],
             [
@@ -79,7 +233,7 @@
             [
                 "elif",
                 [
-                    "game.game_vars['SenyaConversation3'] == 'Caravan'"
+                    "game.game_vars['SenyaConversation3'] == 'Greshia'"
                 ]
             ],
             [
@@ -92,14 +246,15 @@
             [
                 "speak",
                 [
-                    "Senya",
-                    "PLACEHOLDER FOR Mentor."
+                    "MC",
+                    "Has Greshia changed much from before?"
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "##################"
+                    "Senya",
+                    "Greshia has changed. It used to be...more alive.|{var:MC_name}, there's fear.|The people are afraid.|I don't know what's up with the lord but...if there isn't a leader soon...|There will be conflict."
                 ]
             ],
             [
@@ -109,6 +264,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Senya;Right\nspeak;Senya;What's up?\nchoice;SenyaConversation3;Which topic do you want to ask about?;Head Guard,Aesc,Caravan Life;FLAG(backable);horizontal;top_left\nif;game.game_vars['SenyaConversation3'] == 'Head Guard'\n    add_portrait;MC;Left\n    speak;Senya;PLACEHOLDER FOR SCHURI.\nelif;game.game_vars['SenyaConversation3'] == 'Aesc'\n    add_portrait;MC;Left\n    speak;Senya;PLACEHOLDER FOR SCHURI.\n    ##################\nelif;game.game_vars['SenyaConversation3'] == 'Caravan'\n    add_portrait;MC;Left\n    speak;Senya;PLACEHOLDER FOR Mentor.\n    ##################\nend\n"
+        "source": "add_portrait;Senya;Right\nspeak;Senya;What's up?\nchoice;SenyaConversation3;Which topic do you want to ask about?;Head Guard,Aesc,Greshia;FLAG(backable);horizontal;top_left\nif;game.game_vars['SenyaConversation3'] == 'Head Guard'\n    add_portrait;MC;Left\n    speak;MC;About that guard...\n    if;game.game_vars['_ch2GuardSaved'] == True\n        speak;Senya;There's nothing good to say about him.|He abandoned his duties.\n        speak;MC;Was death the best way for him to repent?|He was fighting for Greshia, wasn't he?\n        speak;Senya;Even so, he was dead weight.|Did you see the amount of monsters there were?\n        expression;Senya;HalfCloseEyes\n        speak;Senya;.....|I can never forgive him for what he did.\n        expression;Senya;NoSmile\n        speak;Senya;Back then...he also ran.\n        speak;MC;Ran?\n        speak;Senya;Yes, when my caravan got attacked.|We initially thought we were saved, but who knew!|They ran with their tails tucked in between their legs when the fight got tough.|I only lived due to sheer luck.\n        speak;MC;Senya...I'm sorry for bringing this up.\n        expression;Senya;CloseEyes\n        speak;Senya;...you and Schuri go deal with him.|Make sure he gets punished.|I don't want to ever see his face again.\n        expression;Senya;OpenEyes\n    else\n        speak;Senya;Good riddance I say.|A person such as him has no place with such a high position.\n        speak;MC;If you don't mind me asking...why do you hate him?|I mean I do have an inkling but...\n        speak;Senya;And your inkling would be correct.|When my caravan got attacked, we thought we were saved.|But who knew! They ran with their tails tucked in between their legs.|They ran when the fight got tough.|The only reason I'm alive was due to sheer luck.\n        speak;MC;Yes, I can't imagine how many others experienced the same thing.|He was a high guard.|I can't imagine how many missions he's been dispatched on.\n        speak;Senya;I know Schuri has different thoughts on this matter but...|I believe she'll see my reasoning.\n    end\nelif;game.game_vars['SenyaConversation3'] == 'Aesc'\n    add_portrait;MC;Left\n    speak;Senya;Aesc...he's Teacher's teacher. Does that make him our grandteacher?|There's still a lot we don't know and it feels like he has the answers to them all.\n    speak;MC;We'll eventually figure it out.|Hopefully he's receptive to our questions.|I remember how cagey Teach would get whenever I asked him about his life.\n    speak;Senya;I suppose so...|There's too many things we don't understand.\n    ##################\nelif;game.game_vars['SenyaConversation3'] == 'Greshia'\n    add_portrait;MC;Left\n    speak;MC;Has Greshia changed much from before?\n    speak;Senya;Greshia has changed. It used to be...more alive.|{var:MC_name}, there's fear.|The people are afraid.|I don't know what's up with the lord but...if there isn't a leader soon...|There will be conflict.\nend\n"
     }
 ]

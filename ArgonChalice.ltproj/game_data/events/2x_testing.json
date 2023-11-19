@@ -1,0 +1,26 @@
+[
+    {
+        "name": "testing",
+        "trigger": "level_start",
+        "level_nid": "2x",
+        "condition": "False",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#TESTING FOR DIALOGUE"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch2GuardSaved",
+                    "True"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "#TESTING FOR DIALOGUE\ngame_var;_ch2GuardSaved;True\n"
+    }
+]
