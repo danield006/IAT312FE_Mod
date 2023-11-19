@@ -1,0 +1,103 @@
+[
+    {
+        "name": "WeaponsTurn3",
+        "trigger": "turn_change",
+        "level_nid": "16",
+        "condition": "game.turncount == 23",
+        "commands": [
+            [
+                "give_item",
+                [
+                    "MC_1",
+                    "Iron Sword (Iron Sword)"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Senya_1",
+                    "Iron Sword (Iron Sword)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "First is the sword. Both you and Senya can use the sword."
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "MC_1",
+                    "Iron Lance (Iron Lance)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Next is the lance. Only you can use the spear among the party."
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Senya_1",
+                    "Iron Axe (Iron Axe)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Last is the axe. Only Senya can use axes among the party."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "The 3 types of weapons I gave you are all melee weapons.|This means that you must stand next to an enemy to use it.|These 3 weapons balance against each other in a 'weapon triangle'.|Think of it like rock paper scissors if you're familiar.|Swords beat axes, lances beat swords, axes beat lances.|If you're in a winnning matchup, you'll do bonus damage and have a higher hit rate.|The opposite is true for losing matchups."
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Senya_1",
+                    "Iron Bow"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Bows on the other hand must be used from 2 range AKA 2 tiles from an enemy.|Bows are completely separated from the weapon triangle.|Only Senya can use bow>|All of the weapons I've given you do physical damage.|This means they use the user's strength + the weapon - enemy's defense."
+                ]
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "spawn_group",
+                [
+                    "dummies",
+                    "south",
+                    "dummies",
+                    "fade"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "I've asked a guards to act as dummies for you to practice on.|Go as hard as you want on him, you won't really kill them.|Practice looking at the preview screen before you initiate a battle.|Next turn I'll teach you about magic for Schuri."
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "give_item;MC_1;Iron Sword (Iron Sword)\ngive_item;Senya_1;Iron Sword (Iron Sword)\nspeak;Mentor;First is the sword. Both you and Senya can use the sword.\ngive_item;MC_1;Iron Lance (Iron Lance)\nspeak;Mentor;Next is the lance. Only you can use the spear among the party.\ngive_item;Senya_1;Iron Axe (Iron Axe)\nspeak;Mentor;Last is the axe. Only Senya can use axes among the party.\nspeak;Mentor;The 3 types of weapons I gave you are all melee weapons.|This means that you must stand next to an enemy to use it.|These 3 weapons balance against each other in a 'weapon triangle'.|Think of it like rock paper scissors if you're familiar.|Swords beat axes, lances beat swords, axes beat lances.|If you're in a winnning matchup, you'll do bonus damage and have a higher hit rate.|The opposite is true for losing matchups.\ngive_item;Senya_1;Iron Bow\nspeak;Mentor;Bows on the other hand must be used from 2 range AKA 2 tiles from an enemy.|Bows are completely separated from the weapon triangle.|Only Senya can use bow>|All of the weapons I've given you do physical damage.|This means they use the user's strength + the weapon - enemy's defense.\nend_skip\nspawn_group;dummies;south;dummies;fade\nspeak;Mentor;I've asked a guards to act as dummies for you to practice on.|Go as hard as you want on him, you won't really kill them.|Practice looking at the preview screen before you initiate a battle.|Next turn I'll teach you about magic for Schuri.\n"
+    }
+]

@@ -9,8 +9,8 @@
         "tags": [],
         "bases": {
             "HP": 18,
-            "STR": 6,
-            "MAG": 2,
+            "STR": 4,
+            "MAG": 0,
             "SKL": 8,
             "SPD": 8,
             "LCK": 2,
@@ -49,7 +49,7 @@
         "wexp_gain": {
             "Sword": [
                 false,
-                0,
+                31,
                 251
             ],
             "Lance": [

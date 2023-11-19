@@ -112,7 +112,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "Attack",
+                "ai": "Guard",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -133,7 +133,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "Attack",
+                "ai": "Guard",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -154,7 +154,7 @@
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Guard",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -187,7 +187,8 @@
                 "units": [
                     "MC_1",
                     "Schuri_1",
-                    "Senya_1"
+                    "Senya_1",
+                    "Mentor"
                 ],
                 "positions": {
                     "MC_1": [
@@ -201,31 +202,46 @@
                     "Senya_1": [
                         8,
                         6
-                    ]
-                }
-            },
-            {
-                "nid": "training_group",
-                "units": [
-                    "101",
-                    "102",
-                    "103"
-                ],
-                "positions": {}
-            },
-            {
-                "nid": "Mentor",
-                "units": [
-                    "Mentor"
-                ],
-                "positions": {
+                    ],
                     "Mentor": [
                         5,
                         3
                     ]
                 }
+            },
+            {
+                "nid": "dummies",
+                "units": [
+                    "101",
+                    "103",
+                    "105",
+                    "104"
+                ],
+                "positions": {
+                    "101": [
+                        11,
+                        5
+                    ],
+                    "103": [
+                        11,
+                        6
+                    ],
+                    "105": [
+                        9,
+                        9
+                    ],
+                    "104": [
+                        11,
+                        7
+                    ]
+                }
             }
         ],
-        "ai_groups": []
+        "ai_groups": [
+            {
+                "nid": "",
+                "trigger_threshold": 1
+            }
+        ]
     }
 ]

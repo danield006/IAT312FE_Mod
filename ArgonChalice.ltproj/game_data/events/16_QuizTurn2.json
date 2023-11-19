@@ -1,0 +1,256 @@
+[
+    {
+        "name": "QuizTurn2",
+        "trigger": "turn_change",
+        "level_nid": "16",
+        "condition": "game.turncount == 22",
+        "commands": [
+            [
+                "multi_add_portrait",
+                [
+                    "Mentor",
+                    "FarLeft",
+                    "MC",
+                    "MidRight",
+                    "Senya",
+                    "Right",
+                    "Schuri",
+                    "FarRight"
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "QuizStrength",
+                    "Who has the highest strength in the party?",
+                    "{var:MC_name},Senya,Schuri",
+                    "",
+                    "",
+                    "top_left"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['QuizStrength'] == '{var:MC_name}'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Correct!|Strength determines how much damage you do with weapons."
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Incorrect! The answer is {var:MC_name}|Strength determines how much damage you do with weapons."
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "comment",
+                [
+                    "################"
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "QuizMagic",
+                    "Who has the highest magic in the party?",
+                    "{var:MC_name},Senya,Schuri",
+                    "",
+                    "",
+                    "top_left"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['QuizMagic'] == 'Schuri'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Correct!|Magic determines how much damage you do with spells."
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Incorrect! That should have been obvious since Schuri is the only magic user!|Magic determines how much damage you do with spells."
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "comment",
+                [
+                    "#######################"
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "QuizSpeed",
+                    "Who has the highest speed in the party?",
+                    "{var:MC_name},Senya,Schuri",
+                    "",
+                    "",
+                    "top_left"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['QuizSpeed'] == 'Senya'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Correct!|Speed determines evasion and if you have 4+ speed than the opponent, you can attack twice."
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Incorrect! Senya is the fastest among you.|Speed determines evasion and if you have 4+ speed than the opponent, you can attack twice."
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "comment",
+                [
+                    "################################"
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "QuizHP",
+                    "Who has the lowest HP in the party?",
+                    "{var:MC_name},Senya,Schuri",
+                    "",
+                    "",
+                    "top_left"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['QuizHP'] == 'Schuri'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Correct!|Mages typically have low HP and defenses so you need to be careful ordering Schuri around."
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Incorrect! Schuri has the lowest HP in the party|Mages typically have low HP and defenses so you need to be careful ordering Schuri around."
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "comment",
+                [
+                    "################################"
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "QuizResistance",
+                    "Who has the highest resistance in the party?",
+                    "{var:MC_name},Senya,Schuri",
+                    "",
+                    "",
+                    "top_left"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['QuizResistance'] == 'Schuri'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Correct!|Mages have more resistance to magic attacks compared to you and Senya."
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Incorrect! Schuri has the highest resistance in the party|Mages have more resistance to magic attacks compared to you and Senya."
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "end_skip",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Alright, let's continue on with everyone's weapons.|Next turn I'll give everyone their weapons and explain their uses."
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "multi_add_portrait;Mentor;FarLeft;MC;MidRight;Senya;Right;Schuri;FarRight\nchoice;QuizStrength;Who has the highest strength in the party?;{var:MC_name},Senya,Schuri;;;top_left\nif;game.game_vars['QuizStrength'] == '{var:MC_name}'\n    speak;Mentor;Correct!|Strength determines how much damage you do with weapons.\nelse\n    speak;Mentor;Incorrect! The answer is {var:MC_name}|Strength determines how much damage you do with weapons.\nend\n################\nchoice;QuizMagic;Who has the highest magic in the party?;{var:MC_name},Senya,Schuri;;;top_left\nif;game.game_vars['QuizMagic'] == 'Schuri'\n    speak;Mentor;Correct!|Magic determines how much damage you do with spells.\nelse\n    speak;Mentor;Incorrect! That should have been obvious since Schuri is the only magic user!|Magic determines how much damage you do with spells.\nend\n#######################\nchoice;QuizSpeed;Who has the highest speed in the party?;{var:MC_name},Senya,Schuri;;;top_left\nif;game.game_vars['QuizSpeed'] == 'Senya'\n    speak;Mentor;Correct!|Speed determines evasion and if you have 4+ speed than the opponent, you can attack twice.\nelse\n    speak;Mentor;Incorrect! Senya is the fastest among you.|Speed determines evasion and if you have 4+ speed than the opponent, you can attack twice.\nend\n################################\nchoice;QuizHP;Who has the lowest HP in the party?;{var:MC_name},Senya,Schuri;;;top_left\nif;game.game_vars['QuizHP'] == 'Schuri'\n    speak;Mentor;Correct!|Mages typically have low HP and defenses so you need to be careful ordering Schuri around.\nelse\n    speak;Mentor;Incorrect! Schuri has the lowest HP in the party|Mages typically have low HP and defenses so you need to be careful ordering Schuri around.\nend\n################################\nchoice;QuizResistance;Who has the highest resistance in the party?;{var:MC_name},Senya,Schuri;;;top_left\nif;game.game_vars['QuizResistance'] == 'Schuri'\n    speak;Mentor;Correct!|Mages have more resistance to magic attacks compared to you and Senya.\nelse\n    speak;Mentor;Incorrect! Schuri has the highest resistance in the party|Mages have more resistance to magic attacks compared to you and Senya.\nend\nend_skip\nspeak;Mentor;Alright, let's continue on with everyone's weapons.|Next turn I'll give everyone their weapons and explain their uses.\n"
+    }
+]

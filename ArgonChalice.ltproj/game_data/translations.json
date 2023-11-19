@@ -161,7 +161,7 @@
     },
     {
         "nid": "MAG_desc",
-        "text": "Magical power. Increases ward and spell damage."
+        "text": "Magical power. Increases spell damage and healing."
     },
     {
         "nid": "SKL_desc",
@@ -169,11 +169,11 @@
     },
     {
         "nid": "SPD_desc",
-        "text": "This affects both evasion and attack speed."
+        "text": "Determines evasion and attack speed. a 4+ speed difference will result in a double attack"
     },
     {
         "nid": "DEF_desc",
-        "text": "Reduces damage from weapons."
+        "text": "Reduces damage from physical attacks"
     },
     {
         "nid": "RES_desc",

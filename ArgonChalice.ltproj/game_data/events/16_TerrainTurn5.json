@@ -1,0 +1,20 @@
+[
+    {
+        "name": "TerrainTurn5",
+        "trigger": "turn_change",
+        "level_nid": "16",
+        "condition": "game.turncount == 2",
+        "commands": [
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Finally let's explain terrain."
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "speak;Mentor;Finally let's explain terrain."
+    }
+]

@@ -6,132 +6,24 @@
         "condition": "True",
         "commands": [
             [
-                "remove_all_units",
-                []
-            ],
-            [
-                "comment",
+                "add_group",
                 [
-                    "#not usual case but show door open."
+                    "Party",
+                    "Party",
+                    "immediate",
+                    "push"
                 ]
             ],
             [
-                "show_layer",
-                [
-                    "Door",
-                    "immediate"
-                ]
-            ],
-            [
-                "add_unit",
+                "multi_add_portrait",
                 [
                     "Mentor",
-                    "4,4",
-                    "immediate"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "Senya_1",
-                    "5,8",
-                    "immediate"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "Schuri_1",
-                    "5,7",
-                    "immediate"
-                ]
-            ],
-            [
-                "add_unit",
-                [
-                    "MC_1",
-                    "5,6",
-                    "immediate"
-                ]
-            ],
-            [
-                "move_unit",
-                [
-                    "Mentor",
-                    "6,2",
-                    "normal"
-                ]
-            ],
-            [
-                "wait",
-                [
-                    "1000"
-                ]
-            ],
-            [
-                "hide_layer",
-                [
-                    "Door",
-                    "immediate"
-                ]
-            ],
-            [
-                "sound",
-                [
-                    "Unlock"
-                ]
-            ],
-            [
-                "move_unit",
-                [
-                    "Mentor",
-                    "4,4",
-                    "normal"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "close"
-                ]
-            ],
-            [
-                "change_background",
-                [
-                    "VillageGate"
-                ]
-            ],
-            [
-                "transition",
-                [
-                    "open"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Senya_1",
-                    "FarLeft"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Schuri_1",
-                    "Left"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "MC_1",
-                    "MidLeft"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
-                    "Mentor",
+                    "FarLeft",
+                    "MC",
+                    "MidRight",
+                    "Senya",
+                    "Right",
+                    "Schuri",
                     "FarRight"
                 ]
             ],
@@ -139,37 +31,14 @@
                 "speak",
                 [
                     "Mentor",
-                    "Let's begin your training.|This is gonna be a mock field experience.|I'll teach you the basics for fighting, buying items, open doors, and terrain.|Relax, everyone here will go easy on you. But don't get careless."
+                    "Alright {var:MC_name},for your first training, we're gonna do a basic overview of combat.|I understand you've been taught some of the basics of leadership while in the military.|So for now, Schuri and Senya will also be listening to your commands."
                 ]
             ],
             [
-                "transition",
-                [
-                    "close"
-                ]
-            ],
-            [
-                "change_background",
-                []
-            ],
-            [
-                "transition",
-                [
-                    "open"
-                ]
-            ],
-            [
-                "remove_portrait",
-                [
-                    "MC_1",
-                    "no_block"
-                ]
-            ],
-            [
-                "remove_portrait",
+                "speak",
                 [
                     "Mentor",
-                    "no_block"
+                    "The first step! Know yourself and your party!|You should know what you, Senya, and Schuri can fight with.|Press 'c' when you hover your cursor over a unit to open up their details page.|Use the arrow keys and 'c' to explore that menu to discover what your party is good at.|Press 'z' to back out of that menu."
                 ]
             ],
             [
@@ -177,20 +46,15 @@
                 []
             ],
             [
-                "flicker_cursor",
+                "speak",
                 [
-                    "2,6"
-                ]
-            ],
-            [
-                "flicker_cursor",
-                [
-                    "MC_1"
+                    "Mentor",
+                    "I'll let you figure out what your party is good at first,|Next turn, I'm going to quiz you on your party."
                 ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "remove_all_units\n#not usual case but show door open.\nshow_layer;Door;immediate\nadd_unit;Mentor;4,4;immediate\nadd_unit;Senya_1;5,8;immediate\nadd_unit;Schuri_1;5,7;immediate\nadd_unit;MC_1;5,6;immediate\nmove_unit;Mentor;6,2;normal\nwait;1000\nhide_layer;Door;immediate\nsound;Unlock\nmove_unit;Mentor;4,4;normal\ntransition;close\nchange_background;VillageGate\ntransition;open\nadd_portrait;Senya_1;FarLeft\nadd_portrait;Schuri_1;Left\nadd_portrait;MC_1;MidLeft\nadd_portrait;Mentor;FarRight\nspeak;Mentor;Let's begin your training.|This is gonna be a mock field experience.|I'll teach you the basics for fighting, buying items, open doors, and terrain.|Relax, everyone here will go easy on you. But don't get careless.\ntransition;close\nchange_background\ntransition;open\nremove_portrait;MC_1;no_block\nremove_portrait;Mentor;no_block\nend_skip\nflicker_cursor;2,6\nflicker_cursor;MC_1\n"
+        "source": "add_group;Party;Party;immediate;push\nmulti_add_portrait;Mentor;FarLeft;MC;MidRight;Senya;Right;Schuri;FarRight\nspeak;Mentor;Alright {var:MC_name},for your first training, we're gonna do a basic overview of combat.|I understand you've been taught some of the basics of leadership while in the military.|So for now, Schuri and Senya will also be listening to your commands.\nspeak;Mentor;The first step! Know yourself and your party!|You should know what you, Senya, and Schuri can fight with.|Press 'c' when you hover your cursor over a unit to open up their details page.|Use the arrow keys and 'c' to explore that menu to discover what your party is good at.|Press 'z' to back out of that menu.\nend_skip\nspeak;Mentor;I'll let you figure out what your party is good at first,|Next turn, I'm going to quiz you on your party.\n"
     }
 ]

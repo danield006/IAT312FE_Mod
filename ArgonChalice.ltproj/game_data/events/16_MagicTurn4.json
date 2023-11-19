@@ -1,0 +1,69 @@
+[
+    {
+        "name": "MagicTurn4",
+        "trigger": "turn_change",
+        "level_nid": "16",
+        "condition": "game.turncount == 4",
+        "commands": [
+            [
+                "give_item",
+                [
+                    "Schuri (Schuri_1)",
+                    "Fire (Fire)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Mages like Schuri don't use weapons, they use spells.|Spells can be used from both 1 range and 2 range.|They use the user's magic + spell damage - enemy resistance.|A long time ago, there used to be older magics called Light and Dark magic.|They're superior to the magic we use today, anima magic.|But no one can use the magic anymore so that's more of a history lesson for you."
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Schuri (Schuri_1)",
+                    "Heal (Heal)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "In some rare cases like Schuri, mages can also learn healing magic.|Schuri can heal allies but not herself.|To heal an ally, Schuri has to be next to the injured ally,|Then use the correct healing spell to heal."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "While we're on the topic of healing,|let's also explain another way of healing."
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "MC (MC_1)",
+                    "Vulnerary (Vulnerary)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Some items you'll encounter can be used to heal the unit that uses it.|You obviously can't be at full HP to use it so|Let's pretend you're at 10 HP {var:MC_name}.|Select yourself and move to a safe space to open up your item menu.|Navigate to the Vulnerary item and select it.|Select 'Use' in order to heal.|Next turn we'll end our training by discussing terrain."
+                ]
+            ],
+            [
+                "set_current_hp",
+                [
+                    "MC (MC_1)",
+                    "10"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "give_item;Schuri (Schuri_1);Fire (Fire)\nspeak;Mentor;Mages like Schuri don't use weapons, they use spells.|Spells can be used from both 1 range and 2 range.|They use the user's magic + spell damage - enemy resistance.|A long time ago, there used to be older magics called Light and Dark magic.|They're superior to the magic we use today, anima magic.|But no one can use the magic anymore so that's more of a history lesson for you.\ngive_item;Schuri (Schuri_1);Heal (Heal)\nspeak;Mentor;In some rare cases like Schuri, mages can also learn healing magic.|Schuri can heal allies but not herself.|To heal an ally, Schuri has to be next to the injured ally,|Then use the correct healing spell to heal.\nspeak;Mentor;While we're on the topic of healing,|let's also explain another way of healing.\ngive_item;MC (MC_1);Vulnerary (Vulnerary)\nspeak;Mentor;Some items you'll encounter can be used to heal the unit that uses it.|You obviously can't be at full HP to use it so|Let's pretend you're at 10 HP {var:MC_name}.|Select yourself and move to a safe space to open up your item menu.|Navigate to the Vulnerary item and select it.|Select 'Use' in order to heal.|Next turn we'll end our training by discussing terrain.\nset_current_hp;MC (MC_1);10\n"
+    }
+]
