@@ -22,10 +22,16 @@
             [
                 "win_game",
                 []
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "2_3"
+                ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;MC;Left\nspeak;MC;What a long day...|Time to rest up. It's going to be a long day tomorrow.\nwin_game\n"
+        "source": "add_portrait;MC;Left\nspeak;MC;What a long day...|Time to rest up. It's going to be a long day tomorrow.\nwin_game\nset_next_chapter;2_3\n"
     }
 ]

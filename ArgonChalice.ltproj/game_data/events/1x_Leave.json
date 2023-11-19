@@ -28,10 +28,16 @@
             [
                 "win_game",
                 []
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "2_2"
+                ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;Senya;Right\nspeak;Senya;Wait...I see Greshia finally but...|there's no guards in front...|Something's wrong. Let's hurry.\nremove_portrait;Senya\nwin_game\n"
+        "source": "add_portrait;Senya;Right\nspeak;Senya;Wait...I see Greshia finally but...|there's no guards in front...|Something's wrong. Let's hurry.\nremove_portrait;Senya\nwin_game\nset_next_chapter;2_2\n"
     }
 ]
