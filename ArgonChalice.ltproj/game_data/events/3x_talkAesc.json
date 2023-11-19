@@ -22,9 +22,9 @@
             [
                 "choice",
                 [
-                    "AescConversation3",
+                    "AescConversation4",
                     "Which topic do you want to ask about?",
-                    "Cyrus,Aesc,Myself",
+                    "Lilith,Orkney,Lithrasir,We're ready",
                     "FLAG(backable)",
                     "horizontal",
                     "top_left"
@@ -33,7 +33,7 @@
             [
                 "if",
                 [
-                    "game.game_vars['AescConversation3'] == 'Cyrus'"
+                    "game.game_vars['AescConversation3'] == 'Lilith'"
                 ]
             ],
             [
@@ -85,7 +85,33 @@
             [
                 "elif",
                 [
-                    "game.game_vars['AescConversation3'] == 'Myself'"
+                    "game.game_vars['AescConversation3'] == 'Lithrasir'"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "PLACEHOLDER FOR Schuri."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "##################"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['AescConversation3'] == 'We're ready'"
                 ]
             ],
             [
@@ -115,6 +141,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Aesc;Right\nspeak;Aesc;What do you wanna ask about?\nchoice;AescConversation3;Which topic do you want to ask about?;Cyrus,Aesc,Myself;FLAG(backable);horizontal;top_left\nif;game.game_vars['AescConversation3'] == 'Cyrus'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR MENTOR\n    #####################################\nelif;game.game_vars['AescConversation3'] == 'Aesc'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR Senya.\n    ##################\nelif;game.game_vars['AescConversation3'] == 'Myself'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR Schuri.\n    ##################\nend\n"
+        "source": "add_portrait;Aesc;Right\nspeak;Aesc;What do you wanna ask about?\nchoice;AescConversation4;Which topic do you want to ask about?;Lilith,Orkney,Lithrasir,We're ready;FLAG(backable);horizontal;top_left\nif;game.game_vars['AescConversation3'] == 'Lilith'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR MENTOR\n    #####################################\nelif;game.game_vars['AescConversation3'] == 'Aesc'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR Senya.\n    ##################\nelif;game.game_vars['AescConversation3'] == 'Lithrasir'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR Schuri.\n    ##################\nelif;game.game_vars['AescConversation3'] == 'We're ready'\n    add_portrait;MC;Left\n    speak;Aesc;PLACEHOLDER FOR Schuri.\n    ##################\nend\n"
     }
 ]
