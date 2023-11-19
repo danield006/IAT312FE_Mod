@@ -611,7 +611,10 @@
                 "ai": "AttackTile",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": null,
+                "starting_position": [
+                    17,
+                    15
+                ],
                 "starting_traveler": null,
                 "generic": true
             }

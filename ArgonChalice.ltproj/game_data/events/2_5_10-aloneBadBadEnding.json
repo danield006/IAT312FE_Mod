@@ -260,6 +260,20 @@
                 "speak",
                 [
                     "MC",
+                    "If the two of you were stron-"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "MC",
+                    "OpenEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
                     "If I had just made the first move!|This would have never happened!|The two of you would still be alive!|I should have ended that bastard the moment I stepped foot in there."
                 ]
             ],
@@ -294,6 +308,18 @@
                 ]
             ],
             [
+                "mirror_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "MC",
@@ -318,7 +344,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "I was wrong about you boy.|It seems like you let the tome effect you.|I thought you would be different, a prodigious light user.|.......|sigh...I see now that I was wrong."
+                    "I was wrong about you boy.|It seems like you let the tome effect you.|I thought you would be different, a prodigious light user.|.......|Hah...I see now that I was wrong."
                 ]
             ],
             [
@@ -346,7 +372,7 @@
                 "speak",
                 [
                     "Aesc",
-                    "Now, I'm also here to take back the tome.|I should have never given it to you."
+                    "Now, I'm also here to take back the tome.|I should have never given it to you.|You've fallen."
                 ]
             ],
             [
@@ -371,10 +397,21 @@
                 ]
             ],
             [
+                "end_skip",
+                []
+            ],
+            [
                 "speak",
                 [
                     "Aesc",
-                    "Boy, that tome has really got a grip on you.|Hand it over or it'll get dicey."
+                    "Boy, that tome has really got a grip on you.|Hand it over now or it'll get dicey."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "MC",
+                    "CloseEyes"
                 ]
             ],
             [
@@ -382,6 +419,13 @@
                 [
                     "MC",
                     "......"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Tsk."
                 ]
             ],
             [
@@ -393,7 +437,7 @@
             [
                 "music",
                 [
-                    "badEndingTheme"
+                    "debussy_arabesque_no1"
                 ]
             ],
             [
@@ -429,10 +473,14 @@
                 ]
             ],
             [
+                "end_skip",
+                []
+            ],
+            [
                 "speak",
                 [
                     "",
-                    "Ending Achieved:|To The Inner Monster",
+                    "Ending Achieved:|To The Inner Demon",
                     "center",
                     "",
                     "cinematic"
@@ -447,6 +495,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#bad bonds, senya and schuri die, you took the book\n#speak;;this is ending 7;;;narration\nmusic;deadEpilogue\nadd_portrait;MC;Left\nexpression;MC;CloseEyes\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;It's over now...|but at what cost?|All my friends are dead...|and Teach is dead too.\nexpression;MC;CloseEyes\nspeak;MC;I...I can't believe I killed them with my own two hands...\nexpression;MC;NormalBlink\nexpression;MC;NormalBlink\nexpression;MC;HalfCloseEyes\nspeak;MC;And yet...|I don't feel that sad...\nexpression;MC;NoSmile\nspeak;MC;I really am...a piece of work, huh?\nmusic_fade_back;2500\nwait;500\ntransition;close;1200\nchange_background;Hill\nmusic;killedPartyEnd2\ntransition;open;1200\nadd_portrait;MC;MidLeft\nexpression;MC;CloseEyes\nexpression;MC;NoSmile\nspeak;MC;...Senya, Schuri, Teach|Thank you very much for your help...;;220\nexpression;MC;OpenEyes\nexpression;MC;NoSmile\nmove_portrait;MC;Right\nsound;forestStep\nwait;250\nmove_portrait;MC;MidLeft\nmusic;killedPartyEnd2\nspeak;MC;Teach...thank you so much for all you have taught me.|I'm afraid that I've been an ungrateful brat.|......I'll make sure you haven't made the wrong choice in taking me in.\nexpression;MC;HalfCloseEyes\nspeak;MC;Senya...Schuri...|I think of what of what I could have done...to save you.|If...|If the two of hadn't gotten controlled...\nexpression;MC;CloseEyes\nspeak;MC;If I had just made the first move!|This would have never happened!|The two of you would still be alive!|I should have ended that bastard the moment I stepped foot in there.\nspeak;MC;.....\nspeak;;That's right, it was because of you.;;;narration_top\nexpression;MC;NoSmile\nbop_portrait;MC\nspeak;MC;Who's there!\nadd_portrait;Aesc;OffscreenRight\nmove_portrait;Aesc;Right\nspeak;Aesc;I was wrong about you boy.|It seems like you let the tome effect you.|I thought you would be different, a prodigious light user.|.......|sigh...I see now that I was wrong.\nspeak;MC;Aesc...|What brought you here?\nspeak;Aesc;I heard about your success and came to congratulate you but...\nspeak;MC;I see...\nspeak;Aesc;Now, I'm also here to take back the tome.|I should have never given it to you.\nmove_portrait;MC;FarLeft\nspeak;Aesc;You won't give it?\nspeak;MC;Yes-, I mean- no.\nspeak;Aesc;Boy, that tome has really got a grip on you.|Hand it over or it'll get dicey.\nspeak;MC;......\nmusic_fade_back;2000\nmusic;badEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#bad end cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To The Inner Monster;center;;cinematic\nset_next_chapter;2222\n"
+        "source": "#bad bonds, senya and schuri die, you took the book\n#speak;;this is ending 7;;;narration\nmusic;deadEpilogue\nadd_portrait;MC;Left\nexpression;MC;CloseEyes\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;It's over now...|but at what cost?|All my friends are dead...|and Teach is dead too.\nexpression;MC;CloseEyes\nspeak;MC;I...I can't believe I killed them with my own two hands...\nexpression;MC;NormalBlink\nexpression;MC;NormalBlink\nexpression;MC;HalfCloseEyes\nspeak;MC;And yet...|I don't feel that sad...\nexpression;MC;NoSmile\nspeak;MC;I really am...a piece of work, huh?\nmusic_fade_back;2500\nwait;500\ntransition;close;1200\nchange_background;Hill\nmusic;killedPartyEnd2\ntransition;open;1200\nadd_portrait;MC;MidLeft\nexpression;MC;CloseEyes\nexpression;MC;NoSmile\nspeak;MC;...Senya, Schuri, Teach|Thank you very much for your help...;;220\nexpression;MC;OpenEyes\nexpression;MC;NoSmile\nmove_portrait;MC;Right\nsound;forestStep\nwait;250\nmove_portrait;MC;MidLeft\nmusic;killedPartyEnd2\nspeak;MC;Teach...thank you so much for all you have taught me.|I'm afraid that I've been an ungrateful brat.|......I'll make sure you haven't made the wrong choice in taking me in.\nexpression;MC;HalfCloseEyes\nspeak;MC;Senya...Schuri...|I think of what of what I could have done...to save you.|If...|If the two of hadn't gotten controlled...\nexpression;MC;CloseEyes\nspeak;MC;If the two of you were stron-\nexpression;MC;OpenEyes\nspeak;MC;If I had just made the first move!|This would have never happened!|The two of you would still be alive!|I should have ended that bastard the moment I stepped foot in there.\nspeak;MC;.....\nspeak;;That's right, it was because of you.;;;narration_top\nexpression;MC;NoSmile\nbop_portrait;MC\nmirror_portrait;MC\nmirror_portrait;MC\nspeak;MC;Who's there!\nadd_portrait;Aesc;OffscreenRight\nmove_portrait;Aesc;Right\nspeak;Aesc;I was wrong about you boy.|It seems like you let the tome effect you.|I thought you would be different, a prodigious light user.|.......|Hah...I see now that I was wrong.\nspeak;MC;Aesc...|What brought you here?\nspeak;Aesc;I heard about your success and came to congratulate you but...\nspeak;MC;I see...\nspeak;Aesc;Now, I'm also here to take back the tome.|I should have never given it to you.|You've fallen.\nmove_portrait;MC;FarLeft\nspeak;Aesc;You won't give it?\nspeak;MC;Yes-, I mean- no.\nend_skip\nspeak;Aesc;Boy, that tome has really got a grip on you.|Hand it over now or it'll get dicey.\nexpression;MC;CloseEyes\nspeak;MC;......\nspeak;Aesc;Tsk.\nmusic_fade_back;2000\nmusic;debussy_arabesque_no1\ntransition;close;2500\nremove_portrait;MC\n#bad end cg?\nchange_background;default_background\ntransition;open;1000\nend_skip\nspeak;;Ending Achieved:|To The Inner Demon;center;;cinematic\nset_next_chapter;2222\n"
     }
 ]

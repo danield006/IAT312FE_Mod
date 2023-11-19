@@ -6,11 +6,17 @@
         "condition": "True",
         "commands": [
             [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
                 "remove_all_units",
                 []
             ],
             [
-                "move_cursor",
+                "center_cursor",
                 [
                     "8,6"
                 ]
@@ -66,26 +72,17 @@
                 "add_portrait",
                 [
                     "Lilith",
-                    "Right"
+                    "Right",
+                    "FLAG(no_block)"
                 ]
             ],
             [
-                "add_portrait",
+                "multi_add_portrait",
                 [
                     "Senya",
-                    "OffscreenLeft"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
+                    "OffscreenLeft",
                     "Schuri",
-                    "OffscreenLeft"
-                ]
-            ],
-            [
-                "add_portrait",
-                [
+                    "OffscreenLeft",
                     "MC",
                     "OffscreenLeft"
                 ]
@@ -100,7 +97,7 @@
                 "speak",
                 [
                     "Lilith",
-                    "Tch. Some gnats interuppted our spell.|No matter they'll perish anyways.",
+                    "Tch. Some gnats interuppted our spell.|No matter they'll perish anyways...",
                     "",
                     "",
                     "noir"
@@ -154,14 +151,14 @@
                 "speak",
                 [
                     "MC",
-                    "You will regret what you did."
+                    "Lilith! We've come to stop you!"
                 ]
             ],
             [
                 "speak",
                 [
                     "Senya",
-                    "That's right|We'll be stopping your plans."
+                    "Whatever you're planning, it won't happen."
                 ]
             ],
             [
@@ -175,24 +172,24 @@
                 "speak",
                 [
                     "Lilith",
-                    "I say...",
+                    "Mighty confident for brats who haven't outgrown their teacher.|Need I remind you?",
                     "",
                     "",
                     "noir"
                 ]
             ],
             [
-                "expression",
+                "speak",
                 [
-                    "Lilith",
-                    "OpenMouth"
+                    "MC",
+                    "You'll regret ever setting foot in this castle."
                 ]
             ],
             [
                 "speak",
                 [
                     "Lilith",
-                    "It will be YOU who will be feeling regret soon enough.",
+                    "I say...it will be YOU who will be feeling regret soon enough.",
                     "",
                     "",
                     "noir"
@@ -425,7 +422,7 @@
                 "speak",
                 [
                     "MC",
-                    "I will"
+                    "I will stop you!"
                 ]
             ],
             [
@@ -433,13 +430,6 @@
                 [
                     "MC",
                     "OpenEyes"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "stop you!"
                 ]
             ],
             [
@@ -670,20 +660,19 @@
                 ]
             ],
             [
-                "comment",
+                "game_var",
                 [
-                    "#game_var;_gameEnding;5"
+                    "_gameEnding",
+                    "8"
                 ]
             ],
             [
-                "comment",
-                [
-                    "#win_game"
-                ]
+                "win_game",
+                []
             ]
         ],
-        "only_once": true,
+        "only_once": false,
         "priority": 20,
-        "source": "remove_all_units\nmove_cursor;8,6\nadd_group;Party;Party\nadd_group;initialEnemies;initialEnemies\ngame_var;_killLilith;False\nchapter_title\ntransition;Open\nmusic;castle-corridor\nspeak;;Kaerndal Castle-Throne Room;;;narration_top\nadd_portrait;Lilith;Right\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nadd_portrait;MC;OffscreenLeft\nmirror_portrait;Lilith\nspeak;Lilith;Tch. Some gnats interuppted our spell.|No matter they'll perish anyways.;;;noir\nmirror_portrait;Lilith\nmove_portrait;MC;MidLeft\nmove_portrait;Schuri;Left\nmove_portrait;Senya;FarLeft\nspeak;Lilith;Well, well, well...|Look who has decided to show up;;;noir\nexpression;MC;NoSmile\nspeak;MC;You will regret what you did.\nspeak;Senya;That's right|We'll be stopping your plans.\nspeak;Schuri;You will receive your due punishment.\nspeak;Lilith;I say...;;;noir\nexpression;Lilith;OpenMouth\nspeak;Lilith;It will be YOU who will be feeling regret soon enough.;;;noir\nexpression;Lilith;NoSmile\nspeak;Lilith;I wonder how strong your bonds really are!!;;;noir\nmove_portrait;Lilith;MidRight\nsound;Flux1\nexpression;Schuri;HalfCloseEyes\nexpression;Senya;CloseEyes\nspeak;Schuri;Ack!\nspeak;Senya;Ugh...\nremove_portrait;Lilith\nmove_portrait;MC;MidRight\nmirror_portrait;MC\nspeak;MC;Schuri! Senya!\nexpression;Senya;CloseEyes\nexpression;Schuri;CloseEyes\nwait;100\n#variable for the ending you get\ngame_var;_gameEnding;0\nchange_background\nif;_SenyaOpinion <=0 and _SchuriOpinion <=0\n    multi_remove_portrait;MC;Schuri;Senya\n    change_team;Senya;enemy\n    change_team;Schuri;enemy\n    game_var;_SenyaControlled;True\n    game_var;_SchuriControlled;True\n    move_unit;Senya;9,5;warp\n    move_unit;Schuri;7,5;warp\n    wait;2000\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|They're under my control now!|You're all alone now...what will you do?|Do you dare kill them?!;;;noir\n    expression;MC;CloseEyes\n    speak;MC;I will\n    expression;MC;OpenEyes\n    speak;MC;stop you!\n    #improving MC dark magic\n    speak;;A multitude of thoughts swirl my mind.|My teacher, my friends...|I will do anything it takes to destroy her...\n    multi_remove_portrait;MC;Lilith\n    give_wexp;MC;Dark (Dark);500\n    music_fade_back;2000\nelif;_SenyaOpinion <=0\n    change_team;Senya;enemy\n    game_var;_SenyaControlled;True\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|She's under my control now!|Do you dare kill your dear friend?!;;;noir\n    music_fade_back;2000\nelif;_SchuriOpinion <=0\n    move_unit;Senya;9,5;warp\n    wait;2000\n    change_team;Schuri;enemy\n    game_var;_SchuriControlled;True\n    move_unit;Schuri;7,5;warp\n    wait;2000\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|She's under my control now!|Do you dare kill your dear friend?!;;;noir\n    music_fade_back;2000\nelse\n    #golden ending\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|They're under my contr-|Huh?!|I guess your bonds do hold...;;;noir\n    change_background\n    speak;Lilith;No matter! Your journey will end here!;;;noir\nend\n#testing\n#game_var;_gameEnding;5\n#win_game\n"
+        "source": "transition;close\nremove_all_units\ncenter_cursor;8,6\nadd_group;Party;Party\nadd_group;initialEnemies;initialEnemies\ngame_var;_killLilith;False\nchapter_title\ntransition;Open\nmusic;castle-corridor\nspeak;;Kaerndal Castle-Throne Room;;;narration_top\nadd_portrait;Lilith;Right;FLAG(no_block)\nmulti_add_portrait;Senya;OffscreenLeft;Schuri;OffscreenLeft;MC;OffscreenLeft\nmirror_portrait;Lilith\nspeak;Lilith;Tch. Some gnats interuppted our spell.|No matter they'll perish anyways...;;;noir\nmirror_portrait;Lilith\nmove_portrait;MC;MidLeft\nmove_portrait;Schuri;Left\nmove_portrait;Senya;FarLeft\nspeak;Lilith;Well, well, well...|Look who has decided to show up;;;noir\nexpression;MC;NoSmile\nspeak;MC;Lilith! We've come to stop you!\nspeak;Senya;Whatever you're planning, it won't happen.\nspeak;Schuri;You will receive your due punishment.\nspeak;Lilith;Mighty confident for brats who haven't outgrown their teacher.|Need I remind you?;;;noir\nspeak;MC;You'll regret ever setting foot in this castle.\nspeak;Lilith;I say...it will be YOU who will be feeling regret soon enough.;;;noir\nexpression;Lilith;NoSmile\nspeak;Lilith;I wonder how strong your bonds really are!!;;;noir\nmove_portrait;Lilith;MidRight\nsound;Flux1\nexpression;Schuri;HalfCloseEyes\nexpression;Senya;CloseEyes\nspeak;Schuri;Ack!\nspeak;Senya;Ugh...\nremove_portrait;Lilith\nmove_portrait;MC;MidRight\nmirror_portrait;MC\nspeak;MC;Schuri! Senya!\nexpression;Senya;CloseEyes\nexpression;Schuri;CloseEyes\nwait;100\n#variable for the ending you get\ngame_var;_gameEnding;0\nchange_background\nif;_SenyaOpinion <=0 and _SchuriOpinion <=0\n    multi_remove_portrait;MC;Schuri;Senya\n    change_team;Senya;enemy\n    change_team;Schuri;enemy\n    game_var;_SenyaControlled;True\n    game_var;_SchuriControlled;True\n    move_unit;Senya;9,5;warp\n    move_unit;Schuri;7,5;warp\n    wait;2000\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|They're under my control now!|You're all alone now...what will you do?|Do you dare kill them?!;;;noir\n    expression;MC;CloseEyes\n    speak;MC;I will stop you!\n    expression;MC;OpenEyes\n    #improving MC dark magic\n    speak;;A multitude of thoughts swirl my mind.|My teacher, my friends...|I will do anything it takes to destroy her...\n    multi_remove_portrait;MC;Lilith\n    give_wexp;MC;Dark (Dark);500\n    music_fade_back;2000\nelif;_SenyaOpinion <=0\n    change_team;Senya;enemy\n    game_var;_SenyaControlled;True\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|She's under my control now!|Do you dare kill your dear friend?!;;;noir\n    music_fade_back;2000\nelif;_SchuriOpinion <=0\n    move_unit;Senya;9,5;warp\n    wait;2000\n    change_team;Schuri;enemy\n    game_var;_SchuriControlled;True\n    move_unit;Schuri;7,5;warp\n    wait;2000\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|She's under my control now!|Do you dare kill your dear friend?!;;;noir\n    music_fade_back;2000\nelse\n    #golden ending\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|They're under my contr-|Huh?!|I guess your bonds do hold...;;;noir\n    change_background\n    speak;Lilith;No matter! Your journey will end here!;;;noir\nend\n#testing\ngame_var;_gameEnding;8\nwin_game\n"
     }
 ]

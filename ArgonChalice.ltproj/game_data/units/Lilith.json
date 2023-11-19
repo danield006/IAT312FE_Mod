@@ -4,11 +4,11 @@
         "name": "Lilith",
         "desc": "A dark mage with an insatiable thirst for power.",
         "variant": "",
-        "level": 1,
+        "level": 10,
         "klass": "Shaman",
         "tags": [],
         "bases": {
-            "HP": 46,
+            "HP": 53,
             "STR": 1,
             "MAG": 27,
             "SKL": 14,

@@ -1,0 +1,74 @@
+[
+    {
+        "name": "mcDies",
+        "trigger": "unit_death",
+        "level_nid": "2_5",
+        "condition": "unit.nid == 'MC'",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#MC Dies BE"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "MC",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I failed..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lilith",
+                    "No one can save you now...|My plans will finally come to fruition...",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "screen_shake",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lilith",
+                    "Hahahaha!"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close",
+                    "2000"
+                ]
+            ],
+            [
+                "lose_game",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "#MC Dies BE\nadd_portrait;MC;Left\nexpression;MC;CloseEyes\nspeak;MC;I failed...\nspeak;Lilith;No one can save you now...|My plans will finally come to fruition...;;;noir\nscreen_shake;1000\nspeak;Lilith;Hahahaha!\ntransition;close;2000\nlose_game\n"
+    }
+]

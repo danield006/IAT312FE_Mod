@@ -1,9 +1,9 @@
 [
     {
         "name": "atThroneRoom",
-        "trigger": "on_region_interact",
+        "trigger": "unit_wait",
         "level_nid": "2_4",
-        "condition": "region.nid == 'throneRoom'",
+        "condition": "any_unit_in_region('throneRoom', team='player') ",
         "commands": [
             [
                 "speak",

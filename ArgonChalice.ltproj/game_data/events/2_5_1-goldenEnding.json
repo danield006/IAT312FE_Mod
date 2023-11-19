@@ -281,6 +281,10 @@
                 ]
             ],
             [
+                "end_skip",
+                []
+            ],
+            [
                 "speak",
                 [
                     "",
@@ -335,10 +339,14 @@
                 ]
             ],
             [
+                "end_skip",
+                []
+            ],
+            [
                 "speak",
                 [
                     "",
-                    "Ending Achieved:|To Our Illuminated Future",
+                    "Ending Achieved:|To The Illuminated Future",
                     "center",
                     "",
                     "cinematic"
@@ -353,6 +361,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#everyone survives\n#speak;;this is ending 1;;;narration\nmulti_add_portrait;MC;Left;Schuri;MidRight;Senya;FarRight\nmusic;goldenEpilogue\nbop_portrait;Senya\nspeak;Senya;Hahaha you deserved everything that happened you bastard!\nspeak;MC;We did it!!\nspeak;Schuri;We really did it!|Let's go take back the Argon Chalice and make sure nothing's wrong with it.\nmove_unit;Schuri;8,3\nspeak;Schuri;Ok, that's a relief. That Chalice was being used in a complex spell.|If we hadn't interuppted her, she would have gotten too powerful for us to beat.\nspeak;Senya;It's a good thing we stopped her then huh?|We were really cutting it close.\nspeak;Schuri;Since we defeated her, everything here or what's left of it anyways should be back to normal.|We'll need to take count of who's left alive.\nspeak;Senya;I'll help. I know my way with basic first aid.\nspeak;MC;It'll be tough work for the next few days.\ntransition;close;1200\nmulti_remove_portrait;MC;Senya;Schuri\nchange_background;Hill\ntransition;open;1000\nmulti_add_portrait;MC;MidLeft;Schuri;Left;Senya;FarLeft\nwait;1000\nmove_portrait;MC;MidRight\nsound;forestStep\nwait;250\nmove_portrait;MC;MidLeft\nspeak;Schuri;Sir Cyrus would have been proud of us.\nspeak;MC;Yes...he would have been.\nspeak;Senya;Thank you Teacher...for all you have done for us.\nwait;1000\ntransition;close;1000\nmulti_remove_portrait;MC;Senya;Schuri\nchange_background;InsideCastle\ntransition;open\nmulti_add_portrait;MC;Left;Schuri;MidRight;Senya;FarRight\nspeak;MC;Whew! After everthing's that happened we all deserve a break!\nspeak;Senya;We haven't taken a break in awhile huh?|We finally cleaned up this place. It's such a huge place.\nspeak;Schuri;Hey why don't we turn this place into a school?|I was thinking we could pass down Sir's teachings...|So in way he would continue to live on.\nbop_portrait;Senya\nspeak;Senya;Sure!|We'll definitely be the best school ever!|It can also help those who normally can't afford education.|Just like how he helped all of us.\nspeak;MC;With the three of us here, we can all make up for each of our's weaknesses.\nspeak;;Slowly, we eventually transformed Kaerndal Castle into a place of learning.|Our renown has steadily increased, becoming a place known for its close knit environment.|We couldn't be any happier passing down our late mentor's teachings.;;;narration_top\nmusic_fade_back;2000\nmusic;goldenEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nspeak;;Ending Achieved:|To Our Illuminated Future;center;;cinematic\nset_next_chapter;2222\n"
+        "source": "#everyone survives\n#speak;;this is ending 1;;;narration\nmulti_add_portrait;MC;Left;Schuri;MidRight;Senya;FarRight\nmusic;goldenEpilogue\nbop_portrait;Senya\nspeak;Senya;Hahaha you deserved everything that happened you bastard!\nspeak;MC;We did it!!\nspeak;Schuri;We really did it!|Let's go take back the Argon Chalice and make sure nothing's wrong with it.\nmove_unit;Schuri;8,3\nspeak;Schuri;Ok, that's a relief. That Chalice was being used in a complex spell.|If we hadn't interuppted her, she would have gotten too powerful for us to beat.\nspeak;Senya;It's a good thing we stopped her then huh?|We were really cutting it close.\nspeak;Schuri;Since we defeated her, everything here or what's left of it anyways should be back to normal.|We'll need to take count of who's left alive.\nspeak;Senya;I'll help. I know my way with basic first aid.\nspeak;MC;It'll be tough work for the next few days.\ntransition;close;1200\nmulti_remove_portrait;MC;Senya;Schuri\nchange_background;Hill\ntransition;open;1000\nmulti_add_portrait;MC;MidLeft;Schuri;Left;Senya;FarLeft\nwait;1000\nmove_portrait;MC;MidRight\nsound;forestStep\nwait;250\nmove_portrait;MC;MidLeft\nspeak;Schuri;Sir Cyrus would have been proud of us.\nspeak;MC;Yes...he would have been.\nspeak;Senya;Thank you Teacher...for all you have done for us.\nwait;1000\ntransition;close;1000\nmulti_remove_portrait;MC;Senya;Schuri\nchange_background;InsideCastle\ntransition;open\nmulti_add_portrait;MC;Left;Schuri;MidRight;Senya;FarRight\nspeak;MC;Whew! After everthing's that happened we all deserve a break!\nspeak;Senya;We haven't taken a break in awhile huh?|We finally cleaned up this place. It's such a huge place.\nspeak;Schuri;Hey why don't we turn this place into a school?|I was thinking we could pass down Sir's teachings...|So in way he would continue to live on.\nbop_portrait;Senya\nspeak;Senya;Sure!|We'll definitely be the best school ever!|It can also help those who normally can't afford education.|Just like how he helped all of us.\nspeak;MC;With the three of us here, we can all make up for each of our's weaknesses.\nend_skip\nspeak;;Slowly, we eventually transformed Kaerndal Castle into a place of learning.|Our renown has steadily increased, becoming a place known for its close knit environment.|We couldn't be any happier passing down our late mentor's teachings.;;;narration_top\nmusic_fade_back;2000\nmusic;goldenEndingTheme\ntransition;close;2500\nremove_portrait;MC\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nend_skip\nspeak;;Ending Achieved:|To The Illuminated Future;center;;cinematic\nset_next_chapter;2222\n"
     }
 ]
