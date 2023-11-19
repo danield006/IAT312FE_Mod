@@ -108,7 +108,11 @@
         "desc": "Was a village destroyed during chapter 1?"
     },
     {
-        "nid": "",
-        "desc": null
+        "nid": "_ch3TomeChoice",
+        "desc": "Did MC take the tome in CH3?"
+    },
+    {
+        "nid": "_killLilith",
+        "desc": "If Lilith's HP has been reduced to 0 a second time"
     }
 ]

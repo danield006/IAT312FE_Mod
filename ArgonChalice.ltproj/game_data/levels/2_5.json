@@ -1,7 +1,7 @@
 [
     {
         "nid": "2_5",
-        "name": "Chapter 5: The Test of Our Bonds",
+        "name": "Chapter 5: Test of Our Bonds",
         "tilemap": "Chapter 14B_1",
         "bg_tilemap": null,
         "party": "MC",
@@ -48,7 +48,7 @@
             {
                 "nid": "mob1",
                 "variant": null,
-                "level": 10,
+                "level": 8,
                 "klass": "Entombed",
                 "faction": "Monster",
                 "starting_items": [
@@ -72,7 +72,7 @@
             {
                 "nid": "mob2",
                 "variant": null,
-                "level": 10,
+                "level": 8,
                 "klass": "Entombed",
                 "faction": "Monster",
                 "starting_items": [
@@ -133,9 +133,51 @@
                 "generic": false
             },
             {
+                "nid": "eyeball1",
+                "variant": null,
+                "level": 5,
+                "klass": "Arch_Mogall",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Flux",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "eyeball2",
+                "variant": null,
+                "level": 5,
+                "klass": "Arch_Mogall",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Flux",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
                 "nid": "Aesc",
                 "team": "other",
-                "ai": "Attack",
+                "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -143,7 +185,25 @@
                 "generic": false
             }
         ],
-        "regions": [],
+        "regions": [
+            {
+                "nid": "test",
+                "region_type": "normal",
+                "position": [
+                    7,
+                    11
+                ],
+                "size": [
+                    3,
+                    1
+                ],
+                "sub_nid": "",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
+            }
+        ],
         "unit_groups": [
             {
                 "nid": "Party",
@@ -155,11 +215,11 @@
                 "positions": {
                     "Senya": [
                         7,
-                        11
+                        10
                     ],
                     "Schuri": [
                         9,
-                        11
+                        10
                     ],
                     "MC": [
                         8,
@@ -188,8 +248,35 @@
                         5
                     ]
                 }
+            },
+            {
+                "nid": "summon",
+                "units": [
+                    "eyeball1",
+                    "eyeball2",
+                    "Lilith"
+                ],
+                "positions": {
+                    "eyeball1": [
+                        7,
+                        5
+                    ],
+                    "eyeball2": [
+                        9,
+                        5
+                    ],
+                    "Lilith": [
+                        8,
+                        4
+                    ]
+                }
             }
         ],
-        "ai_groups": []
+        "ai_groups": [
+            {
+                "nid": "",
+                "trigger_threshold": 1
+            }
+        ]
     }
 ]

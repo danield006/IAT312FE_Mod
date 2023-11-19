@@ -1,20 +1,14 @@
 [
     {
         "name": "mentorStatus",
-        "trigger": "enemy_turn_change",
+        "trigger": "turn_change",
         "level_nid": "2_5",
-        "condition": "game.turncount==3",
+        "condition": "game.turncount == 3",
         "commands": [
             [
                 "comment",
                 [
-                    "#if time in prototype 2"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#mentor will bust in to help the big bos at very reduced stats"
+                    "#mentor will bust in to help the big boss at very reduced stats"
                 ]
             ],
             [
@@ -62,11 +56,47 @@
                 ]
             ],
             [
+                "if",
+                [
+                    "(_SenyaControlled==True) and (_SchuriControlled==True)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Teach..."
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "_SenyaControlled==True"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "Schuri",
-                    "Sir!?|But we...|we put you to rest..."
+                    "Sir?! But we....we put you to rest..."
                 ]
+            ],
+            [
+                "elif",
+                [
+                    "_SchuriControlled==True"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "...no matter what we did huh?"
+                ]
+            ],
+            [
+                "end",
+                []
             ],
             [
                 "elif",
@@ -75,19 +105,102 @@
                 ]
             ],
             [
+                "if",
+                [
+                    "(_SenyaControlled==True) and (_SchuriControlled==True)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Teach..."
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "_SenyaControlled==True"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Sir?! It's us!|Don't worry we'll save you."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lilith",
+                    "There's no use.|Keep your eyes on me.",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "_SchuriControlled==True"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "Senya",
-                    "Teacher?!"
+                    "...we should have put him down"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lilith",
+                    "No care for your mentor eh?",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Shut your mouth!"
                 ]
             ],
             [
                 "end",
                 []
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "comment",
+                [
+                    "#changing phase music"
+                ]
+            ],
+            [
+                "change_music",
+                [
+                    "player_phase",
+                    "finalBossFightMid"
+                ]
+            ],
+            [
+                "change_music",
+                [
+                    "enemy_phase",
+                    "finalBossFightMid"
+                ]
             ]
         ],
-        "only_once": false,
+        "only_once": true,
         "priority": 20,
-        "source": "#if time in prototype 2\n#mentor will bust in to help the big bos at very reduced stats\n#does not matter if killed in ch4 bc he's reanimated\n#mostly to give some emotional damage to the chars\n#diff reactions depending on what player did in ch4\nadd_unit;Mentor;8,11\nflicker_cursor;Mentor\nset_current_hp;Mentor;20\nif;mentorKilled==True\n    speak;Schuri;Sir!?|But we...|we put you to rest...\nelif;mentorKilled==False\n    speak;Senya;Teacher?!\nend\n"
+        "source": "#mentor will bust in to help the big boss at very reduced stats\n#does not matter if killed in ch4 bc he's reanimated\n#mostly to give some emotional damage to the chars\n#diff reactions depending on what player did in ch4\nadd_unit;Mentor;8,11\nflicker_cursor;Mentor\nset_current_hp;Mentor;20\nif;mentorKilled==True\n    if;(_SenyaControlled==True) and (_SchuriControlled==True)\n        speak;MC;Teach...\n    elif;_SenyaControlled==True\n        speak;Schuri;Sir?! But we....we put you to rest...\n    elif;_SchuriControlled==True\n        speak;Senya;...no matter what we did huh?\n    end\nelif;mentorKilled==False\n    if;(_SenyaControlled==True) and (_SchuriControlled==True)\n        speak;MC;Teach...\n    elif;_SenyaControlled==True\n        speak;Schuri;Sir?! It's us!|Don't worry we'll save you.\n        speak;Lilith;There's no use.|Keep your eyes on me.;;;noir\n    elif;_SchuriControlled==True\n        speak;Senya;...we should have put him down\n        speak;Lilith;No care for your mentor eh?;;;noir\n        speak;Senya;Shut your mouth!\n    end\nend\n#changing phase music\nchange_music;player_phase;finalBossFightMid\nchange_music;enemy_phase;finalBossFightMid\n"
     }
 ]

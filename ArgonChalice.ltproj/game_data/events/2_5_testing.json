@@ -1,0 +1,19 @@
+[
+    {
+        "name": "testing",
+        "trigger": "unit_wait",
+        "level_nid": "2_5",
+        "condition": "any_unit_in_region('test', team='player') ",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#kill_unit;Lilith"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "#kill_unit;Lilith\n"
+    }
+]
