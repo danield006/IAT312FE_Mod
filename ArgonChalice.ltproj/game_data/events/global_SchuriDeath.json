@@ -3,7 +3,7 @@
         "name": "SchuriDeath",
         "trigger": "unit_death",
         "level_nid": null,
-        "condition": "unit.nid == 'Senya'",
+        "condition": "unit.nid == 'Schuri'",
         "commands": [
             [
                 "add_portrait",
