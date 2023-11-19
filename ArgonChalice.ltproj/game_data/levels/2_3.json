@@ -550,16 +550,6 @@
                 "generic": false
             },
             {
-                "nid": "HeadGuard",
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": null,
-                "starting_traveler": null,
-                "generic": false
-            },
-            {
                 "nid": "guard1",
                 "variant": null,
                 "level": 1,
@@ -769,11 +759,11 @@
                 "region_type": "normal",
                 "position": [
                     10,
-                    18
+                    12
                 ],
                 "size": [
                     6,
-                    5
+                    11
                 ],
                 "sub_nid": "",
                 "condition": "True",
@@ -875,8 +865,7 @@
                     "mob4_1",
                     "mob1_1",
                     "mob7_1",
-                    "mob7_2",
-                    "HeadGuard"
+                    "mob7_2"
                 ],
                 "positions": {
                     "mob4": [
@@ -946,10 +935,6 @@
                     "mob1_1": [
                         18,
                         2
-                    ],
-                    "HeadGuard": [
-                        12,
-                        17
                     ]
                 }
             },

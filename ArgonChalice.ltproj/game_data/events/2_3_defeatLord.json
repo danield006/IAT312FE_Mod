@@ -6,11 +6,28 @@
         "condition": "unit.nid == 'mobLord'",
         "commands": [
             [
+                "add_portrait",
+                [
+                    "MC",
+                    "Right"
+                ]
+            ],
+            [
                 "speak",
                 [
                     "MC",
-                    "We defeated the Lord!"
+                    "The lord is down!|All the other monsters are crumbling to dust!"
                 ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "remove_all_enemies",
+                []
             ],
             [
                 "win_game",
@@ -19,6 +36,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "speak;MC;We defeated the Lord!\nwin_game\n"
+        "source": "add_portrait;MC;Right\nspeak;MC;The lord is down!|All the other monsters are crumbling to dust!\nremove_portrait;MC\nremove_all_enemies\nwin_game\n"
     }
 ]

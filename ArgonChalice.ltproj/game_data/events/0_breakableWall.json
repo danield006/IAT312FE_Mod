@@ -2,7 +2,7 @@
     {
         "name": "breakableWall",
         "trigger": "unit_wait",
-        "level_nid": "2_3",
+        "level_nid": "0",
         "condition": "any_unit_in_region('breakableWall', team='player') ",
         "commands": [
             [
@@ -15,19 +15,19 @@
                 "speak",
                 [
                     "Schuri",
-                    "Hey look, that rubble's blocking our path."
+                    "Hey look, that wall looks like it's gonna crumble."
                 ]
             ],
             [
                 "speak",
                 [
                     "Senya",
-                    "Let's break through!"
+                    "Let's break through then!"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "flicker_cursor;16,8\nspeak;Schuri;Hey look, that rubble's blocking our path.\nspeak;Senya;Let's break through!\n"
+        "source": "flicker_cursor;16,8\nspeak;Schuri;Hey look, that wall looks like it's gonna crumble.\nspeak;Senya;Let's break through then!\n"
     }
 ]
