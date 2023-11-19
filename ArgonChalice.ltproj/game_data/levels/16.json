@@ -17,6 +17,22 @@
         "should_record": true,
         "units": [
             {
+                "nid": "CritDummy",
+                "variant": null,
+                "level": 20,
+                "klass": "Fighter",
+                "faction": "Soldier",
+                "starting_items": [],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
                 "nid": "MC_1",
                 "team": "player",
                 "ai": "None",
@@ -168,14 +184,14 @@
                 "region_type": "event",
                 "position": [
                     6,
-                    0
+                    2
                 ],
                 "size": [
                     3,
-                    2
+                    1
                 ],
-                "sub_nid": "Door",
-                "condition": "unit.can_unlock(region)",
+                "sub_nid": "Unlock",
+                "condition": "True",
                 "time_left": null,
                 "only_once": true,
                 "interrupt_move": false

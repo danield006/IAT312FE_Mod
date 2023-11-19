@@ -3,18 +3,67 @@
         "name": "TerrainTurn5",
         "trigger": "turn_change",
         "level_nid": "16",
-        "condition": "game.turncount == 2",
+        "condition": "game.turncount == 5",
         "commands": [
+            [
+                "add_portrait",
+                [
+                    "Mentor",
+                    "FarLeft"
+                ]
+            ],
             [
                 "speak",
                 [
                     "Mentor",
-                    "Finally let's explain terrain."
+                    "Let's explain terrain.|Certain tiles on the map provide avoidance bonuses,|these can be used to give a slight edge when facing enemies.|You can hover over a tile and a preview will be in the bottom right of the screen,|that will show the tile and any bonuses on the tile."
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Um, question? Why are you sitting on a throne?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Specifically to explain rare terrain actually.|Tiles like 'Throne' and 'Fort' also provide bonus defense/resistance and heal the occupying unit per turn."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Finally I'll mention movement penalties.|As a general rule, the rougher the terrain,|the more you'll get slowed down trying to pass it.|As an example:Forests take an extra movement cost to pass.|Rivers are quite difficult to pass.|You can only get through a river 1 tile at a time.|Try to find a bridge when you're trying to pass a river."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "That throne is comfortable isn't it."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Incredibly so.|Next turn I'll explain crits, level-ups, and random drops."
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "speak;Mentor;Finally let's explain terrain."
+        "source": "add_portrait;Mentor;FarLeft\nspeak;Mentor;Let's explain terrain.|Certain tiles on the map provide avoidance bonuses,|these can be used to give a slight edge when facing enemies.|You can hover over a tile and a preview will be in the bottom right of the screen,|that will show the tile and any bonuses on the tile.\nadd_portrait;MC;FarRight\nspeak;MC;Um, question? Why are you sitting on a throne?\nspeak;Mentor;Specifically to explain rare terrain actually.|Tiles like 'Throne' and 'Fort' also provide bonus defense/resistance and heal the occupying unit per turn.\nspeak;Mentor;Finally I'll mention movement penalties.|As a general rule, the rougher the terrain,|the more you'll get slowed down trying to pass it.|As an example:Forests take an extra movement cost to pass.|Rivers are quite difficult to pass.|You can only get through a river 1 tile at a time.|Try to find a bridge when you're trying to pass a river.\nspeak;MC;That throne is comfortable isn't it.\nspeak;Mentor;Incredibly so.|Next turn I'll explain crits, level-ups, and random drops.\n"
     }
 ]

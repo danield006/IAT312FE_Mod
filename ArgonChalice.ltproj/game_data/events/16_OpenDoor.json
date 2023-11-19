@@ -1,0 +1,35 @@
+[
+    {
+        "name": "OpenDoor",
+        "trigger": "Unlock",
+        "level_nid": "16",
+        "condition": "region.nid == 'Gate'",
+        "commands": [
+            [
+                "sound",
+                [
+                    "Unlock"
+                ]
+            ],
+            [
+                "show_layer",
+                [
+                    "Door"
+                ]
+            ],
+            [
+                "wait",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "sound;Unlock\nshow_layer;Door\nwait;1000\nwin_game\n"
+    }
+]

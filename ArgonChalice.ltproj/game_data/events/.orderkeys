@@ -120,7 +120,7 @@
     "global_Support_Gain.json": 118,
     "2_OnOverworldEnter.json": 119,
     "2_OnLevelSelect.json": 120,
-    "16_OpenGate.json": 121,
+    "16_OpenDoor.json": 121,
     "222_intro.json": 122,
     "2_1_Intro.json": 123,
     "2_1_PlayerTurn1.json": 124,
@@ -255,5 +255,6 @@
     "16_QuizTurn2.json": 253,
     "16_WeaponsTurn3.json": 254,
     "16_MagicTurn4.json": 255,
-    "16_TerrainTurn5.json": 256
+    "16_TerrainTurn5.json": 256,
+    "16_RNGLevelUpsTurn6.json": 257
 }

@@ -45,6 +45,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "add_portrait;Eirika;FarRight\nspeak;Eirika;Brother... I'm sorry.\nexpression;Eirika;CloseEyes\nremove_portrait;Eirika\nremove_unit;Eirika\nlose_game\n"
     }
 ]

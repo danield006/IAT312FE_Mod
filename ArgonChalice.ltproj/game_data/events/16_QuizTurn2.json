@@ -3,7 +3,7 @@
         "name": "QuizTurn2",
         "trigger": "turn_change",
         "level_nid": "16",
-        "condition": "game.turncount == 22",
+        "condition": "game.turncount == 2",
         "commands": [
             [
                 "multi_add_portrait",

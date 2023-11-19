@@ -4,9 +4,48 @@
         "trigger": "level_end",
         "level_nid": "16",
         "condition": "True",
-        "commands": [],
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "InsideCastle"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "multi_add_portrait",
+                [
+                    "Mentor",
+                    "FarLeft",
+                    "MC",
+                    "MidRight",
+                    "Senya",
+                    "Right",
+                    "Schuri",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Congratulations, you finished the tutorial.|Get some rest, everyone has a lot to learn as my pupils."
+                ]
+            ]
+        ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "transition;close\nchange_background;InsideCastle\ntransition;open\nmulti_add_portrait;Mentor;FarLeft;MC;MidRight;Senya;Right;Schuri;FarRight\nspeak;Mentor;Congratulations, you finished the tutorial.|Get some rest, everyone has a lot to learn as my pupils.\n"
     }
 ]

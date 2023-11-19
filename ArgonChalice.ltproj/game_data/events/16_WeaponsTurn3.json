@@ -3,7 +3,7 @@
         "name": "WeaponsTurn3",
         "trigger": "turn_change",
         "level_nid": "16",
-        "condition": "game.turncount == 23",
+        "condition": "game.turncount == 3",
         "commands": [
             [
                 "give_item",

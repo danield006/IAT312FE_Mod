@@ -1,0 +1,104 @@
+[
+    {
+        "name": "RNGLevelUpsTurn6",
+        "trigger": "turn_change",
+        "level_nid": "16",
+        "condition": "game.turncount == 6",
+        "commands": [
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Finally let's explain crits, exp, random drops, and inventory.|First crits:critical hit chance is from unit skill and weapon crit chance.|It's typically going to be around 1-10% chance.|Critical hits do 3x the damage you would have normally done. Let's show an example for Senya:"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Senya (Senya_1)",
+                    "6,5",
+                    "",
+                    "push"
+                ]
+            ],
+            [
+                "add_unit",
+                [
+                    "Soldier (CritDummy)",
+                    "7,5",
+                    "",
+                    "push"
+                ]
+            ],
+            [
+                "interact_unit",
+                [
+                    "Senya (Senya_1)",
+                    "Soldier (CritDummy)",
+                    "crit1,end",
+                    "Iron Sword (Iron Sword)",
+                    "FLAG(force_animation)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Crits also have special animations so you'll know when you got one.|We also got some exp for attacking this dummy here."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "You get exp from battles, spells, and completing objectives/chapters.|If your exp reaches 100, you'll level up and get random stat boosts.|These stat boosts are determined by each character's own potential.|For example:Schuri is much more likely to grow magic than Senya.|Let's give an example with you {var:MC_name}."
+                ]
+            ],
+            [
+                "give_exp",
+                [
+                    "MC (MC_1)",
+                    "100"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Not bad, much better than what I would have gotten at my age.|Now, let's talk about random drops.|When you defeat an enemy,|there's a very low chance that the enemy will drop an item for you to pick up.|It'll look like this:"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Hm? They dropped an item!"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "MC_1",
+                    "Dragonshield (Dragonshield)"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Lastly, let's talk about your inventory.|Each unit can only hold up to 5 items/weapons.|Once this tutorial is over, you'll get access to the <green>Supply</green>.|The supply will be {var:MC_name}'s responsibility.|Senya and Schuri will have to be adjacent to {var:MC_name} in order to swap out items."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "When you're ready to end this tutorial,|Proceed to the door and press the <green>Unlock</green> command.|In the future, you can skip part of this tutorial by doing this immediately."
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "speak;Mentor;Finally let's explain crits, exp, random drops, and inventory.|First crits:critical hit chance is from unit skill and weapon crit chance.|It's typically going to be around 1-10% chance.|Critical hits do 3x the damage you would have normally done. Let's show an example for Senya:\nmove_unit;Senya (Senya_1);6,5;;push\nadd_unit;Soldier (CritDummy);7,5;;push\ninteract_unit;Senya (Senya_1);Soldier (CritDummy);crit1,end;Iron Sword (Iron Sword);FLAG(force_animation)\nspeak;Mentor;Crits also have special animations so you'll know when you got one.|We also got some exp for attacking this dummy here.\nspeak;Mentor;You get exp from battles, spells, and completing objectives/chapters.|If your exp reaches 100, you'll level up and get random stat boosts.|These stat boosts are determined by each character's own potential.|For example:Schuri is much more likely to grow magic than Senya.|Let's give an example with you {var:MC_name}.\ngive_exp;MC (MC_1);100\nspeak;Mentor;Not bad, much better than what I would have gotten at my age.|Now, let's talk about random drops.|When you defeat an enemy,|there's a very low chance that the enemy will drop an item for you to pick up.|It'll look like this:\nspeak;;Hm? They dropped an item!\ngive_item;MC_1;Dragonshield (Dragonshield)\nspeak;Mentor;Lastly, let's talk about your inventory.|Each unit can only hold up to 5 items/weapons.|Once this tutorial is over, you'll get access to the <green>Supply</green>.|The supply will be {var:MC_name}'s responsibility.|Senya and Schuri will have to be adjacent to {var:MC_name} in order to swap out items.\nspeak;Mentor;When you're ready to end this tutorial,|Proceed to the door and press the <green>Unlock</green> command.|In the future, you can skip part of this tutorial by doing this immediately.\n"
+    }
+]
