@@ -46,9 +46,246 @@
             [
                 "speak",
                 [
-                    "Senya",
-                    "PLACEHOLDER FOR SCHURI."
+                    "MC",
+                    "Senya, how are you holding up?"
                 ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "I'm doing alright.|I can't believe we've run into the Crimson Wolves."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "You said that this gang is rather elusive. How were you able to recognize the leader?"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "HalfCloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "That's because they..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Sorry, I didn't mean to pry.|You don't have to share if you don't want to."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "No...the others know already."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "NoSmile"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "You know how I used to live with a caravan right?|They were my family."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Yea, the others have mentioned that before."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "It was the Crimson Wolves gang who ambushed us that day."
+                ]
+            ],
+            [
+                "bop_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "They killed them all...|Which is why when I saw him yesterday...|I didn't want him to get away."
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_ch1VillageDestroyed'] == True and game.game_vars['_ch1BonesEscapeFlag'] == False"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "I'm glad we killed him though. I've finally avenged my...family."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Leaving him alive would have created more problems in the future."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "For what happened to the village...|It's a shame.|When this is all over, perhaps we should pay a visit to help them rebuild.|.....|I know what's it like to lose a home.|I know I sound hypocritical...I chose to kill Bones instead of protecting the villagers.|I..."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Senya...I understand."
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch1VillageDestroyed'] == False and game.game_vars['_ch1BonesEscapeFlag'] == False"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "I'm glad we killed him though. I've finally avenged my...family.|And we also saved all the villagers.|I wouldn't want to wish what happened to me to others.|It was all thanks to you."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "It was a group effort.|All of us were critical to our success."
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch1VillageDestroyed'] == True and game.game_vars['_ch1BonesEscapeFlag'] == True"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "But I couldn't avenge my family. He got away.|And those poor villagers...|.....|I know what's it like to lose a home."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "MC",
+                    "HalfCloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "...sorry, if only my leadership was better."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "We couldn't do anything right..."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "MC",
+                    "NoSmile"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "OpenEyes"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch1VillageDestroyed'] == False and game.game_vars['_ch1BonesEscapeFlag'] == True"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "But I couldn't avenge my family. He got away."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "MC",
+                    "HalfCloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "..."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "MC",
+                    "OpenEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "But you know what? I'm also glad.|I wouldn't want to wish what happened to me to others.|It's just hard seeing your goal be so close...and fail."
+                ]
+            ],
+            [
+                "end",
+                []
             ],
             [
                 "elif",
@@ -67,13 +304,21 @@
                 "speak",
                 [
                     "Senya",
-                    "PLACEHOLDER FOR SCHURI."
+                    "Yea, I've been to Greshia.|I used to go there with my caravan alot. I wonder what's changed since then.|I've always enjoyed going to their markets."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "##################"
+                    "MC",
+                    "The markets? What sorts of specialties are there?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "There's always such interesting and strange things being sold.|As a kid, I've always gravitated to those stalls.|For specialities...I suppose their cloth.|They are high in quality and has lots of fun patterns."
                 ]
             ],
             [
@@ -93,13 +338,49 @@
                 "speak",
                 [
                     "Senya",
-                    "PLACEHOLDER FOR Mentor."
+                    "You wish to learn about my previous caravan?"
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "##################"
+                    "MC",
+                    "If you don't mind sharing."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "I owe a lot to the caravan.|I was an orphan you know?|They took me in as one of their own and raised me.|We travelled across the land and saw many sights.|I was always surrounded by laughter."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "They sound like amazing people."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "Smile"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "They were."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "NoSmile"
                 ]
             ],
             [
@@ -109,6 +390,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Senya;Right\nspeak;Senya;What's up?\nchoice;SenyaConversation2;Which topic do you want to ask about?;Yesterday,Greshia,Caravan Life;FLAG(backable);horizontal;top_left\nif;game.game_vars['SenyaConversation2'] == 'Yesterday'\n    add_portrait;MC;Left\n    speak;Senya;PLACEHOLDER FOR SCHURI.\nelif;game.game_vars['SenyaConversation2'] == 'Greshia'\n    add_portrait;MC;Left\n    speak;Senya;PLACEHOLDER FOR SCHURI.\n    ##################\nelif;game.game_vars['SenyaConversation2'] == 'Caravan Life'\n    add_portrait;MC;Left\n    speak;Senya;PLACEHOLDER FOR Mentor.\n    ##################\nend\n"
+        "source": "add_portrait;Senya;Right\nspeak;Senya;What's up?\nchoice;SenyaConversation2;Which topic do you want to ask about?;Yesterday,Greshia,Caravan Life;FLAG(backable);horizontal;top_left\nif;game.game_vars['SenyaConversation2'] == 'Yesterday'\n    add_portrait;MC;Left\n    speak;MC;Senya, how are you holding up?\n    speak;Senya;I'm doing alright.|I can't believe we've run into the Crimson Wolves.\n    speak;MC;You said that this gang is rather elusive. How were you able to recognize the leader?\n    expression;Senya;HalfCloseEyes\n    speak;Senya;That's because they...\n    speak;MC;Sorry, I didn't mean to pry.|You don't have to share if you don't want to.\n    speak;Senya;No...the others know already.\n    expression;Senya;NoSmile\n    speak;Senya;You know how I used to live with a caravan right?|They were my family.\n    speak;MC;Yea, the others have mentioned that before.\n    speak;Senya;It was the Crimson Wolves gang who ambushed us that day.\n    bop_portrait;MC\n    speak;Senya;They killed them all...|Which is why when I saw him yesterday...|I didn't want him to get away.\n    if;game.game_vars['_ch1VillageDestroyed'] == True and game.game_vars['_ch1BonesEscapeFlag'] == False\n        speak;Senya;I'm glad we killed him though. I've finally avenged my...family.\n        speak;MC;Leaving him alive would have created more problems in the future.\n        speak;Senya;For what happened to the village...|It's a shame.|When this is all over, perhaps we should pay a visit to help them rebuild.|.....|I know what's it like to lose a home.|I know I sound hypocritical...I chose to kill Bones instead of protecting the villagers.|I...\n        speak;MC;Senya...I understand.\n    elif;game.game_vars['_ch1VillageDestroyed'] == False and game.game_vars['_ch1BonesEscapeFlag'] == False\n        speak;Senya;I'm glad we killed him though. I've finally avenged my...family.|And we also saved all the villagers.|I wouldn't want to wish what happened to me to others.|It was all thanks to you.\n        speak;MC;It was a group effort.|All of us were critical to our success.\n    elif;game.game_vars['_ch1VillageDestroyed'] == True and game.game_vars['_ch1BonesEscapeFlag'] == True\n        speak;Senya;But I couldn't avenge my family. He got away.|And those poor villagers...|.....|I know what's it like to lose a home.\n        expression;MC;HalfCloseEyes\n        speak;MC;...sorry, if only my leadership was better.\n        expression;Senya;CloseEyes\n        speak;Senya;We couldn't do anything right...\n        expression;MC;NoSmile\n        expression;Senya;OpenEyes\n    elif;game.game_vars['_ch1VillageDestroyed'] == False and game.game_vars['_ch1BonesEscapeFlag'] == True\n        speak;Senya;But I couldn't avenge my family. He got away.\n        expression;MC;HalfCloseEyes\n        speak;MC;...\n        expression;MC;OpenEyes\n        speak;Senya;But you know what? I'm also glad.|I wouldn't want to wish what happened to me to others.|It's just hard seeing your goal be so close...and fail.\n    end\nelif;game.game_vars['SenyaConversation2'] == 'Greshia'\n    add_portrait;MC;Left\n    speak;Senya;Yea, I've been to Greshia.|I used to go there with my caravan alot. I wonder what's changed since then.|I've always enjoyed going to their markets.\n    speak;MC;The markets? What sorts of specialties are there?\n    speak;Senya;There's always such interesting and strange things being sold.|As a kid, I've always gravitated to those stalls.|For specialities...I suppose their cloth.|They are high in quality and has lots of fun patterns.\nelif;game.game_vars['SenyaConversation2'] == 'Caravan Life'\n    add_portrait;MC;Left\n    speak;Senya;You wish to learn about my previous caravan?\n    speak;MC;If you don't mind sharing.\n    speak;Senya;I owe a lot to the caravan.|I was an orphan you know?|They took me in as one of their own and raised me.|We travelled across the land and saw many sights.|I was always surrounded by laughter.\n    speak;MC;They sound like amazing people.\n    expression;Senya;Smile\n    speak;Senya;They were.\n    expression;Senya;NoSmile\nend\n"
     }
 ]
