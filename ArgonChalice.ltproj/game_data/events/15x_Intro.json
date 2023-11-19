@@ -3,7 +3,7 @@
         "name": "Intro",
         "trigger": "level_start",
         "level_nid": "15x",
-        "condition": "True",
+        "condition": "False",
         "commands": [
             [
                 "transition",
@@ -65,7 +65,7 @@
                 "speak",
                 [
                     "Mentor",
-                    "I see you're setting up alright.|Still need to get your bed from storage though.|I've brought my other 2 pupils here to introduce themselves as well.|Why don't you introduce yourself first though?"
+                    "I see you're settling in alright.|Still need to get your bed from storage though.|I've brought my other 2 pupils here to introduce themselves as well.|Why don't you introduce yourself first though?"
                 ]
             ],
             [
@@ -144,6 +144,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "transition;close\nchange_background;InsideCastle\ntransition;open\nlocation_card;Your Room\nadd_portrait;MC;FarLeft;FLAG(mirror)\nmulti_add_portrait;Senya;Right;Schuri;FarRight;Mentor;MidRight\nmirror_portrait;MC\nexpression;Mentor;Smile\nspeak;Mentor;I see you're setting up alright.|Still need to get your bed from storage though.|I've brought my other 2 pupils here to introduce themselves as well.|Why don't you introduce yourself first though?\ntext_entry;MC_name;What's your name?\nset_name;MC (MC_1);{var:MC_name}\nset_name;MC (MC);{var:MC_name}\nspeak;Senya;Cool, {var:MC_name}, nice to meet you, I'm Senya.\nspeak;Schuri;Nice to meet you {var:MC_name}. I am Schuri\nspeak;Mentor;If you have any questions for any of us, feel free to ask.|When you're ready to continue, go to the stairs and select <green>Leave</green>\nspeak;;After certain chapters there will be a 'free time' chapter where you can talk to your group about various topics.|You can also use this time to organize your inventory.|In order to talk to someone, move your unit next to them and click <green>Talk</green>.|After talking about one topic, you'll have to press <green>Talk </green>again in order to ask about a different topic.;;;hint\nadd_talk;MC (MC_1);Senya\nadd_talk;MC (MC_1);Schuri\nadd_talk;MC (MC_1);Mentor\n"
+        "source": "transition;close\nchange_background;InsideCastle\ntransition;open\nlocation_card;Your Room\nadd_portrait;MC;FarLeft;FLAG(mirror)\nmulti_add_portrait;Senya;Right;Schuri;FarRight;Mentor;MidRight\nmirror_portrait;MC\nexpression;Mentor;Smile\nspeak;Mentor;I see you're settling in alright.|Still need to get your bed from storage though.|I've brought my other 2 pupils here to introduce themselves as well.|Why don't you introduce yourself first though?\ntext_entry;MC_name;What's your name?\nset_name;MC (MC_1);{var:MC_name}\nset_name;MC (MC);{var:MC_name}\nspeak;Senya;Cool, {var:MC_name}, nice to meet you, I'm Senya.\nspeak;Schuri;Nice to meet you {var:MC_name}. I am Schuri\nspeak;Mentor;If you have any questions for any of us, feel free to ask.|When you're ready to continue, go to the stairs and select <green>Leave</green>\nspeak;;After certain chapters there will be a 'free time' chapter where you can talk to your group about various topics.|You can also use this time to organize your inventory.|In order to talk to someone, move your unit next to them and click <green>Talk</green>.|After talking about one topic, you'll have to press <green>Talk </green>again in order to ask about a different topic.;;;hint\nadd_talk;MC (MC_1);Senya\nadd_talk;MC (MC_1);Schuri\nadd_talk;MC (MC_1);Mentor\n"
     }
 ]

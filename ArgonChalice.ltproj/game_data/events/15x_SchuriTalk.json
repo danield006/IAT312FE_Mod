@@ -47,13 +47,35 @@
                 "speak",
                 [
                     "Schuri",
-                    "Huh? Me?"
+                    "Huh? Me?|Well, I was the first of Sir Cyrus' pupils.|When word that Sir was looking to take an apprentice, my family recommended me.|He was impressed with my talent in magic so he accepted me as his pupil."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "#####################################"
+                    "MC",
+                    "Recommended? You're a magic user then?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Yes, I'm from an noble family.|A lot of importance was placed on knowledge so most of us studied and researched magic.|I was honestly surprised they chose me instead of my cousin.|They were a lot more skilled than I.|What about you?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I'm afraid I'm the complete opposite.|I used to be a squire before this.|I'm no magic user, but I know my way around a good ol' fashioned spear and sword."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Like Senya then.|If you need to know anything about magic and the like, you can come to me."
                 ]
             ],
             [
@@ -73,7 +95,21 @@
                 "speak",
                 [
                     "Schuri",
-                    "PLACEHOLDER FOR Senya."
+                    "Senya?|Sir took her in shortly after I joined. |I was surprised initially as I thought Sir was looking for magic users.|Came as a surprise when I learned she wasn't.|Mighty fine with a bow though."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Yeah, I was surprised too considering I'm not one either."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "We've worked together a lot when Sir sent us on missions.|While we may not always share the same values, we made a good team.|We make up for what the other lacks.|You should go speak with her if you haven't already.|We'll be working as a group of three now."
                 ]
             ],
             [
@@ -99,13 +135,21 @@
                 "speak",
                 [
                     "Schuri",
-                    "PLACEHOLDER FOR Mentor."
+                    "Sir Cyrus?|He's one of the Great Sages of Marlund.|All the Great Sages tend to keep to themselves.|So it caused a lot of shock when news that one of them was looking for a disciple.|He's a patient and kind man. Though he can be rather intimadating.|Though...in the years I studied under him, he hasn't shared much of his life with us.|And despite my curiosity...|I would not dare be too presumptuous to ask."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "##################"
+                    "MC",
+                    "Great Sage...to be honest, he's younger than I thought he would be.|I used to imagine the sages to be all-knowing old men.|When I found out he looked this young, my first thought was 'Wow, the sages sure got some de-aging secrets.'|Teach is pretty amazing isn't he?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Yes, Sir Cyrus is one of the younger members of the five sages.|I heard it's very difficult to join their ranks.|You'll be able to see his prowess soon enough and then you'll be even more amazed."
                 ]
             ],
             [
@@ -115,6 +159,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Schuri;Right\nspeak;Schuri;Yes?\nchoice;SchuriConversation1;Which topic do you want to ask about?;Schuri,Senya,Mentor;FLAG(backable);horizontal;top_left\nif;game.game_vars['SchuriConversation1'] == 'Schuri'\n    add_portrait;MC;Left\n    speak;Schuri;Huh? Me?\n    #####################################\nelif;game.game_vars['SchuriConversation1'] == 'Senya'\n    add_portrait;MC;Left\n    speak;Schuri;PLACEHOLDER FOR Senya.\n    ##################\nelif;game.game_vars['SchuriConversation1'] == 'Mentor'\n    add_portrait;MC;Left\n    speak;Schuri;PLACEHOLDER FOR Mentor.\n    ##################\nend\n"
+        "source": "add_portrait;Schuri;Right\nspeak;Schuri;Yes?\nchoice;SchuriConversation1;Which topic do you want to ask about?;Schuri,Senya,Mentor;FLAG(backable);horizontal;top_left\nif;game.game_vars['SchuriConversation1'] == 'Schuri'\n    add_portrait;MC;Left\n    speak;Schuri;Huh? Me?|Well, I was the first of Sir Cyrus' pupils.|When word that Sir was looking to take an apprentice, my family recommended me.|He was impressed with my talent in magic so he accepted me as his pupil.\n    speak;MC;Recommended? You're a magic user then?\n    speak;Schuri;Yes, I'm from an noble family.|A lot of importance was placed on knowledge so most of us studied and researched magic.|I was honestly surprised they chose me instead of my cousin.|They were a lot more skilled than I.|What about you?\n    speak;MC;I'm afraid I'm the complete opposite.|I used to be a squire before this.|I'm no magic user, but I know my way around a good ol' fashioned spear and sword.\n    speak;Schuri;Like Senya then.|If you need to know anything about magic and the like, you can come to me.\nelif;game.game_vars['SchuriConversation1'] == 'Senya'\n    add_portrait;MC;Left\n    speak;Schuri;Senya?|Sir took her in shortly after I joined. |I was surprised initially as I thought Sir was looking for magic users.|Came as a surprise when I learned she wasn't.|Mighty fine with a bow though.\n    speak;MC;Yeah, I was surprised too considering I'm not one either.\n    speak;Schuri;We've worked together a lot when Sir sent us on missions.|While we may not always share the same values, we made a good team.|We make up for what the other lacks.|You should go speak with her if you haven't already.|We'll be working as a group of three now.\n    ##################\nelif;game.game_vars['SchuriConversation1'] == 'Mentor'\n    add_portrait;MC;Left\n    speak;Schuri;Sir Cyrus?|He's one of the Great Sages of Marlund.|All the Great Sages tend to keep to themselves.|So it caused a lot of shock when news that one of them was looking for a disciple.|He's a patient and kind man. Though he can be rather intimadating.|Though...in the years I studied under him, he hasn't shared much of his life with us.|And despite my curiosity...|I would not dare be too presumptuous to ask.\n    speak;MC;Great Sage...to be honest, he's younger than I thought he would be.|I used to imagine the sages to be all-knowing old men.|When I found out he looked this young, my first thought was 'Wow, the sages sure got some de-aging secrets.'|Teach is pretty amazing isn't he?\n    speak;Schuri;Yes, Sir Cyrus is one of the younger members of the five sages.|I heard it's very difficult to join their ranks.|You'll be able to see his prowess soon enough and then you'll be even more amazed.\nend\n"
     }
 ]

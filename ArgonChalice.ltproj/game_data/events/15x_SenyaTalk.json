@@ -102,7 +102,21 @@
                 "speak",
                 [
                     "Senya",
-                    "PLACEHOLDER FOR SCHURI."
+                    "Oh Schuri? She's talented mage that one.|Although she seems timid, she's actually can be quite stubborn.|We've worked well together with some disagreements here and there.|But that's all normal anyways when working with others."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "What kind of person is she?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Like aside from her stubborness?|She's too kind for her own good. I mean that in a good way.|I...wasn't the nicest when we first met and she was the one who reached out to me first.|She's reliable.|You should go speak with her if you haven't already."
                 ]
             ],
             [
@@ -128,13 +142,28 @@
                 "speak",
                 [
                     "Senya",
-                    "PLACEHOLDER FOR Mentor."
+                    "Teacher?|He was kind enough to take me in after learning about my circumstances.|I owe a lot to him.|I admit I had a bit of prejudice when I first learned about his status as Great Sage...|But after learning more about him...I realized that not all those in power are all that bad."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "##################"
+                    "MC",
+                    "What kind of person is Teach?"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "Smile"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Well...he's a kind man.|Kind enough to care and take in a kid he just met."
                 ]
             ],
             [
@@ -144,6 +173,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Senya;Right\nspeak;Senya;So, what do you wanna ask about?\nchoice;SenyaConversation1;Which topic do you want to ask about?;Senya,Schuri,Mentor;FLAG(backable);horizontal;top_left\nif;game.game_vars['SenyaConversation1'] == 'Senya'\n    add_portrait;MC;Left\n    speak;Senya;Me? Well I've been here for a couple years now, joined about a month after Schuri.|Before that? Used to be part of a travelling caravan across the Kingdom.|We...ran into some trouble and all of us got split up.|I ended up being the only one left.|I'm not proficient with magic at all but can use the sword, axe, and bow.|What about you?\n    speak;MC;No magic either actually.|I was training as a squire in the military before teach wanted to mentor me.| I'm mostly proficient with my spear but I've had to practice a lot with a sword.\n    speak;Senya;Fellow swordie huh?|Good to have another sparring partner at least.|Kinda surprised teacher brought in another no magic pupil.\n    speak;MC;Yeah...I was surprised too when teach requested for me to be transfered here.|Can't complain though, getting to learn directly from the great sage Cyrus is pretty nice.\n    expression;Senya;Smile\n    speak;Senya;Hah, wait till you start training.|You'll regret those words soon enough I'm sure.\nelif;game.game_vars['SenyaConversation1'] == 'Schuri'\n    add_portrait;MC;Left\n    speak;Senya;PLACEHOLDER FOR SCHURI.\n    ##################\nelif;game.game_vars['SenyaConversation1'] == 'Mentor'\n    add_portrait;MC;Left\n    speak;Senya;PLACEHOLDER FOR Mentor.\n    ##################\nend\n"
+        "source": "add_portrait;Senya;Right\nspeak;Senya;So, what do you wanna ask about?\nchoice;SenyaConversation1;Which topic do you want to ask about?;Senya,Schuri,Mentor;FLAG(backable);horizontal;top_left\nif;game.game_vars['SenyaConversation1'] == 'Senya'\n    add_portrait;MC;Left\n    speak;Senya;Me? Well I've been here for a couple years now, joined about a month after Schuri.|Before that? Used to be part of a travelling caravan across the Kingdom.|We...ran into some trouble and all of us got split up.|I ended up being the only one left.|I'm not proficient with magic at all but can use the sword, axe, and bow.|What about you?\n    speak;MC;No magic either actually.|I was training as a squire in the military before teach wanted to mentor me.| I'm mostly proficient with my spear but I've had to practice a lot with a sword.\n    speak;Senya;Fellow swordie huh?|Good to have another sparring partner at least.|Kinda surprised teacher brought in another no magic pupil.\n    speak;MC;Yeah...I was surprised too when teach requested for me to be transfered here.|Can't complain though, getting to learn directly from the great sage Cyrus is pretty nice.\n    expression;Senya;Smile\n    speak;Senya;Hah, wait till you start training.|You'll regret those words soon enough I'm sure.\nelif;game.game_vars['SenyaConversation1'] == 'Schuri'\n    add_portrait;MC;Left\n    speak;Senya;Oh Schuri? She's talented mage that one.|Although she seems timid, she's actually can be quite stubborn.|We've worked well together with some disagreements here and there.|But that's all normal anyways when working with others.\n    speak;MC;What kind of person is she?\n    speak;Senya;Like aside from her stubborness?|She's too kind for her own good. I mean that in a good way.|I...wasn't the nicest when we first met and she was the one who reached out to me first.|She's reliable.|You should go speak with her if you haven't already.\n    ##################\nelif;game.game_vars['SenyaConversation1'] == 'Mentor'\n    add_portrait;MC;Left\n    speak;Senya;Teacher?|He was kind enough to take me in after learning about my circumstances.|I owe a lot to him.|I admit I had a bit of prejudice when I first learned about his status as Great Sage...|But after learning more about him...I realized that not all those in power are all that bad.\n    speak;MC;What kind of person is Teach?\n    expression;Senya;Smile\n    speak;Senya;Well...he's a kind man.|Kind enough to care and take in a kid he just met.\nend\n"
     }
 ]
