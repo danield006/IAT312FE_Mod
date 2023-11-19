@@ -34,12 +34,12 @@
             [
                 "set_next_chapter",
                 [
-                    "4_1"
+                    "2_4"
                 ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#do the warp\nremove_group;Party;warp\nwait;500\ntransition;close;250\nset_next_chapter;4_1\n"
+        "source": "#do the warp\nremove_group;Party;warp\nwait;500\ntransition;close;250\nset_next_chapter;2_4\n"
     }
 ]

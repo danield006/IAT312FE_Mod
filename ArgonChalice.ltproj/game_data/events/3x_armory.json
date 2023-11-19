@@ -15,7 +15,7 @@
                 "shop",
                 [
                     "{unit}",
-                    "Silver Sword,Silver Lance,Silver Axe,Silver Bow,Hand Axe,Javelin"
+                    "Silver Sword,Silver Lance,Silver Axe,Silver Bow"
                 ]
             ],
             [
@@ -27,6 +27,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;Close\nshop;{unit};Silver Sword,Silver Lance,Silver Axe,Silver Bow,Hand Axe,Javelin\ntransition;Open\n"
+        "source": "transition;Close\nshop;{unit};Silver Sword,Silver Lance,Silver Axe,Silver Bow\ntransition;Open\n"
     }
 ]
