@@ -14,8 +14,8 @@
     "Resistance_+5.json": 12,
     "Defense_+5.json": 13,
     "Speed_+5.json": 14,
-    "Skill_+5.json": 15,
-    "Luck_+5.json": 16,
+    "Luck_+5.json": 15,
+    "DarkEnergy.json": 16,
     "Dragonstone.json": 17,
     "Poisoned.json": 18,
     "Resist+.json": 19,
@@ -39,5 +39,6 @@
     "Void_Curse.json": 37,
     "Inspiration.json": 38,
     "Inspiration_child.json": 39,
-    "Miracle.json": 40
+    "Miracle.json": 40,
+    "Skill_+5.json": 41
 }

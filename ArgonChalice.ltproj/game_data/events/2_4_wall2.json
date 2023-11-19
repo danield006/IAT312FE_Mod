@@ -1,0 +1,19 @@
+[
+    {
+        "name": "wall2",
+        "trigger": "unit_death",
+        "level_nid": "2_4",
+        "condition": "unit.nid == 'Wall2'",
+        "commands": [
+            [
+                "show_layer",
+                [
+                    "Breakable2"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "show_layer;Breakable2\n"
+    }
+]

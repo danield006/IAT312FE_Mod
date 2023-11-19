@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Rout",
+        "trigger": "combat_end",
+        "level_nid": "2_2",
+        "condition": "len(game.get_enemy_units()) == 0",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Aesc",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Good, we've cleared this area out. Let's get ready for this spell shall we?"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Aesc"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "add_portrait;Aesc;Left\nspeak;Aesc;Good, we've cleared this area out. Let's get ready for this spell shall we?\nremove_portrait;Aesc\nwin_game\n"
+    }
+]

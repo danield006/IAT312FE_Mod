@@ -1,0 +1,33 @@
+[
+    {
+        "name": "firstWarning",
+        "trigger": "enemy_turn_change",
+        "level_nid": "2_4",
+        "condition": "game.turncount == 8",
+        "commands": [
+            [
+                "screen_shake",
+                [
+                    "100"
+                ]
+            ],
+            [
+                "add_group",
+                [
+                    "wave2",
+                    "wave2"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "{var:MC_name}",
+                    "There's more of them now!|If we take too long, we'lll get overwhelmed!"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "screen_shake;100\nadd_group;wave2;wave2\nspeak;{var:MC_name};There's more of them now!|If we take too long, we'lll get overwhelmed!\n"
+    }
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "name": "LanceAndBow",
+        "trigger": "turn_change",
+        "level_nid": "2_2B",
+        "condition": "game.turncount == 5",
+        "commands": [
+            [
+                "spawn_group",
+                [
+                    "Lances",
+                    "south",
+                    "Lances",
+                    "warp"
+                ]
+            ],
+            [
+                "spawn_group",
+                [
+                    "Bows",
+                    "south",
+                    "Bows",
+                    "warp"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "spawn_group;Lances;south;Lances;warp\nspawn_group;Bows;south;Bows;warp\n"
+    }
+]

@@ -2,7 +2,7 @@
     {
         "nid": "Ephraim_Lord",
         "name": "Squire",
-        "desc": "A proficient sword and spear user, can use healing staffs but is inept at magic",
+        "desc": "A proficient sword and spear user",
         "tier": 1,
         "movement_group": "Light Foot",
         "promotes_from": null,

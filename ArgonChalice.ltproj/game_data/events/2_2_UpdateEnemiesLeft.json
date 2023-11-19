@@ -1,0 +1,35 @@
+[
+    {
+        "name": "UpdateEnemiesLeft",
+        "trigger": "combat_end",
+        "level_nid": "2_2",
+        "condition": "True",
+        "commands": [
+            [
+                "if",
+                [
+                    "game.game_vars['_ch2AescTalkedTo'] == True"
+                ]
+            ],
+            [
+                "change_objective_simple",
+                [
+                    "Enemies left: {eval:len(game.get_enemy_units())}"
+                ]
+            ],
+            [
+                "change_objective_win",
+                [
+                    "Enemies left: {eval:len(game.get_enemy_units())}"
+                ]
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "if;game.game_vars['_ch2AescTalkedTo'] == True\n    change_objective_simple;Enemies left: {eval:len(game.get_enemy_units())}\n    change_objective_win;Enemies left: {eval:len(game.get_enemy_units())}\nend\n"
+    }
+]

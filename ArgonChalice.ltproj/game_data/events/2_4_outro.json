@@ -1,0 +1,118 @@
+[
+    {
+        "name": "outro",
+        "trigger": "level_end",
+        "level_nid": "2_4",
+        "condition": "True",
+        "commands": [
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "change_background",
+                [
+                    "InsideCastle"
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "open"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "OffscreenLeft"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "OffscreenLeft"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "OffscreenLeft"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "MC",
+                    "Right"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Schuri",
+                    "MidLeft"
+                ]
+            ],
+            [
+                "move_portrait",
+                [
+                    "Senya",
+                    "FarLeft"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "MC"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "It's time."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Let's end this."
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#sound;heavyDoorOpen nvm sounds bad"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Let's go."
+                ]
+            ],
+            [
+                "transition",
+                [
+                    "close"
+                ]
+            ],
+            [
+                "set_next_chapter",
+                [
+                    "5_1"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "transition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;MC;OffscreenLeft\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nmove_portrait;MC;Right\nmove_portrait;Schuri;MidLeft\nmove_portrait;Senya;FarLeft\nmirror_portrait;MC\nspeak;MC;It's time.\nspeak;Schuri;Let's end this.\n#sound;heavyDoorOpen nvm sounds bad\nspeak;Senya;Let's go.\ntransition;close\nset_next_chapter;5_1\n"
+    }
+]

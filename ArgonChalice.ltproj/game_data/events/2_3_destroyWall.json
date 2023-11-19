@@ -1,0 +1,19 @@
+[
+    {
+        "name": "destroyWall",
+        "trigger": "unit_death",
+        "level_nid": "2_3",
+        "condition": "unit.nid == 'wall1'",
+        "commands": [
+            [
+                "show_layer",
+                [
+                    "break"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "show_layer;break\n"
+    }
+]

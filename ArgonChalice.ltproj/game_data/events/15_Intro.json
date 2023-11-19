@@ -53,7 +53,7 @@
             [
                 "set_next_chapter",
                 [
-                    "2_1"
+                    "17"
                 ]
             ],
             [
@@ -111,6 +111,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "textbox;KeysToPress;Use arrow keys and press 'x' to select an option;top_left;;2\nchoice;playTutorial;Do you want to play the tutorial;Yes,No\nif;game.game_vars['playTutorial'] == 'No'\n    text_entry;MC_name;What's your name?\n    set_name;MC (MC_1);{var:MC_name}\n    set_name;MC (MC);{var:MC_name}\n    set_next_chapter;2_1\n    win_game\nelse\n    ########################\n    remove_table;KeysToPress\n    flicker_cursor;7,6\n    flicker_cursor;7,6\n    speak;;This is your cursor to control and view characters.|You can move it with the arrow keys.|Hover over a blue unit and press 'x' to select them.;;;narration_top\n    ########################\nend\n"
+        "source": "textbox;KeysToPress;Use arrow keys and press 'x' to select an option;top_left;;2\nchoice;playTutorial;Do you want to play the tutorial;Yes,No\nif;game.game_vars['playTutorial'] == 'No'\n    text_entry;MC_name;What's your name?\n    set_name;MC (MC_1);{var:MC_name}\n    set_name;MC (MC);{var:MC_name}\n    set_next_chapter;17\n    win_game\nelse\n    ########################\n    remove_table;KeysToPress\n    flicker_cursor;7,6\n    flicker_cursor;7,6\n    speak;;This is your cursor to control and view characters.|You can move it with the arrow keys.|Hover over a blue unit and press 'x' to select them.;;;narration_top\n    ########################\nend\n"
     }
 ]

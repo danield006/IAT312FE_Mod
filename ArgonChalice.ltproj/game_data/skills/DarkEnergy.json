@@ -1,0 +1,55 @@
+[
+    {
+        "nid": "DarkEnergy",
+        "name": "Dark Energy",
+        "desc": "Boosts all stats by 2",
+        "icon_nid": "Skills",
+        "icon_index": [
+            11,
+            8
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "LCK",
+                        2
+                    ],
+                    [
+                        "HP",
+                        2
+                    ],
+                    [
+                        "STR",
+                        2
+                    ],
+                    [
+                        "MAG",
+                        2
+                    ],
+                    [
+                        "SKL",
+                        2
+                    ],
+                    [
+                        "SPD",
+                        2
+                    ],
+                    [
+                        "DEF",
+                        2
+                    ],
+                    [
+                        "RES",
+                        2
+                    ],
+                    [
+                        "LCK",
+                        2
+                    ]
+                ]
+            ]
+        ]
+    }
+]

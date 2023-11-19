@@ -285,15 +285,15 @@
     ],
     [
         "kill_wexp",
-        true
+        false
     ],
     [
         "double_wexp",
-        true
+        false
     ],
     [
         "miss_wexp",
-        true
+        false
     ],
     [
         "exp_curve",

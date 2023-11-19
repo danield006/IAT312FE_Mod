@@ -56,20 +56,6 @@
             [
                 "weapon_rank",
                 "E"
-            ],
-            [
-                "uses",
-                45
-            ],
-            [
-                "uses_options",
-                [
-                    [
-                        "LoseUsesOnMiss (T/F)",
-                        "F",
-                        "Lose uses even on miss"
-                    ]
-                ]
             ]
         ]
     }

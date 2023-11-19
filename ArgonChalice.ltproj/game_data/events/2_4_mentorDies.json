@@ -1,0 +1,81 @@
+[
+    {
+        "name": "mentorDies",
+        "trigger": "unit_death",
+        "level_nid": "2_4",
+        "condition": "unit.nid=='Mentor'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Left"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Right"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Schuri",
+                    "HalfCloseEyes"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Thank you...|for laying him to rest."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "No...|How could you have killed him...?"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SchuriOpinion-1"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SenyaOpinion+1"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "mentorKilled",
+                    "True"
+                ]
+            ],
+            [
+                "multi_remove_portrait",
+                [
+                    "Schuri",
+                    "Senya"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Schuri;Left\nadd_portrait;Senya;Right\nexpression;Schuri;HalfCloseEyes\nexpression;Senya;CloseEyes\nspeak;Senya;Thank you...|for laying him to rest.\nspeak;Schuri;No...|How could you have killed him...?\ninc_game_var;_SchuriOpinion-1\ninc_game_var;_SenyaOpinion+1\ngame_var;mentorKilled;True\nmulti_remove_portrait;Schuri;Senya\n"
+    }
+]

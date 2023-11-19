@@ -1,0 +1,107 @@
+[
+    {
+        "name": "DropOff",
+        "trigger": "unit_wait",
+        "level_nid": "2_2",
+        "condition": "game.level.regions.get('DropOff').contains(game.get_unit('HeadGuard').position)",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "HeadGuard",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "HeadGuard",
+                    "T-thank you...You...are a better man than me."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "HeadGuard"
+                ]
+            ],
+            [
+                "remove_unit",
+                [
+                    "HeadGuard",
+                    "fade"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Senya didn't like that you helped the high guard, -1",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SenyaOpinion",
+                    "-1"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Schuri liked that you helped the high guard +1",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SchuriOpinion",
+                    "1"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch2GuardSaved",
+                    "True"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "add_portrait;HeadGuard;Right\nspeak;HeadGuard;T-thank you...You...are a better man than me.\nremove_portrait;HeadGuard\nremove_unit;HeadGuard;fade\nadd_portrait;Senya;Left\nspeak;;Senya didn't like that you helped the high guard, -1;;;narration_top\ninc_game_var;_SenyaOpinion;-1\nremove_portrait;Senya\nadd_portrait;Schuri;Left\nspeak;;Schuri liked that you helped the high guard +1;;;narration_top\ninc_game_var;_SchuriOpinion;1\nremove_portrait;Schuri\ngame_var;_ch2GuardSaved;True\n"
+    }
+]

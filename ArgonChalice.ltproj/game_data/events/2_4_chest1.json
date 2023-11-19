@@ -1,0 +1,32 @@
+[
+    {
+        "name": "chest1",
+        "trigger": "on_region_interact",
+        "level_nid": "2_4",
+        "condition": "region.nid == 'chest1'",
+        "commands": [
+            [
+                "show_layer",
+                [
+                    "Chest1"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Elixir (Elixir)"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "show_layer;Chest1\ngive_item;{unit};Elixir (Elixir)\nhas_traded;{unit}\n"
+    }
+]

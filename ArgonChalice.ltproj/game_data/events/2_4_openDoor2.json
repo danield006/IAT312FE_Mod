@@ -1,0 +1,25 @@
+[
+    {
+        "name": "openDoor2",
+        "trigger": "on_region_interact",
+        "level_nid": "2_4",
+        "condition": "region.nid == 'door2'",
+        "commands": [
+            [
+                "show_layer",
+                [
+                    "Door2"
+                ]
+            ],
+            [
+                "has_finished",
+                [
+                    "{unit}"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "show_layer;Door2\nhas_finished;{unit}\n"
+    }
+]

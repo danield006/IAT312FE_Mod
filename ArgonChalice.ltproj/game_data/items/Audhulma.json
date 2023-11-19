@@ -35,21 +35,7 @@
             ],
             [
                 "weapon_rank",
-                "S"
-            ],
-            [
-                "uses",
-                30
-            ],
-            [
-                "uses_options",
-                [
-                    [
-                        "LoseUsesOnMiss (T/F)",
-                        "F",
-                        "Lose uses even on miss"
-                    ]
-                ]
+                "B"
             ],
             [
                 "weight",

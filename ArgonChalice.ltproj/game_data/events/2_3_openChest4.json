@@ -1,0 +1,45 @@
+[
+    {
+        "name": "openChest4",
+        "trigger": "Open",
+        "level_nid": "2_3",
+        "condition": "region.nid == 'chest4'",
+        "commands": [
+            [
+                "show_layer",
+                [
+                    "chest4"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Elixir (Elixir)"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Angelic Robe (Angelic Robe)"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "2500"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "show_layer;chest4\ngive_item;{unit};Elixir (Elixir)\ngive_item;{unit};Angelic Robe (Angelic Robe)\ngive_money;2500\nhas_traded;{unit}\n"
+    }
+]

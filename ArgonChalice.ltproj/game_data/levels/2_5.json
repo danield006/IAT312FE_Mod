@@ -1,0 +1,195 @@
+[
+    {
+        "nid": "2_5",
+        "name": "Chapter 5: The Test of Our Bonds",
+        "tilemap": "Chapter 14B_1",
+        "bg_tilemap": null,
+        "party": "MC",
+        "music": {
+            "player_phase": "finalBossFightIntro",
+            "other_battle": null,
+            "boss_battle": null,
+            "enemy_phase": "finalBossFightIntro",
+            "enemy2_phase": null
+        },
+        "objective": {
+            "simple": "Defeat Lilith",
+            "win": "Defeat Lilith",
+            "loss": "MC Dies"
+        },
+        "roam": false,
+        "roam_unit": null,
+        "go_to_overworld": false,
+        "should_record": true,
+        "units": [
+            {
+                "nid": "Mentor",
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Lilith",
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    8,
+                    4
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "mob1",
+                "variant": null,
+                "level": 10,
+                "klass": "Entombed",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Fetid Claw",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    11,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "mob2",
+                "variant": null,
+                "level": 10,
+                "klass": "Entombed",
+                "faction": "Monster",
+                "starting_items": [
+                    [
+                        "Fetid Claw",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    5,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "MC",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    8,
+                    10
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Senya",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    7,
+                    10
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Schuri",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    9,
+                    10
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Aesc",
+                "team": "other",
+                "ai": "Attack",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
+            }
+        ],
+        "regions": [],
+        "unit_groups": [
+            {
+                "nid": "Party",
+                "units": [
+                    "MC",
+                    "Senya",
+                    "Schuri"
+                ],
+                "positions": {
+                    "Senya": [
+                        7,
+                        11
+                    ],
+                    "Schuri": [
+                        9,
+                        11
+                    ],
+                    "MC": [
+                        8,
+                        10
+                    ]
+                }
+            },
+            {
+                "nid": "initialEnemies",
+                "units": [
+                    "Lilith",
+                    "mob1",
+                    "mob2"
+                ],
+                "positions": {
+                    "Lilith": [
+                        8,
+                        4
+                    ],
+                    "mob1": [
+                        5,
+                        5
+                    ],
+                    "mob2": [
+                        11,
+                        5
+                    ]
+                }
+            }
+        ],
+        "ai_groups": []
+    }
+]

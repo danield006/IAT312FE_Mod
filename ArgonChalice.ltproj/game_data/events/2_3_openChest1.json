@@ -1,0 +1,45 @@
+[
+    {
+        "name": "openChest1",
+        "trigger": "Open",
+        "level_nid": "2_3",
+        "condition": "region.nid == 'chest1'",
+        "commands": [
+            [
+                "show_layer",
+                [
+                    "chest"
+                ]
+            ],
+            [
+                "give_money",
+                [
+                    "50"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Vulnerary"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "{unit}",
+                    "Vulnerary"
+                ]
+            ],
+            [
+                "has_traded",
+                [
+                    "{unit}"
+                ]
+            ]
+        ],
+        "only_once": true,
+        "priority": 20,
+        "source": "show_layer;chest\ngive_money;50\ngive_item;{unit};Vulnerary\ngive_item;{unit};Vulnerary\nhas_traded;{unit}\n"
+    }
+]
