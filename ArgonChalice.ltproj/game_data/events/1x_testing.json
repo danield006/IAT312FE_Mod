@@ -1,0 +1,33 @@
+[
+    {
+        "name": "testing",
+        "trigger": "level_start",
+        "level_nid": "1x",
+        "condition": "False",
+        "commands": [
+            [
+                "comment",
+                [
+                    "#VARIABLES FOR DIALOGUE CHECKS, CHANGE EVENT CONDITION TO TRUE FOR TESTING"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch1VillageDestroyed",
+                    "True"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch1BonesEscapeFlag",
+                    "False"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "#VARIABLES FOR DIALOGUE CHECKS, CHANGE EVENT CONDITION TO TRUE FOR TESTING\ngame_var;_ch1VillageDestroyed;True\ngame_var;_ch1BonesEscapeFlag;False\n"
+    }
+]

@@ -46,15 +46,121 @@
             [
                 "speak",
                 [
-                    "Schuri",
-                    "PLACEHOLDER FOR YESTERDAY"
+                    "MC",
+                    "About yesterday..."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "#####################################"
+                    "Schuri",
+                    "Bandits so close to the main city...the Crimson Wolves...|I wonder what's happened to Greshia, it can't be good if bandits are operating so close."
                 ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "How come?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Greshia's leader should have dispatched guards to defend their borders.|If bandits are so close, Greshia's leadership might have changed.|From what I remember, they used to be well-protected.|But that battle..."
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_ch1VillageDestroyed'] == True and game.game_vars['_ch1BonesEscapeFlag'] == False"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Those poor villagers....|I recognize that going after the leader was important but...|Was it worth ignoring the villagers' plea for help?|They've lost their homes.|.....|At least we stopped this group from going after others though."
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch1VillageDestroyed'] == False and game.game_vars['_ch1BonesEscapeFlag'] == True"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "I'm glad we saved those villages.|I know the leader escaped but...these villagers were going to lose their homes."
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch1VillageDestroyed'] == True and game.game_vars['_ch1BonesEscapeFlag'] == True"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Schuri",
+                    "HalfCloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "I still can't believe we've lost everything.|The villagers...|The bandit leader...|.....|I wonder what's become of the villagers now..."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Schuri",
+                    "NoSmile"
+                ]
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_ch1VillageDestroyed'] == False and game.game_vars['_ch1BonesEscapeFlag'] == False"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Schuri",
+                    "Smile"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "I still can't believe we pulled that off.|It was all thanks to your quick thinking."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "It was a group effort.|All of us made it work."
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Schuri",
+                    "Smile"
+                ]
+            ],
+            [
+                "end",
+                []
             ],
             [
                 "elif",
@@ -72,14 +178,43 @@
             [
                 "speak",
                 [
-                    "Schuri",
-                    "PLACEHOLDER FOR Greshia."
+                    "MC",
+                    "Have you been to Greshia before, Schuri?"
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "##################"
+                    "Schuri",
+                    "Mmhm. I have a few years ago.|Actually...there were talks of me marrying the lord's son.|So I went to Greshia to meet him."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "You were going to be forced to marry?|That sounds...terrible."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "My family is rather open and gives me veto power.|You can think of it more as a blind date. It didn't work out though...|What about you? Have you been to Greshia?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "No, I haven't.|Most of my days were spent training so I haven't travelled around much.|Can you tell me more about it?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "I see...|Greshia is a large city known for their trade.|It's in a prime location, intersected by many main roads.|From what I recall...the Lord seemed to treat their people well.|But...leadership seemed to have changed hands since then...|The old lord wouldn't have let it get so bad."
                 ]
             ],
             [
@@ -89,6 +224,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Schuri;Right\nspeak;Schuri;Yes?\nchoice;SchuriConversation2;Which topic do you want to ask about?;Yesterday,Greshia;FLAG(backable);horizontal;top_left\nif;game.game_vars['SchuriConversation2'] == 'Yesterday'\n    add_portrait;MC;Left\n    speak;Schuri;PLACEHOLDER FOR YESTERDAY\n    #####################################\nelif;game.game_vars['SchuriConversation2'] == 'Greshia'\n    add_portrait;MC;Left\n    speak;Schuri;PLACEHOLDER FOR Greshia.\n    ##################\nend\n"
+        "source": "add_portrait;Schuri;Right\nspeak;Schuri;Yes?\nchoice;SchuriConversation2;Which topic do you want to ask about?;Yesterday,Greshia;FLAG(backable);horizontal;top_left\nif;game.game_vars['SchuriConversation2'] == 'Yesterday'\n    add_portrait;MC;Left\n    speak;MC;About yesterday...\n    speak;Schuri;Bandits so close to the main city...the Crimson Wolves...|I wonder what's happened to Greshia, it can't be good if bandits are operating so close.\n    speak;MC;How come?\n    speak;Schuri;Greshia's leader should have dispatched guards to defend their borders.|If bandits are so close, Greshia's leadership might have changed.|From what I remember, they used to be well-protected.|But that battle...\n    if;game.game_vars['_ch1VillageDestroyed'] == True and game.game_vars['_ch1BonesEscapeFlag'] == False\n        speak;Schuri;Those poor villagers....|I recognize that going after the leader was important but...|Was it worth ignoring the villagers' plea for help?|They've lost their homes.|.....|At least we stopped this group from going after others though.\n    elif;game.game_vars['_ch1VillageDestroyed'] == False and game.game_vars['_ch1BonesEscapeFlag'] == True\n        speak;Schuri;I'm glad we saved those villages.|I know the leader escaped but...these villagers were going to lose their homes.\n    elif;game.game_vars['_ch1VillageDestroyed'] == True and game.game_vars['_ch1BonesEscapeFlag'] == True\n        expression;Schuri;HalfCloseEyes\n        speak;Schuri;I still can't believe we've lost everything.|The villagers...|The bandit leader...|.....|I wonder what's become of the villagers now...\n        expression;Schuri;NoSmile\n    elif;game.game_vars['_ch1VillageDestroyed'] == False and game.game_vars['_ch1BonesEscapeFlag'] == False\n        expression;Schuri;Smile\n        speak;Schuri;I still can't believe we pulled that off.|It was all thanks to your quick thinking.\n        speak;MC;It was a group effort.|All of us made it work.\n        expression;Schuri;Smile\n    end\nelif;game.game_vars['SchuriConversation2'] == 'Greshia'\n    add_portrait;MC;Left\n    speak;MC;Have you been to Greshia before, Schuri?\n    speak;Schuri;Mmhm. I have a few years ago.|Actually...there were talks of me marrying the lord's son.|So I went to Greshia to meet him.\n    speak;MC;You were going to be forced to marry?|That sounds...terrible.\n    speak;Schuri;My family is rather open and gives me veto power.|You can think of it more as a blind date. It didn't work out though...|What about you? Have you been to Greshia?\n    speak;MC;No, I haven't.|Most of my days were spent training so I haven't travelled around much.|Can you tell me more about it?\n    speak;Schuri;I see...|Greshia is a large city known for their trade.|It's in a prime location, intersected by many main roads.|From what I recall...the Lord seemed to treat their people well.|But...leadership seemed to have changed hands since then...|The old lord wouldn't have let it get so bad.\nend\n"
     }
 ]
