@@ -5,7 +5,7 @@
         "desc": "An extreamly mysterious old man with incredible magic ability. ",
         "variant": "",
         "level": 1,
-        "klass": "Sage",
+        "klass": "Sage_1",
         "tags": [],
         "bases": {
             "HP": 32,
@@ -84,7 +84,7 @@
         },
         "alternate_classes": [],
         "portrait_nid": "Aesc",
-        "affinity": "Fire",
+        "affinity": "Light",
         "fields": []
     }
 ]

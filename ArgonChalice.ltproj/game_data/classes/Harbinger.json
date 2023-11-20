@@ -3,11 +3,13 @@
         "nid": "Harbinger",
         "name": "Harbinger",
         "desc": "Corrupted by the Lithrasir, dark magic flows through their veins.",
-        "tier": 1,
+        "tier": 2,
         "movement_group": "Armors",
         "promotes_from": "Ephraim_Lord",
         "turns_into": [],
-        "tags": [],
+        "tags": [
+            "Lord"
+        ],
         "max_level": 20,
         "bases": {
             "HP": 45,

@@ -5,7 +5,7 @@
         "desc": "An extreamly mysterious old man with incredible magic ability. ",
         "variant": "",
         "level": 1,
-        "klass": "Sage",
+        "klass": "Sage_1",
         "tags": [],
         "bases": {
             "HP": 32,
@@ -36,10 +36,6 @@
             [
                 "Ivaldi",
                 false
-            ],
-            [
-                "Recover",
-                false
             ]
         ],
         "learned_skills": [],
@@ -67,7 +63,7 @@
             ],
             "Staff": [
                 false,
-                251,
+                0,
                 251
             ],
             "Light": [
@@ -93,7 +89,7 @@
         },
         "alternate_classes": [],
         "portrait_nid": "Aesc",
-        "affinity": "Fire",
+        "affinity": "Light",
         "fields": []
     }
 ]
