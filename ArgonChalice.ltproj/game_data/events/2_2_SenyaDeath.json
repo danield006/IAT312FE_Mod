@@ -1,0 +1,40 @@
+[
+    {
+        "name": "SenyaDeath",
+        "trigger": "unit_death",
+        "level_nid": "2_2",
+        "condition": "unit.nid == 'Senya'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Crap...You guys go ahead...|I'll catch up after..."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Senya"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SenyaOpinion",
+                    "-1"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Senya;FarRight\nspeak;Senya;Crap...You guys go ahead...|I'll catch up after...\nremove_portrait;Senya\ninc_game_var;_SenyaOpinion;-1\n"
+    }
+]

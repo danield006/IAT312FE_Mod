@@ -1,7 +1,7 @@
 [
     {
         "nid": "2_3",
-        "name": "Chapter 3A: Into the Depths",
+        "name": "Chapter 3: Lord's Palace",
         "tilemap": "CH3_sealed_mansion",
         "bg_tilemap": "CH3_sealed_mansion",
         "party": "MC",

@@ -1,0 +1,40 @@
+[
+    {
+        "name": "SchuriDeath",
+        "trigger": "unit_death",
+        "level_nid": "2_4",
+        "condition": "unit.nid == 'Schuri'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Ahh!|Need to push through...to the throne room...|I'll catch up soon!"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SchuriOpinion",
+                    "-1"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Schuri;FarRight\nspeak;Schuri;Ahh!|Need to push through...to the throne room...|I'll catch up soon!\nremove_portrait;Schuri\ninc_game_var;_SchuriOpinion;-1\n"
+    }
+]

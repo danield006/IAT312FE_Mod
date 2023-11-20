@@ -134,7 +134,7 @@
                 "faction": "Monster",
                 "starting_items": [
                     [
-                        "Poison Sword",
+                        "Fetid Claw",
                         false
                     ]
                 ],
@@ -871,6 +871,11 @@
                 }
             }
         ],
-        "ai_groups": []
+        "ai_groups": [
+            {
+                "nid": "",
+                "trigger_threshold": 1
+            }
+        ]
     }
 ]

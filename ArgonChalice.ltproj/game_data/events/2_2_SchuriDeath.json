@@ -1,0 +1,40 @@
+[
+    {
+        "name": "SchuriDeath",
+        "trigger": "unit_death",
+        "level_nid": "2_2",
+        "condition": "unit.nid == 'Schuri'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "FarRight"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Ah!|I'm gonna fall back...I'll catch up later..."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "inc_game_var",
+                [
+                    "_SchuriOpinion",
+                    "-1"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Schuri;FarRight\nspeak;Schuri;Ah!|I'm gonna fall back...I'll catch up later...\nremove_portrait;Schuri\ninc_game_var;_SchuriOpinion;-1\n"
+    }
+]
