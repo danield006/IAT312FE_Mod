@@ -138,9 +138,7 @@
                         false
                     ]
                 ],
-                "starting_skills": [
-                    "Berserk"
-                ],
+                "starting_skills": [],
                 "team": "enemy",
                 "ai": "Guard",
                 "roam_ai": null,
@@ -871,6 +869,11 @@
                 }
             }
         ],
-        "ai_groups": []
+        "ai_groups": [
+            {
+                "nid": "",
+                "trigger_threshold": 1
+            }
+        ]
     }
 ]
