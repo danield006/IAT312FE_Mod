@@ -530,16 +530,6 @@
                 "generic": false
             },
             {
-                "nid": "Seth",
-                "team": "other",
-                "ai": "None",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": null,
-                "starting_traveler": null,
-                "generic": false
-            },
-            {
                 "nid": "Lilith",
                 "team": "enemy2",
                 "ai": "None",
@@ -642,6 +632,22 @@
                 "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
+            },
+            {
+                "nid": "101",
+                "variant": null,
+                "level": 1,
+                "klass": "Noble",
+                "faction": "Soldier",
+                "starting_items": [],
+                "starting_skills": [],
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": true
             }
         ],
         "regions": [
@@ -973,18 +979,14 @@
             {
                 "nid": "sceneGroup",
                 "units": [
-                    "Seth",
                     "Lilith",
                     "guard1",
                     "guard1_1",
                     "guard1_3",
-                    "guard1_2"
+                    "guard1_2",
+                    "101"
                 ],
                 "positions": {
-                    "Seth": [
-                        13,
-                        12
-                    ],
                     "Lyon": [
                         6,
                         9
@@ -1012,10 +1014,19 @@
                     "pastHeadGuard": [
                         10,
                         14
+                    ],
+                    "101": [
+                        13,
+                        12
                     ]
                 }
             }
         ],
-        "ai_groups": []
+        "ai_groups": [
+            {
+                "nid": "",
+                "trigger_threshold": 1
+            }
+        ]
     }
 ]

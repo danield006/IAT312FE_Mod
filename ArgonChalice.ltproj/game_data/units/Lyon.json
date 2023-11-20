@@ -1,8 +1,8 @@
 [
     {
         "nid": "Lyon",
-        "name": "Lyon",
-        "desc": "",
+        "name": "Necromancer",
+        "desc": "A necromancer loyal to Lilith",
         "variant": null,
         "level": 14,
         "klass": "Necromancer",
