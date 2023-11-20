@@ -42,20 +42,6 @@
                 null
             ],
             [
-                "uses",
-                30
-            ],
-            [
-                "uses_options",
-                [
-                    [
-                        "LoseUsesOnMiss (T/F)",
-                        "F",
-                        "Lose uses even on miss"
-                    ]
-                ]
-            ],
-            [
                 "weight",
                 8
             ],
@@ -96,6 +82,10 @@
                     255,
                     0
                 ]
+            ],
+            [
+                "battle_cast_anim",
+                "Blind"
             ]
         ]
     }

@@ -1,12 +1,12 @@
 [
     {
-        "nid": "Niflheim",
-        "name": "Niflheim",
-        "desc": "Speed +5. Effective against monsters",
+        "nid": "Aircalibur",
+        "name": "Aircalibur",
+        "desc": "Effective against monsters",
         "icon_nid": "Anima",
         "icon_index": [
             0,
-            4
+            5
         ],
         "components": [
             [
@@ -23,7 +23,7 @@
             ],
             [
                 "damage",
-                18
+                10
             ],
             [
                 "hit",
@@ -35,37 +35,15 @@
             ],
             [
                 "weapon_rank",
-                "B"
+                "C"
             ],
             [
                 "magic",
                 null
             ],
             [
-                "uses",
-                30
-            ],
-            [
-                "uses_options",
-                [
-                    [
-                        "LoseUsesOnMiss (T/F)",
-                        "F",
-                        "Lose uses even on miss"
-                    ]
-                ]
-            ],
-            [
                 "weight",
-                13
-            ],
-            [
-                "crit",
-                10
-            ],
-            [
-                "status_on_equip",
-                "Speed +5"
+                7
             ],
             [
                 "min_range",
@@ -84,6 +62,10 @@
                 [
                     "Monster"
                 ]
+            ],
+            [
+                "battle_cast_anim",
+                "Excalibur"
             ]
         ]
     }

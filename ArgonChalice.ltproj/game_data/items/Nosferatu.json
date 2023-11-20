@@ -86,6 +86,10 @@
             [
                 "lifelink",
                 1.0
+            ],
+            [
+                "battle_cast_anim",
+                "Nyx"
             ]
         ]
     }

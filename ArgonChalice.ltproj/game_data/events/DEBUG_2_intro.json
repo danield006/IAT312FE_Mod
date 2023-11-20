@@ -4,9 +4,25 @@
         "trigger": "level_start",
         "level_nid": "DEBUG_2",
         "condition": "True",
-        "commands": [],
+        "commands": [
+            [
+                "give_wexp",
+                [
+                    "MC (MC)",
+                    "Light",
+                    "189"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "MC",
+                    "Divine (Divine)"
+                ]
+            ]
+        ],
         "only_once": false,
         "priority": 20,
-        "source": ""
+        "source": "give_wexp;MC (MC);Light;189\ngive_item;MC;Divine (Divine)"
     }
 ]

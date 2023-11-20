@@ -38,20 +38,6 @@
                 "D"
             ],
             [
-                "uses",
-                20
-            ],
-            [
-                "uses_options",
-                [
-                    [
-                        "LoseUsesOnMiss (T/F)",
-                        "F",
-                        "Lose uses even on miss"
-                    ]
-                ]
-            ],
-            [
                 "exp",
                 12
             ],
@@ -70,6 +56,10 @@
             [
                 "magic_heal",
                 20
+            ],
+            [
+                "battle_cast_anim",
+                "Heal"
             ]
         ]
     }

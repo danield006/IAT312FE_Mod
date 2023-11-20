@@ -26,7 +26,7 @@
         "should_record": true,
         "units": [
             {
-                "nid": "Artur",
+                "nid": "Aesc",
                 "team": "player",
                 "ai": "None",
                 "roam_ai": null,
@@ -39,7 +39,7 @@
                 "generic": false
             },
             {
-                "nid": "Lute",
+                "nid": "MC",
                 "team": "player",
                 "ai": "None",
                 "roam_ai": null,
@@ -59,7 +59,7 @@
                 "faction": "Soldier",
                 "starting_items": [
                     [
-                        "Lightning",
+                        "Evil Eye",
                         false
                     ]
                 ],

@@ -35,25 +35,11 @@
             ],
             [
                 "weapon_rank",
-                "C"
+                "E"
             ],
             [
                 "magic",
                 null
-            ],
-            [
-                "uses",
-                25
-            ],
-            [
-                "uses_options",
-                [
-                    [
-                        "LoseUsesOnMiss (T/F)",
-                        "F",
-                        "Lose uses even on miss"
-                    ]
-                ]
             ],
             [
                 "weight",
@@ -82,6 +68,21 @@
                     255,
                     0
                 ]
+            ],
+            [
+                "battle_cast_anim",
+                "Makara"
+            ],
+            [
+                "effective_damage",
+                {
+                    "effective_tags": [
+                        "Monster"
+                    ],
+                    "effective_multiplier": 3,
+                    "effective_bonus_damage": 0,
+                    "show_effectiveness_flash": true
+                }
             ]
         ]
     }

@@ -2,7 +2,7 @@
     {
         "nid": "Fenrir",
         "name": "Fenrir",
-        "desc": "",
+        "desc": "A dark tome wielded by Lilith",
         "icon_nid": "Dark",
         "icon_index": [
             0,
@@ -27,11 +27,11 @@
             ],
             [
                 "damage",
-                15
+                16
             ],
             [
                 "hit",
-                70
+                90
             ],
             [
                 "crit",
@@ -39,7 +39,7 @@
             ],
             [
                 "weight",
-                18
+                9
             ],
             [
                 "level_exp",
@@ -70,18 +70,8 @@
                 9000
             ],
             [
-                "uses",
-                20
-            ],
-            [
-                "uses_options",
-                [
-                    [
-                        "LoseUsesOnMiss (T/F)",
-                        "F",
-                        "Lose uses even on miss"
-                    ]
-                ]
+                "battle_cast_anim",
+                "Ruin"
             ]
         ]
     }

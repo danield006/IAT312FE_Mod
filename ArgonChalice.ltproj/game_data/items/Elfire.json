@@ -86,6 +86,10 @@
             [
                 "wexp",
                 2
+            ],
+            [
+                "battle_cast_anim",
+                "Fire"
             ]
         ]
     }
