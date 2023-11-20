@@ -47,13 +47,42 @@
                 "speak",
                 [
                     "Mentor",
-                    "PLACEHOLDER FOR MENTOR"
+                    "You want to learn more about me?|Well...I suppose I could humour you.|As you may already know, I'm one of the five Great Sages.|I suppose one day I got bored and decided to find myself a little disciple."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "#####################################"
+                    "MC",
+                    "What do the Great Sages do exactly?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Aside from our annual gatherings, we mostly do our own thing.|We can be considered one of Marlund's line of defenses if our country goes to war.|To be a great sage, you must have a specialization and be have a recommendation from a current one.|It's a lot harder than it sounds."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "But what is it that you do?|What's your specialization?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "Me?|Haven't I told you already?|Those old fogies were shocked when I said I was taking one in.|They thought I was planning my early retirement.|Heh.. thought I was looking for my own replacement."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "...it was definitely a shock."
                 ]
             ],
             [
@@ -73,13 +102,21 @@
                 "speak",
                 [
                     "Mentor",
-                    "PLACEHOLDER FOR Senya."
+                    "You wish to learn more about Senya?|Hm..I first met her when I came across her caravan.|They were attacked and she was the only survivor.|It's not my place to talk about this.|So if you want to know more, you should ask Senya."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "##################"
+                    "MC",
+                    "I see...you took her in.|What kind of a person is she?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "She's quite at home when talking with the townspeople whenever we visit town.|I can see that the townspeople love her. And she love them back.|She can be a bit rough around the edges, but she means well.|You know...Senya's also uses swords.|You should set up a spar with her when you get the chance."
                 ]
             ],
             [
@@ -99,13 +136,35 @@
                 "speak",
                 [
                     "Mentor",
-                    "PLACEHOLDER FOR Schuri."
+                    "Schuri huh?|When news got out that I was taking a pupil in, her family recommended her.|In respect of her family's origins, I gave her a test."
                 ]
             ],
             [
-                "comment",
+                "speak",
                 [
-                    "##################"
+                    "MC",
+                    "A lot of people must have asked you.|Was the test a way to weed them out?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "No. I tested Schuri because her family is an erudite one.|They've produced a lot of famous scholars and mages.|So it wouldn't have been a waste of time.|Some other families wanted to place their children with me for my influence."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "That sounds...taxing.|It sounds like Schuri passed with flying colours then."
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Mentor",
+                    "That is was..."
                 ]
             ],
             [
@@ -115,6 +174,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Mentor;Right\nspeak;Mentor;What do you wanna ask about?\nchoice;MentorConversation1;Which topic do you want to ask about?;Mentor,Senya,Schuri;FLAG(backable);horizontal;top_left\nif;game.game_vars['MentorConversation1'] == 'Mentor'\n    add_portrait;MC;Left\n    speak;Mentor;PLACEHOLDER FOR MENTOR\n    #####################################\nelif;game.game_vars['MentorConversation1'] == 'Senya'\n    add_portrait;MC;Left\n    speak;Mentor;PLACEHOLDER FOR Senya.\n    ##################\nelif;game.game_vars['MentorConversation1'] == 'Schuri'\n    add_portrait;MC;Left\n    speak;Mentor;PLACEHOLDER FOR Schuri.\n    ##################\nend\n"
+        "source": "add_portrait;Mentor;Right\nspeak;Mentor;What do you wanna ask about?\nchoice;MentorConversation1;Which topic do you want to ask about?;Mentor,Senya,Schuri;FLAG(backable);horizontal;top_left\nif;game.game_vars['MentorConversation1'] == 'Mentor'\n    add_portrait;MC;Left\n    speak;Mentor;You want to learn more about me?|Well...I suppose I could humour you.|As you may already know, I'm one of the five Great Sages.|I suppose one day I got bored and decided to find myself a little disciple.\n    speak;MC;What do the Great Sages do exactly?\n    speak;Mentor;Aside from our annual gatherings, we mostly do our own thing.|We can be considered one of Marlund's line of defenses if our country goes to war.|To be a great sage, you must have a specialization and be have a recommendation from a current one.|It's a lot harder than it sounds.\n    speak;MC;But what is it that you do?|What's your specialization?\n    speak;Mentor;Me?|Haven't I told you already?|Those old fogies were shocked when I said I was taking one in.|They thought I was planning my early retirement.|Heh.. thought I was looking for my own replacement.\n    speak;MC;...it was definitely a shock.\nelif;game.game_vars['MentorConversation1'] == 'Senya'\n    add_portrait;MC;Left\n    speak;Mentor;You wish to learn more about Senya?|Hm..I first met her when I came across her caravan.|They were attacked and she was the only survivor.|It's not my place to talk about this.|So if you want to know more, you should ask Senya.\n    speak;MC;I see...you took her in.|What kind of a person is she?\n    speak;Mentor;She's quite at home when talking with the townspeople whenever we visit town.|I can see that the townspeople love her. And she love them back.|She can be a bit rough around the edges, but she means well.|You know...Senya's also uses swords.|You should set up a spar with her when you get the chance.\nelif;game.game_vars['MentorConversation1'] == 'Schuri'\n    add_portrait;MC;Left\n    speak;Mentor;Schuri huh?|When news got out that I was taking a pupil in, her family recommended her.|In respect of her family's origins, I gave her a test.\n    speak;MC;A lot of people must have asked you.|Was the test a way to weed them out?\n    speak;Mentor;No. I tested Schuri because her family is an erudite one.|They've produced a lot of famous scholars and mages.|So it wouldn't have been a waste of time.|Some other families wanted to place their children with me for my influence.\n    speak;MC;That sounds...taxing.|It sounds like Schuri passed with flying colours then.\n    speak;Mentor;That is was...\nend\n"
     }
 ]

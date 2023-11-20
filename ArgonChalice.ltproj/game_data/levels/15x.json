@@ -20,7 +20,7 @@
             "win": "Leave via the stairs",
             "loss": "-"
         },
-        "roam": true,
+        "roam": false,
         "roam_unit": "MC",
         "go_to_overworld": false,
         "should_record": true,
