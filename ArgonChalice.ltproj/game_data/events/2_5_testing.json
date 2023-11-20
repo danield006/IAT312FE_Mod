@@ -6,34 +6,39 @@
         "condition": "any_unit_in_region('test', team='player') ",
         "commands": [
             [
-                "game_var",
+                "comment",
                 [
-                    "_killLilith",
-                    "True"
+                    "#game_var;_killLilith;True"
                 ]
-            ],
-            [
-                "choice",
-                [
-                    "_ch3TomeChoice",
-                    "Should I take the Tome?",
-                    "Yes,No"
-                ]
-            ],
-            [
-                "kill_unit",
-                [
-                    "Lilith"
-                ]
-            ],
-            [
-                "end_skip",
-                []
             ],
             [
                 "comment",
                 [
-                    "#game_var;_gameEnding;1"
+                    "#choice;_ch3TomeChoice;Should I take the Tome?;Yes,No"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#game_var;_SchuriControlled;False"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#game_var;_SenyaControlled;True"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#kill_unit;Lilith"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#end_skip"
                 ]
             ],
             [
@@ -41,24 +46,10 @@
                 [
                     "#win_game"
                 ]
-            ],
-            [
-                "game_var",
-                [
-                    "_SchuriControlled",
-                    "False"
-                ]
-            ],
-            [
-                "game_var",
-                [
-                    "_SenyaControlled",
-                    "False"
-                ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "game_var;_killLilith;True\nchoice;_ch3TomeChoice;Should I take the Tome?;Yes,No\nkill_unit;Lilith\nend_skip\n#game_var;_gameEnding;1\n#win_game\ngame_var;_SchuriControlled;False\ngame_var;_SenyaControlled;False\n"
+        "source": "#game_var;_killLilith;True\n#choice;_ch3TomeChoice;Should I take the Tome?;Yes,No\n#game_var;_SchuriControlled;False\n#game_var;_SenyaControlled;True\n#kill_unit;Lilith\n#end_skip\n#win_game\n"
     }
 ]
