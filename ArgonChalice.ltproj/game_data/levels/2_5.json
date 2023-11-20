@@ -34,7 +34,7 @@
             },
             {
                 "nid": "Lilith",
-                "team": "enemy",
+                "team": "enemy2",
                 "ai": "Guard",
                 "roam_ai": null,
                 "ai_group": "",
@@ -200,6 +200,11 @@
                 }
             }
         ],
-        "ai_groups": []
+        "ai_groups": [
+            {
+                "nid": "",
+                "trigger_threshold": 1
+            }
+        ]
     }
 ]
