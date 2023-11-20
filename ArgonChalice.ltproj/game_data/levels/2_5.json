@@ -25,7 +25,7 @@
             {
                 "nid": "Mentor",
                 "team": "enemy",
-                "ai": "Attack",
+                "ai": "None",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -35,7 +35,7 @@
             {
                 "nid": "Lilith",
                 "team": "enemy",
-                "ai": "Attack",
+                "ai": "Guard",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
@@ -62,10 +62,7 @@
                 "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    11,
-                    5
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
@@ -86,10 +83,7 @@
                 "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
-                "starting_position": [
-                    5,
-                    5
-                ],
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             },
@@ -109,7 +103,7 @@
             {
                 "nid": "Senya",
                 "team": "player",
-                "ai": "None",
+                "ai": "Guard",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
@@ -122,7 +116,7 @@
             {
                 "nid": "Schuri",
                 "team": "player",
-                "ai": "None",
+                "ai": "Guard",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
@@ -131,48 +125,6 @@
                 ],
                 "starting_traveler": null,
                 "generic": false
-            },
-            {
-                "nid": "eyeball1",
-                "variant": null,
-                "level": 5,
-                "klass": "Arch_Mogall",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Flux",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": null,
-                "starting_traveler": null,
-                "generic": true
-            },
-            {
-                "nid": "eyeball2",
-                "variant": null,
-                "level": 5,
-                "klass": "Arch_Mogall",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Flux",
-                        false
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "Attack",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": null,
-                "starting_traveler": null,
-                "generic": true
             },
             {
                 "nid": "Aesc",
@@ -230,9 +182,7 @@
             {
                 "nid": "initialEnemies",
                 "units": [
-                    "Lilith",
-                    "mob1",
-                    "mob2"
+                    "Lilith"
                 ],
                 "positions": {
                     "Lilith": [
@@ -246,28 +196,6 @@
                     "mob2": [
                         11,
                         5
-                    ]
-                }
-            },
-            {
-                "nid": "summon",
-                "units": [
-                    "eyeball1",
-                    "eyeball2",
-                    "Lilith"
-                ],
-                "positions": {
-                    "eyeball1": [
-                        7,
-                        5
-                    ],
-                    "eyeball2": [
-                        9,
-                        5
-                    ],
-                    "Lilith": [
-                        8,
-                        4
                     ]
                 }
             }

@@ -1,0 +1,62 @@
+[
+    {
+        "name": "SchuriDeath",
+        "trigger": "unit_death",
+        "level_nid": "2_5",
+        "condition": "unit.nid == 'Schuri'",
+        "commands": [
+            [
+                "if",
+                [
+                    "game.game_vars['_SchuriControlled'] == True"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "MC",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I'm sorry Schuri...|Please...leave this to me."
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "!!!|{var:MC_name}...I can't continue...|You got this..."
+                ]
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "if;game.game_vars['_SchuriControlled'] == True\n    add_portrait;MC;Left\n    expression;MC;CloseEyes\n    speak;MC;I'm sorry Schuri...|Please...leave this to me.\nelse\n    add_portrait;Schuri;Left\n    speak;Schuri;!!!|{var:MC_name}...I can't continue...|You got this...\nend\n"
+    }
+]

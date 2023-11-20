@@ -1,0 +1,62 @@
+[
+    {
+        "name": "SenyaDeath",
+        "trigger": "unit_death",
+        "level_nid": "2_5",
+        "condition": "unit.nid == 'Senya'",
+        "commands": [
+            [
+                "if",
+                [
+                    "game.game_vars['_SenyaControlled'] == True"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "MC",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I'm sorry Senya...|Please...leave this to me."
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Gh!|{var:MC_name}...I'll leave the rest to you...kill that bitch..."
+                ]
+            ],
+            [
+                "end",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "if;game.game_vars['_SenyaControlled'] == True\n    add_portrait;MC;Left\n    expression;MC;CloseEyes\n    speak;MC;I'm sorry Senya...|Please...leave this to me.\nelse\n    add_portrait;Senya;Left\n    speak;Senya;Gh!|{var:MC_name}...I'll leave the rest to you...kill that bitch...\nend\n"
+    }
+]

@@ -114,5 +114,9 @@
     {
         "nid": "_killLilith",
         "desc": "If Lilith's HP has been reduced to 0 a second time"
+    },
+    {
+        "nid": "_ch4MentorKilled",
+        "desc": "Was the mentor killed"
     }
 ]

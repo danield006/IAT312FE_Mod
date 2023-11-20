@@ -12,7 +12,7 @@
             [
                 "game_var",
                 [
-                    "mentorKilled",
+                    "_ch4MentorKilled",
                     "False"
                 ]
             ],
@@ -279,6 +279,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "chapter_title\ngame_var;mentorKilled;False\nadd_group;Party;Party\nadd_group;initialEnemies;initialEnemies\nchange_background;GradoCastle\ntransition;open\nmusic;castle-corridor\nlocation_card;Kaerndal Castle-Corridors\n#speak;;Kaerndal Castle-Corridors;;;narration_top\nadd_portrait;Senya;OffscreenLeft;immediate\nadd_portrait;Schuri;OffscreenLeft;immediate\nadd_portrait;MC;OffscreenLeft;immediate\nsound;Light Foot Steps 1\nmove_portrait;Senya;Right\nmirror_portrait;Senya\nsound;Foot Step\nmove_portrait;MC;MidLeft\nsound;Foot Step\nmove_portrait;Schuri;FarLeft\nspeak;MC;We're finally here!|I hope everyone is ready|It's all or nothing now!\nexpression;Schuri;OpenEyes\nscreen_shake;800\nsound;explosion_wide\nbop_portrait;MC\nmirror_portrait;MC\nmirror_portrait;MC\nspeak;MC;What was that?!\nmirror_portrait;Senya\nbop_portrait;Senya\nspeak;Senya;Over there! Looks like we've got company!|We gotta push through to get to the chalice room!|It's past the throne room!\nchange_background\nend_skip\nmove_cursor;4,13\nmove_unit;mob1;4,14;warp\nmove_unit;mob3;2,13;warp\nmove_unit;mob2;5,10;warp\nspeak;Schuri;That warping spell!|The necromancer that we met before must be here!|They'll be no end to these monsters!|We have to be quick!\nspeak;MC;Everyone stick together!|Be careful to not get overwhelmed!\nmove_cursor;17,15\nflicker_cursor;17,15\nspeak;Senya;Look! There's a gate|That guard might have the key!|He looks rather strong though...\nmove_cursor;MC\n"
+        "source": "chapter_title\ngame_var;_ch4MentorKilled;False\nadd_group;Party;Party\nadd_group;initialEnemies;initialEnemies\nchange_background;GradoCastle\ntransition;open\nmusic;castle-corridor\nlocation_card;Kaerndal Castle-Corridors\n#speak;;Kaerndal Castle-Corridors;;;narration_top\nadd_portrait;Senya;OffscreenLeft;immediate\nadd_portrait;Schuri;OffscreenLeft;immediate\nadd_portrait;MC;OffscreenLeft;immediate\nsound;Light Foot Steps 1\nmove_portrait;Senya;Right\nmirror_portrait;Senya\nsound;Foot Step\nmove_portrait;MC;MidLeft\nsound;Foot Step\nmove_portrait;Schuri;FarLeft\nspeak;MC;We're finally here!|I hope everyone is ready|It's all or nothing now!\nexpression;Schuri;OpenEyes\nscreen_shake;800\nsound;explosion_wide\nbop_portrait;MC\nmirror_portrait;MC\nmirror_portrait;MC\nspeak;MC;What was that?!\nmirror_portrait;Senya\nbop_portrait;Senya\nspeak;Senya;Over there! Looks like we've got company!|We gotta push through to get to the chalice room!|It's past the throne room!\nchange_background\nend_skip\nmove_cursor;4,13\nmove_unit;mob1;4,14;warp\nmove_unit;mob3;2,13;warp\nmove_unit;mob2;5,10;warp\nspeak;Schuri;That warping spell!|The necromancer that we met before must be here!|They'll be no end to these monsters!|We have to be quick!\nspeak;MC;Everyone stick together!|Be careful to not get overwhelmed!\nmove_cursor;17,15\nflicker_cursor;17,15\nspeak;Senya;Look! There's a gate|That guard might have the key!|He looks rather strong though...\nmove_cursor;MC\n"
     }
 ]

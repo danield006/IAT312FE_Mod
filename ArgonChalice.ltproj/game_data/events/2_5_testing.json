@@ -6,14 +6,39 @@
         "condition": "any_unit_in_region('test', team='player') ",
         "commands": [
             [
+                "game_var",
+                [
+                    "_killLilith",
+                    "True"
+                ]
+            ],
+            [
+                "choice",
+                [
+                    "_ch3TomeChoice",
+                    "Should I take the Tome?",
+                    "Yes,No"
+                ]
+            ],
+            [
                 "comment",
                 [
-                    "#kill_unit;Lilith"
+                    "#choice"
                 ]
+            ],
+            [
+                "kill_unit",
+                [
+                    "Lilith"
+                ]
+            ],
+            [
+                "end_skip",
+                []
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#kill_unit;Lilith\n"
+        "source": "game_var;_killLilith;True\nchoice;_ch3TomeChoice;Should I take the Tome?;Yes,No\n#choice\nkill_unit;Lilith\nend_skip\n"
     }
 ]
