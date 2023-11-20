@@ -626,7 +626,7 @@
             {
                 "nid": "Noble",
                 "team": "enemy",
-                "ai": "Guard",
+                "ai": "Defend",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": null,
@@ -666,40 +666,6 @@
                 "condition": "True",
                 "time_left": null,
                 "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "breakWall",
-                "region_type": "event",
-                "position": [
-                    16,
-                    8
-                ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "breakWall",
-                "condition": "True",
-                "time_left": null,
-                "only_once": true,
-                "interrupt_move": false
-            },
-            {
-                "nid": "breakChestWall",
-                "region_type": "event",
-                "position": [
-                    5,
-                    22
-                ],
-                "size": [
-                    1,
-                    1
-                ],
-                "sub_nid": "breakChestWall",
-                "condition": "True",
-                "time_left": null,
-                "only_once": true,
                 "interrupt_move": false
             },
             {
@@ -779,7 +745,7 @@
                 ],
                 "size": [
                     6,
-                    11
+                    6
                 ],
                 "sub_nid": "",
                 "condition": "True",
@@ -1022,6 +988,11 @@
                 }
             }
         ],
-        "ai_groups": []
+        "ai_groups": [
+            {
+                "nid": "",
+                "trigger_threshold": 1
+            }
+        ]
     }
 ]
