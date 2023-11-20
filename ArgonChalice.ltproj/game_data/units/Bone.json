@@ -2,7 +2,7 @@
     {
         "nid": "Bone",
         "name": "Bone",
-        "desc": "One of Bazba's henchmen.",
+        "desc": "One of the leaders of the Crimson Wolves.",
         "variant": null,
         "level": 4,
         "klass": "Brigand",
@@ -90,7 +90,7 @@
             ]
         },
         "alternate_classes": [],
-        "portrait_nid": "Bone",
+        "portrait_nid": "BanditLeader",
         "affinity": "None",
         "fields": []
     }
