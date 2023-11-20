@@ -68,7 +68,7 @@
                 "speak",
                 [
                     "",
-                    "Kaerndal Castle-Throne Room",
+                    "Kaerndal Castle-Chalice Room",
                     "",
                     "",
                     "narration_top"
@@ -103,7 +103,7 @@
                 "speak",
                 [
                     "Lilith",
-                    "Tch. Some gnats interuppted our spell.|No matter they'll perish anyways...",
+                    "Tch. So the necromancer wasn't able to stop them.|No matter they'll perish anyways...",
                     "",
                     "",
                     "noir"
@@ -140,17 +140,10 @@
                 "speak",
                 [
                     "Lilith",
-                    "Well, well, well...|Look who has decided to show up",
+                    "Well, well, well...|After all that effort to warp you away.|You return to your deaths.",
                     "",
                     "",
                     "noir"
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "MC",
-                    "NoSmile"
                 ]
             ],
             [
@@ -163,22 +156,22 @@
             [
                 "speak",
                 [
-                    "Senya",
-                    "Whatever you're planning, it won't happen."
-                ]
-            ],
-            [
-                "speak",
-                [
                     "Schuri",
-                    "Lilith, you will receive your due punishment."
+                    "We'll never let you resummon the demon king!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "You can't be allowed to get away with this."
                 ]
             ],
             [
                 "speak",
                 [
                     "Lilith",
-                    "Mighty confident for brats who haven't outgrown their teacher.|Need I remind you?",
+                    "Oho?|You were even able to figure out my plan?|You must have managed to find that fossil.|That aura around you...|You must be able to wield light magic.|That's a shame...I wanted to make you three into a set.|But this might be even more entertaining...",
                     "",
                     "",
                     "noir"
@@ -187,32 +180,8 @@
             [
                 "speak",
                 [
-                    "MC",
-                    "You'll regret ever setting foot in this castle."
-                ]
-            ],
-            [
-                "speak",
-                [
                     "Lilith",
-                    "I say...it will be YOU who will be feeling regret soon enough.",
-                    "",
-                    "",
-                    "noir"
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "Lilith",
-                    "NoSmile"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Lilith",
-                    "I wonder how strong your bonds really are!!",
+                    "Let's test your companions' faith!",
                     "",
                     "",
                     "noir"
@@ -242,21 +211,21 @@
                 "expression",
                 [
                     "Senya",
-                    "CloseEyes"
+                    "HalfCloseEyes"
                 ]
             ],
             [
                 "speak",
                 [
                     "Schuri",
-                    "Ack!"
+                    "Ack! Stop!"
                 ]
             ],
             [
                 "speak",
                 [
                     "Senya",
-                    "Ugh..."
+                    "Ugh...these...voices...."
                 ]
             ],
             [
@@ -306,6 +275,10 @@
                 ]
             ],
             [
+                "end_skip",
+                []
+            ],
+            [
                 "comment",
                 [
                     "#variable for the ending you get"
@@ -319,13 +292,39 @@
                 ]
             ],
             [
+                "comment",
+                [
+                    "#######testing"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_SchuriOpinion",
+                    "-1"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_SenyaOpinion",
+                    "1"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#######################"
+                ]
+            ],
+            [
                 "change_background",
                 []
             ],
             [
                 "if",
                 [
-                    "_SenyaOpinion <=0 and _SchuriOpinion <=0"
+                    "game.game_vars['_SenyaOpinion'] <=0 and game.game_vars['_SchuriOpinion'] <=0"
                 ]
             ],
             [
@@ -411,44 +410,94 @@
                 "speak",
                 [
                     "Lilith",
-                    "Hahaha..|They're under my control now!|You're all alone now...what will you do?|Do you dare kill them?!",
+                    "They didn't trust you very much did they?|Neither of them fought back against my influence...Kuhuhu.|I wasn't so sure my new spell could work on the living so well.|But I suppose it's easy when there's already cracks to exploit!",
                     "",
                     "",
                     "noir"
                 ]
             ],
             [
-                "expression",
+                "speak",
                 [
                     "MC",
-                    "CloseEyes"
+                    "What!?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lilith",
+                    "Hahaha..|They're under my control now!|You're all alone now...what will you do?|Can you stomach killing them to get to me?",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Lilith"
+                ]
+            ],
+            [
+                "if",
+                [
+                    "game.game_vars['_ch3TomeChoice'] == 'Yes'"
                 ]
             ],
             [
                 "speak",
                 [
                     "MC",
-                    "I will stop you!"
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "MC",
-                    "OpenEyes"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#improving MC dark magic"
+                    "The Lithrasir!...|Why is it....getting so much heavier...?"
                 ]
             ],
             [
                 "speak",
                 [
                     "",
-                    "A multitude of thoughts swirl my mind.|My teacher, my friends...|I will do anything it takes to destroy her..."
+                    "A dark void bursts from the Lithrasir surronding {var:MC_name} in darkness.|As {var:MC_name} emerges,he comes out in fully black armor",
+                    "",
+                    "",
+                    "narration_top"
+                ]
+            ],
+            [
+                "promote",
+                [
+                    "MC",
+                    "Harbinger"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Lilith",
+                    "Right"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Lilith",
+                    "The Lithrasir!|You wield magic your filthy human hands were not meant to handle!|Even I couldn't wield its power without that wretch Orkney getting in the way!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "This power...It's incredible...|Is this the true power of the Lithrasir?!|I feel like I've never been so alive!",
+                    "",
+                    "",
+                    "noir"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "GAHHH, Senya...Schur..i...|I'll....at least stop her..."
                 ]
             ],
             [
@@ -459,14 +508,6 @@
                 ]
             ],
             [
-                "give_wexp",
-                [
-                    "MC",
-                    "Dark (Dark)",
-                    "500"
-                ]
-            ],
-            [
                 "music_fade_back",
                 [
                     "2000"
@@ -475,7 +516,24 @@
             [
                 "elif",
                 [
-                    "_SenyaOpinion <=0"
+                    "game.game_vars['_ch3TomeChoice'] == 'No'"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "I...will stop you.|No matter the cost!"
+                ]
+            ],
+            [
+                "end",
+                []
+            ],
+            [
+                "elif",
+                [
+                    "game.game_vars['_SenyaOpinion'] <=0"
                 ]
             ],
             [
@@ -483,6 +541,20 @@
                 [
                     "Senya",
                     "enemy"
+                ]
+            ],
+            [
+                "change_portrait",
+                [
+                    "Senya",
+                    "PossessedSenya"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "PossessedSchuri",
+                    "MidRight"
                 ]
             ],
             [
@@ -493,10 +565,23 @@
                 ]
             ],
             [
+                "wait",
+                [
+                    "1000"
+                ]
+            ],
+            [
                 "add_portrait",
                 [
                     "MC",
                     "Left"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "FarLeft"
                 ]
             ],
             [
@@ -516,11 +601,26 @@
             [
                 "speak",
                 [
+                    "Schuri",
+                    "Ugh...Senya snap out of it!"
+                ]
+            ],
+            [
+                "speak",
+                [
                     "Lilith",
                     "Hahaha..|She's under my control now!|Do you dare kill your dear friend?!",
                     "",
                     "",
                     "noir"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Senya",
+                    "7,5",
+                    "warp"
                 ]
             ],
             [
@@ -532,21 +632,7 @@
             [
                 "elif",
                 [
-                    "_SchuriOpinion <=0"
-                ]
-            ],
-            [
-                "move_unit",
-                [
-                    "Senya",
-                    "9,5",
-                    "warp"
-                ]
-            ],
-            [
-                "wait",
-                [
-                    "2000"
+                    "game.game_vars['_SchuriOpinion'] <=0"
                 ]
             ],
             [
@@ -557,6 +643,20 @@
                 ]
             ],
             [
+                "change_portrait",
+                [
+                    "Schuri",
+                    "PossessedSchuri"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "PossessedSchuri",
+                    "MidRight"
+                ]
+            ],
+            [
                 "game_var",
                 [
                     "_SchuriControlled",
@@ -564,17 +664,9 @@
                 ]
             ],
             [
-                "move_unit",
-                [
-                    "Schuri",
-                    "7,5",
-                    "warp"
-                ]
-            ],
-            [
                 "wait",
                 [
-                    "2000"
+                    "1000"
                 ]
             ],
             [
@@ -582,6 +674,13 @@
                 [
                     "MC",
                     "Left"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Senya",
+                    "FarLeft"
                 ]
             ],
             [
@@ -601,11 +700,26 @@
             [
                 "speak",
                 [
+                    "Senya",
+                    "Ugh...Schuri snap out of it!"
+                ]
+            ],
+            [
+                "speak",
+                [
                     "Lilith",
                     "Hahaha..|She's under my control now!|Do you dare kill your dear friend?!",
                     "",
                     "",
                     "noir"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Schuri",
+                    "9,5",
+                    "warp"
                 ]
             ],
             [
@@ -625,17 +739,56 @@
                 ]
             ],
             [
+                "add_portrait",
+                [
+                    "Senya",
+                    "FarLeft",
+                    "",
+                    "CloseEyes"
+                ]
+            ],
+            [
                 "speak",
                 [
-                    "MC",
-                    "What did you do?!"
+                    "Senya",
+                    "I....won't listen to these lies!|I trust {var:MC_name}!|We'll stop you together!"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Senya",
+                    "OpenEyes"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Schuri",
+                    "Left",
+                    "",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "I won't fall for your words!|For the people of Rondon, we will not lose!"
+                ]
+            ],
+            [
+                "expression",
+                [
+                    "Schuri",
+                    "OpenEyes"
                 ]
             ],
             [
                 "speak",
                 [
                     "Lilith",
-                    "Hahaha..|They're under my contr-|Huh?!|I guess your bonds do hold...",
+                    "Tch...|Your bonds with your party members are stronger than I thought",
                     "",
                     "",
                     "noir"
@@ -680,6 +833,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;close\nremove_all_units\nshow_layer;bossRoomForm\ncenter_cursor;8,6\nadd_group;Party;Party\nadd_group;initialEnemies;initialEnemies\ngame_var;_killLilith;False\nchapter_title\nmusic;castle-corridor\ntransition;Open\nspeak;;Kaerndal Castle-Throne Room;;;narration_top\nadd_portrait;Lilith;Right;FLAG(no_block)\nmulti_add_portrait;Senya;OffscreenLeft;Schuri;OffscreenLeft;MC;OffscreenLeft\nmirror_portrait;Lilith\nspeak;Lilith;Tch. Some gnats interuppted our spell.|No matter they'll perish anyways...;;;noir\nmirror_portrait;Lilith\nmove_portrait;MC;MidLeft\nmove_portrait;Schuri;Left\nmove_portrait;Senya;FarLeft\nspeak;Lilith;Well, well, well...|Look who has decided to show up;;;noir\nexpression;MC;NoSmile\nspeak;MC;Lilith! We've come to stop you!\nspeak;Senya;Whatever you're planning, it won't happen.\nspeak;Schuri;Lilith, you will receive your due punishment.\nspeak;Lilith;Mighty confident for brats who haven't outgrown their teacher.|Need I remind you?;;;noir\nspeak;MC;You'll regret ever setting foot in this castle.\nspeak;Lilith;I say...it will be YOU who will be feeling regret soon enough.;;;noir\nexpression;Lilith;NoSmile\nspeak;Lilith;I wonder how strong your bonds really are!!;;;noir\nmove_portrait;Lilith;MidRight\nsound;Flux1\nexpression;Schuri;HalfCloseEyes\nexpression;Senya;CloseEyes\nspeak;Schuri;Ack!\nspeak;Senya;Ugh...\nremove_portrait;Lilith\nmove_portrait;MC;MidRight\nmirror_portrait;MC\nspeak;MC;Schuri! Senya!\nexpression;Senya;CloseEyes\nexpression;Schuri;CloseEyes\nwait;100\n#variable for the ending you get\ngame_var;_gameEnding;0\nchange_background\nif;_SenyaOpinion <=0 and _SchuriOpinion <=0\n    multi_remove_portrait;MC;Schuri;Senya\n    change_team;Senya;enemy\n    change_team;Schuri;enemy\n    game_var;_SenyaControlled;True\n    game_var;_SchuriControlled;True\n    move_unit;Senya;9,5;warp\n    move_unit;Schuri;7,5;warp\n    wait;2000\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|They're under my control now!|You're all alone now...what will you do?|Do you dare kill them?!;;;noir\n    expression;MC;CloseEyes\n    speak;MC;I will stop you!\n    expression;MC;OpenEyes\n    #improving MC dark magic\n    speak;;A multitude of thoughts swirl my mind.|My teacher, my friends...|I will do anything it takes to destroy her...\n    multi_remove_portrait;MC;Lilith\n    give_wexp;MC;Dark (Dark);500\n    music_fade_back;2000\nelif;_SenyaOpinion <=0\n    change_team;Senya;enemy\n    game_var;_SenyaControlled;True\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|She's under my control now!|Do you dare kill your dear friend?!;;;noir\n    music_fade_back;2000\nelif;_SchuriOpinion <=0\n    move_unit;Senya;9,5;warp\n    wait;2000\n    change_team;Schuri;enemy\n    game_var;_SchuriControlled;True\n    move_unit;Schuri;7,5;warp\n    wait;2000\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|She's under my control now!|Do you dare kill your dear friend?!;;;noir\n    music_fade_back;2000\nelse\n    #golden ending\n    speak;MC;What did you do?!\n    speak;Lilith;Hahaha..|They're under my contr-|Huh?!|I guess your bonds do hold...;;;noir\n    change_background\n    speak;Lilith;No matter! Your journey will end here!;;;noir\nend\n#testing\n#game_var;_gameEnding;8\n#win_game\n"
+        "source": "transition;close\nremove_all_units\nshow_layer;bossRoomForm\ncenter_cursor;8,6\nadd_group;Party;Party\nadd_group;initialEnemies;initialEnemies\ngame_var;_killLilith;False\nchapter_title\nmusic;castle-corridor\ntransition;Open\nspeak;;Kaerndal Castle-Chalice Room;;;narration_top\nadd_portrait;Lilith;Right;FLAG(no_block)\nmulti_add_portrait;Senya;OffscreenLeft;Schuri;OffscreenLeft;MC;OffscreenLeft\nmirror_portrait;Lilith\nspeak;Lilith;Tch. So the necromancer wasn't able to stop them.|No matter they'll perish anyways...;;;noir\nmirror_portrait;Lilith\nmove_portrait;MC;MidLeft\nmove_portrait;Schuri;Left\nmove_portrait;Senya;FarLeft\nspeak;Lilith;Well, well, well...|After all that effort to warp you away.|You return to your deaths.;;;noir\nspeak;MC;Lilith! We've come to stop you!\nspeak;Schuri;We'll never let you resummon the demon king!\nspeak;Senya;You can't be allowed to get away with this.\nspeak;Lilith;Oho?|You were even able to figure out my plan?|You must have managed to find that fossil.|That aura around you...|You must be able to wield light magic.|That's a shame...I wanted to make you three into a set.|But this might be even more entertaining...;;;noir\nspeak;Lilith;Let's test your companions' faith!;;;noir\nmove_portrait;Lilith;MidRight\nsound;Flux1\nexpression;Schuri;HalfCloseEyes\nexpression;Senya;HalfCloseEyes\nspeak;Schuri;Ack! Stop!\nspeak;Senya;Ugh...these...voices....\nremove_portrait;Lilith\nmove_portrait;MC;MidRight\nmirror_portrait;MC\nspeak;MC;Schuri! Senya!\nexpression;Senya;CloseEyes\nexpression;Schuri;CloseEyes\nwait;100\nend_skip\n#variable for the ending you get\ngame_var;_gameEnding;0\n#######testing\ngame_var;_SchuriOpinion;-1\ngame_var;_SenyaOpinion;1\n#######################\nchange_background\nif;game.game_vars['_SenyaOpinion'] <=0 and game.game_vars['_SchuriOpinion'] <=0\n    multi_remove_portrait;MC;Schuri;Senya\n    change_team;Senya;enemy\n    change_team;Schuri;enemy\n    game_var;_SenyaControlled;True\n    game_var;_SchuriControlled;True\n    move_unit;Senya;9,5;warp\n    move_unit;Schuri;7,5;warp\n    wait;2000\n    add_portrait;MC;Left\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Lilith;They didn't trust you very much did they?|Neither of them fought back against my influence...Kuhuhu.|I wasn't so sure my new spell could work on the living so well.|But I suppose it's easy when there's already cracks to exploit!;;;noir\n    speak;MC;What!?\n    speak;Lilith;Hahaha..|They're under my control now!|You're all alone now...what will you do?|Can you stomach killing them to get to me?;;;noir\n    remove_portrait;Lilith\n    if;game.game_vars['_ch3TomeChoice'] == 'Yes'\n        speak;MC;The Lithrasir!...|Why is it....getting so much heavier...?\n        speak;;A dark void bursts from the Lithrasir surronding {var:MC_name} in darkness.|As {var:MC_name} emerges,he comes out in fully black armor;;;narration_top\n        promote;MC;Harbinger\n        add_portrait;Lilith;Right\n        speak;Lilith;The Lithrasir!|You wield magic your filthy human hands were not meant to handle!|Even I couldn't wield its power without that wretch Orkney getting in the way!\n        speak;MC;This power...It's incredible...|Is this the true power of the Lithrasir?!|I feel like I've never been so alive!;;;noir\n        speak;MC;GAHHH, Senya...Schur..i...|I'll....at least stop her...\n        multi_remove_portrait;MC;Lilith\n        music_fade_back;2000\n    elif;game.game_vars['_ch3TomeChoice'] == 'No'\n        speak;MC;I...will stop you.|No matter the cost!\n    end\nelif;game.game_vars['_SenyaOpinion'] <=0\n    change_team;Senya;enemy\n    change_portrait;Senya;PossessedSenya\n    add_portrait;PossessedSchuri;MidRight\n    game_var;_SenyaControlled;True\n    wait;1000\n    add_portrait;MC;Left\n    add_portrait;Schuri;FarLeft\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Schuri;Ugh...Senya snap out of it!\n    speak;Lilith;Hahaha..|She's under my control now!|Do you dare kill your dear friend?!;;;noir\n    move_unit;Senya;7,5;warp\n    music_fade_back;2000\nelif;game.game_vars['_SchuriOpinion'] <=0\n    change_team;Schuri;enemy\n    change_portrait;Schuri;PossessedSchuri\n    add_portrait;PossessedSchuri;MidRight\n    game_var;_SchuriControlled;True\n    wait;1000\n    add_portrait;MC;Left\n    add_portrait;Senya;FarLeft\n    add_portrait;Lilith;Right\n    speak;MC;What did you do?!\n    speak;Senya;Ugh...Schuri snap out of it!\n    speak;Lilith;Hahaha..|She's under my control now!|Do you dare kill your dear friend?!;;;noir\n    move_unit;Schuri;9,5;warp\n    music_fade_back;2000\nelse\n    #golden ending\n    add_portrait;Senya;FarLeft;;CloseEyes\n    speak;Senya;I....won't listen to these lies!|I trust {var:MC_name}!|We'll stop you together!\n    expression;Senya;OpenEyes\n    add_portrait;Schuri;Left;;CloseEyes\n    speak;Schuri;I won't fall for your words!|For the people of Rondon, we will not lose!\n    expression;Schuri;OpenEyes\n    speak;Lilith;Tch...|Your bonds with your party members are stronger than I thought;;;noir\n    change_background\n    speak;Lilith;No matter! Your journey will end here!;;;noir\nend\n#testing\n#game_var;_gameEnding;8\n#win_game\n"
     }
 ]
