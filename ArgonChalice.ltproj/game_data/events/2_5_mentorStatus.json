@@ -3,7 +3,7 @@
         "name": "mentorStatus",
         "trigger": "turn_change",
         "level_nid": "2_5",
-        "condition": "game.turncount == 2",
+        "condition": "game.turncount == 3",
         "commands": [
             [
                 "comment",

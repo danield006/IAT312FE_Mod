@@ -21,12 +21,6 @@
                 ]
             ],
             [
-                "comment",
-                [
-                    "#choice"
-                ]
-            ],
-            [
                 "kill_unit",
                 [
                     "Lilith"
@@ -37,29 +31,34 @@
                 []
             ],
             [
-                "game_var",
+                "comment",
                 [
-                    "_gameEnding",
-                    "10"
+                    "#game_var;_gameEnding;1"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#win_game"
                 ]
             ],
             [
                 "game_var",
                 [
                     "_SchuriControlled",
-                    "true"
+                    "False"
                 ]
             ],
             [
                 "game_var",
                 [
                     "_SenyaControlled",
-                    "true"
+                    "False"
                 ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "game_var;_killLilith;True\nchoice;_ch3TomeChoice;Should I take the Tome?;Yes,No\n#choice\nkill_unit;Lilith\nend_skip\ngame_var;_gameEnding;10\ngame_var;_SchuriControlled;true\ngame_var;_SenyaControlled;true\n"
+        "source": "game_var;_killLilith;True\nchoice;_ch3TomeChoice;Should I take the Tome?;Yes,No\nkill_unit;Lilith\nend_skip\n#game_var;_gameEnding;1\n#win_game\ngame_var;_SchuriControlled;False\ngame_var;_SenyaControlled;False\n"
     }
 ]
