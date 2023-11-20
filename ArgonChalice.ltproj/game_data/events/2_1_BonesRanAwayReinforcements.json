@@ -68,6 +68,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "if;game.game_vars['_ch1BonesEscapeFlag'] == True\n    add_group;Bandits3;Bandits3;immediate\n    change_objective_simple;Rout the enemy.\n    change_objective_win;Rout the enemy.\n    add_portrait;Senya;Right\n    speak;Senya;That bastard got away!|We're gonna have to deal with the rest of his lackeys now too!\n    speak;;The objective has changed.;;;hint\n    remove_portrait;Senya\nend;"
+        "source": "if;game.game_vars['_ch1BonesEscapeFlag'] == True\n    add_group;Bandits3;Bandits3;immediate\n    change_objective_simple;Rout the enemy.\n    change_objective_win;Rout the enemy.\n    add_portrait;Senya;Right\n    speak;Senya;That bastard got away!|We're gonna have to deal with the rest of his lackeys now too!\n    speak;;The objective has changed.;;;hint\n    remove_portrait;Senya\nend\n"
     }
 ]
