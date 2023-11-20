@@ -71,11 +71,11 @@
                 "region_type": "event",
                 "position": [
                     0,
-                    3
+                    0
                 ],
                 "size": [
-                    2,
-                    3
+                    15,
+                    10
                 ],
                 "sub_nid": "Leave",
                 "condition": "True",
