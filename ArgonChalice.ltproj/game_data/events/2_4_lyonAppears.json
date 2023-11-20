@@ -6,24 +6,25 @@
         "condition": "any_unit_in_region('lyonAppears', team='player') ",
         "commands": [
             [
-                "add_unit",
+                "flicker_cursor",
                 [
-                    "Lyon",
-                    "27,3"
+                    "27,1"
                 ]
             ],
             [
-                "move_unit",
+                "add_unit",
                 [
                     "Lyon",
-                    "26,8"
+                    "27,1",
+                    "warp",
+                    "push"
                 ]
             ],
             [
                 "speak",
                 [
                     "Lyon",
-                    "You won't be going any further."
+                    "You won't be going any farther.|You cannot be permitted to interupt the ritual.|Besides...I need to pay you back for Greshia."
                 ]
             ],
             [
@@ -33,20 +34,49 @@
                 ]
             ],
             [
-                "flicker_cursor",
-                [
-                    "27,5"
-                ]
-            ],
-            [
                 "show_layer",
                 [
                     "lyonAppears"
+                ]
+            ],
+            [
+                "flicker_cursor",
+                [
+                    "30,3"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "We're gonna need to defeat that necromancer if we wanna get to the chalice room!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "",
+                    "Objectives have changed.",
+                    "",
+                    "",
+                    "hint"
+                ]
+            ],
+            [
+                "change_objective_simple",
+                [
+                    "Defeat the necromancer"
+                ]
+            ],
+            [
+                "change_objective_win",
+                [
+                    "Defeat the necromancer"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_unit;Lyon;27,3\nmove_unit;Lyon;26,8\nspeak;Lyon;You won't be going any further.\nsound;FireBall\nflicker_cursor;27,5\nshow_layer;lyonAppears\n"
+        "source": "flicker_cursor;27,1\nadd_unit;Lyon;27,1;warp;push\nspeak;Lyon;You won't be going any farther.|You cannot be permitted to interupt the ritual.|Besides...I need to pay you back for Greshia.\nsound;FireBall\nshow_layer;lyonAppears\nflicker_cursor;30,3\nspeak;MC;We're gonna need to defeat that necromancer if we wanna get to the chalice room!\nspeak;;Objectives have changed.;;;hint\nchange_objective_simple;Defeat the necromancer\nchange_objective_win;Defeat the necromancer\n"
     }
 ]

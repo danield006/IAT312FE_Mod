@@ -75,7 +75,7 @@
                 "speak",
                 [
                     "MC",
-                    "It's time."
+                    "Necromancer down...|All that's left is Lilith."
                 ]
             ],
             [
@@ -113,6 +113,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "transition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;MC;OffscreenLeft\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nmove_portrait;MC;Right\nmove_portrait;Schuri;MidLeft\nmove_portrait;Senya;FarLeft\nmirror_portrait;MC\nspeak;MC;It's time.\nspeak;Schuri;Let's end this.\n#sound;heavyDoorOpen nvm sounds bad\nspeak;Senya;Let's go.\ntransition;close\nset_next_chapter;2_5\n"
+        "source": "transition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;MC;OffscreenLeft\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nmove_portrait;MC;Right\nmove_portrait;Schuri;MidLeft\nmove_portrait;Senya;FarLeft\nmirror_portrait;MC\nspeak;MC;Necromancer down...|All that's left is Lilith.\nspeak;Schuri;Let's end this.\n#sound;heavyDoorOpen nvm sounds bad\nspeak;Senya;Let's go.\ntransition;close\nset_next_chapter;2_5\n"
     }
 ]

@@ -12,12 +12,6 @@
                 ]
             ],
             [
-                "sound",
-                [
-                    "explosion_wide"
-                ]
-            ],
-            [
                 "speak",
                 [
                     "{var:MC_name}",
@@ -77,7 +71,10 @@
                 "speak",
                 [
                     "Lilith",
-                    "I, Lilith has completed the Argon Ritual."
+                    "The demon king has returned to this world.|Quiver in fear, for there is nothing to stop him now!",
+                    "",
+                    "",
+                    "noir"
                 ]
             ],
             [
@@ -89,15 +86,8 @@
             [
                 "speak",
                 [
-                    "Lilith",
-                    "All this power...!|Hahahaha!"
-                ]
-            ],
-            [
-                "speak",
-                [
                     "MC",
-                    "Oh no..."
+                    "No....we're too late...."
                 ]
             ],
             [
@@ -107,6 +97,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "screen_shake;250\nsound;explosion_wide\nspeak;{var:MC_name};Oh no...\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;Lilith;Right\nadd_portrait;MC;Left\nspeak;Lilith;Look at what the cat dragged it...|Too bad you're already too late.;;;noir\nspeak;MC;It's you!\nspeak;Lilith;I, Lilith has completed the Argon Ritual.\nbop_portrait;Lilith\nspeak;Lilith;All this power...!|Hahahaha!\nspeak;MC;Oh no...\nlose_game\n"
+        "source": "screen_shake;250\nspeak;{var:MC_name};Oh no...\ntransition;close\nchange_background;InsideCastle\ntransition;open\nadd_portrait;Lilith;Right\nadd_portrait;MC;Left\nspeak;Lilith;Look at what the cat dragged it...|Too bad you're already too late.;;;noir\nspeak;MC;It's you!\nspeak;Lilith;The demon king has returned to this world.|Quiver in fear, for there is nothing to stop him now!;;;noir\nbop_portrait;Lilith\nspeak;MC;No....we're too late....\nlose_game\n"
     }
 ]

@@ -37,10 +37,20 @@
                 [
                     "lyonAppears"
                 ]
+            ],
+            [
+                "wait",
+                [
+                    "1000"
+                ]
+            ],
+            [
+                "win_game",
+                []
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;Lyon;Right\nmove_portrait;Lyon;FarRight\nspeak;Lyon;How could this be...\nremove_portrait;Lyon\nhide_layer;lyonAppears\n"
+        "source": "add_portrait;Lyon;Right\nmove_portrait;Lyon;FarRight\nspeak;Lyon;How could this be...\nremove_portrait;Lyon\nhide_layer;lyonAppears\nwait;1000;\nwin_game;\n"
     }
 ]

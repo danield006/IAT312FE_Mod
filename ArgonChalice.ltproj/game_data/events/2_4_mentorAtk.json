@@ -34,24 +34,24 @@
                 ]
             ],
             [
-                "expression",
+                "speak",
                 [
                     "PossessedCyrus",
-                    "CloseEyes"
+                    "Hhhhhhhhhhhhh..."
                 ]
             ],
             [
                 "speak",
                 [
                     "MC",
-                    "Be careful! Teach is after us!"
+                    "He's gonna cast a spell on us!"
                 ]
             ],
             [
                 "speak",
                 [
                     "Schuri",
-                    "He's under control! Sir, do you recognize us?"
+                    "Wait he's barely moving! He's fighting back!"
                 ]
             ],
             [
@@ -65,7 +65,7 @@
                 "speak",
                 [
                     "Senya",
-                    "There's no use, let's hurry and put him to rest.|It's the least we could do.|We'll give him a proper burial after everything."
+                    "How much longer can he hold out for?|If teacher gets back to full strength,|he's gonna be a big problem for us.|...We can't let our feelings get in the way of this!|This is too important!"
                 ]
             ],
             [
@@ -78,6 +78,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;Senya;Left\nadd_portrait;Schuri;Left\nadd_portrait;MC;MidLeft\nadd_portrait;PossessedCyrus;FarRight\nexpression;PossessedCyrus;CloseEyes\nspeak;MC;Be careful! Teach is after us!\nspeak;Schuri;He's under control! Sir, do you recognize us?\nspeak;PossessedCyrus;...\nspeak;Senya;There's no use, let's hurry and put him to rest.|It's the least we could do.|We'll give him a proper burial after everything.\nspeak;Schuri;We should at least give my idea a try! Wouldn't you feel regret at having not tried at all...?\n"
+        "source": "add_portrait;Senya;Left\nadd_portrait;Schuri;Left\nadd_portrait;MC;MidLeft\nadd_portrait;PossessedCyrus;FarRight\nspeak;PossessedCyrus;Hhhhhhhhhhhhh...\nspeak;MC;He's gonna cast a spell on us!\nspeak;Schuri;Wait he's barely moving! He's fighting back!\nspeak;PossessedCyrus;...\nspeak;Senya;How much longer can he hold out for?|If teacher gets back to full strength,|he's gonna be a big problem for us.|...We can't let our feelings get in the way of this!|This is too important!\nspeak;Schuri;We should at least give my idea a try! Wouldn't you feel regret at having not tried at all...?\n"
     }
 ]

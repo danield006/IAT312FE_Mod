@@ -838,29 +838,5 @@
             48
         ],
         "info_offset": 0
-    },
-    {
-        "nid": "PossessedHeadGuard",
-        "blinking_offset": [
-            24,
-            16
-        ],
-        "smiling_offset": [
-            16,
-            32
-        ],
-        "info_offset": 0
-    },
-    {
-        "nid": "PossessedNoble",
-        "blinking_offset": [
-            24,
-            24
-        ],
-        "smiling_offset": [
-            16,
-            40
-        ],
-        "info_offset": 0
     }
 ]

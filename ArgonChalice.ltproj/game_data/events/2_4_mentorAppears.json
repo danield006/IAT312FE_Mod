@@ -38,24 +38,12 @@
                 ]
             ],
             [
-                "speak",
-                [
-                    "Senya",
-                    "I'm on it!"
-                ]
-            ],
-            [
                 "add_unit",
                 [
                     "Mentor",
-                    "5,5"
-                ]
-            ],
-            [
-                "move_unit",
-                [
-                    "Mentor",
-                    "9,5"
+                    "7,12",
+                    "warp",
+                    "push"
                 ]
             ],
             [
@@ -124,7 +112,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "Sir! It's us! We're finally here..."
+                    "He looks like...Lord Rikard...his skin..."
                 ]
             ],
             [
@@ -135,30 +123,17 @@
                 ]
             ],
             [
-                "remove_portrait",
-                [
-                    "PossessedCyrus"
-                ]
-            ],
-            [
                 "speak",
                 [
                     "Schuri",
-                    "How could this have happened...?"
+                    "Sir Cyrus..."
                 ]
             ],
             [
                 "speak",
                 [
                     "Senya",
-                    "Once I get my hands on..."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Schuri",
-                    "!!"
+                    "...I..I get it, I'll put you out of your misery."
                 ]
             ],
             [
@@ -184,63 +159,40 @@
                 "speak",
                 [
                     "Schuri",
-                    "We can still save Sir!|If we defeat that necromancer, the spell on him will be...|Sir will be fine!"
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "Senya",
-                    "HalfCloseEyes"
+                    "Wait! Senya please!"
                 ]
             ],
             [
                 "speak",
                 [
                     "Senya",
-                    "...Schuri|It's not that I don't agree...|but I think it would be best if we laid Teacher to rest|Think about how long that wound has festered...."
+                    "What are you doing Schuri!? Don't turn your back to him!"
                 ]
             ],
             [
-                "expression",
+                "mirror_portrait",
                 [
-                    "Senya",
-                    "OpenEyes"
+                    "Schuri"
+                ]
+            ],
+            [
+                "mirror_portrait",
+                [
+                    "Schuri"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Look! He's not attacking!|He must still be fighting in there!|We could still save him!|If we stop the ritual, Sir Aesc might be able to find a way...|Sir Aesc would surely find a way to save his pupil!"
                 ]
             ],
             [
                 "speak",
                 [
                     "Senya",
-                    "He wouldn't be..."
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "Senya",
-                    "HalfCloseEyes"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "his injuries..."
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "Senya",
-                    "CloseEyes"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "He's died long ago..."
+                    "...Schuri|Open your eyes...|That wound that was on his chest...|He never made it out...|He's been suffering all this time.|The least we can do is put him to rest."
                 ]
             ],
             [
@@ -254,21 +206,14 @@
                 "speak",
                 [
                     "Schuri",
-                    "{var:MC_name}...please!|We should give it a try!|Let's keep Sir alive and go defeat that necromancer."
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "Senya",
-                    "OpenEyes"
+                    "{var:MC_name}...please!|Let's leave Sir Cyrus here and go defeat that necromancer."
                 ]
             ],
             [
                 "speak",
                 [
                     "Senya",
-                    "{var:MC_name}, let's put him to rest.|It's the least we could do."
+                    "{var:MC_name}, We need to put him to rest.|There's no magic that can bring someone back from the dead.|We need to be the sane ones here.|At any minute the control could take over."
                 ]
             ],
             [
@@ -293,12 +238,20 @@
                 [
                     "MC",
                     "Senya",
-                    "Schuri"
+                    "Schuri",
+                    "PossessedCyrus"
+                ]
+            ],
+            [
+                "change_portrait",
+                [
+                    "Mentor",
+                    "PossessedCyrus"
                 ]
             ]
         ],
         "only_once": true,
         "priority": 20,
-        "source": "speak;Schuri;Look!\nmove_cursor;17,9\nflicker_cursor;17,9\nmove_cursor;MC\nspeak;Schuri;Those walls look fragile, we can break through!\nspeak;Senya;I'm on it!\nadd_unit;Mentor;5,5\nmove_unit;Mentor;9,5\nflicker_cursor;Mentor;immediate\nmove_cursor;MC\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nadd_portrait;MC;MidLeft\nadd_portrait;PossessedCyrus;FarRight\nspeak;MC;Teach?!\nmove_portrait;Schuri;Left\nmove_portrait;Senya;FarLeft\nspeak;Schuri;Sir! It's us! We're finally here...\nspeak;PossessedCyrus;...\nremove_portrait;PossessedCyrus\nspeak;Schuri;How could this have happened...?\nspeak;Senya;Once I get my hands on...\nspeak;Schuri;!!\nmove_portrait;Schuri;Right\nmirror_portrait;Schuri\nbop_portrait;Schuri\nspeak;Schuri;We can still save Sir!|If we defeat that necromancer, the spell on him will be...|Sir will be fine!\nexpression;Senya;HalfCloseEyes\nspeak;Senya;...Schuri|It's not that I don't agree...|but I think it would be best if we laid Teacher to rest|Think about how long that wound has festered....\nexpression;Senya;OpenEyes\nspeak;Senya;He wouldn't be...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;his injuries...\nexpression;Senya;CloseEyes\nspeak;Senya;He's died long ago...\nmove_portrait;Schuri;MidRight\nspeak;Schuri;{var:MC_name}...please!|We should give it a try!|Let's keep Sir alive and go defeat that necromancer.\nexpression;Senya;OpenEyes\nspeak;Senya;{var:MC_name}, let's put him to rest.|It's the least we could do.\nexpression;MC;CloseEyes\nspeak;MC;How should I deal with Teach...?;;;thought_bubble\nmulti_remove_portrait;MC;Senya;Schuri\n"
+        "source": "speak;Schuri;Look!\nmove_cursor;17,9\nflicker_cursor;17,9\nmove_cursor;MC\nspeak;Schuri;Those walls look fragile, we can break through!\nadd_unit;Mentor;7,12;warp;push\nflicker_cursor;Mentor;immediate\nmove_cursor;MC\nadd_portrait;Senya;OffscreenLeft\nadd_portrait;Schuri;OffscreenLeft\nadd_portrait;MC;MidLeft\nadd_portrait;PossessedCyrus;FarRight\nspeak;MC;Teach?!\nmove_portrait;Schuri;Left\nmove_portrait;Senya;FarLeft\nspeak;Schuri;He looks like...Lord Rikard...his skin...\nspeak;PossessedCyrus;...\nspeak;Schuri;Sir Cyrus...\nspeak;Senya;...I..I get it, I'll put you out of your misery.\nmove_portrait;Schuri;Right\nmirror_portrait;Schuri\nbop_portrait;Schuri\nspeak;Schuri;Wait! Senya please!\nspeak;Senya;What are you doing Schuri!? Don't turn your back to him!\nmirror_portrait;Schuri\nmirror_portrait;Schuri\nspeak;Schuri;Look! He's not attacking!|He must still be fighting in there!|We could still save him!|If we stop the ritual, Sir Aesc might be able to find a way...|Sir Aesc would surely find a way to save his pupil!\nspeak;Senya;...Schuri|Open your eyes...|That wound that was on his chest...|He never made it out...|He's been suffering all this time.|The least we can do is put him to rest.\nmove_portrait;Schuri;MidRight\nspeak;Schuri;{var:MC_name}...please!|Let's leave Sir Cyrus here and go defeat that necromancer.\nspeak;Senya;{var:MC_name}, We need to put him to rest.|There's no magic that can bring someone back from the dead.|We need to be the sane ones here.|At any minute the control could take over.\nexpression;MC;CloseEyes\nspeak;MC;How should I deal with Teach...?;;;thought_bubble\nmulti_remove_portrait;MC;Senya;Schuri;PossessedCyrus\nchange_portrait;Mentor;PossessedCyrus\n"
     }
 ]

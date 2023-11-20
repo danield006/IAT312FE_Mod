@@ -10,8 +10,8 @@
             "enemy_phase": "corridorFight"
         },
         "objective": {
-            "simple": "Get to Throne Room in {eval:game.turncount}/20 turns",
-            "win": "Get to Throne Room in {eval:game.turncount}/20 turns",
+            "simple": "Get to Throne room in {eval:game.turncount}/20 turns",
+            "win": "Get to Throne room in {eval:game.turncount}/20 turns",
             "loss": "MC Dies"
         },
         "roam": false,
@@ -589,105 +589,9 @@
                 "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
-            },
-            {
-                "nid": "gateGuard",
-                "variant": null,
-                "level": 9,
-                "klass": "Knight",
-                "faction": "Monster",
-                "starting_items": [
-                    [
-                        "Silver Lance",
-                        false
-                    ],
-                    [
-                        "Door Key",
-                        true
-                    ]
-                ],
-                "starting_skills": [],
-                "team": "enemy",
-                "ai": "AttackTile",
-                "roam_ai": null,
-                "ai_group": "",
-                "starting_position": [
-                    17,
-                    15
-                ],
-                "starting_traveler": null,
-                "generic": true
             }
         ],
         "regions": [
-            {
-                "nid": "throneRoom",
-                "region_type": "event",
-                "position": [
-                    26,
-                    1
-                ],
-                "size": [
-                    10,
-                    4
-                ],
-                "sub_nid": "Enter",
-                "condition": "True",
-                "time_left": null,
-                "only_once": true,
-                "interrupt_move": false
-            },
-            {
-                "nid": "door1",
-                "region_type": "event",
-                "position": [
-                    15,
-                    2
-                ],
-                "size": [
-                    1,
-                    3
-                ],
-                "sub_nid": "Open",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "door2",
-                "region_type": "event",
-                "position": [
-                    19,
-                    9
-                ],
-                "size": [
-                    1,
-                    3
-                ],
-                "sub_nid": "Open",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
-            {
-                "nid": "door3",
-                "region_type": "event",
-                "position": [
-                    23,
-                    4
-                ],
-                "size": [
-                    1,
-                    3
-                ],
-                "sub_nid": "Open",
-                "condition": "True",
-                "time_left": null,
-                "only_once": false,
-                "interrupt_move": false
-            },
             {
                 "nid": "chest1",
                 "region_type": "event",
@@ -764,8 +668,8 @@
                     1
                 ],
                 "size": [
-                    6,
-                    13
+                    4,
+                    12
                 ],
                 "sub_nid": "",
                 "condition": "True",
@@ -791,32 +695,15 @@
                 "interrupt_move": false
             },
             {
-                "nid": "Door",
-                "region_type": "event",
-                "position": [
-                    15,
-                    14
-                ],
-                "size": [
-                    2,
-                    2
-                ],
-                "sub_nid": "Unlock",
-                "condition": "unit.can_unlock(region)",
-                "time_left": null,
-                "only_once": true,
-                "interrupt_move": false
-            },
-            {
                 "nid": "lyonAppears",
                 "region_type": "normal",
                 "position": [
                     22,
-                    6
+                    5
                 ],
                 "size": [
                     7,
-                    6
+                    7
                 ],
                 "sub_nid": "",
                 "condition": "True",
@@ -835,16 +722,16 @@
                 ],
                 "positions": {
                     "Schuri": [
-                        11,
+                        16,
                         16
                     ],
                     "Senya": [
-                        10,
-                        16
+                        15,
+                        17
                     ],
                     "MC": [
-                        11,
-                        5
+                        14,
+                        16
                     ]
                 }
             },
@@ -864,8 +751,7 @@
                     "mob8",
                     "mob9",
                     "mob10",
-                    "mob11",
-                    "gateGuard"
+                    "mob11"
                 ],
                 "positions": {
                     "eliteEnemy1": [
@@ -923,10 +809,6 @@
                     "mob11": [
                         14,
                         9
-                    ],
-                    "gateGuard": [
-                        17,
-                        15
                     ]
                 }
             },
