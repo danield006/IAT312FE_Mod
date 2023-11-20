@@ -8,13 +8,20 @@
             [
                 "center_cursor",
                 [
-                    "Monster (mobLord)"
+                    "Noble (Noble)"
                 ]
             ],
             [
                 "flicker_cursor",
                 [
-                    "Monster (mobLord)"
+                    "Noble (Noble)"
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "Aesc",
+                    "Left"
                 ]
             ],
             [
@@ -25,9 +32,16 @@
                 ]
             ],
             [
+                "add_portrait",
+                [
+                    "PossessedNoble",
+                    "Right"
+                ]
+            ],
+            [
                 "speak",
                 [
-                    "Lord",
+                    "PossessedNoble",
                     "ARGGGGGGGGGHHHHHHHHHH!"
                 ]
             ],
@@ -45,6 +59,18 @@
                 [
                     "Aesc",
                     "He seems to be commanding his troops still,|perhaps defeating him will affect the other monsters within the castle?|{var:MC_name}, end that man's suffering."
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "Aesc"
+                ]
+            ],
+            [
+                "remove_portrait",
+                [
+                    "PossessedNoble"
                 ]
             ],
             [
@@ -68,6 +94,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "center_cursor;Monster (mobLord)\nflicker_cursor;Monster (mobLord)\nspeak;Aesc;I believe that's Lord Rikard...|Turned into a horrific monster.\nspeak;Lord;ARGGGGGGGGGHHHHHHHHHH!\nadd_group;wave2;wave2;warp;push\nspeak;Aesc;He seems to be commanding his troops still,|perhaps defeating him will affect the other monsters within the castle?|{var:MC_name}, end that man's suffering.\nchange_objective_simple;Defeat the old Lord\nchange_objective_win;Defeat the old Lord\ncenter_cursor;MC\n"
+        "source": "center_cursor;Noble (Noble)\nflicker_cursor;Noble (Noble)\nadd_portrait;Aesc;Left\nspeak;Aesc;I believe that's Lord Rikard...|Turned into a horrific monster.\nadd_portrait;PossessedNoble;Right\nspeak;PossessedNoble;ARGGGGGGGGGHHHHHHHHHH!\nadd_group;wave2;wave2;warp;push\nspeak;Aesc;He seems to be commanding his troops still,|perhaps defeating him will affect the other monsters within the castle?|{var:MC_name}, end that man's suffering.\nremove_portrait;Aesc\nremove_portrait;PossessedNoble\nchange_objective_simple;Defeat the old Lord\nchange_objective_win;Defeat the old Lord\ncenter_cursor;MC\n"
     }
 ]

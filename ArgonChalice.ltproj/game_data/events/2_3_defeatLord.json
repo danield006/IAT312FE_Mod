@@ -3,7 +3,7 @@
         "name": "defeatLord",
         "trigger": "unit_death",
         "level_nid": "2_3",
-        "condition": "unit.nid == 'mobLord'",
+        "condition": "unit.nid == 'Noble'",
         "commands": [
             [
                 "add_portrait",

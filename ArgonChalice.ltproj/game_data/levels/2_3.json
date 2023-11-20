@@ -632,6 +632,16 @@
                 "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
+            },
+            {
+                "nid": "Noble",
+                "team": "enemy",
+                "ai": "Guard",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
+                "starting_traveler": null,
+                "generic": false
             }
         ],
         "regions": [
@@ -852,7 +862,6 @@
                     "mob1",
                     "mob2",
                     "mob3",
-                    "mobLord",
                     "mob4",
                     "mob5",
                     "mob6",
@@ -865,7 +874,8 @@
                     "mob4_1",
                     "mob1_1",
                     "mob7_1",
-                    "mob7_2"
+                    "mob7_2",
+                    "Noble"
                 ],
                 "positions": {
                     "mob4": [
@@ -904,10 +914,6 @@
                         4,
                         15
                     ],
-                    "mobLord": [
-                        13,
-                        14
-                    ],
                     "mob4_1": [
                         15,
                         4
@@ -935,6 +941,10 @@
                     "mob1_1": [
                         18,
                         2
+                    ],
+                    "Noble": [
+                        13,
+                        12
                     ]
                 }
             },
@@ -973,7 +983,7 @@
                 "positions": {
                     "Seth": [
                         13,
-                        13
+                        12
                     ],
                     "Lyon": [
                         6,
