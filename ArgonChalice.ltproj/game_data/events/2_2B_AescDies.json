@@ -1,0 +1,47 @@
+[
+    {
+        "name": "AescDies",
+        "trigger": "unit_death",
+        "level_nid": "2_2B",
+        "condition": "unit.nid == 'Aesc_Vulnerable'",
+        "commands": [
+            [
+                "add_portrait",
+                [
+                    "Aesc",
+                    "Right",
+                    "",
+                    "CloseEyes"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Aesc",
+                    "Ugh..."
+                ]
+            ],
+            [
+                "add_portrait",
+                [
+                    "MC",
+                    "Left"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Old man!"
+                ]
+            ],
+            [
+                "lose_game",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "add_portrait;Aesc;Right;;CloseEyes\nspeak;Aesc;Ugh...\nadd_portrait;MC;Left\nspeak;MC;Old man!\nlose_game\n"
+    }
+]

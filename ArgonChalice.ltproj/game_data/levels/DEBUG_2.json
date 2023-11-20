@@ -26,20 +26,7 @@
         "should_record": true,
         "units": [
             {
-                "nid": "Bone",
-                "team": "enemy",
-                "ai": "None",
-                "roam_ai": null,
-                "ai_group": null,
-                "starting_position": [
-                    2,
-                    5
-                ],
-                "starting_traveler": null,
-                "generic": false
-            },
-            {
-                "nid": "MC",
+                "nid": "Artur",
                 "team": "player",
                 "ai": "None",
                 "roam_ai": null,
@@ -52,7 +39,7 @@
                 "generic": false
             },
             {
-                "nid": "Aesc",
+                "nid": "Lute",
                 "team": "player",
                 "ai": "None",
                 "roam_ai": null,
@@ -63,6 +50,54 @@
                 ],
                 "starting_traveler": null,
                 "generic": false
+            },
+            {
+                "nid": "101",
+                "variant": null,
+                "level": 1,
+                "klass": "Mogall",
+                "faction": "Soldier",
+                "starting_items": [
+                    [
+                        "Lightning",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    5,
+                    5
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "102",
+                "variant": null,
+                "level": 1,
+                "klass": "Sword_Bonewalker",
+                "faction": "Soldier",
+                "starting_items": [
+                    [
+                        "Iron Lance",
+                        false
+                    ]
+                ],
+                "starting_skills": [],
+                "team": "enemy",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    4,
+                    6
+                ],
+                "starting_traveler": null,
+                "generic": true
             }
         ],
         "regions": [
@@ -102,6 +137,11 @@
             }
         ],
         "unit_groups": [],
-        "ai_groups": []
+        "ai_groups": [
+            {
+                "nid": "",
+                "trigger_threshold": 1
+            }
+        ]
     }
 ]

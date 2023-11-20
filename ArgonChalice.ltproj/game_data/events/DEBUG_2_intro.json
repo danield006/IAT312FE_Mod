@@ -4,17 +4,9 @@
         "trigger": "level_start",
         "level_nid": "DEBUG_2",
         "condition": "True",
-        "commands": [
-            [
-                "promote",
-                [
-                    "MC",
-                    "Harbinger"
-                ]
-            ]
-        ],
+        "commands": [],
         "only_once": false,
         "priority": 20,
-        "source": "promote;MC;Harbinger\n"
+        "source": ""
     }
 ]

@@ -40,6 +40,14 @@
             [
                 "Vulnerary",
                 false
+            ],
+            [
+                "Shine",
+                false
+            ],
+            [
+                "Ivaldi",
+                false
             ]
         ],
         "learned_skills": [],
@@ -72,7 +80,7 @@
             ],
             "Light": [
                 true,
-                1,
+                251,
                 251
             ],
             "Anima": [

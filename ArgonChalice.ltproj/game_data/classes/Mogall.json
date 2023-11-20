@@ -128,7 +128,7 @@
                 251
             ],
             "Default": [
-                false,
+                true,
                 0,
                 251
             ]
@@ -139,7 +139,7 @@
             0
         ],
         "map_sprite_nid": "Mogall",
-        "combat_anim_nid": null,
+        "combat_anim_nid": "Mogall",
         "fields": []
     }
 ]
