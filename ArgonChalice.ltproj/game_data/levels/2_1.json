@@ -6,8 +6,8 @@
         "bg_tilemap": null,
         "party": "MC",
         "music": {
-            "player_phase": "Distant Roads",
-            "enemy_phase": "Shadow of the Enemy",
+            "player_phase": "tacticalBattleTheme",
+            "enemy_phase": "tacticalBattleTheme",
             "other_phase": null,
             "enemy2_phase": null,
             "player_battle": "Attack",
