@@ -9,7 +9,7 @@
                 "speak",
                 [
                     "",
-                    "Before we continue, you should probably change your settings.|Press 'x' on an empty space without any type of unit.|Open up the 'options' menu and change what you prefer.|We recommend changing your resolution, disabling mouse controls, and increasing the speed of the text.|To continue the tutorial, press 'end' after clicking on an empty space to end your player phase OR move your character.|Did you already forget how to open options?|Try pressing 'c' during a textbox to open up the history.",
+                    "Before we continue, you should probably change your settings.|Press 'x' on an empty space without any type of unit.|Open up the 'options' menu and change what you prefer.|We recommend changing your resolution, disabling mouse controls, and increasing the speed of the text.|To continue the tutorial, press 'end' after clicking on an empty space to end your player phase OR move your character..",
                     "",
                     "",
                     "narration_top",
@@ -23,6 +23,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "speak;;Before we continue, you should probably change your settings.|Press 'x' on an empty space without any type of unit.|Open up the 'options' menu and change what you prefer.|We recommend changing your resolution, disabling mouse controls, and increasing the speed of the text.|To continue the tutorial, press 'end' after clicking on an empty space to end your player phase OR move your character.|Did you already forget how to open options?|Try pressing 'c' during a textbox to open up the history.;;;narration_top;;;;;3\n"
+        "source": "speak;;Before we continue, you should probably change your settings.|Press 'x' on an empty space without any type of unit.|Open up the 'options' menu and change what you prefer.|We recommend changing your resolution, disabling mouse controls, and increasing the speed of the text.|To continue the tutorial, press 'end' after clicking on an empty space to end your player phase OR move your character..;;;narration_top;;;;;3\n"
     }
 ]
