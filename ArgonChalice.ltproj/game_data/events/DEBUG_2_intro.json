@@ -17,12 +17,12 @@
                 "give_item",
                 [
                     "MC",
-                    "Divine (Divine)"
+                    "Lightning (Lightning)"
                 ]
             ]
         ],
         "only_once": false,
         "priority": 20,
-        "source": "give_wexp;MC (MC);Light;189\ngive_item;MC;Divine (Divine)"
+        "source": "give_wexp;MC (MC);Light;189\ngive_item;MC;Lightning (Lightning)\n"
     }
 ]

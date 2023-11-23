@@ -1,0 +1,70 @@
+[
+    {
+        "name": "DebugRegion",
+        "trigger": "DebugEvent",
+        "level_nid": "2_1",
+        "condition": "True",
+        "commands": [
+            [
+                "game_var",
+                [
+                    "_ch1BonesEscapeFlag",
+                    "False"
+                ]
+            ],
+            [
+                "game_var",
+                [
+                    "_ch1VillageDestroyed",
+                    "False"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#kill_unit;Bone (Bone)"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#move_unit;Bone (Bone);4,3;warp;push"
+                ]
+            ],
+            [
+                "comment",
+                [
+                    "#game_var;_ch1BonesEscapeTimer;3"
+                ]
+            ],
+            [
+                "give_exp",
+                [
+                    "Senya",
+                    "200"
+                ]
+            ],
+            [
+                "give_exp",
+                [
+                    "MC",
+                    "100"
+                ]
+            ],
+            [
+                "give_item",
+                [
+                    "Schuri",
+                    "Dragonshield (Dragonshield)"
+                ]
+            ],
+            [
+                "win_game",
+                []
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "game_var;_ch1BonesEscapeFlag;False\ngame_var;_ch1VillageDestroyed;False\n#kill_unit;Bone (Bone)\n#move_unit;Bone (Bone);4,3;warp;push\n#game_var;_ch1BonesEscapeTimer;3\ngive_exp;Senya;200;\ngive_exp;MC;100\ngive_item;Schuri;Dragonshield (Dragonshield)\nwin_game\n"
+    }
+]

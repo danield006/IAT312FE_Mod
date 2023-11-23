@@ -142,14 +142,14 @@
                 "speak",
                 [
                     "Schuri",
-                    "The control's gone!|You can fill me in on things later, what's our next move?"
+                    "I'm...I'm free!|Where's Lilith?"
                 ]
             ],
             [
                 "speak",
                 [
                     "MC",
-                    "No...Lilith is gone."
+                    "Lilith is...dead...."
                 ]
             ],
             [
@@ -209,7 +209,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "...you.|You didn't...?"
+                    "...you...|You didn't...?"
                 ]
             ],
             [
@@ -237,7 +237,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "You could have saved her...|She didn't have to die..."
+                    "You...could have saved her...|She didn't have to die..."
                 ]
             ],
             [
@@ -251,7 +251,7 @@
                 "speak",
                 [
                     "MC",
-                    "I would have died.|Is it so wrong to want to live?|It was a struggle to defeat Lilith and to that end...|I had to do it."
+                    "...I had to do it."
                 ]
             ],
             [
@@ -265,7 +265,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "I...|I would have died there too if it came down to it right?"
+                    "Why...why didn't I die?|I was controlled too right?|...Would I have died there too if it came down to it?"
                 ]
             ],
             [
@@ -286,7 +286,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "There's no to say more...I understand.|....."
+                    "There's no need to say more...I understand.|....."
                 ]
             ],
             [
@@ -306,7 +306,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "Where's Senya?|Let's give her a proper burial.|Along with Sir Cyrus."
+                    "Let's at least give her a proper burial.|Along with Sir Cyrus."
                 ]
             ],
             [
@@ -406,7 +406,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "Please enjoy these lilies"
+                    "Please enjoy these lilies Senya...|They were always your favorite."
                 ]
             ],
             [
@@ -453,7 +453,7 @@
                 "speak",
                 [
                     "Schuri",
-                    "I suppose I'll go back home.|Staying at the castle brings up too many memories."
+                    "I suppose I'll go back home...|Staying at the castle brings up too many memories.|Without Sir Cyrus around, my family will likely want me back."
                 ]
             ],
             [
@@ -488,14 +488,14 @@
                 "speak",
                 [
                     "Schuri",
-                    "It would have had happened eventually.|It's not like my choice would be stripped away|You can see it more like an arranged blind date?"
+                    "I...|It's not like my choice would be completely stripped away.|I think it would do me some good to settle down after the adventure we had."
                 ]
             ],
             [
                 "speak",
                 [
                     "MC",
-                    "As long as you're happy.|Make sure I'm invited to your wedding.|If the guy's no good, I'll help you beat some sense into him."
+                    "I see...|As long as you're happy.|Make sure I'm invited to your wedding.|If the guy's no good, I'll help you beat some sense into him."
                 ]
             ],
             [
@@ -516,7 +516,7 @@
                 "speak",
                 [
                     "MC",
-                    "It's funny how the opposite of our dreams was what had occurred|We all thought the three of us would stick together...",
+                    "I... thought the three of us would stick together...",
                     "",
                     "",
                     "thought_bubble"
@@ -652,6 +652,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#bad bonds, schuri lives\n#speak;;this is ending 9;;;narration\nmusic;bittersweetEpilogue\nadd_portrait;MC;Left\nexpression;MC;CloseEyes\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;It's over now...|but at what cost?\nwait;500\nadd_portrait;PossessedSchuri;Right\nexpression;PossessedSchuri;CloseEyes\nwait;250\nremove_portrait;PossessedSchuri\nadd_portrait;Schuri;Right\nexpression;Schuri;CloseEyes\nspeak;Schuri;Ugh...\nexpression;MC;OpenEyes\nspeak;MC;...Schuri?|Schuri?!\nexpression;Schuri;OpenEyes\nbop_portrait;Schuri\nspeak;Schuri;The control's gone!|You can fill me in on things later, what's our next move?\nspeak;MC;No...Lilith is gone.\nbop_portrait;Schuri\nspeak;Schuri;That's great!\nexpression;MC;HalfCloseEyes\nspeak;MC;Well...\nspeak;Schuri;...{var:MC_name}?|What's wrong?\nspeak;MC;Senya is...\nmirror_portrait;Schuri\nmirror_portrait;Schuri\nspeak;Schuri;...you.|You didn't...?\nmove_portrait;Schuri;MidRight\nspeak;Schuri;Please tell me you didn't...\nspeak;MC;I'm sorry...\nspeak;Schuri;You could have saved her...|She didn't have to die...\nexpression;MC;OpenEyes\nspeak;MC;I would have died.|Is it so wrong to want to live?|It was a struggle to defeat Lilith and to that end...|I had to do it.\nexpression;Schuri;CloseEyes\nspeak;Schuri;I...|I would have died there too if it came down to it right?\nexpression;Schuri;OpenEyes\nspeak;MC;I...\nspeak;Schuri;There's no to say more...I understand.|.....\nmirror_portrait;Schuri\nexpression;Schuri;HalfCloseEyes\nspeak;Schuri;Where's Senya?|Let's give her a proper burial.|Along with Sir Cyrus.\nexpression;MC;CloseEyes\nspeak;MC;Let's.\nmusic_fade_back;2500\nwait;500\ntransition;close;1200\nmusic;killedPartyEnd\nmulti_remove_portrait;Schuri;MC\nchange_background;Clearing\ntransition;open;1200\nmulti_add_portrait;Schuri;MidLeft;MC;Left\nwait;2000\nmove_portrait;Schuri;Right\nsound;forestStep\nwait;500\nspeak;Schuri;Please enjoy these lilies\nwait;1000\nspeak;Schuri;...what do you plan to do now?\nmirror_portrait;Schuri\nspeak;MC;To be honest...I'm not sure.|Perhaps I'll stay and look after the castle.|Or maybe...I'll go see the world.\nspeak;Schuri;I see...\nspeak;MC;What about you?\nspeak;Schuri;I suppose I'll go back home.|Staying at the castle brings up too many memories.\nexpression;MC;Smile\nspeak;MC;That sounds nice.|I guess we're splitting up from here on out.\nspeak;Schuri;Yes...|Perhaps the next time we meet, my family will have found a partner for me.\nspeak;MC;And you're fine with that?\nspeak;Schuri;It would have had happened eventually.|It's not like my choice would be stripped away|You can see it more like an arranged blind date?\nspeak;MC;As long as you're happy.|Make sure I'm invited to your wedding.|If the guy's no good, I'll help you beat some sense into him.\nexpression;Schuri;Smile\nspeak;Schuri;Hahaha I suppose you would.|Senya would have done the same thing.\nspeak;MC;It's funny how the opposite of our dreams was what had occurred|We all thought the three of us would stick together...;;;thought_bubble\nexpression;MC;CloseEyes\nspeak;MC;But Fate had other plans;;;thought_bubble\nexpression;MC;OpenEyes\nspeak;MC;I suppose this is goodbye then.|I hope wherever we all go, it will in be in happiness.\nspeak;Schuri;Yes.\nmirror_portrait;Schuri\nexpression;Schuri;HalfCloseEyes\nend_skip\nspeak;Schuri;May the two of you rest in peace.\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nmulti_remove_portrait;MC;Schuri\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nend_skip\nspeak;;Ending Achieved:|To The Where The Lilies Bloom;center;;cinematic\nset_next_chapter;2222\n"
+        "source": "#bad bonds, schuri lives\n#speak;;this is ending 9;;;narration\nmusic;bittersweetEpilogue\nadd_portrait;MC;Left\nexpression;MC;CloseEyes\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;It's over now...|but at what cost?\nwait;500\nadd_portrait;PossessedSchuri;Right\nexpression;PossessedSchuri;CloseEyes\nwait;250\nremove_portrait;PossessedSchuri\nadd_portrait;Schuri;Right\nexpression;Schuri;CloseEyes\nspeak;Schuri;Ugh...\nexpression;MC;OpenEyes\nspeak;MC;...Schuri?|Schuri?!\nexpression;Schuri;OpenEyes\nbop_portrait;Schuri\nspeak;Schuri;I'm...I'm free!|Where's Lilith?\nspeak;MC;Lilith is...dead....\nbop_portrait;Schuri\nspeak;Schuri;That's great!\nexpression;MC;HalfCloseEyes\nspeak;MC;Well...\nspeak;Schuri;...{var:MC_name}?|What's wrong?\nspeak;MC;Senya is...\nmirror_portrait;Schuri\nmirror_portrait;Schuri\nspeak;Schuri;...you...|You didn't...?\nmove_portrait;Schuri;MidRight\nspeak;Schuri;Please tell me you didn't...\nspeak;MC;I'm sorry...\nspeak;Schuri;You...could have saved her...|She didn't have to die...\nexpression;MC;OpenEyes\nspeak;MC;...I had to do it.\nexpression;Schuri;CloseEyes\nspeak;Schuri;Why...why didn't I die?|I was controlled too right?|...Would I have died there too if it came down to it?\nexpression;Schuri;OpenEyes\nspeak;MC;I...\nspeak;Schuri;There's no need to say more...I understand.|.....\nmirror_portrait;Schuri\nexpression;Schuri;HalfCloseEyes\nspeak;Schuri;Let's at least give her a proper burial.|Along with Sir Cyrus.\nexpression;MC;CloseEyes\nspeak;MC;Let's.\nmusic_fade_back;2500\nwait;500\ntransition;close;1200\nmusic;killedPartyEnd\nmulti_remove_portrait;Schuri;MC\nchange_background;Clearing\ntransition;open;1200\nmulti_add_portrait;Schuri;MidLeft;MC;Left\nwait;2000\nmove_portrait;Schuri;Right\nsound;forestStep\nwait;500\nspeak;Schuri;Please enjoy these lilies Senya...|They were always your favorite.\nwait;1000\nspeak;Schuri;...what do you plan to do now?\nmirror_portrait;Schuri\nspeak;MC;To be honest...I'm not sure.|Perhaps I'll stay and look after the castle.|Or maybe...I'll go see the world.\nspeak;Schuri;I see...\nspeak;MC;What about you?\nspeak;Schuri;I suppose I'll go back home...|Staying at the castle brings up too many memories.|Without Sir Cyrus around, my family will likely want me back.\nexpression;MC;Smile\nspeak;MC;That sounds nice.|I guess we're splitting up from here on out.\nspeak;Schuri;Yes...|Perhaps the next time we meet, my family will have found a partner for me.\nspeak;MC;And you're fine with that?\nspeak;Schuri;I...|It's not like my choice would be completely stripped away.|I think it would do me some good to settle down after the adventure we had.\nspeak;MC;I see...|As long as you're happy.|Make sure I'm invited to your wedding.|If the guy's no good, I'll help you beat some sense into him.\nexpression;Schuri;Smile\nspeak;Schuri;Hahaha I suppose you would.|Senya would have done the same thing.\nspeak;MC;I... thought the three of us would stick together...;;;thought_bubble\nexpression;MC;CloseEyes\nspeak;MC;But Fate had other plans;;;thought_bubble\nexpression;MC;OpenEyes\nspeak;MC;I suppose this is goodbye then.|I hope wherever we all go, it will in be in happiness.\nspeak;Schuri;Yes.\nmirror_portrait;Schuri\nexpression;Schuri;HalfCloseEyes\nend_skip\nspeak;Schuri;May the two of you rest in peace.\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nmulti_remove_portrait;MC;Schuri\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nend_skip\nspeak;;Ending Achieved:|To The Where The Lilies Bloom;center;;cinematic\nset_next_chapter;2222\n"
     }
 ]

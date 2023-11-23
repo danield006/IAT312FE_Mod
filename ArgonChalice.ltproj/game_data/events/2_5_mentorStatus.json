@@ -6,27 +6,9 @@
         "condition": "game.turncount == 3",
         "commands": [
             [
-                "comment",
+                "resurrect",
                 [
-                    "#mentor will bust in to help the big boss at very reduced stats"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#does not matter if killed in ch4 bc he's reanimated"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#mostly to give some emotional damage to the chars"
-                ]
-            ],
-            [
-                "comment",
-                [
-                    "#diff reactions depending on what player did in ch4"
+                    "Mentor"
                 ]
             ],
             [
@@ -46,55 +28,6 @@
             ],
             [
                 "if",
-                [
-                    "game.game_vars['_ch4MentorKilled'] == True"
-                ]
-            ],
-            [
-                "if",
-                [
-                    "game.game_vars['_SenyaControlled'] == True and game.game_vars['_SchuriControlled'] == True"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Teach...?"
-                ]
-            ],
-            [
-                "elif",
-                [
-                    "game.game_vars['_SenyaControlled'] == True"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Schuri",
-                    "Sir Cyrus?! But we....we put you to rest..."
-                ]
-            ],
-            [
-                "elif",
-                [
-                    "game.game_vars['_SchuriControlled'] == True"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "...No matter what we did huh?"
-                ]
-            ],
-            [
-                "end",
-                []
-            ],
-            [
-                "elif",
                 [
                     "game.game_vars['_ch4MentorKilled'] == False"
                 ]
@@ -153,6 +86,31 @@
                 [
                     "Senya",
                     "You shut your mouth bitch!"
+                ]
+            ],
+            [
+                "else",
+                []
+            ],
+            [
+                "speak",
+                [
+                    "MC",
+                    "Teach...?"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Schuri",
+                    "Sir Cyrus?!|Please stay back!"
+                ]
+            ],
+            [
+                "speak",
+                [
+                    "Senya",
+                    "Is he friend or...."
                 ]
             ],
             [
@@ -253,6 +211,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#mentor will bust in to help the big boss at very reduced stats\n#does not matter if killed in ch4 bc he's reanimated\n#mostly to give some emotional damage to the chars\n#diff reactions depending on what player did in ch4\nadd_unit;Mentor;8,11;fade;push\nflicker_cursor;Mentor\nif;game.game_vars['_ch4MentorKilled'] == True\n    if;game.game_vars['_SenyaControlled'] == True and game.game_vars['_SchuriControlled'] == True\n        speak;MC;Teach...?\n    elif;game.game_vars['_SenyaControlled'] == True\n        speak;Schuri;Sir Cyrus?! But we....we put you to rest...\n    elif;game.game_vars['_SchuriControlled'] == True\n        speak;Senya;...No matter what we did huh?\n    end\nelif;game.game_vars['_ch4MentorKilled'] == False\n    if;game.game_vars['_SenyaControlled'] == True and game.game_vars['_SchuriControlled'] == True\n        speak;MC;Teach...?\n    elif;game.game_vars['_SenyaControlled'] == True\n        speak;Schuri;Sir Cyrus?!|Please stay back!\n    elif;_SchuriControlled==True\n        speak;Senya;...I knew we should have put him down\n        speak;Lilith;No care for your mentor eh?;;;noir\n        speak;Senya;You shut your mouth bitch!\n    end\nend\n#changing phase music\nchange_team;Mentor;other\nflicker_cursor;Mentor\nmove_unit;Mentor;8,3;warp\nspeak;Lilith;Y-You!\ninteract_unit;Mentor;Lilith (Lilith);crit1,crit2\nend_skip\nspeak;Lilith;To still have enough will to launch a suicide attack like that...|I underestimated him.\nadd_portrait;Mentor;FarLeft\nspeak;Mentor;Schuri...Senya...{var:MC_name}...finish her.\nremove_portrait;Mentor\nchange_music;player_phase;finalBossFightMid\nchange_music;enemy_phase;finalBossFightMid\n"
+        "source": "resurrect;Mentor\nadd_unit;Mentor;8,11;fade;push\nflicker_cursor;Mentor\nif;game.game_vars['_ch4MentorKilled'] == False\n    if;game.game_vars['_SenyaControlled'] == True and game.game_vars['_SchuriControlled'] == True\n        speak;MC;Teach...?\n    elif;game.game_vars['_SenyaControlled'] == True\n        speak;Schuri;Sir Cyrus?!|Please stay back!\n    elif;_SchuriControlled==True\n        speak;Senya;...I knew we should have put him down\n        speak;Lilith;No care for your mentor eh?;;;noir\n        speak;Senya;You shut your mouth bitch!\n    else\n        speak;MC;Teach...?\n        speak;Schuri;Sir Cyrus?!|Please stay back!\n        speak;Senya;Is he friend or....\n    end\nend\n#changing phase music\nchange_team;Mentor;other\nflicker_cursor;Mentor\nmove_unit;Mentor;8,3;warp\nspeak;Lilith;Y-You!\ninteract_unit;Mentor;Lilith (Lilith);crit1,crit2\nend_skip\nspeak;Lilith;To still have enough will to launch a suicide attack like that...|I underestimated him.\nadd_portrait;Mentor;FarLeft\nspeak;Mentor;Schuri...Senya...{var:MC_name}...finish her.\nremove_portrait;Mentor\nchange_music;player_phase;finalBossFightMid\nchange_music;enemy_phase;finalBossFightMid\n"
     }
 ]

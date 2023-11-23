@@ -181,49 +181,6 @@
                 ]
             ],
             [
-                "move_unit",
-                [
-                    "Bone (Bone)",
-                    "0,4",
-                    "",
-                    "push"
-                ]
-            ],
-            [
-                "remove_unit",
-                [
-                    "Bone (Bone)",
-                    "fade"
-                ]
-            ],
-            [
-                "add_group",
-                [
-                    "Bandits3",
-                    "Bandits3",
-                    "immediate"
-                ]
-            ],
-            [
-                "game_var",
-                [
-                    "_ch1BonesEscapeFlag",
-                    "True"
-                ]
-            ],
-            [
-                "change_objective_simple",
-                [
-                    "Rout the enemy."
-                ]
-            ],
-            [
-                "change_objective_win",
-                [
-                    "Rout the enemy."
-                ]
-            ],
-            [
                 "comment",
                 [
                     "########################################"
@@ -323,6 +280,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "flicker_cursor;4,3\nif;game.game_vars['_ch1BonesEscapeTimer'] == 0\n    add_portrait;Bone;Left\n    speak;Bone;Tch, stupid brats getting in the way of a good score.|Heh...good thing I hired all those cheap mercs.|They'll be useful in guaranteeing our escape.\n    add_portrait;Bandit1;Right\n    speak;Bandit1;Boss! We leaving?\n    speak;Bone;Let the hired mercs deal with the brats, grab as many things as you can!|We'll leave in 3 turns!\n    remove_portrait;Bandit1\n    remove_portrait;Bone\n    inc_game_var;_ch1BonesEscapeTimer\n    #########################################\nelif;game.game_vars['_ch1BonesEscapeTimer'] == 1\n    add_portrait;Bone;Left\n    add_portrait;Bandit1;Right\n    speak;Bandit1;Almost got all the gold boss! 2 more turn!\n    speak;Bone;I don't need a status update you idiot!|Keep grabbing stuff!\n    remove_portrait;Bandit1\n    remove_portrait;Bone\n    inc_game_var;_ch1BonesEscapeTimer\nelif;game.game_vars['_ch1BonesEscapeTimer'] == 2\n    add_portrait;Bone;Left\n    add_portrait;Bandit1;Right\n    speak;Bandit1;Almost got everything boss!\n    speak;Bone;What did I just say you numbskull!\n    remove_portrait;Bandit1\n    remove_portrait;Bone\n    inc_game_var;_ch1BonesEscapeTimer\n    move_unit;Bone (Bone);0,4;;push\n    remove_unit;Bone (Bone);fade\n    add_group;Bandits3;Bandits3;immediate\n    game_var;_ch1BonesEscapeFlag;True\n    change_objective_simple;Rout the enemy.\n    change_objective_win;Rout the enemy.\n    ########################################\nelif;game.game_vars['_ch1BonesEscapeTimer'] == 3\n    add_portrait;Bone;Left\n    add_portrait;Bandit1;Right\n    speak;Bandit1;We got everything boss!\n    speak;Bone;Then let's get the hell out of here!|The rest of you!|Stay here and deal with these brats!|\n    remove_portrait;Bandit1\n    remove_portrait;Bone\n    inc_game_var;_ch1BonesEscapeTimer\n    move_unit;Bone (Bone);0,4;;push\n    remove_unit;Bone (Bone);fade\n    game_var;_ch1BonesEscapeFlag;True\n    change_objective_simple;Rout the enemy.\n    change_objective_win;Rout the enemy.\nend\n"
+        "source": "flicker_cursor;4,3\nif;game.game_vars['_ch1BonesEscapeTimer'] == 0\n    add_portrait;Bone;Left\n    speak;Bone;Tch, stupid brats getting in the way of a good score.|Heh...good thing I hired all those cheap mercs.|They'll be useful in guaranteeing our escape.\n    add_portrait;Bandit1;Right\n    speak;Bandit1;Boss! We leaving?\n    speak;Bone;Let the hired mercs deal with the brats, grab as many things as you can!|We'll leave in 3 turns!\n    remove_portrait;Bandit1\n    remove_portrait;Bone\n    inc_game_var;_ch1BonesEscapeTimer\n    #########################################\nelif;game.game_vars['_ch1BonesEscapeTimer'] == 1\n    add_portrait;Bone;Left\n    add_portrait;Bandit1;Right\n    speak;Bandit1;Almost got all the gold boss! 2 more turn!\n    speak;Bone;I don't need a status update you idiot!|Keep grabbing stuff!\n    remove_portrait;Bandit1\n    remove_portrait;Bone\n    inc_game_var;_ch1BonesEscapeTimer\nelif;game.game_vars['_ch1BonesEscapeTimer'] == 2\n    add_portrait;Bone;Left\n    add_portrait;Bandit1;Right\n    speak;Bandit1;Almost got everything boss!\n    speak;Bone;What did I just say you numbskull!\n    remove_portrait;Bandit1\n    remove_portrait;Bone\n    inc_game_var;_ch1BonesEscapeTimer\n    ########################################\nelif;game.game_vars['_ch1BonesEscapeTimer'] == 3\n    add_portrait;Bone;Left\n    add_portrait;Bandit1;Right\n    speak;Bandit1;We got everything boss!\n    speak;Bone;Then let's get the hell out of here!|The rest of you!|Stay here and deal with these brats!|\n    remove_portrait;Bandit1\n    remove_portrait;Bone\n    inc_game_var;_ch1BonesEscapeTimer\n    move_unit;Bone (Bone);0,4;;push\n    remove_unit;Bone (Bone);fade\n    game_var;_ch1BonesEscapeFlag;True\n    change_objective_simple;Rout the enemy.\n    change_objective_win;Rout the enemy.\nend\n"
     }
 ]

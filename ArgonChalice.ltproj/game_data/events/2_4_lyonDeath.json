@@ -51,6 +51,6 @@
         ],
         "only_once": true,
         "priority": 20,
-        "source": "add_portrait;Lyon;Right\nmove_portrait;Lyon;FarRight\nspeak;Lyon;How could this be...\nremove_portrait;Lyon\nhide_layer;lyonAppears\nwait;1000;\nwin_game;\n"
+        "source": "add_portrait;Lyon;Right\nmove_portrait;Lyon;FarRight\nspeak;Lyon;How could this be...\nremove_portrait;Lyon\nhide_layer;lyonAppears\nwait;1000\nwin_game\n"
     }
 ]

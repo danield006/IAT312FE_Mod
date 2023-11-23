@@ -639,6 +639,23 @@
                 "time_left": null,
                 "only_once": false,
                 "interrupt_move": false
+            },
+            {
+                "nid": "DebugRegion",
+                "region_type": "event",
+                "position": [
+                    24,
+                    5
+                ],
+                "size": [
+                    1,
+                    3
+                ],
+                "sub_nid": "DebugEvent",
+                "condition": "True",
+                "time_left": null,
+                "only_once": false,
+                "interrupt_move": false
             }
         ],
         "unit_groups": [

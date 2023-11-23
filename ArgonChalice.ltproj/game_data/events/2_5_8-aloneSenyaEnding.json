@@ -229,7 +229,7 @@
                 "speak",
                 [
                     "Senya",
-                    "So...what you're saying is...|You saved me but killed Schuri?|Why...?"
+                    "So...she's....dead?|I lived?"
                 ]
             ],
             [
@@ -243,7 +243,7 @@
                 "speak",
                 [
                     "Senya",
-                    "Why couldn't you have saved her too?!|What made you choose between the two of us?!"
+                    "Why.|Why did you...|Why didn't you save her?|What made you choose between the two of us?!"
                 ]
             ],
             [
@@ -257,7 +257,7 @@
                 "speak",
                 [
                     "MC",
-                    "I...|I had to choose between my own life and yours!"
+                    "I...|had no choice..."
                 ]
             ],
             [
@@ -271,97 +271,13 @@
                 "speak",
                 [
                     "Senya",
-                    "You would have killed me.|Did our time spent together mean nothing to you?!"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Was I supposed to just stand there and take it?!|If I died, then everything we did was for naught."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "How...|How could you look at Schuri as you plunged your blade into her heart!?|I was still there....."
+                    "You...|I should have....|Why didn't I...."
                 ]
             ],
             [
                 "wait",
                 [
                     "1000"
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "Senya",
-                    "HalfCloseEyes"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "Schuri...|Schuri was still there....."
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "Senya",
-                    "NoSmile"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "The last thing she saw was you, {var:MC_name}.|I was still able to see...|She saw the moment you killed her."
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "MC",
-                    "CloseEyes"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "......I-"
-                ]
-            ],
-            [
-                "expression",
-                [
-                    "MC",
-                    "NoSmile"
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "{var:MC_name}, I can never forgive you for what you had done."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "MC",
-                    "Senya...I'm sorry but just like how you thought you were doing the right thing|I thought I was doing the right thing.|I won't regret my decisions."
-                ]
-            ],
-            [
-                "speak",
-                [
-                    "Senya",
-                    "Don't be sorry.|Because I know you're not.|I don't see you right now.|I'm leaving."
                 ]
             ],
             [
@@ -509,7 +425,7 @@
                 "speak",
                 [
                     "Senya",
-                    "There's too many memories here.|...I've lost everything again."
+                    "There's too many memories here.|...I've lost everything again..."
                 ]
             ],
             [
@@ -527,16 +443,6 @@
                 ]
             ],
             [
-                "speak",
-                [
-                    "MC",
-                    "Of course she can't see me the same.|After all...I killed Schuri.|And would have killed her too if it came down to it.",
-                    "",
-                    "",
-                    "thought_bubble"
-                ]
-            ],
-            [
                 "expression",
                 [
                     "MC",
@@ -551,17 +457,10 @@
                 ]
             ],
             [
-                "expression",
-                [
-                    "Senya",
-                    "Smile"
-                ]
-            ],
-            [
                 "speak",
                 [
                     "Senya",
-                    "What do you plan to do?"
+                    "Maybe..."
                 ]
             ],
             [
@@ -688,7 +587,7 @@
                 "speak",
                 [
                     "",
-                    "True to her word. Senya left.|However her actions differed from the words she spoke that day.|News of blonde warrior destroying bandit camps had appeared.|Perhaps it was her own way of taking from what had taken from her.|Or it was to forget what happened that fateful day.|With communications between us ceased...|I could only hope that the dreaded news of death does not come.",
+                    "True to her word. Senya left.|However her actions differed from the words she spoke that day.|News of a blonde warrior destroying bandit camps had appeared.|Perhaps it was her own way of taking from what had taken from her.|Or it was to forget what happened that fateful day.|That was the last day I ever saw her.|I could only hope that the dreaded news of death does not come.",
                     "",
                     "",
                     "narration_top"
@@ -762,6 +661,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "#bad bonds, senya lives\n#speak;;this is ending 8;;;narration\nmusic;bittersweetEpilogue\nadd_portrait;MC;Left\nexpression;MC;CloseEyes\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;It's over now...|but at what cost?\nwait;500\nadd_portrait;PossessedSenya;Right\nexpression;PossessedSenya;CloseEyes\nwait;250\nremove_portrait;PossessedSenya\nadd_portrait;Senya;Right\nspeak;Senya;Ugh...\nexpression;Senya;CloseEyes\nexpression;MC;OpenEyes\nspeak;MC;...Senya?|Senya?!\nexpression;Senya;Smile\nbop_portrait;Senya\nspeak;Senya;I'm-|I'm free!\nmirror_portrait;Senya\nmirror_portrait;Senya\nspeak;Senya;Where's that stupid mage?|Lemme go at her!\nspeak;MC;Lilith is defeated!|It's all over now.\nexpression;MC;HalfCloseEyes\nspeak;MC;It's all over...\nspeak;Senya;That's a good thing isn't it? Why the dejected look on your face?|Don't worry, after Lilith's defeat, it dispelled her control.\nmirror_portrait;Senya\nmirror_portrait;Senya\nexpression;Senya;NoSmile\nspeak;Senya;Wait...where's Schuri?\nspeak;MC;Schuri is...\nspeak;Senya;So...what you're saying is...|You saved me but killed Schuri?|Why...?\nmove_portrait;Senya;MidRight\nspeak;Senya;Why couldn't you have saved her too?!|What made you choose between the two of us?!\nexpression;MC;OpenEyes\nspeak;MC;I...|I had to choose between my own life and yours!\nmove_portrait;Senya;MidRight\nspeak;Senya;You would have killed me.|Did our time spent together mean nothing to you?!\nspeak;MC;Was I supposed to just stand there and take it?!|If I died, then everything we did was for naught.\nspeak;Senya;How...|How could you look at Schuri as you plunged your blade into her heart!?|I was still there.....\nwait;1000\nexpression;Senya;HalfCloseEyes\nspeak;Senya;Schuri...|Schuri was still there.....\nexpression;Senya;NoSmile\nspeak;Senya;The last thing she saw was you, {var:MC_name}.|I was still able to see...|She saw the moment you killed her.\nexpression;MC;CloseEyes\nspeak;MC;......I-\nexpression;MC;NoSmile\nspeak;Senya;{var:MC_name}, I can never forgive you for what you had done.\nspeak;MC;Senya...I'm sorry but just like how you thought you were doing the right thing|I thought I was doing the right thing.|I won't regret my decisions.\nspeak;Senya;Don't be sorry.|Because I know you're not.|I don't see you right now.|I'm leaving.\nmirror_portrait;Senya\nmove_portrait;Senya;OffscreenRight\nspeak;MC;Wait!|.....\ntransition;close;1200\nchange_background;InsideCastle\ntransition;open;1200\nmulti_add_portrait;Senya;Right;MC;Left\nspeak;;A few days later...;;;narration_top\nspeak;MC;So about that day...\nspeak;Senya;I get that the two of us were against you.|It's just that...|Why was I the one who survived again?.....\nspeak;MC;......\nwait;1000\nspeak;Senya;You know...this place doesn't suit me.|As I travelled...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;The new sights has always amazed lil' me.\nbop_portrait;MC\nspeak;MC;...You're leaving?\nexpression;Senya;OpenEyes\nspeak;Senya;I've done a lot of thinking and well...|I'm going to leave this castle...|There's still a lot of things I still need to do and...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;There's too many memories here.|...I've lost everything again.\nexpression;MC;HalfCloseEyes\nspeak;MC;Right...\nspeak;MC;Of course she can't see me the same.|After all...I killed Schuri.|And would have killed her too if it came down to it.;;;thought_bubble\nexpression;MC;OpenEyes\nspeak;MC;I wish you the best.|I'll still see you around?\nexpression;Senya;Smile\nspeak;Senya;What do you plan to do?\nspeak;MC;I'll be here taking care of this place.|Like you...this place holds so many memories.|I want to take care of them.\nmusic_fade_back;3000\nspeak;Senya;Heh...that does sound like something you would do...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;Schuri...\nexpression;Senya;OpenEyes\nspeak;Senya;I think Schuri would've appreciated that.\nexpression;MC;Smile\nexpression;Senya;Smile\nspeak;MC;Then I'll see you around.\nmirror_portrait;MC\nmove_portrait;MC;OffscreenLeft\nend_skip\nmusic;chopin_waltz_bminor\nexpression;Senya;HalfCloseEyes\nspeak;Senya;All those days we all spent together...|I won't forget them.\nexpression;Senya;CloseEyes\nspeak;Senya;Goodbye.\nspeak;;True to her word. Senya left.|However her actions differed from the words she spoke that day.|News of blonde warrior destroying bandit camps had appeared.|Perhaps it was her own way of taking from what had taken from her.|Or it was to forget what happened that fateful day.|With communications between us ceased...|I could only hope that the dreaded news of death does not come.;;;narration_top\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nmulti_remove_portrait;MC;Senya\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nend_skip\nspeak;;Ending Achieved:|To The Shackles of Our Past;center;;cinematic\nset_next_chapter;2222\n"
+        "source": "#bad bonds, senya lives\n#speak;;this is ending 8;;;narration\nmusic;bittersweetEpilogue\nadd_portrait;MC;Left\nexpression;MC;CloseEyes\nspeak;MC;...\nexpression;MC;HalfCloseEyes\nspeak;MC;It's over now...|but at what cost?\nwait;500\nadd_portrait;PossessedSenya;Right\nexpression;PossessedSenya;CloseEyes\nwait;250\nremove_portrait;PossessedSenya\nadd_portrait;Senya;Right\nspeak;Senya;Ugh...\nexpression;Senya;CloseEyes\nexpression;MC;OpenEyes\nspeak;MC;...Senya?|Senya?!\nexpression;Senya;Smile\nbop_portrait;Senya\nspeak;Senya;I'm-|I'm free!\nmirror_portrait;Senya\nmirror_portrait;Senya\nspeak;Senya;Where's that stupid mage?|Lemme go at her!\nspeak;MC;Lilith is defeated!|It's all over now.\nexpression;MC;HalfCloseEyes\nspeak;MC;It's all over...\nspeak;Senya;That's a good thing isn't it? Why the dejected look on your face?|Don't worry, after Lilith's defeat, it dispelled her control.\nmirror_portrait;Senya\nmirror_portrait;Senya\nexpression;Senya;NoSmile\nspeak;Senya;Wait...where's Schuri?\nspeak;MC;Schuri is...\nspeak;Senya;So...she's....dead?|I lived?\nmove_portrait;Senya;MidRight\nspeak;Senya;Why.|Why did you...|Why didn't you save her?|What made you choose between the two of us?!\nexpression;MC;OpenEyes\nspeak;MC;I...|had no choice...\nmove_portrait;Senya;MidRight\nspeak;Senya;You...|I should have....|Why didn't I....\nwait;1000\nmirror_portrait;Senya\nmove_portrait;Senya;OffscreenRight\nspeak;MC;Wait!|.....\ntransition;close;1200\nchange_background;InsideCastle\ntransition;open;1200\nmulti_add_portrait;Senya;Right;MC;Left\nspeak;;A few days later...;;;narration_top\nspeak;MC;So about that day...\nspeak;Senya;I get that the two of us were against you.|It's just that...|Why was I the one who survived again?.....\nspeak;MC;......\nwait;1000\nspeak;Senya;You know...this place doesn't suit me.|As I travelled...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;The new sights has always amazed lil' me.\nbop_portrait;MC\nspeak;MC;...You're leaving?\nexpression;Senya;OpenEyes\nspeak;Senya;I've done a lot of thinking and well...|I'm going to leave this castle...|There's still a lot of things I still need to do and...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;There's too many memories here.|...I've lost everything again...\nexpression;MC;HalfCloseEyes\nspeak;MC;Right...\nexpression;MC;OpenEyes\nspeak;MC;I wish you the best.|I'll still see you around?\nspeak;Senya;Maybe...\nspeak;MC;I'll be here taking care of this place.|Like you...this place holds so many memories.|I want to take care of them.\nmusic_fade_back;3000\nspeak;Senya;Heh...that does sound like something you would do...\nexpression;Senya;HalfCloseEyes\nspeak;Senya;Schuri...\nexpression;Senya;OpenEyes\nspeak;Senya;I think Schuri would've appreciated that.\nexpression;MC;Smile\nexpression;Senya;Smile\nspeak;MC;Then I'll see you around.\nmirror_portrait;MC\nmove_portrait;MC;OffscreenLeft\nend_skip\nmusic;chopin_waltz_bminor\nexpression;Senya;HalfCloseEyes\nspeak;Senya;All those days we all spent together...|I won't forget them.\nexpression;Senya;CloseEyes\nspeak;Senya;Goodbye.\nspeak;;True to her word. Senya left.|However her actions differed from the words she spoke that day.|News of a blonde warrior destroying bandit camps had appeared.|Perhaps it was her own way of taking from what had taken from her.|Or it was to forget what happened that fateful day.|That was the last day I ever saw her.|I could only hope that the dreaded news of death does not come.;;;narration_top\nmusic_fade_back;2000\nmusic;okEndingTheme\ntransition;close;2500\nmulti_remove_portrait;MC;Senya\n#ending cg?\nchange_background;default_background\ntransition;open;1000\nend_skip\nspeak;;Ending Achieved:|To The Shackles of Our Past;center;;cinematic\nset_next_chapter;2222\n"
     }
 ]

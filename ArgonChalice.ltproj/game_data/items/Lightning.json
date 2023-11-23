@@ -46,20 +46,6 @@
                 6
             ],
             [
-                "uses",
-                35
-            ],
-            [
-                "uses_options",
-                [
-                    [
-                        "LoseUsesOnMiss (T/F)",
-                        "F",
-                        "Lose uses even on miss"
-                    ]
-                ]
-            ],
-            [
                 "level_exp",
                 null
             ],
@@ -93,6 +79,10 @@
                     "effective_bonus_damage": 0,
                     "show_effectiveness_flash": true
                 }
+            ],
+            [
+                "battle_cast_anim",
+                "Glimmer"
             ]
         ]
     }

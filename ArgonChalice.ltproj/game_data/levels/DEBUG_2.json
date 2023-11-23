@@ -55,11 +55,11 @@
                 "nid": "101",
                 "variant": null,
                 "level": 1,
-                "klass": "Mogall",
+                "klass": "Sword_Wight",
                 "faction": "Soldier",
                 "starting_items": [
                     [
-                        "Evil Eye",
+                        "Iron Sword",
                         false
                     ]
                 ],

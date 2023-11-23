@@ -10,12 +10,12 @@
         "bases": {
             "HP": 46,
             "STR": 1,
-            "MAG": 24,
+            "MAG": 23,
             "SKL": 14,
             "SPD": 12,
             "LCK": 5,
-            "DEF": 17,
-            "RES": 20,
+            "DEF": 10,
+            "RES": 15,
             "CON": 7,
             "MOV": 6
         },
@@ -34,7 +34,7 @@
         "stat_cap_modifiers": {},
         "starting_items": [
             [
-                "Nosferatu",
+                "Flux",
                 false
             ]
         ],

@@ -37,14 +37,14 @@
                 "speak",
                 [
                     "Senya",
-                    "Teacher....I'm sorry. Go on in peace."
+                    "Teacher....I'm sorry. Go on in peace. +1"
                 ]
             ],
             [
                 "speak",
                 [
                     "Schuri",
-                    "No...|He was still fighting..."
+                    "No...|He was still fighting... -1"
                 ]
             ],
             [
@@ -76,6 +76,6 @@
         ],
         "only_once": false,
         "priority": 20,
-        "source": "add_portrait;Schuri;Left\nadd_portrait;Senya;Right\nexpression;Schuri;HalfCloseEyes\nexpression;Senya;CloseEyes\nspeak;Senya;Teacher....I'm sorry. Go on in peace.\nspeak;Schuri;No...|He was still fighting...\ninc_game_var;_SchuriOpinion-1\ninc_game_var;_SenyaOpinion+1\ngame_var;_ch4MentorKilled;True\nmulti_remove_portrait;Schuri;Senya\n"
+        "source": "add_portrait;Schuri;Left\nadd_portrait;Senya;Right\nexpression;Schuri;HalfCloseEyes\nexpression;Senya;CloseEyes\nspeak;Senya;Teacher....I'm sorry. Go on in peace. +1\nspeak;Schuri;No...|He was still fighting... -1\ninc_game_var;_SchuriOpinion-1\ninc_game_var;_SenyaOpinion+1\ngame_var;_ch4MentorKilled;True\nmulti_remove_portrait;Schuri;Senya\n"
     }
 ]

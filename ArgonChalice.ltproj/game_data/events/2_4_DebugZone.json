@@ -1,0 +1,37 @@
+[
+    {
+        "name": "DebugZone",
+        "trigger": "DebugZone",
+        "level_nid": "2_4",
+        "condition": "True",
+        "commands": [
+            [
+                "move_unit",
+                [
+                    "MC (MC)",
+                    "29,4",
+                    "warp"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Schuri",
+                    "14,8",
+                    "warp"
+                ]
+            ],
+            [
+                "move_unit",
+                [
+                    "Senya",
+                    "27,8",
+                    "warp"
+                ]
+            ]
+        ],
+        "only_once": false,
+        "priority": 20,
+        "source": "move_unit;MC (MC);29,4;warp\nmove_unit;Schuri;14,8;warp\nmove_unit;Senya;27,8;warp\n"
+    }
+]
